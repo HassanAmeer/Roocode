@@ -1,0 +1,55 @@
+export * from "./api.js"
+export * from "./cloud.js"
+export * from "./codebase-index.js"
+export * from "./context-management.js"
+export * from "./cookie-consent.js"
+export * from "./custom-tool.js"
+export * from "./events.js"
+export * from "./experiment.js"
+export * from "./followup.js"
+export * from "./global-settings.js"
+export * from "./history.js"
+export * from "./image-generation.js"
+export * from "./ipc.js"
+export * from "./marketplace.js"
+export * from "./mcp.js"
+export * from "./message.js"
+export * from "./mode.js"
+export * from "./model.js"
+export * from "./provider-settings.js"
+export * from "./task.js"
+export * from "./todo.js"
+export * from "./telemetry.js"
+export * from "./terminal.js"
+export * from "./tool.js"
+export * from "./tool-params.js"
+export * from "./type-fu.js"
+export * from "./vscode.js"
+export * from "./webview-message.js"
+export * from "./extension-message.js"
+export * from "./context-mentions.js"
+export * from "./modes.js"
+export * from "./support-prompt.js"
+export * from "./experiments.js"
+export * from "./package.js"
+
+export * from "./providers/index.js"
+export * from "./array.js"
+export * from "./checkExistApiConfig.js"
+export * from "./requesty.js"
+export * from "./cost.js"
+export * from "./tools.js"
+export * from "./language.js"
+export * from "./git.js"
+
+// Type aliases for backwards compatibility
+export type { RooCodeSettings as VibexSettings } from "./global-settings.js"
+export type { Mode } from "./modes.js"
+
+// Re-export IpcServerEvents as VibexIpcServer for backwards compatibility
+export type { IpcServerEvents as VibexIpcServer } from "./ipc.js"
+
+// VibexAPI is a structural type - actual implementation in src/extension/api.ts
+// Using 'any' as placeholder since the concrete type is defined in the implementation
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type VibexAPI = any

@@ -1,0 +1,562 @@
+:root {
+    /* Vibex Theme */
+    --vibex-color: #007bff;
+    --vibex-color-hover: #0056b3;
+
+    /* Primary colors */
+    --primary-color: var(--vibex-color);
+    --primary-hover: var(--vibex-color-hover);
+    --text-color: #333;
+    --text-light: #666;
+    --text-lighter: #999;
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --border-color: #dee2e6;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+
+    /* Typography */
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2rem;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Borders */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.05);
+
+    /* Transitions */
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.2s ease;
+    --transition-slow: 0.3s ease;
+}
+
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply transition only when keyboard navigation is active */
+.keyboard-navigation a:focus,
+.keyboard-navigation button:focus,
+.keyboard-navigation input:focus,
+.keyboard-navigation select:focus,
+.keyboard-navigation textarea:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    transition: outline-offset 0.1s ease;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Hide canvas from screen readers as it's decorative */
+#particle-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Content container */
+.content {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-lg) var(--spacing-md);
+    min-height: 100vh;
+    z-index: 1;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
+
+    /* Add subtle background to header for contrast against animated background */
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius-lg);
+    margin-bottom: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.header h1 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color);
+    margin-bottom: var(--spacing-sm);
+
+    /* Add text shadow for better readability over animated background */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header p {
+    font-size: var(--font-size-lg);
+    color: var(--text-light);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Main content */
+.main {
+    display: grid;
+    gap: var(--spacing-xl);
+
+    /* Responsive grid layout */
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Controls section */
+.controls {
+    background: var(--card-bg);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+
+    /* Add subtle border to differentiate from content */
+    border: 1px solid var(--border-color);
+}
+
+.controls h2 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-color);
+
+    /* Add bottom border for visual separation */
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: var(--spacing-sm);
+}
+
+/* Control group styles */
+.control-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.control-group:last-child {
+    margin-bottom: 0;
+}
+
+/* Label styles */
+.control-group label {
+    display: block;
+    font-weight: var(--font-weight-medium);
+    color: var(--text-color);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Slider styling */
+#density-slider {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--border-color);
+    outline: none;
+
+    /* Webkit (Chrome, Safari, Edge) */
+    ::-webkit-slider-thumb {
+        appearance: none;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background: var(--primary-color);
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: background-color var(--transition-normal);
+    }
+
+    ::-webkit-slider-thumb:hover {
+        background: var(--primary-hover);
+    }
+
+    /* Firefox */
+    ::-moz-range-thumb {
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background: var(--primary-color);
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: background-color var(--transition-normal);
+    }
+
+    ::-moz-range-thumb:hover {
+        background: var(--primary-hover);
+    }
+}
+
+/* Color picker styling */
+#color-picker {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: var(--border-radius-md);
+    padding: 0;
+    cursor: pointer;
+
+    /* Remove default appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* Add subtle border */
+    border: 2px solid var(--border-color);
+
+    /* Add box shadow on focus */
+    &:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    }
+
+    /* Inner square styling */
+    &::-webkit-color-swatch-wrapper {
+        padding: 0;
+        border-radius: var(--border-radius-md);
+    }
+
+    &::-webkit-color-swatch {
+        border: none;
+        border-radius: var(--border-radius-md);
+    }
+}
+
+/* Interaction toggle */
+#interaction-toggle {
+    margin-right: var(--spacing-xs);
+}
+
+/* Reset button */
+#reset-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: background-color var(--transition-normal), transform var(--transition-fast);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    /* Add focus state */
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    }
+
+    /* Hover and active states */
+    &:hover {
+        background-color: var(--primary-hover);
+        transform: translateY(-1px);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+/* Information section */
+.information {
+    background: var(--card-bg);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+
+    /* Add subtle border to differentiate from content */
+    border: 1px solid var(--border-color);
+
+    /* Prevent selection on double click (since canvas might interfere) */
+    user-select: text;
+}
+
+.information h2 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-color);
+
+    /* Add bottom border for visual separation */
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: var(--spacing-sm);
+}
+
+.information p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.7;
+}
+
+.information ul {
+    margin: var(--spacing-md) 0;
+    padding-left: var(--spacing-lg);
+}
+
+.information li {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.6;
+}
+
+/* Models section styling */
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.model-category {
+    background: var(--bg-color);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--border-color);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.model-category:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-color);
+}
+
+.model-category h3 {
+    font-size: var(--font-size-base);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: var(--spacing-xs);
+    font-weight: var(--font-weight-semibold);
+}
+
+.model-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.model-category li {
+    font-size: var(--font-size-sm);
+    color: var(--text-light);
+    margin-bottom: 4px;
+    padding-left: 0;
+    line-height: 1.4;
+}
+
+/* Code styling */
+.information code {
+    background-color: var(--bg-color);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 0.85em;
+    color: var(--text-light);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg);
+
+    /* Add background with blur for visual separation */
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius-lg);
+
+    /* Add subtle border and shadow */
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+
+    /* Position at bottom with some spacing */
+    margin-bottom: var(--spacing-lg);
+}
+
+.footer p {
+    color: var(--text-light);
+    font-size: var(--font-size-sm);
+    letter-spacing: 0.5px;
+}
+
+/* Responsive design */
+@media (max-width: 767px) {
+    .content {
+        padding: var(--spacing-md);
+    }
+
+    .header {
+        padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
+    }
+
+    .header h1 {
+        font-size: var(--font-size-xl);
+    }
+
+    .header p {
+        font-size: var(--font-size-base);
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .controls,
+    .information {
+        padding: var(--spacing-md);
+    }
+
+    .controls h2,
+    .information h2 {
+        font-size: var(--font-size-lg);
+        margin-bottom: var(--spacing-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: var(--spacing-sm);
+    }
+
+    .header {
+        padding: var(--spacing-md) var(--spacing-sm) var(--spacing-sm);
+    }
+
+    .header h1 {
+        font-size: var(--font-size-lg);
+    }
+
+    .controls,
+    .information {
+        padding: var(--spacing-sm);
+    }
+
+    .controls h2,
+    .information h2 {
+        font-size: var(--font-size-base);
+        margin-bottom: var(--spacing-sm);
+    }
+
+    #density-slider {
+        height: 4px;
+    }
+
+    #density-slider::-webkit-slider-thumb {
+        height: 14px;
+        width: 14px;
+    }
+
+    #density-slider::-moz-range-thumb {
+        height: 14px;
+        width: 14px;
+    }
+
+    #color-picker {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --text-color: #000;
+        --text-light: #333;
+        --text-lighter: #666;
+        --bg-color: #fff;
+        --card-bg: #fff;
+        --border-color: #000;
+        --primary-color: #000;
+    }
+
+    .header,
+    .footer {
+        background: #fff !important;
+        backdrop-filter: none !important;
+    }
+
+    .controls,
+    .information {
+        border-color: #000;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    /* Ensure canvas doesn't animate */
+    #particle-canvas {
+        display: none;
+    }
+
+    /* Add static background pattern as fallback */
+    body {
+        background-image: radial-gradient(circle, #007bff 1px, transparent 1px);
+        background-size: 20px 20px;
+    }
+}
+
+/* Print styles */
+@media print {
+    #particle-canvas {
+        display: none;
+    }
+
+    .content {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .header,
+    .controls,
+    .information,
+    .footer {
+        box-shadow: none;
+        border: none;
+        background: none;
+        backdrop-filter: none;
+    }
+
+    .controls h2,
+    .information h2 {
+        border-bottom: 1px solid var(--border-color);
+    }
+}
