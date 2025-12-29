@@ -37,7 +37,7 @@ import {
 import { cn } from "@/lib/utils"
 
 import { useOpenRouterModels } from "@/hooks/use-open-router-models"
-import { useVibexCloudModels } from "@/hooks/use-roo-code-cloud-models"
+import { useVibexCloudModels } from "@/hooks/use-vibex-cloud-models"
 
 import {
 	Button,
