@@ -13,7 +13,7 @@ suite("Vibex Task", function () {
 
 		const messages: ClineMessage[] = []
 
-		api.on(VibexEventName.Message, ({ message }) => {
+		api.on(VibexEventName.Message, ({ message }: { message: ClineMessage }) => {
 			if (message.type === "say" && message.partial === false) {
 				messages.push(message)
 			}

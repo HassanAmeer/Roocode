@@ -46,7 +46,7 @@ type WaitUntilAbortedOptions = WaitForOptions & {
 
 export const waitUntilAborted = async ({ api, taskId, ...options }: WaitUntilAbortedOptions) => {
 	const set = new Set<string>()
-	api.on(VibexEventName.TaskAborted, (taskId) => set.add(taskId))
+	api.on(VibexEventName.TaskAborted, (taskId: string) => set.add(taskId))
 	await waitFor(() => set.has(taskId), options)
 }
 
@@ -57,7 +57,7 @@ type WaitUntilCompletedOptions = WaitForOptions & {
 
 export const waitUntilCompleted = async ({ api, taskId, ...options }: WaitUntilCompletedOptions) => {
 	const set = new Set<string>()
-	api.on(VibexEventName.TaskCompleted, (taskId) => set.add(taskId))
+	api.on(VibexEventName.TaskCompleted, (taskId: string) => set.add(taskId))
 	await waitFor(() => set.has(taskId), options)
 }
 

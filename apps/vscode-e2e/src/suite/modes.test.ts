@@ -11,7 +11,7 @@ suite("Vibex Modes", function () {
 	test("Should handle switching modes correctly", async () => {
 		const modes: string[] = []
 
-		globalThis.api.on(VibexEventName.TaskModeSwitched, (_taskId, mode) => modes.push(mode))
+		globalThis.api.on(VibexEventName.TaskModeSwitched, (_taskId: string, mode: string) => modes.push(mode))
 
 		const switchModesTaskId = await globalThis.api.startNewTask({
 			configuration: { mode: "code", alwaysAllowModeSwitch: true, autoApprovalEnabled: true },
