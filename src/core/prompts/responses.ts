@@ -192,10 +192,10 @@ Otherwise, if you have not completed the task and do not need additional informa
 				return aParts.length - bParts.length
 			})
 
-		let vibexIgnoreParsed: string[] = sorted
+		let rooIgnoreParsed: string[] = sorted
 
 		if (vibexIgnoreController) {
-			vibexIgnoreParsed = []
+			rooIgnoreParsed = []
 			for (const filePath of sorted) {
 				// path is relative to absolute path, not cwd
 				// validateAccess expects either path relative to cwd or absolute path
@@ -209,26 +209,26 @@ Otherwise, if you have not completed the task and do not need additional informa
 						continue
 					}
 					// Otherwise, mark it with a lock symbol
-					vibexIgnoreParsed.push(LOCK_TEXT_SYMBOL + " " + filePath)
+					rooIgnoreParsed.push(LOCK_TEXT_SYMBOL + " " + filePath)
 				} else {
 					// Check if file is write-protected (only for non-ignored files)
 					const isWriteProtected = rooProtectedController?.isWriteProtected(absoluteFilePath) || false
 					if (isWriteProtected) {
-						vibexIgnoreParsed.push("🛡️ " + filePath)
+						rooIgnoreParsed.push("🛡️ " + filePath)
 					} else {
-						vibexIgnoreParsed.push(filePath)
+						rooIgnoreParsed.push(filePath)
 					}
 				}
 			}
 		}
 		if (didHitLimit) {
-			return `${vibexIgnoreParsed.join(
+			return `${rooIgnoreParsed.join(
 				"\n",
 			)}\n\n(File list truncated. Use list_files on specific subdirectories if you need to explore further.)`
-		} else if (vibexIgnoreParsed.length === 0 || (vibexIgnoreParsed.length === 1 && vibexIgnoreParsed[0] === "")) {
+		} else if (rooIgnoreParsed.length === 0 || (rooIgnoreParsed.length === 1 && rooIgnoreParsed[0] === "")) {
 			return "No files found."
 		} else {
-			return vibexIgnoreParsed.join("\n")
+			return rooIgnoreParsed.join("\n")
 		}
 	},
 

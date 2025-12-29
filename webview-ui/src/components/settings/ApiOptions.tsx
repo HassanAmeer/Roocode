@@ -454,7 +454,7 @@ const ApiOptions = ({
 				options.unshift(rooOption)
 			}
 		} else {
-			// Filter out roo from the welcome view
+			// Filter out vibex from the welcome view
 			const filteredOptions = options.filter((opt) => opt.value !== "roo")
 			options.length = 0
 			options.push(...filteredOptions)

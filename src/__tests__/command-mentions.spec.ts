@@ -32,7 +32,7 @@ describe("Command Mentions", () => {
 			"/test/cwd", // cwd
 			mockUrlContentFetcher, // urlContentFetcher
 			undefined, // fileContextTracker
-			undefined, // vibexIgnoreController
+			undefined, // rooIgnoreController
 			false, // showRooIgnoredFiles
 			true, // includeDiagnosticMessages
 			50, // maxDiagnosticMessages

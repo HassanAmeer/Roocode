@@ -179,15 +179,15 @@ HTML structure with canvas for particle background
     <!-- Configuration script -->
     <script>
         // Get Vibex theme color from CSS
-        const vibexColor = getComputedStyle(document.documentElement).getPropertyValue('--vibex-color').trim() || '#007bff';
+        const rooColor = getComputedStyle(document.documentElement).getPropertyValue('--vibex-color').trim() || '#007bff';
 
         // Update color picker default value
-        document.getElementById('color-picker').value = vibexColor;
+        document.getElementById('color-picker').value = rooColor;
 
         // Global configuration for the particle system
         window.particleConfig = {
             density: 100,  // Percentage of default density
-            color: vibexColor,
+            color: rooColor,
             enableInteraction: true,
             // Default particle count (will be adjusted by density)
             defaultCount: 80

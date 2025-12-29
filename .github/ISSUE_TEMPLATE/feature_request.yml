@@ -54,7 +54,7 @@ body:
           required: true
 
   - type: textarea
-    id: vibex-tasks
+    id: roo-tasks
     attributes:
       label: Vibex Task Links (optional)
       description: If you explored this with Vibex, share public task links for context.

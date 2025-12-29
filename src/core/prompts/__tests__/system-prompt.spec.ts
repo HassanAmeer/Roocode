@@ -79,7 +79,7 @@ __setMockImplementation(
 		globalCustomInstructions: string,
 		cwd: string,
 		mode: string,
-		options?: { language?: string; vibexIgnoreInstructions?: string; settings?: Record<string, any> },
+		options?: { language?: string; rooIgnoreInstructions?: string; settings?: Record<string, any> },
 	) => {
 		const sections = []
 
@@ -231,7 +231,7 @@ describe("SYSTEM_PROMPT", () => {
 			experiments,
 			true, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 		)
 
@@ -254,7 +254,7 @@ describe("SYSTEM_PROMPT", () => {
 			experiments,
 			true, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 		)
 
@@ -279,7 +279,7 @@ describe("SYSTEM_PROMPT", () => {
 			experiments,
 			true, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 		)
 
@@ -302,7 +302,7 @@ describe("SYSTEM_PROMPT", () => {
 			experiments,
 			true, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 		)
 
@@ -325,7 +325,7 @@ describe("SYSTEM_PROMPT", () => {
 			experiments,
 			true, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 		)
 
@@ -348,7 +348,7 @@ describe("SYSTEM_PROMPT", () => {
 			experiments,
 			true, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 		)
 
@@ -372,7 +372,7 @@ describe("SYSTEM_PROMPT", () => {
 			experiments,
 			true, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 		)
 
@@ -396,7 +396,7 @@ describe("SYSTEM_PROMPT", () => {
 			experiments,
 			true, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 		)
 
@@ -447,7 +447,7 @@ describe("SYSTEM_PROMPT", () => {
 			undefined, // experiments
 			true, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 		)
 
@@ -508,7 +508,7 @@ describe("SYSTEM_PROMPT", () => {
 			experiments,
 			true, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 		)
 
@@ -546,7 +546,7 @@ describe("SYSTEM_PROMPT", () => {
 			undefined, // experiments
 			false, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 		)
 
@@ -579,7 +579,7 @@ describe("SYSTEM_PROMPT", () => {
 			undefined, // experiments
 			false, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 		)
 
@@ -611,7 +611,7 @@ describe("SYSTEM_PROMPT", () => {
 			experiments,
 			true, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 			settings, // settings
 		)
@@ -645,7 +645,7 @@ describe("SYSTEM_PROMPT", () => {
 			experiments,
 			true, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 			settings, // settings
 		)
@@ -678,7 +678,7 @@ describe("SYSTEM_PROMPT", () => {
 			experiments,
 			true, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 			settings, // settings
 		)
@@ -711,7 +711,7 @@ describe("SYSTEM_PROMPT", () => {
 			experiments,
 			true, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 			settings, // settings
 		)
@@ -783,7 +783,7 @@ describe("SYSTEM_PROMPT", () => {
 			experiments,
 			true, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 			settings, // settings
 		)
@@ -845,7 +845,7 @@ describe("SYSTEM_PROMPT", () => {
 			experiments,
 			true, // enableMcpServerCreation
 			undefined, // language
-			undefined, // vibexIgnoreInstructions
+			undefined, // rooIgnoreInstructions
 			undefined, // partialReadsEnabled
 			settings, // settings
 		)

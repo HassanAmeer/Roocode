@@ -84,10 +84,8 @@
 
 	--color-vscode-input-foreground: var(--vscode-input-foreground);
 	--color-vscode-input-background: var(--vscode-input-background);
-	--color-vscode-input-border: var(
-		--vscode-input-border,
-		transparent
-	); /* Some themes don't have a border color, so we can fallback to transparent */
+	--color-vscode-input-border: var(--vscode-input-border, transparent);
+	/* Some themes don't have a border color, so we can fallback to transparent */
 
 	--color-vscode-focusBorder: var(--vscode-focusBorder);
 
@@ -164,7 +162,8 @@
 		--accent-foreground: var(--vscode-list-hoverForeground);
 		--destructive: var(--vscode-errorForeground);
 		--destructive-foreground: var(--vscode-button-foreground);
-		--border: var(--vscode-input-border, transparent); /* --border gets theme value or transparent fallback */
+		--border: var(--vscode-input-border, transparent);
+		/* --border gets theme value or transparent fallback */
 		--input: var(--vscode-input-background);
 		--ring: var(--vscode-input-border);
 		--chart-1: var(--vscode-charts-red);
@@ -214,7 +213,8 @@ textarea:focus {
 }
 
 .focus\:outline-0 {
-	outline: 0 !important; /* Allow tailwind to override the `textarea:focus` rule */
+	outline: 0 !important;
+	/* Allow tailwind to override the `textarea:focus` rule */
 }
 
 /**
@@ -315,12 +315,15 @@ body:focus-within .code-block-scrollable {
  */
 
 .scrollbar-hide {
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none;
+	/* IE and Edge */
+	scrollbar-width: none;
+	/* Firefox */
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-	display: none; /* Chrome, Safari and Opera */
+	display: none;
+	/* Chrome, Safari and Opera */
 }
 
 /**
@@ -447,6 +450,7 @@ input[cmdk-input]:focus {
 	from {
 		transform: translateX(100%);
 	}
+
 	to {
 		transform: translateX(0);
 	}
@@ -460,6 +464,7 @@ input[cmdk-input]:focus {
 	from {
 		opacity: 0;
 	}
+
 	to {
 		opacity: 1;
 	}
@@ -474,6 +479,7 @@ input[cmdk-input]:focus {
 	100% {
 		opacity: 1;
 	}
+
 	50% {
 		opacity: 0.7;
 	}
@@ -514,9 +520,11 @@ input[cmdk-input]:focus {
 .diff-content-inserted {
 	background-color: color-mix(in srgb, var(--vscode-diffEditor-insertedTextBackground) 70%, transparent);
 }
+
 .diff-content-removed {
 	background-color: color-mix(in srgb, var(--vscode-diffEditor-removedTextBackground) 70%, transparent);
 }
+
 .diff-content-context {
 	background-color: color-mix(in srgb, var(--vscode-editorGroup-border) 100%, transparent);
 }
@@ -525,6 +533,7 @@ input[cmdk-input]:focus {
 	0% {
 		transform: translateX(0);
 	}
+
 	100% {
 		transform: translateX(-30px);
 	}
@@ -538,6 +547,7 @@ input[cmdk-input]:focus {
 	0% {
 		transform: translateX(200px);
 	}
+
 	100% {
 		transform: translateX(-200px);
 	}

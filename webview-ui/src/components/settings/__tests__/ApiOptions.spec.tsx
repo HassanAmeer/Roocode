@@ -612,7 +612,7 @@ describe("ApiOptions", () => {
 			expect(screen.queryByTestId("roo-balance-display")).not.toBeInTheDocument()
 		})
 
-		it("pins roo provider to the top when not on welcome screen", () => {
+		it("pins vibex provider to the top when not on welcome screen", () => {
 			// Mock useExtensionState to ensure no filtering
 			const useExtensionStateMock = vi.spyOn(ExtensionStateContext, "useExtensionState")
 			useExtensionStateMock.mockReturnValue({
@@ -632,10 +632,10 @@ describe("ApiOptions", () => {
 			// Filter out the placeholder option (empty value)
 			const providerOptions = options.filter((opt) => opt.value !== "")
 
-			// Find the roo option
+			// Find the vibex option
 			const rooOption = providerOptions.find((opt) => opt.value === "roo")
 
-			// If roo is available, verify it's pinned to the top
+			// If vibex is available, verify it's pinned to the top
 			if (rooOption) {
 				expect(providerOptions[0].value).toBe("roo")
 			}
@@ -643,7 +643,7 @@ describe("ApiOptions", () => {
 			useExtensionStateMock.mockRestore()
 		})
 
-		it("filters out roo provider on welcome screen", () => {
+		it("filters out vibex provider on welcome screen", () => {
 			// Mock useExtensionState to ensure no filtering
 			const useExtensionStateMock = vi.spyOn(ExtensionStateContext, "useExtensionState")
 			useExtensionStateMock.mockReturnValue({
@@ -663,7 +663,7 @@ describe("ApiOptions", () => {
 			// Filter out the placeholder option (empty value)
 			const providerOptions = options.filter((opt) => opt.value !== "")
 
-			// Check that roo is NOT in the list when on welcome screen
+			// Check that vibex is NOT in the list when on welcome screen
 			const rooOption = providerOptions.find((opt) => opt.value === "roo")
 			expect(rooOption).toBeUndefined()
 

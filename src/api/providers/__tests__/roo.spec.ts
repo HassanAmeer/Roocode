@@ -428,7 +428,7 @@ describe("RooHandler", () => {
 			}
 		})
 
-		it("should have defaultToolProtocol: native for all roo provider models", () => {
+		it("should have defaultToolProtocol: native for all vibex provider models", () => {
 			// Test that all models have defaultToolProtocol: native
 			const testModels = ["minimax/minimax-m2:free", "anthropic/claude-haiku-4.5", "xai/grok-code-fast-1"]
 			for (const modelId of testModels) {

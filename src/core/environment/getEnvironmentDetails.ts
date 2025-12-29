@@ -43,7 +43,7 @@ export async function getEnvironmentDetails(cline: Task, includeFileDetails: boo
 		.map((absolutePath) => path.relative(cline.cwd, absolutePath))
 		.slice(0, maxWorkspaceFiles)
 
-	// Filter paths through vibexIgnoreController
+	// Filter paths through rooIgnoreController
 	const allowedVisibleFiles = cline.vibexIgnoreController
 		? cline.vibexIgnoreController.filterPaths(visibleFilePaths)
 		: visibleFilePaths.map((p) => p.toPosix()).join("\n")
@@ -63,7 +63,7 @@ export async function getEnvironmentDetails(cline: Task, includeFileDetails: boo
 		.map((absolutePath) => path.relative(cline.cwd, absolutePath).toPosix())
 		.slice(0, maxTabs)
 
-	// Filter paths through vibexIgnoreController
+	// Filter paths through rooIgnoreController
 	const allowedOpenTabs = cline.vibexIgnoreController
 		? cline.vibexIgnoreController.filterPaths(openTabPaths)
 		: openTabPaths.map((p) => p.toPosix()).join("\n")

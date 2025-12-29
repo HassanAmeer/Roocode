@@ -3471,7 +3471,7 @@ export class Task extends EventEmitter<TaskEvents> implements TaskLike {
 			})
 		}
 
-		const vibexIgnoreInstructions = this.vibexIgnoreController?.getInstructions()
+		const rooIgnoreInstructions = this.vibexIgnoreController?.getInstructions()
 
 		const state = await this.providerRef.deref()?.getState()
 
@@ -3532,7 +3532,7 @@ export class Task extends EventEmitter<TaskEvents> implements TaskLike {
 				experiments,
 				enableMcpServerCreation,
 				language,
-				vibexIgnoreInstructions,
+				rooIgnoreInstructions,
 				maxReadFileLine !== -1,
 				{
 					maxConcurrentFileReads: maxConcurrentFileReads ?? 5,

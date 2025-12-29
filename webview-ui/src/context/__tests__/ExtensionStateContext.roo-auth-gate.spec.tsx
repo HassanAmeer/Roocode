@@ -62,7 +62,7 @@ describe("ExtensionStateContext Vibex auth gate", () => {
 
 		vi.clearAllMocks()
 
-		// Flip to true with provider roo - should trigger
+		// Flip to true with provider vibex - should trigger
 		postStateMessage({
 			cloudIsAuthenticated: true,
 			apiConfiguration: { apiProvider: "roo" },

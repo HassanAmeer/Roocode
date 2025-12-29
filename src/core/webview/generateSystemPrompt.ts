@@ -44,7 +44,7 @@ export const generateSystemPrompt = async (provider: ClineProvider, message: Web
 	const mode = message.mode ?? defaultModeSlug
 	const customModes = await provider.customModesManager.getCustomModes()
 
-	const vibexIgnoreInstructions = provider.getCurrentTask()?.vibexIgnoreController?.getInstructions()
+	const rooIgnoreInstructions = provider.getCurrentTask()?.vibexIgnoreController?.getInstructions()
 
 	// Determine if browser tools can be used based on model support, mode, and user settings
 	let modelInfo: any = undefined
@@ -87,7 +87,7 @@ export const generateSystemPrompt = async (provider: ClineProvider, message: Web
 		experiments,
 		enableMcpServerCreation,
 		language,
-		vibexIgnoreInstructions,
+		rooIgnoreInstructions,
 		maxReadFileLine !== -1,
 		{
 			maxConcurrentFileReads: maxConcurrentFileReads ?? 5,

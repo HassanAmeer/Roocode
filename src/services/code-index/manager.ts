@@ -329,15 +329,15 @@ export class CodeIndexManager {
 		}
 
 		// Create VibexIgnoreController instance
-		const vibexIgnoreController = new VibexIgnoreController(workspacePath)
-		await vibexIgnoreController.initialize()
+		const rooIgnoreController = new VibexIgnoreController(workspacePath)
+		await rooIgnoreController.initialize()
 
 		// (Re)Create shared service instances
 		const { embedder, vectorStore, scanner, fileWatcher } = this._serviceFactory.createServices(
 			this.context,
 			this._cacheManager!,
 			ignoreInstance,
-			vibexIgnoreController,
+			rooIgnoreController,
 		)
 
 		// Validate embedder configuration before proceeding

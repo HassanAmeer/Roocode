@@ -53,7 +53,7 @@ vi.mock("vscode", () => ({
 	RelativePattern: vi.fn(),
 }))
 
-// Global roo directory - computed once
+// Global vibex directory - computed once
 const GLOBAL_ROO_DIR = p(HOME_DIR, ".roo")
 
 // Mock roo-config

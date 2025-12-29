@@ -235,7 +235,7 @@ describe("writeToFileTool", () => {
 	}
 
 	describe("access control", () => {
-		it("validates and allows access when vibexIgnoreController permits", async () => {
+		it("validates and allows access when rooIgnoreController permits", async () => {
 			await executeWriteFileTool({}, { accessAllowed: true })
 
 			expect(mockCline.vibexIgnoreController.validateAccess).toHaveBeenCalledWith(testFilePath)

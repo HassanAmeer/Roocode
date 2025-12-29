@@ -61,7 +61,7 @@ export class DirectoryScanner implements IDirectoryScanner {
 	/**
 	 * Recursively scans a directory for code blocks in supported files.
 	 * @param directoryPath The directory to scan
-	 * @param vibexIgnoreController Optional VibexIgnoreController instance for filtering
+	 * @param rooIgnoreController Optional VibexIgnoreController instance for filtering
 	 * @param context VS Code ExtensionContext for cache storage
 	 * @param onError Optional error handler callback
 	 * @returns Promise<{codeBlocks: CodeBlock[], stats: {processed: number, skipped: number}}> Array of parsed code blocks and processing stats
