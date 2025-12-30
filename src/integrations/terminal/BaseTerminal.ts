@@ -2,16 +2,16 @@ import { truncateOutput, applyRunLengthEncoding, processBackspaces, processCarri
 import { DEFAULT_TERMINAL_OUTPUT_CHARACTER_LIMIT } from "@roo-code/types"
 
 import type {
-	RooTerminalProvider,
-	RooTerminal,
-	RooTerminalCallbacks,
-	RooTerminalProcess,
-	RooTerminalProcessResultPromise,
+	VibeXTerminalProvider,
+	VibeXTerminal,
+	VibeXTerminalCallbacks,
+	VibeXTerminalProcess,
+	VibeXTerminalProcessResultPromise,
 	ExitCodeDetails,
 } from "./types"
 
-export abstract class BaseTerminal implements RooTerminal {
-	public readonly provider: RooTerminalProvider
+export abstract class BaseTerminal implements VibeXTerminal {
+	public readonly provider: VibeXTerminalProvider
 	public readonly id: number
 	public readonly initialCwd: string
 
@@ -20,10 +20,10 @@ export abstract class BaseTerminal implements RooTerminal {
 	protected streamClosed: boolean
 
 	public taskId?: string
-	public process?: RooTerminalProcess
-	public completedProcesses: RooTerminalProcess[] = []
+	public process?: VibeXTerminalProcess
+	public completedProcesses: VibeXTerminalProcess[] = []
 
-	constructor(provider: RooTerminalProvider, id: number, cwd: string) {
+	constructor(provider: VibeXTerminalProvider, id: number, cwd: string) {
 		this.provider = provider
 		this.id = id
 		this.initialCwd = cwd
@@ -38,7 +38,7 @@ export abstract class BaseTerminal implements RooTerminal {
 
 	abstract isClosed(): boolean
 
-	abstract runCommand(command: string, callbacks: RooTerminalCallbacks): RooTerminalProcessResultPromise
+	abstract runCommand(command: string, callbacks: VibeXTerminalCallbacks): VibeXTerminalProcessResultPromise
 
 	/**
 	 * Sets the active stream for this terminal and notifies the process
@@ -117,7 +117,7 @@ export abstract class BaseTerminal implements RooTerminal {
 	 * Gets all processes with unretrieved output
 	 * @returns Array of processes with unretrieved output
 	 */
-	public getProcessesWithOutput(): RooTerminalProcess[] {
+	public getProcessesWithOutput(): VibeXTerminalProcess[] {
 		// Clean the queue first to remove any processes without output
 		this.cleanCompletedProcessQueue()
 		return [...this.completedProcesses]

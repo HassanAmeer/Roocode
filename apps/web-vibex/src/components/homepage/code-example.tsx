@@ -207,7 +207,7 @@ Roo has analyzed your code and found 3 issues:
 🐛 Issue #1: Null data reference
   Line 42: const items = data.items.map(item => item.name);
   
-  ✓ Root Cause: 'data' is undefined when component mounts
+  ✓ VibeXt Cause: 'data' is undefined when component mounts
   ✓ Context: API request in useEffect hasn't completed yet
   
   Recommended Fix:
@@ -216,7 +216,7 @@ Roo has analyzed your code and found 3 issues:
 🐛 Issue #2: Missing dependency in useEffect
   Line 37: useEffect(() => { fetchData() }, []);
   
-  ✓ Root Cause: fetchData depends on 'userId' but isn't in deps array
+  ✓ VibeXt Cause: fetchData depends on 'userId' but isn't in deps array
   ✓ Context: This causes stale data when userId changes
   
   Recommended Fix:
@@ -225,7 +225,7 @@ Roo has analyzed your code and found 3 issues:
 🐛 Issue #3: Memory leak from unfinished API call
   Line 38: const response = await api.getItems(userId);
   
-  ✓ Root Cause: No cleanup when component unmounts during API call
+  ✓ VibeXt Cause: No cleanup when component unmounts during API call
   ✓ Context: This triggers React warning in development
   
   Recommended Fix:

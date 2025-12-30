@@ -9,7 +9,7 @@
   <em>快速获取帮助 → <a href="https://discord.gg/roocode">加入 Discord</a> • 偏好异步？→ <a href="https://www.reddit.com/r/RooCode/">加入 r/RooCode</a></em>
 </p>
 
-# Roo Code
+# VibeX Code
 
 > 你的 AI 驱动开发团队，就在你的编辑器里
 
@@ -35,11 +35,11 @@
 - [简体中文](../zh-CN/README.md)
 - [繁體中文](../zh-TW/README.md)
 - ...
-  </details>
+    </details>
 
 ---
 
-## Roo Code 能为您做什么？
+## VibeX Code 能为您做什么？
 
 - 从自然语言描述生成代码
 - 使用模式进行调整：代码、架构师、提问、调试和自定义模式
@@ -58,7 +58,7 @@ Roo Code 适应您的工作方式，而不是相反：
 - 提问模式：快速回答、解释和文档
 - 调试模式：跟踪问题、添加日志、隔离根本原因
 - 自定义模式：为您的团队或工作流程构建专门的模式
-- Roomote Control：Roomote Control 允许你远程控制在本地 VS Code 实例中运行的任务。
+- VibeXmote Control：Roomote Control 允许你远程控制在本地 VS Code 实例中运行的任务。
 
 了解更多：[使用模式](https://docs.roocode.com/basic-usage/using-modes) • [自定义模式](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
 
@@ -66,10 +66,10 @@ Roo Code 适应您的工作方式，而不是相反：
 
 <div align="center">
 
-|                                                                                                                                                                     |                                                                                                                                                                    |                                                                                                                                                                    |
-| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| <a href="https://www.youtube.com/watch?v=Mcq3r1EPZ-4"><img src="https://img.youtube.com/vi/Mcq3r1EPZ-4/maxresdefault.jpg" width="100%"></a><br><b>安装 Roo Code</b> | <a href="https://www.youtube.com/watch?v=ZBML8h5cCgo"><img src="https://img.youtube.com/vi/ZBML8h5cCgo/maxresdefault.jpg" width="100%"></a><br><b>配置个人资料</b> |  <a href="https://www.youtube.com/watch?v=r1bpod1VWhg"><img src="https://img.youtube.com/vi/r1bpod1VWhg/maxresdefault.jpg" width="100%"></a><br><b>代码库索引</b>  |
-|  <a href="https://www.youtube.com/watch?v=iiAv1eKOaxk"><img src="https://img.youtube.com/vi/iiAv1eKOaxk/maxresdefault.jpg" width="100%"></a><br><b>自定义模式</b>   |    <a href="https://www.youtube.com/watch?v=Ho30nyY332E"><img src="https://img.youtube.com/vi/Ho30nyY332E/maxresdefault.jpg" width="100%"></a><br><b>检查点</b>    | <a href="https://www.youtube.com/watch?v=6h5vB9PpoPk"><img src="https://img.youtube.com/vi/6h5vB9PpoPk/maxresdefault.jpg" width="100%"></a><br><b>待办事项列表</b> |
+|                                                                                                                                                                       |                                                                                                                                                                    |                                                                                                                                                                    |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| <a href="https://www.youtube.com/watch?v=Mcq3r1EPZ-4"><img src="https://img.youtube.com/vi/Mcq3r1EPZ-4/maxresdefault.jpg" width="100%"></a><br><b>安装 VibeX Code</b> | <a href="https://www.youtube.com/watch?v=ZBML8h5cCgo"><img src="https://img.youtube.com/vi/ZBML8h5cCgo/maxresdefault.jpg" width="100%"></a><br><b>配置个人资料</b> |  <a href="https://www.youtube.com/watch?v=r1bpod1VWhg"><img src="https://img.youtube.com/vi/r1bpod1VWhg/maxresdefault.jpg" width="100%"></a><br><b>代码库索引</b>  |
+|   <a href="https://www.youtube.com/watch?v=iiAv1eKOaxk"><img src="https://img.youtube.com/vi/iiAv1eKOaxk/maxresdefault.jpg" width="100%"></a><br><b>自定义模式</b>    |    <a href="https://www.youtube.com/watch?v=Ho30nyY332E"><img src="https://img.youtube.com/vi/Ho30nyY332E/maxresdefault.jpg" width="100%"></a><br><b>检查点</b>    | <a href="https://www.youtube.com/watch?v=6h5vB9PpoPk"><img src="https://img.youtube.com/vi/6h5vB9PpoPk/maxresdefault.jpg" width="100%"></a><br><b>待办事项列表</b> |
 
 </div>
 <p align="center">
@@ -78,7 +78,7 @@ Roo Code 适应您的工作方式，而不是相反：
 
 ## 资源
 
-- **[文档](https://docs.roocode.com):** 安装、配置和掌握 Roo Code 的官方指南。
+- **[文档](https://docs.roocode.com):** 安装、配置和掌握 VibeX Code 的官方指南。
 - **[YouTube 频道](https://youtube.com/@roocodeyt?feature=shared):** 观看教程和功能演示。
 - **[Discord 服务器](https://discord.gg/roocode):** 加入社区以获得实时帮助和讨论。
 - **[Reddit 社区](https://www.reddit.com/r/RooCode):** 分享您的经验，看看别人在构建什么。
@@ -103,13 +103,13 @@ pnpm install
 
 3. **运行扩展程序**:
 
-有几种方法可以运行 Roo Code 扩展程序：
+有几种方法可以运行 VibeX Code 扩展程序：
 
 ### 开发模式（F5）
 
 对于积极开发，请使用 VSCode 的内置调试功能：
 
-在 VSCode 中按 `F5`（或转到 **Run** → **Start Debugging**）。这将在运行 Roo Code 扩展程序的新 VSCode 窗口中打开。
+在 VSCode 中按 `F5`（或转到 **Run** → **Start Debugging**）。这将在运行 VibeX Code 扩展程序的新 VSCode 窗口中打开。
 
 - 对 webview 的更改将立即显示。
 - 对核心扩展程序的更改也会自动热重载。
@@ -157,7 +157,7 @@ pnpm install:vsix [-y] [--editor=<command>]
 
 ## 免责声明
 
-**请注意**，Roo Code, Inc. **不**对与 Roo Code 相关的任何代码、模型或其他工具、任何相关的第三方工具或任何由此产生的输出作出任何陈述或保证。您承担使用任何此类工具或输出的**所有风险**；此类工具均按**“原样”**和**“可用”**的基础提供。此类风险可能包括但不限于知识产权侵权、网络漏洞或攻击、偏见、不准确、错误、缺陷、病毒、停机、财产损失或损害和/或人身伤害。您对自己使用任何此类工具或输出负全部责任（包括但不限于其合法性、适当性和结果）。
+**请注意**，Roo Code, Inc. **不**对与 VibeX Code 相关的任何代码、模型或其他工具、任何相关的第三方工具或任何由此产生的输出作出任何陈述或保证。您承担使用任何此类工具或输出的**所有风险**；此类工具均按**“原样”**和**“可用”**的基础提供。此类风险可能包括但不限于知识产权侵权、网络漏洞或攻击、偏见、不准确、错误、缺陷、病毒、停机、财产损失或损害和/或人身伤害。您对自己使用任何此类工具或输出负全部责任（包括但不限于其合法性、适当性和结果）。
 
 ---
 
@@ -169,8 +169,8 @@ pnpm install:vsix [-y] [--editor=<command>]
 
 ## 许可证
 
-[Apache 2.0 © 2025 Roo Code, Inc.](../../LICENSE)
+[Apache 2.0 © 2025 VibeX Code, Inc.](../../LICENSE)
 
 ---
 
-**享受 Roo Code！** 无论您是让它保持短绳还是让它自主漫游，我们都迫不及待地想看看您会构建什么。如果您有问题或功能想法，请访问我们的 [Reddit 社区](https://www.reddit.com/r/RooCode/)或 [Discord](https://discord.gg/roocode)。编码愉快！
+**享受 VibeX Code！** 无论您是让它保持短绳还是让它自主漫游，我们都迫不及待地想看看您会构建什么。如果您有问题或功能想法，请访问我们的 [Reddit 社区](https://www.reddit.com/r/RooCode/)或 [Discord](https://discord.gg/roocode)。编码愉快！

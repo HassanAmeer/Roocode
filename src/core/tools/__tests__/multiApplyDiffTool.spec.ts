@@ -100,7 +100,7 @@ describe("multiApplyDiffTool", () => {
 			vibexIgnoreController: {
 				validateAccess: vi.fn().mockReturnValue(true),
 			},
-			rooProtectedController: {
+			vibexProtectedController: {
 				isWriteProtected: vi.fn().mockReturnValue(false),
 			},
 			fileContextTracker: {

@@ -9,7 +9,7 @@
   <em>Snel hulp krijgen → <a href="https://discord.gg/roocode">Word lid van Discord</a> • Liever asynchroon? → <a href="https://www.reddit.com/r/RooCode/">Word lid van r/RooCode</a></em>
 </p>
 
-# Roo Code
+# VibeX Code
 
 > Jouw AI-aangedreven dev-team, rechtstreeks in je editor
 
@@ -35,11 +35,11 @@
 - [简体中文](../zh-CN/README.md)
 - [繁體中文](../zh-TW/README.md)
 - ...
-  </details>
+    </details>
 
 ---
 
-## Wat kan Roo Code voor JOU doen?
+## Wat kan VibeX Code voor JOU doen?
 
 - Genereer code vanuit natuurlijke taalomschrijvingen
 - Aanpassen met Modi: Code, Architect, Vraag, Debug en Aangepaste Modi
@@ -58,7 +58,7 @@ Roo Code past zich aan jouw werkwijze aan, niet andersom:
 - Vraag Modus: snelle antwoorden, uitleg en documenten
 - Debug Modus: spoor problemen op, voeg logs toe, isoleer de oorzaak
 - Aangepaste Modi: bouw gespecialiseerde modi voor je team of workflow
-- Roomote Control: Roomote Control laat je taken op je lokale VS Code-instantie op afstand besturen.
+- VibeXmote Control: VibeXmote Control laat je taken op je lokale VS Code-instantie op afstand besturen.
 
 Meer info: [Modi gebruiken](https://docs.roocode.com/basic-usage/using-modes) • [Aangepaste modi](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
 
@@ -78,7 +78,7 @@ Meer info: [Modi gebruiken](https://docs.roocode.com/basic-usage/using-modes) �
 
 ## Hulpbronnen
 
-- **[Documentatie](https://docs.roocode.com):** De officiële gids voor het installeren, configureren en beheersen van Roo Code.
+- **[Documentatie](https://docs.roocode.com):** De officiële gids voor het installeren, configureren en beheersen van VibeX Code.
 - **[YouTube-kanaal](https://youtube.com/@roocodeyt?feature=shared):** Bekijk tutorials en zie functies in actie.
 - **[Discord Server](https://discord.gg/roocode):** Word lid van de community voor realtime hulp en discussie.
 - **[Reddit Community](https://www.reddit.com/r/RooCode):** Deel je ervaringen en kijk wat anderen bouwen.
@@ -103,13 +103,13 @@ pnpm install
 
 3. **Voer de extensie uit**:
 
-Er zijn verschillende manieren om de Roo Code-extensie uit te voeren:
+Er zijn verschillende manieren om de VibeX Code-extensie uit te voeren:
 
 ### Ontwikkelmodus (F5)
 
 Gebruik voor actieve ontwikkeling de ingebouwde foutopsporing van VSCode:
 
-Druk op `F5` (of ga naar **Uitvoeren** → **Foutopsporing starten**) in VSCode. Dit opent een nieuw VSCode-venster waarin de Roo Code-extensie wordt uitgevoerd.
+Druk op `F5` (of ga naar **Uitvoeren** → **Foutopsporing starten**) in VSCode. Dit opent een nieuw VSCode-venster waarin de VibeX Code-extensie wordt uitgevoerd.
 
 - Wijzigingen in de webweergave verschijnen onmiddellijk.
 - Wijzigingen in de kernextensie worden ook automatisch hot-herladen.
@@ -157,7 +157,7 @@ We gebruiken [changesets](https://github.com/changesets/changesets) voor versieb
 
 ## Disclaimer
 
-**Let op**: Roo Code, Inc. geeft **geen** verklaringen of garanties met betrekking tot enige code, modellen of andere tools die worden geleverd of beschikbaar worden gesteld in verband met Roo Code, enige geassocieerde tools van derden, of enige resulterende output. U aanvaardt **alle risico's** die gepaard gaan met het gebruik van dergelijke tools of output; dergelijke tools worden geleverd op een **"AS IS"** en **"AS AVAILABLE"** basis. Dergelijke risico's kunnen omvatten, maar zijn niet beperkt tot, inbreuk op intellectueel eigendom, cyberkwetsbaarheden of -aanvallen, vooringenomenheid, onnauwkeurigheden, fouten, defecten, virussen, downtime, verlies of beschadiging van eigendommen, en/of persoonlijk letsel. U bent als enige verantwoordelijk voor uw gebruik van dergelijke tools of output (inclusief, maar niet beperkt tot, de wettigheid, geschiktheid en resultaten daarvan).
+**Let op**: VibeX Code, Inc. geeft **geen** verklaringen of garanties met betrekking tot enige code, modellen of andere tools die worden geleverd of beschikbaar worden gesteld in verband met VibeX Code, enige geassocieerde tools van derden, of enige resulterende output. U aanvaardt **alle risico's** die gepaard gaan met het gebruik van dergelijke tools of output; dergelijke tools worden geleverd op een **"AS IS"** en **"AS AVAILABLE"** basis. Dergelijke risico's kunnen omvatten, maar zijn niet beperkt tot, inbreuk op intellectueel eigendom, cyberkwetsbaarheden of -aanvallen, vooringenomenheid, onnauwkeurigheden, fouten, defecten, virussen, downtime, verlies of beschadiging van eigendommen, en/of persoonlijk letsel. U bent als enige verantwoordelijk voor uw gebruik van dergelijke tools of output (inclusief, maar niet beperkt tot, de wettigheid, geschiktheid en resultaten daarvan).
 
 ---
 
@@ -169,8 +169,8 @@ We houden van bijdragen uit de community! Begin met het lezen van onze [CONTRIBU
 
 ## Licentie
 
-[Apache 2.0 © 2025 Roo Code, Inc.](../../LICENSE)
+[Apache 2.0 © 2025 VibeX Code, Inc.](../../LICENSE)
 
 ---
 
-**Veel plezier met Roo Code!** Of je het nu strak aan de lijn houdt of autonoom laat rondlopen, we zijn benieuwd wat je bouwt. Vragen of feature-ideeën? Kom langs op onze [Reddit-community](https://www.reddit.com/r/RooCode/) of [Discord](https://discord.gg/roocode). Happy coding!
+**Veel plezier met VibeX Code!** Of je het nu strak aan de lijn houdt of autonoom laat rondlopen, we zijn benieuwd wat je bouwt. Vragen of feature-ideeën? Kom langs op onze [Reddit-community](https://www.reddit.com/r/RooCode/) of [Discord](https://discord.gg/roocode). Happy coding!

@@ -51,8 +51,8 @@ vi.mock("../../common/Tab", () => ({
 	TabContent: ({ children }: any) => <div data-testid="tab-content">{children}</div>,
 }))
 
-// Mock RooHero
-vi.mock("../RooHero", () => ({
+// Mock VibeXHero
+vi.mock("../VibeXHero", () => ({
 	default: () => <div data-testid="roo-hero">Vibex Hero</div>,
 }))
 

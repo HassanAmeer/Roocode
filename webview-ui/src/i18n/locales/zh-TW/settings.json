@@ -35,7 +35,7 @@
 		"ui": "UI",
 		"experimental": "實驗性",
 		"language": "語言",
-		"about": "關於 Roo Code"
+		"about": "關於 VibeX Code"
 	},
 	"about": {
 		"bugReport": {
@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "需要與我們聯絡？請寫信"
 		},
-		"community": "想要獲取使用技巧或與其他 Roo Code 使用者交流？加入 <redditLink>reddit.com/r/Roo Code</redditLink> 或 <discordLink>discord.gg/roocode</discordLink>",
+		"community": "想要獲取使用技巧或與其他 VibeX Code 使用者交流？加入 <redditLink>reddit.com/r/Roo Code</redditLink> 或 <discordLink>discord.gg/roocode</discordLink>",
 		"contactAndCommunity": "聯絡與社群",
 		"manageSettings": "管理設定"
 	},
@@ -61,7 +61,7 @@
 		"description": "管理您的斜線命令，以便快速執行自訂工作流程和動作。 <DocsLink>了解更多</DocsLink>"
 	},
 	"prompts": {
-		"description": "設定用於快速操作的支援提示詞，如增強提示詞、解釋程式碼和修復問題。這些提示詞幫助 Roo Code 為常見開發工作提供更好的支援。"
+		"description": "設定用於快速操作的支援提示詞，如增強提示詞、解釋程式碼和修復問題。這些提示詞幫助 VibeX Code 為常見開發工作提供更好的支援。"
 	},
 	"codeIndex": {
 		"title": "程式碼庫索引",
@@ -173,7 +173,7 @@
 	},
 	"autoApprove": {
 		"toggleShortcut": "您可以<SettingsLink>在 IDE 偏好設定中</SettingsLink>為此設定設定全域快捷鍵。",
-		"description": "允許 Roo Code 無需核准即執行操作。僅在您完全信任 AI 並了解相關安全風險時啟用這些設定。",
+		"description": "允許 VibeX Code 無需核准即執行操作。僅在您完全信任 AI 並了解相關安全風險時啟用這些設定。",
 		"enabled": "自動核准已啟用",
 		"toggleAriaLabel": "切換自動核准",
 		"disabledAriaLabel": "自動核准已停用 - 請先選取選項",
@@ -182,7 +182,7 @@
 			"description": "啟用後，Roo Code 將自動檢視目錄內容並讀取檔案，無需點選核准按鈕。",
 			"outsideWorkspace": {
 				"label": "包含工作區外的檔案",
-				"description": "允許 Roo Code 讀取目前工作區外的檔案，無需核准。"
+				"description": "允許 VibeX Code 讀取目前工作區外的檔案，無需核准。"
 			}
 		},
 		"write": {
@@ -191,11 +191,11 @@
 			"delayLabel": "寫入後延遲以允許診斷偵測潛在問題",
 			"outsideWorkspace": {
 				"label": "包含工作區外的檔案",
-				"description": "允許 Roo Code 在目前工作區外建立和編輯檔案，無需核准。"
+				"description": "允許 VibeX Code 在目前工作區外建立和編輯檔案，無需核准。"
 			},
 			"protected": {
 				"label": "包含受保護的檔案",
-				"description": "允許 Roo Code 建立和編輯受保護的檔案（如 .rooignore 和 .roo/ 設定檔），無需核准。"
+				"description": "允許 VibeX Code 建立和編輯受保護的檔案（如 .rooignore 和 .roo/ 設定檔），無需核准。"
 			}
 		},
 		"browser": {
@@ -417,7 +417,7 @@
 			"draftModelDesc": "草稿模型必須來自相同模型系列才能正確運作。",
 			"selectDraftModel": "選擇草稿模型",
 			"noModelsFound": "未找到草稿模型。請確保 LM Studio 以伺服器模式執行。",
-			"description": "LM Studio 允許您在本機電腦執行模型。詳細資訊請參閱快速入門指南。您需要啟動 LM Studio 的本機伺服器功能才能與此擴充功能搭配使用。<span>注意：</span> Roo Code 使用複雜提示，與 Claude 模型搭配最佳。功能較弱的模型可能無法正常運作。"
+			"description": "LM Studio 允許您在本機電腦執行模型。詳細資訊請參閱快速入門指南。您需要啟動 LM Studio 的本機伺服器功能才能與此擴充功能搭配使用。<span>注意：</span> VibeX Code 使用複雜提示，與 Claude 模型搭配最佳。功能較弱的模型可能無法正常運作。"
 		},
 		"ollama": {
 			"baseUrl": "基礎 URL（選用）",
@@ -438,8 +438,8 @@
 			"instructions": "使用期間會彈出對話框，並自動將目前訊息複製到剪貼簿。您需要將這些內容貼上到網頁版 AI（如 ChatGPT 或 Claude），然後將 AI 的回覆複製回對話框並點選確認按鈕。"
 		},
 		"roo": {
-			"authenticatedMessage": "已透過 Roo Code Cloud 帳戶安全認證。",
-			"connectButton": "連接到 Roo Code Cloud"
+			"authenticatedMessage": "已透過 VibeX Code Cloud 帳戶安全認證。",
+			"connectButton": "連接到 VibeX Code Cloud"
 		},
 		"openRouter": {
 			"providerRouting": {
@@ -449,7 +449,7 @@
 			}
 		},
 		"customModel": {
-			"capabilities": "設定自訂 OpenAI 相容模型的功能和定價。請謹慎設定模型功能，因為這會影響 Roo Code 的運作方式。",
+			"capabilities": "設定自訂 OpenAI 相容模型的功能和定價。請謹慎設定模型功能，因為這會影響 VibeX Code 的運作方式。",
 			"maxTokens": {
 				"label": "最大輸出 Token",
 				"description": "模型能在一則回應中產生的最大 Token 數量。（設為 -1 則由伺服器決定最大值）"
@@ -611,7 +611,7 @@
 		},
 		"maxReadFile": {
 			"label": "檔案讀取自動截斷閾值",
-			"description": "當模型未指定起始/結束值時，Roo Code 讀取的行數。如果此數值小於檔案總行數，Roo Code 將產生程式碼定義的行號索引。特殊情況：-1 指示 Roo Code 讀取整個檔案（不建立索引），0 指示不讀取任何行並僅提供行索引以取得最小上下文。較低的值可最小化初始上下文使用，允許後續精確的行範圍讀取。明確指定起始/結束的請求不受此設定限制。 <0>了解更多</0>",
+			"description": "當模型未指定起始/結束值時，Roo Code 讀取的行數。如果此數值小於檔案總行數，Roo Code 將產生程式碼定義的行號索引。特殊情況：-1 指示 VibeX Code 讀取整個檔案（不建立索引），0 指示不讀取任何行並僅提供行索引以取得最小上下文。較低的值可最小化初始上下文使用，允許後續精確的行範圍讀取。明確指定起始/結束的請求不受此設定限制。 <0>了解更多</0>",
 			"lines": "行",
 			"always_full_read": "始終讀取整個檔案"
 		},
@@ -679,11 +679,11 @@
 		},
 		"outputLineLimit": {
 			"label": "終端機輸出限制",
-			"description": "保留首尾行並丟棄中間行以保持在限制內。降低可節省 token；提高可為 Roo Code 提供更多中間細節。Roo Code 看到內容被跳過的佔位符。<0>了解更多</0>"
+			"description": "保留首尾行並丟棄中間行以保持在限制內。降低可節省 token；提高可為 VibeX Code 提供更多中間細節。Roo Code 看到內容被跳過的佔位符。<0>了解更多</0>"
 		},
 		"outputCharacterLimit": {
 			"label": "終端機字元限制",
-			"description": "透過強制限制輸出大小來覆寫行限制以防止記憶體問題。如果超出，保留開頭和結尾並向 Roo Code 顯示內容被跳過的佔位符。<0>了解更多</0>"
+			"description": "透過強制限制輸出大小來覆寫行限制以防止記憶體問題。如果超出，保留開頭和結尾並向 VibeX Code 顯示內容被跳過的佔位符。<0>了解更多</0>"
 		},
 		"shellIntegrationTimeout": {
 			"label": "終端機 shell 整合逾時",
@@ -731,7 +731,7 @@
 	},
 	"toolProtocol": {
 		"label": "工具呼叫協議",
-		"description": "選擇 Roo Code 如何與 API 通信。原生使用提供者的函數呼叫 API，而 XML 使用 XML 格式的工具定義。",
+		"description": "選擇 VibeX Code 如何與 API 通信。原生使用提供者的函數呼叫 API，而 XML 使用 XML 格式的工具定義。",
 		"default": "預設",
 		"xml": "XML",
 		"native": "原生",
@@ -771,7 +771,7 @@
 		},
 		"INSERT_BLOCK": {
 			"name": "使用實驗性插入內容工具",
-			"description": "啟用實驗性的插入內容工具，允許 Roo Code 直接在指定行號插入內容，而無需產生差異比對。"
+			"description": "啟用實驗性的插入內容工具，允許 VibeX Code 直接在指定行號插入內容，而無需產生差異比對。"
 		},
 		"POWER_STEERING": {
 			"name": "使用實驗性「動力輔助」模式",
@@ -791,11 +791,11 @@
 		},
 		"MULTI_FILE_APPLY_DIFF": {
 			"name": "啟用並行檔案編輯",
-			"description": "啟用後 Roo Code 可在單個請求中編輯多個檔案。停用後 Roo Code 必須逐個編輯檔案。停用此功能有助於使用能力較弱的模型或需要更精確控制檔案修改時。"
+			"description": "啟用後 VibeX Code 可在單個請求中編輯多個檔案。停用後 VibeX Code 必須逐個編輯檔案。停用此功能有助於使用能力較弱的模型或需要更精確控制檔案修改時。"
 		},
 		"PREVENT_FOCUS_DISRUPTION": {
 			"name": "背景編輯",
-			"description": "啟用後可防止編輯器焦點中斷。檔案編輯會在背景進行，不會開啟 diff 檢視或搶奪焦點。您可以在 Roo Code 進行變更時繼續不受干擾地工作。檔案可能會在不獲得焦點的情況下開啟以捕獲診斷，或保持完全關閉。"
+			"description": "啟用後可防止編輯器焦點中斷。檔案編輯會在背景進行，不會開啟 diff 檢視或搶奪焦點。您可以在 VibeX Code 進行變更時繼續不受干擾地工作。檔案可能會在不獲得焦點的情況下開啟以捕獲診斷，或保持完全關閉。"
 		},
 		"ASSISTANT_MESSAGE_PARSER": {
 			"name": "使用全新訊息解析器",
@@ -870,7 +870,7 @@
 		}
 	},
 	"modelPicker": {
-		"automaticFetch": "此擴充功能會自動從 <serviceLink>{{serviceName}}</serviceLink> 取得最新的可用模型清單。如果不確定要選哪個模型，建議使用 <defaultModelLink>{{defaultModelId}}</defaultModelLink>，這是與 Roo Code 最佳搭配的模型。您也可以搜尋「free」來檢視目前可用的免費選項。",
+		"automaticFetch": "此擴充功能會自動從 <serviceLink>{{serviceName}}</serviceLink> 取得最新的可用模型清單。如果不確定要選哪個模型，建議使用 <defaultModelLink>{{defaultModelId}}</defaultModelLink>，這是與 VibeX Code 最佳搭配的模型。您也可以搜尋「free」來檢視目前可用的免費選項。",
 		"label": "模型",
 		"searchPlaceholder": "搜尋",
 		"noMatchFound": "找不到符合的項目",
@@ -881,7 +881,7 @@
 		"feedback": "若您有任何問題或建議，歡迎至 <githubLink>github.com/Roo CodeInc/Roo Code-Code</githubLink> 提出 issue，或加入 <redditLink>reddit.com/r/Roo Code</redditLink> 或 <discordLink>discord.gg/roocode</discordLink> 討論。",
 		"telemetry": {
 			"label": "允許匿名錯誤與使用情況回報",
-			"description": "透過發送匿名使用資料和錯誤回報來協助改善 Roo Code。此遙測不會收集程式碼、Prompt 或個人資訊。查看我們的<privacyLink>隱私政策</privacyLink>以了解更多詳情。您可以隨時關閉此功能。"
+			"description": "透過發送匿名使用資料和錯誤回報來協助改善 VibeX Code。此遙測不會收集程式碼、Prompt 或個人資訊。查看我們的<privacyLink>隱私政策</privacyLink>以了解更多詳情。您可以隨時關閉此功能。"
 		},
 		"settings": {
 			"import": "匯入",

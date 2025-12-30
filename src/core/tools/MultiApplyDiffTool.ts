@@ -275,7 +275,7 @@ Original error: ${errorMessage}`
 			}
 
 			// Check if file is write-protected
-			const isWriteProtected = cline.rooProtectedController?.isWriteProtected(relPath) || false
+			const isWriteProtected = cline.vibexProtectedController?.isWriteProtected(relPath) || false
 
 			// Verify file exists
 			const absolutePath = path.resolve(cline.cwd, relPath)
@@ -301,7 +301,7 @@ Original error: ${errorMessage}`
 		if (operationsToApprove.length > 1) {
 			// Check if any files are write-protected
 			const hasProtectedFiles = operationsToApprove.some(
-				(opResult) => cline.rooProtectedController?.isWriteProtected(opResult.path) || false,
+				(opResult) => cline.vibexProtectedController?.isWriteProtected(opResult.path) || false,
 			)
 
 			// Stream batch diffs progressively for better UX
@@ -590,7 +590,7 @@ ${errorDetails ? `\nTechnical details:\n${errorDetails}\n` : ""}
 				)
 
 				// For batch operations, we've already gotten approval
-				const isWriteProtected = cline.rooProtectedController?.isWriteProtected(relPath) || false
+				const isWriteProtected = cline.vibexProtectedController?.isWriteProtected(relPath) || false
 				const sharedMessageProps: ClineSayTool = {
 					tool: "appliedDiff",
 					path: getReadablePath(cline.cwd, relPath),
@@ -636,7 +636,7 @@ ${errorDetails ? `\nTechnical details:\n${errorDetails}\n` : ""}
 					}
 
 					// Ask for approval (same for both flows)
-					const isWriteProtected = cline.rooProtectedController?.isWriteProtected(relPath) || false
+					const isWriteProtected = cline.vibexProtectedController?.isWriteProtected(relPath) || false
 					didApprove = await askApproval("tool", operationMessage, toolProgressStatus, isWriteProtected)
 
 					if (!didApprove) {

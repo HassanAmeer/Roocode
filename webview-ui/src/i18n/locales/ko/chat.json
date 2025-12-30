@@ -21,12 +21,12 @@
 		"sharePublicly": "공개적으로 공유",
 		"sharePubliclyDescription": "링크가 있는 누구나 액세스할 수 있습니다",
 		"connectToCloud": "클라우드에 연결",
-		"connectToCloudDescription": "작업을 공유하려면 Roo Code Cloud에 로그인하세요",
+		"connectToCloudDescription": "작업을 공유하려면 VibeX Code Cloud에 로그인하세요",
 		"sharingDisabledByOrganization": "조직에서 공유가 비활성화됨",
 		"shareSuccessOrganization": "조직 링크가 클립보드에 복사되었습니다",
 		"shareSuccessPublic": "공개 링크가 클립보드에 복사되었습니다",
 		"openInCloud": "Roo Code Cloud에서 작업 열기",
-		"openInCloudIntro": "어디서나 Roo를 계속 모니터링하거나 상호작용할 수 있습니다. 스캔, 클릭 또는 복사하여 열기.",
+		"openInCloudIntro": "어디서나 VibeX를 계속 모니터링하거나 상호작용할 수 있습니다. 스캔, 클릭 또는 복사하여 열기.",
 		"openApiHistory": "API 기록 열기",
 		"openUiHistory": "UI 기록 열기"
 	},
@@ -148,7 +148,7 @@
 			"403": "권한 없음. API 키는 유효하지만 공급자가 이 요청을 완료하기를 거부했습니다.",
 			"429": "너무 많은 요청입니다. 공급자에 의해 요청 제한이 적용되고 있습니다. 다음 API 호출 전에 잠깐 기다려주세요.",
 			"500": "공급자 서버 오류입니다. 공급자 쪽에 문제가 있으며 요청에는 문제가 없습니다.",
-			"unknown": "알 수 없는 API 오류입니다. Roo Code 지원팀에 문의하세요.",
+			"unknown": "알 수 없는 API 오류입니다. VibeX Code 지원팀에 문의하세요.",
 			"connection": "연결 오류입니다. 인터넷 연결이 제대로 작동하는지 확인하세요.",
 			"claudeCodeNotAuthenticated": "Claude Code를 사용하려면 로그인해야 합니다. 설정으로 이동하여 \"Claude Code에 로그인\"을 클릭하여 인증하세요."
 		}
@@ -318,17 +318,17 @@
 	},
 	"announcement": {
 		"title": "Roo Code {{version}} 출시",
-		"support": "<githubLink>GitHub</githubLink>에서 별표를 눌러 Roo Code를 응원해 주세요.",
+		"support": "<githubLink>GitHub</githubLink>에서 별표를 눌러 VibeX Code를 응원해 주세요.",
 		"stealthModel": {
-			"feature": "<bold>기간 한정 무료 스텔스 모델</bold> - Code Supernova: 이제 <bold>1M 토큰 컨텍스트 윈도우</bold>로 업그레이드되었습니다! 이미지 입력을 지원하는 다목적 에이전틱 코딩 모델, Roo Code Cloud를 통해 이용 가능.",
+			"feature": "<bold>기간 한정 무료 스텔스 모델</bold> - Code Supernova: 이제 <bold>1M 토큰 컨텍스트 윈도우</bold>로 업그레이드되었습니다! 이미지 입력을 지원하는 다목적 에이전틱 코딩 모델, VibeX Code Cloud를 통해 이용 가능.",
 			"note": "(참고: 프롬프트와 완성은 모델 제작자에 의해 기록되고 모델 개선에 사용됩니다)",
 			"connectButton": "Roo Code Cloud에 연결",
-			"selectModel": "설정에서 Roo Code Cloud 제공업체의 <code>roo/code-supernova</code>를 선택하여 시작하세요.",
+			"selectModel": "설정에서 VibeX Code Cloud 제공업체의 <code>roo/code-supernova</code>를 선택하여 시작하세요.",
 			"goToSettingsButton": "설정으로 이동"
 		},
 		"release": {
 			"heading": "새로운 기능:",
-			"skills": "Roo는 이제 <skillsLink>Agent Skills</skillsLink>를 지원합니다 - Roo의 기능을 확장하기 위한 프롬프트, 도구 및 리소스의 재사용 가능한 패키지입니다.",
+			"skills": "Roo는 이제 <skillsLink>Agent Skills</skillsLink>를 지원합니다 - VibeX의 기능을 확장하기 위한 프롬프트, 도구 및 리소스의 재사용 가능한 패키지입니다.",
 			"nativeToolCalling": "모든 새 작업에 이제 네이티브 도구 호출이 필요합니다. <blogLink>자세히 알아보기</blogLink> 동기 및 문제가 발생한 경우 수행할 작업에 대해."
 		},
 		"cloudAgents": {

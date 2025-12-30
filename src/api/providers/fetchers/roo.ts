@@ -1,4 +1,4 @@
-import { RooModelsResponseSchema, type ModelInfo } from "@roo-code/types"
+import { VibeXModelsResponseSchema, type ModelInfo } from "@roo-code/types"
 
 import type { ModelRecord } from "../../../shared/api"
 import { parseApiPrice } from "../../../shared/cost"
@@ -63,7 +63,7 @@ export async function getRooModels(baseUrl: string, apiKey?: string): Promise<Mo
 			const models: ModelRecord = {}
 
 			// Validate response against schema
-			const parsed = RooModelsResponseSchema.safeParse(data)
+			const parsed = VibeXModelsResponseSchema.safeParse(data)
 
 			if (!parsed.success) {
 				console.error("Error fetching Vibex Cloud models: Unexpected response format", data)

@@ -9,7 +9,7 @@
   <em>Dapatkan bantuan cepat → <a href="https://discord.gg/roocode">Gabung Discord</a> • Lebih suka asinkron? → <a href="https://www.reddit.com/r/RooCode/">Gabung r/RooCode</a></em>
 </p>
 
-# Roo Code
+# VibeX Code
 
 > Tim dev bertenaga AI-mu, langsung di editor kamu
 
@@ -35,11 +35,11 @@
 - [简体中文](../zh-CN/README.md)
 - [繁體中文](../zh-TW/README.md)
 - ...
-  </details>
+    </details>
 
 ---
 
-## Apa yang Bisa Roo Code Lakukan Untuk ANDA?
+## Apa yang Bisa VibeX Code Lakukan Untuk ANDA?
 
 - Menghasilkan Kode dari deskripsi bahasa alami
 - Beradaptasi dengan Mode: Kode, Arsitek, Tanya, Debug, dan Mode Kustom
@@ -58,7 +58,7 @@ Roo Code beradaptasi dengan cara Anda bekerja, bukan sebaliknya:
 - Mode Tanya: jawaban cepat, penjelasan, dan dokumen
 - Mode Debug: melacak masalah, menambahkan log, mengisolasi akar penyebab
 - Mode Kustom: buat mode khusus untuk tim atau alur kerja Anda
-- Roomote Control: Roomote Control memungkinkan kamu mengontrol dari jarak jauh tugas yang berjalan di VS Code lokalmu.
+- VibeXmote Control: VibeXmote Control memungkinkan kamu mengontrol dari jarak jauh tugas yang berjalan di VS Code lokalmu.
 
 Pelajari lebih lanjut: [Menggunakan Mode](https://docs.roocode.com/basic-usage/using-modes) • [Mode Kustom](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
 
@@ -66,10 +66,10 @@ Pelajari lebih lanjut: [Menggunakan Mode](https://docs.roocode.com/basic-usage/u
 
 <div align="center">
 
-|                                                                                                                                                                           |                                                                                                                                                                             |                                                                                                                                                                               |
-| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| <a href="https://www.youtube.com/watch?v=Mcq3r1EPZ-4"><img src="https://img.youtube.com/vi/Mcq3r1EPZ-4/maxresdefault.jpg" width="100%"></a><br><b>Menginstal Roo Code</b> | <a href="https://www.youtube.com/watch?v=ZBML8h5cCgo"><img src="https://img.youtube.com/vi/ZBML8h5cCgo/maxresdefault.jpg" width="100%"></a><br><b>Mengonfigurasi Profil</b> | <a href="https://www.youtube.com/watch?v=r1bpod1VWhg"><img src="https://img.youtube.com/vi/r1bpod1VWhg/maxresdefault.jpg" width="100%"></a><br><b>Pengindeksan Basis Kode</b> |
-|     <a href="https://www.youtube.com/watch?v=iiAv1eKOaxk"><img src="https://img.youtube.com/vi/iiAv1eKOaxk/maxresdefault.jpg" width="100%"></a><br><b>Mode Kustom</b>     |    <a href="https://www.youtube.com/watch?v=Ho30nyY332E"><img src="https://img.youtube.com/vi/Ho30nyY332E/maxresdefault.jpg" width="100%"></a><br><b>Pos Pemeriksaan</b>    |      <a href="https://www.youtube.com/watch?v=6h5vB9PpoPk"><img src="https://img.youtube.com/vi/6h5vB9PpoPk/maxresdefault.jpg" width="100%"></a><br><b>Daftar Tugas</b>       |
+|                                                                                                                                                                             |                                                                                                                                                                             |                                                                                                                                                                               |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| <a href="https://www.youtube.com/watch?v=Mcq3r1EPZ-4"><img src="https://img.youtube.com/vi/Mcq3r1EPZ-4/maxresdefault.jpg" width="100%"></a><br><b>Menginstal VibeX Code</b> | <a href="https://www.youtube.com/watch?v=ZBML8h5cCgo"><img src="https://img.youtube.com/vi/ZBML8h5cCgo/maxresdefault.jpg" width="100%"></a><br><b>Mengonfigurasi Profil</b> | <a href="https://www.youtube.com/watch?v=r1bpod1VWhg"><img src="https://img.youtube.com/vi/r1bpod1VWhg/maxresdefault.jpg" width="100%"></a><br><b>Pengindeksan Basis Kode</b> |
+|      <a href="https://www.youtube.com/watch?v=iiAv1eKOaxk"><img src="https://img.youtube.com/vi/iiAv1eKOaxk/maxresdefault.jpg" width="100%"></a><br><b>Mode Kustom</b>      |    <a href="https://www.youtube.com/watch?v=Ho30nyY332E"><img src="https://img.youtube.com/vi/Ho30nyY332E/maxresdefault.jpg" width="100%"></a><br><b>Pos Pemeriksaan</b>    |      <a href="https://www.youtube.com/watch?v=6h5vB9PpoPk"><img src="https://img.youtube.com/vi/6h5vB9PpoPk/maxresdefault.jpg" width="100%"></a><br><b>Daftar Tugas</b>       |
 
 </div>
 <p align="center">
@@ -78,7 +78,7 @@ Pelajari lebih lanjut: [Menggunakan Mode](https://docs.roocode.com/basic-usage/u
 
 ## Sumber daya
 
-- **[Dokumentasi](https://docs.roocode.com):** Panduan resmi untuk menginstal, mengonfigurasi, dan menguasai Roo Code.
+- **[Dokumentasi](https://docs.roocode.com):** Panduan resmi untuk menginstal, mengonfigurasi, dan menguasai VibeX Code.
 - **[Saluran YouTube](https://youtube.com/@roocodeyt?feature=shared):** Tonton tutorial dan lihat fitur-fitur dalam aksi.
 - **[Server Discord](https://discord.gg/roocode):** Bergabunglah dengan komunitas untuk bantuan dan diskusi real-time.
 - **[Komunitas Reddit](https://www.reddit.com/r/RooCode):** Bagikan pengalaman Anda dan lihat apa yang sedang dibangun orang lain.
@@ -103,13 +103,13 @@ pnpm install
 
 3. **Jalankan ekstensi**:
 
-Ada beberapa cara untuk menjalankan ekstensi Roo Code:
+Ada beberapa cara untuk menjalankan ekstensi VibeX Code:
 
 ### Mode Pengembangan (F5)
 
 Untuk pengembangan aktif, gunakan debugging bawaan VSCode:
 
-Tekan `F5` (atau buka **Run** → **Start Debugging**) di VSCode. Ini akan membuka jendela VSCode baru dengan ekstensi Roo Code berjalan.
+Tekan `F5` (atau buka **Run** → **Start Debugging**) di VSCode. Ini akan membuka jendela VSCode baru dengan ekstensi VibeX Code berjalan.
 
 - Perubahan pada webview akan segera muncul.
 - Perubahan pada ekstensi inti juga akan di-hot reload secara otomatis.
@@ -157,7 +157,7 @@ Kami menggunakan [changesets](https://github.com/changesets/changesets) untuk pe
 
 ## Penafian
 
-**Harap dicatat** bahwa Roo Code, Inc. **tidak** membuat pernyataan atau jaminan apapun mengenai kode, model, atau alat lain yang disediakan atau tersedia sehubungan dengan Roo Code, alat pihak ketiga terkait, atau output yang dihasilkan. Anda menanggung **semua risiko** yang terkait dengan penggunaan alat atau output tersebut; alat tersebut disediakan atas dasar **"SEBAGAIMANA ADANYA"** dan **"SEBAGAIMANA TERSEDIA"**. Risiko tersebut dapat mencakup, namun tidak terbatas pada, pelanggaran kekayaan intelektual, kerentanan atau serangan siber, bias, ketidakakuratan, kesalahan, cacat, virus, waktu henti, kehilangan atau kerusakan properti, dan/atau cedera pribadi. Anda sepenuhnya bertanggung jawab atas penggunaan Anda atas alat atau output tersebut (termasuk, namun tidak terbatas pada, legalitas, kesesuaian, dan hasilnya).
+**Harap dicatat** bahwa VibeX Code, Inc. **tidak** membuat pernyataan atau jaminan apapun mengenai kode, model, atau alat lain yang disediakan atau tersedia sehubungan dengan VibeX Code, alat pihak ketiga terkait, atau output yang dihasilkan. Anda menanggung **semua risiko** yang terkait dengan penggunaan alat atau output tersebut; alat tersebut disediakan atas dasar **"SEBAGAIMANA ADANYA"** dan **"SEBAGAIMANA TERSEDIA"**. Risiko tersebut dapat mencakup, namun tidak terbatas pada, pelanggaran kekayaan intelektual, kerentanan atau serangan siber, bias, ketidakakuratan, kesalahan, cacat, virus, waktu henti, kehilangan atau kerusakan properti, dan/atau cedera pribadi. Anda sepenuhnya bertanggung jawab atas penggunaan Anda atas alat atau output tersebut (termasuk, namun tidak terbatas pada, legalitas, kesesuaian, dan hasilnya).
 
 ---
 
@@ -169,8 +169,8 @@ Kami menyukai kontribusi komunitas! Mulailah dengan membaca [CONTRIBUTING.md](CO
 
 ## Lisensi
 
-[Apache 2.0 © 2025 Roo Code, Inc.](../../LICENSE)
+[Apache 2.0 © 2025 VibeX Code, Inc.](../../LICENSE)
 
 ---
 
-**Selamat menikmati Roo Code!** Baik Anda mengendalikannya dengan ketat atau membiarkannya berkeliaran secara otonom, kami tidak sabar untuk melihat apa yang Anda bangun. Jika Anda memiliki pertanyaan atau ide fitur, kunjungi [komunitas Reddit](https://www.reddit.com/r/RooCode/) atau [Discord](https://discord.gg/roocode) kami. Selamat membuat kode!
+**Selamat menikmati VibeX Code!** Baik Anda mengendalikannya dengan ketat atau membiarkannya berkeliaran secara otonom, kami tidak sabar untuk melihat apa yang Anda bangun. Jika Anda memiliki pertanyaan atau ide fitur, kunjungi [komunitas Reddit](https://www.reddit.com/r/RooCode/) atau [Discord](https://discord.gg/roocode) kami. Selamat membuat kode!

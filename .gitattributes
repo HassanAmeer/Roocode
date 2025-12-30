@@ -11,7 +11,7 @@ src/package.nls.*.json linguist-generated=true
 # Exclude the base English file from being marked as generated
 src/package.nls.json linguist-generated=false
 
-# Root locales directory (contains only non-English translations)
+# VibeXt locales directory (contains only non-English translations)
 locales/** linguist-generated=true
 
 # Mark all locale directories as generated first

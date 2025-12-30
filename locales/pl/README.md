@@ -9,7 +9,7 @@
   <em>Uzyskaj szybką pomoc → <a href="https://discord.gg/roocode">Dołącz do Discorda</a> • Wolisz asynchronicznie? → <a href="https://www.reddit.com/r/RooCode/">Dołącz do r/RooCode</a></em>
 </p>
 
-# Roo Code
+# VibeX Code
 
 > Twój zespół deweloperski zasilany AI — prosto w edytorze
 
@@ -35,11 +35,11 @@
 - [简体中文](../zh-CN/README.md)
 - [繁體中文](../zh-TW/README.md)
 - ...
-  </details>
+    </details>
 
 ---
 
-## Co Roo Code może zrobić dla CIEBIE?
+## Co VibeX Code może zrobić dla CIEBIE?
 
 - Generowanie kodu z opisów w języku naturalnym
 - Dostosuj się za pomocą trybów: Kod, Architekt, Zapytaj, Debugowanie i Tryby niestandardowe
@@ -58,7 +58,7 @@ Roo Code dostosowuje się do Twojego sposobu pracy, a nie odwrotnie:
 - Tryb Zapytaj: szybkie odpowiedzi, wyjaśnienia i dokumenty
 - Tryb Debugowanie: śledzenie problemów, dodawanie logów, izolowanie przyczyn źródłowych
 - Tryby niestandardowe: buduj specjalistyczne tryby dla swojego zespołu lub przepływu pracy
-- Roomote Control: Roomote Control pozwala zdalnie sterować zadaniami uruchomionymi na twojej lokalnej instancji VS Code.
+- VibeXmote Control: VibeXmote Control pozwala zdalnie sterować zadaniami uruchomionymi na twojej lokalnej instancji VS Code.
 
 Więcej: [Korzystanie z trybów](https://docs.roocode.com/basic-usage/using-modes) • [Tryby niestandardowe](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
 
@@ -66,10 +66,10 @@ Więcej: [Korzystanie z trybów](https://docs.roocode.com/basic-usage/using-mode
 
 <div align="center">
 
-|                                                                                                                                                                            |                                                                                                                                                                            |                                                                                                                                                                              |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| <a href="https://www.youtube.com/watch?v=Mcq3r1EPZ-4"><img src="https://img.youtube.com/vi/Mcq3r1EPZ-4/maxresdefault.jpg" width="100%"></a><br><b>Instalacja Roo Code</b>  | <a href="https://www.youtube.com/watch?v=ZBML8h5cCgo"><img src="https://img.youtube.com/vi/ZBML8h5cCgo/maxresdefault.jpg" width="100%"></a><br><b>Konfiguracja profili</b> | <a href="https://www.youtube.com/watch?v=r1bpod1VWhg"><img src="https://img.youtube.com/vi/r1bpod1VWhg/maxresdefault.jpg" width="100%"></a><br><b>Indeksowanie bazy kodu</b> |
-| <a href="https://www.youtube.com/watch?v=iiAv1eKOaxk"><img src="https://img.youtube.com/vi/iiAv1eKOaxk/maxresdefault.jpg" width="100%"></a><br><b>Tryby niestandardowe</b> |   <a href="https://www.youtube.com/watch?v=Ho30nyY332E"><img src="https://img.youtube.com/vi/Ho30nyY332E/maxresdefault.jpg" width="100%"></a><br><b>Punkty kontrolne</b>   |      <a href="https://www.youtube.com/watch?v=6h5vB9PpoPk"><img src="https://img.youtube.com/vi/6h5vB9PpoPk/maxresdefault.jpg" width="100%"></a><br><b>Listy zadań</b>       |
+|                                                                                                                                                                             |                                                                                                                                                                            |                                                                                                                                                                              |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| <a href="https://www.youtube.com/watch?v=Mcq3r1EPZ-4"><img src="https://img.youtube.com/vi/Mcq3r1EPZ-4/maxresdefault.jpg" width="100%"></a><br><b>Instalacja VibeX Code</b> | <a href="https://www.youtube.com/watch?v=ZBML8h5cCgo"><img src="https://img.youtube.com/vi/ZBML8h5cCgo/maxresdefault.jpg" width="100%"></a><br><b>Konfiguracja profili</b> | <a href="https://www.youtube.com/watch?v=r1bpod1VWhg"><img src="https://img.youtube.com/vi/r1bpod1VWhg/maxresdefault.jpg" width="100%"></a><br><b>Indeksowanie bazy kodu</b> |
+| <a href="https://www.youtube.com/watch?v=iiAv1eKOaxk"><img src="https://img.youtube.com/vi/iiAv1eKOaxk/maxresdefault.jpg" width="100%"></a><br><b>Tryby niestandardowe</b>  |   <a href="https://www.youtube.com/watch?v=Ho30nyY332E"><img src="https://img.youtube.com/vi/Ho30nyY332E/maxresdefault.jpg" width="100%"></a><br><b>Punkty kontrolne</b>   |      <a href="https://www.youtube.com/watch?v=6h5vB9PpoPk"><img src="https://img.youtube.com/vi/6h5vB9PpoPk/maxresdefault.jpg" width="100%"></a><br><b>Listy zadań</b>       |
 
 </div>
 <p align="center">
@@ -78,7 +78,7 @@ Więcej: [Korzystanie z trybów](https://docs.roocode.com/basic-usage/using-mode
 
 ## Zasoby
 
-- **[Dokumentacja](https://docs.roocode.com):** Oficjalny przewodnik po instalacji, konfiguracji i opanowaniu Roo Code.
+- **[Dokumentacja](https://docs.roocode.com):** Oficjalny przewodnik po instalacji, konfiguracji i opanowaniu VibeX Code.
 - **[Kanał YouTube](https://youtube.com/@roocodeyt?feature=shared):** Oglądaj samouczki i zobacz funkcje w akcji.
 - **[Serwer Discord](https://discord.gg/roocode):** Dołącz do społeczności, aby uzyskać pomoc i dyskutować w czasie rzeczywistym.
 - **[Społeczność Reddit](https://www.reddit.com/r/RooCode):** Dziel się swoimi doświadczeniami i zobacz, co budują inni.
@@ -103,13 +103,13 @@ pnpm install
 
 3. **Uruchom rozszerzenie**:
 
-Istnieje kilka sposobów na uruchomienie rozszerzenia Roo Code:
+Istnieje kilka sposobów na uruchomienie rozszerzenia VibeX Code:
 
 ### Tryb deweloperski (F5)
 
 Do aktywnego programowania użyj wbudowanego debugowania VSCode:
 
-Naciśnij `F5` (lub przejdź do **Uruchom** → **Rozpocznij debugowanie**) w VSCode. Otworzy to nowe okno VSCode z uruchomionym rozszerzeniem Roo Code.
+Naciśnij `F5` (lub przejdź do **Uruchom** → **Rozpocznij debugowanie**) w VSCode. Otworzy to nowe okno VSCode z uruchomionym rozszerzeniem VibeX Code.
 
 - Zmiany w widoku internetowym pojawią się natychmiast.
 - Zmiany w rdzeniu rozszerzenia również zostaną automatycznie przeładowane na gorąco.
@@ -157,7 +157,7 @@ Używamy [changesets](https://github.com/changesets/changesets) do wersjonowania
 
 ## Zastrzeżenie
 
-**Uwaga** Roo Code, Inc. **nie** składa żadnych oświadczeń ani nie udziela żadnych gwarancji dotyczących jakiegokolwiek kodu, modeli lub innych narzędzi dostarczonych lub udostępnionych w związku z Roo Code, jakimikolwiek powiązanymi narzędziami stron trzecich ani żadnymi wynikami. Użytkownik przyjmuje na siebie **wszelkie ryzyko** związane z korzystaniem z takich narzędzi lub wyników; takie narzędzia są dostarczane na zasadzie **"TAK JAK JEST"** i **"W MIARĘ DOSTĘPNOŚCI"**. Takie ryzyko może obejmować, bez ograniczeń, naruszenie własności intelektualnej, luki w zabezpieczeniach cybernetycznych lub ataki, stronniczość, niedokładności, błędy, wady, wirusy, przestoje, utratę lub uszkodzenie mienia i/lub obrażenia ciała. Użytkownik ponosi wyłączną odpowiedzialność za korzystanie z takich narzędzi lub wyników (w tym, bez ograniczeń, za ich legalność, stosowność i wyniki).
+**Uwaga** VibeX Code, Inc. **nie** składa żadnych oświadczeń ani nie udziela żadnych gwarancji dotyczących jakiegokolwiek kodu, modeli lub innych narzędzi dostarczonych lub udostępnionych w związku z VibeX Code, jakimikolwiek powiązanymi narzędziami stron trzecich ani żadnymi wynikami. Użytkownik przyjmuje na siebie **wszelkie ryzyko** związane z korzystaniem z takich narzędzi lub wyników; takie narzędzia są dostarczane na zasadzie **"TAK JAK JEST"** i **"W MIARĘ DOSTĘPNOŚCI"**. Takie ryzyko może obejmować, bez ograniczeń, naruszenie własności intelektualnej, luki w zabezpieczeniach cybernetycznych lub ataki, stronniczość, niedokładności, błędy, wady, wirusy, przestoje, utratę lub uszkodzenie mienia i/lub obrażenia ciała. Użytkownik ponosi wyłączną odpowiedzialność za korzystanie z takich narzędzi lub wyników (w tym, bez ograniczeń, za ich legalność, stosowność i wyniki).
 
 ---
 
@@ -169,8 +169,8 @@ Uwielbiamy wkłady społeczności! Zacznij od przeczytania naszego pliku [CONTRI
 
 ## Licencja
 
-[Apache 2.0 © 2025 Roo Code, Inc.](../../LICENSE)
+[Apache 2.0 © 2025 VibeX Code, Inc.](../../LICENSE)
 
 ---
 
-**Miłej zabawy z Roo Code!** Trzymaj go na krótkiej smyczy albo pozwól działać autonomicznie — nie możemy się doczekać, co zbudujesz. Masz pytania lub pomysły na funkcje? Wpadnij na naszą [społeczność Reddit](https://www.reddit.com/r/RooCode/) lub [Discord](https://discord.gg/roocode). Miłego kodowania!
+**Miłej zabawy z VibeX Code!** Trzymaj go na krótkiej smyczy albo pozwól działać autonomicznie — nie możemy się doczekać, co zbudujesz. Masz pytania lub pomysły na funkcje? Wpadnij na naszą [społeczność Reddit](https://www.reddit.com/r/RooCode/) lub [Discord](https://discord.gg/roocode). Miłego kodowania!

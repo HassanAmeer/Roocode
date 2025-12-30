@@ -119,7 +119,7 @@ describe("searchReplaceTool", () => {
 		mockCline.vibexIgnoreController = {
 			validateAccess: vi.fn().mockReturnValue(true),
 		}
-		mockCline.rooProtectedController = {
+		mockCline.vibexProtectedController = {
 			isWriteProtected: vi.fn().mockReturnValue(false),
 		}
 		mockCline.diffViewProvider = {

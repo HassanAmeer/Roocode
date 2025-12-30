@@ -1,5 +1,5 @@
 {
-	"greeting": "欢迎使用 Roo Code",
+	"greeting": "欢迎使用 VibeX Code",
 	"task": {
 		"title": "任务",
 		"expand": "展开任务",
@@ -21,12 +21,12 @@
 		"sharePublicly": "公开分享",
 		"sharePubliclyDescription": "任何拥有链接的人都可访问",
 		"connectToCloud": "连接到云端",
-		"connectToCloudDescription": "登录 Roo Code Cloud 以分享任务",
+		"connectToCloudDescription": "登录 VibeX Code Cloud 以分享任务",
 		"sharingDisabledByOrganization": "组织已禁用分享功能",
 		"shareSuccessOrganization": "组织链接已复制到剪贴板",
 		"shareSuccessPublic": "公开链接已复制到剪贴板",
-		"openInCloud": "在 Roo Code Cloud 中打开任务",
-		"openInCloudIntro": "从任何地方继续监控或与 Roo Code 交互。扫描、点击或复制以打开。",
+		"openInCloud": "在 VibeX Code Cloud 中打开任务",
+		"openInCloudIntro": "从任何地方继续监控或与 VibeX Code 交互。扫描、点击或复制以打开。",
 		"openApiHistory": "打开 API 历史",
 		"openUiHistory": "打开 UI 历史"
 	},
@@ -148,7 +148,7 @@
 			"403": "无权限。您的 API 密钥有效，但提供商拒绝完成此请求。",
 			"429": "请求过于频繁。提供商已对您的请求进行速率限制。请在下一次 API 调用前稍候。",
 			"500": "提供商服务器错误。提供商端出现问题，您的请求无问题。",
-			"unknown": "未知 API 错误。请联系 Roo Code 支持。",
+			"unknown": "未知 API 错误。请联系 VibeX Code 支持。",
 			"connection": "连接错误。确保您有可用的互联网连接。",
 			"claudeCodeNotAuthenticated": "你需要登录才能使用 Claude Code。前往设置并点击「登录到 Claude Code」进行身份验证。"
 		}
@@ -319,17 +319,17 @@
 	},
 	"announcement": {
 		"title": "Roo Code {{version}} 已发布",
-		"support": "请在 <githubLink>GitHub</githubLink> 上为我们点星支持 Roo Code。",
+		"support": "请在 <githubLink>GitHub</githubLink> 上为我们点星支持 VibeX Code。",
 		"stealthModel": {
-			"feature": "<bold>限时免费隐形模型</bold> - Code Supernova：现已升级为 <bold>1M Token 上下文窗口</bold>！一个支持图像输入的多功能代理编程模型，通过 Roo Code Cloud 提供。",
+			"feature": "<bold>限时免费隐形模型</bold> - Code Supernova：现已升级为 <bold>1M Token 上下文窗口</bold>！一个支持图像输入的多功能代理编程模型，通过 VibeX Code Cloud 提供。",
 			"note": "(注意：提示词和补全内容会被模型创建者记录并用于改进模型)",
-			"connectButton": "连接到 Roo Code Cloud",
-			"selectModel": "在设置中从 Roo Code Cloud 提供商选择 <code>roo/code-supernova</code> 开始使用。",
+			"connectButton": "连接到 VibeX Code Cloud",
+			"selectModel": "在设置中从 VibeX Code Cloud 提供商选择 <code>roo/code-supernova</code> 开始使用。",
 			"goToSettingsButton": "前往设置"
 		},
 		"release": {
 			"heading": "新增功能：",
-			"skills": "Roo Code 现支持 <skillsLink>Agent Skills</skillsLink> - 可复用的提示词、工具和资源包，扩展 Roo Code 的功能。",
+			"skills": "Roo Code 现支持 <skillsLink>Agent Skills</skillsLink> - 可复用的提示词、工具和资源包，扩展 VibeX Code 的功能。",
 			"nativeToolCalling": "所有新任务现在需要使用原生工具调用。<blogLink>了解更多</blogLink>相关信息和解决方案。"
 		},
 		"cloudAgents": {

@@ -62,7 +62,7 @@ export class WriteToFileTool extends BaseTool<"write_to_file"> {
 			return
 		}
 
-		const isWriteProtected = task.rooProtectedController?.isWriteProtected(relPath) || false
+		const isWriteProtected = task.vibexProtectedController?.isWriteProtected(relPath) || false
 
 		let fileExists: boolean
 		const absolutePath = path.resolve(task.cwd, relPath)
@@ -233,7 +233,7 @@ export class WriteToFileTool extends BaseTool<"write_to_file"> {
 			await createDirectoriesForFile(absolutePath)
 		}
 
-		const isWriteProtected = task.rooProtectedController?.isWriteProtected(relPath) || false
+		const isWriteProtected = task.vibexProtectedController?.isWriteProtected(relPath) || false
 		const fullPath = absolutePath
 		const isOutsideWorkspace = isPathOutsideWorkspace(fullPath)
 

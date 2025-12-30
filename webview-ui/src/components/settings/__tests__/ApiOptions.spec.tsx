@@ -246,7 +246,7 @@ vi.mock("../providers/Vibex", () => ({
 	),
 }))
 
-// Mock RooBalanceDisplay for tests
+// Mock VibeXBalanceDisplay for tests
 vi.mock("../providers/RooBalanceDisplay", () => ({
 	RooBalanceDisplay: () => <div data-testid="roo-balance-display">Balance: $10.00</div>,
 }))

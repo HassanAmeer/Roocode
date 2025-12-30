@@ -89,7 +89,7 @@ export function InstallSection({ downloads }: InstallSectionProps) {
 										<div className="overflow-x-auto bg-background/50 dark:bg-background/30">
 											<pre className="p-4">
 												<code className="whitespace-pre-wrap break-all text-sm font-mono text-foreground sm:break-normal sm:text-base">
-													code --install-extension RooVeterinaryInc.roo-cline
+													code --install-extension VibeXVeterinaryInc.roo-cline
 												</code>
 											</pre>
 										</div>

@@ -9,7 +9,7 @@
   <em>Nhận trợ giúp nhanh → <a href="https://discord.gg/roocode">Tham gia Discord</a> • Thích không đồng bộ? → <a href="https://www.reddit.com/r/RooCode/">Tham gia r/RooCode</a></em>
 </p>
 
-# Roo Code
+# VibeX Code
 
 > Đội ngũ dev dùng AI của bạn, ngay trong trình chỉnh sửa
 
@@ -35,11 +35,11 @@
 - [简体中文](../zh-CN/README.md)
 - [繁體中文](../zh-TW/README.md)
 - ...
-  </details>
+    </details>
 
 ---
 
-## Roo Code có thể làm gì cho BẠN?
+## VibeX Code có thể làm gì cho BẠN?
 
 - Tạo mã từ mô tả ngôn ngữ tự nhiên
 - Thích ứng với các Chế độ: Mã, Kiến trúc sư, Hỏi, Gỡ lỗi và Chế độ tùy chỉnh
@@ -58,7 +58,7 @@ Roo Code thích ứng với cách bạn làm việc, chứ không phải ngượ
 - Chế độ Hỏi: câu trả lời nhanh, giải thích và tài liệu
 - Chế độ Gỡ lỗi: theo dõi sự cố, thêm nhật ký, cô lập nguyên nhân gốc rễ
 - Chế độ Tùy chỉnh: xây dựng các chế độ chuyên biệt cho nhóm hoặc quy trình làm việc của bạn
-- Roomote Control: Roomote Control cho phép bạn điều khiển từ xa các tác vụ đang chạy trên VS Code cục bộ của bạn.
+- VibeXmote Control: VibeXmote Control cho phép bạn điều khiển từ xa các tác vụ đang chạy trên VS Code cục bộ của bạn.
 
 Xem thêm: [Sử dụng Chế độ](https://docs.roocode.com/basic-usage/using-modes) • [Chế độ tùy chỉnh](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
 
@@ -66,10 +66,10 @@ Xem thêm: [Sử dụng Chế độ](https://docs.roocode.com/basic-usage/using-
 
 <div align="center">
 
-|                                                                                                                                                                        |                                                                                                                                                                           |                                                                                                                                                                              |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| <a href="https://www.youtube.com/watch?v=Mcq3r1EPZ-4"><img src="https://img.youtube.com/vi/Mcq3r1EPZ-4/maxresdefault.jpg" width="100%"></a><br><b>Cài đặt Roo Code</b> | <a href="https://www.youtube.com/watch?v=ZBML8h5cCgo"><img src="https://img.youtube.com/vi/ZBML8h5cCgo/maxresdefault.jpg" width="100%"></a><br><b>Định cấu hình Hồ sơ</b> |  <a href="https://www.youtube.com/watch?v=r1bpod1VWhg"><img src="https://img.youtube.com/vi/r1bpod1VWhg/maxresdefault.jpg" width="100%"></a><br><b>Lập chỉ mục cơ sở mã</b>  |
-| <a href="https://www.youtube.com/watch?v=iiAv1eKOaxk"><img src="https://img.youtube.com/vi/iiAv1eKOaxk/maxresdefault.jpg" width="100%"></a><br><b>Chế độ tùy chỉnh</b> |    <a href="https://www.youtube.com/watch?v=Ho30nyY332E"><img src="https://img.youtube.com/vi/Ho30nyY332E/maxresdefault.jpg" width="100%"></a><br><b>Điểm kiểm tra</b>    | <a href="https://www.youtube.com/watch?v=6h5vB9PpoPk"><img src="https://img.youtube.com/vi/6h5vB9PpoPk/maxresdefault.jpg" width="100%"></a><br><b>Danh sách việc cần làm</b> |
+|                                                                                                                                                                          |                                                                                                                                                                           |                                                                                                                                                                              |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| <a href="https://www.youtube.com/watch?v=Mcq3r1EPZ-4"><img src="https://img.youtube.com/vi/Mcq3r1EPZ-4/maxresdefault.jpg" width="100%"></a><br><b>Cài đặt VibeX Code</b> | <a href="https://www.youtube.com/watch?v=ZBML8h5cCgo"><img src="https://img.youtube.com/vi/ZBML8h5cCgo/maxresdefault.jpg" width="100%"></a><br><b>Định cấu hình Hồ sơ</b> |  <a href="https://www.youtube.com/watch?v=r1bpod1VWhg"><img src="https://img.youtube.com/vi/r1bpod1VWhg/maxresdefault.jpg" width="100%"></a><br><b>Lập chỉ mục cơ sở mã</b>  |
+|  <a href="https://www.youtube.com/watch?v=iiAv1eKOaxk"><img src="https://img.youtube.com/vi/iiAv1eKOaxk/maxresdefault.jpg" width="100%"></a><br><b>Chế độ tùy chỉnh</b>  |    <a href="https://www.youtube.com/watch?v=Ho30nyY332E"><img src="https://img.youtube.com/vi/Ho30nyY332E/maxresdefault.jpg" width="100%"></a><br><b>Điểm kiểm tra</b>    | <a href="https://www.youtube.com/watch?v=6h5vB9PpoPk"><img src="https://img.youtube.com/vi/6h5vB9PpoPk/maxresdefault.jpg" width="100%"></a><br><b>Danh sách việc cần làm</b> |
 
 </div>
 <p align="center">
@@ -78,7 +78,7 @@ Xem thêm: [Sử dụng Chế độ](https://docs.roocode.com/basic-usage/using-
 
 ## Tài nguyên
 
-- **[Tài liệu](https://docs.roocode.com):** Hướng dẫn chính thức để cài đặt, cấu hình và sử dụng thành thạo Roo Code.
+- **[Tài liệu](https://docs.roocode.com):** Hướng dẫn chính thức để cài đặt, cấu hình và sử dụng thành thạo VibeX Code.
 - **[Kênh YouTube](https://youtube.com/@roocodeyt?feature=shared):** Xem các video hướng dẫn và các tính năng đang hoạt động.
 - **[Máy chủ Discord](https://discord.gg/roocode):** Tham gia cộng đồng để được trợ giúp và thảo luận trong thời gian thực.
 - **[Cộng đồng Reddit](https://www.reddit.com/r/RooCode):** Chia sẻ kinh nghiệm của bạn và xem những người khác đang xây dựng gì.
@@ -103,13 +103,13 @@ pnpm install
 
 3. **Chạy phần mở rộng**:
 
-Có một số cách để chạy phần mở rộng Roo Code:
+Có một số cách để chạy phần mở rộng VibeX Code:
 
 ### Chế độ phát triển (F5)
 
 Để phát triển tích cực, hãy sử dụng tính năng gỡ lỗi tích hợp của VSCode:
 
-Nhấn `F5` (hoặc vào **Run** → **Start Debugging**) trong VSCode. Thao tác này sẽ mở một cửa sổ VSCode mới với phần mở rộng Roo Code đang chạy.
+Nhấn `F5` (hoặc vào **Run** → **Start Debugging**) trong VSCode. Thao tác này sẽ mở một cửa sổ VSCode mới với phần mở rộng VibeX Code đang chạy.
 
 - Các thay đổi đối với webview sẽ xuất hiện ngay lập tức.
 - Các thay đổi đối với phần mở rộng cốt lõi cũng sẽ tự động được tải lại nóng.
@@ -157,7 +157,7 @@ Chúng tôi sử dụng [changesets](https://github.com/changesets/changesets) �
 
 ## Tuyên bố miễn trừ trách nhiệm
 
-**Xin lưu ý** rằng Roo Code, Inc. **không** đưa ra bất kỳ tuyên bố hay bảo đảm nào liên quan đến bất kỳ mã, mô hình hoặc công cụ nào khác được cung cấp hoặc cung cấp liên quan đến Roo Code, bất kỳ công cụ nào của bên thứ ba được liên kết hoặc bất kỳ kết quả đầu ra nào. Bạn chịu **mọi rủi ro** liên quan đến việc sử dụng bất kỳ công cụ hoặc kết quả đầu ra nào như vậy; các công cụ đó được cung cấp trên cơ sở **"NGUYÊN TRẠNG"** và **"NHƯ HIỆN CÓ"**. Những rủi ro đó có thể bao gồm, nhưng không giới hạn ở, vi phạm sở hữu trí tuệ, các lỗ hổng hoặc tấn công mạng, thiên vị, không chính xác, lỗi, khiếm khuyết, vi-rút, thời gian ngừng hoạt động, mất mát hoặc hư hỏng tài sản và/hoặc thương tích cá nhân. Bạn hoàn toàn chịu trách nhiệm về việc sử dụng bất kỳ công cụ hoặc kết quả đầu ra nào đó (bao gồm, nhưng không giới hạn ở, tính hợp pháp, tính phù hợp và kết quả của chúng).
+**Xin lưu ý** rằng VibeX Code, Inc. **không** đưa ra bất kỳ tuyên bố hay bảo đảm nào liên quan đến bất kỳ mã, mô hình hoặc công cụ nào khác được cung cấp hoặc cung cấp liên quan đến VibeX Code, bất kỳ công cụ nào của bên thứ ba được liên kết hoặc bất kỳ kết quả đầu ra nào. Bạn chịu **mọi rủi ro** liên quan đến việc sử dụng bất kỳ công cụ hoặc kết quả đầu ra nào như vậy; các công cụ đó được cung cấp trên cơ sở **"NGUYÊN TRẠNG"** và **"NHƯ HIỆN CÓ"**. Những rủi ro đó có thể bao gồm, nhưng không giới hạn ở, vi phạm sở hữu trí tuệ, các lỗ hổng hoặc tấn công mạng, thiên vị, không chính xác, lỗi, khiếm khuyết, vi-rút, thời gian ngừng hoạt động, mất mát hoặc hư hỏng tài sản và/hoặc thương tích cá nhân. Bạn hoàn toàn chịu trách nhiệm về việc sử dụng bất kỳ công cụ hoặc kết quả đầu ra nào đó (bao gồm, nhưng không giới hạn ở, tính hợp pháp, tính phù hợp và kết quả của chúng).
 
 ---
 
@@ -169,8 +169,8 @@ Chúng tôi yêu thích những đóng góp của cộng đồng! Bắt đầu b
 
 ## Giấy phép
 
-[Apache 2.0 © 2025 Roo Code, Inc.](../../LICENSE)
+[Apache 2.0 © 2025 VibeX Code, Inc.](../../LICENSE)
 
 ---
 
-**Thưởng thức Roo Code!** Dù bạn giữ nó trong tầm kiểm soát chặt chẽ hay để nó tự do hoạt động, chúng tôi rất nóng lòng muốn xem bạn sẽ xây dựng được gì. Nếu bạn có câu hỏi hoặc ý tưởng về tính năng, hãy ghé qua [cộng đồng Reddit](https://www.reddit.com/r/RooCode/) hoặc [Discord](https://discord.gg/roocode) của chúng tôi. Chúc bạn viết mã vui vẻ!
+**Thưởng thức VibeX Code!** Dù bạn giữ nó trong tầm kiểm soát chặt chẽ hay để nó tự do hoạt động, chúng tôi rất nóng lòng muốn xem bạn sẽ xây dựng được gì. Nếu bạn có câu hỏi hoặc ý tưởng về tính năng, hãy ghé qua [cộng đồng Reddit](https://www.reddit.com/r/RooCode/) hoặc [Discord](https://discord.gg/roocode) của chúng tôi. Chúc bạn viết mã vui vẻ!

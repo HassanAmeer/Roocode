@@ -9,7 +9,7 @@
   <em>すぐに助けを得る → <a href="https://discord.gg/roocode">Discordに参加</a> • 非同期を好む？ → <a href="https://www.reddit.com/r/RooCode/">r/RooCodeに参加</a></em>
 </p>
 
-# Roo Code
+# VibeX Code
 
 > あなたのエディタの中に、AIで強化された開発チームを
 
@@ -35,11 +35,11 @@
 - [简体中文](../zh-CN/README.md)
 - [繁體中文](../zh-TW/README.md)
 - ...
-  </details>
+    </details>
 
 ---
 
-## Roo Codeがあなたのためにできること
+## VibeX Codeがあなたのためにできること
 
 - 自然言語の記述からコードを生成
 - モードで適応：コード、アーキテクト、質問、デバッグ、カスタムモード
@@ -58,7 +58,7 @@ Roo Codeは、あなたの働き方に合わせるように適応します。
 - 質問モード：迅速な回答、説明、ドキュメント
 - デバッグモード：問題の追跡、ログの追加、根本原因の特定
 - カスタムモード：チームやワークフローに特化したモードの構築
-- Roomote Control: Roomote Control はローカルの VS Code で実行中のタスクをリモート操作できます。
+- VibeXmote Control: VibeXmote Control はローカルの VS Code で実行中のタスクをリモート操作できます。
 
 詳しくは: [モードの使い方](https://docs.roocode.com/basic-usage/using-modes) • [カスタムモード](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
 
@@ -78,7 +78,7 @@ Roo Codeは、あなたの働き方に合わせるように適応します。
 
 ## リソース
 
-- **[ドキュメント](https://docs.roocode.com):** Roo Codeのインストール、設定、習熟のための公式ガイド。
+- **[ドキュメント](https://docs.roocode.com):** VibeX Codeのインストール、設定、習熟のための公式ガイド。
 - **[YouTubeチャンネル](https://youtube.com/@roocodeyt?feature=shared):** チュートリアルを見て、実際の機能を確認できます。
 - **[Discordサーバー](https://discord.gg/roocode):** コミュニティに参加して、リアルタイムのヘルプやディスカッションに参加できます。
 - **[Redditコミュニティ](https://www.reddit.com/r/RooCode):** あなたの経験を共有し、他の人が何を構築しているかを見ることができます。
@@ -169,7 +169,7 @@ VSIXパッケージを手動でインストールしたい場合：
 
 ## ライセンス
 
-[Apache 2.0 © 2025 Roo Code, Inc.](../../LICENSE)
+[Apache 2.0 © 2025 VibeX Code, Inc.](../../LICENSE)
 
 ---
 

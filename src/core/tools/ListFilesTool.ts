@@ -54,7 +54,7 @@ export class ListFilesTool extends BaseTool<"list_files"> {
 				didHitLimit,
 				task.vibexIgnoreController,
 				showRooIgnoredFiles,
-				task.rooProtectedController,
+				task.vibexProtectedController,
 			)
 
 			const sharedMessageProps: ClineSayTool = {

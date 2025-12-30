@@ -43,7 +43,7 @@ export * from "./language.js"
 export * from "./git.js"
 
 // Type aliases for backwards compatibility
-export type { RooCodeSettings as VibexSettings } from "./global-settings.js"
+export type { VibeXCodeSettings as VibexSettings } from "./global-settings.js"
 export type { Mode } from "./modes.js"
 
 // Re-export IpcServerEvents as VibexIpcServer for backwards compatibility

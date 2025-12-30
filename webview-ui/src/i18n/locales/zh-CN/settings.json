@@ -35,7 +35,7 @@
 		"ui": "UI",
 		"experimental": "实验性",
 		"language": "语言",
-		"about": "关于 Roo Code"
+		"about": "关于 VibeX Code"
 	},
 	"about": {
 		"bugReport": {
@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "需要联系我们？请发送邮件至"
 		},
-		"community": "想要获取使用技巧或与其他 Roo Code 用户交流？加入 <redditLink>reddit.com/r/Roo Code</redditLink> 或 <discordLink>discord.gg/roocode</discordLink>",
+		"community": "想要获取使用技巧或与其他 VibeX Code 用户交流？加入 <redditLink>reddit.com/r/Roo Code</redditLink> 或 <discordLink>discord.gg/roocode</discordLink>",
 		"contactAndCommunity": "联系与社区",
 		"manageSettings": "管理设置"
 	},
@@ -61,7 +61,7 @@
 		"description": "管理您的斜杠命令，以快速执行自定义工作流和操作。 <DocsLink>了解更多</DocsLink>"
 	},
 	"prompts": {
-		"description": "配置用于快速操作的支持提示词，如增强提示词、解释代码和修复问题。这些提示词帮助 Roo Code 为常见开发任务提供更好的支持。"
+		"description": "配置用于快速操作的支持提示词，如增强提示词、解释代码和修复问题。这些提示词帮助 VibeX Code 为常见开发任务提供更好的支持。"
 	},
 	"codeIndex": {
 		"title": "代码库索引",
@@ -173,7 +173,7 @@
 	},
 	"autoApprove": {
 		"toggleShortcut": "您可以<SettingsLink>在 IDE 首选项中</SettingsLink>为此设置配置全局快捷方式。",
-		"description": "允许 Roo Code 自动执行操作而无需批准。只有在您完全信任 AI 并了解相关安全风险的情况下才启用这些设置。",
+		"description": "允许 VibeX Code 自动执行操作而无需批准。只有在您完全信任 AI 并了解相关安全风险的情况下才启用这些设置。",
 		"enabled": "自动批准已启用",
 		"toggleAriaLabel": "切换自动批准",
 		"disabledAriaLabel": "自动批准已禁用 - 请先选择选项",
@@ -182,7 +182,7 @@
 			"description": "启用后，Roo Code 将自动浏览目录和读取文件内容，无需人工确认。",
 			"outsideWorkspace": {
 				"label": "包含工作区外的文件",
-				"description": "允许 Roo Code 读取当前工作区外的文件，无需批准。"
+				"description": "允许 VibeX Code 读取当前工作区外的文件，无需批准。"
 			}
 		},
 		"write": {
@@ -191,11 +191,11 @@
 			"delayLabel": "延迟一段时间再自动批准写入，可以在期间检查模型输出是否有问题",
 			"outsideWorkspace": {
 				"label": "包含工作区外的文件",
-				"description": "允许 Roo Code 创建和编辑当前工作区外的文件，无需批准。"
+				"description": "允许 VibeX Code 创建和编辑当前工作区外的文件，无需批准。"
 			},
 			"protected": {
 				"label": "包含受保护的文件",
-				"description": "允许 Roo Code 创建和编辑受保护的文件（如 .rooignore 和 .roo/ 配置文件），无需批准。"
+				"description": "允许 VibeX Code 创建和编辑受保护的文件（如 .rooignore 和 .roo/ 配置文件），无需批准。"
 			}
 		},
 		"browser": {
@@ -438,8 +438,8 @@
 			"instructions": "使用期间，将弹出对话框并自动将当前消息复制到剪贴板。您需要将这些内容粘贴到 AI 的网页版本（如 ChatGPT 或 Claude），然后将 AI 的回复复制回对话框并点击确认按钮。"
 		},
 		"roo": {
-			"authenticatedMessage": "已通过 Roo Code Cloud 账户安全认证。",
-			"connectButton": "连接到 Roo Code Cloud"
+			"authenticatedMessage": "已通过 VibeX Code Cloud 账户安全认证。",
+			"connectButton": "连接到 VibeX Code Cloud"
 		},
 		"openRouter": {
 			"providerRouting": {
@@ -679,11 +679,11 @@
 		},
 		"outputLineLimit": {
 			"label": "终端输出限制",
-			"description": "保留首尾行并丢弃中间行以保持在限制内。降低可节省 token；提高可为 Roo Code 提供更多中间细节。Roo Code 看到内容被跳过的占位符。<0>了解更多</0>"
+			"description": "保留首尾行并丢弃中间行以保持在限制内。降低可节省 token；提高可为 VibeX Code 提供更多中间细节。Roo Code 看到内容被跳过的占位符。<0>了解更多</0>"
 		},
 		"outputCharacterLimit": {
 			"label": "终端字符限制",
-			"description": "通过强制限制输出大小来覆盖行限制以防止内存问题。如果超出，保留开头和结尾并向 Roo Code 显示内容被跳过的占位符。<0>了解更多</0>"
+			"description": "通过强制限制输出大小来覆盖行限制以防止内存问题。如果超出，保留开头和结尾并向 VibeX Code 显示内容被跳过的占位符。<0>了解更多</0>"
 		},
 		"shellIntegrationTimeout": {
 			"label": "终端 shell 集成超时",
@@ -731,7 +731,7 @@
 	},
 	"toolProtocol": {
 		"label": "工具调用协议",
-		"description": "选择 Roo Code 如何与 API 通信。原生使用提供商的函数调用 API，而 XML 使用 XML 格式的工具定义。",
+		"description": "选择 VibeX Code 如何与 API 通信。原生使用提供商的函数调用 API，而 XML 使用 XML 格式的工具定义。",
 		"default": "默认",
 		"xml": "XML",
 		"native": "原生",
@@ -771,7 +771,7 @@
 		},
 		"INSERT_BLOCK": {
 			"name": "启用插入内容工具",
-			"description": "允许 Roo Code 在特定行号插入内容，无需处理差异。"
+			"description": "允许 VibeX Code 在特定行号插入内容，无需处理差异。"
 		},
 		"POWER_STEERING": {
 			"name": "启用增强导向模式",
@@ -791,11 +791,11 @@
 		},
 		"MULTI_FILE_APPLY_DIFF": {
 			"name": "启用并发文件编辑",
-			"description": "启用后 Roo Code 可在单个请求中编辑多个文件。禁用后 Roo Code 必须逐个编辑文件。禁用此功能有助于使用能力较弱的模型或需要更精确控制文件修改时。"
+			"description": "启用后 VibeX Code 可在单个请求中编辑多个文件。禁用后 VibeX Code 必须逐个编辑文件。禁用此功能有助于使用能力较弱的模型或需要更精确控制文件修改时。"
 		},
 		"PREVENT_FOCUS_DISRUPTION": {
 			"name": "后台编辑",
-			"description": "启用后防止编辑器焦点干扰。文件编辑在后台进行，不会打开差异视图或抢夺焦点。你可以在 Roo Code 进行更改时继续不受干扰地工作。文件可以在不获取焦点的情况下打开以捕获诊断信息，或保持完全关闭状态。"
+			"description": "启用后防止编辑器焦点干扰。文件编辑在后台进行，不会打开差异视图或抢夺焦点。你可以在 VibeX Code 进行更改时继续不受干扰地工作。文件可以在不获取焦点的情况下打开以捕获诊断信息，或保持完全关闭状态。"
 		},
 		"ASSISTANT_MESSAGE_PARSER": {
 			"name": "使用新的消息解析器",
@@ -820,7 +820,7 @@
 		},
 		"RUN_SLASH_COMMAND": {
 			"name": "启用模型发起的斜杠命令",
-			"description": "启用后 Roo Code 可运行斜杠命令执行工作流程。"
+			"description": "启用后 VibeX Code 可运行斜杠命令执行工作流程。"
 		},
 		"MULTIPLE_NATIVE_TOOL_CALLS": {
 			"name": "并行工具调用",
@@ -828,7 +828,7 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "启用自定义工具",
-			"description": "启用后 Roo Code 可从项目中的 .roo/tools 目录或全局工具目录 ~/.roo/tools 加载并使用自定义 TypeScript/JavaScript 工具。注意：这些工具将自动获批。",
+			"description": "启用后 VibeX Code 可从项目中的 .roo/tools 目录或全局工具目录 ~/.roo/tools 加载并使用自定义 TypeScript/JavaScript 工具。注意：这些工具将自动获批。",
 			"toolsHeader": "可用自定义工具",
 			"noTools": "未加载自定义工具。请向项目的 .roo/tools 目录或全局工具目录 ~/.roo/tools 添加 .ts 或 .js 文件。",
 			"refreshButton": "刷新",
@@ -881,7 +881,7 @@
 		"feedback": "如果您有任何问题或反馈，请随时在 <githubLink>github.com/Roo CodeInc/Roo Code-Code</githubLink> 上提出问题或加入 <redditLink>reddit.com/r/Roo Code</redditLink> 或 <discordLink>discord.gg/roocode</discordLink>",
 		"telemetry": {
 			"label": "允许匿名数据收集",
-			"description": "通过发送匿名使用数据和错误报告来帮助改进 Roo Code。此遥测不会收集代码、提示 或个人信息。详细信息请参阅我们的<privacyLink>隐私政策</privacyLink>。您可以随时关闭此功能。"
+			"description": "通过发送匿名使用数据和错误报告来帮助改进 VibeX Code。此遥测不会收集代码、提示 或个人信息。详细信息请参阅我们的<privacyLink>隐私政策</privacyLink>。您可以随时关闭此功能。"
 		},
 		"settings": {
 			"import": "导入",

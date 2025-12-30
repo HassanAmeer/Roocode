@@ -28,8 +28,8 @@ import { vscode } from "@src/utils/vscode"
 import { useAppTranslation } from "@src/i18n/TranslationContext"
 import { useExtensionState } from "@src/context/ExtensionStateContext"
 import { useSelectedModel } from "@src/components/ui/hooks/useSelectedModel"
-import RooHero from "@src/components/welcome/RooHero"
-import RooTips from "@src/components/welcome/RooTips"
+import VibeXHero from "@src/components/welcome/VibeXHero"
+import VibeXTips from "@src/components/welcome/VibeXTips"
 import { StandardTooltip, Button } from "@src/components/ui"
 import { CloudUpsellDialog } from "@src/components/cloud/CloudUpsellDialog"
 
@@ -1440,9 +1440,9 @@ const ChatViewComponent: React.ForwardRefRenderFunction<ChatViewRef, ChatViewPro
 							className="absolute top-2 right-3 z-10"
 						/>
 						<div className="flex flex-col gap-4 w-full">
-							<RooHero />
-							{/* Show RooTips when authenticated or when user is new */}
-							{taskHistory.length < 6 && <RooTips />}
+							<VibeXHero />
+							{/* Show VibeXTips when authenticated or when user is new */}
+							{taskHistory.length < 6 && <VibeXTips />}
 							{/* Everyone should see their task history if any */}
 							{taskHistory.length > 0 && <HistoryPreview />}
 						</div>

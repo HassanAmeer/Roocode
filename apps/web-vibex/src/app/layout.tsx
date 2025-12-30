@@ -86,7 +86,7 @@ export const metadata: Metadata = {
 	category: SEO.category,
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function VibeXtLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<head>

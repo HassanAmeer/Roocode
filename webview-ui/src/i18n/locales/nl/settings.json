@@ -35,7 +35,7 @@
 		"ui": "UI",
 		"experimental": "Experimenteel",
 		"language": "Taal",
-		"about": "Over Roo Code"
+		"about": "Over VibeX Code"
 	},
 	"about": {
 		"bugReport": {
@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "Moet je met ons praten? Schrijf"
 		},
-		"community": "Wil je tips of gewoon even hangen met andere Roo Code-gebruikers? Sluit je aan bij <redditLink>reddit.com/r/Roo Code</redditLink> of <discordLink>discord.gg/roocode</discordLink>",
+		"community": "Wil je tips of gewoon even hangen met andere VibeX Code-gebruikers? Sluit je aan bij <redditLink>reddit.com/r/Roo Code</redditLink> of <discordLink>discord.gg/roocode</discordLink>",
 		"contactAndCommunity": "Contact & Gemeenschap",
 		"manageSettings": "Instellingen Beheren"
 	},
@@ -61,7 +61,7 @@
 		"description": "Beheer je slash-commando's om snel aangepaste workflows en acties uit te voeren. <DocsLink>Meer informatie</DocsLink>"
 	},
 	"prompts": {
-		"description": "Configureer ondersteuningsprompts die worden gebruikt voor snelle acties zoals het verbeteren van prompts, het uitleggen van code en het oplossen van problemen. Deze prompts helpen Roo Code om betere ondersteuning te bieden voor veelvoorkomende ontwikkelingstaken."
+		"description": "Configureer ondersteuningsprompts die worden gebruikt voor snelle acties zoals het verbeteren van prompts, het uitleggen van code en het oplossen van problemen. Deze prompts helpen VibeX Code om betere ondersteuning te bieden voor veelvoorkomende ontwikkelingstaken."
 	},
 	"codeIndex": {
 		"title": "Codebase indexering",
@@ -173,16 +173,16 @@
 	},
 	"autoApprove": {
 		"toggleShortcut": "U kunt een globale sneltoets voor deze instelling configureren <SettingsLink>in de voorkeuren van uw IDE</SettingsLink>.",
-		"description": "Sta Roo Code toe om automatisch handelingen uit te voeren zonder goedkeuring. Schakel deze instellingen alleen in als je de AI volledig vertrouwt en de bijbehorende beveiligingsrisico's begrijpt.",
+		"description": "Sta VibeX Code toe om automatisch handelingen uit te voeren zonder goedkeuring. Schakel deze instellingen alleen in als je de AI volledig vertrouwt en de bijbehorende beveiligingsrisico's begrijpt.",
 		"enabled": "Auto-goedkeuren ingeschakeld",
 		"toggleAriaLabel": "Automatisch goedkeuren in-/uitschakelen",
 		"disabledAriaLabel": "Automatisch goedkeuren uitgeschakeld - selecteer eerst opties",
 		"readOnly": {
 			"label": "Lezen",
-			"description": "Indien ingeschakeld, bekijkt Roo Code automatisch de inhoud van mappen en leest bestanden zonder dat je op de Goedkeuren-knop hoeft te klikken.",
+			"description": "Indien ingeschakeld, bekijkt VibeX Code automatisch de inhoud van mappen en leest bestanden zonder dat je op de Goedkeuren-knop hoeft te klikken.",
 			"outsideWorkspace": {
 				"label": "Inclusief bestanden buiten werkruimte",
-				"description": "Sta Roo Code toe om bestanden buiten de huidige werkruimte te lezen zonder goedkeuring."
+				"description": "Sta VibeX Code toe om bestanden buiten de huidige werkruimte te lezen zonder goedkeuring."
 			}
 		},
 		"write": {
@@ -191,11 +191,11 @@
 			"delayLabel": "Vertraging na schrijven om diagnostiek de kans te geven mogelijke problemen te detecteren",
 			"outsideWorkspace": {
 				"label": "Inclusief bestanden buiten werkruimte",
-				"description": "Sta Roo Code toe om bestanden buiten de huidige werkruimte aan te maken en te bewerken zonder goedkeuring."
+				"description": "Sta VibeX Code toe om bestanden buiten de huidige werkruimte aan te maken en te bewerken zonder goedkeuring."
 			},
 			"protected": {
 				"label": "Inclusief beschermde bestanden",
-				"description": "Sta Roo Code toe om beschermde bestanden (zoals .rooignore en .roo/ configuratiebestanden) aan te maken en te bewerken zonder goedkeuring."
+				"description": "Sta VibeX Code toe om beschermde bestanden (zoals .rooignore en .roo/ configuratiebestanden) aan te maken en te bewerken zonder goedkeuring."
 			}
 		},
 		"browser": {
@@ -417,7 +417,7 @@
 			"draftModelDesc": "Draft-model moet uit dezelfde modelfamilie komen voor correcte speculatieve decodering.",
 			"selectDraftModel": "Selecteer draft-model",
 			"noModelsFound": "Geen draft-modellen gevonden. Zorg dat LM Studio draait met Server Mode ingeschakeld.",
-			"description": "LM Studio laat je modellen lokaal op je computer draaien. Zie hun <a>quickstart-gids</a> voor instructies. Je moet ook de <b>lokale server</b>-functie van LM Studio starten om het met deze extensie te gebruiken. <span>Let op:</span> Roo Code gebruikt complexe prompts en werkt het beste met Claude-modellen. Minder krachtige modellen werken mogelijk niet zoals verwacht."
+			"description": "LM Studio laat je modellen lokaal op je computer draaien. Zie hun <a>quickstart-gids</a> voor instructies. Je moet ook de <b>lokale server</b>-functie van LM Studio starten om het met deze extensie te gebruiken. <span>Let op:</span> VibeX Code gebruikt complexe prompts en werkt het beste met Claude-modellen. Minder krachtige modellen werken mogelijk niet zoals verwacht."
 		},
 		"ollama": {
 			"baseUrl": "Basis-URL (optioneel)",
@@ -427,7 +427,7 @@
 			"numCtx": "Contextvenstergrootte (num_ctx)",
 			"numCtxHelp": "Overschrijft de standaard contextvenstergrootte van het model. Laat leeg om de Modelfile-configuratie van het model te gebruiken. De minimumwaarde is 128.",
 			"description": "Ollama laat je modellen lokaal op je computer draaien. Zie hun quickstart-gids voor instructies.",
-			"warning": "Let op: Roo Code gebruikt complexe prompts en werkt het beste met Claude-modellen. Minder krachtige modellen werken mogelijk niet zoals verwacht."
+			"warning": "Let op: VibeX Code gebruikt complexe prompts en werkt het beste met Claude-modellen. Minder krachtige modellen werken mogelijk niet zoals verwacht."
 		},
 		"unboundApiKey": "Unbound API-sleutel",
 		"getUnboundApiKey": "Unbound API-sleutel ophalen",
@@ -438,8 +438,8 @@
 			"instructions": "Tijdens gebruik verschijnt een dialoogvenster en wordt het huidige bericht automatisch naar het klembord gekopieerd. Je moet deze plakken in webversies van AI (zoals ChatGPT of Claude), vervolgens het antwoord van de AI terugkopiëren naar het dialoogvenster en op bevestigen klikken."
 		},
 		"roo": {
-			"authenticatedMessage": "Veilig geauthenticeerd via je Roo Code Cloud-account.",
-			"connectButton": "Verbinden met Roo Code Cloud"
+			"authenticatedMessage": "Veilig geauthenticeerd via je VibeX Code Cloud-account.",
+			"connectButton": "Verbinden met VibeX Code Cloud"
 		},
 		"openRouter": {
 			"providerRouting": {
@@ -449,7 +449,7 @@
 			}
 		},
 		"customModel": {
-			"capabilities": "Stel de mogelijkheden en prijzen in voor je aangepaste OpenAI-compatibele model. Wees voorzichtig met het opgeven van de modelmogelijkheden, want deze kunnen de prestaties van Roo Code beïnvloeden.",
+			"capabilities": "Stel de mogelijkheden en prijzen in voor je aangepaste OpenAI-compatibele model. Wees voorzichtig met het opgeven van de modelmogelijkheden, want deze kunnen de prestaties van VibeX Code beïnvloeden.",
 			"maxTokens": {
 				"label": "Maximaal aantal outputtokens",
 				"description": "Maximaal aantal tokens dat het model in een antwoord kan genereren. (Geef -1 op om de server het maximum te laten bepalen.)"
@@ -528,7 +528,7 @@
 	"browser": {
 		"enable": {
 			"label": "Browserhulpmiddel inschakelen",
-			"description": "Indien ingeschakeld, kan Roo Code een browser gebruiken om te interageren met websites wanneer modellen computergebruik ondersteunen. <0>Meer informatie</0>"
+			"description": "Indien ingeschakeld, kan VibeX Code een browser gebruiken om te interageren met websites wanneer modellen computergebruik ondersteunen. <0>Meer informatie</0>"
 		},
 		"viewport": {
 			"label": "Viewport-grootte",
@@ -560,18 +560,18 @@
 		},
 		"enable": {
 			"label": "Automatische checkpoints inschakelen",
-			"description": "Indien ingeschakeld, maakt Roo Code automatisch checkpoints tijdens het uitvoeren van taken, zodat je eenvoudig wijzigingen kunt bekijken of terugzetten. <0>Meer informatie</0>"
+			"description": "Indien ingeschakeld, maakt VibeX Code automatisch checkpoints tijdens het uitvoeren van taken, zodat je eenvoudig wijzigingen kunt bekijken of terugzetten. <0>Meer informatie</0>"
 		}
 	},
 	"notifications": {
 		"sound": {
 			"label": "Geluidseffecten inschakelen",
-			"description": "Indien ingeschakeld, speelt Roo Code geluidseffecten af voor meldingen en gebeurtenissen.",
+			"description": "Indien ingeschakeld, speelt VibeX Code geluidseffecten af voor meldingen en gebeurtenissen.",
 			"volumeLabel": "Volume"
 		},
 		"tts": {
 			"label": "Tekst-naar-spraak inschakelen",
-			"description": "Indien ingeschakeld, leest Roo Code zijn antwoorden hardop voor via tekst-naar-spraak.",
+			"description": "Indien ingeschakeld, leest VibeX Code zijn antwoorden hardop voor via tekst-naar-spraak.",
 			"speedLabel": "Snelheid"
 		}
 	},
@@ -579,7 +579,7 @@
 		"description": "Bepaal welke informatie wordt opgenomen in het contextvenster van de AI, wat invloed heeft op tokengebruik en antwoordkwaliteit",
 		"autoCondenseContextPercent": {
 			"label": "Drempelwaarde om intelligente contextcompressie te activeren",
-			"description": "Wanneer het contextvenster deze drempelwaarde bereikt, zal Roo Code het automatisch comprimeren."
+			"description": "Wanneer het contextvenster deze drempelwaarde bereikt, zal VibeX Code het automatisch comprimeren."
 		},
 		"condensingApiConfiguration": {
 			"label": "API-configuratie voor contextcondensatie",
@@ -595,7 +595,7 @@
 		},
 		"autoCondenseContext": {
 			"name": "Automatisch intelligente contextcompressie activeren",
-			"description": "Wanneer ingeschakeld, zal Roo Code automatisch de context comprimeren wanneer de drempel wordt bereikt. Wanneer uitgeschakeld, kun je nog steeds handmatig contextcompressie activeren."
+			"description": "Wanneer ingeschakeld, zal VibeX Code automatisch de context comprimeren wanneer de drempel wordt bereikt. Wanneer uitgeschakeld, kun je nog steeds handmatig contextcompressie activeren."
 		},
 		"openTabs": {
 			"label": "Limiet geopende tabbladen in context",
@@ -611,7 +611,7 @@
 		},
 		"maxReadFile": {
 			"label": "Automatisch afkappen bij bestandslezen",
-			"description": "Roo Code leest dit aantal regels wanneer het model geen begin/eindwaarden opgeeft. Als dit aantal lager is dan het totaal, genereert Roo Code een index van codelijnen. Speciale gevallen: -1 laat Roo Code het hele bestand lezen (zonder indexering), 0 leest geen regels en geeft alleen een minimale index. Lagere waarden minimaliseren het initiële contextgebruik en maken precieze vervolg-leesopdrachten mogelijk. Expliciete begin/eind-aanvragen worden niet door deze instelling beperkt.",
+			"description": "Roo Code leest dit aantal regels wanneer het model geen begin/eindwaarden opgeeft. Als dit aantal lager is dan het totaal, genereert VibeX Code een index van codelijnen. Speciale gevallen: -1 laat VibeX Code het hele bestand lezen (zonder indexering), 0 leest geen regels en geeft alleen een minimale index. Lagere waarden minimaliseren het initiële contextgebruik en maken precieze vervolg-leesopdrachten mogelijk. Expliciete begin/eind-aanvragen worden niet door deze instelling beperkt.",
 			"lines": "regels",
 			"always_full_read": "Altijd volledig bestand lezen"
 		},
@@ -679,11 +679,11 @@
 		},
 		"outputLineLimit": {
 			"label": "Terminaluitvoerlimiet",
-			"description": "Behoudt eerste en laatste regels en verwijdert middelste om onder de limiet te blijven. Verlaag om tokens te besparen; verhoog om Roo Code meer tussendetails te geven. Roo Code ziet een placeholder waar inhoud wordt overgeslagen.<0>Meer informatie</0>"
+			"description": "Behoudt eerste en laatste regels en verwijdert middelste om onder de limiet te blijven. Verlaag om tokens te besparen; verhoog om VibeX Code meer tussendetails te geven. VibeX Code ziet een placeholder waar inhoud wordt overgeslagen.<0>Meer informatie</0>"
 		},
 		"outputCharacterLimit": {
 			"label": "Terminal-tekenlimiet",
-			"description": "Overschrijft de regellimiet om geheugenproblemen te voorkomen door een harde limiet op uitvoergrootte af te dwingen. Bij overschrijding behoudt het begin en einde en toont een placeholder aan Roo Code waar inhoud wordt overgeslagen. <0>Meer informatie</0>"
+			"description": "Overschrijft de regellimiet om geheugenproblemen te voorkomen door een harde limiet op uitvoergrootte af te dwingen. Bij overschrijding behoudt het begin en einde en toont een placeholder aan VibeX Code waar inhoud wordt overgeslagen. <0>Meer informatie</0>"
 		},
 		"shellIntegrationTimeout": {
 			"label": "Terminal-shell-integratie timeout",
@@ -691,7 +691,7 @@
 		},
 		"shellIntegrationDisabled": {
 			"label": "Inline Terminal gebruiken (aanbevolen)",
-			"description": "Voer commando's uit in de Inline Terminal (chat) om shell-profielen/integratie te omzeilen voor snellere, betrouwbaardere runs. Wanneer uitgeschakeld gebruikt Roo Code de VS Code-terminal met je shell-profiel, prompts en plugins. <0>Meer informatie</0>"
+			"description": "Voer commando's uit in de Inline Terminal (chat) om shell-profielen/integratie te omzeilen voor snellere, betrouwbaardere runs. Wanneer uitgeschakeld gebruikt VibeX Code de VS Code-terminal met je shell-profiel, prompts en plugins. <0>Meer informatie</0>"
 		},
 		"commandDelay": {
 			"label": "Terminal-commandovertraging",
@@ -731,7 +731,7 @@
 	},
 	"toolProtocol": {
 		"label": "Tool Call Protocol",
-		"description": "Kies hoe Roo Code communiceert met de API. Native gebruikt de functie-aanroep API van de provider, terwijl XML gebruikmaakt van XML-geformatteerde tooldefinities.",
+		"description": "Kies hoe VibeX Code communiceert met de API. Native gebruikt de functie-aanroep API van de provider, terwijl XML gebruikmaakt van XML-geformatteerde tooldefinities.",
 		"default": "Standaard",
 		"xml": "XML",
 		"native": "Native",
@@ -740,7 +740,7 @@
 	"advanced": {
 		"diff": {
 			"label": "Bewerken via diffs inschakelen",
-			"description": "Indien ingeschakeld kan Roo Code sneller bestanden bewerken en worden afgekorte volledige-bestandswijzigingen automatisch geweigerd",
+			"description": "Indien ingeschakeld kan VibeX Code sneller bestanden bewerken en worden afgekorte volledige-bestandswijzigingen automatisch geweigerd",
 			"strategy": {
 				"label": "Diff-strategie",
 				"options": {
@@ -761,7 +761,7 @@
 		},
 		"todoList": {
 			"label": "Takenlijst-tool inschakelen",
-			"description": "Wanneer ingeschakeld, kan Roo Code takenlijsten maken en beheren om de voortgang van taken bij te houden. Dit helpt complexe taken te organiseren in beheersbare stappen."
+			"description": "Wanneer ingeschakeld, kan VibeX Code takenlijsten maken en beheren om de voortgang van taken bij te houden. Dit helpt complexe taken te organiseren in beheersbare stappen."
 		}
 	},
 	"experimental": {
@@ -771,19 +771,19 @@
 		},
 		"INSERT_BLOCK": {
 			"name": "Experimentele inhoud-invoeg-tool gebruiken",
-			"description": "Schakel de experimentele inhoud-invoeg-tool in, waarmee Roo Code inhoud op specifieke regelnummers kan invoegen zonder een diff te maken."
+			"description": "Schakel de experimentele inhoud-invoeg-tool in, waarmee VibeX Code inhoud op specifieke regelnummers kan invoegen zonder een diff te maken."
 		},
 		"POWER_STEERING": {
 			"name": "Experimentele 'power steering'-modus gebruiken",
-			"description": "Indien ingeschakeld, herinnert Roo Code het model vaker aan de details van de huidige modusdefinitie. Dit leidt tot sterkere naleving van roldefinities en aangepaste instructies, maar gebruikt meer tokens per bericht."
+			"description": "Indien ingeschakeld, herinnert VibeX Code het model vaker aan de details van de huidige modusdefinitie. Dit leidt tot sterkere naleving van roldefinities en aangepaste instructies, maar gebruikt meer tokens per bericht."
 		},
 		"MULTI_SEARCH_AND_REPLACE": {
 			"name": "Experimentele multi-block diff-tool gebruiken",
-			"description": "Indien ingeschakeld, gebruikt Roo Code de multi-block diff-tool. Hiermee wordt geprobeerd meerdere codeblokken in het bestand in één verzoek bij te werken."
+			"description": "Indien ingeschakeld, gebruikt VibeX Code de multi-block diff-tool. Hiermee wordt geprobeerd meerdere codeblokken in het bestand in één verzoek bij te werken."
 		},
 		"CONCURRENT_FILE_READS": {
 			"name": "Gelijktijdig lezen van bestanden inschakelen",
-			"description": "Wanneer ingeschakeld, kan Roo Code meerdere bestanden in één verzoek lezen. Wanneer uitgeschakeld, moet Roo Code bestanden één voor één lezen. Uitschakelen kan helpen bij het werken met minder capabele modellen of wanneer u meer controle over bestandstoegang wilt."
+			"description": "Wanneer ingeschakeld, kan VibeX Code meerdere bestanden in één verzoek lezen. Wanneer uitgeschakeld, moet VibeX Code bestanden één voor één lezen. Uitschakelen kan helpen bij het werken met minder capabele modellen of wanneer u meer controle over bestandstoegang wilt."
 		},
 		"MARKETPLACE": {
 			"name": "Marketplace inschakelen",
@@ -791,11 +791,11 @@
 		},
 		"MULTI_FILE_APPLY_DIFF": {
 			"name": "Gelijktijdige bestandsbewerkingen inschakelen",
-			"description": "Wanneer ingeschakeld, kan Roo Code meerdere bestanden in één verzoek bewerken. Wanneer uitgeschakeld, moet Roo Code bestanden één voor één bewerken. Het uitschakelen hiervan kan helpen wanneer je werkt met minder capabele modellen of wanneer je meer controle wilt over bestandswijzigingen."
+			"description": "Wanneer ingeschakeld, kan VibeX Code meerdere bestanden in één verzoek bewerken. Wanneer uitgeschakeld, moet VibeX Code bestanden één voor één bewerken. Het uitschakelen hiervan kan helpen wanneer je werkt met minder capabele modellen of wanneer je meer controle wilt over bestandswijzigingen."
 		},
 		"PREVENT_FOCUS_DISRUPTION": {
 			"name": "Achtergrondbewerking",
-			"description": "Voorkomt editor focus verstoring wanneer ingeschakeld. Bestandsbewerkingen gebeuren op de achtergrond zonder diff-weergaven te openen of focus te stelen. Je kunt ononderbroken doorwerken terwijl Roo Code wijzigingen aanbrengt. Bestanden kunnen zonder focus worden geopend om diagnostiek vast te leggen of volledig gesloten blijven."
+			"description": "Voorkomt editor focus verstoring wanneer ingeschakeld. Bestandsbewerkingen gebeuren op de achtergrond zonder diff-weergaven te openen of focus te stelen. Je kunt ononderbroken doorwerken terwijl VibeX Code wijzigingen aanbrengt. Bestanden kunnen zonder focus worden geopend om diagnostiek vast te leggen of volledig gesloten blijven."
 		},
 		"ASSISTANT_MESSAGE_PARSER": {
 			"name": "Nieuwe berichtparser gebruiken",
@@ -809,7 +809,7 @@
 			"providerLabel": "Provider",
 			"providerDescription": "Selecteer de provider voor het genereren van afbeeldingen.",
 			"name": "AI-afbeeldingsgeneratie inschakelen",
-			"description": "Wanneer ingeschakeld, kan Roo Code afbeeldingen genereren van tekstprompts met behulp van OpenRouter's afbeeldingsgeneratiemodellen. Vereist een geconfigureerde OpenRouter API-sleutel.",
+			"description": "Wanneer ingeschakeld, kan VibeX Code afbeeldingen genereren van tekstprompts met behulp van OpenRouter's afbeeldingsgeneratiemodellen. Vereist een geconfigureerde OpenRouter API-sleutel.",
 			"openRouterApiKeyLabel": "OpenRouter API-sleutel",
 			"openRouterApiKeyPlaceholder": "Voer je OpenRouter API-sleutel in",
 			"getApiKeyText": "Haal je API-sleutel op van",
@@ -820,7 +820,7 @@
 		},
 		"RUN_SLASH_COMMAND": {
 			"name": "Model-geïnitieerde slash-commando's inschakelen",
-			"description": "Wanneer ingeschakeld, kan Roo Code je slash-commando's uitvoeren om workflows uit te voeren."
+			"description": "Wanneer ingeschakeld, kan VibeX Code je slash-commando's uitvoeren om workflows uit te voeren."
 		},
 		"MULTIPLE_NATIVE_TOOL_CALLS": {
 			"name": "Parallelle tool-aanroepen",
@@ -828,7 +828,7 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "Aangepaste tools inschakelen",
-			"description": "Indien ingeschakeld kan Roo Code aangepaste TypeScript/JavaScript-tools laden en gebruiken uit de map .roo/tools van je project of ~/.roo/tools voor globale tools. Opmerking: deze tools worden automatisch goedgekeurd.",
+			"description": "Indien ingeschakeld kan VibeX Code aangepaste TypeScript/JavaScript-tools laden en gebruiken uit de map .roo/tools van je project of ~/.roo/tools voor globale tools. Opmerking: deze tools worden automatisch goedgekeurd.",
 			"toolsHeader": "Beschikbare aangepaste tools",
 			"noTools": "Geen aangepaste tools geladen. Voeg .ts- of .js-bestanden toe aan de map .roo/tools van je project of ~/.roo/tools voor globale tools.",
 			"refreshButton": "Vernieuwen",
@@ -840,7 +840,7 @@
 	},
 	"promptCaching": {
 		"label": "Prompt caching inschakelen",
-		"description": "Indien ingeschakeld, gebruikt Roo Code dit model met prompt caching om kosten te verlagen."
+		"description": "Indien ingeschakeld, gebruikt VibeX Code dit model met prompt caching om kosten te verlagen."
 	},
 	"temperature": {
 		"useCustom": "Aangepaste temperatuur gebruiken",
@@ -870,7 +870,7 @@
 		}
 	},
 	"modelPicker": {
-		"automaticFetch": "De extensie haalt automatisch de nieuwste lijst met modellen op van <serviceLink>{{serviceName}}</serviceLink>. Weet je niet welk model je moet kiezen? Roo Code werkt het beste met <defaultModelLink>{{defaultModelId}}</defaultModelLink>. Je kunt ook zoeken op 'free' voor gratis opties die nu beschikbaar zijn.",
+		"automaticFetch": "De extensie haalt automatisch de nieuwste lijst met modellen op van <serviceLink>{{serviceName}}</serviceLink>. Weet je niet welk model je moet kiezen? VibeX Code werkt het beste met <defaultModelLink>{{defaultModelId}}</defaultModelLink>. Je kunt ook zoeken op 'free' voor gratis opties die nu beschikbaar zijn.",
 		"label": "Model",
 		"searchPlaceholder": "Zoeken",
 		"noMatchFound": "Geen overeenkomsten gevonden",
@@ -881,7 +881,7 @@
 		"feedback": "Heb je vragen of feedback? Open gerust een issue op <githubLink>github.com/Roo CodeInc/Roo Code-Code</githubLink> of sluit je aan bij <redditLink>reddit.com/r/Roo Code</redditLink> of <discordLink>discord.gg/roocode</discordLink>",
 		"telemetry": {
 			"label": "Anonieme fout- en gebruiksrapportage toestaan",
-			"description": "Help Roo Code te verbeteren door anonieme gebruiksgegevens en foutmeldingen te versturen. Deze telemetrie verzamelt geen code, prompts of persoonlijke informatie. Zie ons <privacyLink>privacybeleid</privacyLink> voor meer details."
+			"description": "Help VibeX Code te verbeteren door anonieme gebruiksgegevens en foutmeldingen te versturen. Deze telemetrie verzamelt geen code, prompts of persoonlijke informatie. Zie ons <privacyLink>privacybeleid</privacyLink> voor meer details."
 		},
 		"settings": {
 			"import": "Importeren",

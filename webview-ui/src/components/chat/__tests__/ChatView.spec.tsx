@@ -139,17 +139,17 @@ vi.mock("../QueuedMessages", () => ({
 	},
 }))
 
-// Mock RooTips component
-vi.mock("@src/components/welcome/RooTips", () => ({
-	default: function MockRooTips() {
-		return <div data-testid="roo-tips">Tips content</div>
+// Mock VibeXTips component
+vi.mock("@src/components/welcome/VibeXTips", () => ({
+	default: function MockVibeXTips() {
+		return <div data-testid="vibex-tips">Tips content</div>
 	},
 }))
 
-// Mock RooHero component
-vi.mock("@src/components/welcome/RooHero", () => ({
-	default: function MockRooHero() {
-		return <div data-testid="roo-hero">Hero content</div>
+// Mock VibeXHero component
+vi.mock("@src/components/welcome/VibeXHero", () => ({
+	default: function MockVibeXHero() {
+		return <div data-testid="vibex-hero">Hero content</div>
 	},
 }))
 
@@ -766,14 +766,14 @@ describe("ChatView - DismissibleUpsell Display Tests", () => {
 		await waitFor(() => {
 			// Should not show DismissibleUpsell during active task
 			expect(queryByTestId("dismissible-upsell")).not.toBeInTheDocument()
-			// Should not show RooTips either since the entire welcome screen is hidden during active tasks
-			expect(queryByTestId("roo-tips")).not.toBeInTheDocument()
-			// Should not show RooHero either since the entire welcome screen is hidden during active tasks
-			expect(queryByTestId("roo-hero")).not.toBeInTheDocument()
+			// Should not show VibeXTips either since the entire welcome screen is hidden during active tasks
+			expect(queryByTestId("vibex-tips")).not.toBeInTheDocument()
+			// Should not show VibeXHero either since the entire welcome screen is hidden during active tasks
+			expect(queryByTestId("vibex-hero")).not.toBeInTheDocument()
 		})
 	})
 
-	it("shows RooTips when user is authenticated (instead of DismissibleUpsell)", () => {
+	it("shows VibeXTips when user is authenticated (instead of DismissibleUpsell)", () => {
 		const { queryByTestId, getByTestId } = renderChatView()
 
 		// Hydrate state with user authenticated to cloud
@@ -788,12 +788,12 @@ describe("ChatView - DismissibleUpsell Display Tests", () => {
 			clineMessages: [], // No active task
 		})
 
-		// Should not show DismissibleUpsell but should show RooTips
+		// Should not show DismissibleUpsell but should show VibeXTips
 		expect(queryByTestId("dismissible-upsell")).not.toBeInTheDocument()
-		expect(getByTestId("roo-tips")).toBeInTheDocument()
+		expect(getByTestId("vibex-tips")).toBeInTheDocument()
 	})
 
-	it("shows RooTips when user has fewer than 6 tasks (instead of DismissibleUpsell)", () => {
+	it("shows VibeXTips when user has fewer than 6 tasks (instead of DismissibleUpsell)", () => {
 		const { queryByTestId, getByTestId } = renderChatView()
 
 		// Hydrate state with user not authenticated but fewer than 4 tasks
@@ -807,7 +807,7 @@ describe("ChatView - DismissibleUpsell Display Tests", () => {
 			clineMessages: [], // No active task
 		})
 
-		// Should not show DismissibleUpsell but should show RooTips
+		// Should not show DismissibleUpsell but should show VibeXTips
 		expect(queryByTestId("dismissible-upsell")).not.toBeInTheDocument()
 		expect(getByTestId("roo-tips")).toBeInTheDocument()
 	})

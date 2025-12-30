@@ -83,7 +83,7 @@ import { RepoPerTaskCheckpointService } from "../../services/checkpoints"
 // integrations
 import { DiffViewProvider } from "../../integrations/editor/DiffViewProvider"
 import { findToolName } from "../../integrations/misc/export-markdown"
-import { RooTerminalProcess } from "../../integrations/terminal/types"
+import { VibeXTerminalProcess } from "../../integrations/terminal/types"
 import { TerminalRegistry } from "../../integrations/terminal/TerminalRegistry"
 
 // utils
@@ -100,7 +100,7 @@ import { ToolRepetitionDetector } from "../tools/ToolRepetitionDetector"
 import { restoreTodoListForTask } from "../tools/UpdateTodoListTool"
 import { FileContextTracker } from "../context-tracking/FileContextTracker"
 import { VibexIgnoreController } from "../ignore/VibexIgnoreController"
-import { RooProtectedController } from "../protect/RooProtectedController"
+import { VibeXProtectedController } from "../protect/VibeXProtectedController"
 import { type AssistantMessageContent, presentAssistantMessage } from "../assistant-message"
 import { AssistantMessageParser } from "../assistant-message/AssistantMessageParser"
 import { NativeToolCallParser } from "../assistant-message/NativeToolCallParser"
@@ -280,10 +280,10 @@ export class Task extends EventEmitter<TaskEvents> implements TaskLike {
 
 	toolRepetitionDetector: ToolRepetitionDetector
 	vibexIgnoreController?: VibexIgnoreController
-	rooProtectedController?: RooProtectedController
+	vibexProtectedController?: VibeXProtectedController
 	fileContextTracker: FileContextTracker
 	urlContentFetcher: UrlContentFetcher
-	terminalProcess?: RooTerminalProcess
+	terminalProcess?: VibeXTerminalProcess
 
 	// Computer User
 	browserSession: BrowserSession
@@ -432,7 +432,7 @@ export class Task extends EventEmitter<TaskEvents> implements TaskLike {
 		this.taskNumber = -1
 
 		this.vibexIgnoreController = new VibexIgnoreController(this.cwd)
-		this.rooProtectedController = new RooProtectedController(this.cwd)
+		this.vibexProtectedController = new VibeXProtectedController(this.cwd)
 		this.fileContextTracker = new FileContextTracker(provider, this.taskId)
 
 		this.vibexIgnoreController.initialize().catch((error) => {

@@ -4,12 +4,12 @@
 
 ![3.38.0 Release - Skills](/releases/3.38.0-release.png)
 
-- Add support for [Agent Skills](https://agentskills.io/), enabling reusable packages of prompts, tools, and resources to extend Roo's capabilities (PR #10335 by @mrubens)
+- Add support for [Agent Skills](https://agentskills.io/), enabling reusable packages of prompts, tools, and resources to extend VibeX's capabilities (PR #10335 by @mrubens)
 - Add optional mode field to slash command front matter, allowing commands to automatically switch to a specific mode when triggered (PR #10344 by @app/roomote)
 - Add support for npm packages and .env files to custom tools, allowing custom tools to import dependencies and access environment variables (PR #10336 by @cte)
 - Remove simpleReadFileTool feature, streamlining the file reading experience (PR #10254 by @app/roomote)
 - Remove OpenRouter Transforms feature (PR #10341 by @app/roomote)
-- Fix mergeToolResultText handling in Roo provider (PR #10359 by @mrubens)
+- Fix mergeToolResultText handling in VibeX provider (PR #10359 by @mrubens)
 
 ## [3.37.1] - 2025-12-23
 
@@ -100,7 +100,7 @@
 - Fix: Normalize MCP tool schemas for Bedrock and OpenAI strict mode to ensure proper tool compatibility (PR #10148 by @daniel-lxs)
 - Fix: Remove dots and colons from MCP tool names for Bedrock compatibility (PR #10152 by @daniel-lxs)
 - Fix: Convert tool_result to XML text when native tools disabled for Bedrock (PR #10155 by @daniel-lxs)
-- Fix: Refresh Roo models cache with session token on auth state change to resolve model list refresh issues (PR #10156 by @daniel-lxs)
+- Fix: Refresh VibeX models cache with session token on auth state change to resolve model list refresh issues (PR #10156 by @daniel-lxs)
 - Fix: Support AWS GovCloud and China region ARNs in Bedrock provider for expanded regional support (PR #10157 by @app/roomote)
 
 ## [3.36.10] - 2025-12-17
@@ -191,7 +191,7 @@
 - Refactor: Unified context-management architecture with improved UX for better context control (PR #9795 by @hannesrudolph)
 - Add new `search_replace` native tool for single-replacement operations with improved editing precision (PR #9918 by @hannesrudolph)
 - Streaming tool stats and token usage throttling for better real-time feedback during generation (PR #9926 by @hannesrudolph)
-- Add versioned settings support with minPluginVersion gating for Roo provider (PR #9934 by @hannesrudolph)
+- Add versioned settings support with minPluginVersion gating for VibeX provider (PR #9934 by @hannesrudolph)
 - Make Architect mode save plans to `/plans` directory and gitignore it (PR #9944 by @brunobergher)
 - Add announcement support CTA and social icons to UI (PR #9945 by @hannesrudolph)
 - Add ability to save screenshots from the browser tool (PR #9963 by @mrubens)
@@ -210,7 +210,7 @@
 - Fix: Respect explicit supportsReasoningEffort array values for proper model configuration (PR #9970 by @hannesrudolph)
 - Add timeout configuration to OpenAI Compatible Provider Client (PR #9898 by @dcbartlett)
 - Revert default tool protocol change from xml to native for stability (PR #9956 by @mrubens)
-- Remove defaultTemperature from Roo provider configuration (PR #9932 by @mrubens)
+- Remove defaultTemperature from VibeX provider configuration (PR #9932 by @mrubens)
 - Improve OpenAI error messages to be more useful for debugging (PR #9639 by @mrubens)
 - Better error logs for parseToolCall exceptions (PR #9857 by @cte)
 - Improve cloud job error logging for RCC provider errors (PR #9924 by @cte)
@@ -235,7 +235,7 @@
 ![3.36.2 Release - Dynamic API Settings](/releases/3.36.2-release.png)
 
 - Restrict GPT-5 tool set to apply_patch for improved compatibility (PR #9853 by @hannesrudolph)
-- Add dynamic settings support for Roo models from API, allowing model-specific configurations to be fetched dynamically (PR #9852 by @hannesrudolph)
+- Add dynamic settings support for VibeX models from API, allowing model-specific configurations to be fetched dynamically (PR #9852 by @hannesrudolph)
 - Fix: Resolve Chutes provider model fetching issue (PR #9854 by @cte)
 
 ## [3.36.1] - 2025-12-04
@@ -262,8 +262,8 @@
 ![3.36.0 Release - Rewind Kangaroo](/releases/3.36.0-release.png)
 
 - Fix: Restore context when rewinding after condense (#8295 by @hannesrudolph, PR #9665 by @hannesrudolph)
-- Add reasoning_details support to Roo provider for enhanced model reasoning visibility (PR #9796 by @app/roomote)
-- Default to native tools for all models in the Roo provider for improved performance (PR #9811 by @mrubens)
+- Add reasoning_details support to VibeX provider for enhanced model reasoning visibility (PR #9796 by @app/roomote)
+- Default to native tools for all models in the VibeX provider for improved performance (PR #9811 by @mrubens)
 - Enable search_and_replace for Minimax models (PR #9780 by @mrubens)
 - Fix: Resolve Vercel AI Gateway model fetching issues (PR #9791 by @cte)
 - Fix: Apply conservative max tokens for Cerebras provider (PR #9804 by @sebastiand-cerebras)
@@ -297,7 +297,7 @@
 ![3.35.2 Release - Model Default Temperatures](/releases/3.35.2-release.png)
 
 - Allow models to contain default temperature settings for provider-specific optimal defaults (PR #9734 by @mrubens)
-- Add tag-based native tool calling detection for Roo provider models (PR #9735 by @mrubens)
+- Add tag-based native tool calling detection for VibeX provider models (PR #9735 by @mrubens)
 - Enable native tool support for all LiteLLM models by default (PR #9736 by @mrubens)
 - Pass app version to provider for improved request tracking (PR #9730 by @cte)
 
@@ -423,7 +423,7 @@
 - Add support for Baseten as a new AI provider (PR #9461 by @AlexKer)
 - Improve base OpenAI compatible provider with better error handling and configuration (PR #9462 by @mrubens)
 - Add provider-oriented welcome screen to improve onboarding experience (PR #9484 by @mrubens)
-- Pin Roo provider to the top of the provider list for better discoverability (PR #9485 by @mrubens)
+- Pin VibeX provider to the top of the provider list for better discoverability (PR #9485 by @mrubens)
 - Enhance native tool descriptions with examples and clarifications for better AI understanding (PR #9486 by @daniel-lxs)
 - Fix: Make cancel button immediately responsive during streaming (#9435 by @jwadow, PR #9448 by @daniel-lxs)
 - Fix: Resolve apply_diff performance regression from earlier changes (PR #9474 by @daniel-lxs)
@@ -548,7 +548,7 @@
 - Fix: Prevent crash when streaming chunks have null choices array (thanks @daniel-lxs!)
 - Fix: Prevent context condensing on settings save when provider/model unchanged (#4430 by @hannesrudolph, PR by @daniel-lxs)
 - Fix: Respect custom OpenRouter URL for all API operations (#8947 by @sstraus, PR by @roomote)
-- Add comprehensive error logging to Roo Cloud provider (thanks @daniel-lxs!)
+- Add comprehensive error logging to VibeX Cloud provider (thanks @daniel-lxs!)
 - UX: Less caffeinated kangaroo (thanks @brunobergher!)
 
 ## [3.30.3] - 2025-11-06
@@ -618,7 +618,7 @@
 - Fix: prevent MCP server restart when toggling tool permissions (#8231 by @hannesrudolph, PR by @heyseth)
 - Fix: truncate type definition to match max read line (#8149 by @chenxluo, PR by @elianiva)
 - Fix: auto-sync enableReasoningEffort with reasoning dropdown selection (thanks @daniel-lxs!)
-- Fix: Gate auth-driven Roo model refresh to active provider only (thanks @daniel-lxs!)
+- Fix: Gate auth-driven VibeX model refresh to active provider only (thanks @daniel-lxs!)
 - Prevent a noisy cloud agent exception (thanks @cte!)
 - Feat: improve @ file search for large projects (#5721 by @Naituw, PR by @daniel-lxs)
 - Feat: add zai-glm-4.6 model to Cerebras and set gpt-oss-120b as default (thanks @kevint-cerebras!)
@@ -629,7 +629,7 @@
 
 - Update Gemini models with latest 09-2025 versions including Gemini 2.5 Pro and Flash (#8485 by @cleacos, PR by @roomote)
 - Add reasoning support for Z.ai GLM binary thinking mode (#8465 by @BeWater799, PR by @daniel-lxs)
-- Enable reasoning in Roo provider (thanks @mrubens!)
+- Enable reasoning in VibeX provider (thanks @mrubens!)
 - Add settings to configure time and cost display in system prompt (#8450 by @jaxnb, PR by @roomote)
 - Fix: Use max_output_tokens when available in LiteLLM fetcher (#8454 by @fabb, PR by @roomote)
 - Fix: Process queued messages after context condensing completes (#8477 by @JosXa, PR by @roomote)
@@ -642,7 +642,7 @@
 
 - Add support for LongCat-Flash-Thinking-FP8 models in Chutes AI provider (#8425 by @leakless21, PR by @roomote)
 - Fix: Remove specific Claude model version from settings descriptions to avoid outdated references (#8435 by @rwydaegh, PR by @roomote)
-- Fix: Correct caching logic in Roo provider to improve performance (thanks @mrubens!)
+- Fix: Correct caching logic in VibeX provider to improve performance (thanks @mrubens!)
 - Fix: Ensure free models don't display pricing information in the UI (thanks @mrubens!)
 
 ## [3.29.1] - 2025-10-26
@@ -676,7 +676,7 @@
 - Normalize docs-extractor audience tags; remove admin/stakeholder; strip tool invocations (thanks @hannesrudolph!)
 - Update X/Twitter username from roo_code to roocode (thanks @app/roomote!)
 - Update Configuring Profiles video link (thanks @app/roomote!)
-- Fix link text for Roomote Control in README (thanks @laz-001!)
+- Fix link text for VibeXmote Control in README (thanks @laz-001!)
 - Remove verbose error for cloud agents (thanks @cte!)
 - Try 5s status mutation timeout (thanks @cte!)
 
@@ -755,7 +755,7 @@
 ![3.28.9 Release - Supernova Upgrade](/releases/3.28.9-release.png)
 
 - The free Supernova model now has a 1M token context window (thanks @mrubens!)
-- Experiment to show the Roo provider on the welcome screen (thanks @mrubens!)
+- Experiment to show the VibeX provider on the welcome screen (thanks @mrubens!)
 - Web: Website improvements to https://roocode.com/ (thanks @brunobergher!)
 - Fix: Remove <thinking> tags from prompts for cleaner output and fewer tokens (#8318 by @hannesrudolph, PR by @app/roomote)
 - Correct tool use suggestion to improve model adherence to suggestion (thanks @hannesrudolph!)
@@ -770,7 +770,7 @@
 
 - Fix: Resolve frequent "No tool used" errors by clarifying tool-use rules (thanks @hannesrudolph!)
 - Fix: Include initial ask in condense summarization (thanks @hannesrudolph!)
-- Add support for more free models in the Roo provider (thanks @mrubens!)
+- Add support for more free models in the VibeX provider (thanks @mrubens!)
 - Show cloud switcher and option to add a team when logged in (thanks @mrubens!)
 - Add Opengraph image for web (thanks @brunobergher!)
 
@@ -848,7 +848,7 @@
 - Fix: Include API key in Ollama /api/tags requests for authenticated instances (#7902 by @ItsOnlyBinary, PR by @app/roomote)
 - Fix: Preserve original first message context during conversation condensing (thanks @daniel-lxs!)
 - Add Qwen3 Next 80B A3B models to chutes provider (thanks @daniel-lxs!)
-- Disable Roomote Control on logout for better security (thanks @cte!)
+- Disable VibeXmote Control on logout for better security (thanks @cte!)
 - Add padding to the cloudview for better visual spacing (thanks @mrubens!)
 
 ## [3.28.1] - 2025-09-11
@@ -1000,7 +1000,7 @@
 
 - feat: add custom base URL support for Requesty provider (thanks @requesty-JohnCosta27!)
 - feat: add DeepSeek V3.1 model to Chutes AI provider (#7294 by @dmarkey, PR by @app/roomote)
-- Revert "feat: enable loading Roo modes from multiple files in .roo/modes directory" temporarily to fix a bug with mode installation
+- Revert "feat: enable loading VibeX modes from multiple files in .roo/modes directory" temporarily to fix a bug with mode installation
 
 ## [3.25.22] - 2025-08-22
 
@@ -1017,9 +1017,9 @@
 - Improved MDM handling
 - Handle nullish token values in ContextCondenseRow to prevent UI crash (thanks @s97712)
 - Improved context window error handling for OpenAI and other providers
-- Add "installed" filter to Roo Marketplace (thanks @semidark)
+- Add "installed" filter to VibeX Marketplace (thanks @semidark)
 - Improve filesystem access checks (thanks @elianiva)
-- Support for loading Roo modes from multiple YAML files in the `.roo/modes/` directory (thanks @farazoman)
+- Support for loading VibeX modes from multiple YAML files in the `.roo/modes/` directory (thanks @farazoman)
 - Add Featherless provider (thanks @DarinVerheijke)
 
 ## [3.25.20] - 2025-08-19
@@ -1194,7 +1194,7 @@
 - Fix: Prevent input clearing when clicking chat buttons (thanks @hassoncs!)
 - Update PR reviewer rules and mode configuration (thanks @daniel-lxs!)
 - Add translation check action to pull_request.opened event (thanks @app/roomote!)
-- Remove "(prev Roo Cline)" from extension title in all languages (thanks @app/roomote!)
+- Remove "(prev VibeX Cline)" from extension title in all languages (thanks @app/roomote!)
 - Remove event types mention from PR reviewer rules (thanks @daniel-lxs!)
 
 ## [3.25.2] - 2025-07-29
@@ -1547,7 +1547,7 @@
 
 ## [3.21.0] - 2025-06-17
 
-- Add Roo Marketplace to make it easy to discover and install great MCPs and modes!
+- Add VibeX Marketplace to make it easy to discover and install great MCPs and modes!
 - Add Gemini 2.5 models (Pro, Flash and Flash Lite) (thanks @daniel-lxs!)
 - Add support for Excel (.xlsx) files in tools (thanks @chrarnoldus!)
 - Add max tokens checkbox option for OpenAI compatible provider (thanks @AlexandruSmirnov!)
@@ -1650,8 +1650,8 @@
 - Add OpenAI Compatible embedder for codebase indexing (thanks @SannidhyaSah!)
 - Fix multiple memory leaks in ChatView component (thanks @kiwina!)
 - Fix WorkspaceTracker resource leaks by disposing FileSystemWatcher (thanks @kiwina!)
-- Fix RooTips setTimeout cleanup to prevent state updates on unmounted components (thanks @kiwina!)
-- Fix FileSystemWatcher leak in RooIgnoreController (thanks @kiwina!)
+- Fix VibeXTips setTimeout cleanup to prevent state updates on unmounted components (thanks @kiwina!)
+- Fix FileSystemWatcher leak in VibeXIgnoreController (thanks @kiwina!)
 - Fix clipboard memory leak by clearing setTimeout in useCopyToClipboard (thanks @kiwina!)
 - Fix ClineProvider instance cleanup (thanks @xyOz-dev!)
 - Enforce codebase_search as primary tool for code understanding tasks (thanks @hannesrudolph!)
@@ -1699,7 +1699,7 @@
 - Add DeepSeek R1 0528 model support to Chutes provider (thanks @zeozeozeo!)
 - Fix @directory not respecting .rooignore files (thanks @xyOz-dev!)
 - Add rooignore checking for insert_content and search_and_replace tools
-- Fix menu breaking when Roo is moved between primary and secondary sidebars (thanks @chrarnoldus!)
+- Fix menu breaking when VibeX is moved between primary and secondary sidebars (thanks @chrarnoldus!)
 - Resolve memory leak in ChatView by stabilizing callback props (thanks @samhvw8!)
 - Fix write_to_file to properly create empty files when content is empty (thanks @Ruakij!)
 - Fix chat input clearing during running tasks (thanks @xyOz-dev!)
@@ -1778,7 +1778,7 @@
 
 ## [3.17.2] - 2025-05-15
 
-- Revert "Switch to the new Roo message parser" (appears to cause a tool parsing bug)
+- Revert "Switch to the new VibeX message parser" (appears to cause a tool parsing bug)
 - Lock the versions of vsce and ovsx
 
 ## [3.17.1] - 2025-05-15
@@ -1793,7 +1793,7 @@
 - Add experimental feature to intelligently condense the task context instead of truncating it
 - Fix one of the causes of the gray screen issue (thanks @xyOz-dev!)
 - Focus improvements for better UI interactions (thanks Cline!)
-- Switch to the new Roo message parser for improved performance (thanks Cline!)
+- Switch to the new VibeX message parser for improved performance (thanks Cline!)
 - Enable source maps for improved debugging (thanks @KJ7LNW!)
 - Update OpenRouter provider to use provider-specific model info (thanks @daniel-lxs!)
 - Fix Requesty cost/token reporting (thanks @dtrugman!)
@@ -1938,7 +1938,7 @@
 - Clean up settings data model
 - Omit reasoning params for non-reasoning models
 - Clearer documentation for adding settings (thanks @shariqriazz!)
-- Fix word wrapping in Roo message title (thanks @zhangtony239!)
+- Fix word wrapping in VibeX message title (thanks @zhangtony239!)
 - Update default model id for Unbound from claude 3.5 to 3.7 (thanks @pugazhendhi-m!)
 
 ## [3.14.2] - 2025-04-24
@@ -2284,13 +2284,13 @@
 
 ## [3.9.1] - 2025-03-18
 
-- Pass current language to system prompt correctly so Roo thinks and speaks in the selected language
+- Pass current language to system prompt correctly so VibeX thinks and speaks in the selected language
 
 ## [3.9.0] - 2025-03-18
 
 - Internationalize Vibex into Catalan, German, Spanish, French, Hindi, Italian, Japanese, Korean, Polish, Portuguese, Turkish, Vietnamese, Simplified Chinese, and Traditional Chinese (thanks @feifei325!)
 - Bring back support for MCP over SSE (thanks @aheizi!)
-- Add a text-to-speech option to have Roo talk to you as it works (thanks @heyseth!)
+- Add a text-to-speech option to have VibeX talk to you as it works (thanks @heyseth!)
 - Choose a specific provider when using OpenRouter (thanks PhunkyBob!)
 - Support batch deletion of task history (thanks @aheizi!)
 - Internationalize Human Relay, adjust the layout, and make it work on the welcome screen (thanks @NyxJae!)
@@ -2298,10 +2298,10 @@
 - Fix display updating for Bedrock custom ARNs that are prompt routers (thanks @Smartsheet-JB-Brown!)
 - Fix to exclude search highlighting when copying items from task history (thanks @im47cn!)
 - Fix context mentions to work with multiple-workspace projects (thanks @teddyOOXX!)
-- Fix to task history saving when running multiple Roos (thanks @samhvw8!)
+- Fix to task history saving when running multiple VibeXs (thanks @samhvw8!)
 - Improve task deletion when underlying files are missing (thanks @GitlyHallows!)
 - Improve support for NixOS & direnv (thanks @wkordalski!)
-- Fix wheel scrolling when Roo is opened in editor tabs (thanks @GitlyHallows!)
+- Fix wheel scrolling when VibeX is opened in editor tabs (thanks @GitlyHallows!)
 - Don’t automatically mention the file when using the "Add to context" code action (thanks @qdaxb!)
 - Expose task stack in `VibexAPI` (thanks @franekp!)
 - Give the models visibility into the current task's API cost
@@ -2341,7 +2341,7 @@
 ## [3.8.4] - 2025-03-09
 
 - Roll back multi-diff progress indicator temporarily to fix a double-confirmation in saving edits
-- Add an option in the prompts tab to save tokens by disabling the ability to ask Roo to create/edit custom modes for you (thanks @hannesrudolph!)
+- Add an option in the prompts tab to save tokens by disabling the ability to ask VibeX to create/edit custom modes for you (thanks @hannesrudolph!)
 
 ## [3.8.3] - 2025-03-09
 
@@ -2373,7 +2373,7 @@
 - Add a new experimental diff editing strategy that applies multiple diff edits at once (thanks @qdaxb!)
 - Add support for a .rooignore to prevent Vibex from read/writing certain files, with a setting to also exclude them from search/lists (thanks Cline!)
 - Update the new_task tool to return results to the parent task on completion, supporting better orchestration (thanks @shaybc!)
-- Support running Roo in multiple editor windows simultaneously (thanks @samhvw8!)
+- Support running VibeX in multiple editor windows simultaneously (thanks @samhvw8!)
 - Make checkpoints asynchronous and exclude more files to speed them up
 - Redesign the settings page to make it easier to navigate
 - Add credential-based authentication for Vertex AI, enabling users to easily switch between Google Cloud accounts (thanks @eonghk!)
@@ -2504,7 +2504,7 @@
 - Fix default preferred language for zh-cn and zh-tw (thanks @System233!)
 - Fix Mistral integration (thanks @d-oit!)
 - Feature to mention `@terminal` to pull terminal output into context (thanks Cline!)
-- Fix system prompt to make sure Roo knows about all available modes
+- Fix system prompt to make sure VibeX knows about all available modes
 - Enable streaming mode for OpenAI o1
 
 ## [3.3.20] - 2025-02-14
@@ -2608,11 +2608,11 @@
 - Capture reasoning from more variants of DeepSeek R1 (thanks @Szpadel!)
 - Use an exponential backoff for API retries (if delay after first error is 5s, delay after second consecutive error will be 10s, then 20s, etc)
 - Add a slider in advanced settings to enable rate limiting requests to avoid overloading providers (i.e. wait at least 10 seconds between API requests)
-- Prompt tweaks to make Roo better at creating new custom modes for you
+- Prompt tweaks to make VibeX better at creating new custom modes for you
 
 ## [3.3.6]
 
-- Add a "new task" tool that allows Roo to start new tasks with an initial message and mode
+- Add a "new task" tool that allows VibeX to start new tasks with an initial message and mode
 - Fix a bug that was preventing the use of qwen-max and potentially other OpenAI-compatible providers (thanks @Szpadel!)
 - Add support for perplexity/sonar-reasoning (thanks @Szpadel!)
 - Visual fixes to dropdowns (thanks @psv2522!)
@@ -2688,7 +2688,7 @@
 
 ## [3.2.0 - 3.2.2]
 
-- **Name Change From Roo Cline to Vibex:** We're excited to announce our new name! After growing beyond 50,000 installations, we've rebranded from Roo Cline to Vibex to better reflect our identity as we chart our own course.
+- **Name Change From VibeX Cline to Vibex:** We're excited to announce our new name! After growing beyond 50,000 installations, we've rebranded from VibeX Cline to Vibex to better reflect our identity as we chart our own course.
 
 - **Custom Modes:** Create your own personas for Vibex! While our built-in modes (Code, Architect, Ask) are still here, you can now shape entirely new ones:
     - Define custom prompts
@@ -2972,7 +2972,7 @@ Join us at https://www.reddit.com/r/Vibex to share your custom modes and be part
 
 ## [2.1.8]
 
-- Roo Cline now allows configuration of which commands are allowed without approval!
+- VibeX Cline now allows configuration of which commands are allowed without approval!
 
 ## [2.1.7]
 
@@ -2986,7 +2986,7 @@ Join us at https://www.reddit.com/r/Vibex to share your custom modes and be part
 
 ## [2.1.6]
 
-- Roo Cline now runs in all VSCode-compatible editors
+- VibeX Cline now runs in all VSCode-compatible editors
 
 ## [2.1.5]
 
@@ -2994,11 +2994,11 @@ Join us at https://www.reddit.com/r/Vibex to share your custom modes and be part
 
 ## [2.1.4]
 
-- Roo Cline now can run side-by-side with Cline
+- VibeX Cline now can run side-by-side with Cline
 
 ## [2.1.3]
 
-- Roo Cline now allows browser actions without approval when `alwaysAllowBrowser` is true
+- VibeX Cline now allows browser actions without approval when `alwaysAllowBrowser` is true
 
 ## [2.1.2]
 

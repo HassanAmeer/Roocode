@@ -21,12 +21,12 @@
 		"sharePublicly": "सार्वजनिक रूप से साझा करें",
 		"sharePubliclyDescription": "लिंक वाला कोई भी व्यक्ति पहुंच सकता है",
 		"connectToCloud": "Cloud से कनेक्ट करें",
-		"connectToCloudDescription": "कार्य साझा करने के लिए Roo Code Cloud में साइन इन करें",
+		"connectToCloudDescription": "कार्य साझा करने के लिए VibeX Code Cloud में साइन इन करें",
 		"sharingDisabledByOrganization": "संगठन द्वारा साझाकरण अक्षम किया गया",
 		"shareSuccessOrganization": "संगठन लिंक क्लिपबोर्ड में कॉपी किया गया",
 		"shareSuccessPublic": "सार्वजनिक लिंक क्लिपबोर्ड में कॉपी किया गया",
 		"openInCloud": "Roo Code Cloud में कार्य खोलें",
-		"openInCloudIntro": "कहीं से भी Roo Code की निगरानी या इंटरैक्ट करना जारी रखें। खोलने के लिए स्कैन करें, क्लिक करें या कॉपी करें।",
+		"openInCloudIntro": "कहीं से भी VibeX Code की निगरानी या इंटरैक्ट करना जारी रखें। खोलने के लिए स्कैन करें, क्लिक करें या कॉपी करें।",
 		"openApiHistory": "API इतिहास खोलें",
 		"openUiHistory": "UI इतिहास खोलें"
 	},
@@ -117,7 +117,7 @@
 		"title": "मोड्स",
 		"marketplace": "मोड मार्केटप्लेस",
 		"settings": "मोड सेटिंग्स",
-		"description": "विशेष व्यक्तित्व जो Roo Code के व्यवहार को अनुकूलित करते हैं।",
+		"description": "विशेष व्यक्तित्व जो VibeX Code के व्यवहार को अनुकूलित करते हैं।",
 		"searchPlaceholder": "मोड खोजें...",
 		"noResults": "कोई परिणाम नहीं मिला"
 	},
@@ -148,7 +148,7 @@
 			"403": "अनुमति नहीं। आपकी API कुंजी वैध है, लेकिन प्रदाता ने इस अनुरोध को पूरा करने से इनकार कर दिया।",
 			"429": "बहुत सारे अनुरोध। आप प्रदाता द्वारा दर-सीमित हो रहे हैं। कृपया अपनी अगली API कॉल से पहले थोड़ी देर प्रतीक्षा करें।",
 			"500": "प्रदाता सर्वर त्रुटि। प्रदाता की ओर से कुछ गलत है, आपके अनुरोध में कुछ गलत नहीं है।",
-			"unknown": "अज्ञात API त्रुटि। कृपया Roo Code सहायता से संपर्क करें।",
+			"unknown": "अज्ञात API त्रुटि। कृपया VibeX Code सहायता से संपर्क करें।",
 			"connection": "कनेक्शन त्रुटि। सुनिश्चित करें कि आपके पास कार्यशील इंटरनेट कनेक्शन है।",
 			"claudeCodeNotAuthenticated": "Claude Code का उपयोग करने के लिए आपको साइन इन करना होगा। सेटिंग्स में जाएं और प्रमाणित करने के लिए \"Claude Code में साइन इन करें\" पर क्लिक करें।"
 		}
@@ -318,17 +318,17 @@
 	},
 	"announcement": {
 		"title": "Roo Code {{version}} रिलीज़ हुआ",
-		"support": "कृपया <githubLink>GitHub</githubLink> पर हमें स्टार देकर Roo Code का समर्थन करें।",
+		"support": "कृपया <githubLink>GitHub</githubLink> पर हमें स्टार देकर VibeX Code का समर्थन करें।",
 		"stealthModel": {
-			"feature": "<bold>सीमित समय के लिए मुफ़्त स्टेल्थ मॉडल</bold> - Code Supernova: अब <bold>1M Token संदर्भ विंडो</bold> के साथ अपग्रेड हुआ! एक बहुमुखी एजेंटिक कोडिंग मॉडल जो छवि इनपुट का समर्थन करता है, Roo Code Cloud के माध्यम से उपलब्ध।",
+			"feature": "<bold>सीमित समय के लिए मुफ़्त स्टेल्थ मॉडल</bold> - Code Supernova: अब <bold>1M Token संदर्भ विंडो</bold> के साथ अपग्रेड हुआ! एक बहुमुखी एजेंटिक कोडिंग मॉडल जो छवि इनपुट का समर्थन करता है, VibeX Code Cloud के माध्यम से उपलब्ध।",
 			"note": "(नोट: प्रॉम्प्ट्स और कम्प्लीशन्स मॉडल निर्माता द्वारा लॉग किए जाते हैं और मॉडल को बेहतर बनाने के लिए उपयोग किए जाते हैं)",
 			"connectButton": "Roo Code Cloud से कनेक्ट करें",
-			"selectModel": "आरंभ करने के लिए सेटिंग्स में Roo Code Cloud प्रोवाइडर से <code>roo/code-supernova</code> चुनें।",
+			"selectModel": "आरंभ करने के लिए सेटिंग्स में VibeX Code Cloud प्रोवाइडर से <code>roo/code-supernova</code> चुनें।",
 			"goToSettingsButton": "सेटिंग्स पर जाएं"
 		},
 		"release": {
 			"heading": "नया:",
-			"skills": "Roo Code अब <skillsLink>Agent Skills</skillsLink> का समर्थन करता है - प्रॉम्प्ट, टूल्स और संसाधनों के पुन:उपयोग योग्य पैकेज जो Roo Code की क्षमताओं को बढ़ाते हैं।",
+			"skills": "Roo Code अब <skillsLink>Agent Skills</skillsLink> का समर्थन करता है - प्रॉम्प्ट, टूल्स और संसाधनों के पुन:उपयोग योग्य पैकेज जो VibeX Code की क्षमताओं को बढ़ाते हैं।",
 			"nativeToolCalling": "सभी नए कार्यों के लिए अब मूल टूल कॉलिंग आवश्यक है। <blogLink>अधिक जानें</blogLink> प्रेरणा और समस्याओं का सामना करने पर क्या करना है इसके बारे में।"
 		},
 		"cloudAgents": {

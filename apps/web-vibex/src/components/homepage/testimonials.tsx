@@ -40,7 +40,7 @@ export const testimonials: Testimonial[] = [
 		name: "Michael",
 		role: "Reviewer",
 		origin: "VS Code Marketplace",
-		quote: "I switched from Windsurf to Vibex in January and honestly, it's been a huge upgrade. Windsurf kept making mistakes and being dumb when I ask it for things. Roo just gets it. Projects that used to take a full day now wrap up before lunch. ",
+		quote: "I switched from Windsurf to Vibex in January and honestly, it's been a huge upgrade. Windsurf kept making mistakes and being dumb when I ask it for things. VibeX just gets it. Projects that used to take a full day now wrap up before lunch. ",
 		stars: 5,
 	},
 	{
@@ -75,7 +75,7 @@ export const testimonials: Testimonial[] = [
 		name: "Ryan Booth",
 		role: "Reviewer",
 		origin: "VS Code Marketplace",
-		quote: "I work inside Roo about 60+ hours a week and usually vibex is building something at all hours of the day. An amazing tool by an amazing team!",
+		quote: "I work inside VibeX about 60+ hours a week and usually vibex is building something at all hours of the day. An amazing tool by an amazing team!",
 		stars: 5,
 	},
 	{
@@ -193,7 +193,7 @@ export function Testimonials() {
 			<div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="mx-auto mb-8 md:max-w-2xl text-center">
 					<h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
-						More than 1 million people are shipping with Roo.
+						More than 1 million people are shipping with VibeX.
 					</h2>
 					<p className="mt-6 text-lg text-muted-foreground">And they have some great things to say.</p>
 				</div>

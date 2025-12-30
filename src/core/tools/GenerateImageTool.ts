@@ -14,7 +14,7 @@ import { getReadablePath } from "../../utils/path"
 import { isPathOutsideWorkspace } from "../../utils/pathUtils"
 import { EXPERIMENT_IDS, experiments } from "../../shared/experiments"
 import { OpenRouterHandler } from "../../api/providers/openrouter"
-import { RooHandler } from "../../api/providers/roo"
+import { VibeXHandler } from "../../api/providers/vibex"
 import { BaseTool, ToolCallbacks } from "./BaseTool"
 import type { ToolUse } from "../../shared/tools"
 import { t } from "../../i18n"
@@ -128,7 +128,7 @@ export class GenerateImageTool extends BaseTool<"generate_image"> {
 			}
 		}
 
-		const isWriteProtected = task.rooProtectedController?.isWriteProtected(relPath) || false
+		const isWriteProtected = task.vibexProtectedController?.isWriteProtected(relPath) || false
 
 		// Use shared utility for backwards compatibility logic
 		const imageProvider = getImageGenerationProvider(
@@ -200,7 +200,7 @@ export class GenerateImageTool extends BaseTool<"generate_image"> {
 			let result
 			if (modelProvider === "roo") {
 				// Use Vibex Cloud provider (supports both chat completions and images API)
-				const rooHandler = new RooHandler({} as any)
+				const rooHandler = new VibeXHandler({} as any)
 				result = await rooHandler.generateImage(prompt, selectedModel, inputImageData, apiMethod)
 			} else {
 				// Use OpenRouter provider (only supports chat completions API)

@@ -121,7 +121,7 @@
 			"completionError": "Cerebras completion error: {{error}}"
 		},
 		"roo": {
-			"authenticationRequired": "Roo Code provider requires cloud authentication. Please sign in to Roo Code Cloud."
+			"authenticationRequired": "Roo Code provider requires cloud authentication. Please sign in to VibeX Code Cloud."
 		},
 		"api": {
 			"invalidKeyInvalidChars": "API key contains invalid characters."
@@ -135,7 +135,7 @@
 	"warnings": {
 		"no_terminal_content": "No terminal content selected",
 		"missing_task_files": "This task's files are missing. Would you like to remove it from the task list?",
-		"auto_import_failed": "Failed to auto-import Roo Code settings: {{error}}"
+		"auto_import_failed": "Failed to auto-import VibeX Code settings: {{error}}"
 	},
 	"info": {
 		"no_changes": "No changes found.",
@@ -181,7 +181,7 @@
 		"enter_valid_path": "Please enter a valid path"
 	},
 	"input": {
-		"task_prompt": "What should Roo Code do?",
+		"task_prompt": "What should VibeX Code do?",
 		"task_placeholder": "Type your task here"
 	},
 	"customModes": {
@@ -208,8 +208,8 @@
 	},
 	"mdm": {
 		"errors": {
-			"cloud_auth_required": "Your organization requires Roo Code Cloud authentication. Please sign in to continue.",
-			"organization_mismatch": "You must be authenticated with your organization's Roo Code Cloud account.",
+			"cloud_auth_required": "Your organization requires VibeX Code Cloud authentication. Please sign in to continue.",
+			"organization_mismatch": "You must be authenticated with your organization's VibeX Code Cloud account.",
 			"verification_failed": "Unable to verify organization authentication."
 		},
 		"info": {

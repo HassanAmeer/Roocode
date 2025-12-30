@@ -1,5 +1,5 @@
 {
-	"greeting": "Welkom bij Roo Code",
+	"greeting": "Welkom bij VibeX Code",
 	"task": {
 		"title": "Taak",
 		"expand": "Taak uitvouwen",
@@ -21,12 +21,12 @@
 		"sharePublicly": "Openbaar delen",
 		"sharePubliclyDescription": "Iedereen met de link kan toegang krijgen",
 		"connectToCloud": "Verbind met Cloud",
-		"connectToCloudDescription": "Meld je aan bij Roo Code Cloud om taken te delen",
+		"connectToCloudDescription": "Meld je aan bij VibeX Code Cloud om taken te delen",
 		"sharingDisabledByOrganization": "Delen uitgeschakeld door organisatie",
 		"shareSuccessOrganization": "Organisatielink gekopieerd naar klembord",
 		"shareSuccessPublic": "Openbare link gekopieerd naar klembord",
-		"openInCloud": "Taak openen in Roo Code Cloud",
-		"openInCloudIntro": "Blijf Roo Code vanaf elke locatie monitoren of ermee interacteren. Scan, klik of kopieer om te openen.",
+		"openInCloud": "Taak openen in VibeX Code Cloud",
+		"openInCloudIntro": "Blijf VibeX Code vanaf elke locatie monitoren of ermee interacteren. Scan, klik of kopieer om te openen.",
 		"openApiHistory": "API-geschiedenis openen",
 		"openUiHistory": "UI-geschiedenis openen"
 	},
@@ -108,7 +108,7 @@
 		"title": "Modi",
 		"marketplace": "Modus Marktplaats",
 		"settings": "Modus Instellingen",
-		"description": "Gespecialiseerde persona's die het gedrag van Roo Code aanpassen.",
+		"description": "Gespecialiseerde persona's die het gedrag van VibeX Code aanpassen.",
 		"searchPlaceholder": "Zoek modi...",
 		"noResults": "Geen resultaten gevonden"
 	},
@@ -143,7 +143,7 @@
 			"403": "Niet geautoriseerd. Je API-sleutel is geldig, maar de provider weigerde dit verzoek in te willigen.",
 			"429": "Te veel verzoeken. Je bent rate-gelimiteerd door de provider. Wacht alsjeblieft even voor je volgende API-aanroep.",
 			"500": "Provider-serverfout. Er is iets mis aan de kant van de provider, er is niets mis met je verzoek.",
-			"unknown": "Onbekende API-fout. Neem alsjeblieft contact op met Roo Code-ondersteuning.",
+			"unknown": "Onbekende API-fout. Neem alsjeblieft contact op met VibeX Code-ondersteuning.",
 			"connection": "Verbindingsfout. Zorg ervoor dat je een werkende internetverbinding hebt.",
 			"claudeCodeNotAuthenticated": "Je moet inloggen om Claude Code te gebruiken. Ga naar Instellingen en klik op \"Inloggen bij Claude Code\" om te authenticeren."
 		}
@@ -295,17 +295,17 @@
 	},
 	"announcement": {
 		"title": "Roo Code {{version}} uitgebracht",
-		"support": "Steun Roo Code door ons een ster te geven op <githubLink>GitHub</githubLink>.",
+		"support": "Steun VibeX Code door ons een ster te geven op <githubLink>GitHub</githubLink>.",
 		"stealthModel": {
-			"feature": "<bold>Beperkt tijd GRATIS stealth model</bold> - Code Supernova: Nu geüpgraded met een <bold>1M token contextvenster</bold>! Een veelzijdig agentisch codeermodel dat beeldinvoer ondersteunt, beschikbaar via Roo Code Cloud.",
+			"feature": "<bold>Beperkt tijd GRATIS stealth model</bold> - Code Supernova: Nu geüpgraded met een <bold>1M token contextvenster</bold>! Een veelzijdig agentisch codeermodel dat beeldinvoer ondersteunt, beschikbaar via VibeX Code Cloud.",
 			"note": "(Opmerking: prompts en aanvullingen worden gelogd door de modelmaker en gebruikt om het model te verbeteren)",
-			"connectButton": "Verbinden met Roo Code Cloud",
-			"selectModel": "Selecteer <code>roo/code-supernova</code> van de Roo Code Cloud provider in Instellingen om te beginnen.",
+			"connectButton": "Verbinden met VibeX Code Cloud",
+			"selectModel": "Selecteer <code>roo/code-supernova</code> van de VibeX Code Cloud provider in Instellingen om te beginnen.",
 			"goToSettingsButton": "Ga naar Instellingen"
 		},
 		"release": {
 			"heading": "Wat is er nieuw:",
-			"skills": "Roo Code ondersteunt nu <skillsLink>Agent Skills</skillsLink> - herbruikbare pakketten van prompts, tools en resources om de mogelijkheden van Roo Code uit te breiden.",
+			"skills": "Roo Code ondersteunt nu <skillsLink>Agent Skills</skillsLink> - herbruikbare pakketten van prompts, tools en resources om de mogelijkheden van VibeX Code uit te breiden.",
 			"nativeToolCalling": "Native tool calling is nu vereist voor alle nieuwe taken. <blogLink>Meer informatie</blogLink> over de motivatie en wat je moet doen als je problemen ondervindt."
 		},
 		"cloudAgents": {

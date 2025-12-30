@@ -26,7 +26,7 @@ export const features: Feature[] = [
 		icon: Users2,
 		title: "Specialized modes",
 		description:
-			"Planning, Architecture, Debugging and beyond: Roo's modes stay on-task and deliver. They even know when to hand off work to other modes. Create your own or download from the marketplace.",
+			"Planning, Architecture, Debugging and beyond: VibeX's modes stay on-task and deliver. They even know when to hand off work to other modes. Create your own or download from the marketplace.",
 	},
 	{
 		icon: ReplaceAll,
@@ -39,7 +39,7 @@ export const features: Feature[] = [
 		icon: CheckCheck,
 		title: "Granular auto-approval",
 		description:
-			"Control each action and make Roo as autonomous as you want as you build confidence. Or go YOLO and let it rip.",
+			"Control each action and make VibeX as autonomous as you want as you build confidence. Or go YOLO and let it rip.",
 	},
 	{
 		icon: Boxes,
@@ -56,7 +56,7 @@ export const features: Feature[] = [
 		icon: Keyboard,
 		title: "Highly customizable",
 		description:
-			"Fine-tune settings for Roo to work for you, like inference context, model properties, slash commands and more. Most settings can be global or serialized in your repository.",
+			"Fine-tune settings for VibeX to work for you, like inference context, model properties, slash commands and more. Most settings can be global or serialized in your repository.",
 	},
 	{
 		icon: GitPullRequest,

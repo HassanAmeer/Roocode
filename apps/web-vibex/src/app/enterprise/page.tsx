@@ -145,8 +145,8 @@ export default async function Enterprise() {
 							Take Control of Your AI Development
 						</h2>
 						<p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-							Vibex Cloud provides enterprise-grade control and visibility for Vibex deployments,
-							with an extensible architecture for your evolving AI strategy.
+							Vibex Cloud provides enterprise-grade control and visibility for Vibex deployments, with an
+							extensible architecture for your evolving AI strategy.
 						</p>
 					</div>
 
@@ -170,7 +170,7 @@ export default async function Enterprise() {
 								</li>
 								<li className="flex items-start">
 									<CheckCircle className="mr-2 mt-0.5 h-5 w-5 shrink-0 text-green-500" />
-									<span>Multi-model support for Roo</span>
+									<span>Multi-model support for VibeX</span>
 								</li>
 								<li className="flex items-start">
 									<CheckCircle className="mr-2 mt-0.5 h-5 w-5 shrink-0 text-green-500" />
@@ -522,8 +522,8 @@ export default async function Enterprise() {
 									Ready to Transform Your Development Process?
 								</h2>
 								<p className="mb-8 text-lg text-muted-foreground">
-									Join our early access program and be among the first to experience the power of Roo
-									Code Cloud for Enterprise.
+									Join our early access program and be among the first to experience the power of
+									VibeX Code Cloud for Enterprise.
 								</p>
 								<div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
 									<div className="rounded-lg border border-border bg-card/80 backdrop-blur-sm p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 dark:border-white/20 dark:bg-gray-800/80 dark:hover:border-white/40 dark:hover:bg-gray-700/90 dark:hover:shadow-[0_20px_50px_rgba(255,255,255,0.2)] dark:hover:scale-[1.02]">

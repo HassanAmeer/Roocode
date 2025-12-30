@@ -3,7 +3,7 @@ import { VSCodeLink } from "@vscode/webview-ui-toolkit/react"
 import { useRooCreditBalance } from "@/components/ui/hooks/useRooCreditBalance"
 import { useExtensionState } from "@src/context/ExtensionStateContext"
 
-export const RooBalanceDisplay = () => {
+export const VibeXBalanceDisplay = () => {
 	const { data: balance } = useRooCreditBalance()
 	const { cloudApiUrl } = useExtensionState()
 

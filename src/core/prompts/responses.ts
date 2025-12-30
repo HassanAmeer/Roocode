@@ -2,7 +2,7 @@ import { Anthropic } from "@anthropic-ai/sdk"
 import * as path from "path"
 import * as diff from "diff"
 import { VibexIgnoreController, LOCK_TEXT_SYMBOL } from "../ignore/VibexIgnoreController"
-import { RooProtectedController } from "../protect/RooProtectedController"
+import { VibeXProtectedController } from "../protect/VibeXProtectedController"
 import { ToolProtocol, isNativeProtocol, TOOL_PROTOCOL } from "@roo-code/types"
 
 export const formatResponse = {
@@ -162,7 +162,7 @@ Otherwise, if you have not completed the task and do not need additional informa
 		didHitLimit: boolean,
 		vibexIgnoreController: VibexIgnoreController | undefined,
 		showRooIgnoredFiles: boolean,
-		rooProtectedController?: RooProtectedController,
+		vibexProtectedController?: VibeXProtectedController,
 	): string => {
 		const sorted = files
 			.map((file) => {
@@ -212,7 +212,7 @@ Otherwise, if you have not completed the task and do not need additional informa
 					rooIgnoreParsed.push(LOCK_TEXT_SYMBOL + " " + filePath)
 				} else {
 					// Check if file is write-protected (only for non-ignored files)
-					const isWriteProtected = rooProtectedController?.isWriteProtected(absoluteFilePath) || false
+					const isWriteProtected = vibexProtectedController?.isWriteProtected(absoluteFilePath) || false
 					if (isWriteProtected) {
 						rooIgnoreParsed.push("🛡️ " + filePath)
 					} else {

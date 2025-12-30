@@ -139,8 +139,8 @@ export default function PricingPage() {
 					<div className="text-center">
 						<h1 className="text-5xl font-bold tracking-tight">Vibex Pricing</h1>
 						<p className="mt-4 text-lg text-muted-foreground">
-							For all of our products: the Vibex VS Code Extension, Vibex Cloud and the Vibex
-							Cloud inference Provider.
+							For all of our products: the Vibex VS Code Extension, Vibex Cloud and the Vibex Cloud
+							inference Provider.
 						</p>
 					</div>
 				</div>
@@ -234,7 +234,7 @@ export default function PricingPage() {
 							<div className="text-sm text-muted-foreground">
 								<p className="">
 									On any plan, you can use your own LLM provider API key or use the built-in Vibex
-									Cloud provider – curated models to work with Roo with no markup, including the
+									Cloud provider – curated models to work with VibeX with no markup, including the
 									latest Gemini, GPT and Claude. Paid with credits.
 									<Link href="/provider" className="underline hover:no-underline ml-1">
 										See per model pricing.
@@ -263,9 +263,9 @@ export default function PricingPage() {
 						<div className="rounded-xl border border-border bg-card p-6">
 							<h3 className="font-semibold">Wait, is Vibex free or not?</h3>
 							<p className="mt-2 text-sm text-muted-foreground">
-								Yes! The Vibex VS Code extension is open source and free forever. The extension acts
-								as a powerful AI coding assistant right in your editor. These are the prices for Roo
-								Code Cloud.
+								Yes! The Vibex VS Code extension is open source and free forever. The extension acts as
+								a powerful AI coding assistant right in your editor. These are the prices for VibeX Code
+								Cloud.
 							</p>
 						</div>
 						<div className="rounded-xl border border-border bg-card p-6">

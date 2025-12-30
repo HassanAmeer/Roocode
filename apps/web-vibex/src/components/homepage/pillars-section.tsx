@@ -164,7 +164,7 @@ export function PillarsSection() {
 										Developer tools need to fit like gloves. Highly tweakable,
 										keyboard-shortcut-heavy gloves.
 									</p>
-									<p>We made Roo thoughtfully configurable to fit your workflow as best it can.</p>
+									<p>We made VibeX thoughtfully configurable to fit your workflow as best it can.</p>
 								</div>
 							</div>
 						</div>

@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from "vitest"
 import { render, screen } from "@testing-library/react"
-import { RooBalanceDisplay } from "../RooBalanceDisplay"
+import { VibeXBalanceDisplay } from "../VibeXBalanceDisplay"
 
 // Mock the hooks
 vi.mock("@/components/ui/hooks/useRooCreditBalance", () => ({
@@ -14,7 +14,7 @@ vi.mock("@src/context/ExtensionStateContext", () => ({
 import { useRooCreditBalance } from "@/components/ui/hooks/useRooCreditBalance"
 import { useExtensionState } from "@src/context/ExtensionStateContext"
 
-describe("RooBalanceDisplay", () => {
+describe("VibeXBalanceDisplay", () => {
 	beforeEach(() => {
 		vi.clearAllMocks()
 		;(useExtensionState as any).mockReturnValue({
@@ -29,7 +29,7 @@ describe("RooBalanceDisplay", () => {
 			error: null,
 		})
 
-		render(<RooBalanceDisplay />)
+		render(<VibeXBalanceDisplay />)
 
 		expect(screen.getByText("$12.34")).toBeInTheDocument()
 	})
@@ -41,7 +41,7 @@ describe("RooBalanceDisplay", () => {
 			error: null,
 		})
 
-		render(<RooBalanceDisplay />)
+		render(<VibeXBalanceDisplay />)
 
 		expect(screen.getByText("$7.80")).toBeInTheDocument()
 	})
@@ -53,7 +53,7 @@ describe("RooBalanceDisplay", () => {
 			error: null,
 		})
 
-		render(<RooBalanceDisplay />)
+		render(<VibeXBalanceDisplay />)
 
 		expect(screen.getByText("$5.00")).toBeInTheDocument()
 	})
@@ -65,7 +65,7 @@ describe("RooBalanceDisplay", () => {
 			error: null,
 		})
 
-		const { container } = render(<RooBalanceDisplay />)
+		const { container } = render(<VibeXBalanceDisplay />)
 
 		expect(container.firstChild).toBeNull()
 	})
@@ -77,7 +77,7 @@ describe("RooBalanceDisplay", () => {
 			error: null,
 		})
 
-		const { container } = render(<RooBalanceDisplay />)
+		const { container } = render(<VibeXBalanceDisplay />)
 
 		expect(container.firstChild).toBeNull()
 	})
@@ -89,7 +89,7 @@ describe("RooBalanceDisplay", () => {
 			error: "Failed to fetch balance",
 		})
 
-		const { container } = render(<RooBalanceDisplay />)
+		const { container } = render(<VibeXBalanceDisplay />)
 
 		expect(container.firstChild).toBeNull()
 	})
@@ -101,7 +101,7 @@ describe("RooBalanceDisplay", () => {
 			error: null,
 		})
 
-		render(<RooBalanceDisplay />)
+		render(<VibeXBalanceDisplay />)
 
 		expect(screen.getByText("$0.00")).toBeInTheDocument()
 	})

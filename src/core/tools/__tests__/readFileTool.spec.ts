@@ -1420,7 +1420,7 @@ describe("read_file tool output structure", () => {
 			expect(toolResult).toBe(`Error: Missing required parameter`)
 		})
 
-		it("should include error for RooIgnore error", async () => {
+		it("should include error for VibeXIgnore error", async () => {
 			// Execute - skip addLineNumbers check as it returns early with an error
 			const result = await executeReadFileTool({}, { validateAccess: false })
 

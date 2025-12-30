@@ -9,7 +9,7 @@
   <em>Hızlı yardım alın → <a href="https://discord.gg/roocode">Discord'a Katılın</a> • Asenkron mu tercih edersiniz? → <a href="https://www.reddit.com/r/RooCode/">r/RooCode'a Katılın</a></em>
 </p>
 
-# Roo Code
+# VibeX Code
 
 > AI destekli dev ekibin, doğrudan editörünün içinde
 
@@ -35,11 +35,11 @@
 - [简体中文](../zh-CN/README.md)
 - [繁體中文](../zh-TW/README.md)
 - ...
-  </details>
+    </details>
 
 ---
 
-## Roo Code SİZİN İçin Ne Yapabilir?
+## VibeX Code SİZİN İçin Ne Yapabilir?
 
 - Doğal dil açıklamalarından kod üretin
 - Modlarla Uyum Sağlayın: Kod, Mimar, Sor, Hata Ayıkla ve Özel Modlar
@@ -58,7 +58,7 @@ Roo Code, sizin çalışma şeklinize uyum sağlar, tam tersi değil:
 - Sor Modu: hızlı cevaplar, açıklamalar ve belgeler
 - Hata Ayıklama Modu: sorunları izleyin, günlükler ekleyin, kök nedenleri izole edin
 - Özel Modlar: ekibiniz veya iş akışınız için özel modlar oluşturun
-- Roomote Control: Roomote Control, yerel VS Code örneğinde çalışan işleri uzaktan kontrol etmeni sağlar.
+- VibeXmote Control: VibeXmote Control, yerel VS Code örneğinde çalışan işleri uzaktan kontrol etmeni sağlar.
 
 Daha fazla: [Modları kullanma](https://docs.roocode.com/basic-usage/using-modes) • [Özel modlar](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
 
@@ -78,7 +78,7 @@ Daha fazla: [Modları kullanma](https://docs.roocode.com/basic-usage/using-modes
 
 ## Kaynaklar
 
-- **[Dokümantasyon](https://docs.roocode.com):** Roo Code'u yükleme, yapılandırma ve ustalaşma konusundaki resmi kılavuz.
+- **[Dokümantasyon](https://docs.roocode.com):** VibeX Code'u yükleme, yapılandırma ve ustalaşma konusundaki resmi kılavuz.
 - **[YouTube Kanalı](https://youtube.com/@roocodeyt?feature=shared):** Eğitimleri izleyin ve özellikleri çalışırken görün.
 - **[Discord Sunucusu](https://discord.gg/roocode):** Gerçek zamanlı yardım ve tartışma için topluluğa katılın.
 - **[Reddit Topluluğu](https://www.reddit.com/r/RooCode):** Deneyimlerinizi paylaşın ve başkalarının ne inşa ettiğini görün.
@@ -109,7 +109,7 @@ Roo Code uzantısını çalıştırmanın birkaç yolu vardır:
 
 Aktif geliştirme için VSCode'un yerleşik hata ayıklama özelliğini kullanın:
 
-VSCode'da `F5` tuşuna basın (veya **Çalıştır** → **Hata Ayıklamayı Başlat**'a gidin). Bu, Roo Code uzantısının çalıştığı yeni bir VSCode penceresi açacaktır.
+VSCode'da `F5` tuşuna basın (veya **Çalıştır** → **Hata Ayıklamayı Başlat**'a gidin). Bu, VibeX Code uzantısının çalıştığı yeni bir VSCode penceresi açacaktır.
 
 - Web görünümündeki değişiklikler anında görünecektir.
 - Çekirdek uzantıdaki değişiklikler de otomatik olarak sıcak yeniden yüklenecektir.
@@ -157,7 +157,7 @@ Sürüm oluşturma ve yayınlama için [changesets](https://github.com/changeset
 
 ## Sorumluluk Reddi Beyanı
 
-**Lütfen dikkat** Roo Code, Inc., Roo Code ile bağlantılı olarak sağlanan veya kullanıma sunulan herhangi bir kod, model veya diğer araçlar, ilgili üçüncü taraf araçları veya ortaya çıkan çıktılarla ilgili olarak **hiçbir** beyanda bulunmaz veya garanti vermez. Bu tür araçların veya çıktıların kullanımıyla ilişkili **tüm riskleri** üstlenirsiniz; bu tür araçlar **"OLDUĞU GİBİ"** ve **"MEVCUT OLDUĞU GİBİ"** esasına göre sağlanır. Bu tür riskler, fikri mülkiyet ihlali, siber güvenlik açıkları veya saldırıları, önyargı, yanlışlıklar, hatalar, kusurlar, virüsler, kesintiler, mal kaybı veya hasarı ve/veya kişisel yaralanmaları içerebilir, ancak bunlarla sınırlı değildir. Bu tür araçların veya çıktıların kullanımından (yasallığı, uygunluğu ve sonuçları dahil ancak bunlarla sınırlı olmamak üzere) yalnızca siz sorumlusunuz.
+**Lütfen dikkat** VibeX Code, Inc., VibeX Code ile bağlantılı olarak sağlanan veya kullanıma sunulan herhangi bir kod, model veya diğer araçlar, ilgili üçüncü taraf araçları veya ortaya çıkan çıktılarla ilgili olarak **hiçbir** beyanda bulunmaz veya garanti vermez. Bu tür araçların veya çıktıların kullanımıyla ilişkili **tüm riskleri** üstlenirsiniz; bu tür araçlar **"OLDUĞU GİBİ"** ve **"MEVCUT OLDUĞU GİBİ"** esasına göre sağlanır. Bu tür riskler, fikri mülkiyet ihlali, siber güvenlik açıkları veya saldırıları, önyargı, yanlışlıklar, hatalar, kusurlar, virüsler, kesintiler, mal kaybı veya hasarı ve/veya kişisel yaralanmaları içerebilir, ancak bunlarla sınırlı değildir. Bu tür araçların veya çıktıların kullanımından (yasallığı, uygunluğu ve sonuçları dahil ancak bunlarla sınırlı olmamak üzere) yalnızca siz sorumlusunuz.
 
 ---
 
@@ -169,7 +169,7 @@ Topluluk katkılarını çok seviyoruz! [CONTRIBUTING.md](CONTRIBUTING.md) dosya
 
 ## Lisans
 
-[Apache 2.0 © 2025 Roo Code, Inc.](../../LICENSE)
+[Apache 2.0 © 2025 VibeX Code, Inc.](../../LICENSE)
 
 ---
 

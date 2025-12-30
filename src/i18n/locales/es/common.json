@@ -121,7 +121,7 @@
 			"completionError": "Error de finalización de Cerebras: {{error}}"
 		},
 		"roo": {
-			"authenticationRequired": "El proveedor Roo Code requiere autenticación en la nube. Por favor, inicia sesión en Roo Code Cloud."
+			"authenticationRequired": "El proveedor VibeX Code requiere autenticación en la nube. Por favor, inicia sesión en VibeX Code Cloud."
 		},
 		"api": {
 			"invalidKeyInvalidChars": "La clave API contiene caracteres inválidos."
@@ -135,7 +135,7 @@
 	"warnings": {
 		"no_terminal_content": "No hay contenido de terminal seleccionado",
 		"missing_task_files": "Los archivos de esta tarea faltan. ¿Deseas eliminarla de la lista de tareas?",
-		"auto_import_failed": "Error al importar automáticamente la configuración de Roo Code: {{error}}"
+		"auto_import_failed": "Error al importar automáticamente la configuración de VibeX Code: {{error}}"
 	},
 	"info": {
 		"no_changes": "No se encontraron cambios.",
@@ -144,7 +144,7 @@
 		"custom_storage_path_set": "Ruta de almacenamiento personalizada establecida: {{path}}",
 		"default_storage_path": "Se ha vuelto a usar la ruta de almacenamiento predeterminada",
 		"settings_imported": "Configuración importada correctamente.",
-		"auto_import_success": "Configuración de Roo Code importada automáticamente desde {{filename}}",
+		"auto_import_success": "Configuración de VibeX Code importada automáticamente desde {{filename}}",
 		"share_link_copied": "Enlace de compartir copiado al portapapeles",
 		"image_copied_to_clipboard": "URI de datos de imagen copiada al portapapeles",
 		"image_saved": "Imagen guardada en {{path}}",
@@ -181,7 +181,7 @@
 		"enter_valid_path": "Por favor, ingresa una ruta válida"
 	},
 	"input": {
-		"task_prompt": "¿Qué debe hacer Roo Code?",
+		"task_prompt": "¿Qué debe hacer VibeX Code?",
 		"task_placeholder": "Escribe tu tarea aquí"
 	},
 	"settings": {
@@ -214,8 +214,8 @@
 	},
 	"mdm": {
 		"errors": {
-			"cloud_auth_required": "Tu organización requiere autenticación de Roo Code Cloud. Por favor, inicia sesión para continuar.",
-			"organization_mismatch": "Debes estar autenticado con la cuenta de Roo Code Cloud de tu organización.",
+			"cloud_auth_required": "Tu organización requiere autenticación de VibeX Code Cloud. Por favor, inicia sesión para continuar.",
+			"organization_mismatch": "Debes estar autenticado con la cuenta de VibeX Code Cloud de tu organización.",
 			"verification_failed": "No se pudo verificar la autenticación de la organización."
 		},
 		"info": {

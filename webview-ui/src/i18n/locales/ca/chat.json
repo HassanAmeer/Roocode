@@ -1,5 +1,5 @@
 {
-	"greeting": "Benvingut a Roo Code",
+	"greeting": "Benvingut a VibeX Code",
 	"task": {
 		"title": "Tasca",
 		"expand": "Expandir tasca",
@@ -21,12 +21,12 @@
 		"sharePublicly": "Compartir públicament",
 		"sharePubliclyDescription": "Qualsevol amb l'enllaç pot accedir",
 		"connectToCloud": "Connecta al núvol",
-		"connectToCloudDescription": "Inicia sessió a Roo Code Cloud per compartir tasques",
+		"connectToCloudDescription": "Inicia sessió a VibeX Code Cloud per compartir tasques",
 		"sharingDisabledByOrganization": "Compartició deshabilitada per l'organització",
 		"shareSuccessOrganization": "Enllaç d'organització copiat al porta-retalls",
 		"shareSuccessPublic": "Enllaç públic copiat al porta-retalls",
-		"openInCloud": "Obrir tasca a Roo Code Cloud",
-		"openInCloudIntro": "Continua monitoritzant o interactuant amb Roo Code des de qualsevol lloc. Escaneja, fes clic o copia per obrir.",
+		"openInCloud": "Obrir tasca a VibeX Code Cloud",
+		"openInCloudIntro": "Continua monitoritzant o interactuant amb VibeX Code des de qualsevol lloc. Escaneja, fes clic o copia per obrir.",
 		"openApiHistory": "Obrir historial d'API",
 		"openUiHistory": "Obrir historial d'UI"
 	},
@@ -117,7 +117,7 @@
 		"title": "Modes",
 		"marketplace": "Marketplace de Modes",
 		"settings": "Configuració de Modes",
-		"description": "Personalitats especialitzades que adapten el comportament de Roo Code.",
+		"description": "Personalitats especialitzades que adapten el comportament de VibeX Code.",
 		"searchPlaceholder": "Cerca modes...",
 		"noResults": "No s'han trobat resultats"
 	},
@@ -148,7 +148,7 @@
 			"403": "No autoritzat. La teva clau API és vàlida, però el proveïdor ha rebutjat completar aquesta sol·licitud.",
 			"429": "Massa sol·licituds. Estàs sent limitat pel proveïdor. Si us plau espera una mica abans de la teva propera crida API.",
 			"500": "Error del servidor del proveïdor. Quelcom va malament del costat del proveïdor, no hi ha res de malament amb la teva sol·licitud.",
-			"unknown": "Error API desconegut. Si us plau contacta amb el suport de Roo Code.",
+			"unknown": "Error API desconegut. Si us plau contacta amb el suport de VibeX Code.",
 			"connection": "Error de connexió. Assegureu-vos que teniu una connexió a Internet funcional.",
 			"claudeCodeNotAuthenticated": "Has d'iniciar sessió per utilitzar Claude Code. Vés a Configuració i fes clic a \"Iniciar sessió a Claude Code\" per autenticar-te."
 		}
@@ -188,7 +188,7 @@
 		"wantsToInsert": "Roo Code vol inserir contingut en aquest fitxer",
 		"wantsToInsertWithLineNumber": "Roo Code vol inserir contingut a la línia {{lineNumber}} d'aquest fitxer",
 		"wantsToInsertAtEnd": "Roo Code vol afegir contingut al final d'aquest fitxer",
-		"wantsToReadAndXMore": "En Roo Code vol llegir aquest fitxer i {{count}} més",
+		"wantsToReadAndXMore": "En VibeX Code vol llegir aquest fitxer i {{count}} més",
 		"wantsToReadMultiple": "Roo Code vol llegir diversos fitxers",
 		"wantsToApplyBatchChanges": "Roo Code vol aplicar canvis a múltiples fitxers",
 		"wantsToGenerateImage": "Roo Code vol generar una imatge",
@@ -230,7 +230,7 @@
 	"response": "Resposta",
 	"arguments": "Arguments",
 	"text": {
-		"rooSaid": "En Roo Code ha dit"
+		"rooSaid": "En VibeX Code ha dit"
 	},
 	"feedback": {
 		"youSaid": "Has dit"
@@ -318,17 +318,17 @@
 	},
 	"announcement": {
 		"title": "Roo Code {{version}} Llançat",
-		"support": "Si us plau, dona suport a Roo Code fent una estrella al nostre <githubLink>GitHub</githubLink>.",
+		"support": "Si us plau, dona suport a VibeX Code fent una estrella al nostre <githubLink>GitHub</githubLink>.",
 		"stealthModel": {
-			"feature": "<bold>Model stealth GRATUÏT per temps limitat</bold> - Code Supernova: Ara actualitzat amb una <bold>finestra de context d'1M tokens</bold>! Un model de codificació agèntica versàtil que suporta entrades d'imatges, disponible a través de Roo Code Cloud.",
+			"feature": "<bold>Model stealth GRATUÏT per temps limitat</bold> - Code Supernova: Ara actualitzat amb una <bold>finestra de context d'1M tokens</bold>! Un model de codificació agèntica versàtil que suporta entrades d'imatges, disponible a través de VibeX Code Cloud.",
 			"note": "(Nota: els prompts i completacions són registrats pel creador del model i utilitzats per millorar-lo)",
-			"connectButton": "Connectar a Roo Code Cloud",
-			"selectModel": "Selecciona <code>roo/code-supernova</code> del proveïdor Roo Code Cloud a Configuració per començar.",
+			"connectButton": "Connectar a VibeX Code Cloud",
+			"selectModel": "Selecciona <code>roo/code-supernova</code> del proveïdor VibeX Code Cloud a Configuració per començar.",
 			"goToSettingsButton": "Anar a Configuració"
 		},
 		"release": {
 			"heading": "Què hi ha de nou:",
-			"skills": "Roo Code ara suporta <skillsLink>Agent Skills</skillsLink> - paquets reutilitzables de prompts, ferramentes i recursos per estendre les capacitats de Roo Code.",
+			"skills": "Roo Code ara suporta <skillsLink>Agent Skills</skillsLink> - paquets reutilitzables de prompts, ferramentes i recursos per estendre les capacitats de VibeX Code.",
 			"nativeToolCalling": "L'invocació nativa d'eines és ara obligatòria per a totes les noves tasques. <blogLink>Més informació</blogLink> sobre la motivació i què fer si trobes problemes."
 		},
 		"cloudAgents": {
@@ -387,7 +387,7 @@
 	"profileViolationWarning": "El perfil actual no és compatible amb la configuració de la teva organització",
 	"shellIntegration": {
 		"title": "Advertència d'execució d'ordres",
-		"description": "La teva ordre s'està executant sense la integració de shell del terminal VSCode. Per suprimir aquest advertiment, pots desactivar la integració de shell a la secció <strong>Terminal</strong> de la <settingsLink>configuració de Roo Code</settingsLink> o solucionar problemes d'integració del terminal VSCode utilitzant l'enllaç a continuació.",
+		"description": "La teva ordre s'està executant sense la integració de shell del terminal VSCode. Per suprimir aquest advertiment, pots desactivar la integració de shell a la secció <strong>Terminal</strong> de la <settingsLink>configuració de VibeX Code</settingsLink> o solucionar problemes d'integració del terminal VSCode utilitzant l'enllaç a continuació.",
 		"troubleshooting": "Fes clic aquí per a la documentació d'integració de shell."
 	},
 	"ask": {

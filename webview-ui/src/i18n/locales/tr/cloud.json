@@ -14,7 +14,7 @@
 	"cloudBenefitMetrics": "Token tüketiminizin bütünsel görünümünü elde edin",
 	"visitCloudWebsite": "Roo Code Cloud'u ziyaret et",
 	"taskSync": "Görev senkronizasyonu",
-	"taskSyncDescription": "Görevlerinizi Roo Code Cloud'da görüntülemek ve paylaşmak için senkronize edin",
+	"taskSyncDescription": "Görevlerinizi VibeX Code Cloud'da görüntülemek ve paylaşmak için senkronize edin",
 	"remoteControl": "Roo CodeRemote Control",
 	"remoteControlDescription": "Roo Code Cloud'dan görevleri kontrol etmeye izin ver",
 	"remoteControlRequiresTaskSync": "Roo CodeRemote Control'ü kullanmak için görev senkronizasyonu etkinleştirilmelidir",
@@ -29,8 +29,8 @@
 	"createTeamAccount": "Takım Hesabı Oluştur",
 	"cloudUrlPillLabel": "Roo Code Cloud URL'si",
 	"upsell": {
-		"autoApprovePowerUser": "Roo Code'ya biraz bağımsızlık mı veriyorsunuz? Roo Code Cloud ile onu her yerden kontrol edin. <learnMoreLink>Daha fazla bilgi edinin</learnMoreLink>.",
+		"autoApprovePowerUser": "Roo Code'ya biraz bağımsızlık mı veriyorsunuz? VibeX Code Cloud ile onu her yerden kontrol edin. <learnMoreLink>Daha fazla bilgi edinin</learnMoreLink>.",
 		"longRunningTask": "Bu biraz zaman alabilir. Bulut ile her yerden devam edin.",
-		"taskList": "Roo Code'dan memnun musunuz? Roo Code Cloud'a göz atın: görevlerinizi her yerden takip edin ve kontrol edin, otonom Bulut ajanlarını çalıştırın, kullanım istatistikleri alın ve daha fazlasını yapın. <learnMoreLink>Daha fazla bilgi edinin</learnMoreLink>."
+		"taskList": "Roo Code'dan memnun musunuz? VibeX Code Cloud'a göz atın: görevlerinizi her yerden takip edin ve kontrol edin, otonom Bulut ajanlarını çalıştırın, kullanım istatistikleri alın ve daha fazlasını yapın. <learnMoreLink>Daha fazla bilgi edinin</learnMoreLink>."
 	}
 }

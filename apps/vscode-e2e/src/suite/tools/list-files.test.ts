@@ -115,7 +115,7 @@ database:
 This directory contains various files and subdirectories for testing the list_files tool functionality.
 
 ## Structure
-- Root files (txt, js)
+- VibeXt files (txt, js)
 - Nested directory with files (md, json)
 - Deep nested directory with TypeScript file
 - Hidden file

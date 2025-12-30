@@ -6,13 +6,13 @@ import {
 	getOpenRouterReasoning,
 	getAnthropicReasoning,
 	getOpenAiReasoning,
-	getRooReasoning,
+	getVibexReasoning,
 	getGeminiReasoning,
 	GetModelReasoningOptions,
 	OpenRouterReasoningParams,
 	AnthropicReasoningParams,
 	OpenAiReasoningParams,
-	RooReasoningParams,
+	VibeXReasoningParams,
 	GeminiReasoningParams,
 	GeminiThinkingLevel,
 } from "../reasoning"
@@ -1017,10 +1017,10 @@ describe("reasoning.ts", () => {
 		})
 	})
 
-	describe("getRooReasoning", () => {
+	describe("getVibexReasoning", () => {
 		it("should return undefined when model does not support reasoning effort", () => {
 			const options = { ...baseOptions }
-			const result = getRooReasoning(options)
+			const result = getVibexReasoning(options)
 			expect(result).toBeUndefined()
 		})
 
@@ -1040,7 +1040,7 @@ describe("reasoning.ts", () => {
 				settings: settingsWithDisabled,
 			}
 
-			const result = getRooReasoning(options)
+			const result = getVibexReasoning(options)
 			expect(result).toEqual({ enabled: false })
 		})
 
@@ -1061,7 +1061,7 @@ describe("reasoning.ts", () => {
 				reasoningEffort: "high" as const,
 			}
 
-			const result = getRooReasoning(options)
+			const result = getVibexReasoning(options)
 			expect(result).toEqual({ enabled: true, effort: "high" })
 		})
 
@@ -1078,7 +1078,7 @@ describe("reasoning.ts", () => {
 				reasoningEffort: undefined,
 			}
 
-			const result = getRooReasoning(options)
+			const result = getVibexReasoning(options)
 			expect(result).toEqual({ enabled: false })
 		})
 
@@ -1099,7 +1099,7 @@ describe("reasoning.ts", () => {
 				reasoningEffort: "minimal" as ReasoningEffortWithMinimal,
 			}
 
-			const result = getRooReasoning(options)
+			const result = getVibexReasoning(options)
 			expect(result).toBeUndefined()
 		})
 
@@ -1123,7 +1123,7 @@ describe("reasoning.ts", () => {
 					reasoningEffort: effort,
 				}
 
-				const result = getRooReasoning(options)
+				const result = getVibexReasoning(options)
 				expect(result).toEqual({ enabled: true, effort })
 			})
 		})
@@ -1141,7 +1141,7 @@ describe("reasoning.ts", () => {
 				reasoningEffort: undefined,
 			}
 
-			const result = getRooReasoning(options)
+			const result = getVibexReasoning(options)
 			expect(result).toEqual({ enabled: false })
 		})
 	})

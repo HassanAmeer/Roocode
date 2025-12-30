@@ -2,17 +2,17 @@ import { execa, ExecaError } from "execa"
 import psTree from "ps-tree"
 import process from "process"
 
-import type { RooTerminal } from "./types"
+import type { VibeXTerminal } from "./types"
 import { BaseTerminalProcess } from "./BaseTerminalProcess"
 
 export class ExecaTerminalProcess extends BaseTerminalProcess {
-	private terminalRef: WeakRef<RooTerminal>
+	private terminalRef: WeakRef<VibeXTerminal>
 	private aborted = false
 	private pid?: number
 	private subprocess?: ReturnType<typeof execa>
 	private pidUpdatePromise?: Promise<void>
 
-	constructor(terminal: RooTerminal) {
+	constructor(terminal: VibeXTerminal) {
 		super()
 
 		this.terminalRef = new WeakRef(terminal)
@@ -22,7 +22,7 @@ export class ExecaTerminalProcess extends BaseTerminalProcess {
 		})
 	}
 
-	public get terminal(): RooTerminal {
+	public get terminal(): VibeXTerminal {
 		const terminal = this.terminalRef.deref()
 
 		if (!terminal) {

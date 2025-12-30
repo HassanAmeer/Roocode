@@ -40,8 +40,8 @@ const faqs: FAQItem[] = [
 		question: "Is Vibex really free?",
 		answer: (
 			<>
-				Yes! Vibex is completely free and open-source. You&apos;ll only pay for the AI model usage if you use
-				a paid API (like OpenAI). If you choose free or self-hosted models, there&apos;s no cost at all.
+				Yes! Vibex is completely free and open-source. You&apos;ll only pay for the AI model usage if you use a
+				paid API (like OpenAI). If you choose free or self-hosted models, there&apos;s no cost at all.
 			</>
 		),
 	},
@@ -49,10 +49,10 @@ const faqs: FAQItem[] = [
 		question: "Will my code stay private?",
 		answer: (
 			<>
-				Yes. Because Vibex is an extension in your local VS Code, your code never leaves your machine unless
-				you connect to an external AI API. Even then, you control exactly what is sent to the AI model. You can
-				use tools like .rooignore to exclude sensitive files, and you can also run Vibex with offline/local
-				models for full privacy.
+				Yes. Because Vibex is an extension in your local VS Code, your code never leaves your machine unless you
+				connect to an external AI API. Even then, you control exactly what is sent to the AI model. You can use
+				tools like .rooignore to exclude sensitive files, and you can also run Vibex with offline/local models
+				for full privacy.
 			</>
 		),
 	},
@@ -60,8 +60,8 @@ const faqs: FAQItem[] = [
 		question: "Which AI models does Vibex support?",
 		answer: (
 			<>
-				Vibex is fully model-agnostic, giving you the flexibility to work with whatever AI models you prefer.
-				It supports OpenAI models (like GPT-4o, GPT-4, and o1), Anthropic&apos;s Claude (including Claude 3.5
+				Vibex is fully model-agnostic, giving you the flexibility to work with whatever AI models you prefer. It
+				supports OpenAI models (like GPT-4o, GPT-4, and o1), Anthropic&apos;s Claude (including Claude 3.5
 				Sonnet), Google&apos;s Gemini models, and local LLMs via APIs or specialized plugins. You can even
 				connect any other model that follows Vibex&apos;s Model Context Protocol (MCP).
 			</>
@@ -71,9 +71,9 @@ const faqs: FAQItem[] = [
 		question: "Does Vibex support my programming language?",
 		answer: (
 			<>
-				Likely yes! Vibex supports a wide range of languages—Python, Java, C#, JavaScript/TypeScript, Go,
-				Rust, etc. Since it leverages the AI model&apos;s understanding, new or lesser-known languages may also
-				work, depending on model support.
+				Likely yes! Vibex supports a wide range of languages—Python, Java, C#, JavaScript/TypeScript, Go, Rust,
+				etc. Since it leverages the AI model&apos;s understanding, new or lesser-known languages may also work,
+				depending on model support.
 			</>
 		),
 	},
@@ -89,7 +89,7 @@ const faqs: FAQItem[] = [
 					className="text-primary underline-offset-4 hover:underline">
 					VS Code Marketplace
 				</a>{" "}
-				(or GitHub). Add your AI keys (OpenAI, Anthropic, or other) in the extension settings. Open the Roo
+				(or GitHub). Add your AI keys (OpenAI, Anthropic, or other) in the extension settings. Open the VibeX
 				panel (the rocket icon) in VS Code, and start typing commands in plain English!{" "}
 				<a
 					href="https://docs.roocode.com/tutorial-videos"
@@ -136,9 +136,9 @@ const faqs: FAQItem[] = [
 		question: "Can Vibex run commands and tests automatically?",
 		answer: (
 			<>
-				Yes! One of Vibex&apos;s biggest strengths is its ability to execute commands—always optional and
-				fully permission-based. It can run terminal commands like npm install, execute your test suites, and
-				even open a web browser for integration testing when you approve it.
+				Yes! One of Vibex&apos;s biggest strengths is its ability to execute commands—always optional and fully
+				permission-based. It can run terminal commands like npm install, execute your test suites, and even open
+				a web browser for integration testing when you approve it.
 			</>
 		),
 	},
@@ -146,8 +146,8 @@ const faqs: FAQItem[] = [
 		question: "What if I just want a casual coding 'vibe'?",
 		answer: (
 			<>
-				Vibex shines for both serious enterprise development and casual &quot;vibe coding.&quot; You can ask
-				it to quickly prototype ideas, refactor on the fly, or provide design suggestions—without a rigid,
+				Vibex shines for both serious enterprise development and casual &quot;vibe coding.&quot; You can ask it
+				to quickly prototype ideas, refactor on the fly, or provide design suggestions—without a rigid,
 				step-by-step process.
 			</>
 		),
@@ -255,8 +255,7 @@ export function FAQSection() {
 						}}>
 						<h2 className="text-4xl font-bold tracking-tight sm:text-5xl">Frequently Asked Questions</h2>
 						<p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
-							Everything you need to know about Vibex and how it can transform your development
-							workflow.
+							Everything you need to know about Vibex and how it can transform your development workflow.
 						</p>
 					</motion.div>
 				</div>

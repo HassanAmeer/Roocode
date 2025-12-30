@@ -143,7 +143,7 @@ describe("listFiles limit handling for large projects", () => {
 		mockReaddir.mockImplementation(async (dirPath: string) => {
 			directoriesScanned++
 
-			// Root directory has many subdirectories
+			// VibeXt directory has many subdirectories
 			if (directoriesScanned === 1) {
 				return Array(100)
 					.fill(null)

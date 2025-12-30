@@ -11,7 +11,7 @@
 </sub>
 </div>
 
-# Roo Codeへの貢献
+# VibeX Codeへの貢献
 
 Roo Codeはコミュニティ主導のプロジェクトであり、すべての貢献を深く評価しています。共同作業を円滑にするため、私たちは[課題第一のアプローチ](#課題第一のアプローチ)で運営しています。つまり、すべての[プルリクエスト（PR）](#プルリクエストの提出)は、まずGitHubの課題にリンクされている必要があります。このガイドを注意深く確認してください。
 
@@ -52,7 +52,7 @@ Roo Codeはコミュニティ主導のプロジェクトであり、すべての
 
 PRでこれらの分野との連携について言及してください。
 
-### 3. Roo Codeコミュニティに参加する
+### 3. VibeX Codeコミュニティに参加する
 
 - **プライマリ：** [Discord](https://discord.gg/roocode)に参加し、**Hannes Rudolph (`hrudolph`)**にDMしてください。
 - **代替：** 経験豊富な貢献者は、[GitHubプロジェクト](https://github.com/orgs/RooCodeInc/projects/1)を介して直接関与できます。
@@ -87,7 +87,7 @@ PRでこれらの分野との連携について言及してください。
 - 次の情報を含む[「バグレポート」テンプレート](https://github.com/RooCodeInc/Roo-Code/issues/new/choose)を使用して新しいバグを作成します。
     - 明確で番号付きの再現手順
     - 期待される結果と実際の結果
-    - Roo Codeのバージョン（必須）。関連する場合はAPIプロバイダー/モデル
+    - VibeX Codeのバージョン（必須）。関連する場合はAPIプロバイダー/モデル
 - **セキュリティの問題**：[セキュリティアドバイザリ](https://github.com/RooCodeInc/Roo-Code/security/advisories/new)を介して非公開で報告してください。
 
 ## 開発と提出のプロセス

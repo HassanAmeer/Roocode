@@ -10,8 +10,8 @@ import type { ApiHandlerOptions, ModelRecord } from "../../shared/api"
 import { ApiStream } from "../transform/stream"
 import { getModelParams } from "../transform/model-params"
 import { convertToOpenAiMessages } from "../transform/openai-format"
-import type { RooReasoningParams } from "../transform/reasoning"
-import { getRooReasoning } from "../transform/reasoning"
+import type { VibeXReasoningParams } from "../transform/reasoning"
+import { getVibexReasoning } from "../transform/reasoning"
 
 import type { ApiHandlerCreateMessageMetadata } from "../index"
 import { BaseOpenAiCompatibleProvider } from "./base-openai-compatible-provider"
@@ -21,14 +21,14 @@ import { generateImageWithProvider, generateImageWithImagesApi, ImageGenerationR
 import { t } from "../../i18n"
 
 // Extend OpenAI's CompletionUsage to include Vibex specific fields
-interface RooUsage extends OpenAI.CompletionUsage {
+interface VibeXUsage extends OpenAI.CompletionUsage {
 	cache_creation_input_tokens?: number
 	cost?: number
 }
 
 // Add custom interface for Vibex params to support reasoning
-type RooChatCompletionParams = OpenAI.Chat.ChatCompletionCreateParamsStreaming & {
-	reasoning?: RooReasoningParams
+type VibeXChatCompletionParams = OpenAI.Chat.ChatCompletionCreateParamsStreaming & {
+	reasoning?: VibeXReasoningParams
 }
 
 function getSessionToken(): string {
@@ -36,7 +36,7 @@ function getSessionToken(): string {
 	return token ?? "unauthenticated"
 }
 
-export class RooHandler extends BaseOpenAiCompatibleProvider<string> {
+export class VibeXHandler extends BaseOpenAiCompatibleProvider<string> {
 	private fetcherBaseURL: string
 	private currentReasoningDetails: any[] = []
 
@@ -64,7 +64,7 @@ export class RooHandler extends BaseOpenAiCompatibleProvider<string> {
 		// Load dynamic models asynchronously - strip /v1 from baseURL for fetcher
 		this.fetcherBaseURL = baseURL.endsWith("/v1") ? baseURL.slice(0, -3) : baseURL
 		this.loadDynamicModels(this.fetcherBaseURL, sessionToken).catch((error) => {
-			console.error("[RooHandler] Failed to load dynamic models:", error)
+			console.error("[VibeXHandler] Failed to load dynamic models:", error)
 		})
 	}
 
@@ -86,7 +86,7 @@ export class RooHandler extends BaseOpenAiCompatibleProvider<string> {
 		})
 
 		// Get Vibex-specific reasoning parameters
-		const reasoning = getRooReasoning({
+		const reasoning = getVibexReasoning({
 			model: info,
 			reasoningBudget: params.reasoningBudget,
 			reasoningEffort: params.reasoningEffort,
@@ -96,7 +96,7 @@ export class RooHandler extends BaseOpenAiCompatibleProvider<string> {
 		const max_tokens = params.maxTokens ?? undefined
 		const temperature = params.temperature ?? this.defaultTemperature
 
-		const rooParams: RooChatCompletionParams = {
+		const rooParams: VibeXChatCompletionParams = {
 			model,
 			max_tokens,
 			temperature,
@@ -139,7 +139,7 @@ export class RooHandler extends BaseOpenAiCompatibleProvider<string> {
 
 			const stream = await this.createStream(systemPrompt, messages, metadata, { headers })
 
-			let lastUsage: RooUsage | undefined = undefined
+			let lastUsage: VibeXUsage | undefined = undefined
 			// Accumulator for reasoning_details FROM the API.
 			// We preserve the original shape of reasoning_details to prevent malformed responses.
 			const reasoningDetailsAccumulator = new Map<
@@ -281,7 +281,7 @@ export class RooHandler extends BaseOpenAiCompatibleProvider<string> {
 				}
 
 				if (chunk.usage) {
-					lastUsage = chunk.usage as RooUsage
+					lastUsage = chunk.usage as VibeXUsage
 				}
 			}
 
@@ -325,7 +325,7 @@ export class RooHandler extends BaseOpenAiCompatibleProvider<string> {
 				hasTaskId: Boolean(metadata?.taskId),
 			}
 
-			console.error(`[RooHandler] Error during message streaming: ${JSON.stringify(errorContext)}`)
+			console.error(`[VibeXHandler] Error during message streaming: ${JSON.stringify(errorContext)}`)
 
 			throw error
 		}
@@ -346,7 +346,7 @@ export class RooHandler extends BaseOpenAiCompatibleProvider<string> {
 			})
 		} catch (error) {
 			// Enhanced error logging with more context
-			console.error("[RooHandler] Error loading dynamic models:", {
+			console.error("[VibeXHandler] Error loading dynamic models:", {
 				error: error instanceof Error ? error.message : String(error),
 				stack: error instanceof Error ? error.stack : undefined,
 				baseURL,

@@ -121,7 +121,7 @@
 			"completionError": "Cerebras-voltooiingsfout: {{error}}"
 		},
 		"roo": {
-			"authenticationRequired": "Roo Code provider vereist cloud authenticatie. Log in bij Roo Code Cloud."
+			"authenticationRequired": "Roo Code provider vereist cloud authenticatie. Log in bij VibeX Code Cloud."
 		},
 		"api": {
 			"invalidKeyInvalidChars": "API-sleutel bevat ongeldige karakters."
@@ -135,7 +135,7 @@
 	"warnings": {
 		"no_terminal_content": "Geen terminalinhoud geselecteerd",
 		"missing_task_files": "De bestanden van deze taak ontbreken. Wil je deze uit de takenlijst verwijderen?",
-		"auto_import_failed": "Automatisch importeren van Roo Code-instellingen mislukt: {{error}}"
+		"auto_import_failed": "Automatisch importeren van VibeX Code-instellingen mislukt: {{error}}"
 	},
 	"info": {
 		"no_changes": "Geen wijzigingen gevonden.",
@@ -181,7 +181,7 @@
 		"enter_valid_path": "Voer een geldig pad in"
 	},
 	"input": {
-		"task_prompt": "Wat moet Roo Code doen?",
+		"task_prompt": "Wat moet VibeX Code doen?",
 		"task_placeholder": "Typ hier je taak"
 	},
 	"settings": {
@@ -214,8 +214,8 @@
 	},
 	"mdm": {
 		"errors": {
-			"cloud_auth_required": "Je organisatie vereist Roo Code Cloud-authenticatie. Log in om door te gaan.",
-			"organization_mismatch": "Je moet geauthenticeerd zijn met het Roo Code Cloud-account van je organisatie.",
+			"cloud_auth_required": "Je organisatie vereist VibeX Code Cloud-authenticatie. Log in om door te gaan.",
+			"organization_mismatch": "Je moet geauthenticeerd zijn met het VibeX Code Cloud-account van je organisatie.",
 			"manual_url_empty": "Voer een geldige callback-URL in",
 			"manual_url_no_query": "Ongeldige callback-URL: query-parameters ontbreken",
 			"manual_url_missing_params": "Ongeldige callback-URL: vereiste parameters ontbreken (code en state)",

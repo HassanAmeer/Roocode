@@ -93,7 +93,7 @@ export class ApplyPatchTool extends BaseTool<"apply_patch"> {
 				}
 
 				// Check if file is write-protected
-				const isWriteProtected = task.rooProtectedController?.isWriteProtected(relPath) || false
+				const isWriteProtected = task.vibexProtectedController?.isWriteProtected(relPath) || false
 
 				if (change.type === "add") {
 					// Create new file
@@ -360,7 +360,7 @@ export class ApplyPatchTool extends BaseTool<"apply_patch"> {
 			}
 
 			// Check if destination path is write-protected
-			const isMovePathWriteProtected = task.rooProtectedController?.isWriteProtected(change.movePath) || false
+			const isMovePathWriteProtected = task.vibexProtectedController?.isWriteProtected(change.movePath) || false
 			if (isMovePathWriteProtected) {
 				task.consecutiveMistakeCount++
 				task.recordToolError("apply_patch")

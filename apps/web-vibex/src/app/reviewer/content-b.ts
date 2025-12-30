@@ -61,13 +61,13 @@ export const content: AgentPageContent = {
 		],
 	},
 	whyBetter: {
-		heading: "Why Roo's PR Reviewer is different",
+		heading: "Why VibeX's PR Reviewer is different",
 		features: [
 			{
 				title: "Bring your own key, get uncompromised reviews",
 				paragraphs: [
 					"Most AI review tools use fixed pricing, which means they skimp on tokens to protect their margins. That leads to shallow analysis and missed issues.",
-					"With Roo, you bring your own API key. We optimize prompts for depth, not cost-cutting, so reviews focus on real problems like business logic, security vulnerabilities, and architectural issues.",
+					"With VibeX, you bring your own API key. We optimize prompts for depth, not cost-cutting, so reviews focus on real problems like business logic, security vulnerabilities, and architectural issues.",
 				],
 				icon: "Blocks",
 			},

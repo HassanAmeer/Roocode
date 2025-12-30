@@ -142,7 +142,7 @@ const features: Feature[] = [
 	{
 		icon: ServerIcon,
 		title: "MCP Server Controls",
-		description: "Control access to the Roo MCP Marketplace and what custom MCPs to make available to your team.",
+		description: "Control access to the VibeX MCP Marketplace and what custom MCPs to make available to your team.",
 	},
 ]
 
@@ -195,7 +195,7 @@ export default function CloudTeamPage() {
 
 					<div className="mx-auto mb-12 md:mb-24 max-w-5xl text-center">
 						<div>
-							<h2 className="text-4xl font-bold tracking-tight mb-4">Why Teams Choose Roo</h2>
+							<h2 className="text-4xl font-bold tracking-tight mb-4">Why Teams Choose VibeX</h2>
 							<p className="text-xl text-muted-foreground max-w-2xl mx-auto">
 								Streamline collaboration and scale your development capacity with team-first features.
 							</p>

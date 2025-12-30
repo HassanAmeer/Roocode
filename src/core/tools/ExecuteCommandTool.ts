@@ -12,7 +12,7 @@ import { Task } from "../task/Task"
 import { ToolUse, ToolResponse } from "../../shared/tools"
 import { formatResponse } from "../prompts/responses"
 import { unescapeHtmlEntities } from "../../utils/text-normalization"
-import { ExitCodeDetails, RooTerminalCallbacks, RooTerminalProcess } from "../../integrations/terminal/types"
+import { ExitCodeDetails, VibeXTerminalCallbacks, VibeXTerminalProcess } from "../../integrations/terminal/types"
 import { TerminalRegistry } from "../../integrations/terminal/TerminalRegistry"
 import { Terminal } from "../../integrations/terminal/Terminal"
 import { Package } from "../../shared/package"
@@ -199,8 +199,8 @@ export async function executeCommandInTerminal(
 	const provider = await task.providerRef.deref()
 
 	let accumulatedOutput = ""
-	const callbacks: RooTerminalCallbacks = {
-		onLine: async (lines: string, process: RooTerminalProcess) => {
+	const callbacks: VibeXTerminalCallbacks = {
+		onLine: async (lines: string, process: VibeXTerminalProcess) => {
 			accumulatedOutput += lines
 			const compressedOutput = Terminal.compressTerminalOutput(
 				accumulatedOutput,

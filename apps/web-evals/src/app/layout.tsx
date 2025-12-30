@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 	title: "Vibex Evals",
 }
 
-export default function RootLayout({
+export default function VibeXtLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode

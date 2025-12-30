@@ -28,7 +28,7 @@ export function OptionOverviewSection() {
 
 						<div className="text-muted-foreground mb-4">
 							<p>
-								Run Roo directly in VS Code (or any fork – even Cursor!), stay close to the code and
+								Run VibeX directly in VS Code (or any fork – even Cursor!), stay close to the code and
 								control everything:
 							</p>
 							<ul className="list-inside my-4 space-y-1">

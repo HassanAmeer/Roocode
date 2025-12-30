@@ -12,7 +12,7 @@ vi.mock("../../../integrations/terminal/TerminalRegistry", () => ({
 	},
 }))
 vi.mock("../../ignore/VibexIgnoreController")
-vi.mock("../../protect/RooProtectedController")
+vi.mock("../../protect/VibeXProtectedController")
 vi.mock("../../context-tracking/FileContextTracker")
 vi.mock("../../../services/browser/UrlContentFetcher")
 vi.mock("../../../services/browser/BrowserSession")

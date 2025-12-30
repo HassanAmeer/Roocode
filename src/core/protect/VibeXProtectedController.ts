@@ -7,20 +7,20 @@ export const SHIELD_SYMBOL = "\u{1F6E1}"
  * Controls write access to Vibex configuration files by enforcing protection patterns.
  * Prevents auto-approved modifications to sensitive Vibex configuration files.
  */
-export class RooProtectedController {
+export class VibeXProtectedController {
 	private cwd: string
 	private ignoreInstance: Ignore
 
 	// Predefined list of protected Vibex configuration patterns
 	private static readonly PROTECTED_PATTERNS = [
 		".vibexignore",
-		".roomodes",
-		".roorules*",
+		".vibexmodes",
+		".vibexrules*",
 		".clinerules*",
-		".roo/**",
+		".vibex/**",
 		".vscode/**",
 		"*.code-workspace",
-		".rooprotected", // For future use
+		".vibexprotected", // For future use
 		"AGENTS.md",
 		"AGENT.md",
 	]
@@ -29,7 +29,7 @@ export class RooProtectedController {
 		this.cwd = cwd
 		// Initialize ignore instance with protected patterns
 		this.ignoreInstance = ignore()
-		this.ignoreInstance.add(RooProtectedController.PROTECTED_PATTERNS)
+		this.ignoreInstance.add(VibeXProtectedController.PROTECTED_PATTERNS)
 	}
 
 	/**
@@ -94,7 +94,7 @@ export class RooProtectedController {
 	 * @returns Formatted instructions about file protection
 	 */
 	getInstructions(): string {
-		const patterns = RooProtectedController.PROTECTED_PATTERNS.join(", ")
+		const patterns = VibeXProtectedController.PROTECTED_PATTERNS.join(", ")
 		return `# Protected Files\n\n(The following Vibex configuration file patterns are write-protected and always require approval for modifications, regardless of autoapproval settings. When using list_files, you'll notice a ${SHIELD_SYMBOL} next to files that are write-protected.)\n\nProtected patterns: ${patterns}`
 	}
 
@@ -102,6 +102,6 @@ export class RooProtectedController {
 	 * Get the list of protected patterns (for testing/debugging)
 	 */
 	static getProtectedPatterns(): readonly string[] {
-		return RooProtectedController.PROTECTED_PATTERNS
+		return VibeXProtectedController.PROTECTED_PATTERNS
 	}
 }

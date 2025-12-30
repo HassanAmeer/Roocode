@@ -166,7 +166,7 @@ describe("list-files symlink support", () => {
 		// Mock fs.promises.readdir to simulate a directory structure
 		const mockReaddir = vi.mocked(fs.promises.readdir)
 
-		// Root directory with first-level directories
+		// VibeXt directory with first-level directories
 		mockReaddir.mockResolvedValueOnce([
 			{ name: "a_dir", isDirectory: () => true, isSymbolicLink: () => false, isFile: () => false } as any,
 			{ name: "b_dir", isDirectory: () => true, isSymbolicLink: () => false, isFile: () => false } as any,

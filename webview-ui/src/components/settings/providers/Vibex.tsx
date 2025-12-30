@@ -8,7 +8,7 @@ import { Button } from "@src/components/ui"
 
 import { ModelPicker } from "../ModelPicker"
 
-type RooProps = {
+type VibeXProps = {
 	apiConfiguration: ProviderSettings
 	setApiConfigurationField: (field: keyof ProviderSettings, value: ProviderSettings[keyof ProviderSettings]) => void
 	routerModels?: RouterModels
@@ -26,7 +26,7 @@ export const Vibex = ({
 	organizationAllowList,
 	modelValidationError,
 	simplifySettings,
-}: RooProps) => {
+}: VibeXProps) => {
 	const { t } = useAppTranslation()
 
 	return (

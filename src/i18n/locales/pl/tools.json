@@ -6,7 +6,7 @@
 		"imageTooLarge": "Plik obrazu jest zbyt duży ({{size}} MB). Maksymalny dozwolony rozmiar to {{max}} MB.",
 		"imageWithSize": "Plik obrazu ({{size}} KB)"
 	},
-	"toolRepetitionLimitReached": "Wygląda na to, że Roo Code utknął w pętli, wielokrotnie próbując wykonać tę samą akcję ({{toolName}}). Może to wskazywać na problem z jego obecną strategią. Rozważ przeformułowanie zadania, podanie bardziej szczegółowych instrukcji lub nakierowanie go na inne podejście.",
+	"toolRepetitionLimitReached": "Wygląda na to, że VibeX Code utknął w pętli, wielokrotnie próbując wykonać tę samą akcję ({{toolName}}). Może to wskazywać na problem z jego obecną strategią. Rozważ przeformułowanie zadania, podanie bardziej szczegółowych instrukcji lub nakierowanie go na inne podejście.",
 	"unknownToolError": "Roo Code próbował użyć nieznanego narzędzia: \"{{toolName}}\". Ponowna próba...",
 	"codebaseSearch": {
 		"approval": "Wyszukiwanie '{{query}}' w bazie kodu..."
@@ -25,7 +25,7 @@
 		"invalidImageFormat": "Otrzymano nieprawidłowy format obrazu",
 		"unknownError": "Wystąpił nieznany błąd",
 		"roo": {
-			"authRequired": "Uwierzytelnienie Roo Code Cloud jest wymagane do generowania obrazów. Zaloguj się do Roo Code Cloud."
+			"authRequired": "Uwierzytelnienie VibeX Code Cloud jest wymagane do generowania obrazów. Zaloguj się do VibeX Code Cloud."
 		}
 	}
 }

@@ -1,6 +1,6 @@
 import { z } from "zod"
 
-import { type RooCodeSettings } from "./global-settings.js"
+import { type VibeXCodeSettings } from "./global-settings.js"
 import { type ProviderSettings } from "./provider-settings.js"
 import { type PromptComponent, type ModeConfig } from "./mode.js"
 import { type InstallMarketplaceItemOptions, type MarketplaceItem, marketplaceItemSchema } from "./marketplace.js"
@@ -265,7 +265,7 @@ export interface WebviewMessage {
 		codebaseIndexVercelAiGatewayApiKey?: string
 		codebaseIndexOpenRouterApiKey?: string
 	}
-	updatedSettings?: RooCodeSettings
+	updatedSettings?: VibeXCodeSettings
 }
 
 export const checkoutDiffPayloadSchema = z.object({

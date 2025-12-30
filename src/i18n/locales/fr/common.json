@@ -121,7 +121,7 @@
 			"completionError": "Erreur d'achèvement de Cerebras : {{error}}"
 		},
 		"roo": {
-			"authenticationRequired": "Le fournisseur Roo Code nécessite une authentification cloud. Veuillez vous connecter à Roo Code Cloud."
+			"authenticationRequired": "Le fournisseur VibeX Code nécessite une authentification cloud. Veuillez vous connecter à VibeX Code Cloud."
 		},
 		"api": {
 			"invalidKeyInvalidChars": "La clé API contient des caractères invalides."
@@ -135,7 +135,7 @@
 	"warnings": {
 		"no_terminal_content": "Aucun contenu de terminal sélectionné",
 		"missing_task_files": "Les fichiers de cette tâche sont introuvables. Souhaitez-vous la supprimer de la liste des tâches ?",
-		"auto_import_failed": "Échec de l'importation automatique des paramètres Roo Code : {{error}}"
+		"auto_import_failed": "Échec de l'importation automatique des paramètres VibeX Code : {{error}}"
 	},
 	"info": {
 		"no_changes": "Aucun changement trouvé.",
@@ -144,7 +144,7 @@
 		"custom_storage_path_set": "Chemin de stockage personnalisé défini : {{path}}",
 		"default_storage_path": "Retour au chemin de stockage par défaut",
 		"settings_imported": "Paramètres importés avec succès.",
-		"auto_import_success": "Paramètres Roo Code importés automatiquement depuis {{filename}}",
+		"auto_import_success": "Paramètres VibeX Code importés automatiquement depuis {{filename}}",
 		"share_link_copied": "Lien de partage copié dans le presse-papiers",
 		"image_copied_to_clipboard": "URI de données d'image copiée dans le presse-papiers",
 		"image_saved": "Image enregistrée dans {{path}}",
@@ -181,7 +181,7 @@
 		"enter_valid_path": "Veuillez entrer un chemin valide"
 	},
 	"input": {
-		"task_prompt": "Que doit faire Roo Code ?",
+		"task_prompt": "Que doit faire VibeX Code ?",
 		"task_placeholder": "Écris ta tâche ici"
 	},
 	"settings": {
@@ -214,8 +214,8 @@
 	},
 	"mdm": {
 		"errors": {
-			"cloud_auth_required": "Votre organisation nécessite une authentification Roo Code Cloud. Veuillez vous connecter pour continuer.",
-			"organization_mismatch": "Vous devez être authentifié avec le compte Roo Code Cloud de votre organisation.",
+			"cloud_auth_required": "Votre organisation nécessite une authentification VibeX Code Cloud. Veuillez vous connecter pour continuer.",
+			"organization_mismatch": "Vous devez être authentifié avec le compte VibeX Code Cloud de votre organisation.",
 			"manual_url_empty": "Veuillez entrer une URL de callback valide",
 			"manual_url_no_query": "URL de callback invalide : paramètres de requête manquants",
 			"manual_url_missing_params": "URL de callback invalide : paramètres requis manquants (code et state)",

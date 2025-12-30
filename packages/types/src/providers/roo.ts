@@ -18,14 +18,14 @@ export const rooModels = {} as const satisfies Record<string, ModelInfo>
  * Vibex Cloud API response schemas
  */
 
-export const RooPricingSchema = z.object({
+export const VibeXPricingSchema = z.object({
 	input: z.string(),
 	output: z.string(),
 	input_cache_read: z.string().optional(),
 	input_cache_write: z.string().optional(),
 })
 
-export const RooModelSchema = z.object({
+export const VibeXModelSchema = z.object({
 	id: z.string(),
 	object: z.literal("model"),
 	created: z.number(),
@@ -36,7 +36,7 @@ export const RooModelSchema = z.object({
 	max_tokens: z.number(),
 	type: z.literal("language"),
 	tags: z.array(z.string()).optional(),
-	pricing: RooPricingSchema,
+	pricing: VibeXPricingSchema,
 	deprecated: z.boolean().optional(),
 	default_temperature: z.number().optional(),
 	// Dynamic settings that map directly to ModelInfo properties
@@ -51,10 +51,10 @@ export const RooModelSchema = z.object({
 	versionedSettings: z.record(z.string(), z.record(z.string(), z.unknown())).optional(),
 })
 
-export const RooModelsResponseSchema = z.object({
+export const VibeXModelsResponseSchema = z.object({
 	object: z.literal("list"),
-	data: z.array(RooModelSchema),
+	data: z.array(VibeXModelSchema),
 })
 
-export type RooModel = z.infer<typeof RooModelSchema>
-export type RooModelsResponse = z.infer<typeof RooModelsResponseSchema>
+export type VibeXModel = z.infer<typeof VibeXModelSchema>
+export type VibeXModelsResponse = z.infer<typeof VibeXModelsResponseSchema>

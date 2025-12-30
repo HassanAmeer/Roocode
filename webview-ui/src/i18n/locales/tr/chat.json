@@ -21,11 +21,11 @@
 		"sharePublicly": "Herkese açık paylaş",
 		"sharePubliclyDescription": "Bağlantıya sahip herkes erişebilir",
 		"connectToCloud": "Buluta bağlan",
-		"connectToCloudDescription": "Görevleri paylaşmak için Roo Code Cloud'a giriş yap",
+		"connectToCloudDescription": "Görevleri paylaşmak için VibeX Code Cloud'a giriş yap",
 		"sharingDisabledByOrganization": "Paylaşım kuruluş tarafından devre dışı bırakıldı",
 		"shareSuccessOrganization": "Organizasyon bağlantısı panoya kopyalandı",
 		"shareSuccessPublic": "Genel bağlantı panoya kopyalandı",
-		"openInCloud": "Görevi Roo Code Cloud'da aç",
+		"openInCloud": "Görevi VibeX Code Cloud'da aç",
 		"openInCloudIntro": "Roo Code'yu her yerden izlemeye veya etkileşime devam et. Açmak için tara, tıkla veya kopyala.",
 		"openApiHistory": "API Geçmişini Aç",
 		"openUiHistory": "UI Geçmişini Aç"
@@ -148,7 +148,7 @@
 			"403": "Yetkisiz. API anahtarınız geçerli ama sağlayıcı bu isteği tamamlamayı reddetti.",
 			"429": "Çok fazla istek. Sağlayıcı tarafından oran sınırlaması uygulanıyor. Lütfen sonraki API çağrısından önce biraz bekle.",
 			"500": "Sağlayıcı sunucu hatası. Sağlayıcı tarafında bir sorun var, isteğinizde sorun yok.",
-			"unknown": "Bilinmeyen API hatası. Lütfen Roo Code desteğiyle iletişime geç.",
+			"unknown": "Bilinmeyen API hatası. Lütfen VibeX Code desteğiyle iletişime geç.",
 			"connection": "Bağlantı hatası. Çalışan bir internet bağlantınız olduğundan emin olun.",
 			"claudeCodeNotAuthenticated": "Claude Code'u kullanmak için oturum açmanız gerekiyor. Ayarlar'a gidin ve kimlik doğrulaması yapmak için \"Claude Code'da Oturum Aç\" seçeneğine tıklayın."
 		}
@@ -319,17 +319,17 @@
 	},
 	"announcement": {
 		"title": "Roo Code {{version}} Yayınlandı",
-		"support": "<githubLink>GitHub</githubLink>'da yıldız vererek Roo Code'u destekle.",
+		"support": "<githubLink>GitHub</githubLink>'da yıldız vererek VibeX Code'u destekle.",
 		"stealthModel": {
-			"feature": "<bold>Sınırlı süre ÜCRETSİZ gizli model</bold> - Code Supernova: Artık <bold>1M token bağlam penceresi</bold> ile yükseltildi! Görüntü girişlerini destekleyen çok amaçlı acentik kodlama modeli, Roo Code Cloud üzerinden kullanılabilir.",
+			"feature": "<bold>Sınırlı süre ÜCRETSİZ gizli model</bold> - Code Supernova: Artık <bold>1M token bağlam penceresi</bold> ile yükseltildi! Görüntü girişlerini destekleyen çok amaçlı acentik kodlama modeli, VibeX Code Cloud üzerinden kullanılabilir.",
 			"note": "(Not: istemler ve tamamlamalar model yaratıcısı tarafından kaydedilir ve modeli geliştirmek için kullanılır)",
 			"connectButton": "Roo Code Cloud'a bağlan",
-			"selectModel": "Başlamak için Ayarlar'da Roo Code Cloud sağlayıcısından <code>roo/code-supernova</code>'yı seçin.",
+			"selectModel": "Başlamak için Ayarlar'da VibeX Code Cloud sağlayıcısından <code>roo/code-supernova</code>'yı seçin.",
 			"goToSettingsButton": "Ayarlar'a Git"
 		},
 		"release": {
 			"heading": "Yenilikler:",
-			"skills": "Roo Code artık <skillsLink>Agent Skills</skillsLink>'i destekliyor - Roo Code'nun yeteneklerini genişletmek için yeniden kullanılabilir istem, araç ve kaynak paketleri.",
+			"skills": "Roo Code artık <skillsLink>Agent Skills</skillsLink>'i destekliyor - VibeX Code'nun yeteneklerini genişletmek için yeniden kullanılabilir istem, araç ve kaynak paketleri.",
 			"nativeToolCalling": "Tüm yeni görevler için artık yerel araç çağrısı gereklidir. <blogLink>Daha fazla bilgi edinin</blogLink> motivasyon ve sorunlarla karşılaşırsanız ne yapacağınız hakkında."
 		},
 		"cloudAgents": {

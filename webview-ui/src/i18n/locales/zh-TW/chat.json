@@ -1,5 +1,5 @@
 {
-	"greeting": "歡迎使用 Roo Code！",
+	"greeting": "歡迎使用 VibeX Code！",
 	"task": {
 		"title": "工作",
 		"expand": "展開工作",
@@ -21,12 +21,12 @@
 		"sharePublicly": "公開分享",
 		"sharePubliclyDescription": "任何擁有連結的人都可存取",
 		"connectToCloud": "連線至雲端",
-		"connectToCloudDescription": "登入 Roo Code Cloud 以分享工作",
+		"connectToCloudDescription": "登入 VibeX Code Cloud 以分享工作",
 		"sharingDisabledByOrganization": "組織已停用分享功能",
 		"shareSuccessOrganization": "組織連結已複製到剪貼簿",
 		"shareSuccessPublic": "公開連結已複製到剪貼簿",
-		"openInCloud": "在 Roo Code Cloud 中開啟工作",
-		"openInCloudIntro": "從任何地方繼續監控或與 Roo Code 互動。掃描、點擊或複製以開啟。",
+		"openInCloud": "在 VibeX Code Cloud 中開啟工作",
+		"openInCloudIntro": "從任何地方繼續監控或與 VibeX Code 互動。掃描、點擊或複製以開啟。",
 		"openApiHistory": "開啟 API 歷史紀錄",
 		"openUiHistory": "開啟 UI 歷史紀錄"
 	},
@@ -118,7 +118,7 @@
 		"title": "模式",
 		"marketplace": "模式市集",
 		"settings": "模式設定",
-		"description": "專門量身打造 Roo Code 行為的角色。",
+		"description": "專門量身打造 VibeX Code 行為的角色。",
 		"searchPlaceholder": "搜尋模式...",
 		"noResults": "沒有找到結果"
 	},
@@ -154,7 +154,7 @@
 			"403": "無權存取。您的 API 金鑰有效，但提供商拒絕完成此請求。",
 			"429": "請求次數過多。提供商已對您的請求進行速率限制。請在下一次 API 呼叫前稍候。",
 			"500": "提供商伺服器錯誤。提供商端發生問題，您的請求沒有問題。",
-			"unknown": "未知 API 錯誤。請聯絡 Roo Code 支援。",
+			"unknown": "未知 API 錯誤。請聯絡 VibeX Code 支援。",
 			"connection": "連線錯誤。請確保您有可用的網際網路連線。",
 			"claudeCodeNotAuthenticated": "你需要登入才能使用 Claude Code。前往設定並點擊「登入 Claude Code」以進行驗證。"
 		}
@@ -329,17 +329,17 @@
 	},
 	"announcement": {
 		"title": "Roo Code {{version}} 已發布",
-		"support": "請在 <githubLink>GitHub</githubLink> 上為我們按星支持 Roo Code。",
+		"support": "請在 <githubLink>GitHub</githubLink> 上為我們按星支持 VibeX Code。",
 		"stealthModel": {
-			"feature": "<bold>限時免費隱形模型</bold> - Code Supernova：現已升級為 <bold>1M Token 上下文視窗</bold>！一個支援圖像輸入的多功能代理程式編程模型，透過 Roo Code Cloud 提供。",
+			"feature": "<bold>限時免費隱形模型</bold> - Code Supernova：現已升級為 <bold>1M Token 上下文視窗</bold>！一個支援圖像輸入的多功能代理程式編程模型，透過 VibeX Code Cloud 提供。",
 			"note": "(注意：提示和完成會被模型創建者記錄並用於改進模型)",
-			"connectButton": "連接到 Roo Code Cloud",
-			"selectModel": "在設定中從 Roo Code Cloud 提供商選擇 <code>roo/code-supernova</code> 開始使用。",
+			"connectButton": "連接到 VibeX Code Cloud",
+			"selectModel": "在設定中從 VibeX Code Cloud 提供商選擇 <code>roo/code-supernova</code> 開始使用。",
 			"goToSettingsButton": "前往設定"
 		},
 		"release": {
 			"heading": "新增功能：",
-			"skills": "Roo Code 現已支援 <skillsLink>Agent Skills</skillsLink> - 可重複使用的提示詞、工具和資源套件，用於擴展 Roo Code 的功能。",
+			"skills": "Roo Code 現已支援 <skillsLink>Agent Skills</skillsLink> - 可重複使用的提示詞、工具和資源套件，用於擴展 VibeX Code 的功能。",
 			"nativeToolCalling": "所有新工作現在都需要原生工具呼叫。<blogLink>深入了解</blogLink>相關動機以及遇到問題時的解決方案。"
 		},
 		"cloudAgents": {
@@ -433,7 +433,7 @@
 	},
 	"rooCloudCTA": {
 		"title": "Roo Code Cloud 正在進化！",
-		"description": "在雲端執行 Roo CodeRemote 遠端代理、隨時隨地存取您的工作、與他人協作等等。",
+		"description": "在雲端執行 VibeX CodeRemote 遠端代理、隨時隨地存取您的工作、與他人協作等等。",
 		"joinWaitlist": "註冊以獲得最新更新。"
 	},
 	"command": {

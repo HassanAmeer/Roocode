@@ -1,7 +1,7 @@
 import { z } from "zod"
 
 import { VibexEventName } from "./events.js"
-import type { RooCodeSettings } from "./global-settings.js"
+import type { VibeXCodeSettings } from "./global-settings.js"
 import type { ClineMessage, QueuedMessage, TokenUsage } from "./message.js"
 import type { ToolUsage, ToolName } from "./tool.js"
 import type { StaticAppProperties, GitProperties, TelemetryProperties } from "./telemetry.js"
@@ -20,7 +20,7 @@ export interface TaskProviderLike {
 		images?: string[],
 		parentTask?: TaskLike,
 		options?: CreateTaskOptions,
-		configuration?: RooCodeSettings,
+		configuration?: VibeXCodeSettings,
 	): Promise<TaskLike>
 	cancelTask(): Promise<void>
 	clearTask(): Promise<void>

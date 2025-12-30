@@ -1,34 +1,34 @@
 import EventEmitter from "events"
 
-export type RooTerminalProvider = "vscode" | "execa"
+export type VibeXTerminalProvider = "vscode" | "execa"
 
-export interface RooTerminal {
-	provider: RooTerminalProvider
+export interface VibeXTerminal {
+	provider: VibeXTerminalProvider
 	id: number
 	busy: boolean
 	running: boolean
 	taskId?: string
-	process?: RooTerminalProcess
+	process?: VibeXTerminalProcess
 	getCurrentWorkingDirectory(): string
 	isClosed: () => boolean
-	runCommand: (command: string, callbacks: RooTerminalCallbacks) => RooTerminalProcessResultPromise
+	runCommand: (command: string, callbacks: VibeXTerminalCallbacks) => VibeXTerminalProcessResultPromise
 	setActiveStream(stream: AsyncIterable<string> | undefined, pid?: number): void
 	shellExecutionComplete(exitDetails: ExitCodeDetails): void
-	getProcessesWithOutput(): RooTerminalProcess[]
+	getProcessesWithOutput(): VibeXTerminalProcess[]
 	getUnretrievedOutput(): string
 	getLastCommand(): string
 	cleanCompletedProcessQueue(): void
 }
 
-export interface RooTerminalCallbacks {
-	onLine: (line: string, process: RooTerminalProcess) => void
-	onCompleted: (output: string | undefined, process: RooTerminalProcess) => void
-	onShellExecutionStarted: (pid: number | undefined, process: RooTerminalProcess) => void
-	onShellExecutionComplete: (details: ExitCodeDetails, process: RooTerminalProcess) => void
-	onNoShellIntegration?: (message: string, process: RooTerminalProcess) => void
+export interface VibeXTerminalCallbacks {
+	onLine: (line: string, process: VibeXTerminalProcess) => void
+	onCompleted: (output: string | undefined, process: VibeXTerminalProcess) => void
+	onShellExecutionStarted: (pid: number | undefined, process: VibeXTerminalProcess) => void
+	onShellExecutionComplete: (details: ExitCodeDetails, process: VibeXTerminalProcess) => void
+	onNoShellIntegration?: (message: string, process: VibeXTerminalProcess) => void
 }
 
-export interface RooTerminalProcess extends EventEmitter<RooTerminalProcessEvents> {
+export interface VibeXTerminalProcess extends EventEmitter<VibeXTerminalProcessEvents> {
 	command: string
 	isHot: boolean
 	run: (command: string) => Promise<void>
@@ -38,9 +38,9 @@ export interface RooTerminalProcess extends EventEmitter<RooTerminalProcessEvent
 	getUnretrievedOutput: () => string
 }
 
-export type RooTerminalProcessResultPromise = RooTerminalProcess & Promise<void>
+export type VibeXTerminalProcessResultPromise = VibeXTerminalProcess & Promise<void>
 
-export interface RooTerminalProcessEvents {
+export interface VibeXTerminalProcessEvents {
 	line: [line: string]
 	continue: []
 	completed: [output?: string]

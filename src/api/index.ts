@@ -36,7 +36,7 @@ import {
 	DoubaoHandler,
 	ZAiHandler,
 	FireworksHandler,
-	RooHandler,
+	VibeXHandler,
 	FeatherlessHandler,
 	VercelAiGatewayHandler,
 	DeepInfraHandler,
@@ -189,7 +189,7 @@ export function buildApiHandler(configuration: ProviderSettings): ApiHandler {
 		case "roo":
 			// Never throw exceptions from provider constructors
 			// The provider-proxy server will handle authentication and return appropriate error codes
-			return new RooHandler(options)
+			return new VibeXHandler(options)
 		case "featherless":
 			return new FeatherlessHandler(options)
 		case "vercel-ai-gateway":
