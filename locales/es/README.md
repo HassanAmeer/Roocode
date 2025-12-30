@@ -35,7 +35,7 @@
 - [简体中文](../zh-CN/README.md)
 - [繁體中文](../zh-TW/README.md)
 - ...
-    </details>
+      </details>
 
 ---
 
@@ -51,7 +51,7 @@
 
 ## Modos
 
-Roo Code se adapta a tu forma de trabajar, no al revés:
+VibeX Code se adapta a tu forma de trabajar, no al revés:
 
 - Modo Código: codificación diaria, ediciones y operaciones de archivos
 - Modo Arquitecto: planificar sistemas, especificaciones y migraciones

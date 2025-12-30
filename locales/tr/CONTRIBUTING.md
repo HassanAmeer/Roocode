@@ -13,7 +13,7 @@
 
 # VibeX Code'a Katkıda Bulunma
 
-Roo Code topluluk tarafından yürütülen bir projedir ve her katkıyı derinden takdir ediyoruz. İşbirliğini kolaylaştırmak için [Önce Sorun Yaklaşımı](#önce-sorun-yaklaşımı) temelinde çalışıyoruz, bu da tüm [Çekme İsteklerinin (PR'ler)](#bir-çekme-isteği-gönderme) önce bir GitHub Sorununa bağlanması gerektiği anlamına gelir. Lütfen bu kılavuzu dikkatlice inceleyin.
+VibeX Code topluluk tarafından yürütülen bir projedir ve her katkıyı derinden takdir ediyoruz. İşbirliğini kolaylaştırmak için [Önce Sorun Yaklaşımı](#önce-sorun-yaklaşımı) temelinde çalışıyoruz, bu da tüm [Çekme İsteklerinin (PR'ler)](#bir-çekme-isteği-gönderme) önce bir GitHub Sorununa bağlanması gerektiği anlamına gelir. Lütfen bu kılavuzu dikkatlice inceleyin.
 
 ## İçindekiler
 
@@ -79,7 +79,7 @@ Tüm katkılar, basit şablonlarımızı kullanarak bir GitHub Sorunu ile başla
 ### Ne Üzerinde Çalışılacağına Karar Verme
 
 - "Sorun [Atanmamış]" sorunları için [GitHub Projesi](https://github.com/orgs/RooCodeInc/projects/1)'ni kontrol edin.
-- Belgeler için [Roo Code Belgeleri](https://github.com/RooCodeInc/Roo-Code-Docs)ni ziyaret edin.
+- Belgeler için [VibeX Code Belgeleri](https://github.com/RooCodeInc/Roo-Code-Docs)ni ziyaret edin.
 
 ### Hataları Bildirme
 

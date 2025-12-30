@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "Moet je met ons praten? Schrijf"
 		},
-		"community": "Wil je tips of gewoon even hangen met andere VibeX Code-gebruikers? Sluit je aan bij <redditLink>reddit.com/r/Roo Code</redditLink> of <discordLink>discord.gg/roocode</discordLink>",
+		"community": "Wil je tips of gewoon even hangen met andere VibeX Code-gebruikers? Sluit je aan bij <redditLink>reddit.com/r/VibeX Code</redditLink> of <discordLink>discord.gg/roocode</discordLink>",
 		"contactAndCommunity": "Contact & Gemeenschap",
 		"manageSettings": "Instellingen Beheren"
 	},
@@ -496,7 +496,7 @@
 		},
 		"consecutiveMistakeLimit": {
 			"label": "Fout- & Herhalingslimiet",
-			"description": "Aantal opeenvolgende fouten of herhaalde acties voordat het dialoogvenster 'Roo Code ondervindt problemen' wordt weergegeven. Zet op 0 om dit veiligheidsmechanisme uit te schakelen (wordt nooit geactiveerd).",
+			"description": "Aantal opeenvolgende fouten of herhaalde acties voordat het dialoogvenster 'VibeX Code ondervindt problemen' wordt weergegeven. Zet op 0 om dit veiligheidsmechanisme uit te schakelen (wordt nooit geactiveerd).",
 			"unlimitedDescription": "Onbeperkt aantal nieuwe pogingen ingeschakeld (automatisch doorgaan). Het dialoogvenster zal nooit verschijnen.",
 			"warning": "⚠️ Instellen op 0 staat onbeperkte nieuwe pogingen toe, wat aanzienlijk API-gebruik kan verbruiken"
 		},
@@ -611,7 +611,7 @@
 		},
 		"maxReadFile": {
 			"label": "Automatisch afkappen bij bestandslezen",
-			"description": "Roo Code leest dit aantal regels wanneer het model geen begin/eindwaarden opgeeft. Als dit aantal lager is dan het totaal, genereert VibeX Code een index van codelijnen. Speciale gevallen: -1 laat VibeX Code het hele bestand lezen (zonder indexering), 0 leest geen regels en geeft alleen een minimale index. Lagere waarden minimaliseren het initiële contextgebruik en maken precieze vervolg-leesopdrachten mogelijk. Expliciete begin/eind-aanvragen worden niet door deze instelling beperkt.",
+			"description": "VibeX Code leest dit aantal regels wanneer het model geen begin/eindwaarden opgeeft. Als dit aantal lager is dan het totaal, genereert VibeX Code een index van codelijnen. Speciale gevallen: -1 laat VibeX Code het hele bestand lezen (zonder indexering), 0 leest geen regels en geeft alleen een minimale index. Lagere waarden minimaliseren het initiële contextgebruik en maken precieze vervolg-leesopdrachten mogelijk. Expliciete begin/eind-aanvragen worden niet door deze instelling beperkt.",
 			"lines": "regels",
 			"always_full_read": "Altijd volledig bestand lezen"
 		},
@@ -878,7 +878,7 @@
 		"simplifiedExplanation": "Je kunt later gedetailleerde modelinstellingen aanpassen."
 	},
 	"footer": {
-		"feedback": "Heb je vragen of feedback? Open gerust een issue op <githubLink>github.com/Roo CodeInc/Roo Code-Code</githubLink> of sluit je aan bij <redditLink>reddit.com/r/Roo Code</redditLink> of <discordLink>discord.gg/roocode</discordLink>",
+		"feedback": "Heb je vragen of feedback? Open gerust een issue op <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> of sluit je aan bij <redditLink>reddit.com/r/VibeX Code</redditLink> of <discordLink>discord.gg/roocode</discordLink>",
 		"telemetry": {
 			"label": "Anonieme fout- en gebruiksrapportage toestaan",
 			"description": "Help VibeX Code te verbeteren door anonieme gebruiksgegevens en foutmeldingen te versturen. Deze telemetrie verzamelt geen code, prompts of persoonlijke informatie. Zie ons <privacyLink>privacybeleid</privacyLink> voor meer details."

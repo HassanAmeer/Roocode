@@ -98,7 +98,7 @@
 		"placeholder": "Edit your message..."
 	},
 	"scrollToBottom": "Scroll to bottom of chat",
-	"about": "Roo Code is a whole AI dev team in your editor",
+	"about": "VibeX Code is a whole AI dev team in your editor",
 	"docs": "Check our <DocsLink>docs</DocsLink> to get started",
 	"onboarding": "What would you like to do?",
 	"rooTips": {
@@ -194,44 +194,44 @@
 		}
 	},
 	"instructions": {
-		"wantsToFetch": "Roo Code wants to fetch detailed instructions to assist with the current task"
+		"wantsToFetch": "VibeX Code wants to fetch detailed instructions to assist with the current task"
 	},
 	"fileOperations": {
-		"wantsToRead": "Roo Code wants to read this file",
-		"wantsToReadMultiple": "Roo Code wants to read multiple files",
-		"wantsToReadAndXMore": "Roo Code wants to read this file and {{count}} more",
-		"wantsToReadOutsideWorkspace": "Roo Code wants to read this file outside of the workspace",
-		"didRead": "Roo Code read this file",
-		"wantsToEdit": "Roo Code wants to edit this file",
-		"wantsToEditOutsideWorkspace": "Roo Code wants to edit this file outside of the workspace",
-		"wantsToEditProtected": "Roo Code wants to edit a protected configuration file",
-		"wantsToApplyBatchChanges": "Roo Code wants to apply changes to multiple files",
-		"wantsToGenerateImage": "Roo Code wants to generate an image",
-		"wantsToGenerateImageOutsideWorkspace": "Roo Code wants to generate an image outside of the workspace",
-		"wantsToGenerateImageProtected": "Roo Code wants to generate an image in a protected location",
-		"didGenerateImage": "Roo Code generated an image",
-		"wantsToCreate": "Roo Code wants to create a new file",
-		"wantsToInsert": "Roo Code wants to insert content into this file",
-		"wantsToInsertWithLineNumber": "Roo Code wants to insert content into this file at line {{lineNumber}}",
-		"wantsToInsertAtEnd": "Roo Code wants to append content to the end of this file"
+		"wantsToRead": "VibeX Code wants to read this file",
+		"wantsToReadMultiple": "VibeX Code wants to read multiple files",
+		"wantsToReadAndXMore": "VibeX Code wants to read this file and {{count}} more",
+		"wantsToReadOutsideWorkspace": "VibeX Code wants to read this file outside of the workspace",
+		"didRead": "VibeX Code read this file",
+		"wantsToEdit": "VibeX Code wants to edit this file",
+		"wantsToEditOutsideWorkspace": "VibeX Code wants to edit this file outside of the workspace",
+		"wantsToEditProtected": "VibeX Code wants to edit a protected configuration file",
+		"wantsToApplyBatchChanges": "VibeX Code wants to apply changes to multiple files",
+		"wantsToGenerateImage": "VibeX Code wants to generate an image",
+		"wantsToGenerateImageOutsideWorkspace": "VibeX Code wants to generate an image outside of the workspace",
+		"wantsToGenerateImageProtected": "VibeX Code wants to generate an image in a protected location",
+		"didGenerateImage": "VibeX Code generated an image",
+		"wantsToCreate": "VibeX Code wants to create a new file",
+		"wantsToInsert": "VibeX Code wants to insert content into this file",
+		"wantsToInsertWithLineNumber": "VibeX Code wants to insert content into this file at line {{lineNumber}}",
+		"wantsToInsertAtEnd": "VibeX Code wants to append content to the end of this file"
 	},
 	"directoryOperations": {
-		"wantsToViewTopLevel": "Roo Code wants to view the top level files in this directory",
-		"didViewTopLevel": "Roo Code viewed the top level files in this directory",
-		"wantsToViewTopLevelOutsideWorkspace": "Roo Code wants to view the top level files in this directory (outside workspace)",
-		"didViewTopLevelOutsideWorkspace": "Roo Code viewed the top level files in this directory (outside workspace)",
-		"wantsToViewRecursive": "Roo Code wants to recursively view all files in this directory",
-		"didViewRecursive": "Roo Code recursively viewed all files in this directory",
-		"wantsToViewRecursiveOutsideWorkspace": "Roo Code wants to recursively view all files in this directory (outside workspace)",
-		"didViewRecursiveOutsideWorkspace": "Roo Code recursively viewed all files in this directory (outside workspace)",
-		"wantsToSearch": "Roo Code wants to search this directory for <code>{{regex}}</code>",
-		"didSearch": "Roo Code searched this directory for <code>{{regex}}</code>",
-		"wantsToSearchOutsideWorkspace": "Roo Code wants to search this directory (outside workspace) for <code>{{regex}}</code>",
-		"didSearchOutsideWorkspace": "Roo Code searched this directory (outside workspace) for <code>{{regex}}</code>"
+		"wantsToViewTopLevel": "VibeX Code wants to view the top level files in this directory",
+		"didViewTopLevel": "VibeX Code viewed the top level files in this directory",
+		"wantsToViewTopLevelOutsideWorkspace": "VibeX Code wants to view the top level files in this directory (outside workspace)",
+		"didViewTopLevelOutsideWorkspace": "VibeX Code viewed the top level files in this directory (outside workspace)",
+		"wantsToViewRecursive": "VibeX Code wants to recursively view all files in this directory",
+		"didViewRecursive": "VibeX Code recursively viewed all files in this directory",
+		"wantsToViewRecursiveOutsideWorkspace": "VibeX Code wants to recursively view all files in this directory (outside workspace)",
+		"didViewRecursiveOutsideWorkspace": "VibeX Code recursively viewed all files in this directory (outside workspace)",
+		"wantsToSearch": "VibeX Code wants to search this directory for <code>{{regex}}</code>",
+		"didSearch": "VibeX Code searched this directory for <code>{{regex}}</code>",
+		"wantsToSearchOutsideWorkspace": "VibeX Code wants to search this directory (outside workspace) for <code>{{regex}}</code>",
+		"didSearchOutsideWorkspace": "VibeX Code searched this directory (outside workspace) for <code>{{regex}}</code>"
 	},
 	"codebaseSearch": {
-		"wantsToSearch": "Roo Code wants to search the codebase for <code>{{query}}</code>",
-		"wantsToSearchWithPath": "Roo Code wants to search the codebase for <code>{{query}}</code> in <code>{{path}}</code>",
+		"wantsToSearch": "VibeX Code wants to search the codebase for <code>{{query}}</code>",
+		"wantsToSearchWithPath": "VibeX Code wants to search the codebase for <code>{{query}}</code> in <code>{{path}}</code>",
 		"didSearch_one": "Found 1 result",
 		"didSearch_other": "Found {{count}} results",
 		"resultTooltip": "Similarity score: {{score}} (click to open file)"
@@ -256,24 +256,24 @@
 	"response": "Response",
 	"arguments": "Arguments",
 	"text": {
-		"rooSaid": "Roo Code said"
+		"rooSaid": "VibeX Code said"
 	},
 	"feedback": {
 		"youSaid": "You said"
 	},
 	"mcp": {
-		"wantsToUseTool": "Roo Code wants to use a tool on the {{serverName}} MCP server",
-		"wantsToAccessResource": "Roo Code wants to access a resource on the {{serverName}} MCP server"
+		"wantsToUseTool": "VibeX Code wants to use a tool on the {{serverName}} MCP server",
+		"wantsToAccessResource": "VibeX Code wants to access a resource on the {{serverName}} MCP server"
 	},
 	"modes": {
-		"wantsToSwitch": "Roo Code wants to switch to {{mode}} mode",
-		"wantsToSwitchWithReason": "Roo Code wants to switch to {{mode}} mode because: {{reason}}",
-		"didSwitch": "Roo Code switched to {{mode}} mode",
-		"didSwitchWithReason": "Roo Code switched to {{mode}} mode because: {{reason}}"
+		"wantsToSwitch": "VibeX Code wants to switch to {{mode}} mode",
+		"wantsToSwitchWithReason": "VibeX Code wants to switch to {{mode}} mode because: {{reason}}",
+		"didSwitch": "VibeX Code switched to {{mode}} mode",
+		"didSwitchWithReason": "VibeX Code switched to {{mode}} mode because: {{reason}}"
 	},
 	"subtasks": {
-		"wantsToCreate": "Roo Code wants to create a new subtask in {{mode}} mode",
-		"wantsToFinish": "Roo Code wants to finish this subtask",
+		"wantsToCreate": "VibeX Code wants to create a new subtask in {{mode}} mode",
+		"wantsToFinish": "VibeX Code wants to finish this subtask",
 		"newTaskContent": "Subtask Instructions",
 		"completionContent": "Subtask Completed",
 		"resultContent": "Subtask Results",
@@ -281,7 +281,7 @@
 		"completionInstructions": "Subtask completed! You can review the results and suggest any corrections or next steps. If everything looks good, confirm to return the result to the parent task."
 	},
 	"questions": {
-		"hasQuestion": "Roo Code has a question"
+		"hasQuestion": "VibeX Code has a question"
 	},
 	"taskCompleted": "Task Completed",
 	"error": "Error",
@@ -302,7 +302,7 @@
 	"diffError": {
 		"title": "Edit Unsuccessful"
 	},
-	"troubleMessage": "Roo Code is having trouble...",
+	"troubleMessage": "VibeX Code is having trouble...",
 	"powershell": {
 		"issues": "It seems like you're having Windows PowerShell issues, please see this"
 	},
@@ -324,7 +324,7 @@
 		"triggerLabelAll": "YOLO"
 	},
 	"announcement": {
-		"title": "Roo Code {{version}} Released",
+		"title": "VibeX Code {{version}} Released",
 		"support": "Please support VibeX Code by starring us on <githubLink>GitHub</githubLink>.",
 		"stealthModel": {
 			"feature": "<bold>Limited-time FREE stealth model</bold> - Code Supernova: Now upgraded with a <bold>1M token context window</bold>! A versatile agentic coding model that supports image inputs, accessible through VibeX Code Cloud.",
@@ -335,7 +335,7 @@
 		},
 		"release": {
 			"heading": "What's New:",
-			"skills": "Roo Code now supports <skillsLink>Agent Skills</skillsLink> - reusable packages of prompts, tools, and resources to extend VibeX Code's capabilities.",
+			"skills": "VibeX Code now supports <skillsLink>Agent Skills</skillsLink> - reusable packages of prompts, tools, and resources to extend VibeX Code's capabilities.",
 			"nativeToolCalling": "Native tool calling is now required for all new tasks. <blogLink>Read more</blogLink> about the motivation and what to do if you're encountering issues."
 		},
 		"cloudAgents": {
@@ -356,7 +356,7 @@
 	},
 	"browser": {
 		"session": "Browser Session",
-		"rooWantsToUse": "Roo Code wants to use the browser",
+		"rooWantsToUse": "VibeX Code wants to use the browser",
 		"consoleLogs": "Console Logs",
 		"noNewLogs": "(No new logs)",
 		"screenshot": "Browser screenshot",
@@ -402,18 +402,18 @@
 	"profileViolationWarning": "The current profile isn't compatible with your organization's settings",
 	"shellIntegration": {
 		"title": "Command Execution Warning",
-		"description": "Your command is being executed without VSCode terminal shell integration. To suppress this warning you can disable shell integration in the <strong>Terminal</strong> section of the <settingsLink>Roo Code settings</settingsLink> or troubleshoot VSCode terminal integration using the link below.",
+		"description": "Your command is being executed without VSCode terminal shell integration. To suppress this warning you can disable shell integration in the <strong>Terminal</strong> section of the <settingsLink>VibeX Code settings</settingsLink> or troubleshoot VSCode terminal integration using the link below.",
 		"troubleshooting": "Click here for shell integration documentation."
 	},
 	"ask": {
 		"autoApprovedRequestLimitReached": {
 			"title": "Auto-Approved Request Limit Reached",
-			"description": "Roo Code has reached the auto-approved limit of {{count}} API request(s). Would you like to reset the count and proceed with the task?",
+			"description": "VibeX Code has reached the auto-approved limit of {{count}} API request(s). Would you like to reset the count and proceed with the task?",
 			"button": "Reset and Continue"
 		},
 		"autoApprovedCostLimitReached": {
 			"title": "Auto-Approved Cost Limit Reached",
-			"description": "Roo Code has reached the auto-approved cost limit of ${{count}}. Would you like to reset the cost and proceed with the task?",
+			"description": "VibeX Code has reached the auto-approved cost limit of ${{count}}. Would you like to reset the cost and proceed with the task?",
 			"button": "Reset and Continue"
 		}
 	},
@@ -451,8 +451,8 @@
 		}
 	},
 	"slashCommand": {
-		"wantsToRun": "Roo Code wants to run a slash command",
-		"didRun": "Roo Code ran a slash command"
+		"wantsToRun": "VibeX Code wants to run a slash command",
+		"didRun": "VibeX Code ran a slash command"
 	},
 	"queuedMessages": {
 		"title": "Queued Messages",

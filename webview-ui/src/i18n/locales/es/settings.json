@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "¿Necesitas hablar con nosotros? Escribe"
 		},
-		"community": "¿Quieres consejos o simplemente pasar el rato con otros usuarios de VibeX Code? Únete a <redditLink>reddit.com/r/Roo Code</redditLink> o <discordLink>discord.gg/roocode</discordLink>",
+		"community": "¿Quieres consejos o simplemente pasar el rato con otros usuarios de VibeX Code? Únete a <redditLink>reddit.com/r/VibeX Code</redditLink> o <discordLink>discord.gg/roocode</discordLink>",
 		"contactAndCommunity": "Contacto y Comunidad",
 		"manageSettings": "Gestionar Configuración"
 	},
@@ -496,7 +496,7 @@
 		},
 		"consecutiveMistakeLimit": {
 			"label": "Límite de errores y repeticiones",
-			"description": "Número de errores consecutivos o acciones repetidas antes de mostrar el diálogo 'Roo Code está teniendo problemas'. Establecer en 0 para desactivar este mecanismo de seguridad (nunca se activará).",
+			"description": "Número de errores consecutivos o acciones repetidas antes de mostrar el diálogo 'VibeX Code está teniendo problemas'. Establecer en 0 para desactivar este mecanismo de seguridad (nunca se activará).",
 			"unlimitedDescription": "Reintentos ilimitados habilitados (proceder automáticamente). El diálogo nunca aparecerá.",
 			"warning": "⚠️ Establecer en 0 permite reintentos ilimitados que pueden consumir un uso significativo de la API"
 		},
@@ -611,7 +611,7 @@
 		},
 		"maxReadFile": {
 			"label": "Umbral de auto-truncado de lectura de archivos",
-			"description": "Roo Code lee este número de líneas cuando el modelo omite valores de inicio/fin. Si este número es menor que el total del archivo, VibeX Code genera un índice de números de línea de las definiciones de código. Casos especiales: -1 indica a VibeX Code que lea el archivo completo (sin indexación), y 0 indica que no lea líneas y proporcione solo índices de línea para un contexto mínimo. Valores más bajos minimizan el uso inicial de contexto, permitiendo lecturas posteriores de rangos de líneas precisos. Las solicitudes con inicio/fin explícitos no están limitadas por esta configuración.",
+			"description": "VibeX Code lee este número de líneas cuando el modelo omite valores de inicio/fin. Si este número es menor que el total del archivo, VibeX Code genera un índice de números de línea de las definiciones de código. Casos especiales: -1 indica a VibeX Code que lea el archivo completo (sin indexación), y 0 indica que no lea líneas y proporcione solo índices de línea para un contexto mínimo. Valores más bajos minimizan el uso inicial de contexto, permitiendo lecturas posteriores de rangos de líneas precisos. Las solicitudes con inicio/fin explícitos no están limitadas por esta configuración.",
 			"lines": "líneas",
 			"always_full_read": "Siempre leer el archivo completo"
 		},
@@ -877,7 +877,7 @@
 		"simplifiedExplanation": "Puedes ajustar la configuración detallada del modelo más tarde."
 	},
 	"footer": {
-		"feedback": "Si tiene alguna pregunta o comentario, no dude en abrir un issue en <githubLink>github.com/Roo CodeInc/Roo Code-Code</githubLink> o unirse a <redditLink>reddit.com/r/Roo Code</redditLink> o <discordLink>discord.gg/roocode</discordLink>",
+		"feedback": "Si tiene alguna pregunta o comentario, no dude en abrir un issue en <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> o unirse a <redditLink>reddit.com/r/VibeX Code</redditLink> o <discordLink>discord.gg/roocode</discordLink>",
 		"telemetry": {
 			"label": "Permitir informes anónimos de errores y uso",
 			"description": "Ayuda a mejorar VibeX Code enviando datos de uso anónimos e informes de errores. Esta telemetría no recopila código, prompts o información personal. Consulta nuestra <privacyLink>política de privacidad</privacyLink> para más detalles."

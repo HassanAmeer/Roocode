@@ -292,7 +292,7 @@ groups:
   <quick_reference>
     <command>Create mode in .roomodes for project-specific modes</command>
     <command>Create mode in global custom_modes.yaml for system-wide modes</command>
-    <command>Use list_files to verify .roo folder structure</command>
+    <command>Use list_files to verify .vibex folder structure</command>
     <command>Test file regex patterns with search_files</command>
     <command>Use codebase_search to find existing mode implementations</command>
     <command>Read all XML files in a mode directory to understand its structure</command>

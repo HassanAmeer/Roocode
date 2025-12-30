@@ -41,7 +41,7 @@ describe("RooConfigService", () => {
 	})
 
 	describe("getGlobalRooDirectory", () => {
-		it("should return correct path for global .roo directory", () => {
+		it("should return correct path for global .vibex directory", () => {
 			const result = getGlobalRooDirectory()
 			expect(result).toBe(path.join("/mock/home", ".roo"))
 		})

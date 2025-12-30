@@ -87,7 +87,7 @@
 		"tooltip": "Hủy thao tác hiện tại"
 	},
 	"scrollToBottom": "Cuộn xuống cuối cuộc trò chuyện",
-	"about": "Roo Code là một đội ngũ phát triển AI đầy đủ trong trình chỉnh sửa của bạn.",
+	"about": "VibeX Code là một đội ngũ phát triển AI đầy đủ trong trình chỉnh sửa của bạn.",
 	"docs": "Kiểm tra <DocsLink>tài liệu</DocsLink> của chúng tôi để tìm hiểu thêm.",
 	"onboarding": "Danh sách nhiệm vụ của bạn trong không gian làm việc này đang trống.",
 	"rooTips": {
@@ -131,7 +131,7 @@
 	"diffError": {
 		"title": "Chỉnh sửa không thành công"
 	},
-	"troubleMessage": "Roo Code đang gặp sự cố...",
+	"troubleMessage": "VibeX Code đang gặp sự cố...",
 	"apiRequest": {
 		"title": "Yêu cầu API",
 		"failed": "Yêu cầu API thất bại",
@@ -173,42 +173,42 @@
 		"current": "Hiện tại"
 	},
 	"instructions": {
-		"wantsToFetch": "Roo Code muốn lấy hướng dẫn chi tiết để hỗ trợ nhiệm vụ hiện tại"
+		"wantsToFetch": "VibeX Code muốn lấy hướng dẫn chi tiết để hỗ trợ nhiệm vụ hiện tại"
 	},
 	"fileOperations": {
-		"wantsToRead": "Roo Code muốn đọc tệp này",
-		"wantsToReadOutsideWorkspace": "Roo Code muốn đọc tệp này bên ngoài không gian làm việc",
-		"didRead": "Roo Code đã đọc tệp này",
-		"wantsToEdit": "Roo Code muốn chỉnh sửa tệp này",
-		"wantsToEditOutsideWorkspace": "Roo Code muốn chỉnh sửa tệp này bên ngoài không gian làm việc",
-		"wantsToEditProtected": "Roo Code muốn chỉnh sửa tệp cấu hình được bảo vệ",
-		"wantsToCreate": "Roo Code muốn tạo một tệp mới",
-		"wantsToSearchReplace": "Roo Code muốn thực hiện tìm kiếm và thay thế trong tệp này",
-		"didSearchReplace": "Roo Code đã thực hiện tìm kiếm và thay thế trong tệp này",
-		"wantsToInsert": "Roo Code muốn chèn nội dung vào tệp này",
-		"wantsToInsertWithLineNumber": "Roo Code muốn chèn nội dung vào dòng {{lineNumber}} của tệp này",
-		"wantsToInsertAtEnd": "Roo Code muốn thêm nội dung vào cuối tệp này",
-		"wantsToReadAndXMore": "Roo Code muốn đọc tệp này và {{count}} tệp khác",
-		"wantsToReadMultiple": "Roo Code muốn đọc nhiều tệp",
-		"wantsToApplyBatchChanges": "Roo Code muốn áp dụng thay đổi cho nhiều tệp",
-		"wantsToGenerateImage": "Roo Code muốn tạo một hình ảnh",
-		"wantsToGenerateImageOutsideWorkspace": "Roo Code muốn tạo hình ảnh bên ngoài không gian làm việc",
-		"wantsToGenerateImageProtected": "Roo Code muốn tạo hình ảnh ở vị trí được bảo vệ",
-		"didGenerateImage": "Roo Code đã tạo một hình ảnh"
+		"wantsToRead": "VibeX Code muốn đọc tệp này",
+		"wantsToReadOutsideWorkspace": "VibeX Code muốn đọc tệp này bên ngoài không gian làm việc",
+		"didRead": "VibeX Code đã đọc tệp này",
+		"wantsToEdit": "VibeX Code muốn chỉnh sửa tệp này",
+		"wantsToEditOutsideWorkspace": "VibeX Code muốn chỉnh sửa tệp này bên ngoài không gian làm việc",
+		"wantsToEditProtected": "VibeX Code muốn chỉnh sửa tệp cấu hình được bảo vệ",
+		"wantsToCreate": "VibeX Code muốn tạo một tệp mới",
+		"wantsToSearchReplace": "VibeX Code muốn thực hiện tìm kiếm và thay thế trong tệp này",
+		"didSearchReplace": "VibeX Code đã thực hiện tìm kiếm và thay thế trong tệp này",
+		"wantsToInsert": "VibeX Code muốn chèn nội dung vào tệp này",
+		"wantsToInsertWithLineNumber": "VibeX Code muốn chèn nội dung vào dòng {{lineNumber}} của tệp này",
+		"wantsToInsertAtEnd": "VibeX Code muốn thêm nội dung vào cuối tệp này",
+		"wantsToReadAndXMore": "VibeX Code muốn đọc tệp này và {{count}} tệp khác",
+		"wantsToReadMultiple": "VibeX Code muốn đọc nhiều tệp",
+		"wantsToApplyBatchChanges": "VibeX Code muốn áp dụng thay đổi cho nhiều tệp",
+		"wantsToGenerateImage": "VibeX Code muốn tạo một hình ảnh",
+		"wantsToGenerateImageOutsideWorkspace": "VibeX Code muốn tạo hình ảnh bên ngoài không gian làm việc",
+		"wantsToGenerateImageProtected": "VibeX Code muốn tạo hình ảnh ở vị trí được bảo vệ",
+		"didGenerateImage": "VibeX Code đã tạo một hình ảnh"
 	},
 	"directoryOperations": {
-		"wantsToViewTopLevel": "Roo Code muốn xem các tệp cấp cao nhất trong thư mục này",
-		"didViewTopLevel": "Roo Code đã xem các tệp cấp cao nhất trong thư mục này",
-		"wantsToViewRecursive": "Roo Code muốn xem đệ quy tất cả các tệp trong thư mục này",
-		"didViewRecursive": "Roo Code đã xem đệ quy tất cả các tệp trong thư mục này",
-		"wantsToSearch": "Roo Code muốn tìm kiếm trong thư mục này cho <code>{{regex}}</code>",
-		"didSearch": "Roo Code đã tìm kiếm trong thư mục này cho <code>{{regex}}</code>",
-		"wantsToSearchOutsideWorkspace": "Roo Code muốn tìm kiếm trong thư mục này (ngoài không gian làm việc) cho <code>{{regex}}</code>",
-		"didSearchOutsideWorkspace": "Roo Code đã tìm kiếm trong thư mục này (ngoài không gian làm việc) cho <code>{{regex}}</code>",
-		"wantsToViewTopLevelOutsideWorkspace": "Roo Code muốn xem các tệp cấp cao nhất trong thư mục này (ngoài không gian làm việc)",
-		"didViewTopLevelOutsideWorkspace": "Roo Code đã xem các tệp cấp cao nhất trong thư mục này (ngoài không gian làm việc)",
-		"wantsToViewRecursiveOutsideWorkspace": "Roo Code muốn xem đệ quy tất cả các tệp trong thư mục này (ngoài không gian làm việc)",
-		"didViewRecursiveOutsideWorkspace": "Roo Code đã xem đệ quy tất cả các tệp trong thư mục này (ngoài không gian làm việc)"
+		"wantsToViewTopLevel": "VibeX Code muốn xem các tệp cấp cao nhất trong thư mục này",
+		"didViewTopLevel": "VibeX Code đã xem các tệp cấp cao nhất trong thư mục này",
+		"wantsToViewRecursive": "VibeX Code muốn xem đệ quy tất cả các tệp trong thư mục này",
+		"didViewRecursive": "VibeX Code đã xem đệ quy tất cả các tệp trong thư mục này",
+		"wantsToSearch": "VibeX Code muốn tìm kiếm trong thư mục này cho <code>{{regex}}</code>",
+		"didSearch": "VibeX Code đã tìm kiếm trong thư mục này cho <code>{{regex}}</code>",
+		"wantsToSearchOutsideWorkspace": "VibeX Code muốn tìm kiếm trong thư mục này (ngoài không gian làm việc) cho <code>{{regex}}</code>",
+		"didSearchOutsideWorkspace": "VibeX Code đã tìm kiếm trong thư mục này (ngoài không gian làm việc) cho <code>{{regex}}</code>",
+		"wantsToViewTopLevelOutsideWorkspace": "VibeX Code muốn xem các tệp cấp cao nhất trong thư mục này (ngoài không gian làm việc)",
+		"didViewTopLevelOutsideWorkspace": "VibeX Code đã xem các tệp cấp cao nhất trong thư mục này (ngoài không gian làm việc)",
+		"wantsToViewRecursiveOutsideWorkspace": "VibeX Code muốn xem đệ quy tất cả các tệp trong thư mục này (ngoài không gian làm việc)",
+		"didViewRecursiveOutsideWorkspace": "VibeX Code đã xem đệ quy tất cả các tệp trong thư mục này (ngoài không gian làm việc)"
 	},
 	"commandOutput": "Kết quả lệnh",
 	"commandExecution": {
@@ -231,24 +231,24 @@
 	"response": "Phản hồi",
 	"arguments": "Tham số",
 	"text": {
-		"rooSaid": "Roo Code đã nói"
+		"rooSaid": "VibeX Code đã nói"
 	},
 	"feedback": {
 		"youSaid": "Bạn đã nói"
 	},
 	"mcp": {
-		"wantsToUseTool": "Roo Code muốn sử dụng một công cụ trên máy chủ MCP {{serverName}}",
-		"wantsToAccessResource": "Roo Code muốn truy cập một tài nguyên trên máy chủ MCP {{serverName}}"
+		"wantsToUseTool": "VibeX Code muốn sử dụng một công cụ trên máy chủ MCP {{serverName}}",
+		"wantsToAccessResource": "VibeX Code muốn truy cập một tài nguyên trên máy chủ MCP {{serverName}}"
 	},
 	"modes": {
-		"wantsToSwitch": "Roo Code muốn chuyển sang chế độ <code>{{mode}}</code>",
-		"wantsToSwitchWithReason": "Roo Code muốn chuyển sang chế độ <code>{{mode}}</code> vì: {{reason}}",
-		"didSwitch": "Roo Code đã chuyển sang chế độ <code>{{mode}}</code>",
-		"didSwitchWithReason": "Roo Code đã chuyển sang chế độ <code>{{mode}}</code> vì: {{reason}}"
+		"wantsToSwitch": "VibeX Code muốn chuyển sang chế độ <code>{{mode}}</code>",
+		"wantsToSwitchWithReason": "VibeX Code muốn chuyển sang chế độ <code>{{mode}}</code> vì: {{reason}}",
+		"didSwitch": "VibeX Code đã chuyển sang chế độ <code>{{mode}}</code>",
+		"didSwitchWithReason": "VibeX Code đã chuyển sang chế độ <code>{{mode}}</code> vì: {{reason}}"
 	},
 	"subtasks": {
-		"wantsToCreate": "Roo Code muốn tạo một nhiệm vụ phụ mới trong chế độ <code>{{mode}}</code>",
-		"wantsToFinish": "Roo Code muốn hoàn thành nhiệm vụ phụ này",
+		"wantsToCreate": "VibeX Code muốn tạo một nhiệm vụ phụ mới trong chế độ <code>{{mode}}</code>",
+		"wantsToFinish": "VibeX Code muốn hoàn thành nhiệm vụ phụ này",
 		"newTaskContent": "Hướng dẫn nhiệm vụ phụ",
 		"completionContent": "Nhiệm vụ phụ đã hoàn thành",
 		"resultContent": "Kết quả nhiệm vụ phụ",
@@ -256,7 +256,7 @@
 		"completionInstructions": "Nhiệm vụ phụ đã hoàn thành! Bạn có thể xem lại kết quả và đề xuất các sửa đổi hoặc bước tiếp theo. Nếu mọi thứ có vẻ tốt, hãy xác nhận để trả kết quả về nhiệm vụ chính."
 	},
 	"questions": {
-		"hasQuestion": "Roo Code có một câu hỏi"
+		"hasQuestion": "VibeX Code có một câu hỏi"
 	},
 	"taskCompleted": "Nhiệm vụ hoàn thành",
 	"modelResponseIncomplete": "Phản hồi của mô hình không đầy đủ",
@@ -318,7 +318,7 @@
 		"timerPrefix": "Phê duyệt tự động được bật. Chọn trong {{seconds}}s…"
 	},
 	"announcement": {
-		"title": "Roo Code {{version}} Đã phát hành",
+		"title": "VibeX Code {{version}} Đã phát hành",
 		"support": "Hãy ủng hộ VibeX Code bằng cách gắn sao cho chúng tôi trên <githubLink>GitHub</githubLink>.",
 		"stealthModel": {
 			"feature": "<bold>Mô hình stealth MIỄN PHÍ có thời hạn</bold> - Code Supernova: Hiện đã được nâng cấp với <bold>cửa sổ ngữ cảnh 1M token</bold>! Một mô hình lập trình agentic đa năng hỗ trợ đầu vào hình ảnh, có sẵn qua VibeX Code Cloud.",
@@ -329,7 +329,7 @@
 		},
 		"release": {
 			"heading": "Tính năng mới:",
-			"skills": "Roo Code hiện hỗ trợ <skillsLink>Agent Skills</skillsLink> - các gói có thể tái sử dụng gồm các lời nhắc, công cụ và tài nguyên để mở rộng khả năng của VibeX Code.",
+			"skills": "VibeX Code hiện hỗ trợ <skillsLink>Agent Skills</skillsLink> - các gói có thể tái sử dụng gồm các lời nhắc, công cụ và tài nguyên để mở rộng khả năng của VibeX Code.",
 			"nativeToolCalling": "Gọi công cụ gốc hiện được yêu cầu cho tất cả các tác vụ mới. <blogLink>Tìm hiểu thêm</blogLink> về động lực và những gì cần làm nếu bạn gặp sự cố."
 		},
 		"cloudAgents": {
@@ -342,7 +342,7 @@
 	},
 	"browser": {
 		"session": "Phiên trình duyệt",
-		"rooWantsToUse": "Roo Code muốn sử dụng trình duyệt",
+		"rooWantsToUse": "VibeX Code muốn sử dụng trình duyệt",
 		"consoleLogs": "Nhật ký bảng điều khiển",
 		"noNewLogs": "(Không có nhật ký mới)",
 		"screenshot": "Ảnh chụp màn hình trình duyệt",
@@ -394,18 +394,18 @@
 	"ask": {
 		"autoApprovedRequestLimitReached": {
 			"title": "Đã Đạt Giới Hạn Yêu Cầu Tự Động Phê Duyệt",
-			"description": "Roo Code đã đạt đến giới hạn tự động phê duyệt là {{count}} yêu cầu API. Bạn có muốn đặt lại bộ đếm và tiếp tục nhiệm vụ không?",
+			"description": "VibeX Code đã đạt đến giới hạn tự động phê duyệt là {{count}} yêu cầu API. Bạn có muốn đặt lại bộ đếm và tiếp tục nhiệm vụ không?",
 			"button": "Đặt lại và Tiếp tục"
 		},
 		"autoApprovedCostLimitReached": {
 			"button": "Đặt lại và Tiếp tục",
 			"title": "Đã Đạt Giới Hạn Chi Phí Tự Động Phê Duyệt",
-			"description": "Roo Code đã đạt đến giới hạn chi phí tự động phê duyệt là ${{count}}. Bạn có muốn đặt lại chi phí và tiếp tục với nhiệm vụ không?"
+			"description": "VibeX Code đã đạt đến giới hạn chi phí tự động phê duyệt là ${{count}}. Bạn có muốn đặt lại chi phí và tiếp tục với nhiệm vụ không?"
 		}
 	},
 	"codebaseSearch": {
-		"wantsToSearch": "Roo Code muốn tìm kiếm trong cơ sở mã cho <code>{{query}}</code>",
-		"wantsToSearchWithPath": "Roo Code muốn tìm kiếm trong cơ sở mã cho <code>{{query}}</code> trong <code>{{path}}</code>",
+		"wantsToSearch": "VibeX Code muốn tìm kiếm trong cơ sở mã cho <code>{{query}}</code>",
+		"wantsToSearchWithPath": "VibeX Code muốn tìm kiếm trong cơ sở mã cho <code>{{query}}</code> trong <code>{{path}}</code>",
 		"didSearch_one": "Đã tìm thấy 1 kết quả",
 		"didSearch_other": "Đã tìm thấy {{count}} kết quả",
 		"resultTooltip": "Điểm tương tự: {{score}} (nhấp để mở tệp)"
@@ -429,7 +429,7 @@
 		"ariaLabel": "Phiên bản {{version}} - Nhấp để xem ghi chú phát hành"
 	},
 	"rooCloudCTA": {
-		"title": "Roo Code Cloud đang phát triển!",
+		"title": "VibeX Code Cloud đang phát triển!",
 		"description": "Chạy các agent từ xa trên cloud, truy cập các tác vụ của bạn từ mọi nơi, cộng tác với người khác và nhiều hơn nữa.",
 		"joinWaitlist": "Đăng ký để nhận các cập nhật mới nhất."
 	},
@@ -470,8 +470,8 @@
 		"clickToEdit": "Nhấp để chỉnh sửa tin nhắn"
 	},
 	"slashCommand": {
-		"wantsToRun": "Roo Code muốn chạy lệnh slash",
-		"didRun": "Roo Code đã chạy lệnh slash"
+		"wantsToRun": "VibeX Code muốn chạy lệnh slash",
+		"didRun": "VibeX Code đã chạy lệnh slash"
 	},
 	"todo": {
 		"partial": "{{completed}} trong tổng số {{total}} công việc đã hoàn thành",

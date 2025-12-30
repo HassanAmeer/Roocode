@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "Perlu bicara dengan kami? Tulis"
 		},
-		"community": "Ingin tips atau hanya nongkrong dengan pengguna VibeX Code lainnya? Bergabunglah dengan <redditLink>reddit.com/r/Roo Code</redditLink> atau <discordLink>discord.gg/roocode</discordLink>",
+		"community": "Ingin tips atau hanya nongkrong dengan pengguna VibeX Code lainnya? Bergabunglah dengan <redditLink>reddit.com/r/VibeX Code</redditLink> atau <discordLink>discord.gg/roocode</discordLink>",
 		"contactAndCommunity": "Kontak & Komunitas",
 		"manageSettings": "Kelola Pengaturan"
 	},
@@ -500,7 +500,7 @@
 		},
 		"consecutiveMistakeLimit": {
 			"label": "Batas Kesalahan & Pengulangan",
-			"description": "Jumlah kesalahan berturut-turut atau tindakan berulang sebelum menampilkan dialog 'Roo Code mengalami masalah'. Atur ke 0 untuk menonaktifkan mekanisme keamanan ini (tidak akan pernah terpicu).",
+			"description": "Jumlah kesalahan berturut-turut atau tindakan berulang sebelum menampilkan dialog 'VibeX Code mengalami masalah'. Atur ke 0 untuk menonaktifkan mekanisme keamanan ini (tidak akan pernah terpicu).",
 			"unlimitedDescription": "Percobaan ulang tak terbatas diaktifkan (lanjut otomatis). Dialog tidak akan pernah muncul.",
 			"warning": "⚠️ Mengatur ke 0 memungkinkan percobaan ulang tak terbatas yang dapat menghabiskan penggunaan API yang signifikan"
 		},
@@ -645,7 +645,7 @@
 		},
 		"maxReadFile": {
 			"label": "Ambang batas auto-truncate pembacaan file",
-			"description": "Roo Code membaca sejumlah baris ini ketika model menghilangkan nilai start/end. Jika angka ini kurang dari total file, VibeX Code menghasilkan indeks nomor baris dari definisi kode. Kasus khusus: -1 menginstruksikan VibeX Code untuk membaca seluruh file (tanpa indexing), dan 0 menginstruksikannya untuk tidak membaca baris dan hanya menyediakan indeks baris untuk konteks minimal. Nilai yang lebih rendah meminimalkan penggunaan konteks awal, memungkinkan pembacaan rentang baris yang tepat selanjutnya. Permintaan start/end eksplisit tidak dibatasi oleh pengaturan ini.",
+			"description": "VibeX Code membaca sejumlah baris ini ketika model menghilangkan nilai start/end. Jika angka ini kurang dari total file, VibeX Code menghasilkan indeks nomor baris dari definisi kode. Kasus khusus: -1 menginstruksikan VibeX Code untuk membaca seluruh file (tanpa indexing), dan 0 menginstruksikannya untuk tidak membaca baris dan hanya menyediakan indeks baris untuk konteks minimal. Nilai yang lebih rendah meminimalkan penggunaan konteks awal, memungkinkan pembacaan rentang baris yang tepat selanjutnya. Permintaan start/end eksplisit tidak dibatasi oleh pengaturan ini.",
 			"lines": "baris",
 			"always_full_read": "Selalu baca seluruh file"
 		},
@@ -907,7 +907,7 @@
 		"simplifiedExplanation": "Anda dapat menyesuaikan pengaturan model terperinci nanti."
 	},
 	"footer": {
-		"feedback": "Jika kamu punya pertanyaan atau feedback, jangan ragu untuk membuka issue di <githubLink>github.com/Roo CodeInc/Roo Code-Code</githubLink> atau bergabung <redditLink>reddit.com/r/Roo Code</redditLink> atau <discordLink>discord.gg/roocode</discordLink>",
+		"feedback": "Jika kamu punya pertanyaan atau feedback, jangan ragu untuk membuka issue di <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> atau bergabung <redditLink>reddit.com/r/VibeX Code</redditLink> atau <discordLink>discord.gg/roocode</discordLink>",
 		"telemetry": {
 			"label": "Izinkan pelaporan error dan penggunaan anonim",
 			"description": "Bantu tingkatkan VibeX Code dengan mengirimkan data penggunaan anonim dan laporan error. Telemetri ini tidak mengumpulkan kode, prompt, atau informasi pribadi. Lihat <privacyLink>kebijakan privasi</privacyLink> kami untuk detail lebih lanjut. Anda dapat menonaktifkannya kapan saja."

@@ -87,7 +87,7 @@
 		"tooltip": "Cancelar la operación actual"
 	},
 	"scrollToBottom": "Desplazarse al final del chat",
-	"about": "Roo Code es todo un equipo de desarrollo de IA en tu editor.",
+	"about": "VibeX Code es todo un equipo de desarrollo de IA en tu editor.",
 	"docs": "Consulta nuestra <DocsLink>documentación</DocsLink> para saber más.",
 	"onboarding": "Tu lista de tareas en este espacio de trabajo está vacía.",
 	"rooTips": {
@@ -131,7 +131,7 @@
 	"diffError": {
 		"title": "Edición fallida"
 	},
-	"troubleMessage": "Roo Code está teniendo problemas...",
+	"troubleMessage": "VibeX Code está teniendo problemas...",
 	"apiRequest": {
 		"title": "Solicitud API",
 		"failed": "Solicitud API falló",
@@ -173,42 +173,42 @@
 		"current": "Actual"
 	},
 	"instructions": {
-		"wantsToFetch": "Roo Code quiere obtener instrucciones detalladas para ayudar con la tarea actual"
+		"wantsToFetch": "VibeX Code quiere obtener instrucciones detalladas para ayudar con la tarea actual"
 	},
 	"fileOperations": {
-		"wantsToRead": "Roo Code quiere leer este archivo",
-		"wantsToReadOutsideWorkspace": "Roo Code quiere leer este archivo fuera del espacio de trabajo",
-		"didRead": "Roo Code leyó este archivo",
-		"wantsToEdit": "Roo Code quiere editar este archivo",
-		"wantsToEditOutsideWorkspace": "Roo Code quiere editar este archivo fuera del espacio de trabajo",
-		"wantsToEditProtected": "Roo Code quiere editar un archivo de configuración protegido",
-		"wantsToCreate": "Roo Code quiere crear un nuevo archivo",
-		"wantsToSearchReplace": "Roo Code quiere realizar búsqueda y reemplazo en este archivo",
-		"didSearchReplace": "Roo Code realizó búsqueda y reemplazo en este archivo",
-		"wantsToInsert": "Roo Code quiere insertar contenido en este archivo",
-		"wantsToInsertWithLineNumber": "Roo Code quiere insertar contenido en este archivo en la línea {{lineNumber}}",
-		"wantsToInsertAtEnd": "Roo Code quiere añadir contenido al final de este archivo",
-		"wantsToReadAndXMore": "Roo Code quiere leer este archivo y {{count}} más",
-		"wantsToReadMultiple": "Roo Code quiere leer varios archivos",
-		"wantsToApplyBatchChanges": "Roo Code quiere aplicar cambios a múltiples archivos",
-		"wantsToGenerateImage": "Roo Code quiere generar una imagen",
-		"wantsToGenerateImageOutsideWorkspace": "Roo Code quiere generar una imagen fuera del espacio de trabajo",
-		"wantsToGenerateImageProtected": "Roo Code quiere generar una imagen en una ubicación protegida",
-		"didGenerateImage": "Roo Code generó una imagen"
+		"wantsToRead": "VibeX Code quiere leer este archivo",
+		"wantsToReadOutsideWorkspace": "VibeX Code quiere leer este archivo fuera del espacio de trabajo",
+		"didRead": "VibeX Code leyó este archivo",
+		"wantsToEdit": "VibeX Code quiere editar este archivo",
+		"wantsToEditOutsideWorkspace": "VibeX Code quiere editar este archivo fuera del espacio de trabajo",
+		"wantsToEditProtected": "VibeX Code quiere editar un archivo de configuración protegido",
+		"wantsToCreate": "VibeX Code quiere crear un nuevo archivo",
+		"wantsToSearchReplace": "VibeX Code quiere realizar búsqueda y reemplazo en este archivo",
+		"didSearchReplace": "VibeX Code realizó búsqueda y reemplazo en este archivo",
+		"wantsToInsert": "VibeX Code quiere insertar contenido en este archivo",
+		"wantsToInsertWithLineNumber": "VibeX Code quiere insertar contenido en este archivo en la línea {{lineNumber}}",
+		"wantsToInsertAtEnd": "VibeX Code quiere añadir contenido al final de este archivo",
+		"wantsToReadAndXMore": "VibeX Code quiere leer este archivo y {{count}} más",
+		"wantsToReadMultiple": "VibeX Code quiere leer varios archivos",
+		"wantsToApplyBatchChanges": "VibeX Code quiere aplicar cambios a múltiples archivos",
+		"wantsToGenerateImage": "VibeX Code quiere generar una imagen",
+		"wantsToGenerateImageOutsideWorkspace": "VibeX Code quiere generar una imagen fuera del espacio de trabajo",
+		"wantsToGenerateImageProtected": "VibeX Code quiere generar una imagen en una ubicación protegida",
+		"didGenerateImage": "VibeX Code generó una imagen"
 	},
 	"directoryOperations": {
-		"wantsToViewTopLevel": "Roo Code quiere ver los archivos de nivel superior en este directorio",
-		"didViewTopLevel": "Roo Code vio los archivos de nivel superior en este directorio",
-		"wantsToViewRecursive": "Roo Code quiere ver recursivamente todos los archivos en este directorio",
-		"didViewRecursive": "Roo Code vio recursivamente todos los archivos en este directorio",
-		"wantsToSearch": "Roo Code quiere buscar en este directorio <code>{{regex}}</code>",
-		"didSearch": "Roo Code buscó en este directorio <code>{{regex}}</code>",
-		"wantsToSearchOutsideWorkspace": "Roo Code quiere buscar en este directorio (fuera del espacio de trabajo) <code>{{regex}}</code>",
-		"didSearchOutsideWorkspace": "Roo Code buscó en este directorio (fuera del espacio de trabajo) <code>{{regex}}</code>",
-		"wantsToViewTopLevelOutsideWorkspace": "Roo Code quiere ver los archivos de nivel superior en este directorio (fuera del espacio de trabajo)",
-		"didViewTopLevelOutsideWorkspace": "Roo Code vio los archivos de nivel superior en este directorio (fuera del espacio de trabajo)",
-		"wantsToViewRecursiveOutsideWorkspace": "Roo Code quiere ver recursivamente todos los archivos en este directorio (fuera del espacio de trabajo)",
-		"didViewRecursiveOutsideWorkspace": "Roo Code vio recursivamente todos los archivos en este directorio (fuera del espacio de trabajo)"
+		"wantsToViewTopLevel": "VibeX Code quiere ver los archivos de nivel superior en este directorio",
+		"didViewTopLevel": "VibeX Code vio los archivos de nivel superior en este directorio",
+		"wantsToViewRecursive": "VibeX Code quiere ver recursivamente todos los archivos en este directorio",
+		"didViewRecursive": "VibeX Code vio recursivamente todos los archivos en este directorio",
+		"wantsToSearch": "VibeX Code quiere buscar en este directorio <code>{{regex}}</code>",
+		"didSearch": "VibeX Code buscó en este directorio <code>{{regex}}</code>",
+		"wantsToSearchOutsideWorkspace": "VibeX Code quiere buscar en este directorio (fuera del espacio de trabajo) <code>{{regex}}</code>",
+		"didSearchOutsideWorkspace": "VibeX Code buscó en este directorio (fuera del espacio de trabajo) <code>{{regex}}</code>",
+		"wantsToViewTopLevelOutsideWorkspace": "VibeX Code quiere ver los archivos de nivel superior en este directorio (fuera del espacio de trabajo)",
+		"didViewTopLevelOutsideWorkspace": "VibeX Code vio los archivos de nivel superior en este directorio (fuera del espacio de trabajo)",
+		"wantsToViewRecursiveOutsideWorkspace": "VibeX Code quiere ver recursivamente todos los archivos en este directorio (fuera del espacio de trabajo)",
+		"didViewRecursiveOutsideWorkspace": "VibeX Code vio recursivamente todos los archivos en este directorio (fuera del espacio de trabajo)"
 	},
 	"commandOutput": "Salida del comando",
 	"commandExecution": {
@@ -230,24 +230,24 @@
 	"response": "Respuesta",
 	"arguments": "Argumentos",
 	"text": {
-		"rooSaid": "Roo Code ha dicho"
+		"rooSaid": "VibeX Code ha dicho"
 	},
 	"feedback": {
 		"youSaid": "Has dicho"
 	},
 	"mcp": {
-		"wantsToUseTool": "Roo Code quiere usar una herramienta en el servidor MCP {{serverName}}",
-		"wantsToAccessResource": "Roo Code quiere acceder a un recurso en el servidor MCP {{serverName}}"
+		"wantsToUseTool": "VibeX Code quiere usar una herramienta en el servidor MCP {{serverName}}",
+		"wantsToAccessResource": "VibeX Code quiere acceder a un recurso en el servidor MCP {{serverName}}"
 	},
 	"modes": {
-		"wantsToSwitch": "Roo Code quiere cambiar a modo <code>{{mode}}</code>",
-		"wantsToSwitchWithReason": "Roo Code quiere cambiar a modo <code>{{mode}}</code> porque: {{reason}}",
-		"didSwitch": "Roo Code cambió a modo <code>{{mode}}</code>",
-		"didSwitchWithReason": "Roo Code cambió a modo <code>{{mode}}</code> porque: {{reason}}"
+		"wantsToSwitch": "VibeX Code quiere cambiar a modo <code>{{mode}}</code>",
+		"wantsToSwitchWithReason": "VibeX Code quiere cambiar a modo <code>{{mode}}</code> porque: {{reason}}",
+		"didSwitch": "VibeX Code cambió a modo <code>{{mode}}</code>",
+		"didSwitchWithReason": "VibeX Code cambió a modo <code>{{mode}}</code> porque: {{reason}}"
 	},
 	"subtasks": {
-		"wantsToCreate": "Roo Code quiere crear una nueva subtarea en modo <code>{{mode}}</code>",
-		"wantsToFinish": "Roo Code quiere finalizar esta subtarea",
+		"wantsToCreate": "VibeX Code quiere crear una nueva subtarea en modo <code>{{mode}}</code>",
+		"wantsToFinish": "VibeX Code quiere finalizar esta subtarea",
 		"newTaskContent": "Instrucciones de la subtarea",
 		"completionContent": "Subtarea completada",
 		"resultContent": "Resultados de la subtarea",
@@ -255,7 +255,7 @@
 		"completionInstructions": "¡Subtarea completada! Puedes revisar los resultados y sugerir correcciones o próximos pasos. Si todo se ve bien, confirma para devolver el resultado a la tarea principal."
 	},
 	"questions": {
-		"hasQuestion": "Roo Code tiene una pregunta"
+		"hasQuestion": "VibeX Code tiene una pregunta"
 	},
 	"taskCompleted": "Tarea completada",
 	"modelResponseIncomplete": "Respuesta del modelo incompleta",
@@ -317,7 +317,7 @@
 		"timerPrefix": "Aprobación automática habilitada. Seleccionando en {{seconds}}s…"
 	},
 	"announcement": {
-		"title": "Roo Code {{version}} publicado",
+		"title": "VibeX Code {{version}} publicado",
 		"support": "Por favor, apoya a VibeX Code dándonos una estrella en <githubLink>GitHub</githubLink>.",
 		"stealthModel": {
 			"feature": "<bold>Modelo stealth GRATUITO por tiempo limitado</bold> - Code Supernova: ¡Ahora actualizado con una <bold>ventana de contexto de 1M tokens</bold>! Un modelo de codificación agéntica versátil que soporta entradas de imágenes, accesible a través de VibeX Code Cloud.",
@@ -328,7 +328,7 @@
 		},
 		"release": {
 			"heading": "Qué hay de nuevo:",
-			"skills": "Roo Code ahora soporta <skillsLink>Agent Skills</skillsLink> - paquetes reutilizables de prompts, herramientas y recursos para extender las capacidades de VibeX Code.",
+			"skills": "VibeX Code ahora soporta <skillsLink>Agent Skills</skillsLink> - paquetes reutilizables de prompts, herramientas y recursos para extender las capacidades de VibeX Code.",
 			"nativeToolCalling": "Las llamadas nativas de herramientas ahora son necesarias para todas las nuevas tareas. <blogLink>Lee más</blogLink> sobre la motivación y qué hacer si encuentras problemas."
 		},
 		"cloudAgents": {
@@ -341,7 +341,7 @@
 	},
 	"browser": {
 		"session": "Sesión del navegador",
-		"rooWantsToUse": "Roo Code quiere usar el navegador",
+		"rooWantsToUse": "VibeX Code quiere usar el navegador",
 		"consoleLogs": "Registros de la consola",
 		"noNewLogs": "(No hay nuevos registros)",
 		"screenshot": "Captura de pantalla del navegador",
@@ -393,18 +393,18 @@
 	"ask": {
 		"autoApprovedRequestLimitReached": {
 			"title": "Límite de Solicitudes Auto-aprobadas Alcanzado",
-			"description": "Roo Code ha alcanzado el límite auto-aprobado de {{count}} solicitud(es) API. ¿Deseas reiniciar el contador y continuar con la tarea?",
+			"description": "VibeX Code ha alcanzado el límite auto-aprobado de {{count}} solicitud(es) API. ¿Deseas reiniciar el contador y continuar con la tarea?",
 			"button": "Reiniciar y Continuar"
 		},
 		"autoApprovedCostLimitReached": {
 			"title": "Límite de Costo Auto-Aprobado Alcanzado",
-			"description": "Roo Code ha alcanzado el límite de costo autoaprobado de ${{count}}. ¿Le gustaría reiniciar el costo y continuar con la tarea?",
+			"description": "VibeX Code ha alcanzado el límite de costo autoaprobado de ${{count}}. ¿Le gustaría reiniciar el costo y continuar con la tarea?",
 			"button": "Reiniciar y continuar"
 		}
 	},
 	"codebaseSearch": {
-		"wantsToSearch": "Roo Code quiere buscar en la base de código <code>{{query}}</code>",
-		"wantsToSearchWithPath": "Roo Code quiere buscar en la base de código <code>{{query}}</code> en <code>{{path}}</code>",
+		"wantsToSearch": "VibeX Code quiere buscar en la base de código <code>{{query}}</code>",
+		"wantsToSearchWithPath": "VibeX Code quiere buscar en la base de código <code>{{query}}</code> en <code>{{path}}</code>",
 		"didSearch_one": "Se encontró 1 resultado",
 		"didSearch_other": "Se encontraron {{count}} resultados",
 		"resultTooltip": "Puntuación de similitud: {{score}} (haz clic para abrir el archivo)"
@@ -428,7 +428,7 @@
 		"ariaLabel": "Versión {{version}} - Haz clic para ver las notas de la versión"
 	},
 	"rooCloudCTA": {
-		"title": "¡Roo Code Cloud está evolucionando!",
+		"title": "¡VibeX Code Cloud está evolucionando!",
 		"description": "Ejecuta agentes remotos en la nube, accede a tus tareas desde cualquier lugar, colabora con otros y mucho más.",
 		"joinWaitlist": "Regístrate para recibir las últimas actualizaciones."
 	},
@@ -469,8 +469,8 @@
 		"clickToEdit": "Haz clic para editar el mensaje"
 	},
 	"slashCommand": {
-		"wantsToRun": "Roo Code quiere ejecutar un comando slash",
-		"didRun": "Roo Code ejecutó un comando slash"
+		"wantsToRun": "VibeX Code quiere ejecutar un comando slash",
+		"didRun": "VibeX Code ejecutó un comando slash"
 	},
 	"todo": {
 		"partial": "{{completed}} de {{total}} tareas pendientes realizadas",

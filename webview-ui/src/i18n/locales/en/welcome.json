@@ -21,8 +21,8 @@
 	},
 	"providerSignup": {
 		"heading": "Choose your provider",
-		"chooseProvider": "Roo Code needs an LLM provider to work. Choose one to get started, you can add more later.",
-		"rooCloudProvider": "Roo Code Cloud Provider",
+		"chooseProvider": "VibeX Code needs an LLM provider to work. Choose one to get started, you can add more later.",
+		"rooCloudProvider": "VibeX Code Cloud Provider",
 		"rooCloudDescription": "The easiest way to start is with the VibeX Code Cloud Provider: a curated mix of free and paid models at a low cost.",
 		"learnMore": "Learn more",
 		"useAnotherProvider": "3rd-party Provider",
@@ -46,7 +46,7 @@
 	"startCustom": "Or you can bring your provider API key:",
 	"telemetry": {
 		"helpImprove": "Help Improve VibeX Code",
-		"helpImproveMessage": "Roo Code collects error and usage data to help us fix bugs and improve the extension. This telemetry does not collect code, prompts or personal information. You can turn this off in <settingsLink>settings</settingsLink>."
+		"helpImproveMessage": "VibeX Code collects error and usage data to help us fix bugs and improve the extension. This telemetry does not collect code, prompts or personal information. You can turn this off in <settingsLink>settings</settingsLink>."
 	},
 	"importSettings": "Import Settings"
 }

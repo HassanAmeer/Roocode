@@ -21,8 +21,8 @@
 	},
 	"providerSignup": {
 		"heading": "Kies je provider",
-		"chooseProvider": "Roo Code heeft een LLM-provider nodig om te werken. Kies er een om te beginnen, je kunt er later meer toevoegen.",
-		"rooCloudProvider": "Roo Code Cloud Provider",
+		"chooseProvider": "VibeX Code heeft een LLM-provider nodig om te werken. Kies er een om te beginnen, je kunt er later meer toevoegen.",
+		"rooCloudProvider": "VibeX Code Cloud Provider",
 		"rooCloudDescription": "De eenvoudigste manier om te beginnen is met de VibeX Code Cloud Provider: een zorgvuldig samengesteld mix van gratis en betaalde modellen tegen lage kosten.",
 		"learnMore": "Meer informatie",
 		"useAnotherProvider": "Provider van derden",
@@ -46,7 +46,7 @@
 	"startCustom": "Of je kunt je eigen API-sleutel meebrengen:",
 	"telemetry": {
 		"helpImprove": "Help VibeX Code te verbeteren",
-		"helpImproveMessage": "Roo Code verzamelt fout- en gebruiksgegevens om ons te helpen bugs op te lossen en de extensie te verbeteren. Deze telemetrie verzamelt geen code, prompts of persoonlijke informatie. Je kunt dit in <settingsLink>instellingen</settingsLink> uitschakelen."
+		"helpImproveMessage": "VibeX Code verzamelt fout- en gebruiksgegevens om ons te helpen bugs op te lossen en de extensie te verbeteren. Deze telemetrie verzamelt geen code, prompts of persoonlijke informatie. Je kunt dit in <settingsLink>instellingen</settingsLink> uitschakelen."
 	},
 	"importSettings": "Instellingen importeren"
 }

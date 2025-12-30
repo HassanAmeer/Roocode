@@ -14,15 +14,15 @@
 	},
 	"landing": {
 		"greeting": "欢迎使用 VibeX Code！",
-		"introduction": "通过一系列内置和可扩展的模式，Roo Code 让你能够以前所未有的方式进行规划、架构设计、编码、调试并提升工作效率。",
+		"introduction": "通过一系列内置和可扩展的模式，VibeX Code 让你能够以前所未有的方式进行规划、架构设计、编码、调试并提升工作效率。",
 		"accountMention": "开始使用，创建你的 VibeX Code Cloud 账户。获得强大模型、网络控制、分析、支持等。",
 		"getStarted": "开始使用",
 		"noAccount": "或不使用账户"
 	},
 	"providerSignup": {
 		"heading": "选择你的供应商",
-		"chooseProvider": "Roo Code 需要 LLM 提供商才能工作。选择一个开始使用，你可以稍后添加更多。",
-		"rooCloudProvider": "Roo Code Cloud 提供商",
+		"chooseProvider": "VibeX Code 需要 LLM 提供商才能工作。选择一个开始使用，你可以稍后添加更多。",
+		"rooCloudProvider": "VibeX Code Cloud 提供商",
 		"rooCloudDescription": "开始使用最简单的方式是使用 VibeX Code Cloud 提供商：精心选择的免费和付费模型组合，价格低廉。",
 		"learnMore": "了解更多",
 		"useAnotherProvider": "第三方供应商",
@@ -46,7 +46,7 @@
 	"startCustom": "或者你可以带上自己的 API 密钥：",
 	"telemetry": {
 		"helpImprove": "帮助改进 VibeX Code",
-		"helpImproveMessage": "Roo Code 收集错误和使用数据以帮助我们修复 Bug 并改进扩展。此遥测不收集代码、提示或个人信息。你可以在<settingsLink>设置</settingsLink>中将其关闭。"
+		"helpImproveMessage": "VibeX Code 收集错误和使用数据以帮助我们修复 Bug 并改进扩展。此遥测不收集代码、提示或个人信息。你可以在<settingsLink>设置</settingsLink>中将其关闭。"
 	},
 	"importSettings": "导入设置"
 }

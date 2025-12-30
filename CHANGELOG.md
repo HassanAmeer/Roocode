@@ -516,7 +516,7 @@
 
 ## [3.31.3] - 2025-11-13
 
-![3.31.3 Release - Kangaroo Decrypting a Message](/releases/3.31.3-release.png)
+![3.31.3 Release - Kangavibex Decrypting a Message](/releases/3.31.3-release.png)
 
 - Fix: OpenAI Native encrypted_content handling and remove gpt-5-chat-latest verbosity flag (#9225 by @politsin, PR by @hannesrudolph)
 - Fix: Vibex Cloud provider Anthropic input token normalization to avoid double-counting (thanks @hannesrudolph!)
@@ -532,7 +532,7 @@
 
 ## [3.31.1] - 2025-11-11
 
-![3.31.1 Release - Kangaroo Stuck in the Clouds](/releases/3.31.1-release.png)
+![3.31.1 Release - Kangavibex Stuck in the Clouds](/releases/3.31.1-release.png)
 
 - Fix: Prevent command_output ask from blocking in cloud/headless environments (thanks @daniel-lxs!)
 - Add IPC command for sending messages to the current task (thanks @mrubens!)
@@ -549,7 +549,7 @@
 - Fix: Prevent context condensing on settings save when provider/model unchanged (#4430 by @hannesrudolph, PR by @daniel-lxs)
 - Fix: Respect custom OpenRouter URL for all API operations (#8947 by @sstraus, PR by @roomote)
 - Add comprehensive error logging to VibeX Cloud provider (thanks @daniel-lxs!)
-- UX: Less caffeinated kangaroo (thanks @brunobergher!)
+- UX: Less caffeinated kangavibex (thanks @brunobergher!)
 
 ## [3.30.3] - 2025-11-06
 
@@ -703,7 +703,7 @@
 
 ## [3.28.15] - 2025-10-03
 
-![3.28.15 Release - Kangaroo Sliding Down a Chute](/releases/3.28.15-release.png)
+![3.28.15 Release - Kangavibex Sliding Down a Chute](/releases/3.28.15-release.png)
 
 - Add new DeepSeek and GLM models with detailed descriptions to the Chutes provider (thanks @mohammad154!)
 - Fix: properly reset cost limit tracking when user clicks "Reset and Continue" (#6889 by @alecoot, PR by app/roomote)
@@ -741,7 +741,7 @@
 
 ## [3.28.10] - 2025-09-29
 
-![3.28.10 Release - Kangaroo Writing Sonnet 4.5](/releases/3.28.10-release.png)
+![3.28.10 Release - Kangavibex Writing Sonnet 4.5](/releases/3.28.10-release.png)
 
 - Feat: Add Sonnet 4.5 support (thanks @daniel-lxs!)
 - Fix: Resolve max_completion_tokens issue for GPT-5 models in LiteLLM provider (#6979 by @lx1054331851, PR by @roomote)
@@ -785,7 +785,7 @@
 
 ## [3.28.6] - 2025-09-23
 
-![3.28.6 Release - Kangaroo studying ancient codex](/releases/3.28.6-release.png)
+![3.28.6 Release - Kangavibex studying ancient codex](/releases/3.28.6-release.png)
 
 - Feat: Add GPT-5-Codex model (thanks @daniel-lxs!)
 - Feat: Add keyboard shortcut for toggling auto-approve (Cmd/Ctrl+Alt+A) (thanks @brunobergher!)
@@ -799,7 +799,7 @@
 
 ## [3.28.5] - 2025-09-20
 
-![3.28.5 Release - Kangaroo staying hydrated](/releases/3.28.5-release.png)
+![3.28.5 Release - Kangavibex staying hydrated](/releases/3.28.5-release.png)
 
 - Fix: Resolve duplicate rehydrate during reasoning; centralize rehydrate and preserve cancel metadata (#8153 by @hannesrudolph, PR by @hannesrudolph)
 - Add an announcement for Supernova (thanks @mrubens!)
@@ -853,7 +853,7 @@
 
 ## [3.28.1] - 2025-09-11
 
-![3.28.1 Release - Kangaroo riding rocket to the clouds](/releases/3.28.1-release.png)
+![3.28.1 Release - Kangavibex riding rocket to the clouds](/releases/3.28.1-release.png)
 
 - Announce Vibex Cloud!
 - Add cloud task button for opening tasks in Vibex Cloud (thanks @app/roomote!)
@@ -947,7 +947,7 @@
 
 ## [3.26.3] - 2025-08-29
 
-![3.26.3 Release - Kangaroo Photo Editor](/releases/3.26.3-release.png)
+![3.26.3 Release - Kangavibex Photo Editor](/releases/3.26.3-release.png)
 
 - Add optional input image parameter to image generation tool (thanks @roomote!)
 - Refactor: Flatten image generation settings structure (thanks @daniel-lxs!)
@@ -955,7 +955,7 @@
 
 ## [3.26.2] - 2025-08-28
 
-![3.26.2 Release - Kangaroo Digital Artist](/releases/3.26.2-release.png)
+![3.26.2 Release - Kangavibex Digital Artist](/releases/3.26.2-release.png)
 
 - feat: Add experimental image generation tool with OpenRouter integration (thanks @daniel-lxs!)
 - Fix: Resolve GPT-5 Responses API issues with condensing and image support (#7334 by @nlbuescher, PR by @daniel-lxs)
@@ -964,7 +964,7 @@
 
 ## [3.26.1] - 2025-08-27
 
-![3.26.1 Release - Kangaroo Network Engineer](/releases/3.26.1-release.png)
+![3.26.1 Release - Kangavibex Network Engineer](/releases/3.26.1-release.png)
 
 - Add Vercel AI Gateway provider integration (thanks @joshualipman123!)
 - Add support for Vercel embeddings (thanks @mrubens!)
@@ -976,7 +976,7 @@
 
 ## [3.26.0] - 2025-08-26
 
-![3.26.0 Release - Kangaroo Speed Racer](/releases/3.26.0-release.png)
+![3.26.0 Release - Kangavibex Speed Racer](/releases/3.26.0-release.png)
 
 - Sonic -> Grok Code Fast
 - feat: Add Qwen Code CLI API Support with OAuth Authentication (thanks @evinelias and Cline!)
@@ -1482,7 +1482,7 @@
 ## [3.22.0] - 2025-06-25
 
 - Add 1-click task sharing
-- Add support for loading rules from a global .roo directory (thanks @samhvw8!)
+- Add support for loading rules from a global .vibex directory (thanks @samhvw8!)
 - Modes selector improvements (thanks @brunobergher!)
 - Use safeWriteJson for all JSON file writes to avoid task history corruption (thanks @KJ7LNW!)
 - Improve YAML error handling when editing modes
@@ -1558,7 +1558,7 @@
 - Fix codebase indexing alignment with list-files hidden directory filtering (thanks @daniel-lxs!)
 - Fix subtask completion mismatch (thanks @feifei325!)
 - Fix Windows path normalization in MCP variable injection (thanks @daniel-lxs!)
-- Update marketplace branding to 'Roo Marketplace' (thanks @SannidhyaSah!)
+- Update marketplace branding to 'VibeX Marketplace' (thanks @SannidhyaSah!)
 - Refactor to more consistent history UI (thanks @elianiva!)
 - Adjust context menu positioning to be near Copilot
 - Update evals Docker setup to work on Windows (thanks @StevenTCramer!)

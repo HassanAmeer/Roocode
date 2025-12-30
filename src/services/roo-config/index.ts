@@ -3,9 +3,9 @@ import * as os from "os"
 import fs from "fs/promises"
 
 /**
- * Gets the global .roo directory path based on the current platform
+ * Gets the global .vibex directory path based on the current platform
  *
- * @returns The absolute path to the global .roo directory
+ * @returns The absolute path to the global .vibex directory
  *
  * @example Platform-specific paths:
  * ```
@@ -29,10 +29,10 @@ export function getGlobalRooDirectory(): string {
 }
 
 /**
- * Gets the project-local .roo directory path for a given cwd
+ * Gets the project-local .vibex directory path for a given cwd
  *
  * @param cwd - Current working directory (project path)
- * @returns The absolute path to the project-local .roo directory
+ * @returns The absolute path to the project-local .vibex directory
  *
  * @example
  * ```typescript
@@ -112,7 +112,7 @@ export async function readFileIfExists(filePath: string): Promise<string | null>
 }
 
 /**
- * Gets the ordered list of .roo directories to check (global first, then project-local)
+ * Gets the ordered list of .vibex directories to check (global first, then project-local)
  *
  * @param cwd - Current working directory (project path)
  * @returns Array of directory paths to check in order [global, project-local]
@@ -157,9 +157,9 @@ export function getRooDirectoriesForCwd(cwd: string): string[] {
 }
 
 /**
- * Loads configuration from multiple .roo directories with project overriding global
+ * Loads configuration from multiple .vibex directories with project overriding global
  *
- * @param relativePath - The relative path within each .roo directory (e.g., 'rules/rules.md')
+ * @param relativePath - The relative path within each .vibex directory (e.g., 'rules/rules.md')
  * @param cwd - Current working directory (project path)
  * @returns Object with global and project content, plus merged content
  *

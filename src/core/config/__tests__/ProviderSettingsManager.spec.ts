@@ -279,7 +279,7 @@ describe("ProviderSettingsManager", () => {
 			expect(storedConfig.apiConfigs.test.apiModelId).toEqual("roo/code-supernova-1-million")
 			expect(storedConfig.apiConfigs.existing.apiModelId).toEqual("roo/code-supernova-1-million")
 
-			// Non-roo provider configs should not be migrated
+			// Non-vibex provider configs should not be migrated
 			expect(storedConfig.apiConfigs.otherProvider.apiModelId).toEqual("roo/code-supernova")
 			expect(storedConfig.apiConfigs.noProvider.apiModelId).toEqual("roo/code-supernova")
 		})

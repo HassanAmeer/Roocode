@@ -13,7 +13,7 @@
 
 # Beitrag zu VibeX Code
 
-Roo Code ist ein von der Community getragenes Projekt, und wir schätzen jeden Beitrag sehr. Um die Zusammenarbeit zu optimieren, arbeiten wir nach dem [Issue-First-Ansatz](#issue-first-ansatz), was bedeutet, dass alle [Pull Requests (PRs)](#einen-pull-request-einreichen) zuerst mit einem GitHub-Issue verknüpft sein müssen. Bitte lies diesen Leitfaden sorgfältig durch.
+VibeX Code ist ein von der Community getragenes Projekt, und wir schätzen jeden Beitrag sehr. Um die Zusammenarbeit zu optimieren, arbeiten wir nach dem [Issue-First-Ansatz](#issue-first-ansatz), was bedeutet, dass alle [Pull Requests (PRs)](#einen-pull-request-einreichen) zuerst mit einem GitHub-Issue verknüpft sein müssen. Bitte lies diesen Leitfaden sorgfältig durch.
 
 ## Inhaltsverzeichnis
 
@@ -79,7 +79,7 @@ Alle Beiträge beginnen mit einem GitHub-Issue unter Verwendung unserer schlanke
 ### Entscheiden, woran du arbeiten möchtest
 
 - Überprüfe das [GitHub-Projekt](https://github.com/orgs/RooCodeInc/projects/1) auf „Issue [Unassigned]“-Issues.
-- Für Dokumentation besuche [Roo Code Docs](https://github.com/RooCodeInc/Roo-Code-Docs).
+- Für Dokumentation besuche [VibeX Code Docs](https://github.com/RooCodeInc/Roo-Code-Docs).
 
 ### Fehler melden
 

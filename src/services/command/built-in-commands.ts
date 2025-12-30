@@ -112,7 +112,7 @@ Please analyze this codebase and create an AGENTS.md file containing:
      - .roo/rules-ask/AGENTS.md (relative to project root)
      - .roo/rules-architect/AGENTS.md (relative to project root)
      
-     IMPORTANT: The .roo folder should be created in the PROJECT ROOT, not system root!
+     IMPORTANT: The .vibex folder should be created in the PROJECT ROOT, not system root!
      
      If found, perform CRITICAL analysis:
      - What information is OBVIOUS and must be DELETED?
@@ -170,12 +170,12 @@ Please analyze this codebase and create an AGENTS.md file containing:
     Create or deeply improve mode-specific AGENTS.md files IN THE PROJECT ROOT.
     
     CRITICAL: For each of these paths (RELATIVE TO PROJECT ROOT), check if the file exists FIRST:
-    - .roo/rules-code/AGENTS.md (create .roo in project root, not system root!)
+    - .roo/rules-code/AGENTS.md (create .vibex in project root, not system root!)
     - .roo/rules-debug/AGENTS.md (relative to project root)
     - .roo/rules-ask/AGENTS.md (relative to project root)
     - .roo/rules-architect/AGENTS.md (relative to project root)
     
-    IMPORTANT: The .roo directory must be created in the current project/workspace root directory,
+    IMPORTANT: The .vibex directory must be created in the current project/workspace root directory,
     NOT at the system root (/) or home directory. All paths are relative to where the project is located.
     
     If files exist:

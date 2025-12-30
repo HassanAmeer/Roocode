@@ -15,7 +15,7 @@
 	"visitCloudWebsite": "Visita VibeX Code Cloud",
 	"taskSync": "Sincronizzazione attività",
 	"taskSyncDescription": "Sincronizza le tue attività per visualizzarle e condividerle su VibeX Code Cloud",
-	"remoteControl": "Roo CodeRemote Control",
+	"remoteControl": "VibeX CodeRemote Control",
 	"remoteControlDescription": "Consenti il controllo delle attività da VibeX Code Cloud",
 	"remoteControlRequiresTaskSync": "La sincronizzazione delle attività deve essere abilitata per utilizzare VibeX CodeRemote Control",
 	"taskSyncManagedByOrganization": "La sincronizzazione delle attività è gestita dalla tua organizzazione",

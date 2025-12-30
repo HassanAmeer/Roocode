@@ -80,7 +80,7 @@ export const content: AgentPageContent = {
 			{
 				title: "Repository-aware, not snippet-aware",
 				description:
-					"Roo analyzes your entire codebase context—dependency graphs, code ownership, team conventions, and historical patterns. It understands how changes interact with existing systems, not just whether individual lines look correct.",
+					"VibeX analyzes your entire codebase context—dependency graphs, code ownership, team conventions, and historical patterns. It understands how changes interact with existing systems, not just whether individual lines look correct.",
 				icon: "BookMarked",
 			},
 		],

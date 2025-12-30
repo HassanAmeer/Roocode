@@ -27,7 +27,7 @@ export class FileContextTracker {
 	// File tracking and watching
 	private fileWatchers = new Map<string, vscode.FileSystemWatcher>()
 	private recentlyModifiedFiles = new Set<string>()
-	private recentlyEditedByRoo = new Set<string>()
+	private recentlyEditedByVibeX = new Set<string>()
 	private checkpointPossibleFiles = new Set<string>()
 
 	constructor(provider: ClineProvider, taskId: string) {
@@ -64,8 +64,8 @@ export class FileContextTracker {
 
 		// Track file changes
 		watcher.onDidChange(() => {
-			if (this.recentlyEditedByRoo.has(filePath)) {
-				this.recentlyEditedByRoo.delete(filePath) // This was an edit by Vibex, no need to inform Vibex
+			if (this.recentlyEditedByVibeX.has(filePath)) {
+				this.recentlyEditedByVibeX.delete(filePath) // This was an edit by Vibex, no need to inform Vibex
 			} else {
 				this.recentlyModifiedFiles.add(filePath) // This was a user edit, we will inform Vibex
 				this.trackFileContext(filePath, "user_edited") // Update the task metadata with file tracking
@@ -182,7 +182,7 @@ export class FileContextTracker {
 					newEntry.roo_read_date = now
 					newEntry.roo_edit_date = now
 					this.checkpointPossibleFiles.add(filePath)
-					this.markFileAsEditedByRoo(filePath)
+					this.markFileAsEditedByVibeX(filePath)
 					break
 
 				// read_tool/file_mentioned: Vibex has read the file via a tool or file mention
@@ -213,8 +213,8 @@ export class FileContextTracker {
 	}
 
 	// Marks a file as edited by Vibex to prevent false positives in file watchers
-	markFileAsEditedByRoo(filePath: string): void {
-		this.recentlyEditedByRoo.add(filePath)
+	markFileAsEditedByVibeX(filePath: string): void {
+		this.recentlyEditedByVibeX.add(filePath)
 	}
 
 	// Disposes all file watchers

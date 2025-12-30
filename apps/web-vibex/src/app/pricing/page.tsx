@@ -206,7 +206,7 @@ export default function PricingPage() {
 										)}
 										Inference:{" "}
 										<Link href="/provider" className="underline hover:no-underline">
-											Roo Provider pricing
+											VibeX Provider pricing
 										</Link>{" "}
 										credits or{" "}
 										<abbr title="Bring Your Own Model" className="cursor-help">

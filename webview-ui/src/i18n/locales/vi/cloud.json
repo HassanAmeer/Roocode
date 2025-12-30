@@ -15,7 +15,7 @@
 	"visitCloudWebsite": "Truy cập VibeX Code Cloud",
 	"taskSync": "Đồng bộ tác vụ",
 	"taskSyncDescription": "Đồng bộ tác vụ của bạn để xem và chia sẻ trên VibeX Code Cloud",
-	"remoteControl": "Roo CodeRemote Control",
+	"remoteControl": "VibeX CodeRemote Control",
 	"remoteControlDescription": "Cho phép điều khiển tác vụ từ VibeX Code Cloud",
 	"remoteControlRequiresTaskSync": "Đồng bộ tác vụ phải được bật để sử dụng VibeX CodeRemote Control",
 	"taskSyncManagedByOrganization": "Việc đồng bộ hóa công việc được quản lý bởi tổ chức của bạn",

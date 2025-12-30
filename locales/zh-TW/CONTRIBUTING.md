@@ -13,7 +13,7 @@
 
 # 為 VibeX Code 做出貢獻
 
-Roo Code 是一個由社群驅動的專案，我們非常重視每一份貢獻。為了簡化協作，我們採用 [「問題優先」的方法](#問題優先方法)，這意味著所有的 [拉取請求 (PR)](#提交拉取請求) 都必須先連結到一個 GitHub 問題。請仔細閱讀本指南。
+VibeX Code 是一個由社群驅動的專案，我們非常重視每一份貢獻。為了簡化協作，我們採用 [「問題優先」的方法](#問題優先方法)，這意味著所有的 [拉取請求 (PR)](#提交拉取請求) 都必須先連結到一個 GitHub 問題。請仔細閱讀本指南。
 
 ## 目錄
 
@@ -79,7 +79,7 @@ Roo Code 是一個由社群驅動的專案，我們非常重視每一份貢獻�
 ### 決定做什麼
 
 - 查看 [GitHub 專案](https://github.com/orgs/RooCodeInc/projects/1) 中的「問題 [未分配]」問題。
-- 如需文件，請造訪 [Roo Code 文件](https://github.com/RooCodeInc/Roo-Code-Docs)。
+- 如需文件，請造訪 [VibeX Code 文件](https://github.com/RooCodeInc/Roo-Code-Docs)。
 
 ### 報告錯誤
 

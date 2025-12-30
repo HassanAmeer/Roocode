@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "Necessites parlar amb nosaltres? Escriu"
 		},
-		"community": "Vols consells o simplement passar l'estona amb altres usuaris de VibeX Code? Uneix-te a <redditLink>reddit.com/r/Roo Code</redditLink> o <discordLink>discord.gg/roocode</discordLink>",
+		"community": "Vols consells o simplement passar l'estona amb altres usuaris de VibeX Code? Uneix-te a <redditLink>reddit.com/r/VibeX Code</redditLink> o <discordLink>discord.gg/roocode</discordLink>",
 		"contactAndCommunity": "Contacte i Comunitat",
 		"manageSettings": "Gestionar Configuració"
 	},
@@ -611,7 +611,7 @@
 		},
 		"maxReadFile": {
 			"label": "Llindar d'auto-truncament de lectura de fitxers",
-			"description": "Roo Code llegeix aquest nombre de línies quan el model omet els valors d'inici/final. Si aquest nombre és menor que el total del fitxer, VibeX Code genera un índex de números de línia de les definicions de codi. Casos especials: -1 indica a VibeX Code que llegeixi tot el fitxer (sense indexació), i 0 indica que no llegeixi cap línia i proporcioni només índexs de línia per a un context mínim. Valors més baixos minimitzen l'ús inicial de context, permetent lectures posteriors de rangs de línies precisos. Les sol·licituds amb inici/final explícits no estan limitades per aquesta configuració.",
+			"description": "VibeX Code llegeix aquest nombre de línies quan el model omet els valors d'inici/final. Si aquest nombre és menor que el total del fitxer, VibeX Code genera un índex de números de línia de les definicions de codi. Casos especials: -1 indica a VibeX Code que llegeixi tot el fitxer (sense indexació), i 0 indica que no llegeixi cap línia i proporcioni només índexs de línia per a un context mínim. Valors més baixos minimitzen l'ús inicial de context, permetent lectures posteriors de rangs de línies precisos. Les sol·licituds amb inici/final explícits no estan limitades per aquesta configuració.",
 			"lines": "línies",
 			"always_full_read": "Llegeix sempre el fitxer sencer"
 		},
@@ -877,7 +877,7 @@
 		"simplifiedExplanation": "Pots ajustar la configuració detallada del model més tard."
 	},
 	"footer": {
-		"feedback": "Si teniu qualsevol pregunta o comentari, no dubteu a obrir un issue a <githubLink>github.com/Roo CodeInc/Roo Code-Code</githubLink> o unir-vos a <redditLink>reddit.com/r/Roo Code</redditLink> o <discordLink>discord.gg/roocode</discordLink>",
+		"feedback": "Si teniu qualsevol pregunta o comentari, no dubteu a obrir un issue a <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> o unir-vos a <redditLink>reddit.com/r/VibeX Code</redditLink> o <discordLink>discord.gg/roocode</discordLink>",
 		"telemetry": {
 			"label": "Permetre informes anònims d'errors i ús",
 			"description": "Ajuda a millorar VibeX Code enviant dades d'ús anònimes i informes d'error. Aquesta telemetria no recull codi, prompts o informació personal. Consulta la nostra <privacyLink>política de privacitat</privacyLink> per a més detalls. Pots desactivar-ho en qualsevol moment."

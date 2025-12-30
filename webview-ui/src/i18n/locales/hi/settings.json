@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "हमसे बात करने की जरूरत है? लिखें"
 		},
-		"community": "सुझाव चाहिए या बस अन्य VibeX Code उपयोगकर्ताओं के साथ घूमना चाहते हैं? <redditLink>reddit.com/r/Roo Code</redditLink> या <discordLink>discord.gg/roocode</discordLink> में शामिल हों",
+		"community": "सुझाव चाहिए या बस अन्य VibeX Code उपयोगकर्ताओं के साथ घूमना चाहते हैं? <redditLink>reddit.com/r/VibeX Code</redditLink> या <discordLink>discord.gg/roocode</discordLink> में शामिल हों",
 		"contactAndCommunity": "संपर्क और समुदाय",
 		"manageSettings": "सेटिंग्स प्रबंधित करें"
 	},
@@ -173,7 +173,7 @@
 	},
 	"autoApprove": {
 		"toggleShortcut": "आप <SettingsLink>अपनी आईडीई वरीयताओं में</SettingsLink> इस सेटिंग के लिए एक वैश्विक शॉर्टकट कॉन्फ़िगर कर सकते हैं।",
-		"description": "Roo Code को अनुमोदन की आवश्यकता के बिना स्वचालित रूप से ऑपरेशन करने की अनुमति दें। इन सेटिंग्स को केवल तभी सक्षम करें जब आप AI पर पूरी तरह से भरोसा करते हों और संबंधित सुरक्षा जोखिमों को समझते हों।",
+		"description": "VibeX Code को अनुमोदन की आवश्यकता के बिना स्वचालित रूप से ऑपरेशन करने की अनुमति दें। इन सेटिंग्स को केवल तभी सक्षम करें जब आप AI पर पूरी तरह से भरोसा करते हों और संबंधित सुरक्षा जोखिमों को समझते हों।",
 		"enabled": "स्वत:-अनुमोदन सक्षम",
 		"toggleAriaLabel": "स्वतः-अनुमोदन टॉगल करें",
 		"disabledAriaLabel": "स्वतः-अनुमोदन अक्षम - पहले विकल्प चुनें",
@@ -182,7 +182,7 @@
 			"description": "जब सक्षम होता है, तो VibeX Code आपके अनुमोदित बटन पर क्लिक किए बिना स्वचालित रूप से निर्देशिका सामग्री देखेगा और फाइलें पढ़ेगा।",
 			"outsideWorkspace": {
 				"label": "वर्कस्पेस के बाहर की फाइलें शामिल करें",
-				"description": "Roo Code को अनुमोदन की आवश्यकता के बिना वर्तमान वर्कस्पेस के बाहर की फाइलें पढ़ने की अनुमति दें।"
+				"description": "VibeX Code को अनुमोदन की आवश्यकता के बिना वर्तमान वर्कस्पेस के बाहर की फाइलें पढ़ने की अनुमति दें।"
 			}
 		},
 		"write": {
@@ -191,11 +191,11 @@
 			"delayLabel": "लिखने के बाद विलंब ताकि डायग्नोस्टिक संभावित समस्याओं का पता लगा सकें",
 			"outsideWorkspace": {
 				"label": "वर्कस्पेस के बाहर की फाइलें शामिल करें",
-				"description": "Roo Code को अनुमोदन की आवश्यकता के बिना वर्तमान वर्कस्पेस के बाहर फाइलें बनाने और संपादित करने की अनुमति दें।"
+				"description": "VibeX Code को अनुमोदन की आवश्यकता के बिना वर्तमान वर्कस्पेस के बाहर फाइलें बनाने और संपादित करने की अनुमति दें।"
 			},
 			"protected": {
 				"label": "संरक्षित फाइलें शामिल करें",
-				"description": "Roo Code को अनुमोदन की आवश्यकता के बिना संरक्षित फाइलें (.rooignore और .roo/ कॉन्फ़िगरेशन फाइलें जैसी) बनाने और संपादित करने की अनुमति दें।"
+				"description": "VibeX Code को अनुमोदन की आवश्यकता के बिना संरक्षित फाइलें (.rooignore और .roo/ कॉन्फ़िगरेशन फाइलें जैसी) बनाने और संपादित करने की अनुमति दें।"
 			}
 		},
 		"browser": {
@@ -439,7 +439,7 @@
 		},
 		"roo": {
 			"authenticatedMessage": "आपके VibeX Code Cloud खाते के माध्यम से सुरक्षित रूप से प्रमाणित।",
-			"connectButton": "Roo Code Cloud से कनेक्ट करें"
+			"connectButton": "VibeX Code Cloud से कनेक्ट करें"
 		},
 		"openRouter": {
 			"providerRouting": {
@@ -878,7 +878,7 @@
 		"simplifiedExplanation": "आप बाद में विस्तृत मॉडल सेटिंग्स समायोजित कर सकते हैं।"
 	},
 	"footer": {
-		"feedback": "यदि आपके कोई प्रश्न या प्रतिक्रिया है, तो <githubLink>github.com/Roo CodeInc/Roo Code-Code</githubLink> पर एक मुद्दा खोलने या <redditLink>reddit.com/r/Roo Code</redditLink> या <discordLink>discord.gg/roocode</discordLink> में शामिल होने में संकोच न करें",
+		"feedback": "यदि आपके कोई प्रश्न या प्रतिक्रिया है, तो <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> पर एक मुद्दा खोलने या <redditLink>reddit.com/r/VibeX Code</redditLink> या <discordLink>discord.gg/roocode</discordLink> में शामिल होने में संकोच न करें",
 		"telemetry": {
 			"label": "गुमनाम त्रुटि और उपयोग रिपोर्टिंग की अनुमति दें",
 			"description": "गुमनाम उपयोग डेटा और त्रुटि रिपोर्ट भेजकर VibeX Code को बेहतर बनाने में मदद करें। यह टेलीमेट्री कोड, प्रॉम्प्ट या व्यक्तिगत जानकारी एकत्र नहीं करती। अधिक विवरण के लिए हमारी <privacyLink>गोपनीयता नीति</privacyLink> देखें। आप इसे कभी भी बंद कर सकते हैं।"

@@ -15,7 +15,7 @@
 	"visitCloudWebsite": "Bezoek VibeX Code Cloud",
 	"taskSync": "Taaksynchronisatie",
 	"taskSyncDescription": "Synchroniseer je taken om ze te bekijken en delen op VibeX Code Cloud",
-	"remoteControl": "Roo CodeRemote Control",
+	"remoteControl": "VibeX CodeRemote Control",
 	"remoteControlDescription": "Sta toe taken te besturen vanuit VibeX Code Cloud",
 	"remoteControlRequiresTaskSync": "Taaksynchronisatie moet ingeschakeld zijn om VibeX CodeRemote Control te gebruiken",
 	"taskSyncManagedByOrganization": "Taaksynchronisatie wordt beheerd door uw organisatie",
@@ -27,9 +27,9 @@
 	"personalAccount": "Persoonlijk Account",
 	"switchAccount": "Wissel van VibeX Code Cloud Account",
 	"createTeamAccount": "Teamaccount aanmaken",
-	"cloudUrlPillLabel": "Roo Code Cloud URL",
+	"cloudUrlPillLabel": "VibeX Code Cloud URL",
 	"upsell": {
-		"autoApprovePowerUser": "Roo Code wat onafhankelijkheid geven? Bedien het overal met VibeX Code Cloud. <learnMoreLink>Meer informatie</learnMoreLink>.",
+		"autoApprovePowerUser": "VibeX Code wat onafhankelijkheid geven? Bedien het overal met VibeX Code Cloud. <learnMoreLink>Meer informatie</learnMoreLink>.",
 		"longRunningTask": "Dit kan even duren. Ga overal verder met de Cloud.",
 		"taskList": "Geniet je van VibeX Code? Bekijk VibeX Code Cloud: volg en beheer je taken overal, voer autonome Cloud-agents uit, krijg gebruiksstatistieken en meer. <learnMoreLink>Meer informatie</learnMoreLink>."
 	}

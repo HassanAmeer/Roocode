@@ -35,7 +35,7 @@
 - [简体中文](../zh-CN/README.md)
 - [繁體中文](../zh-TW/README.md)
 - ...
-    </details>
+      </details>
 
 ---
 
@@ -51,7 +51,7 @@
 
 ## 모드
 
-Roo Code는 당신의 작업 방식에 맞춰 적응합니다.
+VibeX Code는 당신의 작업 방식에 맞춰 적응합니다.
 
 - 코드 모드: 일상적인 코딩, 편집 및 파일 작업
 - 아키텍트 모드: 시스템, 사양 및 마이그레이션 계획
@@ -66,10 +66,10 @@ Roo Code는 당신의 작업 방식에 맞춰 적응합니다.
 
 <div align="center">
 
-|                                                                                                                                                                         |                                                                                                                                                                       |                                                                                                                                                                         |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| <a href="https://www.youtube.com/watch?v=Mcq3r1EPZ-4"><img src="https://img.youtube.com/vi/Mcq3r1EPZ-4/maxresdefault.jpg" width="100%"></a><br><b>Roo Code 설치하기</b> | <a href="https://www.youtube.com/watch?v=ZBML8h5cCgo"><img src="https://img.youtube.com/vi/ZBML8h5cCgo/maxresdefault.jpg" width="100%"></a><br><b>프로필 구성하기</b> | <a href="https://www.youtube.com/watch?v=r1bpod1VWhg"><img src="https://img.youtube.com/vi/r1bpod1VWhg/maxresdefault.jpg" width="100%"></a><br><b>코드베이스 인덱싱</b> |
-| <a href="https://www.youtube.com/watch?v=iiAv1eKOaxk"><img src="https://img.youtube.com/vi/iiAv1eKOaxk/maxresdefault.jpg" width="100%"></a><br><b>사용자 지정 모드</b>  |   <a href="https://www.youtube.com/watch?v=Ho30nyY332E"><img src="https://img.youtube.com/vi/Ho30nyY332E/maxresdefault.jpg" width="100%"></a><br><b>체크포인트</b>    |    <a href="https://www.youtube.com/watch?v=6h5vB9PpoPk"><img src="https://img.youtube.com/vi/6h5vB9PpoPk/maxresdefault.jpg" width="100%"></a><br><b>할 일 목록</b>     |
+|                                                                                                                                                                           |                                                                                                                                                                       |                                                                                                                                                                         |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| <a href="https://www.youtube.com/watch?v=Mcq3r1EPZ-4"><img src="https://img.youtube.com/vi/Mcq3r1EPZ-4/maxresdefault.jpg" width="100%"></a><br><b>VibeX Code 설치하기</b> | <a href="https://www.youtube.com/watch?v=ZBML8h5cCgo"><img src="https://img.youtube.com/vi/ZBML8h5cCgo/maxresdefault.jpg" width="100%"></a><br><b>프로필 구성하기</b> | <a href="https://www.youtube.com/watch?v=r1bpod1VWhg"><img src="https://img.youtube.com/vi/r1bpod1VWhg/maxresdefault.jpg" width="100%"></a><br><b>코드베이스 인덱싱</b> |
+|  <a href="https://www.youtube.com/watch?v=iiAv1eKOaxk"><img src="https://img.youtube.com/vi/iiAv1eKOaxk/maxresdefault.jpg" width="100%"></a><br><b>사용자 지정 모드</b>   |   <a href="https://www.youtube.com/watch?v=Ho30nyY332E"><img src="https://img.youtube.com/vi/Ho30nyY332E/maxresdefault.jpg" width="100%"></a><br><b>체크포인트</b>    |    <a href="https://www.youtube.com/watch?v=6h5vB9PpoPk"><img src="https://img.youtube.com/vi/6h5vB9PpoPk/maxresdefault.jpg" width="100%"></a><br><b>할 일 목록</b>     |
 
 </div>
 <p align="center">
@@ -103,7 +103,7 @@ pnpm install
 
 3. **확장 프로그램 실행**:
 
-Roo Code 확장 프로그램을 실행하는 방법에는 여러 가지가 있습니다:
+VibeX Code 확장 프로그램을 실행하는 방법에는 여러 가지가 있습니다:
 
 ### 개발 모드 (F5)
 
@@ -173,4 +173,4 @@ VSIX 패키지를 수동으로 설치하려면:
 
 ---
 
-**Roo Code를 즐기세요!** 짧은 줄에 묶어두든 자율적으로 돌아다니게 하든, 여러분이 무엇을 만들지 기대됩니다. 질문이나 기능 아이디어가 있으면 저희 [Reddit 커뮤니티](https://www.reddit.com/r/RooCode/)나 [Discord](https://discord.gg/roocode)에 들러주세요. 즐거운 코딩 되세요!
+**VibeX Code를 즐기세요!** 짧은 줄에 묶어두든 자율적으로 돌아다니게 하든, 여러분이 무엇을 만들지 기대됩니다. 질문이나 기능 아이디어가 있으면 저희 [Reddit 커뮤니티](https://www.reddit.com/r/RooCode/)나 [Discord](https://discord.gg/roocode)에 들러주세요. 즐거운 코딩 되세요!

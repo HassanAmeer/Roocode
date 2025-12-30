@@ -64,7 +64,7 @@ export async function loadSystemPromptFile(cwd: string, mode: Mode, variables: P
 }
 
 /**
- * Ensures the .roo directory exists, creating it if necessary
+ * Ensures the .vibex directory exists, creating it if necessary
  */
 export async function ensureRooDirectory(cwd: string): Promise<void> {
 	const rooDir = path.join(cwd, ".roo")

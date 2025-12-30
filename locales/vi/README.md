@@ -35,7 +35,7 @@
 - [简体中文](../zh-CN/README.md)
 - [繁體中文](../zh-TW/README.md)
 - ...
-    </details>
+      </details>
 
 ---
 
@@ -51,7 +51,7 @@
 
 ## Chế độ
 
-Roo Code thích ứng với cách bạn làm việc, chứ không phải ngược lại:
+VibeX Code thích ứng với cách bạn làm việc, chứ không phải ngược lại:
 
 - Chế độ Mã: viết mã hàng ngày, chỉnh sửa và các thao tác với tệp
 - Chế độ Kiến trúc sư: lập kế hoạch hệ thống, thông số kỹ thuật và di chuyển

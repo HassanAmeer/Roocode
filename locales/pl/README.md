@@ -35,7 +35,7 @@
 - [简体中文](../zh-CN/README.md)
 - [繁體中文](../zh-TW/README.md)
 - ...
-    </details>
+      </details>
 
 ---
 
@@ -51,7 +51,7 @@
 
 ## Tryby
 
-Roo Code dostosowuje się do Twojego sposobu pracy, a nie odwrotnie:
+VibeX Code dostosowuje się do Twojego sposobu pracy, a nie odwrotnie:
 
 - Tryb Kod: codzienne kodowanie, edycje i operacje na plikach
 - Tryb Architekt: planowanie systemów, specyfikacji i migracji

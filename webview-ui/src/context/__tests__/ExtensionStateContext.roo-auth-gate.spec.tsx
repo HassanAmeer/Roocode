@@ -33,7 +33,7 @@ describe("ExtensionStateContext Vibex auth gate", () => {
 			</ExtensionStateContextProvider>,
 		)
 
-		// Flip auth to true with a non-roo provider (anthropic)
+		// Flip auth to true with a non-vibex provider (anthropic)
 		postStateMessage({
 			cloudIsAuthenticated: true,
 			apiConfiguration: { apiProvider: "anthropic" },

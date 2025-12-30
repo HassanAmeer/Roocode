@@ -13,7 +13,7 @@
 
 # Contribuire a VibeX Code
 
-Roo Code è un progetto guidato dalla comunità e apprezziamo profondamente ogni contributo. Per semplificare la collaborazione, operiamo su una base [Issue-First](#approccio-issue-first), il che significa che tutte le [Pull Request (PR)](#invio-di-una-pull-request) devono prima essere collegate a un'issue di GitHub. Si prega di leggere attentamente questa guida.
+VibeX Code è un progetto guidato dalla comunità e apprezziamo profondamente ogni contributo. Per semplificare la collaborazione, operiamo su una base [Issue-First](#approccio-issue-first), il che significa che tutte le [Pull Request (PR)](#invio-di-una-pull-request) devono prima essere collegate a un'issue di GitHub. Si prega di leggere attentamente questa guida.
 
 ## Sommario
 
@@ -79,7 +79,7 @@ Tutti i contributi iniziano con un'issue di GitHub utilizzando i nostri modelli 
 ### Decidere su cosa lavorare
 
 - Controlla il [progetto GitHub](https://github.com/orgs/RooCodeInc/projects/1) per le issue "Issue [Non assegnata]".
-- Per la documentazione, visita [Roo Code Docs](https://github.com/RooCodeInc/Roo-Code-Docs).
+- Per la documentazione, visita [VibeX Code Docs](https://github.com/RooCodeInc/Roo-Code-Docs).
 
 ### Segnalazione di bug
 

@@ -13,7 +13,7 @@
 
 # Contribuir a VibeX Code
 
-Roo Code és un projecte impulsat per la comunitat i valorem profundament cada contribució. Per agilitzar la col·laboració, operem sobre una base de [primer la incidència](#enfocament-de-primera-incidència), la qual cosa significa que totes les [sol·licituds d'extracció (PR)](#enviament-duna-sollicitud-dextracció) primer han d'estar enllaçades a una incidència de GitHub. Si us plau, reviseu aquesta guia amb atenció.
+VibeX Code és un projecte impulsat per la comunitat i valorem profundament cada contribució. Per agilitzar la col·laboració, operem sobre una base de [primer la incidència](#enfocament-de-primera-incidència), la qual cosa significa que totes les [sol·licituds d'extracció (PR)](#enviament-duna-sollicitud-dextracció) primer han d'estar enllaçades a una incidència de GitHub. Si us plau, reviseu aquesta guia amb atenció.
 
 ## Taula de continguts
 

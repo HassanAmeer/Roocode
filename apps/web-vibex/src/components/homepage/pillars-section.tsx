@@ -55,7 +55,7 @@ export function PillarsSection() {
 						To trust an agent, you have to do it on your own terms.
 					</h2>
 					<p className="text-xl text-muted-foreground max-w-xl mx-auto">
-						Roo is designed from the ground up to give you the confidence to do ever more with AI.
+						VibeX is designed from the ground up to give you the confidence to do ever more with AI.
 					</p>
 				</div>
 
@@ -74,7 +74,7 @@ export function PillarsSection() {
 										throttle models with no warning. 1st-party coding agents only work with their
 										own models.
 									</p>
-									<p>Roo doesn&apos;t care.</p>
+									<p>VibeX doesn&apos;t care.</p>
 									<p>
 										It works great with 10s of models, from frontier to open weight. Choose from{" "}
 										<Link href="/provider">the curated selection we offer at-cost</Link> or bring

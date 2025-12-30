@@ -87,7 +87,7 @@
 		"tooltip": "Aktuelle Operation abbrechen"
 	},
 	"scrollToBottom": "Zum Chat-Ende scrollen",
-	"about": "Roo Code ist ein ganzes KI-Entwicklerteam in deinem Editor.",
+	"about": "VibeX Code ist ein ganzes KI-Entwicklerteam in deinem Editor.",
 	"docs": "Schau in unsere <DocsLink>Dokumentation</DocsLink>, um mehr zu erfahren.",
 	"onboarding": "Deine Aufgabenliste in diesem Arbeitsbereich ist leer.",
 	"rooTips": {
@@ -131,7 +131,7 @@
 	"diffError": {
 		"title": "Bearbeitung fehlgeschlagen"
 	},
-	"troubleMessage": "Roo Code hat Probleme...",
+	"troubleMessage": "VibeX Code hat Probleme...",
 	"apiRequest": {
 		"title": "API-Anfrage",
 		"failed": "API-Anfrage fehlgeschlagen",
@@ -173,42 +173,42 @@
 		"current": "Aktuell"
 	},
 	"instructions": {
-		"wantsToFetch": "Roo Code möchte detaillierte Anweisungen abrufen, um bei der aktuellen Aufgabe zu helfen"
+		"wantsToFetch": "VibeX Code möchte detaillierte Anweisungen abrufen, um bei der aktuellen Aufgabe zu helfen"
 	},
 	"fileOperations": {
-		"wantsToRead": "Roo Code möchte diese Datei lesen",
-		"wantsToReadAndXMore": "Roo Code möchte diese Datei und {{count}} weitere lesen",
-		"wantsToReadOutsideWorkspace": "Roo Code möchte diese Datei außerhalb des Arbeitsbereichs lesen",
-		"didRead": "Roo Code hat diese Datei gelesen",
-		"wantsToEdit": "Roo Code möchte diese Datei bearbeiten",
-		"wantsToEditOutsideWorkspace": "Roo Code möchte diese Datei außerhalb des Arbeitsbereichs bearbeiten",
-		"wantsToEditProtected": "Roo Code möchte eine geschützte Konfigurationsdatei bearbeiten",
-		"wantsToCreate": "Roo Code möchte eine neue Datei erstellen",
-		"wantsToSearchReplace": "Roo Code möchte in dieser Datei suchen und ersetzen",
-		"didSearchReplace": "Roo Code hat Suchen und Ersetzen in dieser Datei durchgeführt",
-		"wantsToInsert": "Roo Code möchte Inhalte in diese Datei einfügen",
-		"wantsToInsertWithLineNumber": "Roo Code möchte Inhalte in diese Datei in Zeile {{lineNumber}} einfügen",
-		"wantsToInsertAtEnd": "Roo Code möchte Inhalte am Ende dieser Datei anhängen",
-		"wantsToReadMultiple": "Roo Code möchte mehrere Dateien lesen",
-		"wantsToApplyBatchChanges": "Roo Code möchte Änderungen an mehreren Dateien vornehmen",
-		"wantsToGenerateImage": "Roo Code möchte ein Bild generieren",
-		"wantsToGenerateImageOutsideWorkspace": "Roo Code möchte ein Bild außerhalb des Arbeitsbereichs generieren",
-		"wantsToGenerateImageProtected": "Roo Code möchte ein Bild an einem geschützten Ort generieren",
-		"didGenerateImage": "Roo Code hat ein Bild generiert"
+		"wantsToRead": "VibeX Code möchte diese Datei lesen",
+		"wantsToReadAndXMore": "VibeX Code möchte diese Datei und {{count}} weitere lesen",
+		"wantsToReadOutsideWorkspace": "VibeX Code möchte diese Datei außerhalb des Arbeitsbereichs lesen",
+		"didRead": "VibeX Code hat diese Datei gelesen",
+		"wantsToEdit": "VibeX Code möchte diese Datei bearbeiten",
+		"wantsToEditOutsideWorkspace": "VibeX Code möchte diese Datei außerhalb des Arbeitsbereichs bearbeiten",
+		"wantsToEditProtected": "VibeX Code möchte eine geschützte Konfigurationsdatei bearbeiten",
+		"wantsToCreate": "VibeX Code möchte eine neue Datei erstellen",
+		"wantsToSearchReplace": "VibeX Code möchte in dieser Datei suchen und ersetzen",
+		"didSearchReplace": "VibeX Code hat Suchen und Ersetzen in dieser Datei durchgeführt",
+		"wantsToInsert": "VibeX Code möchte Inhalte in diese Datei einfügen",
+		"wantsToInsertWithLineNumber": "VibeX Code möchte Inhalte in diese Datei in Zeile {{lineNumber}} einfügen",
+		"wantsToInsertAtEnd": "VibeX Code möchte Inhalte am Ende dieser Datei anhängen",
+		"wantsToReadMultiple": "VibeX Code möchte mehrere Dateien lesen",
+		"wantsToApplyBatchChanges": "VibeX Code möchte Änderungen an mehreren Dateien vornehmen",
+		"wantsToGenerateImage": "VibeX Code möchte ein Bild generieren",
+		"wantsToGenerateImageOutsideWorkspace": "VibeX Code möchte ein Bild außerhalb des Arbeitsbereichs generieren",
+		"wantsToGenerateImageProtected": "VibeX Code möchte ein Bild an einem geschützten Ort generieren",
+		"didGenerateImage": "VibeX Code hat ein Bild generiert"
 	},
 	"directoryOperations": {
-		"wantsToViewTopLevel": "Roo Code möchte die Dateien auf oberster Ebene in diesem Verzeichnis anzeigen",
-		"didViewTopLevel": "Roo Code hat die Dateien auf oberster Ebene in diesem Verzeichnis angezeigt",
-		"wantsToViewRecursive": "Roo Code möchte rekursiv alle Dateien in diesem Verzeichnis anzeigen",
-		"didViewRecursive": "Roo Code hat rekursiv alle Dateien in diesem Verzeichnis angezeigt",
-		"wantsToSearch": "Roo Code möchte dieses Verzeichnis nach <code>{{regex}}</code> durchsuchen",
-		"didSearch": "Roo Code hat dieses Verzeichnis nach <code>{{regex}}</code> durchsucht",
-		"wantsToSearchOutsideWorkspace": "Roo Code möchte dieses Verzeichnis (außerhalb des Arbeitsbereichs) nach <code>{{regex}}</code> durchsuchen",
-		"didSearchOutsideWorkspace": "Roo Code hat dieses Verzeichnis (außerhalb des Arbeitsbereichs) nach <code>{{regex}}</code> durchsucht",
-		"wantsToViewTopLevelOutsideWorkspace": "Roo Code möchte die Dateien auf oberster Ebene in diesem Verzeichnis (außerhalb des Arbeitsbereichs) anzeigen",
-		"didViewTopLevelOutsideWorkspace": "Roo Code hat die Dateien auf oberster Ebene in diesem Verzeichnis (außerhalb des Arbeitsbereichs) angezeigt",
-		"wantsToViewRecursiveOutsideWorkspace": "Roo Code möchte rekursiv alle Dateien in diesem Verzeichnis (außerhalb des Arbeitsbereichs) anzeigen",
-		"didViewRecursiveOutsideWorkspace": "Roo Code hat rekursiv alle Dateien in diesem Verzeichnis (außerhalb des Arbeitsbereichs) angezeigt"
+		"wantsToViewTopLevel": "VibeX Code möchte die Dateien auf oberster Ebene in diesem Verzeichnis anzeigen",
+		"didViewTopLevel": "VibeX Code hat die Dateien auf oberster Ebene in diesem Verzeichnis angezeigt",
+		"wantsToViewRecursive": "VibeX Code möchte rekursiv alle Dateien in diesem Verzeichnis anzeigen",
+		"didViewRecursive": "VibeX Code hat rekursiv alle Dateien in diesem Verzeichnis angezeigt",
+		"wantsToSearch": "VibeX Code möchte dieses Verzeichnis nach <code>{{regex}}</code> durchsuchen",
+		"didSearch": "VibeX Code hat dieses Verzeichnis nach <code>{{regex}}</code> durchsucht",
+		"wantsToSearchOutsideWorkspace": "VibeX Code möchte dieses Verzeichnis (außerhalb des Arbeitsbereichs) nach <code>{{regex}}</code> durchsuchen",
+		"didSearchOutsideWorkspace": "VibeX Code hat dieses Verzeichnis (außerhalb des Arbeitsbereichs) nach <code>{{regex}}</code> durchsucht",
+		"wantsToViewTopLevelOutsideWorkspace": "VibeX Code möchte die Dateien auf oberster Ebene in diesem Verzeichnis (außerhalb des Arbeitsbereichs) anzeigen",
+		"didViewTopLevelOutsideWorkspace": "VibeX Code hat die Dateien auf oberster Ebene in diesem Verzeichnis (außerhalb des Arbeitsbereichs) angezeigt",
+		"wantsToViewRecursiveOutsideWorkspace": "VibeX Code möchte rekursiv alle Dateien in diesem Verzeichnis (außerhalb des Arbeitsbereichs) anzeigen",
+		"didViewRecursiveOutsideWorkspace": "VibeX Code hat rekursiv alle Dateien in diesem Verzeichnis (außerhalb des Arbeitsbereichs) angezeigt"
 	},
 	"commandOutput": "Befehlsausgabe",
 	"commandExecution": {
@@ -230,24 +230,24 @@
 	"response": "Antwort",
 	"arguments": "Argumente",
 	"text": {
-		"rooSaid": "Roo Code hat gesagt"
+		"rooSaid": "VibeX Code hat gesagt"
 	},
 	"feedback": {
 		"youSaid": "Du hast gesagt"
 	},
 	"mcp": {
-		"wantsToUseTool": "Roo Code möchte ein Tool auf dem {{serverName}} MCP-Server verwenden",
-		"wantsToAccessResource": "Roo Code möchte auf eine Ressource auf dem {{serverName}} MCP-Server zugreifen"
+		"wantsToUseTool": "VibeX Code möchte ein Tool auf dem {{serverName}} MCP-Server verwenden",
+		"wantsToAccessResource": "VibeX Code möchte auf eine Ressource auf dem {{serverName}} MCP-Server zugreifen"
 	},
 	"modes": {
-		"wantsToSwitch": "Roo Code möchte zum <code>{{mode}}</code>-Modus wechseln",
-		"wantsToSwitchWithReason": "Roo Code möchte zum <code>{{mode}}</code>-Modus wechseln, weil: {{reason}}",
-		"didSwitch": "Roo Code hat zum <code>{{mode}}</code>-Modus gewechselt",
-		"didSwitchWithReason": "Roo Code hat zum <code>{{mode}}</code>-Modus gewechselt, weil: {{reason}}"
+		"wantsToSwitch": "VibeX Code möchte zum <code>{{mode}}</code>-Modus wechseln",
+		"wantsToSwitchWithReason": "VibeX Code möchte zum <code>{{mode}}</code>-Modus wechseln, weil: {{reason}}",
+		"didSwitch": "VibeX Code hat zum <code>{{mode}}</code>-Modus gewechselt",
+		"didSwitchWithReason": "VibeX Code hat zum <code>{{mode}}</code>-Modus gewechselt, weil: {{reason}}"
 	},
 	"subtasks": {
-		"wantsToCreate": "Roo Code möchte eine neue Teilaufgabe im <code>{{mode}}</code>-Modus erstellen",
-		"wantsToFinish": "Roo Code möchte diese Teilaufgabe abschließen",
+		"wantsToCreate": "VibeX Code möchte eine neue Teilaufgabe im <code>{{mode}}</code>-Modus erstellen",
+		"wantsToFinish": "VibeX Code möchte diese Teilaufgabe abschließen",
 		"newTaskContent": "Teilaufgabenanweisungen",
 		"completionContent": "Teilaufgabe abgeschlossen",
 		"resultContent": "Teilaufgabenergebnisse",
@@ -255,7 +255,7 @@
 		"completionInstructions": "Teilaufgabe abgeschlossen! Du kannst die Ergebnisse überprüfen und Korrekturen oder nächste Schritte vorschlagen. Wenn alles gut aussieht, bestätige, um das Ergebnis an die übergeordnete Aufgabe zurückzugeben."
 	},
 	"questions": {
-		"hasQuestion": "Roo Code hat eine Frage"
+		"hasQuestion": "VibeX Code hat eine Frage"
 	},
 	"taskCompleted": "Aufgabe abgeschlossen",
 	"modelResponseIncomplete": "Modellantwort unvollständig",
@@ -317,7 +317,7 @@
 		"timerPrefix": "Automatische Genehmigung aktiviert. Wähle in {{seconds}}s…"
 	},
 	"announcement": {
-		"title": "Roo Code {{version}} veröffentlicht",
+		"title": "VibeX Code {{version}} veröffentlicht",
 		"support": "Bitte unterstütze VibeX Code, indem du uns auf <githubLink>GitHub</githubLink> einen Stern gibst.",
 		"stealthModel": {
 			"feature": "<bold>Zeitlich begrenztes KOSTENLOSES Stealth-Modell</bold> - Code Supernova: Jetzt mit einem <bold>1M Token Kontextfenster</bold> erweitert! Ein vielseitiges agentisches Coding-Modell, das Bildeingaben unterstützt und über VibeX Code Cloud zugänglich ist.",
@@ -328,7 +328,7 @@
 		},
 		"release": {
 			"heading": "Was ist neu:",
-			"skills": "Roo Code unterstützt jetzt <skillsLink>Agent Skills</skillsLink> - wiederverwendbare Pakete aus Prompts, Tools und Ressourcen, um VibeXs Funktionen zu erweitern.",
+			"skills": "VibeX Code unterstützt jetzt <skillsLink>Agent Skills</skillsLink> - wiederverwendbare Pakete aus Prompts, Tools und Ressourcen, um VibeXs Funktionen zu erweitern.",
 			"nativeToolCalling": "Native Tool-Aufrufe sind jetzt für alle neuen Aufgaben erforderlich. <blogLink>Mehr erfahren</blogLink> über die Motivation und was zu tun ist, wenn du Probleme hast."
 		},
 		"cloudAgents": {
@@ -341,7 +341,7 @@
 	},
 	"browser": {
 		"session": "Browser-Sitzung",
-		"rooWantsToUse": "Roo Code möchte den Browser verwenden",
+		"rooWantsToUse": "VibeX Code möchte den Browser verwenden",
 		"consoleLogs": "Konsolenprotokolle",
 		"noNewLogs": "(Keine neuen Protokolle)",
 		"screenshot": "Browser-Screenshot",
@@ -387,24 +387,24 @@
 	"profileViolationWarning": "Das aktuelle Profil ist nicht kompatibel mit den Einstellungen deiner Organisation",
 	"shellIntegration": {
 		"title": "Befehlsausführungswarnung",
-		"description": "Dein Befehl wird ohne VSCode Terminal-Shell-Integration ausgeführt. Um diese Warnung zu unterdrücken, kannst du die Shell-Integration im Abschnitt <strong>Terminal</strong> der <settingsLink>Roo Code Einstellungen</settingsLink> deaktivieren oder die VSCode Terminal-Integration mit dem Link unten beheben.",
+		"description": "Dein Befehl wird ohne VSCode Terminal-Shell-Integration ausgeführt. Um diese Warnung zu unterdrücken, kannst du die Shell-Integration im Abschnitt <strong>Terminal</strong> der <settingsLink>VibeX Code Einstellungen</settingsLink> deaktivieren oder die VSCode Terminal-Integration mit dem Link unten beheben.",
 		"troubleshooting": "Klicke hier für die Shell-Integrationsdokumentation."
 	},
 	"ask": {
 		"autoApprovedRequestLimitReached": {
 			"title": "Limit für automatisch genehmigte Anfragen erreicht",
-			"description": "Roo Code hat das automatisch genehmigte Limit von {{count}} API-Anfrage(n) erreicht. Möchtest du den Zähler zurücksetzen und mit der Aufgabe fortfahren?",
+			"description": "VibeX Code hat das automatisch genehmigte Limit von {{count}} API-Anfrage(n) erreicht. Möchtest du den Zähler zurücksetzen und mit der Aufgabe fortfahren?",
 			"button": "Zurücksetzen und fortfahren"
 		},
 		"autoApprovedCostLimitReached": {
-			"description": "Roo Code hat das automatisch genehmigte Kostenlimit von ${{count}} erreicht. Möchten Sie die Kosten zurücksetzen und mit der Aufgabe fortfahren?",
+			"description": "VibeX Code hat das automatisch genehmigte Kostenlimit von ${{count}} erreicht. Möchten Sie die Kosten zurücksetzen und mit der Aufgabe fortfahren?",
 			"title": "Kostengrenze für automatische Genehmigung erreicht",
 			"button": "Zurücksetzen und Fortfahren"
 		}
 	},
 	"codebaseSearch": {
-		"wantsToSearch": "Roo Code möchte den Codebase nach <code>{{query}}</code> durchsuchen",
-		"wantsToSearchWithPath": "Roo Code möchte den Codebase nach <code>{{query}}</code> in <code>{{path}}</code> durchsuchen",
+		"wantsToSearch": "VibeX Code möchte den Codebase nach <code>{{query}}</code> durchsuchen",
+		"wantsToSearchWithPath": "VibeX Code möchte den Codebase nach <code>{{query}}</code> in <code>{{path}}</code> durchsuchen",
 		"didSearch_one": "1 Ergebnis gefunden",
 		"didSearch_other": "{{count}} Ergebnisse gefunden",
 		"resultTooltip": "Ähnlichkeitswert: {{score}} (klicken zum Öffnen der Datei)"
@@ -428,7 +428,7 @@
 		"ariaLabel": "Version {{version}} - Klicken Sie, um die Versionshinweise anzuzeigen"
 	},
 	"rooCloudCTA": {
-		"title": "Roo Code Cloud entwickelt sich weiter!",
+		"title": "VibeX Code Cloud entwickelt sich weiter!",
 		"description": "Führe Remote-Agenten in der Cloud aus, greife von überall auf deine Aufgaben zu, arbeite mit anderen zusammen und vieles mehr.",
 		"joinWaitlist": "Melde dich an, um die neuesten Updates zu erhalten."
 	},
@@ -469,8 +469,8 @@
 		"clickToEdit": "Klicken zum Bearbeiten der Nachricht"
 	},
 	"slashCommand": {
-		"wantsToRun": "Roo Code möchte einen Slash-Befehl ausführen",
-		"didRun": "Roo Code hat einen Slash-Befehl ausgeführt"
+		"wantsToRun": "VibeX Code möchte einen Slash-Befehl ausführen",
+		"didRun": "VibeX Code hat einen Slash-Befehl ausgeführt"
 	},
 	"todo": {
 		"partial": "{{completed}} von {{total}} To-Dos erledigt",

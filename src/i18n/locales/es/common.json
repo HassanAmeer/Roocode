@@ -1,6 +1,6 @@
 {
 	"extension": {
-		"name": "Roo Code",
+		"name": "VibeX Code",
 		"description": "Un equipo completo de desarrolladores con IA en tu editor."
 	},
 	"number_format": {
@@ -176,8 +176,8 @@
 	},
 	"storage": {
 		"prompt_custom_path": "Ingresa la ruta de almacenamiento personalizada para el historial de conversaciones, déjala vacía para usar la ubicación predeterminada",
-		"path_placeholder": "D:\\Roo CodeStorage",
-		"enter_absolute_path": "Por favor, ingresa una ruta absoluta (por ejemplo, D:\\Roo CodeStorage o /home/user/storage)",
+		"path_placeholder": "D:\\VibeX CodeStorage",
+		"enter_absolute_path": "Por favor, ingresa una ruta absoluta (por ejemplo, D:\\VibeX CodeStorage o /home/user/storage)",
 		"enter_valid_path": "Por favor, ingresa una ruta válida"
 	},
 	"input": {

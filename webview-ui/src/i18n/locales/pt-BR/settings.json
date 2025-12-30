@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "Precisa falar conosco? Escreva"
 		},
-		"community": "Quer dicas ou apenas conversar com outros usuários do VibeX Code? Junte-se a <redditLink>reddit.com/r/Roo Code</redditLink> ou <discordLink>discord.gg/roocode</discordLink>",
+		"community": "Quer dicas ou apenas conversar com outros usuários do VibeX Code? Junte-se a <redditLink>reddit.com/r/VibeX Code</redditLink> ou <discordLink>discord.gg/roocode</discordLink>",
 		"contactAndCommunity": "Contato e Comunidade",
 		"manageSettings": "Gerenciar Configurações"
 	},
@@ -496,7 +496,7 @@
 		},
 		"consecutiveMistakeLimit": {
 			"label": "Limite de Erros e Repetições",
-			"description": "Número de erros consecutivos ou ações repetidas antes de exibir o diálogo 'Roo Code está com problemas'. Defina como 0 para desativar este mecanismo de segurança (ele nunca será acionado).",
+			"description": "Número de erros consecutivos ou ações repetidas antes de exibir o diálogo 'VibeX Code está com problemas'. Defina como 0 para desativar este mecanismo de segurança (ele nunca será acionado).",
 			"unlimitedDescription": "Tentativas ilimitadas ativadas (prosseguimento automático). O diálogo nunca aparecerá.",
 			"warning": "⚠️ Definir como 0 permite tentativas ilimitadas, o que pode consumir um uso significativo da API"
 		},
@@ -878,7 +878,7 @@
 		"simplifiedExplanation": "Você pode ajustar as configurações detalhadas do modelo mais tarde."
 	},
 	"footer": {
-		"feedback": "Se tiver alguma dúvida ou feedback, sinta-se à vontade para abrir um problema em <githubLink>github.com/Roo CodeInc/Roo Code-Code</githubLink> ou juntar-se a <redditLink>reddit.com/r/Roo Code</redditLink> ou <discordLink>discord.gg/roocode</discordLink>",
+		"feedback": "Se tiver alguma dúvida ou feedback, sinta-se à vontade para abrir um problema em <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> ou juntar-se a <redditLink>reddit.com/r/VibeX Code</redditLink> ou <discordLink>discord.gg/roocode</discordLink>",
 		"telemetry": {
 			"label": "Permitir relatórios anônimos de erros e uso",
 			"description": "Ajude a melhorar o VibeX Code enviando dados de uso anônimos e relatórios de erros. Esta telemetria não coleta código, prompts ou informações pessoais. Consulte nossa <privacyLink>política de privacidade</privacyLink> para mais detalhes."

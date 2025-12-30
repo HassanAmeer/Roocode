@@ -13,7 +13,7 @@
 
 # Wkład w VibeX Code
 
-Roo Code to projekt społecznościowy i głęboko cenimy każdy wkład. Aby usprawnić współpracę, działamy w oparciu o [podejście „najpierw zgłoszenie”](#podejście-najpierw-zgłoszenie), co oznacza, że wszystkie [żądania ściągnięcia (PR)](#przesyłanie-żądania-ściągnięcia) muszą być najpierw połączone ze zgłoszeniem na GitHubie. Prosimy o uważne zapoznanie się z tym przewodnikiem.
+VibeX Code to projekt społecznościowy i głęboko cenimy każdy wkład. Aby usprawnić współpracę, działamy w oparciu o [podejście „najpierw zgłoszenie”](#podejście-najpierw-zgłoszenie), co oznacza, że wszystkie [żądania ściągnięcia (PR)](#przesyłanie-żądania-ściągnięcia) muszą być najpierw połączone ze zgłoszeniem na GitHubie. Prosimy o uważne zapoznanie się z tym przewodnikiem.
 
 ## Spis treści
 

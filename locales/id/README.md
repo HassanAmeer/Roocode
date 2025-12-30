@@ -35,7 +35,7 @@
 - [简体中文](../zh-CN/README.md)
 - [繁體中文](../zh-TW/README.md)
 - ...
-    </details>
+      </details>
 
 ---
 
@@ -51,7 +51,7 @@
 
 ## Mode
 
-Roo Code beradaptasi dengan cara Anda bekerja, bukan sebaliknya:
+VibeX Code beradaptasi dengan cara Anda bekerja, bukan sebaliknya:
 
 - Mode Kode: pengkodean sehari-hari, pengeditan, dan operasi file
 - Mode Arsitek: merencanakan sistem, spesifikasi, dan migrasi

@@ -35,7 +35,7 @@
 		"ui": "UI",
 		"experimental": "실험적",
 		"language": "언어",
-		"about": "Roo Code 정보"
+		"about": "VibeX Code 정보"
 	},
 	"about": {
 		"bugReport": {
@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "문의가 필요하신가요? 이메일 보내기"
 		},
-		"community": "팁을 얻거나 다른 VibeX Code 사용자들과 교류하고 싶으신가요? <redditLink>reddit.com/r/Roo Code</redditLink> 또는 <discordLink>discord.gg/roocode</discordLink>에 참여하세요",
+		"community": "팁을 얻거나 다른 VibeX Code 사용자들과 교류하고 싶으신가요? <redditLink>reddit.com/r/VibeX Code</redditLink> 또는 <discordLink>discord.gg/roocode</discordLink>에 참여하세요",
 		"contactAndCommunity": "문의 및 커뮤니티",
 		"manageSettings": "설정 관리"
 	},
@@ -438,8 +438,8 @@
 			"instructions": "사용 중에 대화 상자가 나타나고 현재 메시지가 자동으로 클립보드에 복사됩니다. 이를 웹 버전 AI(예: ChatGPT 또는 Claude)에 붙여넣은 다음, AI의 응답을 대화 상자에 복사하고 확인 버튼을 클릭해야 합니다."
 		},
 		"roo": {
-			"authenticatedMessage": "Roo Code Cloud 계정을 통해 안전하게 인증되었습니다.",
-			"connectButton": "Roo Code Cloud에 연결"
+			"authenticatedMessage": "VibeX Code Cloud 계정을 통해 안전하게 인증되었습니다.",
+			"connectButton": "VibeX Code Cloud에 연결"
 		},
 		"openRouter": {
 			"providerRouting": {
@@ -878,7 +878,7 @@
 		"simplifiedExplanation": "나중에 자세한 모델 설정을 조정할 수 있습니다."
 	},
 	"footer": {
-		"feedback": "질문이나 피드백이 있으시면 <githubLink>github.com/Roo CodeInc/Roo Code-Code</githubLink>에서 이슈를 열거나 <redditLink>reddit.com/r/Roo Code</redditLink> 또는 <discordLink>discord.gg/roocode</discordLink>에 가입하세요",
+		"feedback": "질문이나 피드백이 있으시면 <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink>에서 이슈를 열거나 <redditLink>reddit.com/r/VibeX Code</redditLink> 또는 <discordLink>discord.gg/roocode</discordLink>에 가입하세요",
 		"telemetry": {
 			"label": "익명 오류 및 사용 보고 허용",
 			"description": "익명 사용 데이터 및 오류 보고서를 전송하여 VibeX Code 개선에 도움을 주세요. 이 텔레메트리는 코드, 프롬프트 또는 개인 정보를 수집하지 않습니다. 자세한 내용은 <privacyLink>개인정보 보호정책</privacyLink>을 참조하세요."

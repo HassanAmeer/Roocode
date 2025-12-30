@@ -87,7 +87,7 @@
 		"tooltip": "Cancel·la l'operació actual"
 	},
 	"scrollToBottom": "Desplaça't al final del xat",
-	"about": "Roo Code és tot un equip de desenvolupament d'IA al teu editor.",
+	"about": "VibeX Code és tot un equip de desenvolupament d'IA al teu editor.",
 	"docs": "Consulta els nostres <DocsLink>documents</DocsLink> per a més informació.",
 	"onboarding": "La teva llista de tasques en aquest espai de treball està buida.",
 	"rooTips": {
@@ -131,7 +131,7 @@
 	"diffError": {
 		"title": "Edició fallida"
 	},
-	"troubleMessage": "Roo Code està tenint problemes...",
+	"troubleMessage": "VibeX Code està tenint problemes...",
 	"apiRequest": {
 		"title": "Sol·licitud API",
 		"failed": "Sol·licitud API ha fallat",
@@ -173,42 +173,42 @@
 		"current": "Actual"
 	},
 	"instructions": {
-		"wantsToFetch": "Roo Code vol obtenir instruccions detallades per ajudar amb la tasca actual."
+		"wantsToFetch": "VibeX Code vol obtenir instruccions detallades per ajudar amb la tasca actual."
 	},
 	"fileOperations": {
-		"wantsToRead": "Roo Code vol llegir aquest fitxer",
-		"wantsToReadOutsideWorkspace": "Roo Code vol llegir aquest fitxer fora de l'espai de treball",
-		"didRead": "Roo Code ha llegit aquest fitxer",
-		"wantsToEdit": "Roo Code vol editar aquest fitxer",
-		"wantsToEditOutsideWorkspace": "Roo Code vol editar aquest fitxer fora de l'espai de treball",
-		"wantsToEditProtected": "Roo Code vol editar un fitxer de configuració protegit",
-		"wantsToCreate": "Roo Code vol crear un nou fitxer",
-		"wantsToSearchReplace": "Roo Code vol realitzar cerca i substitució en aquest fitxer",
-		"didSearchReplace": "Roo Code ha realitzat cerca i substitució en aquest fitxer",
-		"wantsToInsert": "Roo Code vol inserir contingut en aquest fitxer",
-		"wantsToInsertWithLineNumber": "Roo Code vol inserir contingut a la línia {{lineNumber}} d'aquest fitxer",
-		"wantsToInsertAtEnd": "Roo Code vol afegir contingut al final d'aquest fitxer",
+		"wantsToRead": "VibeX Code vol llegir aquest fitxer",
+		"wantsToReadOutsideWorkspace": "VibeX Code vol llegir aquest fitxer fora de l'espai de treball",
+		"didRead": "VibeX Code ha llegit aquest fitxer",
+		"wantsToEdit": "VibeX Code vol editar aquest fitxer",
+		"wantsToEditOutsideWorkspace": "VibeX Code vol editar aquest fitxer fora de l'espai de treball",
+		"wantsToEditProtected": "VibeX Code vol editar un fitxer de configuració protegit",
+		"wantsToCreate": "VibeX Code vol crear un nou fitxer",
+		"wantsToSearchReplace": "VibeX Code vol realitzar cerca i substitució en aquest fitxer",
+		"didSearchReplace": "VibeX Code ha realitzat cerca i substitució en aquest fitxer",
+		"wantsToInsert": "VibeX Code vol inserir contingut en aquest fitxer",
+		"wantsToInsertWithLineNumber": "VibeX Code vol inserir contingut a la línia {{lineNumber}} d'aquest fitxer",
+		"wantsToInsertAtEnd": "VibeX Code vol afegir contingut al final d'aquest fitxer",
 		"wantsToReadAndXMore": "En VibeX Code vol llegir aquest fitxer i {{count}} més",
-		"wantsToReadMultiple": "Roo Code vol llegir diversos fitxers",
-		"wantsToApplyBatchChanges": "Roo Code vol aplicar canvis a múltiples fitxers",
-		"wantsToGenerateImage": "Roo Code vol generar una imatge",
-		"wantsToGenerateImageOutsideWorkspace": "Roo Code vol generar una imatge fora de l'espai de treball",
-		"wantsToGenerateImageProtected": "Roo Code vol generar una imatge en una ubicació protegida",
-		"didGenerateImage": "Roo Code ha generat una imatge"
+		"wantsToReadMultiple": "VibeX Code vol llegir diversos fitxers",
+		"wantsToApplyBatchChanges": "VibeX Code vol aplicar canvis a múltiples fitxers",
+		"wantsToGenerateImage": "VibeX Code vol generar una imatge",
+		"wantsToGenerateImageOutsideWorkspace": "VibeX Code vol generar una imatge fora de l'espai de treball",
+		"wantsToGenerateImageProtected": "VibeX Code vol generar una imatge en una ubicació protegida",
+		"didGenerateImage": "VibeX Code ha generat una imatge"
 	},
 	"directoryOperations": {
-		"wantsToViewTopLevel": "Roo Code vol veure els fitxers de nivell superior en aquest directori",
-		"didViewTopLevel": "Roo Code ha vist els fitxers de nivell superior en aquest directori",
-		"wantsToViewRecursive": "Roo Code vol veure recursivament tots els fitxers en aquest directori",
-		"didViewRecursive": "Roo Code ha vist recursivament tots els fitxers en aquest directori",
-		"wantsToSearch": "Roo Code vol cercar en aquest directori <code>{{regex}}</code>",
-		"didSearch": "Roo Code ha cercat en aquest directori <code>{{regex}}</code>",
-		"wantsToSearchOutsideWorkspace": "Roo Code vol cercar en aquest directori (fora de l'espai de treball) <code>{{regex}}</code>",
-		"didSearchOutsideWorkspace": "Roo Code ha cercat en aquest directori (fora de l'espai de treball) <code>{{regex}}</code>",
-		"wantsToViewTopLevelOutsideWorkspace": "Roo Code vol veure els fitxers de nivell superior en aquest directori (fora de l'espai de treball)",
-		"didViewTopLevelOutsideWorkspace": "Roo Code ha vist els fitxers de nivell superior en aquest directori (fora de l'espai de treball)",
-		"wantsToViewRecursiveOutsideWorkspace": "Roo Code vol veure recursivament tots els fitxers en aquest directori (fora de l'espai de treball)",
-		"didViewRecursiveOutsideWorkspace": "Roo Code ha vist recursivament tots els fitxers en aquest directori (fora de l'espai de treball)"
+		"wantsToViewTopLevel": "VibeX Code vol veure els fitxers de nivell superior en aquest directori",
+		"didViewTopLevel": "VibeX Code ha vist els fitxers de nivell superior en aquest directori",
+		"wantsToViewRecursive": "VibeX Code vol veure recursivament tots els fitxers en aquest directori",
+		"didViewRecursive": "VibeX Code ha vist recursivament tots els fitxers en aquest directori",
+		"wantsToSearch": "VibeX Code vol cercar en aquest directori <code>{{regex}}</code>",
+		"didSearch": "VibeX Code ha cercat en aquest directori <code>{{regex}}</code>",
+		"wantsToSearchOutsideWorkspace": "VibeX Code vol cercar en aquest directori (fora de l'espai de treball) <code>{{regex}}</code>",
+		"didSearchOutsideWorkspace": "VibeX Code ha cercat en aquest directori (fora de l'espai de treball) <code>{{regex}}</code>",
+		"wantsToViewTopLevelOutsideWorkspace": "VibeX Code vol veure els fitxers de nivell superior en aquest directori (fora de l'espai de treball)",
+		"didViewTopLevelOutsideWorkspace": "VibeX Code ha vist els fitxers de nivell superior en aquest directori (fora de l'espai de treball)",
+		"wantsToViewRecursiveOutsideWorkspace": "VibeX Code vol veure recursivament tots els fitxers en aquest directori (fora de l'espai de treball)",
+		"didViewRecursiveOutsideWorkspace": "VibeX Code ha vist recursivament tots els fitxers en aquest directori (fora de l'espai de treball)"
 	},
 	"commandOutput": "Sortida de la comanda",
 	"commandExecution": {
@@ -236,18 +236,18 @@
 		"youSaid": "Has dit"
 	},
 	"mcp": {
-		"wantsToUseTool": "Roo Code vol utilitzar una eina al servidor MCP {{serverName}}",
-		"wantsToAccessResource": "Roo Code vol accedir a un recurs al servidor MCP {{serverName}}"
+		"wantsToUseTool": "VibeX Code vol utilitzar una eina al servidor MCP {{serverName}}",
+		"wantsToAccessResource": "VibeX Code vol accedir a un recurs al servidor MCP {{serverName}}"
 	},
 	"modes": {
-		"wantsToSwitch": "Roo Code vol canviar a mode <code>{{mode}}</code>",
-		"wantsToSwitchWithReason": "Roo Code vol canviar a mode <code>{{mode}}</code> perquè: {{reason}}",
-		"didSwitch": "Roo Code ha canviat a mode <code>{{mode}}</code>",
-		"didSwitchWithReason": "Roo Code ha canviat a mode <code>{{mode}}</code> perquè: {{reason}}"
+		"wantsToSwitch": "VibeX Code vol canviar a mode <code>{{mode}}</code>",
+		"wantsToSwitchWithReason": "VibeX Code vol canviar a mode <code>{{mode}}</code> perquè: {{reason}}",
+		"didSwitch": "VibeX Code ha canviat a mode <code>{{mode}}</code>",
+		"didSwitchWithReason": "VibeX Code ha canviat a mode <code>{{mode}}</code> perquè: {{reason}}"
 	},
 	"subtasks": {
-		"wantsToCreate": "Roo Code vol crear una nova subtasca en mode <code>{{mode}}</code>",
-		"wantsToFinish": "Roo Code vol finalitzar aquesta subtasca",
+		"wantsToCreate": "VibeX Code vol crear una nova subtasca en mode <code>{{mode}}</code>",
+		"wantsToFinish": "VibeX Code vol finalitzar aquesta subtasca",
 		"newTaskContent": "Instruccions de la subtasca",
 		"completionContent": "Subtasca completada",
 		"resultContent": "Resultats de la subtasca",
@@ -255,7 +255,7 @@
 		"completionInstructions": "Subtasca completada! Pots revisar els resultats i suggerir correccions o següents passos. Si tot sembla correcte, confirma per tornar el resultat a la tasca principal."
 	},
 	"questions": {
-		"hasQuestion": "Roo Code té una pregunta"
+		"hasQuestion": "VibeX Code té una pregunta"
 	},
 	"taskCompleted": "Tasca completada",
 	"modelResponseIncomplete": "Resposta del model incompleta",
@@ -317,7 +317,7 @@
 		"timerPrefix": "Aprovació automàtica habilitada. Seleccionant en {{seconds}}s…"
 	},
 	"announcement": {
-		"title": "Roo Code {{version}} Llançat",
+		"title": "VibeX Code {{version}} Llançat",
 		"support": "Si us plau, dona suport a VibeX Code fent una estrella al nostre <githubLink>GitHub</githubLink>.",
 		"stealthModel": {
 			"feature": "<bold>Model stealth GRATUÏT per temps limitat</bold> - Code Supernova: Ara actualitzat amb una <bold>finestra de context d'1M tokens</bold>! Un model de codificació agèntica versàtil que suporta entrades d'imatges, disponible a través de VibeX Code Cloud.",
@@ -328,7 +328,7 @@
 		},
 		"release": {
 			"heading": "Què hi ha de nou:",
-			"skills": "Roo Code ara suporta <skillsLink>Agent Skills</skillsLink> - paquets reutilitzables de prompts, ferramentes i recursos per estendre les capacitats de VibeX Code.",
+			"skills": "VibeX Code ara suporta <skillsLink>Agent Skills</skillsLink> - paquets reutilitzables de prompts, ferramentes i recursos per estendre les capacitats de VibeX Code.",
 			"nativeToolCalling": "L'invocació nativa d'eines és ara obligatòria per a totes les noves tasques. <blogLink>Més informació</blogLink> sobre la motivació i què fer si trobes problemes."
 		},
 		"cloudAgents": {
@@ -341,7 +341,7 @@
 	},
 	"browser": {
 		"session": "Sessió del navegador",
-		"rooWantsToUse": "Roo Code vol utilitzar el navegador",
+		"rooWantsToUse": "VibeX Code vol utilitzar el navegador",
 		"consoleLogs": "Registres de consola",
 		"noNewLogs": "(Cap registre nou)",
 		"screenshot": "Captura de pantalla del navegador",
@@ -393,18 +393,18 @@
 	"ask": {
 		"autoApprovedRequestLimitReached": {
 			"title": "S'ha arribat al límit de sol·licituds aprovades automàticament",
-			"description": "Roo Code ha arribat al límit aprovat automàticament de {{count}} sol·licitud(s) d'API. Vols reiniciar el comptador i continuar amb la tasca?",
+			"description": "VibeX Code ha arribat al límit aprovat automàticament de {{count}} sol·licitud(s) d'API. Vols reiniciar el comptador i continuar amb la tasca?",
 			"button": "Reiniciar i continuar"
 		},
 		"autoApprovedCostLimitReached": {
 			"title": "S'ha arribat al límit de cost d'aprovació automàtica",
 			"button": "Restableix i continua",
-			"description": "Roo Code ha arribat al límit de cost aprovat automàticament de ${{count}}. Vols restablir el cost i continuar amb la tasca?"
+			"description": "VibeX Code ha arribat al límit de cost aprovat automàticament de ${{count}}. Vols restablir el cost i continuar amb la tasca?"
 		}
 	},
 	"codebaseSearch": {
-		"wantsToSearch": "Roo Code vol cercar a la base de codi <code>{{query}}</code>",
-		"wantsToSearchWithPath": "Roo Code vol cercar a la base de codi <code>{{query}}</code> a <code>{{path}}</code>",
+		"wantsToSearch": "VibeX Code vol cercar a la base de codi <code>{{query}}</code>",
+		"wantsToSearchWithPath": "VibeX Code vol cercar a la base de codi <code>{{query}}</code> a <code>{{path}}</code>",
 		"didSearch_one": "S'ha trobat 1 resultat",
 		"didSearch_other": "S'han trobat {{count}} resultats",
 		"resultTooltip": "Puntuació de similitud: {{score}} (fes clic per obrir el fitxer)"
@@ -428,7 +428,7 @@
 		"ariaLabel": "Versió {{version}} - Feu clic per veure les notes de llançament"
 	},
 	"rooCloudCTA": {
-		"title": "Roo Code Cloud està evolucionant!",
+		"title": "VibeX Code Cloud està evolucionant!",
 		"description": "Executa agents remots al núvol, accedeix a les teves tasques des de qualsevol lloc, col·labora amb altres i molt més.",
 		"joinWaitlist": "Registra't per rebre les últimes actualitzacions."
 	},
@@ -463,8 +463,8 @@
 		"clickToEdit": "Feu clic per editar el missatge"
 	},
 	"slashCommand": {
-		"wantsToRun": "Roo Code vol executar una comanda slash",
-		"didRun": "Roo Code ha executat una comanda slash"
+		"wantsToRun": "VibeX Code vol executar una comanda slash",
+		"didRun": "VibeX Code ha executat una comanda slash"
 	},
 	"contextMenu": {
 		"noResults": "Sense resultats",

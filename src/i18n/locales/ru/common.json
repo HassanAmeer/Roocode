@@ -1,6 +1,6 @@
 {
 	"extension": {
-		"name": "Roo Code",
+		"name": "VibeX Code",
 		"description": "Целая команда ИИ-разработчиков в вашем редакторе."
 	},
 	"number_format": {
@@ -176,8 +176,8 @@
 	},
 	"storage": {
 		"prompt_custom_path": "Введите пользовательский путь хранения истории разговоров, оставьте пустым для использования расположения по умолчанию",
-		"path_placeholder": "D:\\Roo CodeStorage",
-		"enter_absolute_path": "Пожалуйста, введите абсолютный путь (например, D:\\Roo CodeStorage или /home/user/storage)",
+		"path_placeholder": "D:\\VibeX CodeStorage",
+		"enter_absolute_path": "Пожалуйста, введите абсолютный путь (например, D:\\VibeX CodeStorage или /home/user/storage)",
 		"enter_valid_path": "Пожалуйста, введите корректный путь"
 	},
 	"input": {

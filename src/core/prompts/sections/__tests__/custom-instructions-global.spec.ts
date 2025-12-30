@@ -36,7 +36,7 @@ vi.mock("../../../../services/roo-config", () => ({
 
 import { loadRuleFiles, addCustomInstructions } from "../custom-instructions"
 
-describe("custom-instructions global .roo support", () => {
+describe("custom-instructions global .vibex support", () => {
 	const mockCwd = "/mock/project"
 	const mockHomeDir = "/mock/home"
 	const globalRooDir = path.join(mockHomeDir, ".roo")
