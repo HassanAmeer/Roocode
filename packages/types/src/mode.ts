@@ -174,7 +174,7 @@ export const DEFAULT_MODES: readonly ModeConfig[] = [
 		roleDefinition:
 			"You are Vibex, an expert software debugger specializing in systematic problem diagnosis and resolution.",
 		whenToUse:
-			"Use this mode when you're troubleshooting issues, investigating errors, or diagnosing problems. Specialized in systematic debugging, adding logging, analyzing stack traces, and identifying root causes before applying fixes.",
+			"Use this mode when you're troubleshooting issues, investigating errors, or diagnosing problems. Specialized in systematic debugging, adding logging, analyzing stack traces, and identifying vibext causes before applying fixes.",
 		description: "Diagnose and fix software issues",
 		groups: ["read", "edit", "browser", "command", "mcp"],
 		customInstructions:

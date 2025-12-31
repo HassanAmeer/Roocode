@@ -90,7 +90,7 @@
 	"about": "VibeX Code, düzenleyicinizdeki bütün bir yapay zeka geliştirme ekibidir.",
 	"docs": "Daha fazla bilgi için <DocsLink>belgelerimize</DocsLink> göz atın.",
 	"onboarding": "Bu çalışma alanındaki görev listeniz boş.",
-	"rooTips": {
+	"vibexTips": {
 		"customizableModes": {
 			"title": "Özelleştirilebilir modlar",
 			"description": "Göreve odaklanan ve sonuç veren özel kişilikler."
@@ -231,7 +231,7 @@
 	"response": "Yanıt",
 	"arguments": "Argümanlar",
 	"text": {
-		"rooSaid": "VibeX Code dedi"
+		"vibexSaid": "VibeX Code dedi"
 	},
 	"feedback": {
 		"youSaid": "Dediniz ki"
@@ -324,7 +324,7 @@
 			"feature": "<bold>Sınırlı süre ÜCRETSİZ gizli model</bold> - Code Supernova: Artık <bold>1M token bağlam penceresi</bold> ile yükseltildi! Görüntü girişlerini destekleyen çok amaçlı acentik kodlama modeli, VibeX Code Cloud üzerinden kullanılabilir.",
 			"note": "(Not: istemler ve tamamlamalar model yaratıcısı tarafından kaydedilir ve modeli geliştirmek için kullanılır)",
 			"connectButton": "VibeX Code Cloud'a bağlan",
-			"selectModel": "Başlamak için Ayarlar'da VibeX Code Cloud sağlayıcısından <code>roo/code-supernova</code>'yı seçin.",
+			"selectModel": "Başlamak için Ayarlar'da VibeX Code Cloud sağlayıcısından <code>vibex/code-supernova</code>'yı seçin.",
 			"goToSettingsButton": "Ayarlar'a Git"
 		},
 		"release": {
@@ -342,7 +342,7 @@
 	},
 	"browser": {
 		"session": "Tarayıcı Oturumu",
-		"rooWantsToUse": "VibeX Code tarayıcıyı kullanmak istiyor",
+		"vibexWantsToUse": "VibeX Code tarayıcıyı kullanmak istiyor",
 		"consoleLogs": "Konsol Kayıtları",
 		"noNewLogs": "(Yeni kayıt yok)",
 		"screenshot": "Tarayıcı ekran görüntüsü",
@@ -428,7 +428,7 @@
 	"versionIndicator": {
 		"ariaLabel": "Sürüm {{version}} - Sürüm notlarını görüntülemek için tıklayın"
 	},
-	"rooCloudCTA": {
+	"vibexCloudCTA": {
 		"title": "VibeX Code Cloud gelişiyor!",
 		"description": "Bulutta uzak ajanlar çalıştırın, görevlerinize her yerden erişin, başkalarıyla işbirliği yapın ve daha fazlası.",
 		"joinWaitlist": "En son güncellemeleri almak için kaydolun."

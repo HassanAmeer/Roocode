@@ -116,7 +116,7 @@ describe("CloudView", () => {
 		expect(screen.getByText("test@example.com")).toBeInTheDocument()
 	})
 
-	it("should display remote control toggle when user has extension bridge enabled and roomote control enabled", () => {
+	it("should display remote control toggle when user has extension bridge enabled and vibexmote control enabled", () => {
 		const mockUserInfo = {
 			name: "Test User",
 			email: "test@example.com",
@@ -147,7 +147,7 @@ describe("CloudView", () => {
 		expect(screen.queryByText("VibexRemote Control")).not.toBeInTheDocument()
 	})
 
-	it("should not display remote control toggle when roomote control is disabled", () => {
+	it("should not display remote control toggle when vibexmote control is disabled", () => {
 		// Temporarily override the mock for this specific test
 		const originalFeatureVibexRemoteControlEnabled = mockExtensionState.featureVibexRemoteControlEnabled
 		mockExtensionState.featureVibexRemoteControlEnabled = false
@@ -155,7 +155,7 @@ describe("CloudView", () => {
 		const mockUserInfo = {
 			name: "Test User",
 			email: "test@example.com",
-			extensionBridgeEnabled: true, // Bridge enabled but roomote control disabled
+			extensionBridgeEnabled: true, // Bridge enabled but vibexmote control disabled
 		}
 
 		render(<CloudView userInfo={mockUserInfo} isAuthenticated={true} cloudApiUrl="https://app.vibex.com" />)

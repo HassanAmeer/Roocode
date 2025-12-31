@@ -1,6 +1,6 @@
-import { type ProviderSettings, type OrganizationAllowList, rooDefaultModelId } from "@roo-code/types"
+import { type ProviderSettings, type OrganizationAllowList, vibexDefaultModelId } from "@vibex-code/types"
 
-import type { RouterModels } from "@roo-code/types"
+import type { RouterModels } from "@vibex-code/types"
 
 import { useAppTranslation } from "@src/i18n/TranslationContext"
 import { vscode } from "@src/utils/vscode"
@@ -34,23 +34,23 @@ export const Vibex = ({
 			{cloudIsAuthenticated ? (
 				<div className="flex justify-between items-center mb-2">
 					<div className="text-sm text-vscode-descriptionForeground">
-						{t("settings:providers.roo.authenticatedMessage")}
+						{t("settings:providers.vibex.authenticatedMessage")}
 					</div>
 				</div>
 			) : (
 				<div className="flex flex-col gap-2">
 					<Button
 						variant="primary"
-						onClick={() => vscode.postMessage({ type: "rooCloudSignIn" })}
+						onClick={() => vscode.postMessage({ type: "vibexCloudSignIn" })}
 						className="w-fit">
-						{t("settings:providers.roo.connectButton")}
+						{t("settings:providers.vibex.connectButton")}
 					</Button>
 				</div>
 			)}
 			<ModelPicker
 				apiConfiguration={apiConfiguration}
 				setApiConfigurationField={setApiConfigurationField}
-				defaultModelId={rooDefaultModelId}
+				defaultModelId={vibexDefaultModelId}
 				models={routerModels?.vibex ?? {}}
 				modelIdKey="apiModelId"
 				serviceName="Vibex Cloud"

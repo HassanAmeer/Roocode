@@ -6,10 +6,10 @@ We actively patch only the most recent minor release of VibeX Code. Older versi
 
 ## Reporting a Vulnerability
 
-Email security@roocode.com with:
+Email security@vibexcode.com with:
 
 - A short summary of the issue
-- Steps to reproduce or a proof of concept
+- Steps to reproduce or a pvibexf of concept
 - Any logs, stack traces, or screenshots that might help us understand the problem
 
 We acknowledge reports within 48 hours and aim to release a fix or mitigation within 30 days. While we work on a resolution, please keep the details private.

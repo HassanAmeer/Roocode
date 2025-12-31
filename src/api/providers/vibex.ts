@@ -1,9 +1,9 @@
 import { Anthropic } from "@anthropic-ai/sdk"
 import OpenAI from "openai"
 
-import { rooDefaultModelId, getApiProtocol, type ImageGenerationApiMethod } from "@roo-code/types"
+import { vibexDefaultModelId, getApiProtocol, type ImageGenerationApiMethod } from "@vibex-code/types"
 import { NativeToolCallParser } from "../../core/assistant-message/NativeToolCallParser"
-import { CloudService } from "@roo-code/cloud"
+import { CloudService } from "@vibex-code/cloud"
 
 import { Package } from "../../shared/package"
 import type { ApiHandlerOptions, ModelRecord } from "../../shared/api"
@@ -57,7 +57,7 @@ export class VibeXHandler extends BaseOpenAiCompatibleProvider<string> {
 			providerName: "Vibex Cloud",
 			baseURL, // Already has /v1 suffix
 			apiKey: sessionToken,
-			defaultProviderModelId: rooDefaultModelId,
+			defaultProviderModelId: vibexDefaultModelId,
 			providerModels: {},
 		})
 
@@ -96,7 +96,7 @@ export class VibeXHandler extends BaseOpenAiCompatibleProvider<string> {
 		const max_tokens = params.maxTokens ?? undefined
 		const temperature = params.temperature ?? this.defaultTemperature
 
-		const rooParams: VibeXChatCompletionParams = {
+		const vibexParams: VibeXChatCompletionParams = {
 			model,
 			max_tokens,
 			temperature,
@@ -110,7 +110,7 @@ export class VibeXHandler extends BaseOpenAiCompatibleProvider<string> {
 
 		try {
 			this.client.apiKey = getSessionToken()
-			return this.client.chat.completions.create(rooParams, requestOptions)
+			return this.client.chat.completions.create(vibexParams, requestOptions)
 		} catch (error) {
 			throw handleOpenAIError(error, this.providerName)
 		}
@@ -299,7 +299,7 @@ export class VibeXHandler extends BaseOpenAiCompatibleProvider<string> {
 				// - OpenAI protocol expects TOTAL input tokens (cached + non-cached)
 				// - Anthropic protocol expects NON-CACHED input tokens (caches passed separately)
 				const modelId = model.id
-				const apiProtocol = getApiProtocol("roo", modelId)
+				const apiProtocol = getApiProtocol("vibex", modelId)
 
 				const promptTokens = lastUsage.prompt_tokens || 0
 				const cacheWrite = lastUsage.cache_creation_input_tokens || 0
@@ -340,7 +340,7 @@ export class VibeXHandler extends BaseOpenAiCompatibleProvider<string> {
 		try {
 			// Fetch models and cache them in the shared cache
 			await getModels({
-				provider: "roo",
+				provider: "vibex",
 				baseUrl: baseURL,
 				apiKey,
 			})
@@ -356,10 +356,10 @@ export class VibeXHandler extends BaseOpenAiCompatibleProvider<string> {
 	}
 
 	override getModel() {
-		const modelId = this.options.apiModelId || rooDefaultModelId
+		const modelId = this.options.apiModelId || vibexDefaultModelId
 
 		// Get models from shared cache (settings are already applied by the fetcher)
-		const models = getModelsFromCache("roo") || {}
+		const models = getModelsFromCache("vibex") || {}
 		const modelInfo = models[modelId]
 
 		if (modelInfo) {
@@ -404,7 +404,7 @@ export class VibeXHandler extends BaseOpenAiCompatibleProvider<string> {
 		if (!sessionToken || sessionToken === "unauthenticated") {
 			return {
 				success: false,
-				error: t("tools:generateImage.roo.authRequired"),
+				error: t("tools:generateImage.vibex.authRequired"),
 			}
 		}
 

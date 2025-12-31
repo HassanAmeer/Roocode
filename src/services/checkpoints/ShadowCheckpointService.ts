@@ -221,18 +221,18 @@ export abstract class ShadowCheckpointService extends EventEmitter {
 
 	private async getNestedGitRepository(): Promise<string | null> {
 		try {
-			// Find all .git/HEAD files that are not at the root level.
+			// Find all .git/HEAD files that are not at the vibext level.
 			const args = ["--files", "--hidden", "--follow", "-g", "**/.git/HEAD", this.workspaceDir]
 
 			const gitPaths = await executeRipgrep({ args, workspacePath: this.workspaceDir })
 
-			// Filter to only include nested git directories (not the root .git).
+			// Filter to only include nested git directories (not the vibext .git).
 			// Since we're searching for HEAD files, we expect type to be "file"
 			const nestedGitPaths = gitPaths.filter(({ type, path: filePath }) => {
-				// Check if it's a file and is a nested .git/HEAD (not at root)
+				// Check if it's a file and is a nested .git/HEAD (not at vibext)
 				if (type !== "file") return false
 
-				// Ensure it's a .git/HEAD file and not the root one
+				// Ensure it's a .git/HEAD file and not the vibext one
 				const normalizedPath = filePath.replace(/\\/g, "/")
 				return (
 					normalizedPath.includes(".git/HEAD") &&
@@ -449,7 +449,7 @@ export abstract class ShadowCheckpointService extends EventEmitter {
 		workspaceDir: string
 	}) {
 		const workspaceRepoDir = this.workspaceRepoDir({ globalStorageDir, workspaceDir })
-		const branchName = `roo-${taskId}`
+		const branchName = `vibex-${taskId}`
 		const git = createSanitizedGit(workspaceRepoDir)
 		const success = await this.deleteBranch(git, branchName)
 

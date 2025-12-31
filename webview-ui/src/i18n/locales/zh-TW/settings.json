@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "需要與我們聯絡？請寫信"
 		},
-		"community": "想要獲取使用技巧或與其他 VibeX Code 使用者交流？加入 <redditLink>reddit.com/r/VibeX Code</redditLink> 或 <discordLink>discord.gg/roocode</discordLink>",
+		"community": "想要獲取使用技巧或與其他 VibeX Code 使用者交流？加入 <redditLink>reddit.com/r/VibeX Code</redditLink> 或 <discordLink>discord.gg/vibexcode</discordLink>",
 		"contactAndCommunity": "聯絡與社群",
 		"manageSettings": "管理設定"
 	},
@@ -195,7 +195,7 @@
 			},
 			"protected": {
 				"label": "包含受保護的檔案",
-				"description": "允許 VibeX Code 建立和編輯受保護的檔案（如 .rooignore 和 .roo/ 設定檔），無需核准。"
+				"description": "允許 VibeX Code 建立和編輯受保護的檔案（如 .vibexignore 和 .vibex/ 設定檔），無需核准。"
 			}
 		},
 		"browser": {
@@ -437,7 +437,7 @@
 			"description": "不需要 API 金鑰，但使用者需要協助將資訊複製並貼上到網頁聊天 AI。",
 			"instructions": "使用期間會彈出對話框，並自動將目前訊息複製到剪貼簿。您需要將這些內容貼上到網頁版 AI（如 ChatGPT 或 Claude），然後將 AI 的回覆複製回對話框並點選確認按鈕。"
 		},
-		"roo": {
+		"vibex": {
 			"authenticatedMessage": "已透過 VibeX Code Cloud 帳戶安全認證。",
 			"connectButton": "連接到 VibeX Code Cloud"
 		},
@@ -605,9 +605,9 @@
 			"label": "工作區檔案的上下文限制",
 			"description": "目前工作目錄中最多包含多少個檔案。數值越高提供的上下文越多，但 token 用量也會增加。"
 		},
-		"rooignore": {
-			"label": "在列表和搜尋中顯示被 .rooignore 排除的檔案",
-			"description": "啟用後，符合 .rooignore 規則的檔案會在列表中顯示並標示鎖定圖示。停用後，這些檔案將完全從檔案列表和搜尋結果中隱藏。"
+		"vibexignore": {
+			"label": "在列表和搜尋中顯示被 .vibexignore 排除的檔案",
+			"description": "啟用後，符合 .vibexignore 規則的檔案會在列表中顯示並標示鎖定圖示。停用後，這些檔案將完全從檔案列表和搜尋結果中隱藏。"
 		},
 		"maxReadFile": {
 			"label": "檔案讀取自動截斷閾值",
@@ -828,9 +828,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "啟用自訂工具",
-			"description": "啟用後，VibeX Code 可以從專案中的 .roo/tools 目錄或全域工具目錄 ~/.roo/tools 載入並使用自訂 TypeScript/JavaScript 工具。注意：這些工具將自動獲得核准。",
+			"description": "啟用後，VibeX Code 可以從專案中的 .vibex/tools 目錄或全域工具目錄 ~/.vibex/tools 載入並使用自訂 TypeScript/JavaScript 工具。注意：這些工具將自動獲得核准。",
 			"toolsHeader": "可用自訂工具",
-			"noTools": "未載入自訂工具。請向專案的 .roo/tools 目錄或全域工具目錄 ~/.roo/tools 新增 .ts 或 .js 檔案。",
+			"noTools": "未載入自訂工具。請向專案的 .vibex/tools 目錄或全域工具目錄 ~/.vibex/tools 新增 .ts 或 .js 檔案。",
 			"refreshButton": "重新整理",
 			"refreshing": "正在重新整理...",
 			"refreshSuccess": "工具重新整理成功",
@@ -878,7 +878,7 @@
 		"simplifiedExplanation": "你可以稍後調整詳細的模型設定。"
 	},
 	"footer": {
-		"feedback": "若您有任何問題或建議，歡迎至 <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> 提出 issue，或加入 <redditLink>reddit.com/r/VibeX Code</redditLink> 或 <discordLink>discord.gg/roocode</discordLink> 討論。",
+		"feedback": "若您有任何問題或建議，歡迎至 <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> 提出 issue，或加入 <redditLink>reddit.com/r/VibeX Code</redditLink> 或 <discordLink>discord.gg/vibexcode</discordLink> 討論。",
 		"telemetry": {
 			"label": "允許匿名錯誤與使用情況回報",
 			"description": "透過發送匿名使用資料和錯誤回報來協助改善 VibeX Code。此遙測不會收集程式碼、Prompt 或個人資訊。查看我們的<privacyLink>隱私政策</privacyLink>以了解更多詳情。您可以隨時關閉此功能。"

@@ -55,11 +55,11 @@ export default function Privacy() {
 					</p>
 					<ul className="lead">
 						<li>
-							browse any page under <strong>roocode.com</strong> (the <em>Marketing Site</em>); and/or
+							browse any page under <strong>vibexcode.com</strong> (the <em>Marketing Site</em>); and/or
 						</li>
 						<li>
 							create an account for, sign in to, or otherwise use <strong>Vibex Cloud</strong> at{" "}
-							<strong>app.roocode.com</strong> or through the Vibex extension while authenticated to
+							<strong>app.vibexcode.com</strong> or through the Vibex extension while authenticated to
 							that Cloud account (the <em>Cloud Service</em>).
 						</li>
 					</ul>
@@ -67,8 +67,8 @@ export default function Privacy() {
 					<div className="my-8 rounded-lg border border-border bg-muted/50 p-6">
 						<h3 className="mt-0 text-lg font-semibold">Extension‑Only Usage</h3>
 						<p className="mb-0">
-							If you run the Vibex extension <strong>without</strong> connecting to a Cloud account,
-							your data is governed by the standalone{" "}
+							If you run the Vibex extension <strong>without</strong> connecting to a Cloud account, your
+							data is governed by the standalone{" "}
 							<a
 								href="https://github.com/VibexInc/Roo-Code/blob/main/PRIVACY.md"
 								target="_blank"
@@ -84,11 +84,11 @@ export default function Privacy() {
 					<ul>
 						<li>
 							<strong>
-								Your source code does not transit Vibex servers unless you explicitly choose Vibex
-								as a model provider (proxy mode).
+								Your source code does not transit Vibex servers unless you explicitly choose Vibex as a
+								model provider (proxy mode).
 							</strong>{" "}
-							When Vibex Cloud is your model provider, your code briefly transits Vibex servers only
-							to forward it to the upstream model, is not stored, and is deleted immediately after
+							When Vibex Cloud is your model provider, your code briefly transits Vibex servers only to
+							forward it to the upstream model, is not stored, and is deleted immediately after
 							forwarding. Otherwise, your code is sent <strong>directly</strong>—via client‑to‑provider
 							TLS—to the model you select. Vibex never stores, inspects, or trains on your code.
 						</li>
@@ -213,8 +213,8 @@ export default function Privacy() {
 										Code & files you work on
 									</td>
 									<td className="border border-border px-4 py-2">
-										Your chosen model provider (direct client → provider TLS), or Vibex (proxy
-										mode; transit‑only) when you select Vibex as the provider
+										Your chosen model provider (direct client → provider TLS), or Vibex (proxy mode;
+										transit‑only) when you select Vibex as the provider
 									</td>
 									<td className="border border-border px-4 py-2">
 										Vibex servers (except proxy mode; transit‑only, no storage); ad networks;
@@ -225,18 +225,14 @@ export default function Privacy() {
 									<td className="border border-border px-4 py-2 font-medium">
 										Prompts, chat snippets & token counts (Cloud)
 									</td>
-									<td className="border border-border px-4 py-2">
-										Vibex Cloud (encrypted at rest)
-									</td>
+									<td className="border border-border px-4 py-2">Vibex Cloud (encrypted at rest)</td>
 									<td className="border border-border px-4 py-2">Any third‑party</td>
 								</tr>
 								<tr>
 									<td className="border border-border px-4 py-2 font-medium">
 										Workspace Configuration
 									</td>
-									<td className="border border-border px-4 py-2">
-										Vibex Cloud (encrypted at rest)
-									</td>
+									<td className="border border-border px-4 py-2">Vibex Cloud (encrypted at rest)</td>
 									<td className="border border-border px-4 py-2">Any third-party</td>
 								</tr>
 								<tr className="bg-muted/25">
@@ -309,8 +305,8 @@ export default function Privacy() {
 					<h2 className="mt-12 text-2xl font-bold">8. Contact Us</h2>
 					<p>
 						Questions or concerns? Email{" "}
-						<a href="mailto:privacy@roocode.com" className="text-primary hover:underline">
-							privacy@roocode.com
+						<a href="mailto:privacy@vibexcode.com" className="text-primary hover:underline">
+							privacy@vibexcode.com
 						</a>
 						.
 					</p>

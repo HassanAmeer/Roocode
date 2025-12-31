@@ -10,7 +10,7 @@ import {
 	type ShareVisibility,
 	type QueuedMessage,
 	marketplaceItemSchema,
-} from "@roo-code/types"
+} from "@vibex-code/types"
 
 import { Mode } from "./modes"
 
@@ -124,10 +124,10 @@ export interface WebviewMessage {
 		| "hasOpenedModeSelector"
 		| "clearCloudAuthSkipModel"
 		| "cloudButtonClicked"
-		| "rooCloudSignIn"
+		| "vibexCloudSignIn"
 		| "cloudLandingPageSignIn"
-		| "rooCloudSignOut"
-		| "rooCloudManualUrl"
+		| "vibexCloudSignOut"
+		| "vibexCloudManualUrl"
 		| "claudeCodeSignIn"
 		| "claudeCodeSignOut"
 		| "switchOrganization"
@@ -233,7 +233,7 @@ export interface WebviewMessage {
 	upsellId?: string // For dismissUpsell
 	list?: string[] // For dismissedUpsells response
 	organizationId?: string | null // For organization switching
-	useProviderSignup?: boolean // For rooCloudSignIn to use provider signup flow
+	useProviderSignup?: boolean // For vibexCloudSignIn to use provider signup flow
 	codeIndexSettings?: {
 		// Global state settings
 		codebaseIndexEnabled: boolean

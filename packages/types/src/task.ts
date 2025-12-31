@@ -116,7 +116,7 @@ export type TaskMetadata = z.infer<typeof taskMetadataSchema>
 
 export interface TaskLike {
 	readonly taskId: string
-	readonly rootTaskId?: string
+	readonly vibextTaskId?: string
 	readonly parentTaskId?: string
 	readonly childTaskId?: string
 	readonly metadata: TaskMetadata

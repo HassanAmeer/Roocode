@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "Perlu bicara dengan kami? Tulis"
 		},
-		"community": "Ingin tips atau hanya nongkrong dengan pengguna VibeX Code lainnya? Bergabunglah dengan <redditLink>reddit.com/r/VibeX Code</redditLink> atau <discordLink>discord.gg/roocode</discordLink>",
+		"community": "Ingin tips atau hanya nongkrong dengan pengguna VibeX Code lainnya? Bergabunglah dengan <redditLink>reddit.com/r/VibeX Code</redditLink> atau <discordLink>discord.gg/vibexcode</discordLink>",
 		"contactAndCommunity": "Kontak & Komunitas",
 		"manageSettings": "Kelola Pengaturan"
 	},
@@ -195,7 +195,7 @@
 			},
 			"protected": {
 				"label": "Sertakan file yang dilindungi",
-				"description": "Izinkan VibeX Code membuat dan mengedit file yang dilindungi (seperti .rooignore dan file konfigurasi .roo/) tanpa memerlukan persetujuan."
+				"description": "Izinkan VibeX Code membuat dan mengedit file yang dilindungi (seperti .vibexignore dan file konfigurasi .vibex/) tanpa memerlukan persetujuan."
 			}
 		},
 		"browser": {
@@ -441,7 +441,7 @@
 			"description": "Tidak diperlukan API key, tetapi pengguna perlu membantu menyalin dan menempel informasi ke web chat AI.",
 			"instructions": "Selama penggunaan, kotak dialog akan muncul dan pesan saat ini akan disalin ke clipboard secara otomatis. Kamu perlu menempel ini ke versi web AI (seperti ChatGPT atau Claude), lalu salin balasan AI kembali ke kotak dialog dan klik tombol konfirmasi."
 		},
-		"roo": {
+		"vibex": {
 			"authenticatedMessage": "Terautentikasi dengan aman melalui akun VibeX Code Cloud Anda.",
 			"connectButton": "Hubungkan ke VibeX Code Cloud"
 		},
@@ -635,9 +635,9 @@
 			"label": "Batas konteks file workspace",
 			"description": "Jumlah maksimum file yang disertakan dalam detail direktori kerja saat ini. Nilai yang lebih tinggi memberikan lebih banyak konteks tetapi meningkatkan penggunaan token."
 		},
-		"rooignore": {
-			"label": "Tampilkan file .rooignore'd dalam daftar dan pencarian",
-			"description": "Ketika diaktifkan, file yang cocok dengan pola di .rooignore akan ditampilkan dalam daftar dengan simbol kunci. Ketika dinonaktifkan, file ini akan sepenuhnya disembunyikan dari daftar file dan pencarian."
+		"vibexignore": {
+			"label": "Tampilkan file .vibexignore'd dalam daftar dan pencarian",
+			"description": "Ketika diaktifkan, file yang cocok dengan pola di .vibexignore akan ditampilkan dalam daftar dengan simbol kunci. Ketika dinonaktifkan, file ini akan sepenuhnya disembunyikan dari daftar file dan pencarian."
 		},
 		"maxConcurrentFileReads": {
 			"label": "Batas pembacaan file bersamaan",
@@ -857,9 +857,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "Aktifkan tool kustom",
-			"description": "Ketika diaktifkan, VibeX Code dapat memuat dan menggunakan tool TypeScript/JavaScript kustom dari direktori .roo/tools proyek Anda atau ~/.roo/tools untuk tool global. Catatan: tool ini akan disetujui otomatis.",
+			"description": "Ketika diaktifkan, VibeX Code dapat memuat dan menggunakan tool TypeScript/JavaScript kustom dari direktori .vibex/tools proyek Anda atau ~/.vibex/tools untuk tool global. Catatan: tool ini akan disetujui otomatis.",
 			"toolsHeader": "Tool Kustom yang Tersedia",
-			"noTools": "Tidak ada tool kustom yang dimuat. Tambahkan file .ts atau .js ke direktori .roo/tools proyek Anda atau ~/.roo/tools untuk tool global.",
+			"noTools": "Tidak ada tool kustom yang dimuat. Tambahkan file .ts atau .js ke direktori .vibex/tools proyek Anda atau ~/.vibex/tools untuk tool global.",
 			"refreshButton": "Refresh",
 			"refreshing": "Merefresh...",
 			"refreshSuccess": "Tool berhasil direfresh",
@@ -907,7 +907,7 @@
 		"simplifiedExplanation": "Anda dapat menyesuaikan pengaturan model terperinci nanti."
 	},
 	"footer": {
-		"feedback": "Jika kamu punya pertanyaan atau feedback, jangan ragu untuk membuka issue di <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> atau bergabung <redditLink>reddit.com/r/VibeX Code</redditLink> atau <discordLink>discord.gg/roocode</discordLink>",
+		"feedback": "Jika kamu punya pertanyaan atau feedback, jangan ragu untuk membuka issue di <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> atau bergabung <redditLink>reddit.com/r/VibeX Code</redditLink> atau <discordLink>discord.gg/vibexcode</discordLink>",
 		"telemetry": {
 			"label": "Izinkan pelaporan error dan penggunaan anonim",
 			"description": "Bantu tingkatkan VibeX Code dengan mengirimkan data penggunaan anonim dan laporan error. Telemetri ini tidak mengumpulkan kode, prompt, atau informasi pribadi. Lihat <privacyLink>kebijakan privasi</privacyLink> kami untuk detail lebih lanjut. Anda dapat menonaktifkannya kapan saja."

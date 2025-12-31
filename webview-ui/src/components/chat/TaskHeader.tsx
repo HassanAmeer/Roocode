@@ -15,10 +15,10 @@ import {
 } from "lucide-react"
 import prettyBytes from "pretty-bytes"
 
-import type { ClineMessage } from "@roo-code/types"
+import type { ClineMessage } from "@vibex-code/types"
 
-import { getModelMaxOutputTokens } from "@roo-code/types"
-import { findLastIndex } from "@roo-code/types"
+import { getModelMaxOutputTokens } from "@vibex-code/types"
+import { findLastIndex } from "@vibex-code/types"
 
 import { formatLargeNumber } from "@src/utils/format"
 import { cn } from "@src/lib/utils"

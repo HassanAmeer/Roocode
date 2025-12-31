@@ -21,16 +21,16 @@ vi.mock("os", () => ({
 }))
 
 import {
-	getGlobalRooDirectory,
-	getProjectRooDirectoryForCwd,
+	getGlobalVibexDirectory,
+	getProjectVibexDirectoryForCwd,
 	directoryExists,
 	fileExists,
 	readFileIfExists,
-	getRooDirectoriesForCwd,
+	getVibexDirectoriesForCwd,
 	loadConfiguration,
 } from "../index"
 
-describe("RooConfigService", () => {
+describe("VibexConfigService", () => {
 	beforeEach(() => {
 		vi.clearAllMocks()
 		mockHomedir.mockReturnValue("/mock/home")
@@ -40,24 +40,24 @@ describe("RooConfigService", () => {
 		vi.restoreAllMocks()
 	})
 
-	describe("getGlobalRooDirectory", () => {
+	describe("getGlobalVibexDirectory", () => {
 		it("should return correct path for global .vibex directory", () => {
-			const result = getGlobalRooDirectory()
-			expect(result).toBe(path.join("/mock/home", ".roo"))
+			const result = getGlobalVibexDirectory()
+			expect(result).toBe(path.join("/mock/home", ".vibex"))
 		})
 
 		it("should handle different home directories", () => {
 			mockHomedir.mockReturnValue("/different/home")
-			const result = getGlobalRooDirectory()
-			expect(result).toBe(path.join("/different/home", ".roo"))
+			const result = getGlobalVibexDirectory()
+			expect(result).toBe(path.join("/different/home", ".vibex"))
 		})
 	})
 
-	describe("getProjectRooDirectoryForCwd", () => {
+	describe("getProjectVibexDirectoryForCwd", () => {
 		it("should return correct path for given cwd", () => {
 			const cwd = "/custom/project/path"
-			const result = getProjectRooDirectoryForCwd(cwd)
-			expect(result).toBe(path.join(cwd, ".roo"))
+			const result = getProjectVibexDirectoryForCwd(cwd)
+			expect(result).toBe(path.join(cwd, ".vibex"))
 		})
 	})
 
@@ -204,13 +204,13 @@ describe("RooConfigService", () => {
 		})
 	})
 
-	describe("getRooDirectoriesForCwd", () => {
+	describe("getVibexDirectoriesForCwd", () => {
 		it("should return directories for given cwd", () => {
 			const cwd = "/custom/project/path"
 
-			const result = getRooDirectoriesForCwd(cwd)
+			const result = getVibexDirectoriesForCwd(cwd)
 
-			expect(result).toEqual([path.join("/mock/home", ".roo"), path.join(cwd, ".roo")])
+			expect(result).toEqual([path.join("/mock/home", ".vibex"), path.join(cwd, ".vibex")])
 		})
 	})
 
@@ -293,8 +293,8 @@ describe("RooConfigService", () => {
 
 			await loadConfiguration("rules/rules.md", "/project/path")
 
-			expect(mockReadFile).toHaveBeenCalledWith(path.join("/mock/home", ".roo", "rules/rules.md"), "utf-8")
-			expect(mockReadFile).toHaveBeenCalledWith(path.join("/project/path", ".roo", "rules/rules.md"), "utf-8")
+			expect(mockReadFile).toHaveBeenCalledWith(path.join("/mock/home", ".vibex", "rules/rules.md"), "utf-8")
+			expect(mockReadFile).toHaveBeenCalledWith(path.join("/project/path", ".vibex", "rules/rules.md"), "utf-8")
 		})
 	})
 })

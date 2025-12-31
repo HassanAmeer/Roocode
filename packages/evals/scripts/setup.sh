@@ -2,8 +2,8 @@
 
 build_extension() {
   echo "🔨 Building the VibeX Code extension..."
-  pnpm -w vsix -- --out ../bin/roo-code-$(git rev-parse --short HEAD).vsix || exit 1
-  code --install-extension ../../bin/roo-code-$(git rev-parse --short HEAD).vsix || exit 1
+  pnpm -w vsix -- --out ../bin/vibex-code-$(git rev-parse --short HEAD).vsix || exit 1
+  code --install-extension ../../bin/vibex-code-$(git rev-parse --short HEAD).vsix || exit 1
 }
 
 check_docker_services() {
@@ -286,8 +286,8 @@ code --install-extension redhat.java &>/dev/null || exit 1
 code --install-extension ms-python.python&>/dev/null || exit 1
 code --install-extension rust-lang.rust-analyzer &>/dev/null || exit 1
 
-if ! code --list-extensions 2>/dev/null | grep -q "RooVeterinaryInc.roo-cline"; then
-  code --install-extension VibeXVeterinaryInc.roo-cline &>/dev/null || exit 1
+if ! code --list-extensions 2>/dev/null | grep -q "RooVeterinaryInc.vibex-cline"; then
+  code --install-extension VibeXVeterinaryInc.vibex-cline &>/dev/null || exit 1
 fi
 
 echo "✅ Done"
@@ -316,7 +316,7 @@ fi
 check_docker_services
 
 echo -n "🗄️ Syncing VibeX Code evals database... "
-pnpm --filter @roo-code/evals db:push --force &>/dev/null || exit 1
+pnpm --filter @vibex-code/evals db:push --force &>/dev/null || exit 1
 echo "✅ Done"
 
 if ! grep -q "OPENROUTER_API_KEY" .env.local; then
@@ -326,7 +326,7 @@ if ! grep -q "OPENROUTER_API_KEY" .env.local; then
   echo "OPENROUTER_API_KEY=$openrouter_api_key" >> .env.local || exit 1
 fi
 
-current_version=$(code --list-extensions --show-versions 2>/dev/null | grep roo)
+current_version=$(code --list-extensions --show-versions 2>/dev/null | grep vibex)
 read -p "💻 Do you want to build a new version of the VibeX Code extension? [currently $current_version] (y/N): " build_extension
 
 if [[ "$build_extension" =~ ^[Yy]$ ]]; then
@@ -339,9 +339,9 @@ if ! nc -z localhost 3446; then
   read -p "🌐 Would you like to start the evals web app? (Y/n): " start_evals
 
   if [[ "$start_evals" =~ ^[Yy]|^$ ]]; then
-    pnpm --filter @roo-code/web-evals dev
+    pnpm --filter @vibex-code/web-evals dev
   else
-    echo "💡 You can start it anytime with 'pnpm --filter @roo-code/web-evals dev'."
+    echo "💡 You can start it anytime with 'pnpm --filter @vibex-code/web-evals dev'."
   fi
 else
   echo "👟 The evals web app is running at http://localhost:3446"

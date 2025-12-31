@@ -8,7 +8,7 @@
     <priority level="2">
       <tool>codebase_search</tool>
       <when>For all investigation steps to find relevant code.</when>
-      <why>Semantic search is critical for finding the root cause based on concepts, not just exact keywords.</why>
+      <why>Semantic search is critical for finding the vibext cause based on concepts, not just exact keywords.</why>
     </priority>
     <priority level="3">
       <tool>update_todo_list</tool>

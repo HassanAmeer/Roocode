@@ -3,7 +3,7 @@ import * as fs from "fs/promises"
 import * as path from "path"
 import * as vscode from "vscode"
 
-import { VibexEventName, type ClineMessage } from "@roo-code/types"
+import { VibexEventName, type ClineMessage } from "@vibex-code/types"
 
 import { waitFor, sleep } from "../utils"
 import { setDefaultSuiteTimeout } from "../test-utils"
@@ -13,8 +13,8 @@ suite.skip("Vibex list_files Tool", function () {
 
 	let workspaceDir: string
 	let testFiles: {
-		rootFile1: string
-		rootFile2: string
+		vibextFile1: string
+		vibextFile2: string
 		nestedDir: string
 		nestedFile1: string
 		nestedFile2: string
@@ -42,8 +42,8 @@ suite.skip("Vibex list_files Tool", function () {
 		const deepNestedDir = path.join(nestedDir, "deep")
 
 		testFiles = {
-			rootFile1: path.join(testDir, "root-file-1.txt"),
-			rootFile2: path.join(testDir, "root-file-2.js"),
+			vibextFile1: path.join(testDir, "vibext-file-1.txt"),
+			vibextFile2: path.join(testDir, "vibext-file-2.js"),
 			nestedDir: nestedDir,
 			nestedFile1: path.join(nestedDir, "nested-file-1.md"),
 			nestedFile2: path.join(nestedDir, "nested-file-2.json"),
@@ -59,12 +59,12 @@ suite.skip("Vibex list_files Tool", function () {
 		await fs.mkdir(nestedDir, { recursive: true })
 		await fs.mkdir(deepNestedDir, { recursive: true })
 
-		// Create root level files
-		await fs.writeFile(testFiles.rootFile1, "This is root file 1 content")
+		// Create vibext level files
+		await fs.writeFile(testFiles.vibextFile1, "This is vibext file 1 content")
 		await fs.writeFile(
-			testFiles.rootFile2,
+			testFiles.vibextFile2,
 			`function testFunction() {
-	console.log("Hello from root file 2");
+	console.log("Hello from vibext file 2");
 }`,
 		)
 
@@ -136,7 +136,7 @@ This directory contains various files and subdirectories for testing the list_fi
 		}
 
 		// Clean up test directory structure
-		const testDirName = path.basename(path.dirname(testFiles.rootFile1))
+		const testDirName = path.basename(path.dirname(testFiles.vibextFile1))
 		const testDir = path.join(workspaceDir, testDirName)
 
 		try {
@@ -220,7 +220,7 @@ This directory contains various files and subdirectories for testing the list_fi
 		let taskId: string
 		try {
 			// Start task to list files in test directory
-			const testDirName = path.basename(path.dirname(testFiles.rootFile1))
+			const testDirName = path.basename(path.dirname(testFiles.vibextFile1))
 			taskId = await api.startNewTask({
 				configuration: {
 					mode: "code",
@@ -228,7 +228,7 @@ This directory contains various files and subdirectories for testing the list_fi
 					alwaysAllowReadOnly: true,
 					alwaysAllowReadOnlyOutsideWorkspace: true,
 				},
-				text: `I have created a test directory structure in the workspace. Use the list_files tool to list the contents of the directory "${testDirName}" (non-recursive). The directory contains files like root-file-1.txt, root-file-2.js, config.yaml, README.md, and a nested subdirectory. The directory exists in the workspace.`,
+				text: `I have created a test directory structure in the workspace. Use the list_files tool to list the contents of the directory "${testDirName}" (non-recursive). The directory contains files like vibext-file-1.txt, vibext-file-2.js, config.yaml, README.md, and a nested subdirectory. The directory exists in the workspace.`,
 			})
 
 			console.log("Task ID:", taskId)
@@ -242,8 +242,8 @@ This directory contains various files and subdirectories for testing the list_fi
 			// Verify the tool returned the expected files (non-recursive)
 			assert.ok(listResults, "Tool execution results should be captured")
 
-			// Check that expected root-level files are present (including hidden files now that bug is fixed)
-			const expectedFiles = ["root-file-1.txt", "root-file-2.js", "config.yaml", "README.md", ".hidden-file"]
+			// Check that expected vibext-level files are present (including hidden files now that bug is fixed)
+			const expectedFiles = ["vibext-file-1.txt", "vibext-file-2.js", "config.yaml", "README.md", ".hidden-file"]
 			const expectedDirs = ["nested/"]
 
 			const results = listResults as string
@@ -323,7 +323,7 @@ This directory contains various files and subdirectories for testing the list_fi
 		let taskId: string
 		try {
 			// Start task to list files recursively in test directory
-			const testDirName = path.basename(path.dirname(testFiles.rootFile1))
+			const testDirName = path.basename(path.dirname(testFiles.vibextFile1))
 			taskId = await api.startNewTask({
 				configuration: {
 					mode: "code",
@@ -358,8 +358,8 @@ This directory contains various files and subdirectories for testing the list_fi
 
 			// Document what SHOULD be included but currently isn't due to bugs:
 			const shouldIncludeFiles = [
-				"root-file-1.txt",
-				"root-file-2.js",
+				"vibext-file-1.txt",
+				"vibext-file-2.js",
 				"config.yaml",
 				"README.md",
 				".hidden-file",
@@ -504,7 +504,7 @@ This directory contains various files and subdirectories for testing the list_fi
 		}
 	})
 
-	test("Should list files in workspace root directory", async function () {
+	test("Should list files in workspace vibext directory", async function () {
 		const api = globalThis.api
 		const messages: ClineMessage[] = []
 		let taskCompleted = false
@@ -519,7 +519,7 @@ This directory contains various files and subdirectories for testing the list_fi
 				const text = message.text || ""
 				if (text.includes("list_files")) {
 					toolExecuted = true
-					console.log("list_files tool executed (workspace root):", text.substring(0, 200))
+					console.log("list_files tool executed (workspace vibext):", text.substring(0, 200))
 				}
 			}
 		}
@@ -535,7 +535,7 @@ This directory contains various files and subdirectories for testing the list_fi
 
 		let taskId: string
 		try {
-			// Start task to list files in workspace root
+			// Start task to list files in workspace vibext
 			taskId = await api.startNewTask({
 				configuration: {
 					mode: "code",
@@ -566,7 +566,7 @@ This directory contains various files and subdirectories for testing the list_fi
 			)
 			assert.ok(completionMessage, "AI should have mentioned workspace contents")
 
-			console.log("Test passed! Workspace root directory listing executed successfully")
+			console.log("Test passed! Workspace vibext directory listing executed successfully")
 		} finally {
 			// Clean up
 			api.off(VibexEventName.Message, messageHandler)

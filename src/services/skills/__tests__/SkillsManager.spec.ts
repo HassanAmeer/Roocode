@@ -54,11 +54,11 @@ vi.mock("vscode", () => ({
 }))
 
 // Global vibex directory - computed once
-const GLOBAL_ROO_DIR = p(HOME_DIR, ".roo")
+const GLOBAL_VIBEX_DIR = p(HOME_DIR, ".vibex")
 
-// Mock roo-config
-vi.mock("../../roo-config", () => ({
-	getGlobalRooDirectory: () => GLOBAL_ROO_DIR,
+// Mock vibex-config
+vi.mock("../../vibex-config", () => ({
+	getGlobalVibexDirectory: () => GLOBAL_VIBEX_DIR,
 	directoryExists: mockDirectoryExists,
 	fileExists: mockFileExists,
 }))
@@ -71,11 +71,11 @@ describe("SkillsManager", () => {
 	let mockProvider: Partial<ClineProvider>
 
 	// Pre-computed paths for tests
-	const globalSkillsDir = p(GLOBAL_ROO_DIR, "skills")
-	const globalSkillsCodeDir = p(GLOBAL_ROO_DIR, "skills-code")
-	const globalSkillsArchitectDir = p(GLOBAL_ROO_DIR, "skills-architect")
-	const projectRooDir = p(PROJECT_DIR, ".roo")
-	const projectSkillsDir = p(projectRooDir, "skills")
+	const globalSkillsDir = p(GLOBAL_VIBEX_DIR, "skills")
+	const globalSkillsCodeDir = p(GLOBAL_VIBEX_DIR, "skills-code")
+	const globalSkillsArchitectDir = p(GLOBAL_VIBEX_DIR, "skills-architect")
+	const projectVibexDir = p(PROJECT_DIR, ".vibex")
+	const projectSkillsDir = p(projectVibexDir, "skills")
 
 	beforeEach(() => {
 		vi.clearAllMocks()
@@ -344,7 +344,7 @@ description: Name doesn't match directory
 			const sharedSkillDir = p(SHARED_DIR, "shared-skill")
 			const sharedSkillMd = p(sharedSkillDir, "SKILL.md")
 
-			// Simulate .roo/skills being a symlink to /shared/skills
+			// Simulate .vibex/skills being a symlink to /shared/skills
 			mockDirectoryExists.mockImplementation(async (dir: string) => {
 				return dir === globalSkillsDir
 			})
@@ -401,7 +401,7 @@ Instructions here...`
 			const myAliasDir = p(globalSkillsDir, "my-alias")
 			const myAliasMd = p(myAliasDir, "SKILL.md")
 
-			// Simulate .roo/skills/my-alias being a symlink to /external/actual-skill
+			// Simulate .vibex/skills/my-alias being a symlink to /external/actual-skill
 			mockDirectoryExists.mockImplementation(async (dir: string) => {
 				return dir === globalSkillsDir
 			})

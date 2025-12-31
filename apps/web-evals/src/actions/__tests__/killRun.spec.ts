@@ -20,8 +20,8 @@ vi.mock("@/lib/server/redis", () => ({
 	}),
 }))
 
-// Mock @roo-code/evals
-vi.mock("@roo-code/evals", () => ({
+// Mock @vibex-code/evals
+vi.mock("@vibex-code/evals", () => ({
 	createRun: vi.fn(),
 	deleteRun: vi.fn(),
 	createTask: vi.fn(),

@@ -7,7 +7,7 @@
 		"openrouter": {
 			"description": "Una interfície unificada per als LLM"
 		},
-		"roo": {
+		"vibex": {
 			"description": "Els millors models gratuïts per començar",
 			"incentive": "Prova VibeX Code gratis"
 		}
@@ -22,8 +22,8 @@
 	"providerSignup": {
 		"heading": "Tria el teu proveïdor",
 		"chooseProvider": "VibeX Code necessita un proveïdor de LLM per funcionar. Tria-ne un per començar, pots afegir-ne més tard.",
-		"rooCloudProvider": "Proveïdor de VibeX Code Cloud",
-		"rooCloudDescription": "La manera més fàcil de començar és amb el Proveïdor VibeX Code Cloud: una mescla acurada de models gratuïts i de pagament a baix cost.",
+		"vibexCloudProvider": "Proveïdor de VibeX Code Cloud",
+		"vibexCloudDescription": "La manera més fàcil de començar és amb el Proveïdor VibeX Code Cloud: una mescla acurada de models gratuïts i de pagament a baix cost.",
 		"learnMore": "Més informació",
 		"useAnotherProvider": "Proveïdor de tercers",
 		"useAnotherProviderDescription": "Entra una clau API i comença.",

@@ -53,7 +53,7 @@ export enum VibexEventName {
  * VibexEvents
  */
 
-export const rooCodeEventsSchema = z.object({
+export const vibexCodeEventsSchema = z.object({
 	[VibexEventName.TaskCreated]: z.tuple([z.string()]),
 
 	[VibexEventName.TaskStarted]: z.tuple([z.string()]),
@@ -108,7 +108,7 @@ export const rooCodeEventsSchema = z.object({
 	[VibexEventName.ProviderProfileChanged]: z.tuple([z.object({ name: z.string(), provider: z.string() })]),
 })
 
-export type VibexEvents = z.infer<typeof rooCodeEventsSchema>
+export type VibexEvents = z.infer<typeof vibexCodeEventsSchema>
 
 /**
  * TaskEvent
@@ -118,115 +118,115 @@ export const taskEventSchema = z.discriminatedUnion("eventName", [
 	// Task Provider Lifecycle
 	z.object({
 		eventName: z.literal(VibexEventName.TaskCreated),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskCreated],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskCreated],
 		taskId: z.number().optional(),
 	}),
 
 	// Task Lifecycle
 	z.object({
 		eventName: z.literal(VibexEventName.TaskStarted),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskStarted],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskStarted],
 		taskId: z.number().optional(),
 	}),
 	z.object({
 		eventName: z.literal(VibexEventName.TaskCompleted),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskCompleted],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskCompleted],
 		taskId: z.number().optional(),
 	}),
 	z.object({
 		eventName: z.literal(VibexEventName.TaskAborted),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskAborted],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskAborted],
 		taskId: z.number().optional(),
 	}),
 	z.object({
 		eventName: z.literal(VibexEventName.TaskFocused),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskFocused],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskFocused],
 		taskId: z.number().optional(),
 	}),
 	z.object({
 		eventName: z.literal(VibexEventName.TaskUnfocused),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskUnfocused],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskUnfocused],
 		taskId: z.number().optional(),
 	}),
 	z.object({
 		eventName: z.literal(VibexEventName.TaskActive),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskActive],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskActive],
 		taskId: z.number().optional(),
 	}),
 	z.object({
 		eventName: z.literal(VibexEventName.TaskInteractive),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskInteractive],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskInteractive],
 		taskId: z.number().optional(),
 	}),
 	z.object({
 		eventName: z.literal(VibexEventName.TaskResumable),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskResumable],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskResumable],
 		taskId: z.number().optional(),
 	}),
 	z.object({
 		eventName: z.literal(VibexEventName.TaskIdle),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskIdle],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskIdle],
 		taskId: z.number().optional(),
 	}),
 
 	// Subtask Lifecycle
 	z.object({
 		eventName: z.literal(VibexEventName.TaskPaused),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskPaused],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskPaused],
 		taskId: z.number().optional(),
 	}),
 	z.object({
 		eventName: z.literal(VibexEventName.TaskUnpaused),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskUnpaused],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskUnpaused],
 		taskId: z.number().optional(),
 	}),
 	z.object({
 		eventName: z.literal(VibexEventName.TaskSpawned),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskSpawned],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskSpawned],
 		taskId: z.number().optional(),
 	}),
 	z.object({
 		eventName: z.literal(VibexEventName.TaskDelegated),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskDelegated],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskDelegated],
 		taskId: z.number().optional(),
 	}),
 	z.object({
 		eventName: z.literal(VibexEventName.TaskDelegationCompleted),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskDelegationCompleted],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskDelegationCompleted],
 		taskId: z.number().optional(),
 	}),
 	z.object({
 		eventName: z.literal(VibexEventName.TaskDelegationResumed),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskDelegationResumed],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskDelegationResumed],
 		taskId: z.number().optional(),
 	}),
 
 	// Task Execution
 	z.object({
 		eventName: z.literal(VibexEventName.Message),
-		payload: rooCodeEventsSchema.shape[VibexEventName.Message],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.Message],
 		taskId: z.number().optional(),
 	}),
 	z.object({
 		eventName: z.literal(VibexEventName.TaskModeSwitched),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskModeSwitched],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskModeSwitched],
 		taskId: z.number().optional(),
 	}),
 	z.object({
 		eventName: z.literal(VibexEventName.TaskAskResponded),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskAskResponded],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskAskResponded],
 		taskId: z.number().optional(),
 	}),
 
 	// Task Analytics
 	z.object({
 		eventName: z.literal(VibexEventName.TaskToolFailed),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskToolFailed],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskToolFailed],
 		taskId: z.number().optional(),
 	}),
 	z.object({
 		eventName: z.literal(VibexEventName.TaskTokenUsageUpdated),
-		payload: rooCodeEventsSchema.shape[VibexEventName.TaskTokenUsageUpdated],
+		payload: vibexCodeEventsSchema.shape[VibexEventName.TaskTokenUsageUpdated],
 		taskId: z.number().optional(),
 	}),
 

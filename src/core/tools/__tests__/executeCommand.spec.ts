@@ -409,7 +409,7 @@ describe("executeCommand", () => {
 
 	describe("Terminal Working Directory Updates", () => {
 		it("should update working directory when terminal returns different cwd", async () => {
-			// Setup: Terminal initially at project root, but getCurrentWorkingDirectory returns different path
+			// Setup: Terminal initially at project vibext, but getCurrentWorkingDirectory returns different path
 			const initialCwd = "/test/project"
 			const updatedCwd = "/test/project/src"
 

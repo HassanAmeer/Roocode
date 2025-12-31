@@ -2,7 +2,7 @@
 
 import type { ExtensionContext } from "vscode"
 
-import type { AuthService } from "@roo-code/types"
+import type { AuthService } from "@vibex-code/types"
 
 import { CloudSettingsService } from "../CloudSettingsService.js"
 
@@ -107,7 +107,7 @@ describe("CloudSettingsService - Response Parsing", () => {
 			},
 			user: {
 				features: {
-					roomoteControlEnabled: true,
+					vibexmoteControlEnabled: true,
 				},
 				settings: {
 					extensionBridgeEnabled: true,

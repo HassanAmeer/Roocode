@@ -1,7 +1,7 @@
 import { pgTable, text, timestamp, integer, real, boolean, jsonb, uniqueIndex } from "drizzle-orm/pg-core"
 import { relations } from "drizzle-orm"
 
-import type { VibexSettings, ToolName, ToolUsage } from "@roo-code/types"
+import type { VibexSettings, ToolName, ToolUsage } from "@vibex-code/types"
 
 import type { ExerciseLanguage } from "../exercises/index.js"
 

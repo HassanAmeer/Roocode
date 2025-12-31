@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import { VSCodeProgressRing, VSCodeTextField } from "@vscode/webview-ui-toolkit/react"
 
-import { type CloudUserInfo, type CloudOrganizationMembership, TelemetryEventName } from "@roo-code/types"
+import { type CloudUserInfo, type CloudOrganizationMembership, TelemetryEventName } from "@vibex-code/types"
 
 import { useAppTranslation } from "@src/i18n/TranslationContext"
 import { useExtensionState } from "@src/context/ExtensionStateContext"
@@ -86,7 +86,7 @@ export const CloudView = ({ userInfo, isAuthenticated, cloudApiUrl, organization
 		// Send telemetry for cloud connect action
 		// NOTE: Using ACCOUNT_* telemetry events for backward compatibility with analytics
 		telemetryClient.capture(TelemetryEventName.ACCOUNT_CONNECT_CLICKED)
-		vscode.postMessage({ type: "rooCloudSignIn" })
+		vscode.postMessage({ type: "vibexCloudSignIn" })
 
 		// Start auth in progress state - show "Having trouble?" immediately for debugging
 		setAuthInProgress(true)
@@ -99,7 +99,7 @@ export const CloudView = ({ userInfo, isAuthenticated, cloudApiUrl, organization
 		// Auto-trigger authentication when a complete URL is pasted (with slight delay to ensure full paste is processed)
 		setTimeout(() => {
 			if (url.trim() && url.includes("://") && url.includes("/auth/clerk/callback")) {
-				vscode.postMessage({ type: "rooCloudManualUrl", text: url.trim() })
+				vscode.postMessage({ type: "vibexCloudManualUrl", text: url.trim() })
 			}
 		}, 100)
 	}
@@ -108,7 +108,7 @@ export const CloudView = ({ userInfo, isAuthenticated, cloudApiUrl, organization
 		if (e.key === "Enter") {
 			const url = manualUrl.trim()
 			if (url && url.includes("://") && url.includes("/auth/clerk/callback")) {
-				vscode.postMessage({ type: "rooCloudManualUrl", text: url })
+				vscode.postMessage({ type: "vibexCloudManualUrl", text: url })
 			}
 		}
 	}
@@ -127,7 +127,7 @@ export const CloudView = ({ userInfo, isAuthenticated, cloudApiUrl, organization
 		// Send telemetry for cloud logout action
 		// NOTE: Using ACCOUNT_* telemetry events for backward compatibility with analytics
 		telemetryClient.capture(TelemetryEventName.ACCOUNT_LOGOUT_CLICKED)
-		vscode.postMessage({ type: "rooCloudSignOut" })
+		vscode.postMessage({ type: "vibexCloudSignOut" })
 	}
 
 	const handleVisitCloudWebsite = () => {
@@ -304,7 +304,7 @@ export const CloudView = ({ userInfo, isAuthenticated, cloudApiUrl, organization
 										value={manualUrl}
 										onChange={handleManualUrlChange}
 										onKeyDown={handleKeyDown}
-										placeholder="vscode://Vibex.roo-cline/auth/clerk/callback?state=..."
+										placeholder="vscode://Vibex.vibex-cline/auth/clerk/callback?state=..."
 										className="w-full"
 									/>
 									<p className="mt-1">

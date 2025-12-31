@@ -68,8 +68,8 @@ describe("webviewMessageHandler - requestRouterModels provider filter", () => {
 		// Default mock: return distinct model maps per provider so we can verify keys
 		getModelsMock.mockImplementation(async (options: any) => {
 			switch (options?.provider) {
-				case "roo":
-					return { "roo/sonnet": { contextWindow: 8192, supportsPromptCache: false } }
+				case "vibex":
+					return { "vibex/sonnet": { contextWindow: 8192, supportsPromptCache: false } }
 				case "openrouter":
 					return { "openrouter/qwen2.5": { contextWindow: 32768, supportsPromptCache: false } }
 				case "requesty":
@@ -90,12 +90,12 @@ describe("webviewMessageHandler - requestRouterModels provider filter", () => {
 		})
 	})
 
-	it("fetches only requested provider when values.provider is present ('roo')", async () => {
+	it("fetches only requested provider when values.provider is present ('vibex')", async () => {
 		await webviewMessageHandler(
 			mockProvider as any,
 			{
 				type: "requestRouterModels",
-				values: { provider: "roo" },
+				values: { provider: "vibex" },
 			} as any,
 		)
 
@@ -111,14 +111,14 @@ describe("webviewMessageHandler - requestRouterModels provider filter", () => {
 		const payload = call[0]
 		const routerModels = payload.routerModels as Record<string, Record<string, any>>
 
-		// Only "roo" key should be present
+		// Only "vibex" key should be present
 		const keys = Object.keys(routerModels)
-		expect(keys).toEqual(["roo"])
-		expect(Object.keys(routerModels.vibex || {})).toContain("roo/sonnet")
+		expect(keys).toEqual(["vibex"])
+		expect(Object.keys(routerModels.vibex || {})).toContain("vibex/sonnet")
 
-		// getModels should have been called exactly once for roo
+		// getModels should have been called exactly once for vibex
 		const providersCalled = getModelsMock.mock.calls.map((c: any[]) => c[0]?.provider)
-		expect(providersCalled).toEqual(["roo"])
+		expect(providersCalled).toEqual(["vibex"])
 	})
 
 	it("defaults to aggregate fetching when no provider filter is sent", async () => {
@@ -137,7 +137,7 @@ describe("webviewMessageHandler - requestRouterModels provider filter", () => {
 
 		// Aggregate handler initializes many known routers - ensure a few expected keys exist
 		expect(routerModels).toHaveProperty("openrouter")
-		expect(routerModels).toHaveProperty("roo")
+		expect(routerModels).toHaveProperty("vibex")
 		expect(routerModels).toHaveProperty("requesty")
 	})
 

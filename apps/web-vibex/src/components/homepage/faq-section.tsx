@@ -51,7 +51,7 @@ const faqs: FAQItem[] = [
 			<>
 				Yes. Because Vibex is an extension in your local VS Code, your code never leaves your machine unless you
 				connect to an external AI API. Even then, you control exactly what is sent to the AI model. You can use
-				tools like .rooignore to exclude sensitive files, and you can also run Vibex with offline/local models
+				tools like .vibexignore to exclude sensitive files, and you can also run Vibex with offline/local models
 				for full privacy.
 			</>
 		),
@@ -83,7 +83,7 @@ const faqs: FAQItem[] = [
 			<>
 				Install Vibex from the{" "}
 				<a
-					href="https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline"
+					href="https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.vibex-cline"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="text-primary underline-offset-4 hover:underline">
@@ -92,7 +92,7 @@ const faqs: FAQItem[] = [
 				(or GitHub). Add your AI keys (OpenAI, Anthropic, or other) in the extension settings. Open the VibeX
 				panel (the rocket icon) in VS Code, and start typing commands in plain English!{" "}
 				<a
-					href="https://docs.roocode.com/tutorial-videos"
+					href="https://docs.vibexcode.com/tutorial-videos"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="text-primary underline-offset-4 hover:underline">
@@ -123,7 +123,7 @@ const faqs: FAQItem[] = [
 				approval. And because Vibex is fully open-source, it&apos;s auditable—you can review exactly how it
 				works before deploying it.{" "}
 				<a
-					href="https://roocode.com/enterprise"
+					href="https://vibexcode.com/enterprise"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="text-primary underline-offset-4 hover:underline">
@@ -166,7 +166,7 @@ const faqs: FAQItem[] = [
 				</a>
 				. Submit issues, suggest features, or open a pull request. There&apos;s also an active community on{" "}
 				<a
-					href="https://discord.gg/roocode"
+					href="https://discord.gg/vibexcode"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="text-primary underline-offset-4 hover:underline">
@@ -190,7 +190,7 @@ const faqs: FAQItem[] = [
 			<>
 				Check out our{" "}
 				<a
-					href="https://docs.roocode.com"
+					href="https://docs.vibexcode.com"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="text-primary underline-offset-4 hover:underline">
@@ -198,7 +198,7 @@ const faqs: FAQItem[] = [
 				</a>{" "}
 				for both a quick-start set up and advanced guides. You can also get community support on{" "}
 				<a
-					href="https://discord.gg/roocode"
+					href="https://discord.gg/vibexcode"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="text-primary underline-offset-4 hover:underline">
@@ -222,7 +222,7 @@ const faqs: FAQItem[] = [
 				</a>{" "}
 				tutorials and{" "}
 				<a
-					href="https://blog.roocode.com"
+					href="https://blog.vibexcode.com"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="text-primary underline-offset-4 hover:underline">

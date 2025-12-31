@@ -90,7 +90,7 @@
 	"about": "VibeX Code est une équipe complète de développeurs IA dans votre éditeur.",
 	"docs": "Consultez notre <DocsLink>documentation</DocsLink> pour en savoir plus.",
 	"onboarding": "Votre liste de tâches dans cet espace de travail est vide.",
-	"rooTips": {
+	"vibexTips": {
 		"customizableModes": {
 			"title": "Modes personnalisables",
 			"description": "Des personas spécialisés qui restent concentrés sur la tâche et livrent des résultats."
@@ -230,7 +230,7 @@
 	"response": "Réponse",
 	"arguments": "Arguments",
 	"text": {
-		"rooSaid": "VibeX Code a dit"
+		"vibexSaid": "VibeX Code a dit"
 	},
 	"feedback": {
 		"youSaid": "Tu as dit"
@@ -323,7 +323,7 @@
 			"feature": "<bold>Modèle stealth GRATUIT pour une durée limitée</bold> - Code Supernova : Maintenant amélioré avec une <bold>fenêtre de contexte de 1M tokens</bold> ! Un modèle de codage agentique polyvalent qui prend en charge les entrées d'images, accessible via VibeX Code Cloud.",
 			"note": "(Note : les prompts et complétions sont enregistrés par le créateur du modèle et utilisés pour l'améliorer)",
 			"connectButton": "Se connecter à VibeX Code Cloud",
-			"selectModel": "Sélectionnez <code>roo/code-supernova</code> du fournisseur VibeX Code Cloud dans Paramètres pour commencer.",
+			"selectModel": "Sélectionnez <code>vibex/code-supernova</code> du fournisseur VibeX Code Cloud dans Paramètres pour commencer.",
 			"goToSettingsButton": "Aller aux Paramètres"
 		},
 		"release": {
@@ -341,7 +341,7 @@
 	},
 	"browser": {
 		"session": "Session du navigateur",
-		"rooWantsToUse": "VibeX Code veut utiliser le navigateur",
+		"vibexWantsToUse": "VibeX Code veut utiliser le navigateur",
 		"consoleLogs": "Journaux de console",
 		"noNewLogs": "(Pas de nouveaux journaux)",
 		"screenshot": "Capture d'écran du navigateur",
@@ -427,7 +427,7 @@
 	"versionIndicator": {
 		"ariaLabel": "Version {{version}} - Cliquez pour voir les notes de version"
 	},
-	"rooCloudCTA": {
+	"vibexCloudCTA": {
 		"title": "VibeX Code Cloud évolue !",
 		"description": "Exécutez des agents distants dans le cloud, accédez à vos tâches de n'importe où, collaborez avec d'autres et bien plus encore.",
 		"joinWaitlist": "Inscrivez-vous pour recevoir les dernières mises à jour."

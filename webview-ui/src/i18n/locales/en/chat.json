@@ -101,7 +101,7 @@
 	"about": "VibeX Code is a whole AI dev team in your editor",
 	"docs": "Check our <DocsLink>docs</DocsLink> to get started",
 	"onboarding": "What would you like to do?",
-	"rooTips": {
+	"vibexTips": {
 		"customizableModes": {
 			"title": "Customizable modes that don't swerve",
 			"description": "Specialized personas that stay on-task and deliver."
@@ -256,7 +256,7 @@
 	"response": "Response",
 	"arguments": "Arguments",
 	"text": {
-		"rooSaid": "VibeX Code said"
+		"vibexSaid": "VibeX Code said"
 	},
 	"feedback": {
 		"youSaid": "You said"
@@ -330,7 +330,7 @@
 			"feature": "<bold>Limited-time FREE stealth model</bold> - Code Supernova: Now upgraded with a <bold>1M token context window</bold>! A versatile agentic coding model that supports image inputs, accessible through VibeX Code Cloud.",
 			"note": "(Note: prompts and completions are logged by the model creator and used to improve the model)",
 			"connectButton": "Connect to VibeX Code Cloud",
-			"selectModel": "Select <code>roo/code-supernova</code> from the VibeX Code Cloud provider in Settings to get started.",
+			"selectModel": "Select <code>vibex/code-supernova</code> from the VibeX Code Cloud provider in Settings to get started.",
 			"goToSettingsButton": "Go to Settings"
 		},
 		"release": {
@@ -356,7 +356,7 @@
 	},
 	"browser": {
 		"session": "Browser Session",
-		"rooWantsToUse": "VibeX Code wants to use the browser",
+		"vibexWantsToUse": "VibeX Code wants to use the browser",
 		"consoleLogs": "Console Logs",
 		"noNewLogs": "(No new logs)",
 		"screenshot": "Browser screenshot",

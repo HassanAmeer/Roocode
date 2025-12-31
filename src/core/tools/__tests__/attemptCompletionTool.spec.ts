@@ -1,4 +1,4 @@
-import { TodoItem } from "@roo-code/types"
+import { TodoItem } from "@vibex-code/types"
 
 import { AttemptCompletionToolUse } from "../../../shared/tools"
 
@@ -21,7 +21,7 @@ vi.mock("vscode", () => ({
 // Mock Package module
 vi.mock("../../../shared/package", () => ({
 	Package: {
-		name: "roo-cline",
+		name: "vibex-cline",
 	},
 }))
 

@@ -85,7 +85,7 @@ describe("WebAuthService", () => {
 				packageJSON: {
 					version: "1.0.0",
 					publisher: "Vibex",
-					name: "roo-cline",
+					name: "vibex-cline",
 				},
 			},
 		}
@@ -269,7 +269,7 @@ describe("WebAuthService", () => {
 			await authService.login()
 
 			const expectedUrl =
-				"https://api.test.com/extension/sign-in?state=746573742d72616e646f6d2d6279746573&auth_redirect=vscode%3A%2F%2FVibex.roo-cline"
+				"https://api.test.com/extension/sign-in?state=746573742d72616e646f6d2d6279746573&auth_redirect=vscode%3A%2F%2FVibex.vibex-cline"
 			expect(mockOpenExternal).toHaveBeenCalledWith(
 				expect.objectContaining({
 					toString: expect.any(Function),
@@ -289,7 +289,7 @@ describe("WebAuthService", () => {
 			await authService.login(undefined, true)
 
 			const expectedUrl =
-				"https://api.test.com/extension/provider-sign-up?state=746573742d72616e646f6d2d6279746573&auth_redirect=vscode%3A%2F%2FVibex.roo-cline"
+				"https://api.test.com/extension/provider-sign-up?state=746573742d72616e646f6d2d6279746573&auth_redirect=vscode%3A%2F%2FVibex.vibex-cline"
 			expect(mockOpenExternal).toHaveBeenCalledWith(
 				expect.objectContaining({
 					toString: expect.any(Function),
@@ -394,8 +394,8 @@ describe("WebAuthService", () => {
 
 			await authService.handleCallback("auth-code", storedState, null, "xai/grok-code-fast-1")
 
-			expect(mockContext.globalState.update).toHaveBeenCalledWith("roo-provider-model", "xai/grok-code-fast-1")
-			expect(mockContext.globalState.update).toHaveBeenCalledWith("roo-auth-skip-model", undefined)
+			expect(mockContext.globalState.update).toHaveBeenCalledWith("vibex-provider-model", "xai/grok-code-fast-1")
+			expect(mockContext.globalState.update).toHaveBeenCalledWith("vibex-auth-skip-model", undefined)
 			expect(mockLog).toHaveBeenCalledWith("[auth] Stored provider model: xai/grok-code-fast-1")
 		})
 
@@ -423,7 +423,7 @@ describe("WebAuthService", () => {
 			// Call without provider model
 			await authService.handleCallback("auth-code", storedState, null)
 
-			expect(mockContext.globalState.update).toHaveBeenCalledWith("roo-auth-skip-model", true)
+			expect(mockContext.globalState.update).toHaveBeenCalledWith("vibex-auth-skip-model", true)
 			expect(mockLog).toHaveBeenCalledWith("[auth] No provider model selected during signup")
 		})
 

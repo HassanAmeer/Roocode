@@ -1,4 +1,4 @@
-import { DEFAULT_CONSECUTIVE_MISTAKE_LIMIT } from "@roo-code/types"
+import { DEFAULT_CONSECUTIVE_MISTAKE_LIMIT } from "@vibex-code/types"
 
 import { useAppTranslation } from "@/i18n/TranslationContext"
 

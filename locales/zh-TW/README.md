@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline"><img src="https://img.shields.io/badge/VS_Code_Marketplace-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code Marketplace"></a>
-  <a href="https://x.com/roocode"><img src="https://img.shields.io/badge/roocode-000000?style=flat&logo=x&logoColor=white" alt="X"></a>
-  <a href="https://youtube.com/@roocodeyt?feature=shared"><img src="https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white" alt="YouTube"></a>
-  <a href="https://discord.gg/roocode"><img src="https://img.shields.io/badge/Join%20Discord-5865F2?style=flat&logo=discord&logoColor=white" alt="Join Discord"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.vibex-cline"><img src="https://img.shields.io/badge/VS_Code_Marketplace-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code Marketplace"></a>
+  <a href="https://x.com/vibexcode"><img src="https://img.shields.io/badge/vibexcode-000000?style=flat&logo=x&logoColor=white" alt="X"></a>
+  <a href="https://youtube.com/@vibexcodeyt?feature=shared"><img src="https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white" alt="YouTube"></a>
+  <a href="https://discord.gg/vibexcode"><img src="https://img.shields.io/badge/Join%20Discord-5865F2?style=flat&logo=discord&logoColor=white" alt="Join Discord"></a>
   <a href="https://www.reddit.com/r/RooCode/"><img src="https://img.shields.io/badge/Join%20r%2FRooCode-FF4500?style=flat&logo=reddit&logoColor=white" alt="Join r/RooCode"></a>
 </p>
 <p align="center">
-  <em>快速取得協助 → <a href="https://discord.gg/roocode">加入 Discord</a> • 偏好非同步？→ <a href="https://www.reddit.com/r/RooCode/">加入 r/RooCode</a></em>
+  <em>快速取得協助 → <a href="https://discord.gg/vibexcode">加入 Discord</a> • 偏好非同步？→ <a href="https://www.reddit.com/r/RooCode/">加入 r/RooCode</a></em>
 </p>
 
 # VibeX Code
@@ -35,7 +35,7 @@
 - [简体中文](../zh-CN/README.md)
 - [繁體中文](../zh-TW/README.md)
 - ...
-      </details>
+  </details>
 
 ---
 
@@ -60,7 +60,7 @@ VibeX Code 適應您的工作方式，而不是相反：
 - 自訂模式：為您的團隊或工作流程建置專門的模式
 - VibeXmote Control：Roomote Control 讓你能遠端控制在本機 VS Code 執行個體中運行的工作。
 
-更多資訊：[使用模式](https://docs.roocode.com/basic-usage/using-modes) • [自訂模式](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
+更多資訊：[使用模式](https://docs.vibexcode.com/basic-usage/using-modes) • [自訂模式](https://docs.vibexcode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.vibexcode.com/vibex-code-cloud/vibexmote-control)
 
 ## 教學和功能影片
 
@@ -73,14 +73,14 @@ VibeX Code 適應您的工作方式，而不是相反：
 
 </div>
 <p align="center">
-<a href="https://docs.roocode.com/tutorial-videos">更多快速教學和功能影片...</a>
+<a href="https://docs.vibexcode.com/tutorial-videos">更多快速教學和功能影片...</a>
 </p>
 
 ## 資源
 
-- **[文件](https://docs.roocode.com):** 安裝、設定和掌握 VibeX Code 的官方指南。
-- **[YouTube 頻道](https://youtube.com/@roocodeyt?feature=shared):** 觀看教學和功能實際操作。
-- **[Discord 伺服器](https://discord.gg/roocode):** 加入社群以獲得即時協助和討論。
+- **[文件](https://docs.vibexcode.com):** 安裝、設定和掌握 VibeX Code 的官方指南。
+- **[YouTube 頻道](https://youtube.com/@vibexcodeyt?feature=shared):** 觀看教學和功能實際操作。
+- **[Discord 伺服器](https://discord.gg/vibexcode):** 加入社群以獲得即時協助和討論。
 - **[Reddit 社群](https://www.reddit.com/r/RooCode):** 分享您的經驗，看看其他人正在建立什麼。
 - **[GitHub 問題](https://github.com/RooCodeInc/Roo-Code/issues):** 回報錯誤並追蹤開發進度。
 - **[功能請求](https://github.com/RooCodeInc/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** 有想法嗎？與開發人員分享。
@@ -143,10 +143,10 @@ pnpm install:vsix [-y] [--editor=<command>]
     ```sh
     pnpm vsix
     ```
-2.  將在 `bin/` 目錄中產生一個 `.vsix` 檔案（例如 `bin/roo-cline-<version>.vsix`）。
+2.  將在 `bin/` 目錄中產生一個 `.vsix` 檔案（例如 `bin/vibex-cline-<version>.vsix`）。
 3.  使用 VSCode CLI 手動安裝
     ```sh
-    code --install-extension bin/roo-cline-<version>.vsix
+    code --install-extension bin/vibex-cline-<version>.vsix
     ```
 
 ---
@@ -173,4 +173,4 @@ pnpm install:vsix [-y] [--editor=<command>]
 
 ---
 
-**享受 VibeX Code！** 無論您是將它拴在短繩上還是讓它自主漫遊，我們迫不及待地想看看您會建構什麼。如果您有問題或功能想法，請造訪我們的 [Reddit 社群](https://www.reddit.com/r/RooCode/)或 [Discord](https://discord.gg/roocode)。祝您開發愉快！
+**享受 VibeX Code！** 無論您是將它拴在短繩上還是讓它自主漫遊，我們迫不及待地想看看您會建構什麼。如果您有問題或功能想法，請造訪我們的 [Reddit 社群](https://www.reddit.com/r/RooCode/)或 [Discord](https://discord.gg/vibexcode)。祝您開發愉快！

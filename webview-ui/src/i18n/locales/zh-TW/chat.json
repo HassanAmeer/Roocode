@@ -101,7 +101,7 @@
 	"about": "VibeX Code 是您編輯器中的整個 AI 開發團隊。",
 	"docs": "請參閱我們的<DocsLink>說明文件</DocsLink>以了解詳細資訊。",
 	"onboarding": "此工作區的工作清單是空的。",
-	"rooTips": {
+	"vibexTips": {
 		"customizableModes": {
 			"title": "可自訂模式",
 			"description": "專注於任務並交付成果的專業角色。"
@@ -259,7 +259,7 @@
 	"response": "回應",
 	"arguments": "參數",
 	"text": {
-		"rooSaid": "VibeX Code 說"
+		"vibexSaid": "VibeX Code 說"
 	},
 	"feedback": {
 		"youSaid": "您說"
@@ -334,7 +334,7 @@
 			"feature": "<bold>限時免費隱形模型</bold> - Code Supernova：現已升級為 <bold>1M Token 上下文視窗</bold>！一個支援圖像輸入的多功能代理程式編程模型，透過 VibeX Code Cloud 提供。",
 			"note": "(注意：提示和完成會被模型創建者記錄並用於改進模型)",
 			"connectButton": "連接到 VibeX Code Cloud",
-			"selectModel": "在設定中從 VibeX Code Cloud 提供商選擇 <code>roo/code-supernova</code> 開始使用。",
+			"selectModel": "在設定中從 VibeX Code Cloud 提供商選擇 <code>vibex/code-supernova</code> 開始使用。",
 			"goToSettingsButton": "前往設定"
 		},
 		"release": {
@@ -360,7 +360,7 @@
 	},
 	"browser": {
 		"session": "瀏覽器會話",
-		"rooWantsToUse": "VibeX Code 想要使用瀏覽器",
+		"vibexWantsToUse": "VibeX Code 想要使用瀏覽器",
 		"consoleLogs": "主控台記錄",
 		"noNewLogs": "（沒有新記錄）",
 		"screenshot": "瀏覽器螢幕擷圖",
@@ -431,7 +431,7 @@
 	"versionIndicator": {
 		"ariaLabel": "版本 {{version}} - 點選查看發布說明"
 	},
-	"rooCloudCTA": {
+	"vibexCloudCTA": {
 		"title": "VibeX Code Cloud 正在進化！",
 		"description": "在雲端執行 VibeX CodeRemote 遠端代理、隨時隨地存取您的工作、與他人協作等等。",
 		"joinWaitlist": "註冊以獲得最新更新。"

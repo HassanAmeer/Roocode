@@ -2,8 +2,8 @@ import { OpenAICompatibleEmbedder } from "./openai-compatible"
 import { IEmbedder, EmbeddingResponse, EmbedderInfo } from "../interfaces/embedder"
 import { GEMINI_MAX_ITEM_TOKENS } from "../constants"
 import { t } from "../../../i18n"
-import { TelemetryEventName } from "@roo-code/types"
-import { TelemetryService } from "@roo-code/telemetry"
+import { TelemetryEventName } from "@vibex-code/types"
+import { TelemetryService } from "@vibex-code/telemetry"
 
 /**
  * Gemini embedder implementation that wraps the OpenAI Compatible embedder

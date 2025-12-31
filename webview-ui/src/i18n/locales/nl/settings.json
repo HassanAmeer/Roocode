@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "Moet je met ons praten? Schrijf"
 		},
-		"community": "Wil je tips of gewoon even hangen met andere VibeX Code-gebruikers? Sluit je aan bij <redditLink>reddit.com/r/VibeX Code</redditLink> of <discordLink>discord.gg/roocode</discordLink>",
+		"community": "Wil je tips of gewoon even hangen met andere VibeX Code-gebruikers? Sluit je aan bij <redditLink>reddit.com/r/VibeX Code</redditLink> of <discordLink>discord.gg/vibexcode</discordLink>",
 		"contactAndCommunity": "Contact & Gemeenschap",
 		"manageSettings": "Instellingen Beheren"
 	},
@@ -100,7 +100,7 @@
 		"openAiCompatibleModelDimensionLabel": "Embedding Dimensie:",
 		"modelDimensionLabel": "Model Dimensie",
 		"openAiCompatibleModelDimensionPlaceholder": "bijv., 1536",
-		"openAiCompatibleModelDimensionDescription": "De embedding dimensie (uitvoergrootte) voor uw model. Controleer de documentatie van uw provider voor deze waarde. Veelvoorkomende waarden: 384, 768, 1536, 3072.",
+		"openAiCompatibleModelDimensionDescription": "De embedding dimensie (uitvoergvibextte) voor uw model. Controleer de documentatie van uw provider voor deze waarde. Veelvoorkomende waarden: 384, 768, 1536, 3072.",
 		"modelLabel": "Model",
 		"selectModelPlaceholder": "Selecteer model",
 		"ollamaUrlLabel": "Ollama URL:",
@@ -195,7 +195,7 @@
 			},
 			"protected": {
 				"label": "Inclusief beschermde bestanden",
-				"description": "Sta VibeX Code toe om beschermde bestanden (zoals .rooignore en .roo/ configuratiebestanden) aan te maken en te bewerken zonder goedkeuring."
+				"description": "Sta VibeX Code toe om beschermde bestanden (zoals .vibexignore en .vibex/ configuratiebestanden) aan te maken en te bewerken zonder goedkeuring."
 			}
 		},
 		"browser": {
@@ -424,8 +424,8 @@
 			"modelId": "Model-ID",
 			"apiKey": "Ollama API-sleutel",
 			"apiKeyHelp": "Optionele API-sleutel voor geauthenticeerde Ollama-instanties of cloudservices. Laat leeg voor lokale installaties.",
-			"numCtx": "Contextvenstergrootte (num_ctx)",
-			"numCtxHelp": "Overschrijft de standaard contextvenstergrootte van het model. Laat leeg om de Modelfile-configuratie van het model te gebruiken. De minimumwaarde is 128.",
+			"numCtx": "Contextvenstergvibextte (num_ctx)",
+			"numCtxHelp": "Overschrijft de standaard contextvenstergvibextte van het model. Laat leeg om de Modelfile-configuratie van het model te gebruiken. De minimumwaarde is 128.",
 			"description": "Ollama laat je modellen lokaal op je computer draaien. Zie hun quickstart-gids voor instructies.",
 			"warning": "Let op: VibeX Code gebruikt complexe prompts en werkt het beste met Claude-modellen. Minder krachtige modellen werken mogelijk niet zoals verwacht."
 		},
@@ -437,7 +437,7 @@
 			"description": "Geen API-sleutel vereist, maar de gebruiker moet helpen met kopiëren en plakken naar de webchat-AI.",
 			"instructions": "Tijdens gebruik verschijnt een dialoogvenster en wordt het huidige bericht automatisch naar het klembord gekopieerd. Je moet deze plakken in webversies van AI (zoals ChatGPT of Claude), vervolgens het antwoord van de AI terugkopiëren naar het dialoogvenster en op bevestigen klikken."
 		},
-		"roo": {
+		"vibex": {
 			"authenticatedMessage": "Veilig geauthenticeerd via je VibeX Code Cloud-account.",
 			"connectButton": "Verbinden met VibeX Code Cloud"
 		},
@@ -455,7 +455,7 @@
 				"description": "Maximaal aantal tokens dat het model in een antwoord kan genereren. (Geef -1 op om de server het maximum te laten bepalen.)"
 			},
 			"contextWindow": {
-				"label": "Contextvenstergrootte",
+				"label": "Contextvenstergvibextte",
 				"description": "Totaal aantal tokens (input + output) dat het model kan verwerken."
 			},
 			"imageSupport": {
@@ -531,10 +531,10 @@
 			"description": "Indien ingeschakeld, kan VibeX Code een browser gebruiken om te interageren met websites wanneer modellen computergebruik ondersteunen. <0>Meer informatie</0>"
 		},
 		"viewport": {
-			"label": "Viewport-grootte",
-			"description": "Selecteer de viewport-grootte voor browserinteracties. Dit beïnvloedt hoe websites worden weergegeven en gebruikt.",
+			"label": "Viewport-gvibextte",
+			"description": "Selecteer de viewport-gvibextte voor browserinteracties. Dit beïnvloedt hoe websites worden weergegeven en gebruikt.",
 			"options": {
-				"largeDesktop": "Groot bureaublad (1280x800)",
+				"largeDesktop": "Gvibext bureaublad (1280x800)",
 				"smallDesktop": "Klein bureaublad (900x600)",
 				"tablet": "Tablet (768x1024)",
 				"mobile": "Mobiel (360x640)"
@@ -605,9 +605,9 @@
 			"label": "Limiet werkruimtebestanden in context",
 			"description": "Maximaal aantal bestanden dat wordt opgenomen in details van de huidige werkmap. Hogere waarden geven meer context maar verhogen het tokengebruik."
 		},
-		"rooignore": {
-			"label": ".rooignore-bestanden tonen in lijsten en zoekopdrachten",
-			"description": "Indien ingeschakeld, worden bestanden die overeenkomen met patronen in .rooignore getoond in lijsten met een slotje. Indien uitgeschakeld, worden deze bestanden volledig verborgen in lijsten en zoekopdrachten."
+		"vibexignore": {
+			"label": ".vibexignore-bestanden tonen in lijsten en zoekopdrachten",
+			"description": "Indien ingeschakeld, worden bestanden die overeenkomen met patronen in .vibexignore getoond in lijsten met een slotje. Indien uitgeschakeld, worden deze bestanden volledig verborgen in lijsten en zoekopdrachten."
 		},
 		"maxReadFile": {
 			"label": "Automatisch afkappen bij bestandslezen",
@@ -620,14 +620,14 @@
 			"description": "Maximum aantal bestanden dat de 'read_file' tool tegelijkertijd kan verwerken. Hogere waarden kunnen het lezen van meerdere kleine bestanden versnellen maar verhogen het geheugengebruik."
 		},
 		"maxImageFileSize": {
-			"label": "Maximum afbeeldingsbestandsgrootte",
+			"label": "Maximum afbeeldingsbestandsgvibextte",
 			"mb": "MB",
-			"description": "Maximale grootte (in MB) voor afbeeldingsbestanden die kunnen worden verwerkt door de read file tool."
+			"description": "Maximale gvibextte (in MB) voor afbeeldingsbestanden die kunnen worden verwerkt door de read file tool."
 		},
 		"maxTotalImageSize": {
-			"label": "Maximale totale afbeeldingsgrootte",
+			"label": "Maximale totale afbeeldingsgvibextte",
 			"mb": "MB",
-			"description": "Maximale cumulatieve groottelimiet (in MB) voor alle afbeeldingen die in één read_file-bewerking worden verwerkt. Bij het lezen van meerdere afbeeldingen wordt de grootte van elke afbeelding bij het totaal opgeteld. Als het toevoegen van een andere afbeelding deze limiet zou overschrijden, wordt deze overgeslagen."
+			"description": "Maximale cumulatieve gvibexttelimiet (in MB) voor alle afbeeldingen die in één read_file-bewerking worden verwerkt. Bij het lezen van meerdere afbeeldingen wordt de gvibextte van elke afbeelding bij het totaal opgeteld. Als het toevoegen van een andere afbeelding deze limiet zou overschrijden, wordt deze overgeslagen."
 		},
 		"diagnostics": {
 			"includeMessages": {
@@ -683,7 +683,7 @@
 		},
 		"outputCharacterLimit": {
 			"label": "Terminal-tekenlimiet",
-			"description": "Overschrijft de regellimiet om geheugenproblemen te voorkomen door een harde limiet op uitvoergrootte af te dwingen. Bij overschrijding behoudt het begin en einde en toont een placeholder aan VibeX Code waar inhoud wordt overgeslagen. <0>Meer informatie</0>"
+			"description": "Overschrijft de regellimiet om geheugenproblemen te voorkomen door een harde limiet op uitvoergvibextte af te dwingen. Bij overschrijding behoudt het begin en einde en toont een placeholder aan VibeX Code waar inhoud wordt overgeslagen. <0>Meer informatie</0>"
 		},
 		"shellIntegrationTimeout": {
 			"label": "Terminal-shell-integratie timeout",
@@ -767,7 +767,7 @@
 	"experimental": {
 		"DIFF_STRATEGY_UNIFIED": {
 			"name": "Experimentele unified diff-strategie gebruiken",
-			"description": "Schakel de experimentele unified diff-strategie in. Deze strategie kan het aantal herhalingen door model fouten verminderen, maar kan onverwacht gedrag of onjuiste bewerkingen veroorzaken. Alleen inschakelen als je de risico's begrijpt en wijzigingen zorgvuldig wilt controleren."
+			"description": "Schakel de experimentele unified diff-strategie in. Deze strategie kan het aantal herhalingen door model fouten verminderen, maar kan onverwacht gedrag of onjuiste bewerkingen vevibexrzaken. Alleen inschakelen als je de risico's begrijpt en wijzigingen zorgvuldig wilt controleren."
 		},
 		"INSERT_BLOCK": {
 			"name": "Experimentele inhoud-invoeg-tool gebruiken",
@@ -828,9 +828,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "Aangepaste tools inschakelen",
-			"description": "Indien ingeschakeld kan VibeX Code aangepaste TypeScript/JavaScript-tools laden en gebruiken uit de map .roo/tools van je project of ~/.roo/tools voor globale tools. Opmerking: deze tools worden automatisch goedgekeurd.",
+			"description": "Indien ingeschakeld kan VibeX Code aangepaste TypeScript/JavaScript-tools laden en gebruiken uit de map .vibex/tools van je project of ~/.vibex/tools voor globale tools. Opmerking: deze tools worden automatisch goedgekeurd.",
 			"toolsHeader": "Beschikbare aangepaste tools",
-			"noTools": "Geen aangepaste tools geladen. Voeg .ts- of .js-bestanden toe aan de map .roo/tools van je project of ~/.roo/tools voor globale tools.",
+			"noTools": "Geen aangepaste tools geladen. Voeg .ts- of .js-bestanden toe aan de map .vibex/tools van je project of ~/.vibex/tools voor globale tools.",
 			"refreshButton": "Vernieuwen",
 			"refreshing": "Vernieuwen...",
 			"refreshSuccess": "Tools succesvol vernieuwd",
@@ -864,9 +864,9 @@
 		"useAzure": "Azure gebruiken",
 		"azureApiVersion": "Azure API-versie instellen",
 		"gemini": {
-			"freeRequests": "* Gratis tot {{count}} verzoeken per minuut. Daarna is de prijs afhankelijk van de promptgrootte.",
+			"freeRequests": "* Gratis tot {{count}} verzoeken per minuut. Daarna is de prijs afhankelijk van de promptgvibextte.",
 			"pricingDetails": "Zie prijsdetails voor meer info.",
-			"billingEstimate": "* Facturering is een schatting - de exacte kosten hangen af van de promptgrootte."
+			"billingEstimate": "* Facturering is een schatting - de exacte kosten hangen af van de promptgvibextte."
 		}
 	},
 	"modelPicker": {
@@ -878,7 +878,7 @@
 		"simplifiedExplanation": "Je kunt later gedetailleerde modelinstellingen aanpassen."
 	},
 	"footer": {
-		"feedback": "Heb je vragen of feedback? Open gerust een issue op <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> of sluit je aan bij <redditLink>reddit.com/r/VibeX Code</redditLink> of <discordLink>discord.gg/roocode</discordLink>",
+		"feedback": "Heb je vragen of feedback? Open gerust een issue op <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> of sluit je aan bij <redditLink>reddit.com/r/VibeX Code</redditLink> of <discordLink>discord.gg/vibexcode</discordLink>",
 		"telemetry": {
 			"label": "Anonieme fout- en gebruiksrapportage toestaan",
 			"description": "Help VibeX Code te verbeteren door anonieme gebruiksgegevens en foutmeldingen te versturen. Deze telemetrie verzamelt geen code, prompts of persoonlijke informatie. Zie ons <privacyLink>privacybeleid</privacyLink> voor meer details."
@@ -902,7 +902,7 @@
 		"openAi": "Je moet een geldige basis-URL, API-sleutel en model-ID opgeven.",
 		"arn": {
 			"invalidFormat": "Ongeldig ARN-formaat. Controleer de formaatvereisten.",
-			"regionMismatch": "Waarschuwing: De regio in je ARN ({{arnRegion}}) komt niet overeen met je geselecteerde regio ({{region}}). Dit kan toegangsfouten veroorzaken. De provider gebruikt de regio uit de ARN."
+			"regionMismatch": "Waarschuwing: De regio in je ARN ({{arnRegion}}) komt niet overeen met je geselecteerde regio ({{region}}). Dit kan toegangsfouten vevibexrzaken. De provider gebruikt de regio uit de ARN."
 		},
 		"modelAvailability": "Het opgegeven model-ID ({{modelId}}) is niet beschikbaar. Kies een ander model.",
 		"modelDeprecated": "Dit model is niet meer beschikbaar. Kies een ander model.",

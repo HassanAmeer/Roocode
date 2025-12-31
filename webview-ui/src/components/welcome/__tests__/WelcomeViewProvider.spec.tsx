@@ -53,7 +53,7 @@ vi.mock("../../common/Tab", () => ({
 
 // Mock VibeXHero
 vi.mock("../VibeXHero", () => ({
-	default: () => <div data-testid="roo-hero">Vibex Hero</div>,
+	default: () => <div data-testid="vibex-hero">Vibex Hero</div>,
 }))
 
 // Mock lucide-react icons
@@ -148,7 +148,7 @@ describe("WelcomeViewProvider", () => {
 			fireEvent.click(getStartedButton)
 
 			expect(vscode.postMessage).toHaveBeenCalledWith({
-				type: "rooCloudSignIn",
+				type: "vibexCloudSignIn",
 				useProviderSignup: true,
 			})
 		})
@@ -177,7 +177,7 @@ describe("WelcomeViewProvider", () => {
 
 			// Should now show provider selection screen with radio buttons
 			expect(screen.getByTestId("radio-group")).toBeInTheDocument()
-			expect(screen.getByTestId("radio-roo")).toBeInTheDocument()
+			expect(screen.getByTestId("radio-vibex")).toBeInTheDocument()
 			expect(screen.getByTestId("radio-custom")).toBeInTheDocument()
 			expect(screen.getByTestId("trans-welcome:providerSignup.chooseProvider")).toBeInTheDocument()
 		})
@@ -199,11 +199,11 @@ describe("WelcomeViewProvider", () => {
 			expect(screen.getByTestId("radio-group")).toBeInTheDocument()
 
 			// Should show both radio options
-			expect(screen.getByTestId("radio-roo")).toBeInTheDocument()
+			expect(screen.getByTestId("radio-vibex")).toBeInTheDocument()
 			expect(screen.getByTestId("radio-custom")).toBeInTheDocument()
 
 			// Should show Vibex provider description
-			expect(screen.getByText(/welcome:providerSignup.rooCloudDescription/)).toBeInTheDocument()
+			expect(screen.getByText(/welcome:providerSignup.vibexCloudDescription/)).toBeInTheDocument()
 
 			// Should show custom provider description
 			expect(screen.getByText(/welcome:providerSignup.useAnotherProviderDescription/)).toBeInTheDocument()
@@ -214,7 +214,7 @@ describe("WelcomeViewProvider", () => {
 			navigateToProviderSelection()
 
 			const radioGroup = screen.getByTestId("radio-group")
-			expect(radioGroup).toHaveAttribute("data-value", "roo")
+			expect(radioGroup).toHaveAttribute("data-value", "vibex")
 		})
 
 		it("does not show API options when Vibex provider is selected", () => {
@@ -236,7 +236,7 @@ describe("WelcomeViewProvider", () => {
 			fireEvent.click(getStartedButton)
 
 			expect(vscode.postMessage).toHaveBeenCalledWith({
-				type: "rooCloudSignIn",
+				type: "vibexCloudSignIn",
 				useProviderSignup: true,
 			})
 		})
@@ -252,7 +252,7 @@ describe("WelcomeViewProvider", () => {
 				type: "upsertApiConfiguration",
 				text: "default",
 				apiConfiguration: {
-					apiProvider: "roo",
+					apiProvider: "vibex",
 				},
 			})
 		})

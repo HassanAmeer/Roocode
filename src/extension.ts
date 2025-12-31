@@ -4,7 +4,7 @@ import * as path from "path"
 
 // Load environment variables from .env file
 try {
-	// Specify path to .env file in the project root directory
+	// Specify path to .env file in the project vibext directory
 	const envPath = path.join(__dirname, "..", ".env")
 	dotenvx.config({ path: envPath })
 } catch (e) {
@@ -12,10 +12,10 @@ try {
 	console.warn("Failed to load environment variables:", e)
 }
 
-import type { CloudUserInfo, AuthState } from "@roo-code/types"
-import { CloudService, BridgeOrchestrator } from "@roo-code/cloud"
-import { TelemetryService, PostHogTelemetryClient } from "@roo-code/telemetry"
-import { customToolRegistry } from "@roo-code/core"
+import type { CloudUserInfo, AuthState } from "@vibex-code/types"
+import { CloudService, BridgeOrchestrator } from "@vibex-code/cloud"
+import { TelemetryService, PostHogTelemetryClient } from "@vibex-code/telemetry"
+import { customToolRegistry } from "@vibex-code/core"
 
 import "./utils/path" // Necessary to have access to String.prototype.toPosix.
 import { createOutputChannelLogger, createDualLogger } from "./utils/outputChannelLogger"
@@ -159,13 +159,13 @@ export async function activate(context: vscode.ExtensionContext) {
 						? CloudService.instance.authService?.getSessionToken()
 						: undefined
 					await refreshModels({
-						provider: "roo",
+						provider: "vibex",
 						baseUrl: process.env.ROO_CODE_PROVIDER_URL ?? "https://api.vibex.com/proxy",
 						apiKey: sessionToken,
 					})
 				} else {
 					// Flush without refresh on logout
-					await flushModels({ provider: "roo" }, false)
+					await flushModels({ provider: "vibex" }, false)
 				}
 			} catch (error) {
 				cloudLogger(
@@ -180,7 +180,7 @@ export async function activate(context: vscode.ExtensionContext) {
 			// Apply stored provider model to API configuration if present
 			if (data.state === "active-session") {
 				try {
-					const storedModel = context.globalState.get<string>("roo-provider-model")
+					const storedModel = context.globalState.get<string>("vibex-provider-model")
 					if (storedModel) {
 						cloudLogger(`[authStateChangedHandler] Applying stored provider model: ${storedModel}`)
 						// Get the current API configuration name
@@ -188,11 +188,11 @@ export async function activate(context: vscode.ExtensionContext) {
 							provider.contextProxy.getGlobalState("currentApiConfigName") || "default"
 						// Update it with the stored model using upsertProviderProfile
 						await provider.upsertProviderProfile(currentConfigName, {
-							apiProvider: "roo",
+							apiProvider: "vibex",
 							apiModelId: storedModel,
 						})
 						// Clear the stored model after applying
-						await context.globalState.update("roo-provider-model", undefined)
+						await context.globalState.update("vibex-provider-model", undefined)
 						cloudLogger(`[authStateChangedHandler] Applied and cleared stored provider model`)
 					}
 				} catch (error) {
@@ -340,7 +340,7 @@ export async function activate(context: vscode.ExtensionContext) {
 			{ path: context.extensionPath, pattern: "**/*.ts" },
 			{ path: path.join(context.extensionPath, "../packages/types"), pattern: "**/*.ts" },
 			{ path: path.join(context.extensionPath, "../packages/telemetry"), pattern: "**/*.ts" },
-			{ path: path.join(context.extensionPath, "node_modules/@roo-code/cloud"), pattern: "**/*" },
+			{ path: path.join(context.extensionPath, "node_modules/@vibex-code/cloud"), pattern: "**/*" },
 		]
 
 		console.log(

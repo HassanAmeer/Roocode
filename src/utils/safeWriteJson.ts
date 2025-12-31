@@ -221,8 +221,8 @@ async function _streamDataToFile(targetPath: string, data: any): Promise<void> {
 		disassembler.pipe(stringer).pipe(fileWriteStream)
 
 		// stream-json's Disassembler might error if `data` is undefined.
-		// JSON.stringify(undefined) would produce the string "undefined" if it's the root value.
-		// Writing 'null' is a safer JSON representation for a root undefined value.
+		// JSON.stringify(undefined) would produce the string "undefined" if it's the vibext value.
+		// Writing 'null' is a safer JSON representation for a vibext undefined value.
 		if (data === undefined) {
 			disassembler.write(null)
 		} else {

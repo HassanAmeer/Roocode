@@ -34,11 +34,11 @@ import {
 	fireworksDefaultModelId,
 	featherlessDefaultModelId,
 	ioIntelligenceDefaultModelId,
-	rooDefaultModelId,
+	vibexDefaultModelId,
 	vercelAiGatewayDefaultModelId,
 	deepInfraDefaultModelId,
 	minimaxDefaultModelId,
-} from "@roo-code/types"
+} from "@vibex-code/types"
 
 import { vscode } from "@src/utils/vscode"
 import { validateApiConfigurationExcludingModelErrors, getModelValidationError } from "@src/utils/validate"
@@ -117,6 +117,7 @@ import { BedrockCustomArn } from "./providers/BedrockCustomArn"
 import { VibeXBalanceDisplay } from "./providers/VibeXBalanceDisplay"
 import { buildDocLink } from "@src/utils/docLinks"
 import { BookOpenText } from "lucide-react"
+import { TokenLimitsControl } from "./TokenLimitsControl"
 
 export interface ApiOptionsProps {
 	uriScheme: string | undefined
@@ -242,7 +243,7 @@ const ApiOptions = ({
 			} else if (
 				selectedProvider === "litellm" ||
 				selectedProvider === "deepinfra" ||
-				selectedProvider === "roo"
+				selectedProvider === "vibex"
 			) {
 				vscode.postMessage({ type: "requestRouterModels" })
 			}
@@ -369,7 +370,7 @@ const ApiOptions = ({
 				fireworks: { field: "apiModelId", default: fireworksDefaultModelId },
 				featherless: { field: "apiModelId", default: featherlessDefaultModelId },
 				"io-intelligence": { field: "ioIntelligenceModelId", default: ioIntelligenceDefaultModelId },
-				roo: { field: "apiModelId", default: rooDefaultModelId },
+				vibex: { field: "apiModelId", default: vibexDefaultModelId },
 				"vercel-ai-gateway": { field: "vercelAiGatewayModelId", default: vercelAiGatewayDefaultModelId },
 				openai: { field: "openAiModelId" },
 				ollama: { field: "ollamaModelId" },
@@ -446,16 +447,16 @@ const ApiOptions = ({
 			label,
 		}))
 
-		// Pin "roo" to the top if not on welcome screen
+		// Pin "vibex" to the top if not on welcome screen
 		if (!fromWelcomeView) {
-			const rooIndex = options.findIndex((opt) => opt.value === "roo")
-			if (rooIndex > 0) {
-				const [rooOption] = options.splice(rooIndex, 1)
-				options.unshift(rooOption)
+			const vibexIndex = options.findIndex((opt) => opt.value === "vibex")
+			if (vibexIndex > 0) {
+				const [vibexOption] = options.splice(vibexIndex, 1)
+				options.unshift(vibexOption)
 			}
 		} else {
 			// Filter out vibex from the welcome view
-			const filteredOptions = options.filter((opt) => opt.value !== "roo")
+			const filteredOptions = options.filter((opt) => opt.value !== "vibex")
 			options.length = 0
 			options.push(...filteredOptions)
 
@@ -474,7 +475,7 @@ const ApiOptions = ({
 			<div className="flex flex-col gap-1 relative">
 				<div className="flex justify-between items-center">
 					<label className="block font-medium">{t("settings:providers.apiProvider")}</label>
-					{selectedProvider === "roo" && cloudIsAuthenticated ? (
+					{selectedProvider === "vibex" && cloudIsAuthenticated ? (
 						<VibeXBalanceDisplay />
 					) : (
 						docs && (
@@ -758,7 +759,7 @@ const ApiOptions = ({
 				<Fireworks apiConfiguration={apiConfiguration} setApiConfigurationField={setApiConfigurationField} />
 			)}
 
-			{selectedProvider === "roo" && (
+			{selectedProvider === "vibex" && (
 				<Vibex
 					apiConfiguration={apiConfiguration}
 					setApiConfigurationField={setApiConfigurationField}
@@ -853,6 +854,19 @@ const ApiOptions = ({
 						}
 						maxValue={selectedModelInfo?.contextWindow}
 						defaultValue={selectedModelInfo?.contextWindow}
+					/>
+					<TokenLimitsControl
+						maxInputTokens={apiConfiguration.modelMaxInputTokens}
+						maxOutputTokens={apiConfiguration.modelMaxOutputTokens}
+						onChangeMaxInput={(value) =>
+							setApiConfigurationField("modelMaxInputTokens", value === null ? undefined : value)
+						}
+						onChangeMaxOutput={(value) =>
+							setApiConfigurationField("modelMaxOutputTokens", value === null ? undefined : value)
+						}
+						modelMaxInputTokens={selectedModelInfo?.maxInputTokens}
+						modelMaxOutputTokens={selectedModelInfo?.maxOutputTokens}
+						modelContextWindow={selectedModelInfo?.contextWindow}
 					/>
 				</>
 			)}

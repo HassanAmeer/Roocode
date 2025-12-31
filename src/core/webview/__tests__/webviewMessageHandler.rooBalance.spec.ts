@@ -1,8 +1,8 @@
 import { describe, it, expect, vi, beforeEach } from "vitest"
 import { webviewMessageHandler } from "../webviewMessageHandler"
-import { CloudService } from "@roo-code/cloud"
+import { CloudService } from "@vibex-code/cloud"
 
-vi.mock("@roo-code/cloud", () => ({
+vi.mock("@vibex-code/cloud", () => ({
 	CloudService: {
 		hasInstance: vi.fn(),
 		instance: {
@@ -46,7 +46,7 @@ describe("webviewMessageHandler - requestRooCreditBalance", () => {
 		)
 
 		expect(mockProvider.postMessageToWebview).toHaveBeenCalledWith({
-			type: "rooCreditBalance",
+			type: "vibexCreditBalance",
 			requestId,
 			values: { balance: mockBalance },
 		})
@@ -68,7 +68,7 @@ describe("webviewMessageHandler - requestRooCreditBalance", () => {
 		)
 
 		expect(mockProvider.postMessageToWebview).toHaveBeenCalledWith({
-			type: "rooCreditBalance",
+			type: "vibexCreditBalance",
 			requestId,
 			values: { error: errorMessage },
 		})
@@ -88,7 +88,7 @@ describe("webviewMessageHandler - requestRooCreditBalance", () => {
 		)
 
 		expect(mockProvider.postMessageToWebview).toHaveBeenCalledWith({
-			type: "rooCreditBalance",
+			type: "vibexCreditBalance",
 			requestId,
 			values: { error: "Cloud service not available" },
 		})
@@ -109,7 +109,7 @@ describe("webviewMessageHandler - requestRooCreditBalance", () => {
 		)
 
 		expect(mockProvider.postMessageToWebview).toHaveBeenCalledWith({
-			type: "rooCreditBalance",
+			type: "vibexCreditBalance",
 			requestId,
 			values: { error: "Cloud service not available" },
 		})

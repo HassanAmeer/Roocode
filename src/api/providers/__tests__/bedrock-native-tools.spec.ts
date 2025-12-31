@@ -173,7 +173,7 @@ describe("AwsBedrockHandler Native Tool Calling", () => {
 			const lineRanges = readFileSchema.properties.files.items.properties.line_ranges
 			expect(lineRanges.anyOf).toEqual([{ type: "array", items: { type: "integer" } }, { type: "null" }])
 			expect(lineRanges.type).toBeUndefined()
-			// items should now be inside the array variant, not at root
+			// items should now be inside the array variant, not at vibext
 			expect(lineRanges.items).toBeUndefined()
 			expect(lineRanges.description).toBe("Optional line ranges")
 		})

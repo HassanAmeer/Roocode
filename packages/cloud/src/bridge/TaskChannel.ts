@@ -12,7 +12,7 @@ import {
 	TaskBridgeEventName,
 	TaskBridgeCommandName,
 	TaskSocketEvents,
-} from "@roo-code/types"
+} from "@vibex-code/types"
 
 import { type BaseChannelOptions, BaseChannel } from "./BaseChannel.js"
 

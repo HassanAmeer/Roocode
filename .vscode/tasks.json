@@ -5,11 +5,7 @@
 	"tasks": [
 		{
 			"label": "watch",
-			"dependsOn": [
-				"watch:webview",
-				"watch:bundle",
-				"watch:tsc"
-			],
+			"dependsOn": ["watch:webview", "watch:bundle", "watch:tsc"],
 			"presentation": {
 				"reveal": "never"
 			},
@@ -21,7 +17,7 @@
 		{
 			"label": "watch:webview",
 			"type": "shell",
-			"command": "pnpm --filter @roo-code/vscode-webview dev",
+			"command": "pnpm --filter @vibex-code/vscode-webview dev",
 			"group": "build",
 			"problemMatcher": {
 				"owner": "vite",

@@ -3,7 +3,7 @@ import * as fs from "fs/promises"
 import * as path from "path"
 import * as os from "os"
 
-import { VibexEventName, type ClineMessage } from "@roo-code/types"
+import { VibexEventName, type ClineMessage } from "@vibex-code/types"
 
 import { waitFor, sleep } from "../utils"
 import { setDefaultSuiteTimeout } from "../test-utils"
@@ -16,7 +16,7 @@ suite.skip("Vibex write_to_file Tool", function () {
 
 	// Create a temporary directory for test files
 	suiteSetup(async () => {
-		tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "roo-test-"))
+		tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "vibex-test-"))
 	})
 
 	// Clean up temporary directory after tests
@@ -167,7 +167,7 @@ suite.skip("Vibex write_to_file Tool", function () {
 				testFilePath, // Expected location
 				path.join(tempDir, baseFileName), // In temp directory
 				path.join(process.cwd(), baseFileName), // In current working directory
-				path.join("/tmp/roo-test-workspace-" + "*", baseFileName), // In workspace created by runTest.ts
+				path.join("/tmp/vibex-test-workspace-" + "*", baseFileName), // In workspace created by runTest.ts
 			]
 
 			let fileFound = false
@@ -177,7 +177,7 @@ suite.skip("Vibex write_to_file Tool", function () {
 			// First check the workspace directory that was created
 			const workspaceDirs = await fs
 				.readdir("/tmp")
-				.then((files) => files.filter((f) => f.startsWith("roo-test-workspace-")))
+				.then((files) => files.filter((f) => f.startsWith("vibex-test-workspace-")))
 				.catch(() => [])
 
 			for (const wsDir of workspaceDirs) {
@@ -238,7 +238,7 @@ suite.skip("Vibex write_to_file Tool", function () {
 					const tmpFiles = await fs.readdir("/tmp")
 					console.log(
 						"Test files in /tmp:",
-						tmpFiles.filter((f) => f.includes("test-file") || f.includes("roo-test")),
+						tmpFiles.filter((f) => f.includes("test-file") || f.includes("vibex-test")),
 					)
 				} catch (e) {
 					console.log("Could not list /tmp:", e)
@@ -355,7 +355,7 @@ suite.skip("Vibex write_to_file Tool", function () {
 			// Check workspace directories
 			const workspaceDirs = await fs
 				.readdir("/tmp")
-				.then((files) => files.filter((f) => f.startsWith("roo-test-workspace-")))
+				.then((files) => files.filter((f) => f.startsWith("vibex-test-workspace-")))
 				.catch(() => [])
 
 			for (const wsDir of workspaceDirs) {
@@ -369,14 +369,14 @@ suite.skip("Vibex write_to_file Tool", function () {
 					console.log("File found in workspace nested directory:", wsNestedPath)
 					break
 				} catch {
-					// Also check if file was created directly in workspace root
+					// Also check if file was created directly in workspace vibext
 					const wsFilePath = path.join("/tmp", wsDir, fileName)
 					try {
 						await fs.access(wsFilePath)
 						fileFound = true
 						actualFilePath = wsFilePath
 						actualContent = await fs.readFile(wsFilePath, "utf-8")
-						console.log("File found in workspace root (nested dirs not created):", wsFilePath)
+						console.log("File found in workspace vibext (nested dirs not created):", wsFilePath)
 						break
 					} catch {
 						// Continue checking

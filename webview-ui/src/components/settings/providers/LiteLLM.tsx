@@ -1,10 +1,10 @@
 import { useCallback, useState, useEffect, useRef } from "react"
 import { VSCodeTextField, VSCodeCheckbox } from "@vscode/webview-ui-toolkit/react"
 
-import { type ProviderSettings, type OrganizationAllowList, litellmDefaultModelId } from "@roo-code/types"
+import { type ProviderSettings, type OrganizationAllowList, litellmDefaultModelId } from "@vibex-code/types"
 
-import { RouterName } from "@roo-code/types"
-import { ExtensionMessage } from "@roo-code/types"
+import { RouterName } from "@vibex-code/types"
+import { ExtensionMessage } from "@vibex-code/types"
 
 import { vscode } from "@src/utils/vscode"
 import { useExtensionState } from "@src/context/ExtensionStateContext"

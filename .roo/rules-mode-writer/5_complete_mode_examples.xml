@@ -29,7 +29,7 @@
         <description>Immerse in existing test mode configuration</description>
         <tool_use><![CDATA[
 <read_file>
-<path>.roomodes</path>
+<path>.vibexmodes</path>
 </read_file>
         ]]></tool_use>
         <analysis>Found test mode configuration with current roleDefinition and file restrictions</analysis>
@@ -39,13 +39,13 @@
         <description>Explore existing test mode instructions</description>
         <tool_use><![CDATA[
 <list_files>
-<path>.roo/rules-test</path>
+<path>.vibex/rules-test</path>
 <recursive>true</recursive>
 </list_files>
         ]]></tool_use>
         <tool_use><![CDATA[
 <read_file>
-<path>.roo/rules-test/1_workflow.xml</path>
+<path>.vibex/rules-test/1_workflow.xml</path>
 </read_file>
         ]]></tool_use>
         <analysis>Understood current test workflows and patterns</analysis>
@@ -74,10 +74,10 @@ This aligns well with the existing testing focus. Should I proceed with all thes
       </step>
 
       <step number="5">
-        <description>Update mode configuration in .roomodes</description>
+        <description>Update mode configuration in .vibexmodes</description>
         <tool_use><![CDATA[
 <apply_diff>
-<path>.roomodes</path>
+<path>.vibexmodes</path>
 <diff>
 <<<<<<< SEARCH
     roleDefinition: |-
@@ -95,7 +95,7 @@ This aligns well with the existing testing focus. Should I proceed with all thes
         <description>Update file restrictions to include benchmark files</description>
         <tool_use><![CDATA[
 <apply_diff>
-<path>.roomodes</path>
+<path>.vibexmodes</path>
 <diff>
 <<<<<<< SEARCH
         - fileRegex: (__tests__/.*|__mocks__/.*|\.test\.(ts|tsx|js|jsx)$|\.spec\.(ts|tsx|js|jsx)$|/test/.*|vitest\.config\.(js|ts)$|vitest\.setup\.(js|ts)$)
@@ -113,7 +113,7 @@ This aligns well with the existing testing focus. Should I proceed with all thes
         <description>Create new benchmark workflow instructions</description>
         <tool_use><![CDATA[
 <write_to_file>
-<path>.roo/rules-test/5_benchmark_testing.xml</path>
+<path>.vibex/rules-test/5_benchmark_testing.xml</path>
 <content>
 <benchmark_testing_guide>
   <overview>
@@ -193,7 +193,7 @@ I've successfully enhanced the test mode with benchmark testing capabilities:
 
 2. Modified file restrictions to include .bench.ts files, allowing the mode to create and edit benchmark files
 
-3. Created new workflow instructions at .roo/rules-test/5_benchmark_testing.xml with:
+3. Created new workflow instructions at .vibex/rules-test/5_benchmark_testing.xml with:
    - Basic benchmark patterns
    - Best practices for performance testing
    - Example code using Vitest's bench API

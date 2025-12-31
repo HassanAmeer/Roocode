@@ -1,7 +1,7 @@
 import path from "path"
 import { isBinaryFile } from "isbinaryfile"
-import type { FileEntry, LineRange } from "@roo-code/types"
-import { isNativeProtocol, ANTHROPIC_DEFAULT_MAX_TOKENS } from "@roo-code/types"
+import type { FileEntry, LineRange } from "@vibex-code/types"
+import { isNativeProtocol, ANTHROPIC_DEFAULT_MAX_TOKENS } from "@vibex-code/types"
 
 import { Task } from "../task/Task"
 import { ClineSayTool } from "../../shared/ExtensionMessage"
@@ -191,7 +191,7 @@ export class ReadFileTool extends BaseTool<"read_file"> {
 				if (fileResult.status === "pending") {
 					const accessAllowed = task.vibexIgnoreController?.validateAccess(relPath)
 					if (!accessAllowed) {
-						await task.say("rooignore_error", relPath)
+						await task.say("vibexignore_error", relPath)
 						const errorMsg = formatResponse.vibexIgnoreError(relPath)
 						updateFileResult(relPath, {
 							status: "blocked",

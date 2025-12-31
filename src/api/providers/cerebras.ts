@@ -1,12 +1,13 @@
 import { Anthropic } from "@anthropic-ai/sdk"
 
-import { type CerebrasModelId, cerebrasDefaultModelId, cerebrasModels } from "@roo-code/types"
+import { type CerebrasModelId, cerebrasDefaultModelId, cerebrasModels, type ModelInfo } from "@vibex-code/types"
 
 import type { ApiHandlerOptions } from "../../shared/api"
 import { calculateApiCostOpenAI } from "../../shared/cost"
 import { ApiStream } from "../transform/stream"
 import { convertToOpenAiMessages } from "../transform/openai-format"
 import { XmlMatcher } from "../../utils/xml-matcher"
+import { estimateMessagesTokenCount, truncateMessages } from "../utils/token-management"
 
 import type { ApiHandlerCreateMessageMetadata, SingleCompletionHandler } from "../index"
 import { BaseProvider } from "./base-provider"
@@ -38,7 +39,7 @@ export class CerebrasHandler extends BaseProvider implements SingleCompletionHan
 		}
 	}
 
-	getModel(): { id: CerebrasModelId; info: (typeof cerebrasModels)[CerebrasModelId] } {
+	getModel(): { id: CerebrasModelId; info: ModelInfo } {
 		const modelId = this.options.apiModelId as CerebrasModelId
 		const validModelId = modelId && this.providerModels[modelId] ? modelId : this.defaultProviderModelId
 
@@ -97,16 +98,37 @@ export class CerebrasHandler extends BaseProvider implements SingleCompletionHan
 		metadata?: ApiHandlerCreateMessageMetadata,
 	): ApiStream {
 		const { id: model, info: modelInfo } = this.getModel()
-		const max_tokens = modelInfo.maxTokens
+		const max_tokens: number = modelInfo.maxOutputTokens ?? modelInfo.maxTokens ?? 8192
 		const supportsNativeTools = modelInfo.supportsNativeTools ?? false
 		const temperature = this.options.modelTemperature ?? CEREBRAS_DEFAULT_TEMPERATURE
+
+		// Truncate messages if they exceed max input tokens
+		let processedMessages = messages
+		if (modelInfo.maxInputTokens) {
+			const estimatedTokens = estimateMessagesTokenCount(systemPrompt, messages)
+
+			if (estimatedTokens > modelInfo.maxInputTokens) {
+				const { truncatedMessages, messagesRemoved, tokensRemoved } = truncateMessages(
+					systemPrompt,
+					messages,
+					modelInfo.maxInputTokens,
+				)
+				processedMessages = truncatedMessages
+
+				// Yield a warning about truncation
+				yield {
+					type: "text",
+					text: `⚠️ Message history truncated: Removed ${messagesRemoved} older message(s) (${tokensRemoved} tokens) to fit within ${modelInfo.maxInputTokens} token limit.\n\n`,
+				}
+			}
+		}
 
 		// Check if we should use native tool calling
 		const useNativeTools =
 			supportsNativeTools && metadata?.tools && metadata.tools.length > 0 && metadata?.toolProtocol !== "xml"
 
 		// Convert Anthropic messages to OpenAI format (Cerebras is OpenAI-compatible)
-		const openaiMessages = convertToOpenAiMessages(messages, { mergeToolResultText: true })
+		const openaiMessages = convertToOpenAiMessages(processedMessages, { mergeToolResultText: true })
 
 		// Prepare request body following Cerebras API specification exactly
 		const requestBody: Record<string, any> = {

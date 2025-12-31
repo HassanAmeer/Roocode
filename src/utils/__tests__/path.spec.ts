@@ -118,7 +118,7 @@ describe("Path Utilities", () => {
 				expect(arePathsEqual(undefined, "/test")).toBe(false)
 			})
 
-			it("should handle root paths with trailing slashes", () => {
+			it("should handle vibext paths with trailing slashes", () => {
 				expect(arePathsEqual("/", "/")).toBe(true)
 				expect(arePathsEqual("C:\\", "C:\\")).toBe(true)
 			})

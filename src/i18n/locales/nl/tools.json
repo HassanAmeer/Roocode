@@ -3,7 +3,7 @@
 		"linesRange": " (regels {{start}}-{{end}})",
 		"definitionsOnly": " (alleen definities)",
 		"maxLines": " (max {{max}} regels)",
-		"imageTooLarge": "Afbeeldingsbestand is te groot ({{size}} MB). De maximaal toegestane grootte is {{max}} MB.",
+		"imageTooLarge": "Afbeeldingsbestand is te gvibext ({{size}} MB). De maximaal toegestane gvibextte is {{max}} MB.",
 		"imageWithSize": "Afbeeldingsbestand ({{size}} KB)"
 	},
 	"toolRepetitionLimitReached": "VibeX Code lijkt vast te zitten in een lus, waarbij hij herhaaldelijk dezelfde actie ({{toolName}}) probeert. Dit kan duiden op een probleem met de huidige strategie. Overweeg de taak te herformuleren, specifiekere instructies te geven of VibeX Code naar een andere aanpak te leiden.",
@@ -24,7 +24,7 @@
 		"invalidImageData": "Ongeldige afbeeldingsgegevens in het antwoord",
 		"invalidImageFormat": "Ongeldig afbeeldingsformaat ontvangen",
 		"unknownError": "Er is een onbekende fout opgetreden",
-		"roo": {
+		"vibex": {
 			"authRequired": "VibeX Code Cloud-authenticatie is vereist voor het genereren van afbeeldingen. Log in bij VibeX Code Cloud."
 		}
 	}

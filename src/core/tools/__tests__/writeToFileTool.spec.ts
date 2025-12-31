@@ -235,7 +235,7 @@ describe("writeToFileTool", () => {
 	}
 
 	describe("access control", () => {
-		it("validates and allows access when rooIgnoreController permits", async () => {
+		it("validates and allows access when vibexIgnoreController permits", async () => {
 			await executeWriteFileTool({}, { accessAllowed: true })
 
 			expect(mockCline.vibexIgnoreController.validateAccess).toHaveBeenCalledWith(testFilePath)
@@ -360,7 +360,7 @@ describe("writeToFileTool", () => {
 			expect(mockCline.diffViewProvider.update).toHaveBeenCalledWith(testContent, true)
 			expect(mockAskApproval).toHaveBeenCalled()
 			expect(mockCline.diffViewProvider.saveChanges).toHaveBeenCalled()
-			expect(mockCline.fileContextTracker.trackFileContext).toHaveBeenCalledWith(testFilePath, "roo_edited")
+			expect(mockCline.fileContextTracker.trackFileContext).toHaveBeenCalledWith(testFilePath, "vibex_edited")
 			expect(mockCline.didEditFile).toBe(true)
 		})
 

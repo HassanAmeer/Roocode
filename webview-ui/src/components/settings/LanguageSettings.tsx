@@ -2,9 +2,9 @@ import { HTMLAttributes } from "react"
 import { useAppTranslation } from "@/i18n/TranslationContext"
 import { Globe } from "lucide-react"
 
-import type { Language } from "@roo-code/types"
+import type { Language } from "@vibex-code/types"
 
-import { LANGUAGES } from "@roo-code/types"
+import { LANGUAGES } from "@vibex-code/types"
 
 import { cn } from "@src/lib/utils"
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@src/components/ui"

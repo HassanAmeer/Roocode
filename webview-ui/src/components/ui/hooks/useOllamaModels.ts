@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query"
 
-import { ModelRecord } from "@roo-code/types"
-import { ExtensionMessage } from "@roo-code/types"
+import { ModelRecord } from "@vibex-code/types"
+import { ExtensionMessage } from "@vibex-code/types"
 
 import { vscode } from "@src/utils/vscode"
 

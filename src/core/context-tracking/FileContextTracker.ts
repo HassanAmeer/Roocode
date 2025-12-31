@@ -165,8 +165,8 @@ export class FileContextTracker {
 				path: filePath,
 				record_state: "active",
 				record_source: source,
-				roo_read_date: getLatestDateForField(filePath, "roo_read_date"),
-				roo_edit_date: getLatestDateForField(filePath, "roo_edit_date"),
+				vibex_read_date: getLatestDateForField(filePath, "vibex_read_date"),
+				vibex_edit_date: getLatestDateForField(filePath, "vibex_edit_date"),
 				user_edit_date: getLatestDateForField(filePath, "user_edit_date"),
 			}
 
@@ -177,10 +177,10 @@ export class FileContextTracker {
 					this.recentlyModifiedFiles.add(filePath)
 					break
 
-				// roo_edited: Vibex has edited the file
-				case "roo_edited":
-					newEntry.roo_read_date = now
-					newEntry.roo_edit_date = now
+				// vibex_edited: Vibex has edited the file
+				case "vibex_edited":
+					newEntry.vibex_read_date = now
+					newEntry.vibex_edit_date = now
 					this.checkpointPossibleFiles.add(filePath)
 					this.markFileAsEditedByVibeX(filePath)
 					break
@@ -188,7 +188,7 @@ export class FileContextTracker {
 				// read_tool/file_mentioned: Vibex has read the file via a tool or file mention
 				case "read_tool":
 				case "file_mentioned":
-					newEntry.roo_read_date = now
+					newEntry.vibex_read_date = now
 					break
 			}
 

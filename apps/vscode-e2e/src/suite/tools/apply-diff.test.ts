@@ -3,7 +3,7 @@ import * as fs from "fs/promises"
 import * as path from "path"
 import * as vscode from "vscode"
 
-import { VibexEventName, type ClineMessage } from "@roo-code/types"
+import { VibexEventName, type ClineMessage } from "@vibex-code/types"
 
 import { waitFor, sleep } from "../utils"
 import { setDefaultSuiteTimeout } from "../test-utils"

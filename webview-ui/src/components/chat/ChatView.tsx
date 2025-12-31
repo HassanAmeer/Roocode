@@ -11,18 +11,18 @@ import { Trans } from "react-i18next"
 import { useDebounceEffect } from "@src/utils/useDebounceEffect"
 import { appendImages } from "@src/utils/imageUtils"
 
-import type { ClineAsk, ClineMessage } from "@roo-code/types"
+import type { ClineAsk, ClineMessage } from "@vibex-code/types"
 
-import { ClineSayTool, ExtensionMessage } from "@roo-code/types"
-import { findLast } from "@roo-code/types"
-import { SuggestionItem } from "@roo-code/types"
-import { combineApiRequests } from "@roo/combineApiRequests"
-import { combineCommandSequences } from "@roo/combineCommandSequences"
-import { getApiMetrics } from "@roo/getApiMetrics"
-import { AudioType } from "@roo-code/types"
-import { getAllModes } from "@roo-code/types"
-import { ProfileValidator } from "@roo/ProfileValidator"
-import { getLatestTodo } from "@roo/todo"
+import { ClineSayTool, ExtensionMessage } from "@vibex-code/types"
+import { findLast } from "@vibex-code/types"
+import { SuggestionItem } from "@vibex-code/types"
+import { combineApiRequests } from "@vibex/combineApiRequests"
+import { combineCommandSequences } from "@vibex/combineCommandSequences"
+import { getApiMetrics } from "@vibex/getApiMetrics"
+import { AudioType } from "@vibex-code/types"
+import { getAllModes } from "@vibex-code/types"
+import { ProfileValidator } from "@vibex/ProfileValidator"
+import { getLatestTodo } from "@vibex/todo"
 
 import { vscode } from "@src/utils/vscode"
 import { useAppTranslation } from "@src/i18n/TranslationContext"
@@ -1620,7 +1620,7 @@ const ChatViewComponent: React.ForwardRefRenderFunction<ChatViewRef, ChatViewPro
 				</div>
 			)}
 
-			<div id="roo-portal" />
+			<div id="vibex-portal" />
 			<CloudUpsellDialog open={isUpsellOpen} onOpenChange={closeUpsell} onConnect={handleConnect} />
 		</div>
 	)

@@ -82,7 +82,7 @@ export const testimonials: Testimonial[] = [
 		name: "Matthew Martin",
 		role: "Reviewer",
 		origin: "VS Code Marketplace",
-		quote: "i spent a fortune trying to dial in various tools to get them to work the way i want, and then i found roocode.  customizable for your flavors on your terms.  this is what i always wanted.",
+		quote: "i spent a fortune trying to dial in various tools to get them to work the way i want, and then i found vibexcode.  customizable for your flavors on your terms.  this is what i always wanted.",
 		stars: 5,
 	},
 	{

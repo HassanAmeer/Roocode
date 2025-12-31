@@ -49,7 +49,7 @@ export function Footer() {
 
 						{/* Made with Vibex */}
 						<a
-							href="https://roocode.com"
+							href="https://vibexcode.com"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="inline-flex items-center space-x-2 group">
@@ -225,7 +225,7 @@ export function Footer() {
 								<ul className="mt-6 space-y-4">
 									<li>
 										<a
-											href="mailto:support@roocode.com"
+											href="mailto:support@vibexcode.com"
 											className="text-sm leading-6 text-muted-foreground transition-colors hover:text-foreground">
 											Contact
 										</a>

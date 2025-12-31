@@ -12,8 +12,8 @@ import {
 	type ReasoningEffortExtended,
 	type ServiceTier,
 	ApiProviderError,
-} from "@roo-code/types"
-import { TelemetryService } from "@roo-code/telemetry"
+} from "@vibex-code/types"
+import { TelemetryService } from "@vibex-code/telemetry"
 
 import type { ApiHandlerOptions } from "../../shared/api"
 

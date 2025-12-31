@@ -49,7 +49,7 @@ export const dynamicProviders = [
 	"io-intelligence",
 	"requesty",
 	"unbound",
-	"roo",
+	"vibex",
 	"chutes",
 ] as const
 
@@ -135,7 +135,7 @@ export const providerNames = [
 	"minimax",
 	"openai-native",
 	"qwen-code",
-	"roo",
+	"vibex",
 	"sambanova",
 	"vertex",
 	"xai",
@@ -182,6 +182,10 @@ const baseProviderSettingsSchema = z.object({
 	modelMaxTokens: z.number().optional(),
 	modelContextWindow: z.number().optional(),
 	modelMaxThinkingTokens: z.number().optional(),
+
+	// Token limit controls for input and output.
+	modelMaxInputTokens: z.number().optional(),
+	modelMaxOutputTokens: z.number().optional(),
 
 	// Model verbosity.
 	verbosity: verbosityLevelsSchema.optional(),
@@ -411,7 +415,7 @@ const qwenCodeSchema = apiModelIdProviderModelSchema.extend({
 	qwenCodeOauthPath: z.string().optional(),
 })
 
-const rooSchema = apiModelIdProviderModelSchema.extend({
+const vibexSchema = apiModelIdProviderModelSchema.extend({
 	// No additional fields needed - uses cloud authentication.
 })
 
@@ -468,7 +472,7 @@ export const providerSettingsSchemaDiscriminated = z.discriminatedUnion("apiProv
 	featherlessSchema.merge(z.object({ apiProvider: z.literal("featherless") })),
 	ioIntelligenceSchema.merge(z.object({ apiProvider: z.literal("io-intelligence") })),
 	qwenCodeSchema.merge(z.object({ apiProvider: z.literal("qwen-code") })),
-	rooSchema.merge(z.object({ apiProvider: z.literal("roo") })),
+	vibexSchema.merge(z.object({ apiProvider: z.literal("vibex") })),
 	vercelAiGatewaySchema.merge(z.object({ apiProvider: z.literal("vercel-ai-gateway") })),
 	aimlApiSchema.merge(z.object({ apiProvider: z.literal("aimlapi") })),
 	defaultSchema,
@@ -511,7 +515,7 @@ export const providerSettingsSchema = z.object({
 	...featherlessSchema.shape,
 	...ioIntelligenceSchema.shape,
 	...qwenCodeSchema.shape,
-	...rooSchema.shape,
+	...vibexSchema.shape,
 	...vercelAiGatewaySchema.shape,
 	...aimlApiSchema.shape,
 	...codebaseIndexProviderSchema.shape,
@@ -597,7 +601,7 @@ export const modelIdKeysByProvider: Record<TypicalProvider, ModelIdKey> = {
 	fireworks: "apiModelId",
 	featherless: "apiModelId",
 	"io-intelligence": "ioIntelligenceModelId",
-	roo: "apiModelId",
+	vibex: "apiModelId",
 	"vercel-ai-gateway": "vercelAiGatewayModelId",
 	aimlapi: "apiModelId",
 }
@@ -621,7 +625,7 @@ export const getApiProtocol = (provider: ProviderName | undefined, modelId?: str
 	// Vercel AI Gateway uses anthropic protocol for anthropic models.
 	if (
 		provider &&
-		["vercel-ai-gateway", "roo"].includes(provider) &&
+		["vercel-ai-gateway", "vibex"].includes(provider) &&
 		modelId &&
 		modelId.toLowerCase().startsWith("anthropic/")
 	) {
@@ -703,7 +707,7 @@ export const MODELS_BY_PROVIDER: Record<
 		models: Object.keys(openAiNativeModels),
 	},
 	"qwen-code": { id: "qwen-code", label: "Qwen Code", models: Object.keys(qwenCodeModels) },
-	roo: { id: "roo", label: "Vibex Cloud", models: [] },
+	vibex: { id: "vibex", label: "Vibex Cloud", models: [] },
 	sambanova: {
 		id: "sambanova",
 		label: "SambaNova",

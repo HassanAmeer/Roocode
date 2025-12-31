@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "お問い合わせが必要ですか？メールを送信"
 		},
-		"community": "ヒントが欲しいですか、または他のVibeX Codeユーザーと交流したいですか？<redditLink>reddit.com/r/VibeX Code</redditLink>または<discordLink>discord.gg/roocode</discordLink>に参加してください",
+		"community": "ヒントが欲しいですか、または他のVibeX Codeユーザーと交流したいですか？<redditLink>reddit.com/r/VibeX Code</redditLink>または<discordLink>discord.gg/vibexcode</discordLink>に参加してください",
 		"contactAndCommunity": "お問い合わせとコミュニティ",
 		"manageSettings": "設定を管理"
 	},
@@ -195,7 +195,7 @@
 			},
 			"protected": {
 				"label": "保護されたファイルを含める",
-				"description": "Rooが保護されたファイル（.rooignoreや.roo/設定ファイルなど）を承認なしで作成・編集することを許可します。"
+				"description": "Rooが保護されたファイル（.vibexignoreや.vibex/設定ファイルなど）を承認なしで作成・編集することを許可します。"
 			}
 		},
 		"browser": {
@@ -437,7 +437,7 @@
 			"description": "APIキーは不要ですが、ユーザーはウェブチャットAIに情報をコピー＆ペーストする必要があります。",
 			"instructions": "使用中にダイアログボックスが表示され、現在のメッセージが自動的にクリップボードにコピーされます。これらをウェブ版のAI（ChatGPTやClaudeなど）に貼り付け、AIの返答をダイアログボックスにコピーして確認ボタンをクリックする必要があります。"
 		},
-		"roo": {
+		"vibex": {
 			"authenticatedMessage": "VibeX Code Cloudアカウントを通じて安全に認証されています。",
 			"connectButton": "VibeX Code Cloudに接続"
 		},
@@ -605,9 +605,9 @@
 			"label": "ワークスペースファイルコンテキスト制限",
 			"description": "現在の作業ディレクトリの詳細に含めるファイルの最大数。高い値はより多くのコンテキストを提供しますが、token使用量が増加します。"
 		},
-		"rooignore": {
-			"label": "リストと検索で.rooignoreファイルを表示",
-			"description": "有効にすると、.rooignoreのパターンに一致するファイルがロックシンボル付きでリストに表示されます。無効にすると、これらのファイルはファイルリストや検索から完全に非表示になります。"
+		"vibexignore": {
+			"label": "リストと検索で.vibexignoreファイルを表示",
+			"description": "有効にすると、.vibexignoreのパターンに一致するファイルがロックシンボル付きでリストに表示されます。無効にすると、これらのファイルはファイルリストや検索から完全に非表示になります。"
 		},
 		"maxReadFile": {
 			"label": "ファイル読み込み自動切り詰めしきい値",
@@ -828,9 +828,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "カスタムツールを有効化",
-			"description": "有効にすると、Rooはプロジェクトの.roo/toolsディレクトリまたはグローバルツール用の~/.roo/toolsからカスタムTypeScript/JavaScriptツールを読み込んで使用できます。注意：これらのツールは自動的に承認されます。",
+			"description": "有効にすると、Rooはプロジェクトの.vibex/toolsディレクトリまたはグローバルツール用の~/.vibex/toolsからカスタムTypeScript/JavaScriptツールを読み込んで使用できます。注意：これらのツールは自動的に承認されます。",
 			"toolsHeader": "利用可能なカスタムツール",
-			"noTools": "カスタムツールが読み込まれていません。プロジェクトの.roo/toolsディレクトリまたはグローバルツール用の~/.roo/toolsに.tsまたは.jsファイルを追加してください。",
+			"noTools": "カスタムツールが読み込まれていません。プロジェクトの.vibex/toolsディレクトリまたはグローバルツール用の~/.vibex/toolsに.tsまたは.jsファイルを追加してください。",
 			"refreshButton": "更新",
 			"refreshing": "更新中...",
 			"refreshSuccess": "ツールが正常に更新されました",
@@ -878,7 +878,7 @@
 		"simplifiedExplanation": "詳細なモデル設定は後で調整できます。"
 	},
 	"footer": {
-		"feedback": "質問やフィードバックがある場合は、<githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink>で問題を開くか、<redditLink>reddit.com/r/VibeX Code</redditLink>や<discordLink>discord.gg/roocode</discordLink>に参加してください",
+		"feedback": "質問やフィードバックがある場合は、<githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink>で問題を開くか、<redditLink>reddit.com/r/VibeX Code</redditLink>や<discordLink>discord.gg/vibexcode</discordLink>に参加してください",
 		"telemetry": {
 			"label": "匿名のエラーと使用状況レポートを許可",
 			"description": "匿名の使用データとエラーレポートを送信してVibeX Codeの改善にご協力ください。このテレメトリはコード、プロンプト、個人情報を収集しません。詳細については<privacyLink>プライバシーポリシー</privacyLink>をご覧ください。"

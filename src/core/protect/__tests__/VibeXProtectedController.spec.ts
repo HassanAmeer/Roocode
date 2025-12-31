@@ -76,7 +76,7 @@ describe("VibeXProtectedController", () => {
 		})
 
 		it("should handle nested paths correctly", () => {
-			expect(controller.isWriteProtected(".vibex/config.json")).toBe(true) // .vibex/** matches at root
+			expect(controller.isWriteProtected(".vibex/config.json")).toBe(true) // .vibex/** matches at vibext
 			expect(controller.isWriteProtected("nested/.vibexignore")).toBe(true) // .vibexignore matches anywhere by default
 			expect(controller.isWriteProtected("nested/.vibexmodes")).toBe(true) // .vibexmodes matches anywhere by default
 			expect(controller.isWriteProtected("nested/.vibexrules.md")).toBe(true) // .vibexrules* matches anywhere by default

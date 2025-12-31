@@ -90,7 +90,7 @@
 	"about": "VibeX Code è un intero team di sviluppo AI nel tuo editor.",
 	"docs": "Consulta la nostra <DocsLink>documentazione</DocsLink> per saperne di più.",
 	"onboarding": "La tua lista di attività in questo spazio di lavoro è vuota.",
-	"rooTips": {
+	"vibexTips": {
 		"customizableModes": {
 			"title": "Modalità personalizzabili",
 			"description": "Personaggi specializzati che rimangono in tema e portano a termine il compito."
@@ -230,7 +230,7 @@
 	"response": "Risposta",
 	"arguments": "Argomenti",
 	"text": {
-		"rooSaid": "VibeX Code ha detto"
+		"vibexSaid": "VibeX Code ha detto"
 	},
 	"feedback": {
 		"youSaid": "Hai detto"
@@ -323,7 +323,7 @@
 			"feature": "<bold>Modello stealth GRATUITO per tempo limitato</bold> - Code Supernova: Ora potenziato con una <bold>finestra di contesto da 1M token</bold>! Un modello di codificazione agentiva versatile che supporta input di immagini, accessibile tramite VibeX Code Cloud.",
 			"note": "(Nota: i prompt e le completazioni vengono registrati dal creatore del modello e utilizzati per migliorarlo)",
 			"connectButton": "Connetti a VibeX Code Cloud",
-			"selectModel": "Seleziona <code>roo/code-supernova</code> dal provider VibeX Code Cloud nelle Impostazioni per iniziare.",
+			"selectModel": "Seleziona <code>vibex/code-supernova</code> dal provider VibeX Code Cloud nelle Impostazioni per iniziare.",
 			"goToSettingsButton": "Vai alle Impostazioni"
 		},
 		"release": {
@@ -341,7 +341,7 @@
 	},
 	"browser": {
 		"session": "Sessione del browser",
-		"rooWantsToUse": "VibeX Code vuole utilizzare il browser",
+		"vibexWantsToUse": "VibeX Code vuole utilizzare il browser",
 		"consoleLogs": "Log della console",
 		"noNewLogs": "(Nessun nuovo log)",
 		"screenshot": "Screenshot del browser",
@@ -427,7 +427,7 @@
 	"versionIndicator": {
 		"ariaLabel": "Versione {{version}} - Clicca per visualizzare le note di rilascio"
 	},
-	"rooCloudCTA": {
+	"vibexCloudCTA": {
 		"title": "VibeX Code Cloud si sta evolvendo!",
 		"description": "Esegui agenti remoti nel cloud, accedi alle tue attività da qualsiasi luogo, collabora con altri e molto altro.",
 		"joinWaitlist": "Registrati per ricevere gli ultimi aggiornamenti."

@@ -1,7 +1,7 @@
 <common_patterns>
   <bug_fix_pattern>
     1. Reproduce the issue
-    2. Identify root cause
+    2. Identify vibext cause
     3. Implement minimal fix
     4. Add regression test
     5. Verify fix works

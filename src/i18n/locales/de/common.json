@@ -120,7 +120,7 @@
 			"noResponseBody": "Cerebras API-Fehler: Kein Antworttext vorhanden",
 			"completionError": "Cerebras-Vervollständigungsfehler: {{error}}"
 		},
-		"roo": {
+		"vibex": {
 			"authenticationRequired": "VibeX Code-Anbieter erfordert Cloud-Authentifizierung. Bitte melde dich bei VibeX Code Cloud an."
 		},
 		"api": {
@@ -192,8 +192,8 @@
 	},
 	"customModes": {
 		"errors": {
-			"yamlParseError": "Ungültiges YAML in .roomodes-Datei in Zeile {{line}}. Bitte überprüfe:\n• Korrekte Einrückung (verwende Leerzeichen, keine Tabs)\n• Passende Anführungszeichen und Klammern\n• Gültige YAML-Syntax",
-			"schemaValidationError": "Ungültiges Format für benutzerdefinierte Modi in .roomodes:\n{{issues}}",
+			"yamlParseError": "Ungültiges YAML in .vibexmodes-Datei in Zeile {{line}}. Bitte überprüfe:\n• Korrekte Einrückung (verwende Leerzeichen, keine Tabs)\n• Passende Anführungszeichen und Klammern\n• Gültige YAML-Syntax",
+			"schemaValidationError": "Ungültiges Format für benutzerdefinierte Modi in .vibexmodes:\n{{issues}}",
 			"invalidFormat": "Ungültiges Format für benutzerdefinierte Modi. Bitte stelle sicher, dass deine Einstellungen dem korrekten YAML-Format folgen.",
 			"updateFailed": "Fehler beim Aktualisieren des benutzerdefinierten Modus: {{error}}",
 			"deleteFailed": "Fehler beim Löschen des benutzerdefinierten Modus: {{error}}",

@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, vi } from "vitest"
 import { Anthropic } from "@anthropic-ai/sdk"
-import { TOOL_PROTOCOL } from "@roo-code/types"
+import { TOOL_PROTOCOL } from "@vibex-code/types"
 import { resolveToolProtocol } from "../../../utils/resolveToolProtocol"
 
 describe("Task Tool History Handling", () => {
@@ -43,7 +43,7 @@ describe("Task Tool History Handling", () => {
 			]
 
 			// Simulate the protocol check
-			const mockApiConfiguration = { apiProvider: "roo" as const }
+			const mockApiConfiguration = { apiProvider: "vibex" as const }
 			const mockModelInfo = { supportsNativeTools: true }
 			const mockExperiments = {}
 

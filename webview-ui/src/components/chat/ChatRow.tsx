@@ -4,12 +4,12 @@ import { useTranslation, Trans } from "react-i18next"
 import deepEqual from "fast-deep-equal"
 import { VSCodeBadge } from "@vscode/webview-ui-toolkit/react"
 
-import type { ClineMessage, FollowUpData, SuggestionItem } from "@roo-code/types"
-import { Mode } from "@roo-code/types"
+import type { ClineMessage, FollowUpData, SuggestionItem } from "@vibex-code/types"
+import { Mode } from "@vibex-code/types"
 
-import { ClineApiReqInfo, ClineAskUseMcpServer, ClineSayTool } from "@roo-code/types"
-import { COMMAND_OUTPUT_STRING } from "@roo/combineCommandSequences"
-import { safeJsonParse } from "@roo/safeJsonParse"
+import { ClineApiReqInfo, ClineAskUseMcpServer, ClineSayTool } from "@vibex-code/types"
+import { COMMAND_OUTPUT_STRING } from "@vibex/combineCommandSequences"
+import { safeJsonParse } from "@vibex/safeJsonParse"
 
 import { useExtensionState } from "@src/context/ExtensionStateContext"
 import { findMatchingResourceOrTemplate } from "@src/utils/mcp"
@@ -1156,7 +1156,7 @@ export const ChatRowContent = ({
 						<div>
 							<div style={headerStyle}>
 								<MessageCircle className="w-4 shrink-0" aria-label="Speech bubble icon" />
-								<span style={{ fontWeight: "bold" }}>{t("chat:text.rooSaid")}</span>
+								<span style={{ fontWeight: "bold" }}>{t("chat:text.vibexSaid")}</span>
 							</div>
 							<div className="pl-6">
 								<Markdown markdown={message.text} partial={message.partial} />

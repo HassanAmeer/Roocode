@@ -12,7 +12,7 @@ vi.mock("../core/task/Task", () => {
 		public instanceId = "inst"
 		public parentTask?: any
 		public apiConfiguration: any
-		public rootTask?: any
+		public vibextTask?: any
 		public enableBridge?: boolean
 		constructor(opts: any) {
 			this.taskId = opts.historyItem?.id ?? `task-${Math.random().toString(36).slice(2, 8)}`

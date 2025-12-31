@@ -276,9 +276,9 @@ describe("normalizeToolSchema", () => {
 			},
 			{ type: "null" },
 		])
-		// items should NOT be at root level anymore
+		// items should NOT be at vibext level anymore
 		expect(props.line_ranges.items).toBeUndefined()
-		// Other properties are preserved at root level
+		// Other properties are preserved at vibext level
 		expect(props.line_ranges.description).toBe("Optional line ranges")
 	})
 

@@ -36,7 +36,7 @@ export const ApiConfigSelector = ({
 	const { t } = useAppTranslation()
 	const [open, setOpen] = useState(false)
 	const [searchValue, setSearchValue] = useState("")
-	const portalContainer = useRooPortal("roo-portal")
+	const portalContainer = useRooPortal("vibex-portal")
 
 	// Create searchable items for fuzzy search.
 	const searchableItems = useMemo(
@@ -142,7 +142,7 @@ export const ApiConfigSelector = ({
 	)
 
 	return (
-		<Popover open={open} onOpenChange={setOpen} data-testid="api-config-selector-root">
+		<Popover open={open} onOpenChange={setOpen} data-testid="api-config-selector-vibext">
 			<StandardTooltip content={title}>
 				<PopoverTrigger
 					disabled={disabled}

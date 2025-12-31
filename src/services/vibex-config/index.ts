@@ -9,23 +9,23 @@ import fs from "fs/promises"
  *
  * @example Platform-specific paths:
  * ```
- * // macOS/Linux: ~/.roo/
- * // Example: /Users/john/.roo
+ * // macOS/Linux: ~/.vibex/
+ * // Example: /Users/john/.vibex
  *
- * // Windows: %USERPROFILE%\.roo\
- * // Example: C:\Users\john\.roo
+ * // Windows: %USERPROFILE%\.vibex\
+ * // Example: C:\Users\john\.vibex
  * ```
  *
  * @example Usage:
  * ```typescript
- * const globalDir = getGlobalRooDirectory()
- * // Returns: "/Users/john/.roo" (on macOS/Linux)
- * // Returns: "C:\\Users\\john\\.roo" (on Windows)
+ * const globalDir = getGlobalVibexDirectory()
+ * // Returns: "/Users/john/.vibex" (on macOS/Linux)
+ * // Returns: "C:\\Users\\john\\.vibex" (on Windows)
  * ```
  */
-export function getGlobalRooDirectory(): string {
+export function getGlobalVibexDirectory(): string {
 	const homeDir = os.homedir()
-	return path.join(homeDir, ".roo")
+	return path.join(homeDir, ".vibex")
 }
 
 /**
@@ -36,17 +36,17 @@ export function getGlobalRooDirectory(): string {
  *
  * @example
  * ```typescript
- * const projectDir = getProjectRooDirectoryForCwd('/Users/john/my-project')
- * // Returns: "/Users/john/my-project/.roo"
+ * const projectDir = getProjectVibexDirectoryForCwd('/Users/john/my-project')
+ * // Returns: "/Users/john/my-project/.vibex"
  *
- * const windowsProjectDir = getProjectRooDirectoryForCwd('C:\\Users\\john\\my-project')
- * // Returns: "C:\\Users\\john\\my-project\\.roo"
+ * const windowsProjectDir = getProjectVibexDirectoryForCwd('C:\\Users\\john\\my-project')
+ * // Returns: "C:\\Users\\john\\my-project\\.vibex"
  * ```
  *
  * @example Directory structure:
  * ```
  * /Users/john/my-project/
- * ├── .roo/                    # Project-local configuration directory
+ * ├── .vibex/                    # Project-local configuration directory
  * │   ├── rules/
  * │   │   └── rules.md
  * │   ├── custom-instructions.md
@@ -57,8 +57,8 @@ export function getGlobalRooDirectory(): string {
  * └── package.json
  * ```
  */
-export function getProjectRooDirectoryForCwd(cwd: string): string {
-	return path.join(cwd, ".roo")
+export function getProjectVibexDirectoryForCwd(cwd: string): string {
+	return path.join(cwd, ".vibex")
 }
 
 /**
@@ -120,23 +120,23 @@ export async function readFileIfExists(filePath: string): Promise<string | null>
  * @example
  * ```typescript
  * // For a project at /Users/john/my-project
- * const directories = getRooDirectoriesForCwd('/Users/john/my-project')
+ * const directories = getVibexDirectoriesForCwd('/Users/john/my-project')
  * // Returns:
  * // [
- * //   '/Users/john/.roo',           // Global directory
- * //   '/Users/john/my-project/.roo' // Project-local directory
+ * //   '/Users/john/.vibex',           // Global directory
+ * //   '/Users/john/my-project/.vibex' // Project-local directory
  * // ]
  * ```
  *
  * @example Directory structure:
  * ```
  * /Users/john/
- * ├── .roo/                    # Global configuration
+ * ├── .vibex/                    # Global configuration
  * │   ├── rules/
  * │   │   └── rules.md
  * │   └── custom-instructions.md
  * └── my-project/
- *     ├── .roo/                # Project-specific configuration
+ *     ├── .vibex/                # Project-specific configuration
  *     │   ├── rules/
  *     │   │   └── rules.md     # Overrides global rules
  *     │   └── project-notes.md
@@ -144,14 +144,14 @@ export async function readFileIfExists(filePath: string): Promise<string | null>
  *         └── index.ts
  * ```
  */
-export function getRooDirectoriesForCwd(cwd: string): string[] {
+export function getVibexDirectoriesForCwd(cwd: string): string[] {
 	const directories: string[] = []
 
 	// Add global directory first
-	directories.push(getGlobalRooDirectory())
+	directories.push(getGlobalVibexDirectory())
 
 	// Add project-local directory second
-	directories.push(getProjectRooDirectoryForCwd(cwd))
+	directories.push(getProjectVibexDirectoryForCwd(cwd))
 
 	return directories
 }
@@ -170,8 +170,8 @@ export function getRooDirectoriesForCwd(cwd: string): string[] {
  *
  * // Returns:
  * // {
- * //   global: "Global rules content...",     // From ~/.roo/rules/rules.md
- * //   project: "Project rules content...",   // From /Users/john/my-project/.roo/rules/rules.md
+ * //   global: "Global rules content...",     // From ~/.vibex/rules/rules.md
+ * //   project: "Project rules content...",   // From /Users/john/my-project/.vibex/rules/rules.md
  * //   merged: "Global rules content...\n\n# Project-specific rules (override global):\n\nProject rules content..."
  * // }
  * ```
@@ -182,8 +182,8 @@ export function getRooDirectoriesForCwd(cwd: string): string[] {
  * cwd: '/Users/john/my-project'
  *
  * Reads from:
- * - Global: /Users/john/.roo/rules/rules.md
- * - Project: /Users/john/my-project/.roo/rules/rules.md
+ * - Global: /Users/john/.vibex/rules/rules.md
+ * - Project: /Users/john/my-project/.vibex/rules/rules.md
  *
  * Other common relativePath examples:
  * - 'custom-instructions.md'
@@ -215,8 +215,8 @@ export async function loadConfiguration(
 	project: string | null
 	merged: string
 }> {
-	const globalDir = getGlobalRooDirectory()
-	const projectDir = getProjectRooDirectoryForCwd(cwd)
+	const globalDir = getGlobalVibexDirectory()
+	const projectDir = getProjectVibexDirectoryForCwd(cwd)
 
 	const globalFilePath = path.join(globalDir, relativePath)
 	const projectFilePath = path.join(projectDir, relativePath)
@@ -249,4 +249,4 @@ export async function loadConfiguration(
 }
 
 // Export with backward compatibility alias
-export const loadRooConfiguration: typeof loadConfiguration = loadConfiguration
+export const loadVibexConfiguration: typeof loadConfiguration = loadConfiguration

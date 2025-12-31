@@ -1,4 +1,4 @@
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://roocode.com"
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://vibexcode.com"
 
 export const SEO = {
 	url: SITE_URL,

@@ -160,7 +160,7 @@ export function ImageViewer({
 		// Look for workspace patterns - match the last segment after any directory separator
 		const workspaceMatch = path.match(/\/([^/]+)\/(.+)$/)
 		if (workspaceMatch && workspaceMatch[2]) {
-			// Return relative path from what appears to be the workspace root
+			// Return relative path from what appears to be the workspace vibext
 			return `./${workspaceMatch[2]}`
 		}
 		// Otherwise, just get the filename

@@ -201,7 +201,7 @@ describe("ContextManagementSettings", () => {
 		expect(screen.getByTestId("max-concurrent-file-reads-slider")).toBeInTheDocument()
 
 		// Check for checkboxes
-		expect(screen.getByTestId("show-rooignored-files-checkbox")).toBeInTheDocument()
+		expect(screen.getByTestId("show-vibexignored-files-checkbox")).toBeInTheDocument()
 		expect(screen.getByTestId("auto-condense-context-checkbox")).toBeInTheDocument()
 	})
 
@@ -544,7 +544,7 @@ describe("ContextManagementSettings", () => {
 
 			expect(screen.getByTestId("open-tabs-limit-slider")).toBeInTheDocument()
 			expect(screen.getByTestId("workspace-files-limit-slider")).toBeInTheDocument()
-			expect(screen.getByTestId("show-rooignored-files-checkbox")).toBeInTheDocument()
+			expect(screen.getByTestId("show-vibexignored-files-checkbox")).toBeInTheDocument()
 			expect(screen.getByTestId("max-read-file-line-input")).toBeInTheDocument()
 			expect(screen.getByTestId("max-read-file-always-full-checkbox")).toBeInTheDocument()
 		})

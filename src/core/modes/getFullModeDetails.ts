@@ -1,4 +1,4 @@
-import { ModeConfig, CustomModePrompts } from "@roo-code/types"
+import { ModeConfig, CustomModePrompts } from "@vibex-code/types"
 import { getModeBySlug, modes } from "../../shared/modes"
 import { addCustomInstructions } from "../prompts/sections/custom-instructions"
 

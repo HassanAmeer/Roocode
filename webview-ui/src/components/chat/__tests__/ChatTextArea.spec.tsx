@@ -1,4 +1,4 @@
-import { defaultModeSlug } from "@roo-code/types"
+import { defaultModeSlug } from "@vibex-code/types"
 
 import { render, fireEvent, screen } from "@src/utils/test-utils"
 import { useExtensionState } from "@src/context/ExtensionStateContext"

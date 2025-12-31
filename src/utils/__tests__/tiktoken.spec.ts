@@ -58,7 +58,7 @@ describe("tiktoken", () => {
 		]
 
 		const result = await tiktoken(content)
-		// For images, we expect a token count based on the square root of the data length
+		// For images, we expect a token count based on the square vibext of the data length
 		// plus the fudge factor
 		const expectedMinTokens = Math.ceil(Math.sqrt(base64Data.length))
 		expect(result).toBeGreaterThanOrEqual(expectedMinTokens)

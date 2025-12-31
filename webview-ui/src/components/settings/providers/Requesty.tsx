@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useState } from "react"
 import { VSCodeCheckbox, VSCodeTextField } from "@vscode/webview-ui-toolkit/react"
 
-import { type ProviderSettings, type OrganizationAllowList, requestyDefaultModelId } from "@roo-code/types"
+import { type ProviderSettings, type OrganizationAllowList, requestyDefaultModelId } from "@vibex-code/types"
 
-import type { RouterModels } from "@roo-code/types"
+import type { RouterModels } from "@vibex-code/types"
 
 import { vscode } from "@src/utils/vscode"
 import { useAppTranslation } from "@src/i18n/TranslationContext"
@@ -13,7 +13,7 @@ import { inputEventTransform } from "../transforms"
 import { ModelPicker } from "../ModelPicker"
 import { RequestyBalanceDisplay } from "./RequestyBalanceDisplay"
 import { getCallbackUrl } from "@/oauth/urls"
-import { toRequestyServiceUrl } from "@roo-code/types"
+import { toRequestyServiceUrl } from "@vibex-code/types"
 
 type RequestyProps = {
 	apiConfiguration: ProviderSettings

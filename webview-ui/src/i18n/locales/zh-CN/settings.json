@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "需要联系我们？请发送邮件至"
 		},
-		"community": "想要获取使用技巧或与其他 VibeX Code 用户交流？加入 <redditLink>reddit.com/r/VibeX Code</redditLink> 或 <discordLink>discord.gg/roocode</discordLink>",
+		"community": "想要获取使用技巧或与其他 VibeX Code 用户交流？加入 <redditLink>reddit.com/r/VibeX Code</redditLink> 或 <discordLink>discord.gg/vibexcode</discordLink>",
 		"contactAndCommunity": "联系与社区",
 		"manageSettings": "管理设置"
 	},
@@ -195,7 +195,7 @@
 			},
 			"protected": {
 				"label": "包含受保护的文件",
-				"description": "允许 VibeX Code 创建和编辑受保护的文件（如 .rooignore 和 .roo/ 配置文件），无需批准。"
+				"description": "允许 VibeX Code 创建和编辑受保护的文件（如 .vibexignore 和 .vibex/ 配置文件），无需批准。"
 			}
 		},
 		"browser": {
@@ -437,7 +437,7 @@
 			"description": "不需要 API 密钥，但用户需要帮助将信息复制并粘贴到网页聊天 AI。",
 			"instructions": "使用期间，将弹出对话框并自动将当前消息复制到剪贴板。您需要将这些内容粘贴到 AI 的网页版本（如 ChatGPT 或 Claude），然后将 AI 的回复复制回对话框并点击确认按钮。"
 		},
-		"roo": {
+		"vibex": {
 			"authenticatedMessage": "已通过 VibeX Code Cloud 账户安全认证。",
 			"connectButton": "连接到 VibeX Code Cloud"
 		},
@@ -605,9 +605,9 @@
 			"label": "工作区文件限制",
 			"description": "允许纳入上下文的最大文件数（值越大消耗token越多）"
 		},
-		"rooignore": {
-			"label": "在列表和搜索中显示 .rooignore 文件",
-			"description": "启用后，与 .rooignore 中模式匹配的文件将在列表中显示锁定符号。禁用时，这些文件将从文件列表和搜索中完全隐藏。"
+		"vibexignore": {
+			"label": "在列表和搜索中显示 .vibexignore 文件",
+			"description": "启用后，与 .vibexignore 中模式匹配的文件将在列表中显示锁定符号。禁用时，这些文件将从文件列表和搜索中完全隐藏。"
 		},
 		"maxReadFile": {
 			"label": "文件读取自动截断阈值",
@@ -828,9 +828,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "启用自定义工具",
-			"description": "启用后 VibeX Code 可从项目中的 .roo/tools 目录或全局工具目录 ~/.roo/tools 加载并使用自定义 TypeScript/JavaScript 工具。注意：这些工具将自动获批。",
+			"description": "启用后 VibeX Code 可从项目中的 .vibex/tools 目录或全局工具目录 ~/.vibex/tools 加载并使用自定义 TypeScript/JavaScript 工具。注意：这些工具将自动获批。",
 			"toolsHeader": "可用自定义工具",
-			"noTools": "未加载自定义工具。请向项目的 .roo/tools 目录或全局工具目录 ~/.roo/tools 添加 .ts 或 .js 文件。",
+			"noTools": "未加载自定义工具。请向项目的 .vibex/tools 目录或全局工具目录 ~/.vibex/tools 添加 .ts 或 .js 文件。",
 			"refreshButton": "刷新",
 			"refreshing": "正在刷新...",
 			"refreshSuccess": "工具刷新成功",
@@ -878,7 +878,7 @@
 		"simplifiedExplanation": "你可以稍后调整详细的模型设置。"
 	},
 	"footer": {
-		"feedback": "如果您有任何问题或反馈，请随时在 <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> 上提出问题或加入 <redditLink>reddit.com/r/VibeX Code</redditLink> 或 <discordLink>discord.gg/roocode</discordLink>",
+		"feedback": "如果您有任何问题或反馈，请随时在 <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> 上提出问题或加入 <redditLink>reddit.com/r/VibeX Code</redditLink> 或 <discordLink>discord.gg/vibexcode</discordLink>",
 		"telemetry": {
 			"label": "允许匿名数据收集",
 			"description": "通过发送匿名使用数据和错误报告来帮助改进 VibeX Code。此遥测不会收集代码、提示 或个人信息。详细信息请参阅我们的<privacyLink>隐私政策</privacyLink>。您可以随时关闭此功能。"

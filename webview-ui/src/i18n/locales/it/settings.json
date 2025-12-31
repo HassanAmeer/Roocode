@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "Hai bisogno di parlarci? Scrivi"
 		},
-		"community": "Vuoi consigli o semplicemente uscire con altri utenti di VibeX Code? Unisciti a <redditLink>reddit.com/r/VibeX Code</redditLink> o <discordLink>discord.gg/roocode</discordLink>",
+		"community": "Vuoi consigli o semplicemente uscire con altri utenti di VibeX Code? Unisciti a <redditLink>reddit.com/r/VibeX Code</redditLink> o <discordLink>discord.gg/vibexcode</discordLink>",
 		"contactAndCommunity": "Contatti e Comunità",
 		"manageSettings": "Gestisci Impostazioni"
 	},
@@ -195,7 +195,7 @@
 			},
 			"protected": {
 				"label": "Includi file protetti",
-				"description": "Permetti a VibeX Code di creare e modificare file protetti (come .rooignore e file di configurazione .roo/) senza richiedere approvazione."
+				"description": "Permetti a VibeX Code di creare e modificare file protetti (come .vibexignore e file di configurazione .vibex/) senza richiedere approvazione."
 			}
 		},
 		"browser": {
@@ -437,7 +437,7 @@
 			"description": "Non è richiesta alcuna chiave API, ma l'utente dovrà aiutare a copiare e incollare le informazioni nella chat web AI.",
 			"instructions": "Durante l'uso, apparirà una finestra di dialogo e il messaggio corrente verrà automaticamente copiato negli appunti. Dovrai incollarlo nelle versioni web dell'AI (come ChatGPT o Claude), quindi copiare la risposta dell'AI nella finestra di dialogo e fare clic sul pulsante di conferma."
 		},
-		"roo": {
+		"vibex": {
 			"authenticatedMessage": "Autenticato in modo sicuro tramite il tuo account VibeX Code Cloud.",
 			"connectButton": "Connetti a VibeX Code Cloud"
 		},
@@ -605,9 +605,9 @@
 			"label": "Limite contesto file area di lavoro",
 			"description": "Numero massimo di file da includere nei dettagli della directory di lavoro corrente. Valori più alti forniscono più contesto ma aumentano l'utilizzo di token."
 		},
-		"rooignore": {
-			"label": "Mostra file .rooignore negli elenchi e nelle ricerche",
-			"description": "Quando abilitato, i file che corrispondono ai pattern in .rooignore verranno mostrati negli elenchi con un simbolo di blocco. Quando disabilitato, questi file saranno completamente nascosti dagli elenchi di file e dalle ricerche."
+		"vibexignore": {
+			"label": "Mostra file .vibexignore negli elenchi e nelle ricerche",
+			"description": "Quando abilitato, i file che corrispondono ai pattern in .vibexignore verranno mostrati negli elenchi con un simbolo di blocco. Quando disabilitato, questi file saranno completamente nascosti dagli elenchi di file e dalle ricerche."
 		},
 		"maxReadFile": {
 			"label": "Soglia di auto-troncamento lettura file",
@@ -828,9 +828,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "Abilita strumenti personalizzati",
-			"description": "Quando abilitato, VibeX Code può caricare e utilizzare strumenti TypeScript/JavaScript personalizzati dalla directory .roo/tools del tuo progetto o ~/.roo/tools per strumenti globali. Nota: questi strumenti saranno automaticamente approvati.",
+			"description": "Quando abilitato, VibeX Code può caricare e utilizzare strumenti TypeScript/JavaScript personalizzati dalla directory .vibex/tools del tuo progetto o ~/.vibex/tools per strumenti globali. Nota: questi strumenti saranno automaticamente approvati.",
 			"toolsHeader": "Strumenti personalizzati disponibili",
-			"noTools": "Nessuno strumento personalizzato caricato. Aggiungi file .ts o .js alla directory .roo/tools del tuo progetto o ~/.roo/tools per strumenti globali.",
+			"noTools": "Nessuno strumento personalizzato caricato. Aggiungi file .ts o .js alla directory .vibex/tools del tuo progetto o ~/.vibex/tools per strumenti globali.",
 			"refreshButton": "Aggiorna",
 			"refreshing": "Aggiornamento...",
 			"refreshSuccess": "Strumenti aggiornati con successo",
@@ -878,7 +878,7 @@
 		"simplifiedExplanation": "Puoi modificare le impostazioni dettagliate del modello in seguito."
 	},
 	"footer": {
-		"feedback": "Se hai domande o feedback, sentiti libero di aprire un issue su <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> o unirti a <redditLink>reddit.com/r/VibeX Code</redditLink> o <discordLink>discord.gg/roocode</discordLink>",
+		"feedback": "Se hai domande o feedback, sentiti libero di aprire un issue su <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> o unirti a <redditLink>reddit.com/r/VibeX Code</redditLink> o <discordLink>discord.gg/vibexcode</discordLink>",
 		"telemetry": {
 			"label": "Consenti segnalazioni anonime di errori e utilizzo",
 			"description": "Aiuta a migliorare VibeX Code inviando dati di utilizzo anonimi e segnalazioni di errori. Questa telemetria non raccoglie codice, prompt o informazioni personali. Consulta la nostra <privacyLink>informativa sulla privacy</privacyLink> per maggiori dettagli."

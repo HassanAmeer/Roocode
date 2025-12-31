@@ -123,7 +123,7 @@
       
       If standard repository:
         - Skip package selection
-        - Use repository root for all searches
+        - Use repository vibext for all searches
       
       Store the repository context for all future codebase searches and explorations.
       
@@ -560,7 +560,7 @@
         <phase number="5" name="Hypothesis Formation">
           <description>Form a comprehensive hypothesis about the issue or feature</description>
           <for_bugs>
-            - Identify the most likely root cause
+            - Identify the most likely vibext cause
             - Trace the bug through the execution path
             - Determine why the current implementation fails
             - Consider environmental factors

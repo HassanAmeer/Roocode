@@ -33,10 +33,10 @@ If Vibex and Customer later execute a Master Subscription Agreement ("**MSA**"),
 | Increased Cap / Unlimited Claims  | None.                                                                                                                                                                                             |
 | Trial / Pilot                     | Self-service paid plans offer a 14-day free trial, with no subscription charge during the period. Credits are always charged, including during the free trial.                                    |
 | Beta Features                     | None – only generally available features are provided.                                                                                                                                            |
-| Security Standard                 | Vibex is SOC2 Type 2 compliant and follows industry-standard security practices.                                                                                                               |
-| Machine-Learning Use              | Vibex **does not** use Customer Content to train, fine-tune, or improve any ML or AI models.                                                                                                   |
+| Security Standard                 | Vibex is SOC2 Type 2 compliant and follows industry-standard security practices.                                                                                                                  |
+| Machine-Learning Use              | Vibex **does not** use Customer Content to train, fine-tune, or improve any ML or AI models.                                                                                                      |
 | Data Processing Addendum (DPA)    | GDPR/CCPA-ready DPA available upon written request. Subprocessors listed [here](/legal/subprocessors).                                                                                            |
-| Publicity / Logo Rights           | Vibex may identify Customer (name & logo) in marketing materials unless Customer opts out in writing.                                                                                          |
+| Publicity / Logo Rights           | Vibex may identify Customer (name & logo) in marketing materials unless Customer opts out in writing.                                                                                             |
 
 ## 3. Modifications to the Standard Terms
 
@@ -70,7 +70,7 @@ Customer may access and use the Service solely for its internal business purpose
 
 ## 6. Privacy & Data
 
-Vibex's Privacy Notice ([https://roocode.com/privacy](https://roocode.com/privacy)) explains how Vibex collects and handles personal information. If Customer requires a DPA, email [support@roocode.com](mailto:support@roocode.com).
+Vibex's Privacy Notice ([https://vibexcode.com/privacy](https://vibexcode.com/privacy)) explains how Vibex collects and handles personal information. If Customer requires a DPA, email [support@vibexcode.com](mailto:support@vibexcode.com).
 
 ## 7. Warranty Disclaimer
 
@@ -98,4 +98,4 @@ The caps in Section 2 apply to all claims under the Agreement, whether in contra
 
 **Vibex, Inc.**  
 98 Graceland Dr, San Rafael, CA 94901 USA  
-Email: [support@roocode.com](mailto:support@roocode.com)
+Email: [support@vibexcode.com](mailto:support@vibexcode.com)

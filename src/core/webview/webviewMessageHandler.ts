@@ -2,7 +2,7 @@ import { safeWriteJson } from "../../utils/safeWriteJson"
 import * as path from "path"
 import * as os from "os"
 import * as fs from "fs/promises"
-import { getRooDirectoriesForCwd } from "../../services/roo-config/index.js"
+import { getVibexDirectoriesForCwd } from "../../services/vibex-config/index.js"
 import pWaitFor from "p-wait-for"
 import * as vscode from "vscode"
 
@@ -15,10 +15,10 @@ import {
 	TelemetryEventName,
 	VibexSettings,
 	ExperimentId,
-} from "@roo-code/types"
-import { customToolRegistry } from "@roo-code/core"
-import { CloudService } from "@roo-code/cloud"
-import { TelemetryService } from "@roo-code/telemetry"
+} from "@vibex-code/types"
+import { customToolRegistry } from "@vibex-code/core"
+import { CloudService } from "@vibex-code/cloud"
+import { TelemetryService } from "@vibex-code/telemetry"
 
 import { type ApiMessage } from "../task-persistence/apiMessages"
 import { saveTaskMessages } from "../task-persistence"
@@ -806,7 +806,7 @@ export const webviewMessageHandler = async (
 						unbound: {},
 						ollama: {},
 						lmstudio: {},
-						roo: {},
+						vibex: {},
 						chutes: {},
 					}
 
@@ -845,9 +845,9 @@ export const webviewMessageHandler = async (
 					},
 				},
 				{
-					key: "roo",
+					key: "vibex",
 					options: {
-						provider: "roo",
+						provider: "vibex",
 						baseUrl: process.env.ROO_CODE_PROVIDER_URL ?? "https://api.vibex.com/proxy",
 						apiKey: CloudService.hasInstance()
 							? CloudService.instance.authService?.getSessionToken()
@@ -983,23 +983,23 @@ export const webviewMessageHandler = async (
 		case "requestRooModels": {
 			// Specific handler for Vibex models only - flushes cache to ensure fresh auth token is used
 			try {
-				const rooOptions = {
-					provider: "roo" as const,
+				const vibexOptions = {
+					provider: "vibex" as const,
 					baseUrl: process.env.ROO_CODE_PROVIDER_URL ?? "https://api.vibex.com/proxy",
 					apiKey: CloudService.hasInstance()
 						? CloudService.instance.authService?.getSessionToken()
 						: undefined,
 				}
 				// Flush cache and refresh to ensure fresh models with current auth state
-				await flushModels(rooOptions, true)
+				await flushModels(vibexOptions, true)
 
-				const rooModels = await getModels(rooOptions)
+				const vibexModels = await getModels(vibexOptions)
 
 				// Always send a response, even if no models are returned
 				provider.postMessageToWebview({
 					type: "singleRouterModelFetchResponse",
 					success: true,
-					values: { provider: "roo", models: rooModels },
+					values: { provider: "vibex", models: vibexModels },
 				})
 			} catch (error) {
 				// Send error response
@@ -1008,7 +1008,7 @@ export const webviewMessageHandler = async (
 					type: "singleRouterModelFetchResponse",
 					success: false,
 					error: errorMessage,
-					values: { provider: "roo" },
+					values: { provider: "vibex" },
 				})
 			}
 			break
@@ -1024,14 +1024,14 @@ export const webviewMessageHandler = async (
 				const balance = await CloudService.instance.cloudAPI.creditBalance()
 
 				provider.postMessageToWebview({
-					type: "rooCreditBalance",
+					type: "vibexCreditBalance",
 					requestId,
 					values: { balance },
 				})
 			} catch (error) {
 				const errorMessage = error instanceof Error ? error.message : String(error)
 				provider.postMessageToWebview({
-					type: "rooCreditBalance",
+					type: "vibexCreditBalance",
 					requestId,
 					values: { error: errorMessage },
 				})
@@ -1259,11 +1259,11 @@ export const webviewMessageHandler = async (
 			}
 
 			const workspaceFolder = getCurrentCwd()
-			const rooDir = path.join(workspaceFolder, ".roo")
-			const mcpPath = path.join(rooDir, "mcp.json")
+			const vibexDir = path.join(workspaceFolder, ".vibex")
+			const mcpPath = path.join(vibexDir, "mcp.json")
 
 			try {
-				await fs.mkdir(rooDir, { recursive: true })
+				await fs.mkdir(vibexDir, { recursive: true })
 				const exists = await fileExistsAtPath(mcpPath)
 
 				if (!exists) {
@@ -1737,7 +1737,7 @@ export const webviewMessageHandler = async (
 		}
 		case "refreshCustomTools": {
 			try {
-				const toolDirs = getRooDirectoriesForCwd(getCurrentCwd()).map((dir) => path.join(dir, "tools"))
+				const toolDirs = getVibexDirectoriesForCwd(getCurrentCwd()).map((dir) => path.join(dir, "tools"))
 				await customToolRegistry.loadFromDirectories(toolDirs)
 
 				await provider.postMessageToWebview({
@@ -1978,14 +1978,14 @@ export const webviewMessageHandler = async (
 				if (scope === "project") {
 					const workspacePath = getWorkspacePath()
 					if (workspacePath) {
-						rulesFolderPath = path.join(workspacePath, ".roo", `rules-${message.slug}`)
+						rulesFolderPath = path.join(workspacePath, ".vibex", `rules-${message.slug}`)
 					} else {
-						rulesFolderPath = path.join(".roo", `rules-${message.slug}`)
+						rulesFolderPath = path.join(".vibex", `rules-${message.slug}`)
 					}
 				} else {
 					// Global scope - use OS home directory
 					const homeDir = os.homedir()
-					rulesFolderPath = path.join(homeDir, ".roo", `rules-${message.slug}`)
+					rulesFolderPath = path.join(homeDir, ".vibex", `rules-${message.slug}`)
 				}
 
 				// Check if the rules folder exists
@@ -2268,7 +2268,7 @@ export const webviewMessageHandler = async (
 			provider.postMessageToWebview({ type: "action", action: "cloudButtonClicked" })
 			break
 		}
-		case "rooCloudSignIn": {
+		case "vibexCloudSignIn": {
 			try {
 				TelemetryService.instance.captureEvent(TelemetryEventName.AUTHENTICATION_INITIATED)
 				// Use provider signup flow if useProviderSignup is explicitly true
@@ -2291,7 +2291,7 @@ export const webviewMessageHandler = async (
 			}
 			break
 		}
-		case "rooCloudSignOut": {
+		case "vibexCloudSignOut": {
 			try {
 				await CloudService.instance.logout()
 				await provider.postStateToWebview()
@@ -2342,7 +2342,7 @@ export const webviewMessageHandler = async (
 			}
 			break
 		}
-		case "rooCloudManualUrl": {
+		case "vibexCloudManualUrl": {
 			try {
 				if (!message.text) {
 					vscode.window.showErrorMessage(t("common:errors.manual_url_empty"))
@@ -2386,7 +2386,7 @@ export const webviewMessageHandler = async (
 		}
 		case "clearCloudAuthSkipModel": {
 			// Clear the flag that indicates auth completed without model selection
-			await provider.context.globalState.update("roo-auth-skip-model", undefined)
+			await provider.context.globalState.update("vibex-auth-skip-model", undefined)
 			await provider.postStateToWebview()
 			break
 		}
@@ -2942,7 +2942,7 @@ export const webviewMessageHandler = async (
 				// Determine the commands directory based on source
 				let commandsDir: string
 				if (source === "global") {
-					const globalConfigDir = path.join(os.homedir(), ".roo")
+					const globalConfigDir = path.join(os.homedir(), ".vibex")
 					commandsDir = path.join(globalConfigDir, "commands")
 				} else {
 					if (!vscode.workspace.workspaceFolders?.length) {
@@ -2955,7 +2955,7 @@ export const webviewMessageHandler = async (
 						vscode.window.showErrorMessage(t("common:errors.no_workspace_for_project_command"))
 						break
 					}
-					commandsDir = path.join(workspaceRoot, ".roo", "commands")
+					commandsDir = path.join(workspaceRoot, ".vibex", "commands")
 				}
 
 				// Ensure the commands directory exists
@@ -3193,7 +3193,7 @@ export const webviewMessageHandler = async (
 				// Create a temporary file
 				const tmpDir = os.tmpdir()
 				const timestamp = Date.now()
-				const tempFileName = `roo-debug-${message.type === "openDebugApiHistory" ? "api" : "ui"}-${currentTask.taskId.slice(0, 8)}-${timestamp}.json`
+				const tempFileName = `vibex-debug-${message.type === "openDebugApiHistory" ? "api" : "ui"}-${currentTask.taskId.slice(0, 8)}-${timestamp}.json`
 				const tempFilePath = path.join(tmpDir, tempFileName)
 
 				await fs.writeFile(tempFilePath, prettifiedContent, "utf8")

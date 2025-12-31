@@ -232,8 +232,8 @@ describe("CompactLogger", () => {
 
 	describe("Child Logger Edge Cases", () => {
 		test("deeply nested child loggers maintain correct metadata inheritance", () => {
-			const root = new CompactLogger(transport, { ctx: "root", rootVal: 1 })
-			const child1 = root.child({ level1: "a" })
+			const vibext = new CompactLogger(transport, { ctx: "vibext", vibextVal: 1 })
+			const child1 = vibext.child({ level1: "a" })
 			const child2 = child1.child({ level2: "b" })
 			const child3 = child2.child({ ctx: "leaf" })
 
@@ -242,7 +242,7 @@ describe("CompactLogger", () => {
 			expect(transport.entries[0]).toMatchObject({
 				c: "leaf",
 				d: {
-					rootVal: 1,
+					vibextVal: 1,
 					level1: "a",
 					level2: "b",
 				},

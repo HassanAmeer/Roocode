@@ -16,7 +16,7 @@ import {
 	getModelId,
 	type ProviderSettings,
 	type GlobalSettings,
-} from "@roo-code/types"
+} from "@vibex-code/types"
 
 import { createRun } from "@/actions/runs"
 import { getExercises } from "@/actions/exercises"
@@ -94,7 +94,7 @@ type ConfigSelection = {
 export function NewRun() {
 	const router = useRouter()
 
-	const [provider, setModelSource] = useState<"roo" | "openrouter" | "other">("other")
+	const [provider, setModelSource] = useState<"vibex" | "openrouter" | "other">("other")
 	const [useNativeToolProtocol, setUseNativeToolProtocol] = useState(true)
 	const [commandExecutionTimeout, setCommandExecutionTimeout] = useState(20)
 	const [terminalShellIntegrationTimeout, setTerminalShellIntegrationTimeout] = useState(30) // seconds
@@ -111,11 +111,11 @@ export function NewRun() {
 	])
 
 	const openRouter = useOpenRouterModels()
-	const rooCodeCloud = useVibexCloudModels()
-	const models = provider === "openrouter" ? openRouter.data : rooCodeCloud.data
-	const searchValue = provider === "openrouter" ? openRouter.searchValue : rooCodeCloud.searchValue
-	const setSearchValue = provider === "openrouter" ? openRouter.setSearchValue : rooCodeCloud.setSearchValue
-	const onFilter = provider === "openrouter" ? openRouter.onFilter : rooCodeCloud.onFilter
+	const vibexCodeCloud = useVibexCloudModels()
+	const models = provider === "openrouter" ? openRouter.data : vibexCodeCloud.data
+	const searchValue = provider === "openrouter" ? openRouter.searchValue : vibexCodeCloud.searchValue
+	const setSearchValue = provider === "openrouter" ? openRouter.setSearchValue : vibexCodeCloud.setSearchValue
+	const onFilter = provider === "openrouter" ? openRouter.onFilter : vibexCodeCloud.onFilter
 
 	const exercises = useQuery({ queryKey: ["getExercises"], queryFn: () => getExercises() })
 
@@ -318,7 +318,7 @@ export function NewRun() {
 		async (values: CreateRun) => {
 			try {
 				// Validate jobToken for Vibex Cloud provider
-				if (provider === "roo" && !values.jobToken?.trim()) {
+				if (provider === "vibex" && !values.jobToken?.trim()) {
 					toast.error("Vibex Cloud Token is required")
 					return
 				}
@@ -334,7 +334,7 @@ export function NewRun() {
 						}
 					}
 				} else {
-					// For openrouter/roo, use model selections
+					// For openrouter/vibex, use model selections
 					for (const selection of modelSelections) {
 						if (selection.model) {
 							selectionsToLaunch.push({ model: selection.model })
@@ -372,11 +372,11 @@ export function NewRun() {
 							commandExecutionTimeout,
 							terminalShellIntegrationTimeout: terminalShellIntegrationTimeout * 1000,
 						}
-					} else if (provider === "roo") {
+					} else if (provider === "vibex") {
 						runValues.model = selection.model
 						runValues.settings = {
 							...(runValues.settings || {}),
-							apiProvider: "roo",
+							apiProvider: "vibex",
 							apiModelId: selection.model,
 							toolProtocol: useNativeToolProtocol ? "native" : "xml",
 							commandExecutionTimeout,
@@ -480,10 +480,12 @@ export function NewRun() {
 							<FormItem>
 								<Tabs
 									value={provider}
-									onValueChange={(value) => setModelSource(value as "roo" | "openrouter" | "other")}>
+									onValueChange={(value) =>
+										setModelSource(value as "vibex" | "openrouter" | "other")
+									}>
 									<TabsList className="mb-2">
 										<TabsTrigger value="other">Import</TabsTrigger>
-										<TabsTrigger value="roo">Vibex Cloud</TabsTrigger>
+										<TabsTrigger value="vibex">Vibex Cloud</TabsTrigger>
 										<TabsTrigger value="openrouter">OpenRouter</TabsTrigger>
 									</TabsList>
 								</Tabs>
@@ -726,7 +728,7 @@ export function NewRun() {
 						)}
 					/>
 
-					{provider === "roo" && (
+					{provider === "vibex" && (
 						<FormField
 							control={form.control}
 							name="jobToken"
@@ -744,7 +746,7 @@ export function NewRun() {
 													key for the .env.* files, generate a token with:
 												</p>
 												<code className="text-xs block mt-1">
-													pnpm --filter @roo-code-cloud/auth production:create-auth-token
+													pnpm --filter @vibex-code-cloud/auth production:create-auth-token
 													[email] [org] [ttl]
 												</code>
 											</TooltipContent>

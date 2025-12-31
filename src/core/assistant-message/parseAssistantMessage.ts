@@ -1,4 +1,4 @@
-import { type ToolName, toolNames } from "@roo-code/types"
+import { type ToolName, toolNames } from "@vibex-code/types"
 
 import { TextContent, ToolUse, McpToolUse, ToolParamName, toolParamNames } from "../../shared/tools"
 

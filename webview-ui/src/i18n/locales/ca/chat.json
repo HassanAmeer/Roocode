@@ -90,7 +90,7 @@
 	"about": "VibeX Code és tot un equip de desenvolupament d'IA al teu editor.",
 	"docs": "Consulta els nostres <DocsLink>documents</DocsLink> per a més informació.",
 	"onboarding": "La teva llista de tasques en aquest espai de treball està buida.",
-	"rooTips": {
+	"vibexTips": {
 		"customizableModes": {
 			"title": "Modes personalitzables",
 			"description": "Persones especialitzades que es mantenen en la tasca i compleixen."
@@ -230,7 +230,7 @@
 	"response": "Resposta",
 	"arguments": "Arguments",
 	"text": {
-		"rooSaid": "En VibeX Code ha dit"
+		"vibexSaid": "En VibeX Code ha dit"
 	},
 	"feedback": {
 		"youSaid": "Has dit"
@@ -323,7 +323,7 @@
 			"feature": "<bold>Model stealth GRATUÏT per temps limitat</bold> - Code Supernova: Ara actualitzat amb una <bold>finestra de context d'1M tokens</bold>! Un model de codificació agèntica versàtil que suporta entrades d'imatges, disponible a través de VibeX Code Cloud.",
 			"note": "(Nota: els prompts i completacions són registrats pel creador del model i utilitzats per millorar-lo)",
 			"connectButton": "Connectar a VibeX Code Cloud",
-			"selectModel": "Selecciona <code>roo/code-supernova</code> del proveïdor VibeX Code Cloud a Configuració per començar.",
+			"selectModel": "Selecciona <code>vibex/code-supernova</code> del proveïdor VibeX Code Cloud a Configuració per començar.",
 			"goToSettingsButton": "Anar a Configuració"
 		},
 		"release": {
@@ -341,7 +341,7 @@
 	},
 	"browser": {
 		"session": "Sessió del navegador",
-		"rooWantsToUse": "VibeX Code vol utilitzar el navegador",
+		"vibexWantsToUse": "VibeX Code vol utilitzar el navegador",
 		"consoleLogs": "Registres de consola",
 		"noNewLogs": "(Cap registre nou)",
 		"screenshot": "Captura de pantalla del navegador",
@@ -427,7 +427,7 @@
 	"versionIndicator": {
 		"ariaLabel": "Versió {{version}} - Feu clic per veure les notes de llançament"
 	},
-	"rooCloudCTA": {
+	"vibexCloudCTA": {
 		"title": "VibeX Code Cloud està evolucionant!",
 		"description": "Executa agents remots al núvol, accedeix a les teves tasques des de qualsevol lloc, col·labora amb altres i molt més.",
 		"joinWaitlist": "Registra't per rebre les últimes actualitzacions."

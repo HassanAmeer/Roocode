@@ -160,7 +160,7 @@ export type TelemetryEvent = {
  * VibexTelemetryEvent
  */
 
-export const rooCodeTelemetryEventSchema = z.discriminatedUnion("type", [
+export const vibexCodeTelemetryEventSchema = z.discriminatedUnion("type", [
 	z.object({
 		type: z.enum([
 			TelemetryEventName.TASK_CREATED,
@@ -235,7 +235,7 @@ export const rooCodeTelemetryEventSchema = z.discriminatedUnion("type", [
 	}),
 ])
 
-export type VibexTelemetryEvent = z.infer<typeof rooCodeTelemetryEventSchema>
+export type VibexTelemetryEvent = z.infer<typeof vibexCodeTelemetryEventSchema>
 
 /**
  * TelemetryEventSubscription

@@ -1,6 +1,6 @@
 import * as assert from "assert"
 
-import { VibexEventName, type ClineMessage } from "@roo-code/types"
+import { VibexEventName, type ClineMessage } from "@vibex-code/types"
 
 import { sleep, waitFor, waitUntilCompleted } from "./utils"
 
@@ -17,7 +17,7 @@ suite.skip("Vibex Subtasks", () => {
 			}
 		})
 
-		const childPrompt = "You are a calculator. Respond only with numbers. What is the square root of 9?"
+		const childPrompt = "You are a calculator. Respond only with numbers. What is the square vibext of 9?"
 
 		// Start a parent task that will create a subtask.
 		const parentTaskId = await api.startNewTask({

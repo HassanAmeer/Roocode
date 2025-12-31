@@ -9,9 +9,9 @@ import {
 	isDynamicProvider,
 	isFauxProvider,
 	isCustomProvider,
-} from "@roo-code/types"
+} from "@vibex-code/types"
 
-import type { RouterModels } from "@roo-code/types"
+import type { RouterModels } from "@vibex-code/types"
 
 export function validateApiConfiguration(
 	apiConfiguration: ProviderSettings,

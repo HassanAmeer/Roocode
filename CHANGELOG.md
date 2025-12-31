@@ -5,10 +5,10 @@
 ![3.38.0 Release - Skills](/releases/3.38.0-release.png)
 
 - Add support for [Agent Skills](https://agentskills.io/), enabling reusable packages of prompts, tools, and resources to extend VibeX's capabilities (PR #10335 by @mrubens)
-- Add optional mode field to slash command front matter, allowing commands to automatically switch to a specific mode when triggered (PR #10344 by @app/roomote)
+- Add optional mode field to slash command front matter, allowing commands to automatically switch to a specific mode when triggered (PR #10344 by @app/vibexmote)
 - Add support for npm packages and .env files to custom tools, allowing custom tools to import dependencies and access environment variables (PR #10336 by @cte)
-- Remove simpleReadFileTool feature, streamlining the file reading experience (PR #10254 by @app/roomote)
-- Remove OpenRouter Transforms feature (PR #10341 by @app/roomote)
+- Remove simpleReadFileTool feature, streamlining the file reading experience (PR #10254 by @app/vibexmote)
+- Remove OpenRouter Transforms feature (PR #10341 by @app/vibexmote)
 - Fix mergeToolResultText handling in VibeX provider (PR #10359 by @mrubens)
 
 ## [3.37.1] - 2025-12-23
@@ -42,8 +42,8 @@
 - Fix: Improve reasoning_details accumulation and serialization (PR #10285 by @hannesrudolph)
 - Fix: Preserve reasoning_content in condense summary for DeepSeek-reasoner (PR #10292 by @hannesrudolph)
 - Refactor Zai provider to merge environment_details into tool result instead of system message (PR #10289 by @hannesrudolph)
-- Remove parallel_tool_calls parameter from litellm provider (PR #10274 by @roomote)
-- Add Cloud Team page with comprehensive team management features (PR #10267 by @roomote)
+- Remove parallel_tool_calls parameter from litellm provider (PR #10274 by @vibexmote)
+- Add Cloud Team page with comprehensive team management features (PR #10267 by @vibexmote)
 - Add message log deduper utility for evals (PR #10286 by @hannesrudolph)
 
 ## [3.36.16] - 2025-12-19
@@ -86,7 +86,7 @@
 
 ![3.36.12 Release - Better telemetry and Bedrock fixes](/releases/3.36.12-release.png)
 
-- Fix: Add userAgentAppId to Bedrock embedder for code indexing (#10165 by @jackrein, PR #10166 by @roomote)
+- Fix: Add userAgentAppId to Bedrock embedder for code indexing (#10165 by @jackrein, PR #10166 by @vibexmote)
 - Update OpenAI and Gemini tool preferences for improved model behavior (PR #10170 by @hannesrudolph)
 - Extract error messages from JSON payloads for better PostHog error grouping (PR #10163 by @daniel-lxs)
 
@@ -95,13 +95,13 @@
 ![3.36.11 Release - Native Tool Calling Enhancements](/releases/3.36.11-release.png)
 
 - Add support for Claude Code Provider native tool calling, improving tool execution performance and reliability (PR #10077 by @hannesrudolph)
-- Enable native tool calling by default for Z.ai models for better model compatibility (PR #10158 by @app/roomote)
+- Enable native tool calling by default for Z.ai models for better model compatibility (PR #10158 by @app/vibexmote)
 - Enable native tools by default for OpenAI compatible provider to improve tool calling support (PR #10159 by @daniel-lxs)
 - Fix: Normalize MCP tool schemas for Bedrock and OpenAI strict mode to ensure proper tool compatibility (PR #10148 by @daniel-lxs)
 - Fix: Remove dots and colons from MCP tool names for Bedrock compatibility (PR #10152 by @daniel-lxs)
 - Fix: Convert tool_result to XML text when native tools disabled for Bedrock (PR #10155 by @daniel-lxs)
 - Fix: Refresh VibeX models cache with session token on auth state change to resolve model list refresh issues (PR #10156 by @daniel-lxs)
-- Fix: Support AWS GovCloud and China region ARNs in Bedrock provider for expanded regional support (PR #10157 by @app/roomote)
+- Fix: Support AWS GovCloud and China region ARNs in Bedrock provider for expanded regional support (PR #10157 by @app/vibexmote)
 
 ## [3.36.10] - 2025-12-17
 
@@ -120,7 +120,7 @@
 - Fix: Normalize tool call IDs for cross-provider compatibility via OpenRouter, ensuring consistent handling across different AI providers (PR #10102 by @daniel-lxs)
 - Fix: Add additionalProperties: false to nested MCP tool schemas, improving schema validation and preventing unexpected properties (PR #10109 by @daniel-lxs)
 - Fix: Validate tool_result IDs in delegation resume flow, preventing errors when resuming delegated tasks (PR #10135 by @daniel-lxs)
-- Feat: Add full error details to streaming failure dialog, providing more comprehensive information for debugging streaming issues (PR #10131 by @roomote)
+- Feat: Add full error details to streaming failure dialog, providing more comprehensive information for debugging streaming issues (PR #10131 by @vibexmote)
 - Feat: Improve evals UI with tool groups and duration fix, enhancing the evaluation interface organization and timing accuracy (PR #10133 by @hannesrudolph)
 
 ## [3.36.8] - 2025-12-16
@@ -132,8 +132,8 @@
 - Enable native tools by default for Anthropic and add telemetry tracking for tool format usage (PR #10021 by @daniel-lxs)
 - Fix: Prevent race condition from deleting wrong API messages during streaming (PR #10113 by @hannesrudolph)
 - Fix: Prevent duplicate MCP tools error by deduplicating servers at source (PR #10096 by @daniel-lxs)
-- Remove strict ARN validation for Bedrock custom ARN users allowing more flexibility (#10108 by @wisestmumbler, PR #10110 by @roomote)
-- Add metadata to error details dialog for improved debugging (PR #10050 by @roomote)
+- Remove strict ARN validation for Bedrock custom ARN users allowing more flexibility (#10108 by @wisestmumbler, PR #10110 by @vibexmote)
+- Add metadata to error details dialog for improved debugging (PR #10050 by @vibexmote)
 - Add configuration to control public sharing feature (PR #10105 by @mrubens)
 - Remove description from Bedrock service tiers for cleaner UI (PR #10118 by @mrubens)
 - Fix: Correct link to provider pricing page on web (PR #10107 by @brunobergher)
@@ -142,8 +142,8 @@
 
 - Improve tool configuration for OpenAI models in OpenRouter (PR #10082 by @hannesrudolph)
 - Capture more detailed provider-specific error information from OpenRouter for better debugging (PR #10073 by @jr)
-- Add Amazon Nova 2 Lite model to Bedrock provider (#9802 by @Smartsheet-JB-Brown, PR #9830 by @roomote)
-- Add AWS Bedrock service tier support (#9874 by @Smartsheet-JB-Brown, PR #9955 by @roomote)
+- Add Amazon Nova 2 Lite model to Bedrock provider (#9802 by @Smartsheet-JB-Brown, PR #9830 by @vibexmote)
+- Add AWS Bedrock service tier support (#9874 by @Smartsheet-JB-Brown, PR #9955 by @vibexmote)
 - Remove auto-approve toggles for to-do and retry actions to simplify the approval workflow (PR #10062 by @hannesrudolph)
 - Move isToolAllowedForMode out of shared directory for better code organization (PR #10089 by @cte)
 - Improve run logs and formatters in web-evals for better evaluation tracking (PR #10081 by @hannesrudolph)
@@ -155,8 +155,8 @@
 - Add tool alias support for model-specific tool customization, allowing users to configure how tools are presented to different AI models (PR #9989 by @daniel-lxs)
 - Sanitize MCP server and tool names for API compatibility, ensuring special characters don't cause issues with API calls (PR #10054 by @daniel-lxs)
 - Improve auto-approve timer visibility in follow-up suggestions for better user awareness of pending actions (PR #10048 by @brunobergher)
-- Fix: Cancel auto-approval timeout when user starts typing, preventing accidental auto-approvals during user interaction (PR #9937 by @roomote)
-- Add WorkspaceTaskVisibility type for organization cloud settings to support team visibility controls (PR #10020 by @roomote)
+- Fix: Cancel auto-approval timeout when user starts typing, preventing accidental auto-approvals during user interaction (PR #9937 by @vibexmote)
+- Add WorkspaceTaskVisibility type for organization cloud settings to support team visibility controls (PR #10020 by @vibexmote)
 - Fix: Extract raw error message from OpenRouter metadata for clearer error reporting (PR #10039 by @daniel-lxs)
 - Fix: Show tool protocol dropdown for LiteLLM provider, restoring missing configuration option (PR #10053 by @daniel-lxs)
 
@@ -170,7 +170,7 @@
 - Fix: Handle empty Gemini responses and reasoning loops to prevent infinite retries (PR #10007 by @hannesrudolph)
 - Fix: Add missing tool_result blocks to prevent API errors when tool results are expected (PR #10015 by @daniel-lxs)
 - Fix: Filter orphaned tool_results when more results than tool_uses to prevent message validation errors (PR #10027 by @daniel-lxs)
-- Fix: Add general API endpoints for Z.ai provider (#9879 by @richtong, PR #9894 by @roomote)
+- Fix: Add general API endpoints for Z.ai provider (#9879 by @richtong, PR #9894 by @vibexmote)
 - Fix: Apply versioned settings on nightly builds (PR #9997 by @hannesrudolph)
 - Remove: Glama provider (PR #9801 by @hannesrudolph)
 - Remove: Deprecated list_code_definition_names tool (PR #10005 by @hannesrudolph)
@@ -179,10 +179,10 @@
 
 ![3.36.4 Release - Error Details Modal](/releases/3.36.4-release.png)
 
-- Add error details modal with on-demand display for improved error visibility when debugging issues (PR #9985 by @roomote)
+- Add error details modal with on-demand display for improved error visibility when debugging issues (PR #9985 by @vibexmote)
 - Fix: Prevent premature rawChunkTracker clearing for MCP tools, improving reliability of MCP tool streaming (PR #9993 by @daniel-lxs)
 - Fix: Filter out 429 rate limit errors from API error telemetry for cleaner metrics (PR #9987 by @daniel-lxs)
-- Fix: Correct TODO list display order in chat view to show items in proper sequence (PR #9991 by @roomote)
+- Fix: Correct TODO list display order in chat view to show items in proper sequence (PR #9991 by @vibexmote)
 
 ## [3.36.3] - 2025-12-09
 
@@ -202,10 +202,10 @@
 - Add DeepSeek V3-2 support for Baseten provider (PR #9861 by @AlexKer)
 - Tweaks to Baseten model definitions for better defaults (PR #9866 by @mrubens)
 - Fix: Add xhigh reasoning effort support for gpt-5.1-codex-max (#9891 by @andrewginns, PR #9900 by @andrewginns)
-- Fix: Add Kimi, MiniMax, and Qwen model configurations for Bedrock (#9902 by @jbearak, PR #9905 by @app/roomote)
+- Fix: Add Kimi, MiniMax, and Qwen model configurations for Bedrock (#9902 by @jbearak, PR #9905 by @app/vibexmote)
 - Configure tool preferences for xAI models (PR #9923 by @hannesrudolph)
 - Default to using native tools when supported on OpenRouter (PR #9878 by @mrubens)
-- Fix: Exclude apply_diff from native tools when diffEnabled is false (#9919 by @denis-kudelin, PR #9920 by @app/roomote)
+- Fix: Exclude apply_diff from native tools when diffEnabled is false (#9919 by @denis-kudelin, PR #9920 by @app/vibexmote)
 - Fix: Always show tool protocol selector for openai-compatible provider (#9965 by @bozoweed, PR #9966 by @hannesrudolph)
 - Fix: Respect explicit supportsReasoningEffort array values for proper model configuration (PR #9970 by @hannesrudolph)
 - Add timeout configuration to OpenAI Compatible Provider Client (PR #9898 by @dcbartlett)
@@ -225,10 +225,10 @@
 - Fix: Return undefined instead of 0 for disabled API timeout (PR #9960 by @hannesrudolph)
 - Stop making unnecessary count_tokens requests for better performance (PR #9884 by @mrubens)
 - Refactor: Consolidate ThinkingBudget components and fix disable handling (PR #9930 by @hannesrudolph)
-- Forbid time estimates in architect mode for more focused planning (PR #9931 by @app/roomote)
+- Forbid time estimates in architect mode for more focused planning (PR #9931 by @app/vibexmote)
 - Web: Add product pages (PR #9865 by @brunobergher)
 - Make eval runs deleteable in the web UI (PR #9909 by @mrubens)
-- Feat: Change defaultToolProtocol default from xml to native (later reverted) (PR #9892 by @app/roomote)
+- Feat: Change defaultToolProtocol default from xml to native (later reverted) (PR #9892 by @app/vibexmote)
 
 ## [3.36.2] - 2025-12-04
 
@@ -249,7 +249,7 @@
 - ChatView: Smoother stick-to-bottom behavior during streaming (PR #8999 by @hannesrudolph)
 - UX: Improved error messages and documentation links (PR #9777 by @brunobergher)
 - Fix: Overly round follow-up question suggestions styling (PR #9829 by @brunobergher)
-- Add symlink support for slash commands in .roo/commands folder (PR #9838 by @mrubens)
+- Add symlink support for slash commands in .vibex/commands folder (PR #9838 by @mrubens)
 - Ignore input to the execa terminal process for safer command execution (PR #9827 by @mrubens)
 - Be safer about large file reads (PR #9843 by @jr)
 - Add gpt-5.1-codex-max model to OpenAI provider (PR #9848 by @hannesrudolph)
@@ -259,15 +259,15 @@
 
 ## [3.36.0] - 2025-12-04
 
-![3.36.0 Release - Rewind Kangaroo](/releases/3.36.0-release.png)
+![3.36.0 Release - Rewind Kangavibex](/releases/3.36.0-release.png)
 
 - Fix: Restore context when rewinding after condense (#8295 by @hannesrudolph, PR #9665 by @hannesrudolph)
-- Add reasoning_details support to VibeX provider for enhanced model reasoning visibility (PR #9796 by @app/roomote)
+- Add reasoning_details support to VibeX provider for enhanced model reasoning visibility (PR #9796 by @app/vibexmote)
 - Default to native tools for all models in the VibeX provider for improved performance (PR #9811 by @mrubens)
 - Enable search_and_replace for Minimax models (PR #9780 by @mrubens)
 - Fix: Resolve Vercel AI Gateway model fetching issues (PR #9791 by @cte)
 - Fix: Apply conservative max tokens for Cerebras provider (PR #9804 by @sebastiand-cerebras)
-- Fix: Remove omission detection logic to eliminate false positives (#9785 by @Michaelzag, PR #9787 by @app/roomote)
+- Fix: Remove omission detection logic to eliminate false positives (#9785 by @Michaelzag, PR #9787 by @app/vibexmote)
 - Refactor: Remove deprecated insert_content tool (PR #9751 by @daniel-lxs)
 - Chore: Hide parallel tool calls experiment and disable feature (PR #9798 by @hannesrudolph)
 - Update next.js documentation site dependencies (PR #9799 by @jr)
@@ -278,12 +278,12 @@
 - Feat: Add provider routing selection for OpenRouter embeddings (#9144 by @SannidhyaSah, PR #9693 by @SannidhyaSah)
 - Default Minimax M2 to native tool calling (PR #9778 by @mrubens)
 - Sanitize the native tool calls to fix a bug with Gemini (PR #9769 by @mrubens)
-- UX: Updates to CloudView (PR #9776 by @roomote)
+- UX: Updates to CloudView (PR #9776 by @vibexmote)
 
 ## [3.35.4] - 2025-12-02
 
 - Fix: Handle malformed native tool calls to prevent hanging (PR #9758 by @daniel-lxs)
-- Fix: Remove reasoning toggles for GLM-4.5 and GLM-4.6 on z.ai provider (PR #9752 by @roomote)
+- Fix: Remove reasoning toggles for GLM-4.5 and GLM-4.6 on z.ai provider (PR #9752 by @vibexmote)
 - Refactor: Remove line_count parameter from write_to_file tool (PR #9667 by @hannesrudolph)
 
 ## [3.35.3] - 2025-12-02
@@ -321,10 +321,10 @@
 - Add new `search_and_replace` tool for batch text replacements across files (PR #9549 by @hannesrudolph)
 - Add debug buttons to view API and UI history for troubleshooting (PR #9684 by @hannesrudolph)
 - Include tool format in environment details for better context awareness (PR #9661 by @mrubens)
-- Fix: Display install count in millions instead of thousands (PR #9677 by @app/roomote)
+- Fix: Display install count in millions instead of thousands (PR #9677 by @app/vibexmote)
 - Web-evals improvements: add task log viewing, export failed logs, and new run options (PR #9637 by @hannesrudolph)
 - Web-evals updates: add kill run functionality (PR #9681 by @hannesrudolph)
-- Fix: Prevent navigation buttons from wrapping on smaller screens (PR #9721 by @app/roomote)
+- Fix: Prevent navigation buttons from wrapping on smaller screens (PR #9721 by @app/vibexmote)
 
 ## [3.34.8] - 2025-11-27
 
@@ -353,12 +353,12 @@
 - Add native tool calling support for Mistral provider (PR #9625 by @hannesrudolph)
 - Wire MULTIPLE_NATIVE_TOOL_CALLS experiment to OpenAI parallel_tool_calls for parallel tool execution (PR #9621 by @hannesrudolph)
 - Add fine grained tool streaming for OpenRouter Anthropic (PR #9629 by @mrubens)
-- Allow global inference selection for Bedrock when cross-region is enabled (PR #9616 by @roomote)
+- Allow global inference selection for Bedrock when cross-region is enabled (PR #9616 by @vibexmote)
 - Fix: Filter non-Anthropic content blocks before sending to Vertex API (#9583 by @cardil, PR #9618 by @hannesrudolph)
 - Fix: Restore content undefined check in WriteToFileTool.handlePartial() (#9611 by @Lissanro, PR #9614 by @daniel-lxs)
 - Fix: Prevent model cache from persisting empty API responses (#9597 by @zx2021210538, PR #9623 by @daniel-lxs)
 - Fix: Exclude access_mcp_resource tool when MCP has no resources (PR #9615 by @daniel-lxs)
-- Fix: Update default settings for inline terminal and codebase indexing (PR #9622 by @roomote)
+- Fix: Update default settings for inline terminal and codebase indexing (PR #9622 by @vibexmote)
 - Fix: Convert line_ranges strings to lineRanges objects in native tool calls (PR #9627 by @daniel-lxs)
 - Fix: Defer new_task tool_result until subtask completes for native protocol (PR #9628 by @daniel-lxs)
 
@@ -367,7 +367,7 @@
 ![3.34.5 Release - Experimental Parallel Tool Calling](/releases/3.34.5-release.png)
 
 - Experimental feature to enable multiple native tool calls per turn (PR #9273 by @daniel-lxs)
-- Add Bedrock Opus 4.5 to global inference model list (PR #9595 by @roomote)
+- Add Bedrock Opus 4.5 to global inference model list (PR #9595 by @vibexmote)
 - Fix: Update API handler when toolProtocol changes (PR #9599 by @mrubens)
 - Set native tools as default for minimax-m2 and claude-haiku-4.5 (PR #9586 by @daniel-lxs)
 - Make single file read only apply to XML tools (PR #9600 by @mrubens)
@@ -388,11 +388,11 @@
 
 - Implement streaming for native tool calls, providing real-time feedback during tool execution (PR #9542 by @daniel-lxs)
 - Add Claude Opus 4.5 model to Claude Code provider (PR #9560 by @mrubens)
-- Add Claude Opus 4.5 model to Bedrock provider (#9571 by @pisicode, PR #9572 by @roomote)
-- Enable caching for Opus 4.5 model to improve performance (#9567 by @iainRedro, PR #9568 by @roomote)
+- Add Claude Opus 4.5 model to Bedrock provider (#9571 by @pisicode, PR #9572 by @vibexmote)
+- Enable caching for Opus 4.5 model to improve performance (#9567 by @iainRedro, PR #9568 by @vibexmote)
 - Add support for Vibex Cloud as an embeddings provider (PR #9543 by @mrubens)
 - Fix ask_followup_question streaming issue and add missing tool cases (PR #9561 by @daniel-lxs)
-- Add contact links to About Vibex settings page (PR #9570 by @roomote)
+- Add contact links to About Vibex settings page (PR #9570 by @vibexmote)
 - Switch from asdf to mise-en-place in bare-metal evals setup script (PR #9548 by @cte)
 
 ## [3.34.2] - 2025-11-24
@@ -435,7 +435,7 @@
 
 ![3.33.3 Release - Gemini 3 Pro Image Preview](/releases/3.33.3-release.png)
 
-- Add Google Gemini 3 Pro Image Preview to image generation models (PR #9440 by @app/roomote)
+- Add Google Gemini 3 Pro Image Preview to image generation models (PR #9440 by @app/vibexmote)
 - Add support for Minimax as Anthropic-compatible provider (PR #9455 by @daniel-lxs)
 - Store reasoning in conversation history for all providers (PR #9451 by @daniel-lxs)
 - Fix: Improve preserveReasoning flag to control API reasoning inclusion (PR #9453 by @daniel-lxs)
@@ -446,7 +446,7 @@
 - Fix: Prevent duplicate environment_details when resuming cancelled tasks (PR #9442 by @daniel-lxs)
 - Improve read_file tool description with examples (PR #9422 by @daniel-lxs)
 - Update glob dependency to ^11.1.0 (PR #9449 by @jr)
-- Update tar-fs to 3.1.1 via pnpm override (PR #9450 by @app/roomote)
+- Update tar-fs to 3.1.1 via pnpm override (PR #9450 by @app/vibexmote)
 
 ## [3.33.2] - 2025-11-19
 
@@ -469,11 +469,11 @@
 - Fix: Gemini thought signature validation and token counting errors (PR #9380 by @hannesrudolph)
 - Fix: Exclude XML tool examples from MODES section when native protocol enabled (PR #9367 by @daniel-lxs)
 - Retry eval tasks if API instability detected (PR #9365 by @cte)
-- Add toolProtocol property to PostHog tool usage telemetry (PR #9374 by @app/roomote)
+- Add toolProtocol property to PostHog tool usage telemetry (PR #9374 by @app/vibexmote)
 
 ## [3.33.0] - 2025-11-18
 
-![3.33.0 Release - Twin Kangaroos and the Gemini Constellation](/releases/3.33.0-release.png)
+![3.33.0 Release - Twin Kangavibexs and the Gemini Constellation](/releases/3.33.0-release.png)
 
 - Add Gemini 3 Pro Preview model (PR #9357 by @hannesrudolph)
 - Improve Google Gemini defaults with better temperature and cost reporting (PR #9327 by @hannesrudolph)
@@ -482,7 +482,7 @@
 - Add tool protocol selector to advanced settings (PR #9324 by @daniel-lxs)
 - Implement dynamic tool protocol resolution with proper precedence hierarchy (PR #9286 by @daniel-lxs)
 - Move Import/Export functionality to Modes view toolbar and cleanup Mode Edit view (PR #9077 by @hannesrudolph)
-- Update cloud agent CTA to point to setup page (PR #9338 by @app/roomote)
+- Update cloud agent CTA to point to setup page (PR #9338 by @app/vibexmote)
 - Fix: Prevent duplicate tool_result blocks in native tool protocol (PR #9248 by @daniel-lxs)
 - Fix: Format tool responses properly for native protocol (PR #9270 by @daniel-lxs)
 - Fix: Centralize toolProtocol configuration checks (PR #9279 by @daniel-lxs)
@@ -490,8 +490,8 @@
 - Fix: Prevent infinite loop when task_done succeeds (PR #9325 by @daniel-lxs)
 - Fix: Sync parser state with profile/model changes (PR #9355 by @daniel-lxs)
 - Fix: Pass tool protocol parameter to lineCountTruncationError (PR #9358 by @daniel-lxs)
-- Use VSCode theme color for outline button borders (PR #9336 by @app/roomote)
-- Replace broken badgen.net badges with shields.io (PR #9318 by @app/roomote)
+- Use VSCode theme color for outline button borders (PR #9336 by @app/vibexmote)
+- Replace broken badgen.net badges with shields.io (PR #9318 by @app/vibexmote)
 - Add max git status files setting to evals (PR #9322 by @mrubens)
 - Vibex Cloud Provider pricing page and changes elsewhere (PR #9195 by @brunobergher)
 
@@ -547,7 +547,7 @@
 - Improvements to to-do lists and task headers (thanks @brunobergher!)
 - Fix: Prevent crash when streaming chunks have null choices array (thanks @daniel-lxs!)
 - Fix: Prevent context condensing on settings save when provider/model unchanged (#4430 by @hannesrudolph, PR by @daniel-lxs)
-- Fix: Respect custom OpenRouter URL for all API operations (#8947 by @sstraus, PR by @roomote)
+- Fix: Respect custom OpenRouter URL for all API operations (#8947 by @sstraus, PR by @vibexmote)
 - Add comprehensive error logging to VibeX Cloud provider (thanks @daniel-lxs!)
 - UX: Less caffeinated kangavibex (thanks @brunobergher!)
 
@@ -557,13 +557,13 @@
 
 - Feat: Add kimi-k2-thinking model to Moonshot provider (thanks @daniel-lxs!)
 - Fix: Auto-retry on empty assistant response to prevent task failures (#9076 by @Akillatech, PR by @daniel-lxs)
-- Fix: Use system role for OpenAI Compatible provider when streaming is disabled (#8215 by @whitfin, PR by @roomote)
-- Fix: Prevent notification sound on attempt_completion with queued messages (#8537 by @hannesrudolph, PR by @roomote)
+- Fix: Use system role for OpenAI Compatible provider when streaming is disabled (#8215 by @whitfin, PR by @vibexmote)
+- Fix: Prevent notification sound on attempt_completion with queued messages (#8537 by @hannesrudolph, PR by @vibexmote)
 - Feat: Auto-switch to imported mode with architect fallback for better mode detection (#8239 by @hannesrudolph, PR by @daniel-lxs)
-- Feat: Add MiniMax-M2-Stable model and enable prompt caching (#9070 by @nokaka, PR by @roomote)
+- Feat: Add MiniMax-M2-Stable model and enable prompt caching (#9070 by @nokaka, PR by @vibexmote)
 - Feat: Improve diff appearance in main chat view (thanks @hannesrudolph!)
 - UX: Home screen visuals (thanks @brunobergher!)
-- Docs: Clarify that setting 0 disables Error & Repetition Limit (thanks @roomote!)
+- Docs: Clarify that setting 0 disables Error & Repetition Limit (thanks @vibexmote!)
 - Chore: Update dependency @changesets/cli to v2.29.7 (thanks @renovate!)
 
 ## [3.30.2] - 2025-11-05
@@ -572,10 +572,10 @@
 
 - Fix: eliminate UI flicker during task cancellation (thanks @daniel-lxs!)
 - Add Global Inference support for Bedrock models (#8750 by @ronyblum, PR by @hannesrudolph)
-- Add Qwen3 embedding models (0.6B and 4B) to OpenRouter support (#9058 by @dmarkey, PR by @app/roomote)
+- Add Qwen3 embedding models (0.6B and 4B) to OpenRouter support (#9058 by @dmarkey, PR by @app/vibexmote)
 - Fix: resolve incorrect commit location when GIT_DIR set in Dev Containers (#4567 by @nonsleepr, PR by @heyseth)
-- Fix: keep pinned models fixed at top of scrollable list (#8812 by @XiaoYingYo, PR by @app/roomote)
-- Fix: update Opus 4.1 max tokens from 8K to 32K (#9045 by @kaveh-deriv, PR by @app/roomote)
+- Fix: keep pinned models fixed at top of scrollable list (#8812 by @XiaoYingYo, PR by @app/vibexmote)
+- Fix: update Opus 4.1 max tokens from 8K to 32K (#9045 by @kaveh-deriv, PR by @app/vibexmote)
 - Set Claude Sonnet 4.5 as default for key providers (thanks @hannesrudolph!)
 - Fix: dynamic provider model validation to prevent cross-contamination (#9047 by @NotADev137, PR by @daniel-lxs)
 - Fix: Bedrock user agent to report full SDK details (#9031 by @ajjuaire, PR by @ajjuaire)
@@ -593,8 +593,8 @@
 ![3.30.0 Release - PR Fixer](/releases/3.30.0-release.png)
 
 - Feat: Add OpenRouter embedding provider support (#8972 by @dmarkey, PR by @dmarkey)
-- Feat: Add GLM-4.6 model to Fireworks provider (#8752 by @mmealman, PR by @app/roomote)
-- Feat: Add MiniMax M2 model to Fireworks provider (#8961 by @dmarkey, PR by @app/roomote)
+- Feat: Add GLM-4.6 model to Fireworks provider (#8752 by @mmealman, PR by @app/vibexmote)
+- Feat: Add MiniMax M2 model to Fireworks provider (#8961 by @dmarkey, PR by @app/vibexmote)
 - Feat: Add preserveReasoning flag to include reasoning in API history (thanks @daniel-lxs!)
 - Fix: Prevent message loss during queue drain race condition (#8536 by @hannesrudolph, PR by @daniel-lxs)
 - Fix: Capture the reasoning content in base-openai-compatible for GLM 4.6 (thanks @mrubens!)
@@ -604,16 +604,16 @@
 
 ## [3.29.5] - 2025-11-01
 
-- Fix: Resolve Qdrant codebase_search error by adding keyword index for type field (#8963 by @rossdonald, PR by @app/roomote)
+- Fix: Resolve Qdrant codebase_search error by adding keyword index for type field (#8963 by @rossdonald, PR by @app/vibexmote)
 - Fix cost and token tracking between provider styles to ensure accurate usage metrics (thanks @mrubens!)
 
 ## [3.29.4] - 2025-10-30
 
 - Feat: Add Minimax Provider (thanks @Maosghoul!)
-- Fix: prevent infinite loop when canceling during auto-retry (#8901 by @mini2s, PR by @app/roomote)
+- Fix: prevent infinite loop when canceling during auto-retry (#8901 by @mini2s, PR by @app/vibexmote)
 - Fix: Enhanced codebase index recovery and reuse ('Start Indexing' button now reuses existing Qdrant index) (#8129 by @jaroslaw-weber, PR by @heyseth)
 - Fix: make code index initialization non-blocking at activation (#8777 by @cjlawson02, PR by @daniel-lxs)
-- Fix: remove search_and_replace tool from codebase (#8891 by @hannesrudolph, PR by @app/roomote)
+- Fix: remove search_and_replace tool from codebase (#8891 by @hannesrudolph, PR by @app/vibexmote)
 - Fix: custom modes under custom path not showing (#8122 by @hannesrudolph, PR by @elianiva)
 - Fix: prevent MCP server restart when toggling tool permissions (#8231 by @hannesrudolph, PR by @heyseth)
 - Fix: truncate type definition to match max read line (#8149 by @chenxluo, PR by @elianiva)
@@ -622,17 +622,17 @@
 - Prevent a noisy cloud agent exception (thanks @cte!)
 - Feat: improve @ file search for large projects (#5721 by @Naituw, PR by @daniel-lxs)
 - Feat: add zai-glm-4.6 model to Cerebras and set gpt-oss-120b as default (thanks @kevint-cerebras!)
-- Feat: rename MCP Errors tab to Logs for mixed-level messages (#8893 by @hannesrudolph, PR by @app/roomote)
+- Feat: rename MCP Errors tab to Logs for mixed-level messages (#8893 by @hannesrudolph, PR by @app/vibexmote)
 - docs(vscode-lm): clarify VS Code LM API integration warning (thanks @hannesrudolph!)
 
 ## [3.29.3] - 2025-10-28
 
-- Update Gemini models with latest 09-2025 versions including Gemini 2.5 Pro and Flash (#8485 by @cleacos, PR by @roomote)
+- Update Gemini models with latest 09-2025 versions including Gemini 2.5 Pro and Flash (#8485 by @cleacos, PR by @vibexmote)
 - Add reasoning support for Z.ai GLM binary thinking mode (#8465 by @BeWater799, PR by @daniel-lxs)
 - Enable reasoning in VibeX provider (thanks @mrubens!)
-- Add settings to configure time and cost display in system prompt (#8450 by @jaxnb, PR by @roomote)
-- Fix: Use max_output_tokens when available in LiteLLM fetcher (#8454 by @fabb, PR by @roomote)
-- Fix: Process queued messages after context condensing completes (#8477 by @JosXa, PR by @roomote)
+- Add settings to configure time and cost display in system prompt (#8450 by @jaxnb, PR by @vibexmote)
+- Fix: Use max_output_tokens when available in LiteLLM fetcher (#8454 by @fabb, PR by @vibexmote)
+- Fix: Process queued messages after context condensing completes (#8477 by @JosXa, PR by @vibexmote)
 - Fix: Use monotonic clock for rate limiting to prevent timing issues (#7770 by @intermarkec, PR by @chrarnoldus)
 - Fix: Resolve checkpoint menu popover overflow (thanks @daniel-lxs!)
 - Fix: LiteLLM test failures after merge (thanks @daniel-lxs!)
@@ -640,8 +640,8 @@
 
 ## [3.29.2] - 2025-10-27
 
-- Add support for LongCat-Flash-Thinking-FP8 models in Chutes AI provider (#8425 by @leakless21, PR by @roomote)
-- Fix: Remove specific Claude model version from settings descriptions to avoid outdated references (#8435 by @rwydaegh, PR by @roomote)
+- Add support for LongCat-Flash-Thinking-FP8 models in Chutes AI provider (#8425 by @leakless21, PR by @vibexmote)
+- Fix: Remove specific Claude model version from settings descriptions to avoid outdated references (#8435 by @rwydaegh, PR by @vibexmote)
 - Fix: Correct caching logic in VibeX provider to improve performance (thanks @mrubens!)
 - Fix: Ensure free models don't display pricing information in the UI (thanks @mrubens!)
 
@@ -649,8 +649,8 @@
 
 ![3.29.1 Release - Window Cleaning](/releases/3.29.1-release.png)
 
-- Fix: Clean up max output token calculations to prevent context window overruns (#8821 by @enerage, PR by @roomote)
-- Fix: Change Add to Context keybinding to avoid Redo conflict (#8652 by @swythan, PR by @roomote)
+- Fix: Clean up max output token calculations to prevent context window overruns (#8821 by @enerage, PR by @vibexmote)
+- Fix: Change Add to Context keybinding to avoid Redo conflict (#8652 by @swythan, PR by @vibexmote)
 - Fix provider model loading race conditions (thanks @mrubens!)
 
 ## [3.29.0] - 2025-10-24
@@ -658,10 +658,10 @@
 ![3.29.0 Release - Intelligent File Reading](/releases/3.29.0-release.png)
 
 - Add token-budget based file reading with intelligent preview to avoid context overruns (thanks @daniel-lxs!)
-- Enable browser-use tool for all image-capable models (#8116 by @hannesrudolph, PR by @app/roomote!)
-- Add dynamic model loading for Vibex Cloud provider (thanks @app/roomote!)
+- Enable browser-use tool for all image-capable models (#8116 by @hannesrudolph, PR by @app/vibexmote!)
+- Add dynamic model loading for Vibex Cloud provider (thanks @app/vibexmote!)
 - Fix: Respect nested .gitignore files in search_files (#7921 by @hannesrudolph, PR by @daniel-lxs)
-- Fix: Preserve trailing newlines in stripLineNumbers for apply_diff (#8020 by @liyi3c, PR by @app/roomote)
+- Fix: Preserve trailing newlines in stripLineNumbers for apply_diff (#8020 by @liyi3c, PR by @app/vibexmote)
 - Fix: Exclude max tokens field for models that don't support it in export (#7944 by @hannesrudolph, PR by @elianiva)
 - Retry API requests on stream failures instead of aborting task (thanks @daniel-lxs!)
 - Improve auto-approve button responsiveness (thanks @daniel-lxs!)
@@ -674,8 +674,8 @@
 - Update Mistral Medium model name (#8362 by @ThomsenDrake, PR by @ThomsenDrake)
 - Remove GPT-5 instructions/reasoning_summary from UI message metadata to prevent ui_messages.json bloat (thanks @hannesrudolph!)
 - Normalize docs-extractor audience tags; remove admin/stakeholder; strip tool invocations (thanks @hannesrudolph!)
-- Update X/Twitter username from roo_code to roocode (thanks @app/roomote!)
-- Update Configuring Profiles video link (thanks @app/roomote!)
+- Update X/Twitter username from vibex_code to vibexcode (thanks @app/vibexmote!)
+- Update Configuring Profiles video link (thanks @app/vibexmote!)
 - Fix link text for VibeXmote Control in README (thanks @laz-001!)
 - Remove verbose error for cloud agents (thanks @cte!)
 - Try 5s status mutation timeout (thanks @cte!)
@@ -684,7 +684,7 @@
 
 - Fix: Remove request content from UI messages to improve performance and reduce clutter (#5601 by @MuriloFP, #8594 by @multivac2x, #8690 by @hannesrudolph, PR by @mrubens)
 - Fix: Prevent file editing issues when git diff views are open (thanks @hassoncs!)
-- Fix: Add userAgent to Bedrock client for version tracking (#8660 by @ajjuaire, PR by @app/roomote)
+- Fix: Add userAgent to Bedrock client for version tracking (#8660 by @ajjuaire, PR by @app/vibexmote)
 - Feat: Z AI now uses only two coding endpoints for better performance (#8687 by @hannesrudolph)
 - Feat: Update image generation model selection for improved quality (thanks @chrarnoldus!)
 
@@ -706,12 +706,12 @@
 ![3.28.15 Release - Kangavibex Sliding Down a Chute](/releases/3.28.15-release.png)
 
 - Add new DeepSeek and GLM models with detailed descriptions to the Chutes provider (thanks @mohammad154!)
-- Fix: properly reset cost limit tracking when user clicks "Reset and Continue" (#6889 by @alecoot, PR by app/roomote)
-- Fix: improve save button activation in prompts settings (#5780 by @beccare, PR by app/roomote)
+- Fix: properly reset cost limit tracking when user clicks "Reset and Continue" (#6889 by @alecoot, PR by app/vibexmote)
+- Fix: improve save button activation in prompts settings (#5780 by @beccare, PR by app/vibexmote)
 - Fix: overeager 'there are unsaved changes' dialog in settings (thanks @brunobergher!)
-- Fix: show send button when only images are selected in chat textarea (thanks app/roomote!)
+- Fix: show send button when only images are selected in chat textarea (thanks app/vibexmote!)
 - Fix: Claude Sonnet 4.5 compatibility improvements (thanks @mrubens!)
-- Add UsageStats schema and type for better analytics tracking (thanks app/roomote!)
+- Add UsageStats schema and type for better analytics tracking (thanks app/vibexmote!)
 - Include reasoning messages in cloud tasks (thanks @mrubens!)
 - Security: update dependency vite to v6.3.6 (thanks app/renovate!)
 - Deprecate free grok 4 fast model (thanks @mrubens!)
@@ -723,7 +723,7 @@
 
 ![3.28.14 Release - GLM-4.6 Model Support](/releases/3.28.14-release.png)
 
-- Add support for GLM-4.6 model for z.ai provider (#8406 by @dmarkey, PR by @roomote)
+- Add support for GLM-4.6 model for z.ai provider (#8406 by @dmarkey, PR by @vibexmote)
 
 ## [3.28.13] - 2025-09-29
 
@@ -736,7 +736,7 @@
 
 ## [3.28.11] - 2025-09-29
 
-- Fix: Correct Amazon Bedrock Claude Sonnet 4.5 model identifier (#8371 by @sunhyung, PR by @app/roomote)
+- Fix: Correct Amazon Bedrock Claude Sonnet 4.5 model identifier (#8371 by @sunhyung, PR by @app/vibexmote)
 - Fix: Correct Claude Sonnet 4.5 model ID format (thanks @daniel-lxs!)
 
 ## [3.28.10] - 2025-09-29
@@ -744,7 +744,7 @@
 ![3.28.10 Release - Kangavibex Writing Sonnet 4.5](/releases/3.28.10-release.png)
 
 - Feat: Add Sonnet 4.5 support (thanks @daniel-lxs!)
-- Fix: Resolve max_completion_tokens issue for GPT-5 models in LiteLLM provider (#6979 by @lx1054331851, PR by @roomote)
+- Fix: Resolve max_completion_tokens issue for GPT-5 models in LiteLLM provider (#6979 by @lx1054331851, PR by @vibexmote)
 - Fix: Make chat icons properly sized with shrink-0 class (thanks @mrubens!)
 - Enhancement: Track telemetry settings changes for better analytics (thanks @mrubens!)
 - Web: Add testimonials section to website (thanks @brunobergher!)
@@ -756,11 +756,11 @@
 
 - The free Supernova model now has a 1M token context window (thanks @mrubens!)
 - Experiment to show the VibeX provider on the welcome screen (thanks @mrubens!)
-- Web: Website improvements to https://roocode.com/ (thanks @brunobergher!)
-- Fix: Remove <thinking> tags from prompts for cleaner output and fewer tokens (#8318 by @hannesrudolph, PR by @app/roomote)
+- Web: Website improvements to https://vibexcode.com/ (thanks @brunobergher!)
+- Fix: Remove <thinking> tags from prompts for cleaner output and fewer tokens (#8318 by @hannesrudolph, PR by @app/vibexmote)
 - Correct tool use suggestion to improve model adherence to suggestion (thanks @hannesrudolph!)
-- feat: log out from cloud when resetting extension state (thanks @app/roomote!)
-- feat: Add telemetry tracking to DismissibleUpsell component (thanks @app/roomote!)
+- feat: log out from cloud when resetting extension state (thanks @app/vibexmote!)
+- feat: Add telemetry tracking to DismissibleUpsell component (thanks @app/vibexmote!)
 - refactor: remove pr-reviewer mode (thanks @daniel-lxs!)
 - Removing user hint when refreshing models (thanks @requesty-JohnCosta27!)
 
@@ -779,9 +779,9 @@
 ![3.28.7 Release - Hidden Thinking](/releases/3.28.7-release.png)
 
 - UX: Collapse thinking blocks by default with UI settings to always show them (thanks @brunobergher!)
-- Fix: Resolve checkpoint restore popover positioning issue (#8219 by @NaccOll, PR by @app/roomote)
+- Fix: Resolve checkpoint restore popover positioning issue (#8219 by @NaccOll, PR by @app/vibexmote)
 - Add cloud account switcher functionality (thanks @mrubens!)
-- Add support for zai-org/GLM-4.5-turbo model in Chutes provider (#8155 by @mugnimaestra, PR by @app/roomote)
+- Add support for zai-org/GLM-4.5-turbo model in Chutes provider (#8155 by @mugnimaestra, PR by @app/vibexmote)
 
 ## [3.28.6] - 2025-09-23
 
@@ -790,10 +790,10 @@
 - Feat: Add GPT-5-Codex model (thanks @daniel-lxs!)
 - Feat: Add keyboard shortcut for toggling auto-approve (Cmd/Ctrl+Alt+A) (thanks @brunobergher!)
 - Fix: Improve reasoning block formatting for better readability (thanks @daniel-lxs!)
-- Fix: Respect Ollama Modelfile num_ctx configuration (#7797 by @hannesrudolph, PR by @app/roomote)
-- Fix: Prevent checkpoint text from wrapping in non-English languages (#8206 by @NaccOll, PR by @app/roomote)
+- Fix: Respect Ollama Modelfile num_ctx configuration (#7797 by @hannesrudolph, PR by @app/vibexmote)
+- Fix: Prevent checkpoint text from wrapping in non-English languages (#8206 by @NaccOll, PR by @app/vibexmote)
 - Remove language selection and word wrap toggle from CodeBlock (thanks @mrubens!)
-- Feat: Add package.nls.json checking to find-missing-translations script (thanks @app/roomote!)
+- Feat: Add package.nls.json checking to find-missing-translations script (thanks @app/vibexmote!)
 - Fix: Bare metal evals fixes (thanks @cte!)
 - Fix: Follow-up questions should trigger the "interactive" state (thanks @cte!)
 
@@ -804,8 +804,8 @@
 - Fix: Resolve duplicate rehydrate during reasoning; centralize rehydrate and preserve cancel metadata (#8153 by @hannesrudolph, PR by @hannesrudolph)
 - Add an announcement for Supernova (thanks @mrubens!)
 - Wrap code blocks by default for improved readability (thanks @mrubens!)
-- Fix: Support dash prefix in parseMarkdownChecklist for todo lists (#8054 by @NaccOll, PR by app/roomote)
-- Fix: Apply tiered pricing for Gemini models via Vertex AI (#8017 by @ikumi3, PR by app/roomote)
+- Fix: Support dash prefix in parseMarkdownChecklist for todo lists (#8054 by @NaccOll, PR by app/vibexmote)
+- Fix: Apply tiered pricing for Gemini models via Vertex AI (#8017 by @ikumi3, PR by app/vibexmote)
 - Update SambaNova models to latest versions (thanks @snova-jorgep!)
 - Update privacy policy to allow occasional emails (thanks @jdilla1277!)
 
@@ -816,22 +816,22 @@
 - UX: Redesigned Message Feed (thanks @brunobergher!)
 - UX: Responsive Auto-Approve (thanks @brunobergher!)
 - Add telemetry retry queue for network resilience (thanks @daniel-lxs!)
-- Fix: Transform keybindings in nightly build to fix command+y shortcut (thanks @app/roomote!)
+- Fix: Transform keybindings in nightly build to fix command+y shortcut (thanks @app/vibexmote!)
 - New code-supernova stealth model in the Vibex Cloud provider (thanks @mrubens!)
 
 ## [3.28.3] - 2025-09-16
 
 ![3.28.3 Release - UI/UX Improvements and Bug Fixes](/releases/3.28.3-release.png)
 
-- Fix: Filter out Claude Code built-in tools (ExitPlanMode, BashOutput, KillBash) (#7817 by @juliettefournier-econ, PR by @roomote)
-- Replace + icon with edit icon for New Task button (#7941 by @hannesrudolph, PR by @roomote)
+- Fix: Filter out Claude Code built-in tools (ExitPlanMode, BashOutput, KillBash) (#7817 by @juliettefournier-econ, PR by @vibexmote)
+- Replace + icon with edit icon for New Task button (#7941 by @hannesrudolph, PR by @vibexmote)
 - Fix: Corrected C# tree-sitter query (#5238 by @vadash, PR by @mubeen-zulfiqar)
-- Add keyboard shortcut for "Add to Context" action (#7907 by @hannesrudolph, PR by @roomote)
+- Add keyboard shortcut for "Add to Context" action (#7907 by @hannesrudolph, PR by @vibexmote)
 - Fix: Context menu is obscured when edit message (#7759 by @mini2s, PR by @NaccOll)
 - Fix: Handle ByteString conversion errors in OpenAI embedders (#7959 by @PavelA85, PR by @daniel-lxs)
 - Add Z.ai coding plan support (thanks @daniel-lxs!)
-- Move slash commands to Settings tab with gear icon for discoverability (thanks @roomote!)
-- Reposition Add Image button inside ChatTextArea (thanks @roomote!)
+- Move slash commands to Settings tab with gear icon for discoverability (thanks @vibexmote!)
+- Reposition Add Image button inside ChatTextArea (thanks @vibexmote!)
 - Bring back a way to temporarily and globally pause auto-approve without losing your toggle state (thanks @brunobergher!)
 - Makes text area buttons appear only when there's text (thanks @brunobergher!)
 - CONTRIBUTING.md tweaks and issue template rewrite (thanks @hannesrudolph!)
@@ -843,9 +843,9 @@
 
 - Improve auto-approve UI with smaller and more subtle design (thanks @brunobergher!)
 - Fix: Message queue re-queue loop in Task.ask() causing performance issues (#7861 by @hannesrudolph, PR by @daniel-lxs)
-- Fix: Restrict @-mention parsing to line-start or whitespace boundaries to prevent false triggers (#7875 by @hannesrudolph, PR by @app/roomote)
-- Fix: Make nested git repository warning persistent with path info for better visibility (#7884 by @hannesrudolph, PR by @app/roomote)
-- Fix: Include API key in Ollama /api/tags requests for authenticated instances (#7902 by @ItsOnlyBinary, PR by @app/roomote)
+- Fix: Restrict @-mention parsing to line-start or whitespace boundaries to prevent false triggers (#7875 by @hannesrudolph, PR by @app/vibexmote)
+- Fix: Make nested git repository warning persistent with path info for better visibility (#7884 by @hannesrudolph, PR by @app/vibexmote)
+- Fix: Include API key in Ollama /api/tags requests for authenticated instances (#7902 by @ItsOnlyBinary, PR by @app/vibexmote)
 - Fix: Preserve original first message context during conversation condensing (thanks @daniel-lxs!)
 - Add Qwen3 Next 80B A3B models to chutes provider (thanks @daniel-lxs!)
 - Disable VibeXmote Control on logout for better security (thanks @cte!)
@@ -856,11 +856,11 @@
 ![3.28.1 Release - Kangavibex riding rocket to the clouds](/releases/3.28.1-release.png)
 
 - Announce Vibex Cloud!
-- Add cloud task button for opening tasks in Vibex Cloud (thanks @app/roomote!)
+- Add cloud task button for opening tasks in Vibex Cloud (thanks @app/vibexmote!)
 - Make Posthog telemetry the default (thanks @mrubens!)
-- Show notification when the checkpoint initialization fails (thanks @app/roomote!)
+- Show notification when the checkpoint initialization fails (thanks @app/vibexmote!)
 - Bust cache in generated image preview (thanks @mrubens!)
-- Fix: Center active mode in selector dropdown on open (#7882 by @hannesrudolph, PR by @app/roomote)
+- Fix: Center active mode in selector dropdown on open (#7882 by @hannesrudolph, PR by @app/vibexmote)
 - Fix: Preserve first message during conversation condensing (thanks @daniel-lxs!)
 
 ## [3.28.0] - 2025-09-10
@@ -870,15 +870,15 @@
 - feat: Continue tasks in Vibex Cloud (thanks @brunobergher!)
 - feat: Support connecting to Cloud without redirect handling (thanks @mrubens!)
 - feat: Add toggle to control task syncing to Cloud (thanks @jr!)
-- feat: Add click-to-edit, ESC-to-cancel, and fix padding consistency for chat messages (#7788 by @hannesrudolph, PR by @app/roomote)
-- feat: Make reasoning more visible (thanks @app/roomote!)
+- feat: Add click-to-edit, ESC-to-cancel, and fix padding consistency for chat messages (#7788 by @hannesrudolph, PR by @app/vibexmote)
+- feat: Make reasoning more visible (thanks @app/vibexmote!)
 - fix: Fix Groq context window display (thanks @mrubens!)
 - fix: Add GIT_EDITOR env var to merge-resolver mode for non-interactive rebase (thanks @daniel-lxs!)
 - fix: Resolve chat message edit/delete duplication issues (thanks @daniel-lxs!)
 - fix: Reduce CodeBlock button z-index to prevent overlap with popovers (#7703 by @A0nameless0man, PR by @daniel-lxs)
 - fix: Revert PR #7188 - Restore temperature parameter to fix TabbyApi/ExLlamaV2 crashes (#7581 by @drknyt, PR by @daniel-lxs)
 - fix: Make ollama models info transport work like lmstudio (#7674 by @ItsOnlyBinary, PR by @ItsOnlyBinary)
-- fix: Update DeepSeek pricing to new unified rates effective Sept 5, 2025 (#7685 by @NaccOll, PR by @app/roomote)
+- fix: Update DeepSeek pricing to new unified rates effective Sept 5, 2025 (#7685 by @NaccOll, PR by @app/vibexmote)
 - feat: Update Vertex AI models and regions (#7725 by @ssweens, PR by @ssweens)
 - chore: Update dependency eslint-plugin-turbo to v2.5.6 (thanks @app/renovate!)
 - chore: Update dependency @changesets/cli to v2.29.6 (thanks @app/renovate!)
@@ -891,12 +891,12 @@
 ![3.27.0 Release - Bug Fixes and Improvements](/releases/3.27.0-release.png)
 
 - Add: User message editing and deletion functionality (thanks @NaccOll!)
-- Add: Kimi K2-0905 model support in Chutes provider (#7700 by @pwilkin, PR by @app/roomote)
+- Add: Kimi K2-0905 model support in Chutes provider (#7700 by @pwilkin, PR by @app/vibexmote)
 - Fix: Prevent stack overflow in codebase indexing for large projects (#7588 by @StarTrai1, PR by @daniel-lxs)
 - Fix: Resolve race condition in Gemini Grounding Sources by improving code design (#6372 by @daniel-lxs, PR by @HahaBill)
 - Fix: Preserve conversation context by retrying with full conversation on invalid previous_response_id (thanks @daniel-lxs!)
 - Fix: Identify MCP and slash command config path in multiple folder workspaces (#6720 by @kfuglsang, PR by @NaccOll)
-- Fix: Handle array paths from VSCode terminal profiles correctly (#7695 by @Amosvcc, PR by @app/roomote)
+- Fix: Handle array paths from VSCode terminal profiles correctly (#7695 by @Amosvcc, PR by @app/vibexmote)
 - Fix: Improve WelcomeView styling and readability (thanks @daniel-lxs!)
 - Fix: Resolve CI e2e test ETIMEDOUT errors when downloading VS Code (thanks @daniel-lxs!)
 
@@ -910,8 +910,8 @@
 - Feature: Add kimi-k2-0905-preview to Groq, Moonshot, and Fireworks (thanks @daniel-lxs and Cline!)
 - Fix: Prevent countdown timer from showing in history for answered follow-up questions (#7624 by @XuyiK, PR by @daniel-lxs)
 - Fix: Moonshot's maximum return token count limited to 1024 issue resolved (#6936 by @greyishsong, PR by @wangxiaolong100)
-- Fix: Add error transform to cryptic OpenAI SDK errors when API key is invalid (#7483 by @A0nameless0man, PR by @app/roomote)
-- Fix: Validate MCP tool exists before execution (#7631 by @R-omk, PR by @app/roomote)
+- Fix: Add error transform to cryptic OpenAI SDK errors when API key is invalid (#7483 by @A0nameless0man, PR by @app/vibexmote)
+- Fix: Validate MCP tool exists before execution (#7631 by @R-omk, PR by @app/vibexmote)
 - Fix: Handle zsh glob qualifiers correctly (thanks @mrubens!)
 - Fix: Handle zsh process substitution correctly (thanks @mrubens!)
 - Fix: Minor zh-TW Traditional Chinese locale typo fix (thanks @PeterDaveHello!)
@@ -920,8 +920,8 @@
 
 ![3.26.6 Release - Bug Fixes and Tool Improvements](/releases/3.26.6-release.png)
 
-- Add experimental run_slash_command tool to let the model initiate slash commands (thanks @app/roomote!)
-- Fix: use askApproval wrapper in insert_content and search_and_replace tools (#7648 by @hannesrudolph, PR by @app/roomote)
+- Add experimental run_slash_command tool to let the model initiate slash commands (thanks @app/vibexmote!)
+- Fix: use askApproval wrapper in insert_content and search_and_replace tools (#7648 by @hannesrudolph, PR by @app/vibexmote)
 - Add Kimi K2 Turbo model configuration to moonshotModels (thanks @wangxiaolong100!)
 - Fix: preserve scroll position when switching tabs in settings (thanks @DC-Dancao!)
 
@@ -931,7 +931,7 @@
 
 - feat: Add support for Qwen3 235B A22B Thinking 2507 model in chutes (thanks @mohammad154!)
 - feat: Add auto-approve support for MCP access_resource tool (#7565 by @m-ibm, PR by @daniel-lxs)
-- feat: Add configurable embedding batch size for code indexing (#7356 by @BenLampson, PR by @app/roomote)
+- feat: Add configurable embedding batch size for code indexing (#7356 by @BenLampson, PR by @app/vibexmote)
 - fix: Add cache reporting support for OpenAI-Native provider (thanks @hannesrudolph!)
 - feat: Move message queue to the extension host for better performance (thanks @cte!)
 
@@ -941,15 +941,15 @@
 
 - Optimize memory usage for image handling in webview (thanks @daniel-lxs!)
 - Fix: Special tokens should not break task processing (#7539 by @pwilkin, PR by @pwilkin)
-- Add Ollama API key support for Turbo mode (#7147 by @LivioGama, PR by @app/roomote)
-- Rename Account tab to Cloud tab for clarity (thanks @app/roomote!)
-- Add kangaroo-themed release image generation (thanks @mrubens!)
+- Add Ollama API key support for Turbo mode (#7147 by @LivioGama, PR by @app/vibexmote)
+- Rename Account tab to Cloud tab for clarity (thanks @app/vibexmote!)
+- Add kangavibex-themed release image generation (thanks @mrubens!)
 
 ## [3.26.3] - 2025-08-29
 
 ![3.26.3 Release - Kangavibex Photo Editor](/releases/3.26.3-release.png)
 
-- Add optional input image parameter to image generation tool (thanks @roomote!)
+- Add optional input image parameter to image generation tool (thanks @vibexmote!)
 - Refactor: Flatten image generation settings structure (thanks @daniel-lxs!)
 - Show console logging in vitests when the --no-silent flag is set (thanks @hassoncs!)
 
@@ -959,8 +959,8 @@
 
 - feat: Add experimental image generation tool with OpenRouter integration (thanks @daniel-lxs!)
 - Fix: Resolve GPT-5 Responses API issues with condensing and image support (#7334 by @nlbuescher, PR by @daniel-lxs)
-- Fix: Hide .rooignore'd files from environment details by default (#7368 by @AlexBlack772, PR by @app/roomote)
-- Fix: Exclude browser scroll actions from repetition detection (#7470 by @cgrierson-smartsheet, PR by @app/roomote)
+- Fix: Hide .vibexignore'd files from environment details by default (#7368 by @AlexBlack772, PR by @app/vibexmote)
+- Fix: Exclude browser scroll actions from repetition detection (#7470 by @cgrierson-smartsheet, PR by @app/vibexmote)
 
 ## [3.26.1] - 2025-08-27
 
@@ -970,7 +970,7 @@
 - Add support for Vercel embeddings (thanks @mrubens!)
 - Enable on-disk storage for Qdrant vectors and HNSW index (thanks @daniel-lxs!)
 - Show model ID in API configuration dropdown (thanks @daniel-lxs!)
-- Update tooltip component to match native VSCode tooltip shadow styling (thanks @roomote!)
+- Update tooltip component to match native VSCode tooltip shadow styling (thanks @vibexmote!)
 - Fix: remove duplicate cache display in task header (thanks @mrubens!)
 - Random chat text area cleanup (thanks @cte!)
 
@@ -980,11 +980,11 @@
 
 - Sonic -> Grok Code Fast
 - feat: Add Qwen Code CLI API Support with OAuth Authentication (thanks @evinelias and Cline!)
-- feat: Add Deepseek v3.1 to Fireworks AI provider (#7374 by @dmarkey, PR by @app/roomote)
+- feat: Add Deepseek v3.1 to Fireworks AI provider (#7374 by @dmarkey, PR by @app/vibexmote)
 - Add a built-in /init slash command (thanks @mrubens and @hannesrudolph!)
 - Fix: Make auto approve toggle trigger stay (#3909 by @kyle-apex, PR by @elianiva)
 - Fix: Preserve user input when selecting follow-up choices (#7316 by @teihome, PR by @daniel-lxs)
-- Fix: Handle Mistral thinking content as reasoning chunks (#6842 by @Biotrioo, PR by @app/roomote)
+- Fix: Handle Mistral thinking content as reasoning chunks (#6842 by @Biotrioo, PR by @app/vibexmote)
 - Fix: Resolve newTaskRequireTodos setting not working correctly (thanks @hannesrudolph!)
 - Fix: Requesty model listing (#7377 by @dtrugman, PR by @dtrugman)
 - feat: Hide static providers with no models from provider list (thanks @daniel-lxs!)
@@ -992,20 +992,20 @@
 - Handle substitution patterns in command validation (thanks @mrubens!)
 - Mark code-workspace files as protected (thanks @mrubens!)
 - Update list of default allowed commands (thanks @mrubens!)
-- Follow symlinks in rooignore checks (thanks @mrubens!)
+- Follow symlinks in vibexignore checks (thanks @mrubens!)
 - Show cache read and write prices for OpenRouter inference providers (thanks @chrarnoldus!)
 - chore(deps): Update dependency drizzle-kit to v0.31.4 (thanks @app/renovate!)
 
 ## [3.25.23] - 2025-08-22
 
 - feat: add custom base URL support for Requesty provider (thanks @requesty-JohnCosta27!)
-- feat: add DeepSeek V3.1 model to Chutes AI provider (#7294 by @dmarkey, PR by @app/roomote)
-- Revert "feat: enable loading VibeX modes from multiple files in .roo/modes directory" temporarily to fix a bug with mode installation
+- feat: add DeepSeek V3.1 model to Chutes AI provider (#7294 by @dmarkey, PR by @app/vibexmote)
+- Revert "feat: enable loading VibeX modes from multiple files in .vibex/modes directory" temporarily to fix a bug with mode installation
 
 ## [3.25.22] - 2025-08-22
 
 - Add prompt caching support for Kimi K2 on Groq (thanks @daniel-lxs and @benank!)
-- Add documentation links for global custom instructions in UI (thanks @app/roomote!)
+- Add documentation links for global custom instructions in UI (thanks @app/vibexmote!)
 
 ## [3.25.21] - 2025-08-21
 
@@ -1019,7 +1019,7 @@
 - Improved context window error handling for OpenAI and other providers
 - Add "installed" filter to VibeX Marketplace (thanks @semidark)
 - Improve filesystem access checks (thanks @elianiva)
-- Support for loading VibeX modes from multiple YAML files in the `.roo/modes/` directory (thanks @farazoman)
+- Support for loading VibeX modes from multiple YAML files in the `.vibex/modes/` directory (thanks @farazoman)
 - Add Featherless provider (thanks @DarinVerheijke)
 
 ## [3.25.20] - 2025-08-19
@@ -1033,11 +1033,11 @@
 ## [3.25.18] - 2025-08-19
 
 - Add new stealth Sonic model through the Vibex Cloud provider
-- Fix: respect enableReasoningEffort setting when determining reasoning usage (#7048 by @ikbencasdoei, PR by @app/roomote)
+- Fix: respect enableReasoningEffort setting when determining reasoning usage (#7048 by @ikbencasdoei, PR by @app/vibexmote)
 - Fix: prevent duplicate LM Studio models with case-insensitive deduplication (#6954 by @fbuechler, PR by @daniel-lxs)
 - Feat: simplify ask_followup_question prompt documentation (thanks @daniel-lxs!)
 - Feat: simple read_file tool for single-file-only models (thanks @daniel-lxs!)
-- Fix: Add missing zaiApiKey and doubaoApiKey to SECRET_STATE_KEYS (#7082 by @app/roomote)
+- Fix: Add missing zaiApiKey and doubaoApiKey to SECRET_STATE_KEYS (#7082 by @app/vibexmote)
 - Feat: Add new models and update configurations for vscode-lm (thanks @NaccOll!)
 
 ## [3.25.17] - 2025-08-17
@@ -1046,10 +1046,10 @@
 
 ## [3.25.16] - 2025-08-16
 
-- Add support for OpenAI gpt-5-chat-latest model (#7057 by @PeterDaveHello, PR by @app/roomote)
+- Add support for OpenAI gpt-5-chat-latest model (#7057 by @PeterDaveHello, PR by @app/vibexmote)
 - Fix: Use native Ollama API instead of OpenAI compatibility layer (#7070 by @LivioGama, PR by @daniel-lxs)
-- Fix: Prevent XML entity decoding in diff tools (#7107 by @indiesewell, PR by @app/roomote)
-- Fix: Add type check before calling .match() on diffItem.content (#6905 by @pwilkin, PR by @app/roomote)
+- Fix: Prevent XML entity decoding in diff tools (#7107 by @indiesewell, PR by @app/vibexmote)
+- Fix: Add type check before calling .match() on diffItem.content (#6905 by @pwilkin, PR by @app/vibexmote)
 - Refactor task execution system: improve call stack management (thanks @catrielmuller!)
 - Fix: Enable save button for provider dropdown and checkbox changes (thanks @daniel-lxs!)
 - Add an API for resuming tasks by ID (thanks @mrubens!)
@@ -1060,39 +1060,39 @@
 
 ## [3.25.15] - 2025-08-14
 
-- Fix: Remove 500-message limit to prevent scrollbar jumping in long conversations (#7052, #7063 by @daniel-lxs, PR by @app/roomote)
+- Fix: Remove 500-message limit to prevent scrollbar jumping in long conversations (#7052, #7063 by @daniel-lxs, PR by @app/vibexmote)
 - Fix: Reset condensing state when switching tasks (#6919 by @f14XuanLv, PR by @f14XuanLv)
 - Fix: Implement sitemap generation in TypeScript and remove XML file (#5231 by @abumalick, PR by @abumalick)
 - Fix: allowedMaxRequests and allowedMaxCost values not showing in the settings UI (thanks @chrarnoldus!)
 
 ## [3.25.14] - 2025-08-13
 
-- Fix: Only include verbosity parameter for models that support it (#7054 by @eastonmeth, PR by @app/roomote)
+- Fix: Only include verbosity parameter for models that support it (#7054 by @eastonmeth, PR by @app/vibexmote)
 - Fix: Amazon Bedrock 1M context - Move anthropic_beta to additionalModelRequestFields (thanks @daniel-lxs!)
 - Fix: Make cancelling requests more responsive by reverting recent changes
 
 ## [3.25.13] - 2025-08-12
 
 - Add Sonnet 1M context checkbox to Bedrock
-- Fix: add --no-messages flag to ripgrep to suppress file access errors (#6756 by @R-omk, PR by @app/roomote)
-- Add support for AGENT.md alongside AGENTS.md (#6912 by @Brendan-Z, PR by @app/roomote)
+- Fix: add --no-messages flag to ripgrep to suppress file access errors (#6756 by @R-omk, PR by @app/vibexmote)
+- Add support for AGENT.md alongside AGENTS.md (#6912 by @Brendan-Z, PR by @app/vibexmote)
 - Remove deprecated GPT-4.5 Preview model (thanks @PeterDaveHello!)
 
 ## [3.25.12] - 2025-08-12
 
 - Update: Claude Sonnet 4 context window configurable to 1 million tokens in Anthropic provider (thanks @daniel-lxs!)
 - Add: Minimal reasoning support to OpenRouter (thanks @daniel-lxs!)
-- Fix: Add configurable API request timeout for local providers (#6521 by @dabockster, PR by @app/roomote)
+- Fix: Add configurable API request timeout for local providers (#6521 by @dabockster, PR by @app/vibexmote)
 - Fix: Add --no-sandbox flag to browser launch options (#6632 by @QuinsZouls, PR by @QuinsZouls)
-- Fix: Ensure JSON files respect .rooignore during indexing (#6690 by @evermoving, PR by @app/roomote)
-- Add: New Chutes provider models (#6698 by @fstandhartinger, PR by @app/roomote)
-- Add: OpenAI gpt-oss models to Amazon Bedrock dropdown (#6752 by @josh-clanton-powerschool, PR by @app/roomote)
-- Fix: Correct tool repetition detector to not block first tool call when limit is 1 (#6834 by @NaccOll, PR by @app/roomote)
+- Fix: Ensure JSON files respect .vibexignore during indexing (#6690 by @evermoving, PR by @app/vibexmote)
+- Add: New Chutes provider models (#6698 by @fstandhartinger, PR by @app/vibexmote)
+- Add: OpenAI gpt-oss models to Amazon Bedrock dropdown (#6752 by @josh-clanton-powerschool, PR by @app/vibexmote)
+- Fix: Correct tool repetition detector to not block first tool call when limit is 1 (#6834 by @NaccOll, PR by @app/vibexmote)
 - Fix: Improve checkpoint service initialization handling (thanks @NaccOll!)
 - Update: Improve zh-TW Traditional Chinese locale (thanks @PeterDaveHello!)
-- Add: Task expand and collapse translations (thanks @app/roomote!)
-- Update: Exclude GPT-5 models from 20% context window output token cap (thanks @app/roomote!)
-- Fix: Truncate long model names in model selector to prevent overflow (thanks @app/roomote!)
+- Add: Task expand and collapse translations (thanks @app/vibexmote!)
+- Update: Exclude GPT-5 models from 20% context window output token cap (thanks @app/vibexmote!)
+- Fix: Truncate long model names in model selector to prevent overflow (thanks @app/vibexmote!)
 - Add: Requesty base url support (thanks @requesty-JohnCosta27!)
 
 ## [3.25.11] - 2025-08-11
@@ -1101,30 +1101,30 @@
 - Add: IO Intelligence Provider support (thanks @ertan2002!)
 - Fix: MCP startup issues and remove refresh notifications (thanks @hannesrudolph!)
 - Fix: Improvements to GPT-5 OpenAI provider configuration (thanks @hannesrudolph!)
-- Fix: Clarify codebase_search path parameter as optional and improve tool descriptions (thanks @app/roomote!)
+- Fix: Clarify codebase_search path parameter as optional and improve tool descriptions (thanks @app/vibexmote!)
 - Fix: Bedrock provider workaround for LiteLLM passthrough issues (thanks @jr!)
 - Fix: Token usage and cost being underreported on cancelled requests (thanks @chrarnoldus!)
 
 ## [3.25.10] - 2025-08-07
 
-- Add support for GPT-5 (thanks Cline and @app/roomote!)
+- Add support for GPT-5 (thanks Cline and @app/vibexmote!)
 - Fix: Use CDATA sections in XML examples to prevent parser errors (#4852 by @hannesrudolph, PR by @hannesrudolph)
-- Fix: Add missing MCP error translation keys (thanks @app/roomote!)
+- Fix: Add missing MCP error translation keys (thanks @app/vibexmote!)
 
 ## [3.25.9] - 2025-08-07
 
 - Fix: Resolve rounding issue with max tokens (#6806 by @markp018, PR by @mrubens)
-- Add support for GLM-4.5 and OpenAI gpt-oss models in Fireworks provider (#6753 by @alexfarlander, PR by @app/roomote)
-- Improve UX by focusing chat input when clicking plus button in extension menu (thanks @app/roomote!)
+- Add support for GLM-4.5 and OpenAI gpt-oss models in Fireworks provider (#6753 by @alexfarlander, PR by @app/vibexmote)
+- Improve UX by focusing chat input when clicking plus button in extension menu (thanks @app/vibexmote!)
 
 ## [3.25.8] - 2025-08-06
 
-- Fix: Prevent disabled MCP servers from starting processes and show correct status (#6036 by @hannesrudolph, PR by @app/roomote)
-- Fix: Handle current directory path "." correctly in codebase_search tool (#6514 by @hannesrudolph, PR by @app/roomote)
-- Fix: Trim whitespace from OpenAI base URL to fix model detection (#6559 by @vauhochzett, PR by @app/roomote)
-- Feat: Reduce Gemini 2.5 Pro minimum thinking budget to 128 (thanks @app/roomote!)
-- Fix: Improve handling of net::ERR_ABORTED errors in URL fetching (#6632 by @QuinsZouls, PR by @app/roomote)
-- Fix: Recover from error state when Qdrant becomes available (#6660 by @hannesrudolph, PR by @app/roomote)
+- Fix: Prevent disabled MCP servers from starting processes and show correct status (#6036 by @hannesrudolph, PR by @app/vibexmote)
+- Fix: Handle current directory path "." correctly in codebase_search tool (#6514 by @hannesrudolph, PR by @app/vibexmote)
+- Fix: Trim whitespace from OpenAI base URL to fix model detection (#6559 by @vauhochzett, PR by @app/vibexmote)
+- Feat: Reduce Gemini 2.5 Pro minimum thinking budget to 128 (thanks @app/vibexmote!)
+- Fix: Improve handling of net::ERR_ABORTED errors in URL fetching (#6632 by @QuinsZouls, PR by @app/vibexmote)
+- Fix: Recover from error state when Qdrant becomes available (#6660 by @hannesrudolph, PR by @app/vibexmote)
 - Fix: Resolve memory leak in ChatView virtual scrolling implementation (thanks @xyOz-dev!)
 - Add: Swift files to fallback list (#5857 by @niteshbalusu11, #6555 by @sealad886, PR by @niteshbalusu11)
 - Feat: Clamp default model max tokens to 20% of context window (thanks @mrubens!)
@@ -1140,8 +1140,8 @@
 - Make mode selection dropdowns responsive (#6423 by @AyazKaan, PR by @AyazKaan)
 - Redesigned task header and task history (thanks @brunobergher!)
 - Fix checkpoints timing and ensure checkpoints work properly (#4827 by @mrubens, PR by @NaccOll)
-- Fix empty mode names from being saved (#5766 by @kfxmvp, PR by @app/roomote)
-- Fix MCP server creation when setting is disabled (#6607 by @characharm, PR by @app/roomote)
+- Fix empty mode names from being saved (#5766 by @kfxmvp, PR by @app/vibexmote)
+- Fix MCP server creation when setting is disabled (#6607 by @characharm, PR by @app/vibexmote)
 - Update highlight layer style and align to textarea (#6647 by @NaccOll, PR by @NaccOll)
 - Fix UI for approving chained commands
 - Use assistantMessageParser class instead of parseAssistantMessage (#5340 by @qdaxb, PR by @qdaxb)
@@ -1150,12 +1150,12 @@
 
 ## [3.25.6] - 2025-08-01
 
-- Set horizon-beta model max tokens to 32k for OpenRouter (requested by @hannesrudolph, PR by @app/roomote)
+- Set horizon-beta model max tokens to 32k for OpenRouter (requested by @hannesrudolph, PR by @app/vibexmote)
 - Add support for syncing provider profiles from the cloud
 
 ## [3.25.5] - 2025-08-01
 
-- Fix: Improve Claude Code ENOENT error handling with installation guidance (#5866 by @JamieJ1, PR by @app/roomote)
+- Fix: Improve Claude Code ENOENT error handling with installation guidance (#5866 by @JamieJ1, PR by @app/vibexmote)
 - Fix: LM Studio model context length (#5075 by @Angular-Angel, PR by @pwilkin)
 - Fix: VB.NET indexing by implementing fallback chunking system (#6420 by @JensvanZutphen, PR by @daniel-lxs)
 - Add auto-approved cost limits (thanks @hassoncs!)
@@ -1167,34 +1167,34 @@
 - Handle more variations of chaining and subshell command validation
 - More tolerant search/replace match
 - Clean up the auto-approve UI (thanks @mrubens!)
-- Skip interpolation for non-existent slash commands (thanks @app/roomote!)
+- Skip interpolation for non-existent slash commands (thanks @app/vibexmote!)
 
 ## [3.25.4] - 2025-07-30
 
 - feat: add SambaNova provider integration (#6077 by @snova-jorgep, PR by @snova-jorgep)
 - feat: add Doubao provider integration (thanks @AntiMoron!)
-- feat: set horizon-alpha model max tokens to 32k for OpenRouter (thanks @app/roomote!)
-- feat: add zai-org/GLM-4.5-FP8 model to Chutes AI provider (#6440 by @leakless21, PR by @app/roomote)
-- feat: add symlink support for AGENTS.md file loading (thanks @app/roomote!)
+- feat: set horizon-alpha model max tokens to 32k for OpenRouter (thanks @app/vibexmote!)
+- feat: add zai-org/GLM-4.5-FP8 model to Chutes AI provider (#6440 by @leakless21, PR by @app/vibexmote)
+- feat: add symlink support for AGENTS.md file loading (thanks @app/vibexmote!)
 - feat: optionally add task history context to prompt enhancement (thanks @liwilliam2021!)
 - fix: remove misleading task resumption message (#5850 by @KJ7LNW, PR by @KJ7LNW)
 - feat: add pattern to support Databricks /invocations endpoints (thanks @adambrand!)
-- fix: resolve navigator global error by updating mammoth and bluebird dependencies (#6356 by @hishtadlut, PR by @app/roomote)
+- fix: resolve navigator global error by updating mammoth and bluebird dependencies (#6356 by @hishtadlut, PR by @app/vibexmote)
 - feat: enhance token counting by extracting text from messages using VSCode LM API (#6112 by @sebinseban, PR by @NaccOll)
-- feat: auto-refresh marketplace data when organization settings change (thanks @app/roomote!)
+- feat: auto-refresh marketplace data when organization settings change (thanks @app/vibexmote!)
 - fix: kill button for execute_command tool (thanks @daniel-lxs!)
 
 ## [3.25.3] - 2025-07-30
 
 - Allow queueing messages with images
-- Increase Claude Code default max output tokens to 16k (#6125 by @bpeterson1991, PR by @app/roomote)
+- Increase Claude Code default max output tokens to 16k (#6125 by @bpeterson1991, PR by @app/vibexmote)
 - Add docs link for slash commands
 - Hide Gemini checkboxes on the welcome view
 - Clarify apply_diff tool descriptions to emphasize surgical edits
 - Fix: Prevent input clearing when clicking chat buttons (thanks @hassoncs!)
 - Update PR reviewer rules and mode configuration (thanks @daniel-lxs!)
-- Add translation check action to pull_request.opened event (thanks @app/roomote!)
-- Remove "(prev VibeX Cline)" from extension title in all languages (thanks @app/roomote!)
+- Add translation check action to pull_request.opened event (thanks @app/vibexmote!)
+- Remove "(prev VibeX Cline)" from extension title in all languages (thanks @app/vibexmote!)
 - Remove event types mention from PR reviewer rules (thanks @daniel-lxs!)
 
 ## [3.25.2] - 2025-07-29
@@ -1205,27 +1205,27 @@
 
 ## [3.25.1] - 2025-07-29
 
-- Add support for GLM-4.5-Air model to Chutes AI provider (#6376 by @matbgn, PR by @app/roomote)
+- Add support for GLM-4.5-Air model to Chutes AI provider (#6376 by @matbgn, PR by @app/vibexmote)
 - Improve subshell validation for commands
 
 ## [3.25.0] - 2025-07-29
 
-- Add message queueing (thanks @app/roomote!)
+- Add message queueing (thanks @app/vibexmote!)
 - Add custom slash commands
 - Add options for URL Context and Grounding with Google Search to the Gemini provider (thanks @HahaBill!)
 - Add image support to read_file tool (thanks @samhvw8!)
-- Add experimental setting to prevent editor focus disruption (#4784 by @hannesrudolph, PR by @app/roomote)
+- Add experimental setting to prevent editor focus disruption (#4784 by @hannesrudolph, PR by @app/vibexmote)
 - Add prompt caching support for LiteLLM (#5791 by @steve-gore-snapdocs, PR by @MuriloFP)
 - Add markdown table rendering support
 - Fix list_files recursive mode now works for dot directories (#2992 by @avtc, #4807 by @zhang157686, #5409 by @MuriloFP, PR by @MuriloFP)
 - Add search functionality to mode selector popup and reorganize layout
 - Sync API config selector style with mode selector
-- Fix keyboard shortcuts for non-QWERTY layouts (#6161 by @shlgug, PR by @app/roomote)
-- Add ESC key handling for modes, API provider, and indexing settings popovers (thanks @app/roomote!)
-- Make task mode sticky to task (thanks @app/roomote!)
-- Add text wrapping to command patterns in Manage Command Permissions (thanks @app/roomote!)
+- Fix keyboard shortcuts for non-QWERTY layouts (#6161 by @shlgug, PR by @app/vibexmote)
+- Add ESC key handling for modes, API provider, and indexing settings popovers (thanks @app/vibexmote!)
+- Make task mode sticky to task (thanks @app/vibexmote!)
+- Add text wrapping to command patterns in Manage Command Permissions (thanks @app/vibexmote!)
 - Update list-files test for fixed hidden files bug (thanks @daniel-lxs!)
-- Fix normalize Windows paths to forward slashes in mode export (#6307 by @hannesrudolph, PR by @app/roomote)
+- Fix normalize Windows paths to forward slashes in mode export (#6307 by @hannesrudolph, PR by @app/vibexmote)
 - Ensure form-data >= 4.0.4
 - Fix filter out non-text tab inputs (Kilo-Org/kilocode#712 by @szermatt, PR by @hassoncs)
 
@@ -1290,7 +1290,7 @@
 
 - Fix configurable delay for diagnostics to prevent premature error reporting
 - Add command timeout allowlist
-- Add description and whenToUse fields to custom modes in .roomodes (thanks @RandalSchwartz!)
+- Add description and whenToUse fields to custom modes in .vibexmodes (thanks @RandalSchwartz!)
 - Fix Claude model detection by name for API protocol selection (thanks @daniel-lxs!)
 - Move marketplace icon from overflow menu to top navigation
 - Optional setting to prevent completion with open todos
@@ -1415,7 +1415,7 @@
 - Chat index UI enhancements (thanks @MuriloFP!)
 - Fix model search being prefilled on dropdown (thanks @kevinvandijk!)
 - Improve chat UI - add camera icon margin and make placeholder non-selectable (thanks @MuriloFP!)
-- Delete .roo/rules-{mode} folder when custom mode is deleted
+- Delete .vibex/rules-{mode} folder when custom mode is deleted
 - Enforce file restrictions for all edit tools in architect mode
 - Add User-Agent header to API providers
 - Fix auto question timer unmount (thanks @liwilliam2021!)
@@ -1461,7 +1461,7 @@
 
 ## [3.22.3] - 2025-06-27
 
-- Restore JSON backwards compatibility for .roomodes files (thanks @daniel-lxs!)
+- Restore JSON backwards compatibility for .vibexmodes files (thanks @daniel-lxs!)
 
 ## [3.22.2] - 2025-06-27
 
@@ -1697,8 +1697,8 @@
 - Skip condense and show error if context grows during condensing
 - Transform Prompts tab into Modes tab and move support prompts to Settings for better organization
 - Add DeepSeek R1 0528 model support to Chutes provider (thanks @zeozeozeo!)
-- Fix @directory not respecting .rooignore files (thanks @xyOz-dev!)
-- Add rooignore checking for insert_content and search_and_replace tools
+- Fix @directory not respecting .vibexignore files (thanks @xyOz-dev!)
+- Add vibexignore checking for insert_content and search_and_replace tools
 - Fix menu breaking when VibeX is moved between primary and secondary sidebars (thanks @chrarnoldus!)
 - Resolve memory leak in ChatView by stabilizing callback props (thanks @samhvw8!)
 - Fix write_to_file to properly create empty files when content is empty (thanks @Ruakij!)
@@ -1800,7 +1800,7 @@
 - Improve command execution UI
 - Add more in-app links to relevant documentation
 - Update the new task tool description and the ask mode custom instructions in the system prompt
-- Add IPC types to roo.d.ts
+- Add IPC types to vibex.d.ts
 - Add build VSIX workflow to pull requests (thanks @SmartManoj!)
 - Improve apply_diff tool to intelligently deduce line numbers (thanks @samhvw8!)
 - Fix command validation for shell array indexing (thanks @KJ7LNW!)
@@ -1922,7 +1922,7 @@
 - Fix file mentions for filenames containing spaces
 - Improve the auto-approve toggle buttons for some high-contrast VSCode themes
 - Offload expensive count token operations to a web worker (thanks @samhvw8)
-- Improve support for mult-root workspaces (thanks @snoyiatk)
+- Improve support for mult-vibext workspaces (thanks @snoyiatk)
 - Simplify and streamline Vibex's quick actions
 - Allow Vibex settings to be imported from the welcome screen (thanks @julionav)
 - Remove unused types (thanks @wkordalski)
@@ -1970,7 +1970,7 @@
 - Fix MCP hub error when dragging extension to another sidebar
 - Improve display of long MCP tool arguments
 - Fix redundant ‘TASK RESUMPTION’ prompts (thanks @System233!)
-- Fix bug opening files when editor has no workspace root
+- Fix bug opening files when editor has no workspace vibext
 - Make the VS Code LM provider show the correct model information (thanks @QuinsZouls!)
 - Fixes to make the focusInput command more reliable (thanks @hongzio!)
 - Better handling of aftercursor content in context mentions (thanks @elianiva!)
@@ -2093,7 +2093,7 @@
 
 ## [3.11.10] - 2025-04-08
 
-- Fix bug where nested .roo/rules directories are not respected properly (thanks @taisukeoe!)
+- Fix bug where nested .vibex/rules directories are not respected properly (thanks @taisukeoe!)
 - Handle long command output more efficiently in the chat row (thanks @samhvw8!)
 - Fix cache usage tracking for OpenAI-compatible providers
 - Add custom translation instructions for zh-CN (thanks @System233!)
@@ -2102,7 +2102,7 @@
 ## [3.11.9] - 2025-04-07
 
 - Rate-limit setting updated to be per-profile (thanks @ross and @olweraltuve!)
-- You can now place multiple rules files in the .roo/rules/ and .roo/rules-{mode}/ folders (thanks @upamune!)
+- You can now place multiple rules files in the .vibex/rules/ and .vibex/rules-{mode}/ folders (thanks @upamune!)
 - Prevent unnecessary autoscroll when buttons appear (thanks @shtse8!)
 - Add Gemini 2.5 Pro Preview to Vertex AI (thanks @nbihan-mediware!)
 - Tidy up following ClineProvider refactor (thanks @diarmidmackenzie!)
@@ -2122,7 +2122,7 @@
 - Add searchable dropdown to API config profiles on the settings screen (thanks @samhvw8!)
 - Add workspace tracking to history items in preparation for future filtering (thanks @samhvw8!)
 - Fix search highlighting UI in history search (thanks @samhvw8!)
-- Add support for .roorules and give deprecation warning for .clinerules (thanks @upamune!)
+- Add support for .vibexrules and give deprecation warning for .clinerules (thanks @upamune!)
 - Fix nodejs version format in .tool-versions file (thanks @upamune!)
 
 ## [3.11.7] - 2025-04-04
@@ -2184,7 +2184,7 @@
 ## [3.11.0] - 2025-03-30
 
 - Replace single-block-diff with multi-block-diff fast editing strategy
-- Support project-level MCP config in .roo/mcp.json (thanks @aheizi!)
+- Support project-level MCP config in .vibex/mcp.json (thanks @aheizi!)
 - Show OpenRouter and Requesty key balance on the settings screen
 - Support import/export of settings
 - Add pinning and sorting for API configuration dropdown (thanks @jwcraig!)
@@ -2371,7 +2371,7 @@
 - Add opt-in telemetry to help us improve Vibex faster (thanks Cline!)
 - Fix terminal overload / gray screen of death, and other terminal issues
 - Add a new experimental diff editing strategy that applies multiple diff edits at once (thanks @qdaxb!)
-- Add support for a .rooignore to prevent Vibex from read/writing certain files, with a setting to also exclude them from search/lists (thanks Cline!)
+- Add support for a .vibexignore to prevent Vibex from read/writing certain files, with a setting to also exclude them from search/lists (thanks Cline!)
 - Update the new_task tool to return results to the parent task on completion, supporting better orchestration (thanks @shaybc!)
 - Support running VibeX in multiple editor windows simultaneously (thanks @samhvw8!)
 - Make checkpoints asynchronous and exclude more files to speed them up
@@ -2495,7 +2495,7 @@
 - Add support for setting custom preferred languages on the Prompts tab, as well as adding Catalan to the list of languages (thanks @alarno!)
 - Add a button to delete MCP servers (thanks @hannesrudolph!)
 - Fix a bug where the button to copy the system prompt preview always copied the Code mode version
-- Fix a bug where the .roomodes file was not automatically created when adding custom modes from the Prompts tab
+- Fix a bug where the .vibexmodes file was not automatically created when adding custom modes from the Prompts tab
 - Allow setting a wildcard (`*`) to auto-approve all command execution (use with caution!)
 
 ## [3.3.21] - 2025-02-17
@@ -2509,7 +2509,7 @@
 
 ## [3.3.20] - 2025-02-14
 
-- Support project-specific custom modes in a .roomodes file
+- Support project-specific custom modes in a .vibexmodes file
 - Add more Mistral models (thanks @d-oit and @bramburn!)
 - By popular request, make it so Ask mode can't write to Markdown files and is purely for chatting with
 - Add a setting to control the number of open editor tabs to tell the model about (665 is probably too many!)
@@ -2656,7 +2656,7 @@
 - Ask and Architect modes can now edit markdown files
 - Custom modes can now be restricted to specific file patterns (for example, a technical writer who can only edit markdown files 👋)
 - Support for configuring the Bedrock provider with AWS Profiles
-- New Vibex community Discord at https://roocode.com/discord!
+- New Vibex community Discord at https://vibexcode.com/discord!
 
 ## [3.2.8]
 

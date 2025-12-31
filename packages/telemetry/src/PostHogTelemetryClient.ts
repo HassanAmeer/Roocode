@@ -12,7 +12,7 @@ import {
 	extractApiProviderErrorProperties,
 	isConsecutiveMistakeError,
 	extractConsecutiveMistakeErrorProperties,
-} from "@roo-code/types"
+} from "@vibex-code/types"
 
 import { BaseTelemetryClient } from "./BaseTelemetryClient"
 

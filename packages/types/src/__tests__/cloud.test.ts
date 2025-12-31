@@ -17,43 +17,43 @@ describe("organizationFeaturesSchema", () => {
 		expect(result.data).toEqual({})
 	})
 
-	it("should validate with roomoteControlEnabled as true", () => {
-		const input = { roomoteControlEnabled: true }
+	it("should validate with vibexmoteControlEnabled as true", () => {
+		const input = { vibexmoteControlEnabled: true }
 		const result = organizationFeaturesSchema.safeParse(input)
 		expect(result.success).toBe(true)
 		expect(result.data).toEqual(input)
 	})
 
-	it("should validate with roomoteControlEnabled as false", () => {
-		const input = { roomoteControlEnabled: false }
+	it("should validate with vibexmoteControlEnabled as false", () => {
+		const input = { vibexmoteControlEnabled: false }
 		const result = organizationFeaturesSchema.safeParse(input)
 		expect(result.success).toBe(true)
 		expect(result.data).toEqual(input)
 	})
 
-	it("should reject non-boolean roomoteControlEnabled", () => {
-		const input = { roomoteControlEnabled: "true" }
+	it("should reject non-boolean vibexmoteControlEnabled", () => {
+		const input = { vibexmoteControlEnabled: "true" }
 		const result = organizationFeaturesSchema.safeParse(input)
 		expect(result.success).toBe(false)
 	})
 
 	it("should allow additional properties (for future extensibility)", () => {
-		const input = { roomoteControlEnabled: true, futureProperty: "test" }
+		const input = { vibexmoteControlEnabled: true, futureProperty: "test" }
 		const result = organizationFeaturesSchema.safeParse(input)
 		expect(result.success).toBe(true)
-		expect(result.data?.roomoteControlEnabled).toBe(true)
+		expect(result.data?.vibexmoteControlEnabled).toBe(true)
 		// Note: Additional properties are stripped by Zod, which is expected behavior
 	})
 
 	it("should have correct TypeScript type", () => {
 		// Type-only test to ensure TypeScript compilation
 		const features: OrganizationFeatures = {
-			roomoteControlEnabled: true,
+			vibexmoteControlEnabled: true,
 		}
-		expect(features.roomoteControlEnabled).toBe(true)
+		expect(features.vibexmoteControlEnabled).toBe(true)
 
 		const emptyFeatures: OrganizationFeatures = {}
-		expect(emptyFeatures.roomoteControlEnabled).toBeUndefined()
+		expect(emptyFeatures.vibexmoteControlEnabled).toBeUndefined()
 	})
 })
 
@@ -83,35 +83,35 @@ describe("organizationSettingsSchema with features", () => {
 		expect(result.data?.features).toEqual({})
 	})
 
-	it("should validate with features.roomoteControlEnabled as true", () => {
+	it("should validate with features.vibexmoteControlEnabled as true", () => {
 		const input = {
 			...validBaseSettings,
 			features: {
-				roomoteControlEnabled: true,
+				vibexmoteControlEnabled: true,
 			},
 		}
 		const result = organizationSettingsSchema.safeParse(input)
 		expect(result.success).toBe(true)
-		expect(result.data?.features?.roomoteControlEnabled).toBe(true)
+		expect(result.data?.features?.vibexmoteControlEnabled).toBe(true)
 	})
 
-	it("should validate with features.roomoteControlEnabled as false", () => {
+	it("should validate with features.vibexmoteControlEnabled as false", () => {
 		const input = {
 			...validBaseSettings,
 			features: {
-				roomoteControlEnabled: false,
+				vibexmoteControlEnabled: false,
 			},
 		}
 		const result = organizationSettingsSchema.safeParse(input)
 		expect(result.success).toBe(true)
-		expect(result.data?.features?.roomoteControlEnabled).toBe(false)
+		expect(result.data?.features?.vibexmoteControlEnabled).toBe(false)
 	})
 
 	it("should reject invalid features object", () => {
 		const input = {
 			...validBaseSettings,
 			features: {
-				roomoteControlEnabled: "invalid",
+				vibexmoteControlEnabled: "invalid",
 			},
 		}
 		const result = organizationSettingsSchema.safeParse(input)
@@ -128,10 +128,10 @@ describe("organizationSettingsSchema with features", () => {
 				providers: {},
 			},
 			features: {
-				roomoteControlEnabled: true,
+				vibexmoteControlEnabled: true,
 			},
 		}
-		expect(settings.features?.roomoteControlEnabled).toBe(true)
+		expect(settings.features?.vibexmoteControlEnabled).toBe(true)
 
 		const settingsWithoutFeatures: OrganizationSettings = {
 			version: 1,
@@ -162,7 +162,7 @@ describe("organizationSettingsSchema with features", () => {
 				},
 			},
 			features: {
-				roomoteControlEnabled: true,
+				vibexmoteControlEnabled: true,
 			},
 			hiddenMcps: ["test-mcp"],
 			hideMarketplaceMcps: true,

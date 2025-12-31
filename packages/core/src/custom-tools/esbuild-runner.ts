@@ -29,8 +29,8 @@ export const NODE_BUILTIN_MODULES: readonly string[] = [...builtinModules, ...bu
  * This provides a CommonJS-compatible `require` function for ESM bundles,
  * which is needed when bundled npm packages use `require()` internally.
  */
-export const COMMONJS_REQUIRE_BANNER = `import { createRequire as __roo_createRequire } from 'module';
-var require = __roo_createRequire(import.meta.url);`
+export const COMMONJS_REQUIRE_BANNER = `import { createRequire as __vibex_createRequire } from 'module';
+var require = __vibex_createRequire(import.meta.url);`
 
 // Get the directory where this module is located.
 function getModuleDir(): string | undefined {
@@ -152,7 +152,7 @@ export function getEsbuildScriptPath(extensionPath?: string): string {
  * Uses esbuild-wasm which is cross-platform and runs via Node.js.
  *
  * @param options - Build options
- * @param extensionPath - Path to extension root (for finding bundled script)
+ * @param extensionPath - Path to extension vibext (for finding bundled script)
  * @returns Promise that resolves when build completes
  * @throws Error if the build fails
  */

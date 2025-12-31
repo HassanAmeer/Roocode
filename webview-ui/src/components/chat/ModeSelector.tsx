@@ -2,9 +2,9 @@ import React from "react"
 import { Fzf } from "fzf"
 import { Check, X } from "lucide-react"
 
-import { type ModeConfig, type CustomModePrompts, TelemetryEventName } from "@roo-code/types"
+import { type ModeConfig, type CustomModePrompts, TelemetryEventName } from "@vibex-code/types"
 
-import { type Mode, getAllModes } from "@roo-code/types"
+import { type Mode, getAllModes } from "@vibex-code/types"
 
 import { vscode } from "@/utils/vscode"
 import { telemetryClient } from "@/utils/TelemetryClient"
@@ -46,7 +46,7 @@ export const ModeSelector = ({
 	const searchInputRef = React.useRef<HTMLInputElement>(null)
 	const selectedItemRef = React.useRef<HTMLDivElement>(null)
 	const scrollContainerRef = React.useRef<HTMLDivElement>(null)
-	const portalContainer = useRooPortal("roo-portal")
+	const portalContainer = useRooPortal("vibex-portal")
 	const { hasOpenedModeSelector, setHasOpenedModeSelector } = useExtensionState()
 	const { t } = useAppTranslation()
 
@@ -192,7 +192,7 @@ export const ModeSelector = ({
 	const instructionText = `${t("chat:modeSelector.description")} ${modeShortcutText}`
 
 	return (
-		<Popover open={open} onOpenChange={onOpenChange} data-testid="mode-selector-root">
+		<Popover open={open} onOpenChange={onOpenChange} data-testid="mode-selector-vibext">
 			<StandardTooltip content={title}>
 				<PopoverTrigger
 					disabled={disabled}

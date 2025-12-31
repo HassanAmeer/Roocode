@@ -1,4 +1,4 @@
-import { Package } from "@roo-code/types"
+import { Package } from "@vibex-code/types"
 
 export function getCallbackUrl(provider: string, uriScheme?: string) {
 	return encodeURIComponent(`${uriScheme || "vscode"}://${Package.publisher}.${Package.name}/${provider}`)

@@ -1,6 +1,6 @@
 <workflow_instructions>
   <mode_overview>
-    This mode investigates GitHub issues to find the probable root cause and suggest a theoretical solution. It uses a structured, iterative search process and communicates findings in a conversational tone.
+    This mode investigates GitHub issues to find the probable vibext cause and suggest a theoretical solution. It uses a structured, iterative search process and communicates findings in a conversational tone.
   </mode_overview>
 
   <initialization_steps>
@@ -36,7 +36,7 @@
   <main_workflow>
     <phase name="investigation">
       <description>
-        Systematically search the codebase to identify the root cause. This is an iterative process.
+        Systematically search the codebase to identify the vibext cause. This is an iterative process.
       </description>
       <steps>
         <step>

@@ -13,8 +13,8 @@ import fs from "fs/promises"
 import ignore from "ignore"
 import path from "path"
 import { t } from "../../i18n"
-import { TelemetryService } from "@roo-code/telemetry"
-import { TelemetryEventName } from "@roo-code/types"
+import { TelemetryService } from "@vibex-code/telemetry"
+import { TelemetryEventName } from "@vibex-code/types"
 
 export class CodeIndexManager {
 	// --- Singleton Implementation ---
@@ -329,15 +329,15 @@ export class CodeIndexManager {
 		}
 
 		// Create VibexIgnoreController instance
-		const rooIgnoreController = new VibexIgnoreController(workspacePath)
-		await rooIgnoreController.initialize()
+		const vibexIgnoreController = new VibexIgnoreController(workspacePath)
+		await vibexIgnoreController.initialize()
 
 		// (Re)Create shared service instances
 		const { embedder, vectorStore, scanner, fileWatcher } = this._serviceFactory.createServices(
 			this.context,
 			this._cacheManager!,
 			ignoreInstance,
-			rooIgnoreController,
+			vibexIgnoreController,
 		)
 
 		// Validate embedder configuration before proceeding

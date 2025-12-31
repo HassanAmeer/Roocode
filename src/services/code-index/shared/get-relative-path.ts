@@ -1,11 +1,11 @@
 import path from "path"
 
 /**
- * Generates a normalized absolute path from a given file path and workspace root.
+ * Generates a normalized absolute path from a given file path and workspace vibext.
  * Handles path resolution and normalization to ensure consistent absolute paths.
  *
  * @param filePath - The file path to normalize (can be relative or absolute)
- * @param workspaceRoot - The root directory of the workspace (required)
+ * @param workspaceRoot - The vibext directory of the workspace (required)
  * @returns The normalized absolute path
  */
 export function generateNormalizedAbsolutePath(filePath: string, workspaceRoot: string): string {
@@ -16,11 +16,11 @@ export function generateNormalizedAbsolutePath(filePath: string, workspaceRoot: 
 }
 
 /**
- * Generates a relative file path from a normalized absolute path and workspace root.
+ * Generates a relative file path from a normalized absolute path and workspace vibext.
  * Ensures consistent relative path generation across different platforms.
  *
  * @param normalizedAbsolutePath - The normalized absolute path to convert
- * @param workspaceRoot - The root directory of the workspace (required)
+ * @param workspaceRoot - The vibext directory of the workspace (required)
  * @returns The relative path from workspaceRoot to the file
  */
 export function generateRelativeFilePath(normalizedAbsolutePath: string, workspaceRoot: string): string {

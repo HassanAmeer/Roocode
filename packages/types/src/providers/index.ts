@@ -21,7 +21,7 @@ export * from "./openai.js"
 export * from "./openrouter.js"
 export * from "./qwen-code.js"
 export * from "./requesty.js"
-export * from "./roo.js"
+export * from "./vibex.js"
 export * from "./sambanova.js"
 export * from "./unbound.js"
 export * from "./vertex.js"
@@ -52,7 +52,7 @@ import { moonshotDefaultModelId } from "./moonshot.js"
 import { openRouterDefaultModelId } from "./openrouter.js"
 import { qwenCodeDefaultModelId } from "./qwen-code.js"
 import { requestyDefaultModelId } from "./requesty.js"
-import { rooDefaultModelId } from "./roo.js"
+import { vibexDefaultModelId } from "./vibex.js"
 import { sambaNovaDefaultModelId } from "./sambanova.js"
 import { unboundDefaultModelId } from "./unbound.js"
 import { vertexDefaultModelId } from "./vertex.js"
@@ -137,8 +137,8 @@ export function getProviderDefaultModelId(
 			return featherlessDefaultModelId
 		case "io-intelligence":
 			return ioIntelligenceDefaultModelId
-		case "roo":
-			return rooDefaultModelId
+		case "vibex":
+			return vibexDefaultModelId
 		case "qwen-code":
 			return qwenCodeDefaultModelId
 		case "vercel-ai-gateway":

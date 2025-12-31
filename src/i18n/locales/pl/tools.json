@@ -24,7 +24,7 @@
 		"invalidImageData": "Nieprawidłowe dane obrazu w odpowiedzi",
 		"invalidImageFormat": "Otrzymano nieprawidłowy format obrazu",
 		"unknownError": "Wystąpił nieznany błąd",
-		"roo": {
+		"vibex": {
 			"authRequired": "Uwierzytelnienie VibeX Code Cloud jest wymagane do generowania obrazów. Zaloguj się do VibeX Code Cloud."
 		}
 	}

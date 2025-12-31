@@ -71,6 +71,10 @@ export const isModelParameter = (value: string): value is ModelParameter =>
 export const modelInfoSchema = z.object({
 	maxTokens: z.number().nullish(),
 	maxThinkingTokens: z.number().nullish(),
+	// Optional: Max input tokens (for providers with separate input/output limits)
+	maxInputTokens: z.number().nullish(),
+	// Optional: Max output tokens (overrides maxTokens if set)
+	maxOutputTokens: z.number().nullish(),
 	contextWindow: z.number(),
 	supportsImages: z.boolean().optional(),
 	supportsPromptCache: z.boolean(),

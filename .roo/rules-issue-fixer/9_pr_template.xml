@@ -29,7 +29,7 @@ Closes: #[ISSUE_NUMBER] <!-- Replace with the issue number, e.g., Closes: #123 -
 <!--
 If you used VibeX Code to help create this PR, you can share public task links here.
 This helps reviewers understand your development process and provides additional context.
-Example: https://app.roocode.com/share/task-id
+Example: https://app.vibexcode.com/share/task-id
 -->
 
 [TASK_CONTEXT]
@@ -163,7 +163,7 @@ gh repo fork [owner]/[repo] --clone=false
       </placeholder>
       <placeholder name="TASK_CONTEXT">
         <description>Optional VibeX Code task links if used during development</description>
-        <example>https://app.roocode.com/share/task-abc123</example>
+        <example>https://app.vibexcode.com/share/task-abc123</example>
         <default>_No VibeX Code task context for this PR_</default>
       </placeholder>
       <placeholder name="DESCRIPTION_CONTENT">

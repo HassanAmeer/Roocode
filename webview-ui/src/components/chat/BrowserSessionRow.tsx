@@ -2,9 +2,9 @@ import React, { memo, useEffect, useMemo, useRef, useState } from "react"
 import deepEqual from "fast-deep-equal"
 import { useTranslation } from "react-i18next"
 import type { TFunction } from "i18next"
-import type { ClineMessage } from "@roo-code/types"
+import type { ClineMessage } from "@vibex-code/types"
 
-import { BrowserAction, BrowserActionResult, ClineSayBrowserAction } from "@roo-code/types"
+import { BrowserAction, BrowserActionResult, ClineSayBrowserAction } from "@vibex-code/types"
 
 import { vscode } from "@src/utils/vscode"
 import { useExtensionState } from "@src/context/ExtensionStateContext"
@@ -12,7 +12,7 @@ import { useExtensionState } from "@src/context/ExtensionStateContext"
 import CodeBlock from "../common/CodeBlock"
 import { ProgressIndicator } from "./ProgressIndicator"
 import { Button, StandardTooltip } from "@src/components/ui"
-import { getViewportCoordinate as getViewportCoordinateShared, prettyKey } from "@roo/browserUtils"
+import { getViewportCoordinate as getViewportCoordinateShared, prettyKey } from "@vibex/browserUtils"
 import {
 	Globe,
 	Pointer,

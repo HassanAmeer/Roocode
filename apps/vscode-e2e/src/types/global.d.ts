@@ -1,4 +1,4 @@
-import type { VibexAPI } from "@roo-code/types"
+import type { VibexAPI } from "@vibex-code/types"
 
 declare global {
 	// eslint-disable-next-line no-var

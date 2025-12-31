@@ -3,7 +3,7 @@ import * as path from "path"
 import * as diff from "diff"
 import { VibexIgnoreController, LOCK_TEXT_SYMBOL } from "../ignore/VibexIgnoreController"
 import { VibeXProtectedController } from "../protect/VibeXProtectedController"
-import { ToolProtocol, isNativeProtocol, TOOL_PROTOCOL } from "@roo-code/types"
+import { ToolProtocol, isNativeProtocol, TOOL_PROTOCOL } from "@vibex-code/types"
 
 export const formatResponse = {
 	toolDenied: (protocol?: ToolProtocol) => {
@@ -192,10 +192,10 @@ Otherwise, if you have not completed the task and do not need additional informa
 				return aParts.length - bParts.length
 			})
 
-		let rooIgnoreParsed: string[] = sorted
+		let vibexIgnoreParsed: string[] = sorted
 
 		if (vibexIgnoreController) {
-			rooIgnoreParsed = []
+			vibexIgnoreParsed = []
 			for (const filePath of sorted) {
 				// path is relative to absolute path, not cwd
 				// validateAccess expects either path relative to cwd or absolute path
@@ -209,26 +209,26 @@ Otherwise, if you have not completed the task and do not need additional informa
 						continue
 					}
 					// Otherwise, mark it with a lock symbol
-					rooIgnoreParsed.push(LOCK_TEXT_SYMBOL + " " + filePath)
+					vibexIgnoreParsed.push(LOCK_TEXT_SYMBOL + " " + filePath)
 				} else {
 					// Check if file is write-protected (only for non-ignored files)
 					const isWriteProtected = vibexProtectedController?.isWriteProtected(absoluteFilePath) || false
 					if (isWriteProtected) {
-						rooIgnoreParsed.push("🛡️ " + filePath)
+						vibexIgnoreParsed.push("🛡️ " + filePath)
 					} else {
-						rooIgnoreParsed.push(filePath)
+						vibexIgnoreParsed.push(filePath)
 					}
 				}
 			}
 		}
 		if (didHitLimit) {
-			return `${rooIgnoreParsed.join(
+			return `${vibexIgnoreParsed.join(
 				"\n",
 			)}\n\n(File list truncated. Use list_files on specific subdirectories if you need to explore further.)`
-		} else if (rooIgnoreParsed.length === 0 || (rooIgnoreParsed.length === 1 && rooIgnoreParsed[0] === "")) {
+		} else if (vibexIgnoreParsed.length === 0 || (vibexIgnoreParsed.length === 1 && vibexIgnoreParsed[0] === "")) {
 			return "No files found."
 		} else {
-			return rooIgnoreParsed.join("\n")
+			return vibexIgnoreParsed.join("\n")
 		}
 	},
 

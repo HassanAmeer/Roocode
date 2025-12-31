@@ -90,7 +90,7 @@
 	"about": "VibeX Code là một đội ngũ phát triển AI đầy đủ trong trình chỉnh sửa của bạn.",
 	"docs": "Kiểm tra <DocsLink>tài liệu</DocsLink> của chúng tôi để tìm hiểu thêm.",
 	"onboarding": "Danh sách nhiệm vụ của bạn trong không gian làm việc này đang trống.",
-	"rooTips": {
+	"vibexTips": {
 		"customizableModes": {
 			"title": "Chế độ có thể tùy chỉnh",
 			"description": "Các nhân vật chuyên biệt luôn bám sát nhiệm vụ và mang lại hiệu quả."
@@ -231,7 +231,7 @@
 	"response": "Phản hồi",
 	"arguments": "Tham số",
 	"text": {
-		"rooSaid": "VibeX Code đã nói"
+		"vibexSaid": "VibeX Code đã nói"
 	},
 	"feedback": {
 		"youSaid": "Bạn đã nói"
@@ -324,7 +324,7 @@
 			"feature": "<bold>Mô hình stealth MIỄN PHÍ có thời hạn</bold> - Code Supernova: Hiện đã được nâng cấp với <bold>cửa sổ ngữ cảnh 1M token</bold>! Một mô hình lập trình agentic đa năng hỗ trợ đầu vào hình ảnh, có sẵn qua VibeX Code Cloud.",
 			"note": "(Lưu ý: các prompt và completion được ghi lại bởi người tạo mô hình và được sử dụng để cải thiện mô hình)",
 			"connectButton": "Kết nối với VibeX Code Cloud",
-			"selectModel": "Chọn <code>roo/code-supernova</code> từ nhà cung cấp VibeX Code Cloud trong Cài đặt để bắt đầu.",
+			"selectModel": "Chọn <code>vibex/code-supernova</code> từ nhà cung cấp VibeX Code Cloud trong Cài đặt để bắt đầu.",
 			"goToSettingsButton": "Đi tới Cài đặt"
 		},
 		"release": {
@@ -342,7 +342,7 @@
 	},
 	"browser": {
 		"session": "Phiên trình duyệt",
-		"rooWantsToUse": "VibeX Code muốn sử dụng trình duyệt",
+		"vibexWantsToUse": "VibeX Code muốn sử dụng trình duyệt",
 		"consoleLogs": "Nhật ký bảng điều khiển",
 		"noNewLogs": "(Không có nhật ký mới)",
 		"screenshot": "Ảnh chụp màn hình trình duyệt",
@@ -428,7 +428,7 @@
 	"versionIndicator": {
 		"ariaLabel": "Phiên bản {{version}} - Nhấp để xem ghi chú phát hành"
 	},
-	"rooCloudCTA": {
+	"vibexCloudCTA": {
 		"title": "VibeX Code Cloud đang phát triển!",
 		"description": "Chạy các agent từ xa trên cloud, truy cập các tác vụ của bạn từ mọi nơi, cộng tác với người khác và nhiều hơn nữa.",
 		"joinWaitlist": "Đăng ký để nhận các cập nhật mới nhất."

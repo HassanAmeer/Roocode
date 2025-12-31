@@ -1,12 +1,12 @@
 import { useQuery } from "@tanstack/react-query"
 
-import { RouterModels } from "@roo-code/types"
-import { ExtensionMessage } from "@roo-code/types"
+import { RouterModels } from "@vibex-code/types"
+import { ExtensionMessage } from "@vibex-code/types"
 
 import { vscode } from "@src/utils/vscode"
 
 type UseRouterModelsOptions = {
-	provider?: string // single provider filter (e.g. "roo")
+	provider?: string // single provider filter (e.g. "vibex")
 	enabled?: boolean // gate fetching entirely
 }
 

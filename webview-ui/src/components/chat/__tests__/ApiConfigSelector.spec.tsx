@@ -30,15 +30,15 @@ vi.mock("@/context/ExtensionStateContext", () => ({
 	}),
 }))
 
-// Mock the getModelId function from @roo-code/types
-vi.mock("@roo-code/types", () => ({
+// Mock the getModelId function from @vibex-code/types
+vi.mock("@vibex-code/types", () => ({
 	getModelId: (config: any) => config?.apiModelId || undefined,
 }))
 
 // Mock Popover components to be testable
 vi.mock("@/components/ui", () => ({
 	Popover: ({ children, open }: any) => (
-		<div data-testid="popover-root" data-open={open}>
+		<div data-testid="popover-vibext" data-open={open}>
 			{children}
 		</div>
 	),

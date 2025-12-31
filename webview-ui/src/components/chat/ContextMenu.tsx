@@ -2,8 +2,8 @@ import React, { useEffect, useMemo, useRef, useState } from "react"
 import { getIconForFilePath, getIconUrlByName, getIconForDirectoryPath } from "vscode-material-icons"
 import { Settings } from "lucide-react"
 
-import type { ModeConfig } from "@roo-code/types"
-import type { Command } from "@roo-code/types"
+import type { ModeConfig } from "@vibex-code/types"
+import type { Command } from "@vibex-code/types"
 
 import {
 	ContextMenuOptionType,

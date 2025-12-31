@@ -1,6 +1,6 @@
 // npx vitest run src/core/tools/__tests__/executeCommandTool.spec.ts
 
-import type { ToolUsage } from "@roo-code/types"
+import type { ToolUsage } from "@vibex-code/types"
 import * as vscode from "vscode"
 
 import { Task } from "../../task/Task"
@@ -223,7 +223,7 @@ describe("executeCommandTool", () => {
 			expect(mockPushToolResult).not.toHaveBeenCalled()
 		})
 
-		it("should handle rooignore validation failures", async () => {
+		it("should handle vibexignore validation failures", async () => {
 			// Setup
 			mockToolUse.params.command = "cat .env"
 			// Override the validateCommand mock to return a filename
@@ -246,11 +246,11 @@ describe("executeCommandTool", () => {
 
 			// Verify
 			expect(validateCommandMock).toHaveBeenCalledWith("cat .env")
-			expect(mockCline.say).toHaveBeenCalledWith("rooignore_error", ".env")
+			expect(mockCline.say).toHaveBeenCalledWith("vibexignore_error", ".env")
 			expect(formatResponse.vibexIgnoreError).toHaveBeenCalledWith(".env", "xml")
 			expect(mockPushToolResult).toHaveBeenCalledWith(mockRooIgnoreError)
 			expect(mockAskApproval).not.toHaveBeenCalled()
-			// executeCommandInTerminal should not be called since rooignore blocked it
+			// executeCommandInTerminal should not be called since vibexignore blocked it
 		})
 	})
 

@@ -14,9 +14,9 @@ import {
 } from "lucide-react"
 import { VSCodeCheckbox, VSCodeLink } from "@vscode/webview-ui-toolkit/react"
 
-import type { TelemetrySetting } from "@roo-code/types"
+import type { TelemetrySetting } from "@vibex-code/types"
 
-import { Package } from "@roo-code/types"
+import { Package } from "@vibex-code/types"
 
 import { vscode } from "@/utils/vscode"
 import { cn } from "@/lib/utils"

@@ -128,7 +128,7 @@
       
       For Bug Fixes:
       1. Reproduce the bug locally (if possible)
-      2. Identify root cause
+      2. Identify vibext cause
       3. Plan the fix approach. The plan should be focused on resolving the issue with a high-quality, targeted fix, while avoiding unrelated changes.
       4. Identify files to modify.
       5. Plan test cases to prevent regression.

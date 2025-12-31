@@ -1,5 +1,5 @@
 import * as vscode from "vscode"
-import type { ClineMessage } from "@roo-code/types"
+import type { ClineMessage } from "@vibex-code/types"
 import { getUri } from "./getUri"
 import { getNonce } from "./getNonce"
 import type { ClineProvider } from "./ClineProvider"
@@ -62,11 +62,16 @@ export class BrowserSessionPanelManager {
 		const extensionMode = this.provider.context.extensionMode
 
 		// Create new panel
-		this.panel = vscode.window.createWebviewPanel("roo.browserSession", "Browser Session", vscode.ViewColumn.One, {
-			enableScripts: true,
-			retainContextWhenHidden: true,
-			localResourceRoots: [extensionUri],
-		})
+		this.panel = vscode.window.createWebviewPanel(
+			"vibex.browserSession",
+			"Browser Session",
+			vscode.ViewColumn.One,
+			{
+				enableScripts: true,
+				retainContextWhenHidden: true,
+				localResourceRoots: [extensionUri],
+			},
+		)
 
 		// Set up the webview's HTML content
 		this.panel.webview.html =
@@ -265,7 +270,7 @@ export class BrowserSessionPanelManager {
 					<title>Browser Session</title>
 				</head>
 				<body>
-					<div id="root"></div>
+					<div id="vibext"></div>
 					${reactRefresh}
 					<script type="module" src="${scriptUri}"></script>
 				</body>
@@ -301,7 +306,7 @@ export class BrowserSessionPanelManager {
 					<title>Browser Session</title>
 				</head>
 				<body>
-					<div id="root"></div>
+					<div id="vibext"></div>
 					<script nonce="${nonce}" type="module" src="${scriptUri}"></script>
 				</body>
 			</html>

@@ -7,7 +7,7 @@
 		"openrouter": {
 			"description": "LLM के लिए एक एकीकृत इंटरफेस"
 		},
-		"roo": {
+		"vibex": {
 			"description": "शुरुआत करने के लिए सर्वश्रेष्ठ मुफ्त मॉडल",
 			"incentive": "VibeX Code को मुफ्त में आजमाएं"
 		}
@@ -22,8 +22,8 @@
 	"providerSignup": {
 		"heading": "अपना प्रदाता चुनें",
 		"chooseProvider": "VibeX Code को काम करने के लिए एक LLM प्रदाता की आवश्यकता है। शुरुआत करने के लिए एक चुनें, आप बाद में और जोड़ सकते हैं।",
-		"rooCloudProvider": "VibeX Code Cloud प्रदाता",
-		"rooCloudDescription": "शुरुआत करने का सबसे आसान तरीका VibeX Code Cloud प्रदाता का उपयोग करना है: कम लागत पर मुफ्त और सशुल्क मॉडल का एक सावधानीपूर्वक चयन।",
+		"vibexCloudProvider": "VibeX Code Cloud प्रदाता",
+		"vibexCloudDescription": "शुरुआत करने का सबसे आसान तरीका VibeX Code Cloud प्रदाता का उपयोग करना है: कम लागत पर मुफ्त और सशुल्क मॉडल का एक सावधानीपूर्वक चयन।",
 		"learnMore": "अधिक जानें",
 		"useAnotherProvider": "तृतीय-पक्ष प्रदाता",
 		"useAnotherProviderDescription": "एक API कुंजी दर्ज करें और शुरू करें।",

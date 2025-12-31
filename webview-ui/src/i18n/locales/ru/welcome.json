@@ -7,7 +7,7 @@
 		"openrouter": {
 			"description": "Единый интерфейс для LLM"
 		},
-		"roo": {
+		"vibex": {
 			"description": "Лучшие бесплатные модели для начала",
 			"incentive": "Попробуйте VibeX Code бесплатно"
 		}
@@ -22,8 +22,8 @@
 	"providerSignup": {
 		"heading": "Выберите поставщика услуг",
 		"chooseProvider": "VibeX Code нужен LLM-провайдер для работы. Выберите один для начала, вы можете добавить больше позже.",
-		"rooCloudProvider": "Провайдер VibeX Code Cloud",
-		"rooCloudDescription": "Самый простой способ начать — использовать провайдер VibeX Code Cloud: тщательно подобранная смесь бесплатных и платных моделей по низкой стоимости.",
+		"vibexCloudProvider": "Провайдер VibeX Code Cloud",
+		"vibexCloudDescription": "Самый простой способ начать — использовать провайдер VibeX Code Cloud: тщательно подобранная смесь бесплатных и платных моделей по низкой стоимости.",
 		"learnMore": "Узнать больше",
 		"useAnotherProvider": "Провайдер третьей стороны",
 		"useAnotherProviderDescription": "Введите API-ключ и начните.",

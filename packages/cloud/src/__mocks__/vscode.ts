@@ -57,7 +57,7 @@ export const mockExtensionContext: ExtensionContext = {
 		packageJSON: {
 			version: "1.0.0",
 			publisher: "Vibex",
-			name: "roo-cline",
+			name: "vibex-cline",
 		},
 	},
 }

@@ -6,8 +6,8 @@ import * as path from "path"
 import * as vscode from "vscode"
 import { Anthropic } from "@anthropic-ai/sdk"
 
-import type { GlobalState, ProviderSettings, ModelInfo } from "@roo-code/types"
-import { TelemetryService } from "@roo-code/telemetry"
+import type { GlobalState, ProviderSettings, ModelInfo } from "@vibex-code/types"
+import { TelemetryService } from "@vibex-code/telemetry"
 
 import { Task } from "../Task"
 import { ClineProvider } from "../../webview/ClineProvider"
@@ -1037,7 +1037,7 @@ describe("Cline", () => {
 					apiConfiguration: mockApiConfig,
 					task: "child task",
 					parentTask: parent,
-					rootTask: parent,
+					vibextTask: parent,
 					startTask: false,
 				})
 
@@ -1112,7 +1112,7 @@ describe("Cline", () => {
 					apiConfiguration: mockApiConfig,
 					task: "child task",
 					parentTask: parent,
-					rootTask: parent,
+					vibextTask: parent,
 					startTask: false,
 				})
 
@@ -1167,7 +1167,7 @@ describe("Cline", () => {
 					apiConfiguration: mockApiConfig,
 					task: "child task 1",
 					parentTask: parent,
-					rootTask: parent,
+					vibextTask: parent,
 					startTask: false,
 				})
 
@@ -1190,7 +1190,7 @@ describe("Cline", () => {
 					apiConfiguration: mockApiConfig,
 					task: "child task 2",
 					parentTask: parent,
-					rootTask: parent,
+					vibextTask: parent,
 					startTask: false,
 				})
 
@@ -1248,7 +1248,7 @@ describe("Cline", () => {
 					apiConfiguration: mockApiConfig,
 					task: "child task",
 					parentTask: parent,
-					rootTask: parent,
+					vibextTask: parent,
 					startTask: false,
 				})
 

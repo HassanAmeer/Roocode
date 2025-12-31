@@ -10,7 +10,7 @@ import type {
 	AuthService,
 	AuthServiceEvents,
 	AuthState,
-} from "@roo-code/types"
+} from "@vibex-code/types"
 
 import { getClerkBaseUrl, getRooCodeApiUrl, PRODUCTION_CLERK_BASE_URL } from "./config.js"
 import { getUserAgent } from "./utils.js"
@@ -267,7 +267,7 @@ export class WebAuthService extends EventEmitter<AuthServiceEvents> implements A
 			await this.context.globalState.update(AUTH_STATE_KEY, state)
 			const packageJSON = this.context.extension?.packageJSON
 			const publisher = packageJSON?.publisher ?? "Vibex"
-			const name = packageJSON?.name ?? "roo-cline"
+			const name = packageJSON?.name ?? "vibex-cline"
 			const params = new URLSearchParams({
 				state,
 				auth_redirect: `${vscode.env.uriScheme}://${publisher}.${name}`,
@@ -333,12 +333,12 @@ export class WebAuthService extends EventEmitter<AuthServiceEvents> implements A
 
 			// Store the provider model if provided, or flag that no model was selected
 			if (providerModel) {
-				await this.context.globalState.update("roo-provider-model", providerModel)
-				await this.context.globalState.update("roo-auth-skip-model", undefined)
+				await this.context.globalState.update("vibex-provider-model", providerModel)
+				await this.context.globalState.update("vibex-auth-skip-model", undefined)
 				this.log(`[auth] Stored provider model: ${providerModel}`)
 			} else {
 				// No model was selected during signup - flag this for the webview
-				await this.context.globalState.update("roo-auth-skip-model", true)
+				await this.context.globalState.update("vibex-auth-skip-model", true)
 				this.log(`[auth] No provider model selected during signup`)
 			}
 

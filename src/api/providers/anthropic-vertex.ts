@@ -10,7 +10,7 @@ import {
 	ANTHROPIC_DEFAULT_MAX_TOKENS,
 	TOOL_PROTOCOL,
 	VERTEX_1M_CONTEXT_MODEL_IDS,
-} from "@roo-code/types"
+} from "@vibex-code/types"
 
 import { ApiHandlerOptions } from "../../shared/api"
 import { safeJsonParse } from "../../shared/safeJsonParse"

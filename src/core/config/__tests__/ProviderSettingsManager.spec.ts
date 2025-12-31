@@ -2,7 +2,7 @@
 
 import { ExtensionContext } from "vscode"
 
-import type { ProviderSettings } from "@roo-code/types"
+import type { ProviderSettings } from "@vibex-code/types"
 
 import { ProviderSettingsManager, ProviderProfiles, SyncCloudProfilesResult } from "../ProviderSettingsManager"
 
@@ -238,24 +238,24 @@ describe("ProviderSettingsManager", () => {
 						default: {
 							config: {},
 							id: "default",
-							apiProvider: "roo",
-							apiModelId: "roo/code-supernova", // Old model ID
+							apiProvider: "vibex",
+							apiModelId: "vibex/code-supernova", // Old model ID
 						},
 						test: {
-							apiProvider: "roo",
-							apiModelId: "roo/code-supernova", // Old model ID
+							apiProvider: "vibex",
+							apiModelId: "vibex/code-supernova", // Old model ID
 						},
 						existing: {
-							apiProvider: "roo",
-							apiModelId: "roo/code-supernova-1-million", // Already migrated
+							apiProvider: "vibex",
+							apiModelId: "vibex/code-supernova-1-million", // Already migrated
 						},
 						otherProvider: {
 							apiProvider: "anthropic",
-							apiModelId: "roo/code-supernova", // Should not be migrated (different provider)
+							apiModelId: "vibex/code-supernova", // Should not be migrated (different provider)
 						},
 						noProvider: {
 							id: "no-provider",
-							apiModelId: "roo/code-supernova", // Should not be migrated (no provider)
+							apiModelId: "vibex/code-supernova", // Should not be migrated (no provider)
 						},
 					},
 					migrations: {
@@ -275,13 +275,13 @@ describe("ProviderSettingsManager", () => {
 			const storedConfig = JSON.parse(calls[calls.length - 1][1])
 
 			// Vibex provider configs should be migrated
-			expect(storedConfig.apiConfigs.default.apiModelId).toEqual("roo/code-supernova-1-million")
-			expect(storedConfig.apiConfigs.test.apiModelId).toEqual("roo/code-supernova-1-million")
-			expect(storedConfig.apiConfigs.existing.apiModelId).toEqual("roo/code-supernova-1-million")
+			expect(storedConfig.apiConfigs.default.apiModelId).toEqual("vibex/code-supernova-1-million")
+			expect(storedConfig.apiConfigs.test.apiModelId).toEqual("vibex/code-supernova-1-million")
+			expect(storedConfig.apiConfigs.existing.apiModelId).toEqual("vibex/code-supernova-1-million")
 
 			// Non-vibex provider configs should not be migrated
-			expect(storedConfig.apiConfigs.otherProvider.apiModelId).toEqual("roo/code-supernova")
-			expect(storedConfig.apiConfigs.noProvider.apiModelId).toEqual("roo/code-supernova")
+			expect(storedConfig.apiConfigs.otherProvider.apiModelId).toEqual("vibex/code-supernova")
+			expect(storedConfig.apiConfigs.noProvider.apiModelId).toEqual("vibex/code-supernova")
 		})
 
 		it("should apply model migrations every time, not just once", async () => {
@@ -291,8 +291,8 @@ describe("ProviderSettingsManager", () => {
 					currentApiConfigName: "default",
 					apiConfigs: {
 						default: {
-							apiProvider: "roo",
-							apiModelId: "roo/code-supernova",
+							apiProvider: "vibex",
+							apiModelId: "vibex/code-supernova",
 							id: "default",
 						},
 					},
@@ -311,7 +311,7 @@ describe("ProviderSettingsManager", () => {
 			// Verify migration happened
 			let calls = mockSecrets.store.mock.calls
 			let storedConfig = JSON.parse(calls[calls.length - 1][1])
-			expect(storedConfig.apiConfigs.default.apiModelId).toEqual("roo/code-supernova-1-million")
+			expect(storedConfig.apiConfigs.default.apiModelId).toEqual("vibex/code-supernova-1-million")
 
 			// Create a new instance to simulate another load
 			const newManager = new ProviderSettingsManager(mockContext)
@@ -322,8 +322,8 @@ describe("ProviderSettingsManager", () => {
 					currentApiConfigName: "default",
 					apiConfigs: {
 						default: {
-							apiProvider: "roo",
-							apiModelId: "roo/code-supernova", // Old model again
+							apiProvider: "vibex",
+							apiModelId: "vibex/code-supernova", // Old model again
 							id: "default",
 						},
 					},
@@ -342,7 +342,7 @@ describe("ProviderSettingsManager", () => {
 			// Verify migration happened again
 			calls = mockSecrets.store.mock.calls
 			storedConfig = JSON.parse(calls[calls.length - 1][1])
-			expect(storedConfig.apiConfigs.default.apiModelId).toEqual("roo/code-supernova-1-million")
+			expect(storedConfig.apiConfigs.default.apiModelId).toEqual("vibex/code-supernova-1-million")
 		})
 
 		it("should throw error if secrets storage fails", async () => {
@@ -459,7 +459,7 @@ describe("ProviderSettingsManager", () => {
 				},
 			}
 
-			expect(mockSecrets.store.mock.calls[0][0]).toEqual("roo_cline_config_api_config")
+			expect(mockSecrets.store.mock.calls[0][0]).toEqual("vibex_cline_config_api_config")
 			expect(storedConfig).toEqual(expectedConfig)
 		})
 
@@ -509,7 +509,7 @@ describe("ProviderSettingsManager", () => {
 				},
 			}
 
-			expect(mockSecrets.store.mock.calls[0][0]).toEqual("roo_cline_config_api_config")
+			expect(mockSecrets.store.mock.calls[0][0]).toEqual("vibex_cline_config_api_config")
 			expect(storedConfig).toEqual(expectedConfig)
 		})
 
@@ -553,7 +553,7 @@ describe("ProviderSettingsManager", () => {
 
 			const storedConfig = JSON.parse(mockSecrets.store.mock.calls[mockSecrets.store.mock.calls.length - 1][1])
 			expect(mockSecrets.store.mock.calls[mockSecrets.store.mock.calls.length - 1][0]).toEqual(
-				"roo_cline_config_api_config",
+				"vibex_cline_config_api_config",
 			)
 			expect(storedConfig).toEqual(expectedConfig)
 		})
@@ -816,7 +816,7 @@ describe("ProviderSettingsManager", () => {
 			await providerSettingsManager.resetAllConfigs()
 
 			// Should have called delete with the correct config key
-			expect(mockSecrets.delete).toHaveBeenCalledWith("roo_cline_config_api_config")
+			expect(mockSecrets.delete).toHaveBeenCalledWith("vibex_cline_config_api_config")
 		})
 	})
 

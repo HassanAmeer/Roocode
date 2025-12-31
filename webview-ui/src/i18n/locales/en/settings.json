@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "Need to talk to us? Write"
 		},
-		"community": "Want tips or to just hang out with other VibeX Code users? Join <redditLink>reddit.com/r/VibeX Code</redditLink> or <discordLink>discord.gg/roocode</discordLink>",
+		"community": "Want tips or to just hang out with other VibeX Code users? Join <redditLink>reddit.com/r/VibeX Code</redditLink> or <discordLink>discord.gg/vibexcode</discordLink>",
 		"contactAndCommunity": "Contact & Community",
 		"manageSettings": "Manage Settings"
 	},
@@ -203,7 +203,7 @@
 			},
 			"protected": {
 				"label": "Include protected files",
-				"description": "Allow VibeX Code to create and edit protected files (like .rooignore and .roo/ configuration files) without requiring approval."
+				"description": "Allow VibeX Code to create and edit protected files (like .vibexignore and .vibex/ configuration files) without requiring approval."
 			}
 		},
 		"browser": {
@@ -446,7 +446,7 @@
 			"description": "No API key is required, but the user needs to help copy and paste the information to the web chat AI.",
 			"instructions": "During use, a dialog box will pop up and the current message will be copied to the clipboard automatically. You need to paste these to web versions of AI (such as ChatGPT or Claude), then copy the AI's reply back to the dialog box and click the confirm button."
 		},
-		"roo": {
+		"vibex": {
 			"authenticatedMessage": "Securely authenticated through your VibeX Code Cloud account.",
 			"connectButton": "Connect to VibeX Code Cloud"
 		},
@@ -614,9 +614,9 @@
 			"label": "Workspace files context limit",
 			"description": "Maximum number of files to include in current working directory details. Higher values provide more context but increase token usage."
 		},
-		"rooignore": {
-			"label": "Show .rooignore'd files in lists and searches",
-			"description": "When enabled, files matching patterns in .rooignore will be shown in lists with a lock symbol. When disabled, these files will be completely hidden from file lists and searches."
+		"vibexignore": {
+			"label": "Show .vibexignore'd files in lists and searches",
+			"description": "When enabled, files matching patterns in .vibexignore will be shown in lists with a lock symbol. When disabled, these files will be completely hidden from file lists and searches."
 		},
 		"maxConcurrentFileReads": {
 			"label": "Concurrent file reads limit",
@@ -836,9 +836,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "Enable custom tools",
-			"description": "When enabled, VibeX Code can load and use custom TypeScript/JavaScript tools from your project's .roo/tools directory or ~/.roo/tools for global tools. Note: these tools will automatically be auto-approved.",
+			"description": "When enabled, VibeX Code can load and use custom TypeScript/JavaScript tools from your project's .vibex/tools directory or ~/.vibex/tools for global tools. Note: these tools will automatically be auto-approved.",
 			"toolsHeader": "Available Custom Tools",
-			"noTools": "No custom tools loaded. Add .ts or .js files to your project's .roo/tools directory or ~/.roo/tools for global tools.",
+			"noTools": "No custom tools loaded. Add .ts or .js files to your project's .vibex/tools directory or ~/.vibex/tools for global tools.",
 			"refreshButton": "Refresh",
 			"refreshing": "Refreshing...",
 			"refreshSuccess": "Tools refreshed successfully",
@@ -858,6 +858,14 @@
 	"maxTokens": {
 		"label": "Max output tokens",
 		"description": "Override the model's default maximum output tokens."
+	},
+	"tokenLimits": {
+		"title": "Token Limits Control",
+		"description": "Fine-tune input and output token limits to prevent 'message too long' errors and optimize token usage for your workflow.",
+		"contextWindow": "Total context window: {{window}} tokens",
+		"maxInputTokens": "Max Input Tokens",
+		"maxOutputTokens": "Max Output Tokens",
+		"defaultValue": "Default"
 	},
 	"temperature": {
 		"useCustom": "Use custom temperature",

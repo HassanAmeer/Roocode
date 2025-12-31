@@ -2,10 +2,10 @@
 vi.mock("axios")
 
 import type { Mock } from "vitest"
-import type { ModelInfo } from "@roo-code/types"
+import type { ModelInfo } from "@vibex-code/types"
 import axios from "axios"
 import { getChutesModels } from "../chutes"
-import { chutesModels } from "@roo-code/types"
+import { chutesModels } from "@vibex-code/types"
 
 const mockedAxios = axios as typeof axios & {
 	get: Mock

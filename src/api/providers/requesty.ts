@@ -7,7 +7,7 @@ import {
 	requestyDefaultModelInfo,
 	TOOL_PROTOCOL,
 	NATIVE_TOOL_DEFAULTS,
-} from "@roo-code/types"
+} from "@vibex-code/types"
 
 import type { ApiHandlerOptions, ModelRecord } from "../../shared/api"
 import { resolveToolProtocol } from "../../utils/resolveToolProtocol"

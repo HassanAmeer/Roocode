@@ -35,9 +35,9 @@ import {
 	getProviderDefaultModelId,
 	NATIVE_TOOL_DEFAULTS,
 	aimlApiModels,
-} from "@roo-code/types"
+} from "@vibex-code/types"
 
-import type { ModelRecord, RouterModels } from "@roo-code/types"
+import type { ModelRecord, RouterModels } from "@vibex-code/types"
 
 import { useRouterModels } from "./useRouterModels"
 import { useOpenRouterModelProviders } from "./useOpenRouterModelProviders"
@@ -372,9 +372,9 @@ function getSelectedModel({
 				routerModels["io-intelligence"]?.[id] ?? ioIntelligenceModels[id as keyof typeof ioIntelligenceModels]
 			return { id, info }
 		}
-		case "roo": {
-			const id = getValidatedModelId(apiConfiguration.apiModelId, routerModels.roo, defaultModelId)
-			const info = routerModels.roo?.[id]
+		case "vibex": {
+			const id = getValidatedModelId(apiConfiguration.apiModelId, routerModels.vibex, defaultModelId)
+			const info = routerModels.vibex?.[id]
 			return { id, info }
 		}
 		case "qwen-code": {

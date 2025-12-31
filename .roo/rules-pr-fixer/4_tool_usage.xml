@@ -41,7 +41,7 @@
     <tool name="gh run view --log-failed">
       <best_practices>
         <practice>Use this command to get the exact error messages from failing tests.</practice>
-        <practice>Search the log for keywords like 'error', 'failed', or 'exception' to quickly find the root cause.</practice>
+        <practice>Search the log for keywords like 'error', 'failed', or 'exception' to quickly find the vibext cause.</practice>
         <practice>Always specify run ID explicitly to avoid interactive selection prompts: gh run view [RUN_ID] --log-failed</practice>
         <practice>Get run IDs with: gh run list --pr [PR_NUMBER] --repo [owner]/[repo]</practice>
       </best_practices>

@@ -1,5 +1,5 @@
 import { getToolUseGuidelinesSection } from "../tool-use-guidelines"
-import { TOOL_PROTOCOL } from "@roo-code/types"
+import { TOOL_PROTOCOL } from "@vibex-code/types"
 import { EXPERIMENT_IDS } from "../../../../shared/experiments"
 
 describe("getToolUseGuidelinesSection", () => {

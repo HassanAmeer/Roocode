@@ -8,7 +8,7 @@ vi.mock("../../task/Task")
 vi.mock("../../tools/validateToolUse", () => ({
 	validateToolUse: vi.fn(),
 }))
-vi.mock("@roo-code/telemetry", () => ({
+vi.mock("@vibex-code/telemetry", () => ({
 	TelemetryService: {
 		instance: {
 			captureToolUsage: vi.fn(),

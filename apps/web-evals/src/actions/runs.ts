@@ -18,7 +18,7 @@ import {
 	deleteRunsByIds as _deleteRunsByIds,
 	createTask,
 	getExercisesForLanguage,
-} from "@roo-code/evals"
+} from "@vibex-code/evals"
 
 import { CreateRun } from "@/lib/schemas"
 import { redisClient } from "@/lib/server/redis"
@@ -88,7 +88,7 @@ export async function createRun({ suite, exercises = [], timeout, iterations = 1
 			"-e HOST_EXECUTION_METHOD=docker",
 		]
 
-		const cliCommand = `pnpm --filter @roo-code/evals cli --runId ${run.id}`
+		const cliCommand = `pnpm --filter @vibex-code/evals cli --runId ${run.id}`
 
 		const command = isRunningInDocker
 			? `docker run ${dockerArgs.join(" ")} evals-runner sh -c "${cliCommand}"`
@@ -101,7 +101,7 @@ export async function createRun({ suite, exercises = [], timeout, iterations = 1
 			stdio: ["ignore", "pipe", "pipe"],
 		})
 
-		const logStream = fs.createWriteStream("/tmp/roo-code-evals.log", { flags: "a" })
+		const logStream = fs.createWriteStream("/tmp/vibex-code-evals.log", { flags: "a" })
 
 		if (childProcess.stdout) {
 			childProcess.stdout.pipe(logStream)
@@ -302,7 +302,7 @@ export async function deleteOldRuns(): Promise<DeleteIncompleteRunsResult> {
 
 	// Get all runs older than 30 days
 	const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000)
-	const { getRuns } = await import("@roo-code/evals")
+	const { getRuns } = await import("@vibex-code/evals")
 	const allRuns = await getRuns()
 	const oldRuns = allRuns.filter((run) => run.createdAt < thirtyDaysAgo)
 	const runIds = oldRuns.map((run) => run.id)

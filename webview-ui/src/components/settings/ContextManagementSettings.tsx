@@ -193,7 +193,7 @@ export const ContextManagementSettings = ({
 					<VSCodeCheckbox
 						checked={showRooIgnoredFiles}
 						onChange={(e: any) => setCachedStateField("showRooIgnoredFiles", e.target.checked)}
-						data-testid="show-rooignored-files-checkbox">
+						data-testid="show-vibexignored-files-checkbox">
 						<label className="block font-medium mb-1">
 							{t("settings:contextManagement.vibexignore.label")}
 						</label>

@@ -18,7 +18,7 @@ jobs:
         run: |
           set -euo pipefail
           TS="$(date +%s)"
-          # Target only the root README.md and localized READMEs under locales/*/README.md
+          # Target only the vibext README.md and localized READMEs under locales/*/README.md
           mapfile -t FILES < <(git ls-files README.md 'locales/*/README.md' || true)
 
           if [ "${#FILES[@]}" -eq 0 ]; then

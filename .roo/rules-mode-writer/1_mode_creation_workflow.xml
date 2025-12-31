@@ -14,7 +14,7 @@
         <pattern type="edit_existing">
           <indicators>
             <indicator>User mentions a specific mode by name or slug</indicator>
-            <indicator>User references a mode directory path (e.g., .roo/rules-[mode-slug])</indicator>
+            <indicator>User references a mode directory path (e.g., .vibex/rules-[mode-slug])</indicator>
             <indicator>User asks to modify, update, enhance, or fix an existing mode</indicator>
             <indicator>User says "edit this mode" or "change this mode"</indicator>
           </indicators>
@@ -107,9 +107,9 @@
           </field>
         </recommended_fields>
         <important_note>
-          Do not include customInstructions in the .roomodes configuration.
+          Do not include customInstructions in the .vibexmodes configuration.
           All detailed instructions should be placed in XML files within
-          the .roo/rules-[mode-slug]/ directory instead.
+          the .vibex/rules-[mode-slug]/ directory instead.
         </important_note>
       </step>
 
@@ -139,7 +139,7 @@ groups:
       <step number="5a">
         <title>Create XML Instruction Files</title>
         <description>
-          Design structured instruction files in .roo/rules-[mode-slug]/
+          Design structured instruction files in .vibex/rules-[mode-slug]/
         </description>
         <file_structure>
           <file name="1_workflow.xml">Main workflow and step-by-step processes</file>
@@ -164,8 +164,8 @@ groups:
           Fully understand the existing mode before making any changes
         </description>
         <actions>
-          <action>Locate and read the mode configuration in .roomodes</action>
-          <action>Read all XML instruction files in .roo/rules-[mode-slug]/</action>
+          <action>Locate and read the mode configuration in .vibexmodes</action>
+          <action>Read all XML instruction files in .vibex/rules-[mode-slug]/</action>
           <action>Analyze the mode's current capabilities and limitations</action>
           <action>Understand the mode's role in the broader ecosystem</action>
         </actions>
@@ -225,7 +225,7 @@ groups:
           Apply the planned modifications to the mode
         </description>
         <implementation_order>
-          <change>Update .roomodes configuration if needed</change>
+          <change>Update .vibexmodes configuration if needed</change>
           <change>Modify existing XML instruction files</change>
           <change>Create new XML instruction files if required</change>
           <change>Update examples and documentation</change>
@@ -290,7 +290,7 @@ groups:
   </validation_and_cohesion>
 
   <quick_reference>
-    <command>Create mode in .roomodes for project-specific modes</command>
+    <command>Create mode in .vibexmodes for project-specific modes</command>
     <command>Create mode in global custom_modes.yaml for system-wide modes</command>
     <command>Use list_files to verify .vibex folder structure</command>
     <command>Test file regex patterns with search_files</command>

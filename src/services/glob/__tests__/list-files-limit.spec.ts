@@ -10,7 +10,7 @@ vi.mock("../../ripgrep", () => ({
 // Mock vscode
 vi.mock("vscode", () => ({
 	env: {
-		appRoot: "/mock/app/root",
+		appRoot: "/mock/app/vibext",
 	},
 }))
 

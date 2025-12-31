@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from "@/utils/test-utils"
 
-import type { Command } from "@roo-code/types"
+import type { Command } from "@vibex-code/types"
 
 import { SlashCommandItemSimple } from "../SlashCommandItemSimple"
 

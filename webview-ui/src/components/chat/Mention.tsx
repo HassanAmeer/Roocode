@@ -1,4 +1,4 @@
-import { mentionRegexGlobal } from "@roo-code/types"
+import { mentionRegexGlobal } from "@vibex-code/types"
 
 import { vscode } from "../../utils/vscode"
 

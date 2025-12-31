@@ -49,7 +49,7 @@ export const content: AgentPageContent = {
 			{
 				title: "2. Invoke from a comment",
 				description:
-					'Ask the agent to fix issues directly from GitHub PR comments (e.g. "@roomote: fix these review comments"). It\'s fully aware of the entire comment history and latest diffs and focuses on fixing them – not random changes to your code.',
+					'Ask the agent to fix issues directly from GitHub PR comments (e.g. "@vibexmote: fix these review comments"). It\'s fully aware of the entire comment history and latest diffs and focuses on fixing them – not random changes to your code.',
 				icon: "MessageSquareCode",
 			},
 			{

@@ -12,16 +12,16 @@ import {
 	type CloudOrganizationMembership,
 	ORGANIZATION_ALLOW_ALL,
 	DEFAULT_CHECKPOINT_TIMEOUT_SECONDS,
-} from "@roo-code/types"
+} from "@vibex-code/types"
 
-import { ExtensionMessage, ExtensionState, MarketplaceInstalledMetadata, Command } from "@roo-code/types"
-import { findLastIndex } from "@roo-code/types"
-import { McpServer } from "@roo-code/types"
-import { checkExistKey } from "@roo-code/types"
-import { Mode, defaultModeSlug, defaultPrompts } from "@roo-code/types"
-import { CustomSupportPrompts } from "@roo-code/types"
-import { experimentDefault } from "@roo-code/types"
-import { RouterModels } from "@roo-code/types"
+import { ExtensionMessage, ExtensionState, MarketplaceInstalledMetadata, Command } from "@vibex-code/types"
+import { findLastIndex } from "@vibex-code/types"
+import { McpServer } from "@vibex-code/types"
+import { checkExistKey } from "@vibex-code/types"
+import { Mode, defaultModeSlug, defaultPrompts } from "@vibex-code/types"
+import { CustomSupportPrompts } from "@vibex-code/types"
+import { experimentDefault } from "@vibex-code/types"
+import { RouterModels } from "@vibex-code/types"
 
 import { vscode } from "@src/utils/vscode"
 import { convertTextMateToHljs } from "@src/utils/textMateToHljs"
@@ -438,7 +438,7 @@ export const ExtensionStateContextProvider: React.FC<{ children: React.ReactNode
 	useEffect(() => {
 		const currentAuth = state.cloudIsAuthenticated ?? false
 		const currentProvider = state.apiConfiguration?.apiProvider
-		if (!prevCloudIsAuthenticated && currentAuth && currentProvider === "roo") {
+		if (!prevCloudIsAuthenticated && currentAuth && currentProvider === "vibex") {
 			// User just authenticated and Vibex is the active provider - refresh Vibex models
 			vscode.postMessage({ type: "requestRooModels" })
 		}

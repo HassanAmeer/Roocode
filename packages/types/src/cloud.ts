@@ -148,7 +148,7 @@ export type OrganizationCloudSettings = z.infer<typeof organizationCloudSettings
  */
 
 export const organizationFeaturesSchema = z.object({
-	roomoteControlEnabled: z.boolean().optional(),
+	vibexmoteControlEnabled: z.boolean().optional(),
 })
 
 export type OrganizationFeatures = z.infer<typeof organizationFeaturesSchema>
@@ -176,7 +176,7 @@ export type OrganizationSettings = z.infer<typeof organizationSettingsSchema>
  */
 
 export const userFeaturesSchema = z.object({
-	roomoteControlEnabled: z.boolean().optional(),
+	vibexmoteControlEnabled: z.boolean().optional(),
 })
 
 export type UserFeatures = z.infer<typeof userFeaturesSchema>

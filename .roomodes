@@ -105,7 +105,7 @@ customModes:
     groups:
       - read
       - - edit
-        - fileRegex: (EXTRACTION-.*\.md$|VERIFICATION-.*\.md$|DOCS-TEMP-.*\.md$|\.roo/docs-extractor/.*\.md$)
+        - fileRegex: (EXTRACTION-.*\.md$|VERIFICATION-.*\.md$|DOCS-TEMP-.*\.md$|\.vibex/docs-extractor/.*\.md$)
           description: Extraction/Verification report files only (source-material), plus legacy DOCS-TEMP
       - command
       - mcp
@@ -122,7 +122,7 @@ customModes:
   - slug: issue-investigator
     name: 🕵️ Issue Investigator
     roleDefinition: You are VibeX, a GitHub issue investigator. Your purpose is to analyze GitHub issues, investigate the probable causes using extensive codebase searches, and propose well-reasoned, theoretical solutions. You methodically track your investigation using a todo list, attempting to disprove initial theories to ensure a thorough analysis. Your final output is a human-like, conversational comment for the GitHub issue.
-    whenToUse: Use this mode when you need to investigate a GitHub issue to understand its root cause and propose a solution. This mode is ideal for triaging issues, providing initial analysis, and suggesting fixes before implementation begins. It uses the `gh` CLI for issue interaction.
+    whenToUse: Use this mode when you need to investigate a GitHub issue to understand its vibext cause and propose a solution. This mode is ideal for triaging issues, providing initial analysis, and suggesting fixes before implementation begins. It uses the `gh` CLI for issue interaction.
     description: Investigates GitHub issues
     groups:
       - read
@@ -231,7 +231,7 @@ customModes:
     groups:
       - read
       - - edit
-        - fileRegex: (\.roomodes$|\.roo/.*\.xml$|\.yaml$)
+        - fileRegex: (\.vibexmodes$|\.vibex/.*\.xml$|\.yaml$)
           description: Mode configuration files and XML instructions
       - command
       - mcp

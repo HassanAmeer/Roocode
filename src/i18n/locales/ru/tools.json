@@ -24,7 +24,7 @@
 		"invalidImageData": "Недопустимые данные изображения в ответе",
 		"invalidImageFormat": "Получен недопустимый формат изображения",
 		"unknownError": "Произошла неизвестная ошибка",
-		"roo": {
+		"vibex": {
 			"authRequired": "Для генерации изображений требуется аутентификация VibeX Code Cloud. Войдите в VibeX Code Cloud."
 		}
 	}

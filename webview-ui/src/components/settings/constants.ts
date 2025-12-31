@@ -21,7 +21,7 @@ import {
 	featherlessModels,
 	minimaxModels,
 	basetenModels,
-} from "@roo-code/types"
+} from "@vibex-code/types"
 
 export const MODELS_BY_PROVIDER: Partial<Record<ProviderName, Record<string, ModelInfo>>> = {
 	anthropic: anthropicModels,
@@ -78,7 +78,7 @@ export const PROVIDERS = [
 	{ value: "fireworks", label: "Fireworks AI" },
 	{ value: "featherless", label: "Featherless AI" },
 	{ value: "io-intelligence", label: "IO Intelligence" },
-	{ value: "roo", label: "VibeX Code Cloud" },
+	{ value: "vibex", label: "VibeX Code Cloud" },
 	{ value: "vercel-ai-gateway", label: "Vercel AI Gateway" },
 	{ value: "minimax", label: "MiniMax" },
 	{ value: "baseten", label: "Baseten" },

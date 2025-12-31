@@ -9,7 +9,7 @@ import {
 	NATIVE_TOOL_DEFAULTS,
 	DEEP_SEEK_DEFAULT_TEMPERATURE,
 	OPENAI_AZURE_AI_INFERENCE_PATH,
-} from "@roo-code/types"
+} from "@vibex-code/types"
 
 import type { ApiHandlerOptions } from "../../shared/api"
 

@@ -2,7 +2,7 @@ import { z } from "zod"
 import { useQuery } from "@tanstack/react-query"
 import { useFuzzyModelSearch } from "./use-fuzzy-model-search"
 
-export const rooCodeCloudModelSchema = z.object({
+export const vibexCodeCloudModelSchema = z.object({
 	object: z.literal("model"),
 	id: z.string(),
 	name: z.string(),
@@ -30,10 +30,10 @@ export const rooCodeCloudModelSchema = z.object({
 	deprecated: z.boolean().optional(),
 })
 
-export type VibexCloudModel = z.infer<typeof rooCodeCloudModelSchema>
+export type VibexCloudModel = z.infer<typeof vibexCodeCloudModelSchema>
 
 export const getVibexCloudModels = async (): Promise<VibexCloudModel[]> => {
-	const response = await fetch("https://api.roocode.com/proxy/v1/models")
+	const response = await fetch("https://api.vibexcode.com/proxy/v1/models")
 
 	if (!response.ok) {
 		return []
@@ -42,7 +42,7 @@ export const getVibexCloudModels = async (): Promise<VibexCloudModel[]> => {
 	const result = z
 		.object({
 			object: z.literal("list"),
-			data: z.array(rooCodeCloudModelSchema),
+			data: z.array(vibexCodeCloudModelSchema),
 		})
 		.safeParse(await response.json())
 

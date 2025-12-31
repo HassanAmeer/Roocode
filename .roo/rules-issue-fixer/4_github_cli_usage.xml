@@ -81,7 +81,7 @@
       <syntax>gh issue comment [issue-number] --repo [owner]/[repo] --body "[comment]"</syntax>
       <example>
         <execute_command>
-        <command>gh issue comment 123 --repo octocat/hello-world --body "Working on this issue. Found the root cause in the theme detection logic."</command>
+        <command>gh issue comment 123 --repo octocat/hello-world --body "Working on this issue. Found the vibext cause in the theme detection logic."</command>
         </execute_command>
       </example>
     </command>

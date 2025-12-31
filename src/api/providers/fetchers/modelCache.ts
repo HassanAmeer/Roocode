@@ -5,9 +5,9 @@ import * as fsSync from "fs"
 import NodeCache from "node-cache"
 import { z } from "zod"
 
-import type { ProviderName } from "@roo-code/types"
-import { modelInfoSchema, TelemetryEventName } from "@roo-code/types"
-import { TelemetryService } from "@roo-code/telemetry"
+import type { ProviderName } from "@vibex-code/types"
+import { modelInfoSchema, TelemetryEventName } from "@vibex-code/types"
+import { TelemetryService } from "@vibex-code/telemetry"
 
 import { safeWriteJson } from "../../../utils/safeWriteJson"
 
@@ -27,7 +27,7 @@ import { getLMStudioModels } from "./lmstudio"
 import { getIOIntelligenceModels } from "./io-intelligence"
 import { getDeepInfraModels } from "./deepinfra"
 import { getHuggingFaceModels } from "./huggingface"
-import { getRooModels } from "./roo"
+import { getVibexModels } from "./vibex"
 import { getChutesModels } from "./chutes"
 
 const memoryCache = new NodeCache({ stdTTL: 5 * 60, checkperiod: 5 * 60 })
@@ -99,10 +99,10 @@ async function fetchModelsFromProvider(options: GetModelsOptions): Promise<Model
 		case "huggingface":
 			models = await getHuggingFaceModels()
 			break
-		case "roo": {
+		case "vibex": {
 			// Vibex Cloud provider requires baseUrl and optional apiKey
-			const rooBaseUrl = options.baseUrl ?? process.env.ROO_CODE_PROVIDER_URL ?? "https://api.vibex.com/proxy"
-			models = await getRooModels(rooBaseUrl, options.apiKey)
+			const vibexBaseUrl = options.baseUrl ?? process.env.ROO_CODE_PROVIDER_URL ?? "https://api.vibex.com/proxy"
+			models = await getVibexModels(vibexBaseUrl, options.apiKey)
 			break
 		}
 		case "chutes":

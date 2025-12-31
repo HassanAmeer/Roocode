@@ -1,7 +1,7 @@
 import * as vscode from "vscode"
 
-import { VibexEventName, type HistoryItem } from "@roo-code/types"
-import { TelemetryService } from "@roo-code/telemetry"
+import { VibexEventName, type HistoryItem } from "@vibex-code/types"
+import { TelemetryService } from "@vibex-code/telemetry"
 
 import { Task } from "../task/Task"
 import { formatResponse } from "../prompts/responses"

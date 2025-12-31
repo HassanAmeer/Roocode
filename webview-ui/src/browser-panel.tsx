@@ -5,7 +5,7 @@ import "./index.css"
 import BrowserSessionPanel from "./components/browser-session/BrowserSessionPanel"
 import "../node_modules/@vscode/codicons/dist/codicon.css"
 
-createRoot(document.getElementById("root")!).render(
+createRoot(document.getElementById("vibext")!).render(
 	<StrictMode>
 		<BrowserSessionPanel />
 	</StrictMode>,

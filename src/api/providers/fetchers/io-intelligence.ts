@@ -1,7 +1,7 @@
 import axios from "axios"
 import { z } from "zod"
 
-import { type ModelInfo, IO_INTELLIGENCE_CACHE_DURATION } from "@roo-code/types"
+import { type ModelInfo, IO_INTELLIGENCE_CACHE_DURATION } from "@vibex-code/types"
 
 import type { ModelRecord } from "../../../shared/api"
 
@@ -10,7 +10,7 @@ const ioIntelligenceModelSchema = z.object({
 	object: z.literal("model"),
 	created: z.number(),
 	owned_by: z.string(),
-	root: z.string().nullable().optional(),
+	vibext: z.string().nullable().optional(),
 	parent: z.string().nullable().optional(),
 	max_model_len: z.number().nullable().optional(),
 	permission: z.array(

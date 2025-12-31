@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline"><img src="https://img.shields.io/badge/VS_Code_Marketplace-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code Marketplace"></a>
-  <a href="https://x.com/roocode"><img src="https://img.shields.io/badge/roocode-000000?style=flat&logo=x&logoColor=white" alt="X"></a>
-  <a href="https://youtube.com/@roocodeyt?feature=shared"><img src="https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white" alt="YouTube"></a>
-  <a href="https://discord.gg/roocode"><img src="https://img.shields.io/badge/Join%20Discord-5865F2?style=flat&logo=discord&logoColor=white" alt="Join Discord"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.vibex-cline"><img src="https://img.shields.io/badge/VS_Code_Marketplace-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code Marketplace"></a>
+  <a href="https://x.com/vibexcode"><img src="https://img.shields.io/badge/vibexcode-000000?style=flat&logo=x&logoColor=white" alt="X"></a>
+  <a href="https://youtube.com/@vibexcodeyt?feature=shared"><img src="https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white" alt="YouTube"></a>
+  <a href="https://discord.gg/vibexcode"><img src="https://img.shields.io/badge/Join%20Discord-5865F2?style=flat&logo=discord&logoColor=white" alt="Join Discord"></a>
   <a href="https://www.reddit.com/r/RooCode/"><img src="https://img.shields.io/badge/Join%20r%2FRooCode-FF4500?style=flat&logo=reddit&logoColor=white" alt="Join r/RooCode"></a>
 </p>
 <p align="center">
-  <em>Obtén ayuda rápido → <a href="https://discord.gg/roocode">Únete a Discord</a> • ¿Prefieres asíncrono? → <a href="https://www.reddit.com/r/RooCode/">Únete a r/RooCode</a></em>
+  <em>Obtén ayuda rápido → <a href="https://discord.gg/vibexcode">Únete a Discord</a> • ¿Prefieres asíncrono? → <a href="https://www.reddit.com/r/RooCode/">Únete a r/RooCode</a></em>
 </p>
 
 # VibeX Code
@@ -35,7 +35,7 @@
 - [简体中文](../zh-CN/README.md)
 - [繁體中文](../zh-TW/README.md)
 - ...
-      </details>
+  </details>
 
 ---
 
@@ -60,7 +60,7 @@ VibeX Code se adapta a tu forma de trabajar, no al revés:
 - Modos Personalizados: crea modos especializados para tu equipo o flujo de trabajo
 - VibeXmote Control: VibeXmote Control te permite controlar de forma remota tareas que se ejecutan en tu instancia local de VS Code.
 
-Más info: [Usar Modos](https://docs.roocode.com/basic-usage/using-modes) • [Modos Personalizados](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
+Más info: [Usar Modos](https://docs.vibexcode.com/basic-usage/using-modes) • [Modos Personalizados](https://docs.vibexcode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.vibexcode.com/vibex-code-cloud/vibexmote-control)
 
 ## Tutoriales y vídeos de funcionalidades
 
@@ -73,14 +73,14 @@ Más info: [Usar Modos](https://docs.roocode.com/basic-usage/using-modes) • [M
 
 </div>
 <p align="center">
-<a href="https://docs.roocode.com/tutorial-videos">Más tutoriales rápidos y vídeos de funcionalidades...</a>
+<a href="https://docs.vibexcode.com/tutorial-videos">Más tutoriales rápidos y vídeos de funcionalidades...</a>
 </p>
 
 ## Recursos
 
-- **[Documentación](https://docs.roocode.com):** La guía oficial para instalar, configurar y dominar VibeX Code.
-- **[Canal de YouTube](https://youtube.com/@roocodeyt?feature=shared):** Mira tutoriales y ve las funcionalidades en acción.
-- **[Servidor de Discord](https://discord.gg/roocode):** Únete a la comunidad para obtener ayuda y discutir en tiempo real.
+- **[Documentación](https://docs.vibexcode.com):** La guía oficial para instalar, configurar y dominar VibeX Code.
+- **[Canal de YouTube](https://youtube.com/@vibexcodeyt?feature=shared):** Mira tutoriales y ve las funcionalidades en acción.
+- **[Servidor de Discord](https://discord.gg/vibexcode):** Únete a la comunidad para obtener ayuda y discutir en tiempo real.
 - **[Comunidad de Reddit](https://www.reddit.com/r/RooCode):** Comparte tus experiencias y ve lo que otros están construyendo.
 - **[Incidencias de GitHub](https://github.com/RooCodeInc/Roo-Code/issues):** Reporta errores y sigue el desarrollo.
 - **[Solicitudes de funcionalidades](https://github.com/RooCodeInc/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** ¿Tienes una idea? Compártela con los desarrolladores.
@@ -143,10 +143,10 @@ Si prefieres instalar el paquete VSIX manualmente:
     ```sh
     pnpm vsix
     ```
-2.  Se generará un archivo `.vsix` en el directorio `bin/` (p. ej., `bin/roo-cline-<version>.vsix`).
+2.  Se generará un archivo `.vsix` en el directorio `bin/` (p. ej., `bin/vibex-cline-<version>.vsix`).
 3.  Instálalo manualmente usando la CLI de VSCode:
     ```sh
-    code --install-extension bin/roo-cline-<version>.vsix
+    code --install-extension bin/vibex-cline-<version>.vsix
     ```
 
 ---
@@ -173,4 +173,4 @@ Usamos [changesets](https://github.com/changesets/changesets) para el versionado
 
 ---
 
-**¡Disfruta de VibeX Code!** Ya sea que lo mantengas con una correa corta o lo dejes deambular de forma autónoma, no podemos esperar a ver qué construyes. Si tienes preguntas o ideas sobre funcionalidades, pásate por nuestra [comunidad de Reddit](https://www.reddit.com/r/RooCode/) o [Discord](https://discord.gg/roocode). ¡Feliz codificación!
+**¡Disfruta de VibeX Code!** Ya sea que lo mantengas con una correa corta o lo dejes deambular de forma autónoma, no podemos esperar a ver qué construyes. Si tienes preguntas o ideas sobre funcionalidades, pásate por nuestra [comunidad de Reddit](https://www.reddit.com/r/RooCode/) o [Discord](https://discord.gg/vibexcode). ¡Feliz codificación!

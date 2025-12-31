@@ -1,7 +1,7 @@
 import NodeCache from "node-cache"
 import getFolderSize from "get-folder-size"
 
-import type { ClineMessage, HistoryItem, ToolProtocol } from "@roo-code/types"
+import type { ClineMessage, HistoryItem, ToolProtocol } from "@vibex-code/types"
 
 import { combineApiRequests } from "../../shared/combineApiRequests"
 import { combineCommandSequences } from "../../shared/combineCommandSequences"
@@ -14,7 +14,7 @@ const taskSizeCache = new NodeCache({ stdTTL: 30, checkperiod: 5 * 60 })
 
 export type TaskMetadataOptions = {
 	taskId: string
-	rootTaskId?: string
+	vibextTaskId?: string
 	parentTaskId?: string
 	taskNumber: number
 	messages: ClineMessage[]
@@ -32,7 +32,7 @@ export type TaskMetadataOptions = {
 
 export async function taskMetadata({
 	taskId: id,
-	rootTaskId,
+	vibextTaskId,
 	parentTaskId,
 	taskNumber,
 	messages,
@@ -100,7 +100,7 @@ export async function taskMetadata({
 	// even if user settings have changed.
 	const historyItem: HistoryItem = {
 		id,
-		rootTaskId,
+		vibextTaskId,
 		parentTaskId,
 		number: taskNumber,
 		ts: timestamp,

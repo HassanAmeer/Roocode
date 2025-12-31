@@ -3,7 +3,7 @@
 import { render, screen, fireEvent } from "@/utils/test-utils"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 
-import { type ModelInfo, type ProviderSettings, openAiModelInfoSaneDefaults } from "@roo-code/types"
+import { type ModelInfo, type ProviderSettings, openAiModelInfoSaneDefaults } from "@vibex-code/types"
 
 import * as ExtensionStateContext from "@src/context/ExtensionStateContext"
 const { ExtensionStateContextProvider } = ExtensionStateContext
@@ -242,13 +242,13 @@ vi.mock("../providers/LiteLLM", () => ({
 // Mock Vibex provider for tests
 vi.mock("../providers/Vibex", () => ({
 	Vibex: ({ cloudIsAuthenticated }: any) => (
-		<div data-testid="roo-provider">{cloudIsAuthenticated ? "Authenticated" : "Not Authenticated"}</div>
+		<div data-testid="vibex-provider">{cloudIsAuthenticated ? "Authenticated" : "Not Authenticated"}</div>
 	),
 }))
 
 // Mock VibeXBalanceDisplay for tests
-vi.mock("../providers/RooBalanceDisplay", () => ({
-	RooBalanceDisplay: () => <div data-testid="roo-balance-display">Balance: $10.00</div>,
+vi.mock("../providers/VibeXBalanceDisplay", () => ({
+	VibeXBalanceDisplay: () => <div data-testid="vibex-balance-display">Balance: $10.00</div>,
 }))
 
 vi.mock("@src/components/ui/hooks/useSelectedModel", () => ({
@@ -588,11 +588,11 @@ describe("ApiOptions", () => {
 
 			renderApiOptions({
 				apiConfiguration: {
-					apiProvider: "roo",
+					apiProvider: "vibex",
 				},
 			})
 
-			expect(screen.getByTestId("roo-balance-display")).toBeInTheDocument()
+			expect(screen.getByTestId("vibex-balance-display")).toBeInTheDocument()
 		})
 
 		it("does not show balance display when not authenticated", () => {
@@ -605,11 +605,11 @@ describe("ApiOptions", () => {
 
 			renderApiOptions({
 				apiConfiguration: {
-					apiProvider: "roo",
+					apiProvider: "vibex",
 				},
 			})
 
-			expect(screen.queryByTestId("roo-balance-display")).not.toBeInTheDocument()
+			expect(screen.queryByTestId("vibex-balance-display")).not.toBeInTheDocument()
 		})
 
 		it("pins vibex provider to the top when not on welcome screen", () => {
@@ -633,11 +633,11 @@ describe("ApiOptions", () => {
 			const providerOptions = options.filter((opt) => opt.value !== "")
 
 			// Find the vibex option
-			const rooOption = providerOptions.find((opt) => opt.value === "roo")
+			const vibexOption = providerOptions.find((opt) => opt.value === "vibex")
 
 			// If vibex is available, verify it's pinned to the top
-			if (rooOption) {
-				expect(providerOptions[0].value).toBe("roo")
+			if (vibexOption) {
+				expect(providerOptions[0].value).toBe("vibex")
 			}
 
 			useExtensionStateMock.mockRestore()
@@ -664,8 +664,8 @@ describe("ApiOptions", () => {
 			const providerOptions = options.filter((opt) => opt.value !== "")
 
 			// Check that vibex is NOT in the list when on welcome screen
-			const rooOption = providerOptions.find((opt) => opt.value === "roo")
-			expect(rooOption).toBeUndefined()
+			const vibexOption = providerOptions.find((opt) => opt.value === "vibex")
+			expect(vibexOption).toBeUndefined()
 
 			useExtensionStateMock.mockRestore()
 		})

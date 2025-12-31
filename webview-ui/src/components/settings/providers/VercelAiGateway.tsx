@@ -1,9 +1,9 @@
 import { useCallback } from "react"
 import { VSCodeTextField } from "@vscode/webview-ui-toolkit/react"
 
-import { type ProviderSettings, type OrganizationAllowList, vercelAiGatewayDefaultModelId } from "@roo-code/types"
+import { type ProviderSettings, type OrganizationAllowList, vercelAiGatewayDefaultModelId } from "@vibex-code/types"
 
-import type { RouterModels } from "@roo-code/types"
+import type { RouterModels } from "@vibex-code/types"
 
 import { useAppTranslation } from "@src/i18n/TranslationContext"
 import { VSCodeButtonLink } from "@src/components/common/VSCodeButtonLink"

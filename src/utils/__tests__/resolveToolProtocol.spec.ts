@@ -1,9 +1,9 @@
 import { describe, it, expect } from "vitest"
 import { resolveToolProtocol, detectToolProtocolFromHistory } from "../resolveToolProtocol"
-// import { TOOL_PROTOCOL, openAiModelInfoSaneDefaults } from "@roo-code/types"
-// import type { ProviderSettings, ModelInfo } from "@roo-code/types"
+// import { TOOL_PROTOCOL, openAiModelInfoSaneDefaults } from "@vibex-code/types"
+// import type { ProviderSettings, ModelInfo } from "@vibex-code/types"
 import type { Anthropic } from "@anthropic-ai/sdk"
-import { ModelInfo, openAiModelInfoSaneDefaults, ProviderSettings, TOOL_PROTOCOL } from "@roo-code/types"
+import { ModelInfo, openAiModelInfoSaneDefaults, ProviderSettings, TOOL_PROTOCOL } from "@vibex-code/types"
 
 describe("resolveToolProtocol", () => {
 	/**

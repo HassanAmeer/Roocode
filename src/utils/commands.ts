@@ -1,4 +1,4 @@
-import type { CommandId, CodeActionId, TerminalActionId } from "@roo-code/types"
+import type { CommandId, CodeActionId, TerminalActionId } from "@vibex-code/types"
 
 import { Package } from "../shared/package"
 

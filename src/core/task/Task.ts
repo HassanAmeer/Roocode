@@ -50,9 +50,9 @@ import {
 	MIN_CHECKPOINT_TIMEOUT_SECONDS,
 	TOOL_PROTOCOL,
 	ConsecutiveMistakeError,
-} from "@roo-code/types"
-import { TelemetryService } from "@roo-code/telemetry"
-import { CloudService, BridgeOrchestrator } from "@roo-code/cloud"
+} from "@vibex-code/types"
+import { TelemetryService } from "@vibex-code/telemetry"
+import { CloudService, BridgeOrchestrator } from "@vibex-code/cloud"
 import { resolveToolProtocol, detectToolProtocolFromHistory } from "../../utils/resolveToolProtocol"
 
 // api
@@ -152,7 +152,7 @@ export interface TaskOptions extends CreateTaskOptions {
 	historyItem?: HistoryItem
 	experiments?: Record<string, boolean>
 	startTask?: boolean
-	rootTask?: Task
+	vibextTask?: Task
 	parentTask?: Task
 	taskNumber?: number
 	onCreated?: (task: Task) => void
@@ -164,7 +164,7 @@ export interface TaskOptions extends CreateTaskOptions {
 
 export class Task extends EventEmitter<TaskEvents> implements TaskLike {
 	readonly taskId: string
-	readonly rootTaskId?: string
+	readonly vibextTaskId?: string
 	readonly parentTaskId?: string
 	childTaskId?: string
 	pendingNewTaskToolCallId?: string
@@ -174,7 +174,7 @@ export class Task extends EventEmitter<TaskEvents> implements TaskLike {
 
 	todoList?: TodoItem[]
 
-	readonly rootTask: Task | undefined = undefined
+	readonly vibextTask: Task | undefined = undefined
 	readonly parentTask: Task | undefined = undefined
 	readonly taskNumber: number
 	readonly workspacePath: string
@@ -385,7 +385,7 @@ export class Task extends EventEmitter<TaskEvents> implements TaskLike {
 		historyItem,
 		experiments: experimentsConfig,
 		startTask = true,
-		rootTask,
+		vibextTask,
 		parentTask,
 		taskNumber = -1,
 		onCreated,
@@ -414,7 +414,7 @@ export class Task extends EventEmitter<TaskEvents> implements TaskLike {
 		}
 
 		this.taskId = historyItem ? historyItem.id : crypto.randomUUID()
-		this.rootTaskId = historyItem ? historyItem.rootTaskId : rootTask?.taskId
+		this.vibextTaskId = historyItem ? historyItem.vibextTaskId : vibextTask?.taskId
 		this.parentTaskId = historyItem ? historyItem.parentTaskId : parentTask?.taskId
 		this.childTaskId = undefined
 
@@ -1007,7 +1007,7 @@ export class Task extends EventEmitter<TaskEvents> implements TaskLike {
 
 			const { historyItem, tokenUsage } = await taskMetadata({
 				taskId: this.taskId,
-				rootTaskId: this.rootTaskId,
+				vibextTaskId: this.vibextTaskId,
 				parentTaskId: this.parentTaskId,
 				taskNumber: this.taskNumber,
 				messages: this.clineMessages,
@@ -3471,7 +3471,7 @@ export class Task extends EventEmitter<TaskEvents> implements TaskLike {
 			})
 		}
 
-		const rooIgnoreInstructions = this.vibexIgnoreController?.getInstructions()
+		const vibexIgnoreInstructions = this.vibexIgnoreController?.getInstructions()
 
 		const state = await this.providerRef.deref()?.getState()
 
@@ -3532,7 +3532,7 @@ export class Task extends EventEmitter<TaskEvents> implements TaskLike {
 				experiments,
 				enableMcpServerCreation,
 				language,
-				rooIgnoreInstructions,
+				vibexIgnoreInstructions,
 				maxReadFileLine !== -1,
 				{
 					maxConcurrentFileReads: maxConcurrentFileReads ?? 5,

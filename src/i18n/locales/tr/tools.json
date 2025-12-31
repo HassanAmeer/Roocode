@@ -24,7 +24,7 @@
 		"invalidImageData": "Yanıtta geçersiz görüntü verisi",
 		"invalidImageFormat": "Geçersiz görüntü formatı alındı",
 		"unknownError": "Bilinmeyen bir hata oluştu",
-		"roo": {
+		"vibex": {
 			"authRequired": "Görüntü oluşturma için VibeX Code Cloud kimlik doğrulaması gereklidir. Lütfen VibeX Code Cloud'da oturum açın."
 		}
 	}

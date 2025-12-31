@@ -19,7 +19,7 @@ vi.mock("../ApplyDiffTool", () => ({
 }))
 
 // Mock TelemetryService
-vi.mock("@roo-code/telemetry", () => ({
+vi.mock("@vibex-code/telemetry", () => ({
 	TelemetryService: {
 		get instance() {
 			return {

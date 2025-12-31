@@ -1,23 +1,23 @@
 // npx vitest run __tests__/delegation-events.spec.ts
 
-import { VibexEventName, rooCodeEventsSchema, taskEventSchema } from "@roo-code/types"
+import { VibexEventName, vibexCodeEventsSchema, taskEventSchema } from "@vibex-code/types"
 
 describe("delegation event schemas", () => {
-	test("rooCodeEventsSchema validates tuples", () => {
-		expect(() => (rooCodeEventsSchema.shape as any)[VibexEventName.TaskDelegated].parse(["p", "c"])).not.toThrow()
+	test("vibexCodeEventsSchema validates tuples", () => {
+		expect(() => (vibexCodeEventsSchema.shape as any)[VibexEventName.TaskDelegated].parse(["p", "c"])).not.toThrow()
 		expect(() =>
-			(rooCodeEventsSchema.shape as any)[VibexEventName.TaskDelegationCompleted].parse(["p", "c", "s"]),
+			(vibexCodeEventsSchema.shape as any)[VibexEventName.TaskDelegationCompleted].parse(["p", "c", "s"]),
 		).not.toThrow()
 		expect(() =>
-			(rooCodeEventsSchema.shape as any)[VibexEventName.TaskDelegationResumed].parse(["p", "c"]),
+			(vibexCodeEventsSchema.shape as any)[VibexEventName.TaskDelegationResumed].parse(["p", "c"]),
 		).not.toThrow()
 
 		// invalid shapes
-		expect(() => (rooCodeEventsSchema.shape as any)[VibexEventName.TaskDelegated].parse(["p"])).toThrow()
+		expect(() => (vibexCodeEventsSchema.shape as any)[VibexEventName.TaskDelegated].parse(["p"])).toThrow()
 		expect(() =>
-			(rooCodeEventsSchema.shape as any)[VibexEventName.TaskDelegationCompleted].parse(["p", "c"]),
+			(vibexCodeEventsSchema.shape as any)[VibexEventName.TaskDelegationCompleted].parse(["p", "c"]),
 		).toThrow()
-		expect(() => (rooCodeEventsSchema.shape as any)[VibexEventName.TaskDelegationResumed].parse(["p"])).toThrow()
+		expect(() => (vibexCodeEventsSchema.shape as any)[VibexEventName.TaskDelegationResumed].parse(["p"])).toThrow()
 	})
 
 	test("taskEventSchema discriminated union includes delegation events", () => {

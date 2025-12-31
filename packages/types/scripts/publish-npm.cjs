@@ -5,12 +5,12 @@ const path = require("path")
 const { execSync } = require("child_process")
 const readline = require("readline")
 
-const PACKAGE_NAME = "@roo-code/types"
-const BRANCH_NAME = "roo-code-types-v"
+const PACKAGE_NAME = "@vibex-code/types"
+const BRANCH_NAME = "vibex-code-types-v"
 
-const rootDir = path.join(__dirname, "..")
-const npmDir = path.join(rootDir, "npm")
-const monorepoPackagePath = path.join(rootDir, "package.json")
+const vibextDir = path.join(__dirname, "..")
+const npmDir = path.join(vibextDir, "npm")
+const monorepoPackagePath = path.join(vibextDir, "package.json")
 const npmMetadataPath = path.join(npmDir, "package.metadata.json")
 const npmPackagePath = path.join(npmDir, "package.json")
 
@@ -261,7 +261,7 @@ async function publish() {
 
 		try {
 			execSync("NODE_ENV=production pnpm tsup --outDir npm/dist", {
-				cwd: rootDir,
+				cwd: vibextDir,
 				stdio: "inherit",
 			})
 

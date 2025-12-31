@@ -10,7 +10,7 @@ vi.mock("../../ripgrep", () => ({
 // Mock vscode
 vi.mock("vscode", () => ({
 	env: {
-		appRoot: "/mock/app/root",
+		appRoot: "/mock/app/vibext",
 	},
 }))
 
@@ -33,7 +33,7 @@ describe("list-files gitignore support", () => {
 		vi.clearAllMocks()
 
 		// Create a temporary directory for testing
-		tempDir = await fs.promises.mkdtemp(path.join(os.tmpdir(), "roo-test-"))
+		tempDir = await fs.promises.mkdtemp(path.join(os.tmpdir(), "vibex-test-"))
 		originalCwd = process.cwd()
 		process.chdir(tempDir)
 	})
@@ -104,7 +104,7 @@ describe("list-files gitignore support", () => {
 		await fs.promises.mkdir(path.join(tempDir, "src", "components"))
 		await fs.promises.mkdir(path.join(tempDir, "src", "temp"))
 
-		// Create root .gitignore
+		// Create vibext .gitignore
 		await fs.promises.writeFile(path.join(tempDir, ".gitignore"), "node_modules/\n")
 
 		// Create nested .gitignore in src/

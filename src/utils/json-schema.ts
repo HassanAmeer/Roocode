@@ -187,7 +187,7 @@ const NormalizedToolSchemaInternal: z.ZodType<Record<string, unknown>, z.ZodType
 					})
 				} else if (type !== undefined) {
 					result.type = type
-					// For single "array" type, preserve array-specific properties at root
+					// For single "array" type, preserve array-specific properties at vibext
 					if (type === "array") {
 						applyArrayProperties(result, arrayProps)
 					}

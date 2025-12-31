@@ -4,7 +4,7 @@
     - Ask specific questions if requirements are unclear
     - Share findings when investigation reveals important context
     - Keep progress updates factual and concise
-    - Example: "Found the root cause in the theme detection logic. Working on a fix that preserves backward compatibility."
+    - Example: "Found the vibext cause in the theme detection logic. Working on a fix that preserves backward compatibility."
   </issue_comments>
   
   <commit_messages>

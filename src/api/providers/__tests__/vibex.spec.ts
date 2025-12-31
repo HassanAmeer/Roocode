@@ -1,7 +1,7 @@
-// npx vitest run api/providers/__tests__/roo.spec.ts
+// npx vitest run api/providers/__tests__/vibex.spec.ts
 
 import { Anthropic } from "@anthropic-ai/sdk"
-import { rooDefaultModelId } from "@roo-code/types"
+import { vibexDefaultModelId } from "@vibex-code/types"
 
 import { ApiHandlerOptions } from "../../../shared/api"
 
@@ -61,7 +61,7 @@ const mockGetSessionTokenFn = vitest.fn()
 const mockHasInstanceFn = vitest.fn()
 const mockOnFn = vitest.fn()
 
-vitest.mock("@roo-code/cloud", () => ({
+vitest.mock("@vibex-code/cloud", () => ({
 	CloudService: {
 		hasInstance: () => mockHasInstanceFn(),
 		get instance() {
@@ -79,7 +79,7 @@ vitest.mock("@roo-code/cloud", () => ({
 // Mock i18n
 vitest.mock("../../../i18n", () => ({
 	t: vitest.fn((key: string) => {
-		if (key === "common:errors.roo.authenticationRequired") {
+		if (key === "common:errors.vibex.authenticationRequired") {
 			return "Authentication required for Vibex Cloud"
 		}
 		return key
@@ -91,7 +91,7 @@ vitest.mock("../../providers/fetchers/modelCache", () => ({
 	getModels: vitest.fn(),
 	flushModels: vitest.fn(),
 	getModelsFromCache: vitest.fn((provider: string) => {
-		if (provider === "roo") {
+		if (provider === "vibex") {
 			return {
 				"xai/grok-code-fast-1": {
 					maxTokens: 16_384,
@@ -131,7 +131,7 @@ vitest.mock("../../providers/fetchers/modelCache", () => ({
 
 // Import after mocks are set up
 import { VibeXHandler } from "../vibex"
-import { CloudService } from "@roo-code/cloud"
+import { CloudService } from "@vibex-code/cloud"
 
 describe("RooHandler", () => {
 	let handler: VibeXHandler
@@ -186,7 +186,7 @@ describe("RooHandler", () => {
 		it("should initialize with default model if no model specified", () => {
 			handler = new VibeXHandler({})
 			expect(handler).toBeInstanceOf(VibeXHandler)
-			expect(handler.getModel().id).toBe(rooDefaultModelId)
+			expect(handler.getModel().id).toBe(vibexDefaultModelId)
 		})
 
 		it("should pass correct configuration to base class", () => {
@@ -390,7 +390,7 @@ describe("RooHandler", () => {
 		it("should return default model when no model specified", () => {
 			const handlerWithoutModel = new VibeXHandler({})
 			const modelInfo = handlerWithoutModel.getModel()
-			expect(modelInfo.id).toBe(rooDefaultModelId)
+			expect(modelInfo.id).toBe(vibexDefaultModelId)
 			expect(modelInfo.info).toBeDefined()
 			// Models are loaded dynamically
 			expect(modelInfo.info.maxTokens).toBeDefined()
@@ -415,7 +415,7 @@ describe("RooHandler", () => {
 
 		it("should handle any model ID since models are loaded dynamically", () => {
 			// Test with various model IDs - they should all work since models are loaded dynamically
-			const testModelIds = ["xai/grok-code-fast-1", "roo/sonic", "deepseek/deepseek-chat-v3.1"]
+			const testModelIds = ["xai/grok-code-fast-1", "vibex/sonic", "deepseek/deepseek-chat-v3.1"]
 
 			for (const modelId of testModelIds) {
 				const handlerWithModel = new VibeXHandler({ apiModelId: modelId })

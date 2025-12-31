@@ -17,7 +17,7 @@ export const EXTERNAL_LINKS = {
 	PRIVACY_POLICY_EXTENSION: "https://github.com/VibexInc/Vibex/blob/main/PRIVACY.md",
 	INTEGRATIONS: "https://docs.vibex.com/community",
 	TUTORIALS: "https://docs.vibex.com/tutorial-videos",
-	MARKETPLACE: "https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-code-code",
+	MARKETPLACE: "https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.vibex-code-code",
 	SECURITY: "https://trust.vibex.com",
 	EVALS: "https://vibex.com/evals",
 	BLOG: "https://blog.vibex.com",

@@ -1,4 +1,4 @@
-import { McpResource, McpResourceTemplate } from "@roo-code/types"
+import { McpResource, McpResourceTemplate } from "@vibex-code/types"
 
 type McpResourceRowProps = {
 	item: McpResource | McpResourceTemplate

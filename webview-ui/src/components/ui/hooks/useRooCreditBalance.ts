@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import type { ExtensionMessage } from "@roo-code/types"
+import type { ExtensionMessage } from "@vibex-code/types"
 import { vscode } from "@src/utils/vscode"
 
 /**
@@ -13,12 +13,12 @@ export const useRooCreditBalance = () => {
 
 	useEffect(() => {
 		setIsLoading(true)
-		const requestId = `roo-balance-${Date.now()}`
+		const requestId = `vibex-balance-${Date.now()}`
 
 		const handleMessage = (event: MessageEvent) => {
 			const message: ExtensionMessage = event.data
 
-			if (message.type === "rooCreditBalance" && message.requestId === requestId) {
+			if (message.type === "vibexCreditBalance" && message.requestId === requestId) {
 				window.removeEventListener("message", handleMessage)
 				clearTimeout(timeout)
 

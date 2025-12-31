@@ -45,7 +45,7 @@ vi.mock("../../utils/path", () => {
 			// In tests, we need to return a consistent workspace path
 			// The actual workspace is /Users/vibex/rc2 in local, but varies in CI
 			const cwd = process.cwd()
-			// If we're in the src directory, go up one level to get workspace root
+			// If we're in the src directory, go up one level to get workspace vibext
 			if (cwd.endsWith("/src")) {
 				return nodePath.dirname(cwd)
 			}

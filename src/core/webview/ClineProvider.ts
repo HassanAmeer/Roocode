@@ -43,9 +43,9 @@ import {
 	DEFAULT_MODES,
 	DEFAULT_CHECKPOINT_TIMEOUT_SECONDS,
 	getModelId,
-} from "@roo-code/types"
-import { TelemetryService } from "@roo-code/telemetry"
-import { CloudService, BridgeOrchestrator, getRooCodeApiUrl } from "@roo-code/cloud"
+} from "@vibex-code/types"
+import { TelemetryService } from "@vibex-code/telemetry"
+import { CloudService, BridgeOrchestrator, getRooCodeApiUrl } from "@vibex-code/cloud"
 
 import { Package } from "../../shared/package"
 import { findLast } from "../../shared/array"
@@ -93,7 +93,7 @@ import { Task } from "../task/Task"
 import { getSystemPromptFilePath } from "../prompts/sections/custom-system-prompt"
 
 import { webviewMessageHandler } from "./webviewMessageHandler"
-import type { ClineMessage, TodoItem } from "@roo-code/types"
+import type { ClineMessage, TodoItem } from "@vibex-code/types"
 import { readApiMessages, saveApiMessages, saveTaskMessages } from "../task-persistence"
 import { readTaskMessages } from "../task-persistence/taskMessages"
 import { getNonce } from "./getNonce"
@@ -233,9 +233,9 @@ export class ClineProvider
 						}
 
 						const { historyItem } = await this.getTaskWithId(instance.taskId)
-						const rootTask = instance.rootTask
+						const vibextTask = instance.vibextTask
 						const parentTask = instance.parentTask
-						await this.createTaskWithHistoryItem({ ...historyItem, rootTask, parentTask })
+						await this.createTaskWithHistoryItem({ ...historyItem, vibextTask, parentTask })
 					}
 				} catch (error) {
 					this.log(
@@ -774,7 +774,7 @@ export class ClineProvider
 			setTtsSpeed(ttsSpeed ?? 1)
 		})
 
-		// Set up webview options with proper resource roots
+		// Set up webview options with proper resource vibexts
 		const resourceRoots = [this.contextProxy.extensionUri]
 
 		// Add workspace folders to allow access to workspace files
@@ -862,7 +862,7 @@ export class ClineProvider
 	}
 
 	public async createTaskWithHistoryItem(
-		historyItem: HistoryItem & { rootTask?: Task; parentTask?: Task },
+		historyItem: HistoryItem & { vibextTask?: Task; parentTask?: Task },
 		options?: { startTask?: boolean },
 	) {
 		// Check if we're rehydrating the current task to avoid flicker
@@ -937,7 +937,7 @@ export class ClineProvider
 			consecutiveMistakeLimit: apiConfiguration.consecutiveMistakeLimit,
 			historyItem,
 			experiments,
-			rootTask: historyItem.rootTask,
+			vibextTask: historyItem.vibextTask,
 			parentTask: historyItem.parentTask,
 			taskNumber: historyItem.number,
 			workspacePath: historyItem.workspace,
@@ -1133,7 +1133,7 @@ export class ClineProvider
 					<title>Vibex</title>
 				</head>
 				<body>
-					<div id="root"></div>
+					<div id="vibext"></div>
 					${reactRefresh}
 					<script type="module" src="${scriptUri}"></script>
 				</body>
@@ -1213,7 +1213,7 @@ export class ClineProvider
           </head>
           <body>
             <noscript>You need to enable JavaScript to run this app.</noscript>
-            <div id="root"></div>
+            <div id="vibext"></div>
             <script nonce="${nonce}" type="module" src="${scriptUri}"></script>
           </body>
         </html>
@@ -2034,7 +2034,7 @@ export class ClineProvider
 			enterBehavior: enterBehavior ?? "send",
 			cloudUserInfo,
 			cloudIsAuthenticated: cloudIsAuthenticated ?? false,
-			cloudAuthSkipModel: this.context.globalState.get<boolean>("roo-auth-skip-model") ?? false,
+			cloudAuthSkipModel: this.context.globalState.get<boolean>("vibex-auth-skip-model") ?? false,
 			cloudOrganizations,
 			sharingEnabled: sharingEnabled ?? false,
 			publicSharingEnabled: publicSharingEnabled ?? false,
@@ -2331,7 +2331,7 @@ export class ClineProvider
 				try {
 					const userSettings = CloudService.instance.getUserSettings()
 					const hasOrganization = cloudUserInfo?.organizationId != null
-					return hasOrganization || (userSettings?.features?.roomoteControlEnabled ?? false)
+					return hasOrganization || (userSettings?.features?.vibexmoteControlEnabled ?? false)
 				} catch (error) {
 					console.error(
 						`[getState] failed to get featureVibexRemoteControlEnabled: ${error instanceof Error ? error.message : String(error)}`,
@@ -2721,7 +2721,7 @@ export class ClineProvider
 			task: text,
 			images,
 			experiments,
-			rootTask: this.clineStack.length > 0 ? this.clineStack[0] : undefined,
+			vibextTask: this.clineStack.length > 0 ? this.clineStack[0] : undefined,
 			parentTask,
 			taskNumber: this.clineStack.length + 1,
 			onCreated: this.taskCreationCallback,
@@ -2750,8 +2750,8 @@ export class ClineProvider
 
 		const { historyItem, uiMessagesFilePath } = await this.getTaskWithId(task.taskId)
 
-		// Preserve parent and root task information for history item.
-		const rootTask = task.rootTask
+		// Preserve parent and vibext task information for history item.
+		const vibextTask = task.vibextTask
 		const parentTask = task.parentTask
 
 		// Mark this as a user-initiated cancellation so provider-only rehydration can occur
@@ -2807,7 +2807,7 @@ export class ClineProvider
 		}
 
 		// Clears task again, so we need to abortTask manually above.
-		await this.createTaskWithHistoryItem({ ...historyItem, rootTask, parentTask })
+		await this.createTaskWithHistoryItem({ ...historyItem, vibextTask, parentTask })
 	}
 
 	// Clear the current task without treating it as a subtask.

@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "हमसे बात करने की जरूरत है? लिखें"
 		},
-		"community": "सुझाव चाहिए या बस अन्य VibeX Code उपयोगकर्ताओं के साथ घूमना चाहते हैं? <redditLink>reddit.com/r/VibeX Code</redditLink> या <discordLink>discord.gg/roocode</discordLink> में शामिल हों",
+		"community": "सुझाव चाहिए या बस अन्य VibeX Code उपयोगकर्ताओं के साथ घूमना चाहते हैं? <redditLink>reddit.com/r/VibeX Code</redditLink> या <discordLink>discord.gg/vibexcode</discordLink> में शामिल हों",
 		"contactAndCommunity": "संपर्क और समुदाय",
 		"manageSettings": "सेटिंग्स प्रबंधित करें"
 	},
@@ -195,7 +195,7 @@
 			},
 			"protected": {
 				"label": "संरक्षित फाइलें शामिल करें",
-				"description": "VibeX Code को अनुमोदन की आवश्यकता के बिना संरक्षित फाइलें (.rooignore और .roo/ कॉन्फ़िगरेशन फाइलें जैसी) बनाने और संपादित करने की अनुमति दें।"
+				"description": "VibeX Code को अनुमोदन की आवश्यकता के बिना संरक्षित फाइलें (.vibexignore और .vibex/ कॉन्फ़िगरेशन फाइलें जैसी) बनाने और संपादित करने की अनुमति दें।"
 			}
 		},
 		"browser": {
@@ -437,7 +437,7 @@
 			"description": "कोई API कुंजी आवश्यक नहीं है, लेकिन उपयोगकर्ता को वेब चैट AI में जानकारी कॉपी और पेस्ट करने में मदद करनी होगी।",
 			"instructions": "उपयोग के दौरान, एक डायलॉग बॉक्स पॉप अप होगा और वर्तमान संदेश स्वचालित रूप से क्लिपबोर्ड पर कॉपी हो जाएगा। आपको इन्हें AI के वेब संस्करणों (जैसे ChatGPT या Claude) में पेस्ट करना होगा, फिर AI की प्रतिक्रिया को डायलॉग बॉक्स में वापस कॉपी करें और पुष्टि बटन पर क्लिक करें।"
 		},
-		"roo": {
+		"vibex": {
 			"authenticatedMessage": "आपके VibeX Code Cloud खाते के माध्यम से सुरक्षित रूप से प्रमाणित।",
 			"connectButton": "VibeX Code Cloud से कनेक्ट करें"
 		},
@@ -605,9 +605,9 @@
 			"label": "वर्कस्पेस फाइल संदर्भ सीमा",
 			"description": "वर्तमान कार्य निर्देशिका विवरण में शामिल करने के लिए फाइलों की अधिकतम संख्या। उच्च मान अधिक संदर्भ प्रदान करते हैं लेकिन token उपयोग बढ़ाते हैं।"
 		},
-		"rooignore": {
-			"label": "सूचियों और खोजों में .rooignore फाइलें दिखाएँ",
-			"description": "जब सक्षम होता है, .rooignore में पैटर्न से मेल खाने वाली फाइलें लॉक प्रतीक के साथ सूचियों में दिखाई जाएंगी। जब अक्षम होता है, ये फाइलें फाइल सूचियों और खोजों से पूरी तरह छिपा दी जाएंगी।"
+		"vibexignore": {
+			"label": "सूचियों और खोजों में .vibexignore फाइलें दिखाएँ",
+			"description": "जब सक्षम होता है, .vibexignore में पैटर्न से मेल खाने वाली फाइलें लॉक प्रतीक के साथ सूचियों में दिखाई जाएंगी। जब अक्षम होता है, ये फाइलें फाइल सूचियों और खोजों से पूरी तरह छिपा दी जाएंगी।"
 		},
 		"maxReadFile": {
 			"label": "फ़ाइल पढ़ने का स्वचालित काटने की सीमा",
@@ -828,9 +828,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "कस्टम टूल्स सक्षम करें",
-			"description": "सक्षम होने पर, VibeX Code आपके प्रोजेक्ट की .roo/tools निर्देशिका या वैश्विक टूल्स के लिए ~/.roo/tools से कस्टम TypeScript/JavaScript टूल्स लोड और उपयोग कर सकता है। नोट: ये टूल्स स्वचालित रूप से स्वत:-अनुमोदित होंगे।",
+			"description": "सक्षम होने पर, VibeX Code आपके प्रोजेक्ट की .vibex/tools निर्देशिका या वैश्विक टूल्स के लिए ~/.vibex/tools से कस्टम TypeScript/JavaScript टूल्स लोड और उपयोग कर सकता है। नोट: ये टूल्स स्वचालित रूप से स्वत:-अनुमोदित होंगे।",
 			"toolsHeader": "उपलब्ध कस्टम टूल्स",
-			"noTools": "कोई कस्टम टूल लोड नहीं हुआ। अपने प्रोजेक्ट की .roo/tools निर्देशिका या वैश्विक टूल्स के लिए ~/.roo/tools में .ts या .js फ़ाइलें जोड़ें।",
+			"noTools": "कोई कस्टम टूल लोड नहीं हुआ। अपने प्रोजेक्ट की .vibex/tools निर्देशिका या वैश्विक टूल्स के लिए ~/.vibex/tools में .ts या .js फ़ाइलें जोड़ें।",
 			"refreshButton": "रिफ्रेश करें",
 			"refreshing": "रिफ्रेश हो रहा है...",
 			"refreshSuccess": "टूल्स सफलतापूर्वक रिफ्रेश हुए",
@@ -878,7 +878,7 @@
 		"simplifiedExplanation": "आप बाद में विस्तृत मॉडल सेटिंग्स समायोजित कर सकते हैं।"
 	},
 	"footer": {
-		"feedback": "यदि आपके कोई प्रश्न या प्रतिक्रिया है, तो <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> पर एक मुद्दा खोलने या <redditLink>reddit.com/r/VibeX Code</redditLink> या <discordLink>discord.gg/roocode</discordLink> में शामिल होने में संकोच न करें",
+		"feedback": "यदि आपके कोई प्रश्न या प्रतिक्रिया है, तो <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> पर एक मुद्दा खोलने या <redditLink>reddit.com/r/VibeX Code</redditLink> या <discordLink>discord.gg/vibexcode</discordLink> में शामिल होने में संकोच न करें",
 		"telemetry": {
 			"label": "गुमनाम त्रुटि और उपयोग रिपोर्टिंग की अनुमति दें",
 			"description": "गुमनाम उपयोग डेटा और त्रुटि रिपोर्ट भेजकर VibeX Code को बेहतर बनाने में मदद करें। यह टेलीमेट्री कोड, प्रॉम्प्ट या व्यक्तिगत जानकारी एकत्र नहीं करती। अधिक विवरण के लिए हमारी <privacyLink>गोपनीयता नीति</privacyLink> देखें। आप इसे कभी भी बंद कर सकते हैं।"

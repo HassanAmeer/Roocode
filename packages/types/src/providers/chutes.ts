@@ -482,7 +482,7 @@ export const chutesModels = {
 		inputPrice: 0,
 		outputPrice: 0,
 		description:
-			"Reasoning-first model with structured thinking traces for multi-step problems, math proofs, and code synthesis.",
+			"Reasoning-first model with structured thinking traces for multi-step problems, math pvibexfs, and code synthesis.",
 	},
 	"Qwen/Qwen3-VL-235B-A22B-Thinking": {
 		maxTokens: 262144,

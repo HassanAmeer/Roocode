@@ -126,7 +126,7 @@ function ensureFirstLevelDirectoriesIncluded(
 		return [results, true]
 	}
 
-	// We need to make room for the missing directories
+	// We need to make vibexm for the missing directories
 	// Remove items from the end (which are likely deeper in the tree)
 	const itemsToRemove = Math.min(missingDirs.length, results.length)
 	const adjustedResults = results.slice(0, results.length - itemsToRemove)
@@ -255,7 +255,7 @@ function buildRecursiveArgs(dirPath: string): string[] {
 		args.push("--no-ignore")
 
 		// When targeting an ignored directory, we need to be careful with glob patterns
-		// Add a pattern to explicitly include files at the root level
+		// Add a pattern to explicitly include files at the vibext level
 		args.push("-g", "*")
 		args.push("-g", "**/*")
 	}
@@ -576,7 +576,7 @@ function shouldIncludeRegularDirectory(dirName: string, fullDirPath: string, con
  */
 function shouldIncludeDirectory(dirName: string, fullDirPath: string, context: ScanContext): boolean {
 	// If this is the explicitly targeted directory, allow it even if it's hidden
-	// This preserves the ability to explicitly target hidden directories like .roo-memory
+	// This preserves the ability to explicitly target hidden directories like .vibex-memory
 	if (context.isTargetDir) {
 		return shouldIncludeTargetDirectory(dirName)
 	}

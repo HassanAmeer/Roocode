@@ -1,4 +1,4 @@
-import { ToolProtocol } from "@roo-code/types"
+import { ToolProtocol } from "@vibex-code/types"
 
 /**
  * Settings passed to system prompt generation functions

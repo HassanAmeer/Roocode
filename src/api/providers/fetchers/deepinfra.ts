@@ -1,7 +1,7 @@
 import axios from "axios"
 import { z } from "zod"
 
-import { type ModelInfo } from "@roo-code/types"
+import { type ModelInfo } from "@vibex-code/types"
 
 import { DEFAULT_HEADERS } from "../constants"
 
@@ -12,7 +12,7 @@ const DeepInfraModelSchema = z.object({
 	object: z.literal("model").optional(),
 	owned_by: z.string().optional(),
 	created: z.number().optional(),
-	root: z.string().optional(),
+	vibext: z.string().optional(),
 	metadata: z
 		.object({
 			description: z.string().optional(),

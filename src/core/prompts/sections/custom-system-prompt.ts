@@ -46,11 +46,11 @@ async function safeReadFile(filePath: string): Promise<string> {
  * Get the path to a system prompt file for a specific mode
  */
 export function getSystemPromptFilePath(cwd: string, mode: Mode): string {
-	return path.join(cwd, ".roo", `system-prompt-${mode}`)
+	return path.join(cwd, ".vibex", `system-prompt-${mode}`)
 }
 
 /**
- * Loads custom system prompt from a file at .roo/system-prompt-[mode slug]
+ * Loads custom system prompt from a file at .vibex/system-prompt-[mode slug]
  * If the file doesn't exist, returns an empty string
  */
 export async function loadSystemPromptFile(cwd: string, mode: Mode, variables: PromptVariables): Promise<string> {
@@ -67,16 +67,16 @@ export async function loadSystemPromptFile(cwd: string, mode: Mode, variables: P
  * Ensures the .vibex directory exists, creating it if necessary
  */
 export async function ensureRooDirectory(cwd: string): Promise<void> {
-	const rooDir = path.join(cwd, ".roo")
+	const vibexDir = path.join(cwd, ".vibex")
 
 	// Check if directory already exists
-	if (await fileExistsAtPath(rooDir)) {
+	if (await fileExistsAtPath(vibexDir)) {
 		return
 	}
 
 	// Create the directory
 	try {
-		await fs.mkdir(rooDir, { recursive: true })
+		await fs.mkdir(vibexDir, { recursive: true })
 	} catch (err) {
 		// If directory already exists (race condition), ignore the error
 		const errorCode = (err as NodeJS.ErrnoException).code

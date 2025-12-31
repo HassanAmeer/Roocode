@@ -38,8 +38,8 @@ export class VibexIgnoreController {
 	 * Set up the file watcher for .vibexignore changes
 	 */
 	private setupFileWatcher(): void {
-		const rooignorePattern = new vscode.RelativePattern(this.cwd, ".vibexignore")
-		const fileWatcher = vscode.workspace.createFileSystemWatcher(rooignorePattern)
+		const vibexignorePattern = new vscode.RelativePattern(this.cwd, ".vibexignore")
+		const fileWatcher = vscode.workspace.createFileSystemWatcher(vibexignorePattern)
 
 		// Watch for changes and updates
 		this.disposables.push(
@@ -208,6 +208,6 @@ export class VibexIgnoreController {
 			return undefined
 		}
 
-		return `# .vibexignore\n\n(The following is provided by a root-level .vibexignore file where the user has specified files and directories that should not be accessed. When using list_files, you'll notice a ${LOCK_TEXT_SYMBOL} next to files that are blocked. Attempting to access the file's contents e.g. through read_file will result in an error.)\n\n${this.vibexIgnoreContent}\n.vibexignore`
+		return `# .vibexignore\n\n(The following is provided by a vibext-level .vibexignore file where the user has specified files and directories that should not be accessed. When using list_files, you'll notice a ${LOCK_TEXT_SYMBOL} next to files that are blocked. Attempting to access the file's contents e.g. through read_file will result in an error.)\n\n${this.vibexIgnoreContent}\n.vibexignore`
 	}
 }

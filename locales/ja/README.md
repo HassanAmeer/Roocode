@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline"><img src="https://img.shields.io/badge/VS_Code_Marketplace-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code Marketplace"></a>
-  <a href="https://x.com/roocode"><img src="https://img.shields.io/badge/roocode-000000?style=flat&logo=x&logoColor=white" alt="X"></a>
-  <a href="https://youtube.com/@roocodeyt?feature=shared"><img src="https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white" alt="YouTube"></a>
-  <a href="https://discord.gg/roocode"><img src="https://img.shields.io/badge/Join%20Discord-5865F2?style=flat&logo=discord&logoColor=white" alt="Join Discord"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.vibex-cline"><img src="https://img.shields.io/badge/VS_Code_Marketplace-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code Marketplace"></a>
+  <a href="https://x.com/vibexcode"><img src="https://img.shields.io/badge/vibexcode-000000?style=flat&logo=x&logoColor=white" alt="X"></a>
+  <a href="https://youtube.com/@vibexcodeyt?feature=shared"><img src="https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white" alt="YouTube"></a>
+  <a href="https://discord.gg/vibexcode"><img src="https://img.shields.io/badge/Join%20Discord-5865F2?style=flat&logo=discord&logoColor=white" alt="Join Discord"></a>
   <a href="https://www.reddit.com/r/RooCode/"><img src="https://img.shields.io/badge/Join%20r%2FRooCode-FF4500?style=flat&logo=reddit&logoColor=white" alt="Join r/RooCode"></a>
 </p>
 <p align="center">
-  <em>すぐに助けを得る → <a href="https://discord.gg/roocode">Discordに参加</a> • 非同期を好む？ → <a href="https://www.reddit.com/r/RooCode/">r/RooCodeに参加</a></em>
+  <em>すぐに助けを得る → <a href="https://discord.gg/vibexcode">Discordに参加</a> • 非同期を好む？ → <a href="https://www.reddit.com/r/RooCode/">r/RooCodeに参加</a></em>
 </p>
 
 # VibeX Code
@@ -35,7 +35,7 @@
 - [简体中文](../zh-CN/README.md)
 - [繁體中文](../zh-TW/README.md)
 - ...
-      </details>
+  </details>
 
 ---
 
@@ -60,7 +60,7 @@ VibeX Codeは、あなたの働き方に合わせるように適応します。
 - カスタムモード：チームやワークフローに特化したモードの構築
 - VibeXmote Control: VibeXmote Control はローカルの VS Code で実行中のタスクをリモート操作できます。
 
-詳しくは: [モードの使い方](https://docs.roocode.com/basic-usage/using-modes) • [カスタムモード](https://docs.roocode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.roocode.com/roo-code-cloud/roomote-control)
+詳しくは: [モードの使い方](https://docs.vibexcode.com/basic-usage/using-modes) • [カスタムモード](https://docs.vibexcode.com/advanced-usage/custom-modes) • [Roomote Control](https://docs.vibexcode.com/vibex-code-cloud/vibexmote-control)
 
 ## チュートリアルと機能のビデオ
 
@@ -73,14 +73,14 @@ VibeX Codeは、あなたの働き方に合わせるように適応します。
 
 </div>
 <p align="center">
-<a href="https://docs.roocode.com/tutorial-videos">その他のクイックチュートリアルと機能のビデオ...</a>
+<a href="https://docs.vibexcode.com/tutorial-videos">その他のクイックチュートリアルと機能のビデオ...</a>
 </p>
 
 ## リソース
 
-- **[ドキュメント](https://docs.roocode.com):** VibeX Codeのインストール、設定、習熟のための公式ガイド。
-- **[YouTubeチャンネル](https://youtube.com/@roocodeyt?feature=shared):** チュートリアルを見て、実際の機能を確認できます。
-- **[Discordサーバー](https://discord.gg/roocode):** コミュニティに参加して、リアルタイムのヘルプやディスカッションに参加できます。
+- **[ドキュメント](https://docs.vibexcode.com):** VibeX Codeのインストール、設定、習熟のための公式ガイド。
+- **[YouTubeチャンネル](https://youtube.com/@vibexcodeyt?feature=shared):** チュートリアルを見て、実際の機能を確認できます。
+- **[Discordサーバー](https://discord.gg/vibexcode):** コミュニティに参加して、リアルタイムのヘルプやディスカッションに参加できます。
 - **[Redditコミュニティ](https://www.reddit.com/r/RooCode):** あなたの経験を共有し、他の人が何を構築しているかを見ることができます。
 - **[GitHub Issues](https://github.com/RooCodeInc/Roo-Code/issues):** バグを報告し、開発を追跡します。
 - **[機能リクエスト](https://github.com/RooCodeInc/Roo-Code/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop):** アイデアがありますか？開発者と共有してください。
@@ -143,10 +143,10 @@ VSIXパッケージを手動でインストールしたい場合：
     ```sh
     pnpm vsix
     ```
-2.  `.vsix`ファイルが`bin/`ディレクトリに生成されます（例：`bin/roo-cline-<version>.vsix`）。
+2.  `.vsix`ファイルが`bin/`ディレクトリに生成されます（例：`bin/vibex-cline-<version>.vsix`）。
 3.  VSCode CLIを使用して手動でインストールします：
     ```sh
-    code --install-extension bin/roo-cline-<version>.vsix
+    code --install-extension bin/vibex-cline-<version>.vsix
     ```
 
 ---
@@ -173,4 +173,4 @@ VSIXパッケージを手動でインストールしたい場合：
 
 ---
 
-**VibeX Codeをお楽しみください！** 手綱を短く持って使うか、自律的に歩き回らせるかにかかわらず、あなたが何を構築するか楽しみにしています。質問や機能のアイデアがあれば、私たちの[Redditコミュニティ](https://www.reddit.com/r/RooCode/)または[Discord](https://discord.gg/roocode)にお立ち寄りください。ハッピーコーディング！
+**VibeX Codeをお楽しみください！** 手綱を短く持って使うか、自律的に歩き回らせるかにかかわらず、あなたが何を構築するか楽しみにしています。質問や機能のアイデアがあれば、私たちの[Redditコミュニティ](https://www.reddit.com/r/RooCode/)または[Discord](https://discord.gg/vibexcode)にお立ち寄りください。ハッピーコーディング！

@@ -6,13 +6,13 @@ import type { ModelInfo } from "../model.js"
  * Vibex Cloud is a dynamic provider - models are loaded from the /v1/models API endpoint.
  * Default model ID used as fallback when no model is specified.
  */
-export const rooDefaultModelId = "xai/grok-code-fast-1"
+export const vibexDefaultModelId = "xai/grok-code-fast-1"
 
 /**
  * Empty models object maintained for type compatibility.
  * All model data comes dynamically from the API.
  */
-export const rooModels = {} as const satisfies Record<string, ModelInfo>
+export const vibexModels = {} as const satisfies Record<string, ModelInfo>
 
 /**
  * Vibex Cloud API response schemas

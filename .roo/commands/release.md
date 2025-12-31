@@ -12,7 +12,7 @@ mode: code
 
 ```
 ---
-"roo-cline": patch|minor|major
+"vibex-cline": patch|minor|major
 ---
 [list of changes]
 ```

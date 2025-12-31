@@ -1,4 +1,4 @@
-// npx vitest core/prompts/__tests__/responses-rooignore.spec.ts
+// npx vitest core/prompts/__tests__/responses-vibexignore.spec.ts
 
 import type { Mock } from "vitest"
 
@@ -52,7 +52,9 @@ describe("RooIgnore Response Formatting", () => {
 			const errorMessage = formatResponse.vibexIgnoreError("secrets/api-keys.json")
 
 			// Verify error message format
-			expect(errorMessage).toContain("Access to secrets/api-keys.json is blocked by the .vibexignore file settings")
+			expect(errorMessage).toContain(
+				"Access to secrets/api-keys.json is blocked by the .vibexignore file settings",
+			)
 			expect(errorMessage).toContain("continue in the task without using this file")
 			expect(errorMessage).toContain("ask the user to update the .vibexignore file")
 		})
@@ -73,7 +75,7 @@ describe("RooIgnore Response Formatting", () => {
 
 	describe("formatResponse.formatFilesList with VibexIgnoreController", () => {
 		/**
-		 * Tests file listing with rooignore controller
+		 * Tests file listing with vibexignore controller
 		 */
 		it("should format files list with lock symbols for ignored files", async () => {
 			// Create controller

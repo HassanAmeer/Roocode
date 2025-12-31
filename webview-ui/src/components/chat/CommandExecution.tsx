@@ -3,13 +3,13 @@ import { useEvent } from "react-use"
 import { t } from "i18next"
 import { ChevronDown, OctagonX } from "lucide-react"
 
-import { CommandExecutionStatus, commandExecutionStatusSchema } from "@roo-code/types"
+import { CommandExecutionStatus, commandExecutionStatusSchema } from "@vibex-code/types"
 
-import { ExtensionMessage } from "@roo-code/types"
-import { safeJsonParse } from "@roo/safeJsonParse"
+import { ExtensionMessage } from "@vibex-code/types"
+import { safeJsonParse } from "@vibex/safeJsonParse"
 
-import { COMMAND_OUTPUT_STRING } from "@roo/combineCommandSequences"
-import { parseCommand } from "@roo/parse-command"
+import { COMMAND_OUTPUT_STRING } from "@vibex/combineCommandSequences"
+import { parseCommand } from "@vibex/parse-command"
 
 import { vscode } from "@src/utils/vscode"
 import { extractPatternsFromCommand } from "@src/utils/command-parser"

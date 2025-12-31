@@ -25,7 +25,7 @@ interface AutoApproveDropdownProps {
 
 export const AutoApproveDropdown = ({ disabled = false, triggerClassName = "" }: AutoApproveDropdownProps) => {
 	const [open, setOpen] = React.useState(false)
-	const portalContainer = useRooPortal("roo-portal")
+	const portalContainer = useRooPortal("vibex-portal")
 	const { t } = useAppTranslation()
 
 	const {
@@ -150,7 +150,7 @@ export const AutoApproveDropdown = ({ disabled = false, triggerClassName = "" }:
 				})
 
 	return (
-		<Popover open={open} onOpenChange={setOpen} data-testid="auto-approve-dropdown-root">
+		<Popover open={open} onOpenChange={setOpen} data-testid="auto-approve-dropdown-vibext">
 			<StandardTooltip content={tooltipText}>
 				<PopoverTrigger
 					disabled={disabled}

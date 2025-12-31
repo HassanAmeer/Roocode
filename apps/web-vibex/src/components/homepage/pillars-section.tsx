@@ -67,7 +67,7 @@ export function PillarsSection() {
 							</div>
 							<div>
 								<h3 className="text-2xl font-bold mb-1">Model-agnostic by design</h3>
-								<h4 className="font-semibold text-lg">Flexible and future-proof.</h4>
+								<h4 className="font-semibold text-lg">Flexible and future-pvibexf.</h4>
 								<div className="text-muted-foreground my-4 space-y-1">
 									<p>
 										&quot;The best model in the world&quot; changes every other week. Providers

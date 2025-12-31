@@ -118,9 +118,10 @@
 			"serverError": "Cerebras API server error ({{status}}). Please try again later.",
 			"genericError": "Cerebras API Error ({{status}}): {{message}}",
 			"noResponseBody": "Cerebras API Error: No response body",
-			"completionError": "Cerebras completion error: {{error}}"
+			"completionError": "Cerebras completion error: {{error}}",
+			"tokenLimitExceeded": "Message length exceeds model's limits. The system automatically truncated older messages to fit within the {{limit}} token limit. If you continue to see this error, try using a model with a larger context window."
 		},
-		"roo": {
+		"vibex": {
 			"authenticationRequired": "VibeX Code provider requires cloud authentication. Please sign in to VibeX Code Cloud."
 		},
 		"api": {
@@ -186,8 +187,8 @@
 	},
 	"customModes": {
 		"errors": {
-			"yamlParseError": "Invalid YAML in .roomodes file at line {{line}}. Please check for:\n• Proper indentation (use spaces, not tabs)\n• Matching quotes and brackets\n• Valid YAML syntax",
-			"schemaValidationError": "Invalid custom modes format in .roomodes:\n{{issues}}",
+			"yamlParseError": "Invalid YAML in .vibexmodes file at line {{line}}. Please check for:\n• Proper indentation (use spaces, not tabs)\n• Matching quotes and brackets\n• Valid YAML syntax",
+			"schemaValidationError": "Invalid custom modes format in .vibexmodes:\n{{issues}}",
 			"invalidFormat": "Invalid custom modes format. Please ensure your settings follow the correct YAML format.",
 			"updateFailed": "Failed to update custom mode: {{error}}",
 			"deleteFailed": "Failed to delete custom mode: {{error}}",

@@ -8,8 +8,8 @@ import {
 	type TodoItem,
 	getEffectiveProtocol,
 	isNativeProtocol,
-} from "@roo-code/types"
-import { customToolRegistry, formatXml } from "@roo-code/core"
+} from "@vibex-code/types"
+import { customToolRegistry, formatXml } from "@vibex-code/core"
 
 import { Mode, modes, defaultModeSlug, getModeBySlug, getGroupName, getModeSelection } from "../../shared/modes"
 import { DiffStrategy } from "../../shared/tools"

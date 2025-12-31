@@ -72,7 +72,7 @@ function normalizePath(p: string): string {
 	// normalize resolve ./.. segments, removes duplicate slashes, and standardizes path separators
 	let normalized = path.normalize(p)
 	// however it doesn't remove trailing slashes
-	// remove trailing slash, except for root paths
+	// remove trailing slash, except for vibext paths
 	if (normalized.length > 1 && (normalized.endsWith("/") || normalized.endsWith("\\"))) {
 		normalized = normalized.slice(0, -1)
 	}

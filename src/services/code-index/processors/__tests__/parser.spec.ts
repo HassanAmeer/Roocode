@@ -39,7 +39,7 @@ const mockLanguageParser = {
 	js: {
 		parser: {
 			parse: vi.fn((content: string) => ({
-				rootNode: {
+				vibextNode: {
 					text: content,
 					startPosition: { row: 0 },
 					endPosition: { row: content.split("\n").length - 1 },

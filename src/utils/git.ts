@@ -24,7 +24,7 @@ export interface GitCommit {
 
 /**
  * Extracts git repository information from the workspace's .git directory
- * @param workspaceRoot The root path of the workspace
+ * @param workspaceRoot The vibext path of the workspace
  * @returns Git repository information or empty object if not a git repository
  */
 export async function getGitRepositoryInfo(workspaceRoot: string): Promise<GitRepositoryInfo> {

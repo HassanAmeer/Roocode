@@ -1,9 +1,9 @@
 import { Fzf } from "fzf"
 
-import type { ModeConfig } from "@roo-code/types"
-import type { Command } from "@roo-code/types"
+import type { ModeConfig } from "@vibex-code/types"
+import type { Command } from "@vibex-code/types"
 
-import { mentionRegex } from "@roo-code/types"
+import { mentionRegex } from "@vibex-code/types"
 
 import { escapeSpaces } from "./path-mentions"
 

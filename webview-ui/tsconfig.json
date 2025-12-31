@@ -1,14 +1,8 @@
 {
 	"compilerOptions": {
-		"types": [
-			"vitest/globals"
-		],
+		"types": ["vitest/globals"],
 		"target": "ES2022",
-		"lib": [
-			"dom",
-			"dom.iterable",
-			"esnext"
-		],
+		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
 		"skipLibCheck": true,
 		"esModuleInterop": true,
@@ -26,20 +20,10 @@
 		"jsx": "react-jsx",
 		"baseUrl": ".",
 		"paths": {
-			"@/*": [
-				"./src/*"
-			],
-			"@src/*": [
-				"./src/*"
-			],
-			"@roo/*": [
-				"../src/shared/*"
-			]
+			"@/*": ["./src/*"],
+			"@src/*": ["./src/*"],
+			"@vibex/*": ["../src/shared/*"]
 		}
 	},
-	"include": [
-		"src",
-		"../src/shared",
-		"vitest.setup.ts"
-	]
+	"include": ["src", "../src/shared", "vitest.setup.ts"]
 }

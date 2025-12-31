@@ -53,7 +53,7 @@
 		"contact": {
 			"label": "Cần nói chuyện với chúng tôi? Viết"
 		},
-		"community": "Muốn nhận mẹo hoặc chỉ muốn giao lưu với những người dùng VibeX Code khác? Tham gia <redditLink>reddit.com/r/VibeX Code</redditLink> hoặc <discordLink>discord.gg/roocode</discordLink>",
+		"community": "Muốn nhận mẹo hoặc chỉ muốn giao lưu với những người dùng VibeX Code khác? Tham gia <redditLink>reddit.com/r/VibeX Code</redditLink> hoặc <discordLink>discord.gg/vibexcode</discordLink>",
 		"contactAndCommunity": "Liên Hệ & Cộng Đồng",
 		"manageSettings": "Quản Lý Cài Đặt"
 	},
@@ -195,7 +195,7 @@
 			},
 			"protected": {
 				"label": "Bao gồm các tệp được bảo vệ",
-				"description": "Cho phép VibeX Code tạo và chỉnh sửa các tệp được bảo vệ (như .rooignore và các tệp cấu hình .roo/) mà không yêu cầu phê duyệt."
+				"description": "Cho phép VibeX Code tạo và chỉnh sửa các tệp được bảo vệ (như .vibexignore và các tệp cấu hình .vibex/) mà không yêu cầu phê duyệt."
 			}
 		},
 		"browser": {
@@ -437,7 +437,7 @@
 			"description": "Không cần khóa API, nhưng người dùng cần giúp sao chép và dán thông tin vào AI trò chuyện web.",
 			"instructions": "Trong quá trình sử dụng, một hộp thoại sẽ xuất hiện và tin nhắn hiện tại sẽ được tự động sao chép vào clipboard. Bạn cần dán chúng vào các phiên bản web của AI (như ChatGPT hoặc Claude), sau đó sao chép phản hồi của AI trở lại hộp thoại và nhấp vào nút xác nhận."
 		},
-		"roo": {
+		"vibex": {
 			"authenticatedMessage": "Đã xác thực an toàn thông qua tài khoản VibeX Code Cloud của bạn.",
 			"connectButton": "Kết nối với VibeX Code Cloud"
 		},
@@ -605,9 +605,9 @@
 			"label": "Giới hạn ngữ cảnh tệp workspace",
 			"description": "Số lượng tệp tối đa để đưa vào chi tiết thư mục làm việc hiện tại. Giá trị cao hơn cung cấp nhiều ngữ cảnh hơn nhưng tăng sử dụng token."
 		},
-		"rooignore": {
-			"label": "Hiển thị tệp .rooignore trong danh sách và tìm kiếm",
-			"description": "Khi được bật, các tệp khớp với mẫu trong .rooignore sẽ được hiển thị trong danh sách với biểu tượng khóa. Khi bị tắt, các tệp này sẽ hoàn toàn bị ẩn khỏi danh sách tệp và tìm kiếm."
+		"vibexignore": {
+			"label": "Hiển thị tệp .vibexignore trong danh sách và tìm kiếm",
+			"description": "Khi được bật, các tệp khớp với mẫu trong .vibexignore sẽ được hiển thị trong danh sách với biểu tượng khóa. Khi bị tắt, các tệp này sẽ hoàn toàn bị ẩn khỏi danh sách tệp và tìm kiếm."
 		},
 		"maxReadFile": {
 			"label": "Ngưỡng tự động cắt ngắn khi đọc tệp",
@@ -828,9 +828,9 @@
 		},
 		"CUSTOM_TOOLS": {
 			"name": "Bật công cụ tùy chỉnh",
-			"description": "Khi được bật, VibeX Code có thể tải và sử dụng các công cụ TypeScript/JavaScript tùy chỉnh từ thư mục .roo/tools của dự án hoặc ~/.roo/tools cho các công cụ toàn cục. Lưu ý: các công cụ này sẽ được tự động phê duyệt.",
+			"description": "Khi được bật, VibeX Code có thể tải và sử dụng các công cụ TypeScript/JavaScript tùy chỉnh từ thư mục .vibex/tools của dự án hoặc ~/.vibex/tools cho các công cụ toàn cục. Lưu ý: các công cụ này sẽ được tự động phê duyệt.",
 			"toolsHeader": "Công cụ tùy chỉnh có sẵn",
-			"noTools": "Không có công cụ tùy chỉnh nào được tải. Thêm tệp .ts hoặc .js vào thư mục .roo/tools của dự án hoặc ~/.roo/tools cho các công cụ toàn cục.",
+			"noTools": "Không có công cụ tùy chỉnh nào được tải. Thêm tệp .ts hoặc .js vào thư mục .vibex/tools của dự án hoặc ~/.vibex/tools cho các công cụ toàn cục.",
 			"refreshButton": "Làm mới",
 			"refreshing": "Đang làm mới...",
 			"refreshSuccess": "Làm mới công cụ thành công",
@@ -878,7 +878,7 @@
 		"simplifiedExplanation": "Bạn có thể điều chỉnh cài đặt mô hình chi tiết sau."
 	},
 	"footer": {
-		"feedback": "Nếu bạn có bất kỳ câu hỏi hoặc phản hồi nào, vui lòng mở một vấn đề tại <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> hoặc tham gia <redditLink>reddit.com/r/VibeX Code</redditLink> hoặc <discordLink>discord.gg/roocode</discordLink>",
+		"feedback": "Nếu bạn có bất kỳ câu hỏi hoặc phản hồi nào, vui lòng mở một vấn đề tại <githubLink>github.com/VibeX CodeInc/VibeX Code-Code</githubLink> hoặc tham gia <redditLink>reddit.com/r/VibeX Code</redditLink> hoặc <discordLink>discord.gg/vibexcode</discordLink>",
 		"telemetry": {
 			"label": "Cho phép báo cáo lỗi và sử dụng ẩn danh",
 			"description": "Giúp cải thiện VibeX Code bằng cách gửi dữ liệu sử dụng ẩn danh và báo cáo lỗi. Telemetry này không thu thập mã, prompt hoặc thông tin cá nhân. Xem <privacyLink>chính sách bảo mật</privacyLink> của chúng tôi để biết thêm chi tiết. Bạn có thể tắt tính năng này bất cứ lúc nào."

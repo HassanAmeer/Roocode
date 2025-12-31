@@ -28,7 +28,7 @@ export async function injectEnv<C extends InjectableConfigType>(config: C, notFo
  *
  * Does not mutate original object
  *
- * There is a special handling for a nested (record-type) variables, where it is replaced by `propNotFoundValue` (if available) if the root key exists but the nested key does not.
+ * There is a special handling for a nested (record-type) variables, where it is replaced by `propNotFoundValue` (if available) if the vibext key exists but the nested key does not.
  *
  * Matched keys that have `null` | `undefined` values are treated as not found.
  */

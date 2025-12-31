@@ -24,7 +24,7 @@
 		"invalidImageData": "Dados de imagem inválidos na resposta",
 		"invalidImageFormat": "Formato de imagem inválido recebido",
 		"unknownError": "Ocorreu um erro desconhecido",
-		"roo": {
+		"vibex": {
 			"authRequired": "A autenticação do VibeX Code Cloud é necessária para geração de imagens. Faça login no VibeX Code Cloud."
 		}
 	}

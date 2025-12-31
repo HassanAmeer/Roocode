@@ -8,6 +8,8 @@ export const cerebrasDefaultModelId: CerebrasModelId = "gpt-oss-120b"
 export const cerebrasModels = {
 	"llama3.1-8b": {
 		maxTokens: 8192,
+		maxInputTokens: 6144, // Reserve 2048 tokens for output
+		maxOutputTokens: 2048,
 		contextWindow: 8192,
 		supportsImages: false,
 		supportsPromptCache: false,
@@ -19,6 +21,8 @@ export const cerebrasModels = {
 	},
 	"llama3.1-70b": {
 		maxTokens: 8192,
+		maxInputTokens: 6144, // Reserve 2048 tokens for output
+		maxOutputTokens: 2048,
 		contextWindow: 8192,
 		supportsImages: false,
 		supportsPromptCache: false,
@@ -30,6 +34,8 @@ export const cerebrasModels = {
 	},
 	"zai-glm-4.6": {
 		maxTokens: 8192, // Conservative default to avoid premature rate limiting (Cerebras reserves quota upfront)
+		maxInputTokens: 120000, // Reserve room for output in the 131K context
+		maxOutputTokens: 8192,
 		contextWindow: 131072,
 		supportsImages: false,
 		supportsPromptCache: false,
@@ -41,6 +47,8 @@ export const cerebrasModels = {
 	},
 	"qwen-3-235b-a22b-instruct-2507": {
 		maxTokens: 8192, // Conservative default to avoid premature rate limiting
+		maxInputTokens: 55000, // Reserve room for output in the 64K context
+		maxOutputTokens: 8192,
 		contextWindow: 64000,
 		supportsImages: false,
 		supportsPromptCache: false,
@@ -52,6 +60,8 @@ export const cerebrasModels = {
 	},
 	"llama-3.3-70b": {
 		maxTokens: 8192, // Conservative default to avoid premature rate limiting
+		maxInputTokens: 55000, // Reserve room for output in the 64K context
+		maxOutputTokens: 8192,
 		contextWindow: 64000,
 		supportsImages: false,
 		supportsPromptCache: false,
@@ -63,6 +73,8 @@ export const cerebrasModels = {
 	},
 	"qwen-3-32b": {
 		maxTokens: 8192, // Conservative default to avoid premature rate limiting
+		maxInputTokens: 55000, // Reserve room for output in the 64K context
+		maxOutputTokens: 8192,
 		contextWindow: 64000,
 		supportsImages: false,
 		supportsPromptCache: false,
@@ -74,6 +86,8 @@ export const cerebrasModels = {
 	},
 	"gpt-oss-120b": {
 		maxTokens: 8192, // Conservative default to avoid premature rate limiting
+		maxInputTokens: 55000, // Reserve room for output in the 64K context
+		maxOutputTokens: 8192,
 		contextWindow: 64000,
 		supportsImages: false,
 		supportsPromptCache: false,

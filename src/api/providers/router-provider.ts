@@ -1,6 +1,6 @@
 import OpenAI from "openai"
 
-import { type ModelInfo, NATIVE_TOOL_DEFAULTS } from "@roo-code/types"
+import { type ModelInfo, NATIVE_TOOL_DEFAULTS } from "@vibex-code/types"
 
 import { ApiHandlerOptions, RouterName, ModelRecord } from "../../shared/api"
 

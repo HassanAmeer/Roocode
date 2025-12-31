@@ -10,9 +10,9 @@ import {
 	type OrganizationAllowList,
 	azureOpenAiDefaultApiVersion,
 	openAiModelInfoSaneDefaults,
-} from "@roo-code/types"
+} from "@vibex-code/types"
 
-import { ExtensionMessage } from "@roo-code/types"
+import { ExtensionMessage } from "@vibex-code/types"
 
 import { useAppTranslation } from "@src/i18n/TranslationContext"
 import { Button, StandardTooltip } from "@src/components/ui"

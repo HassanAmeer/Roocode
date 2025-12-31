@@ -80,7 +80,7 @@ describe("Path Mentions Utilities", () => {
 		})
 
 		it("should add leading slash if missing after cwd removal", () => {
-			const absPath = "/Users/test/projectfile.txt" // Edge case: file directly in project root
+			const absPath = "/Users/test/projectfile.txt" // Edge case: file directly in project vibext
 			const cwd = "/Users/test/project"
 			expect(convertToMentionPath(absPath, cwd)).toBe("@/file.txt") // Should still add '/'
 		})

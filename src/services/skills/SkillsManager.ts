@@ -4,8 +4,8 @@ import * as vscode from "vscode"
 import matter from "gray-matter"
 
 import type { ClineProvider } from "../../core/webview/ClineProvider"
-import { getGlobalRooDirectory } from "../roo-config"
-import { directoryExists, fileExists } from "../roo-config"
+import { getGlobalVibexDirectory } from "../vibex-config"
+import { directoryExists, fileExists } from "../vibex-config"
 import { SkillMetadata, SkillContent } from "../../shared/skills"
 import { modes, getAllModes } from "../../shared/modes"
 
@@ -31,8 +31,8 @@ export class SkillsManager {
 	 * Discover all skills from global and project directories.
 	 * Supports both generic skills (skills/) and mode-specific skills (skills-{mode}/).
 	 * Also supports symlinks:
-	 * - .roo/skills can be a symlink to a directory containing skill subdirectories
-	 * - .roo/skills/[dirname] can be a symlink to a skill directory
+	 * - .vibex/skills can be a symlink to a directory containing skill subdirectories
+	 * - .vibex/skills/[dirname] can be a symlink to a skill directory
 	 */
 	async discoverSkills(): Promise<void> {
 		this.skills.clear()
@@ -219,24 +219,24 @@ export class SkillsManager {
 		}>
 	> {
 		const dirs: Array<{ dir: string; source: "global" | "project"; mode?: string }> = []
-		const globalRooDir = getGlobalRooDirectory()
+		const globalVibexDir = getGlobalVibexDirectory()
 		const provider = this.providerRef.deref()
-		const projectRooDir = provider?.cwd ? path.join(provider.cwd, ".roo") : null
+		const projectVibexDir = provider?.cwd ? path.join(provider.cwd, ".vibex") : null
 
 		// Get list of modes to check for mode-specific skills
 		const modesList = await this.getAvailableModes()
 
 		// Global directories
-		dirs.push({ dir: path.join(globalRooDir, "skills"), source: "global" })
+		dirs.push({ dir: path.join(globalVibexDir, "skills"), source: "global" })
 		for (const mode of modesList) {
-			dirs.push({ dir: path.join(globalRooDir, `skills-${mode}`), source: "global", mode })
+			dirs.push({ dir: path.join(globalVibexDir, `skills-${mode}`), source: "global", mode })
 		}
 
 		// Project directories
-		if (projectRooDir) {
-			dirs.push({ dir: path.join(projectRooDir, "skills"), source: "project" })
+		if (projectVibexDir) {
+			dirs.push({ dir: path.join(projectVibexDir, "skills"), source: "project" })
 			for (const mode of modesList) {
-				dirs.push({ dir: path.join(projectRooDir, `skills-${mode}`), source: "project", mode })
+				dirs.push({ dir: path.join(projectVibexDir, `skills-${mode}`), source: "project", mode })
 			}
 		}
 
@@ -277,8 +277,8 @@ export class SkillsManager {
 		if (!provider?.cwd) return
 
 		// Watch for changes in skills directories
-		const globalSkillsDir = path.join(getGlobalRooDirectory(), "skills")
-		const projectSkillsDir = path.join(provider.cwd, ".roo", "skills")
+		const globalSkillsDir = path.join(getGlobalVibexDirectory(), "skills")
+		const projectSkillsDir = path.join(provider.cwd, ".vibex", "skills")
 
 		// Watch global skills directory
 		this.watchDirectory(globalSkillsDir)
@@ -289,8 +289,8 @@ export class SkillsManager {
 		// Watch mode-specific directories for all available modes
 		const modesList = await this.getAvailableModes()
 		for (const mode of modesList) {
-			this.watchDirectory(path.join(getGlobalRooDirectory(), `skills-${mode}`))
-			this.watchDirectory(path.join(provider.cwd, ".roo", `skills-${mode}`))
+			this.watchDirectory(path.join(getGlobalVibexDirectory(), `skills-${mode}`))
+			this.watchDirectory(path.join(provider.cwd, ".vibex", `skills-${mode}`))
 		}
 	}
 

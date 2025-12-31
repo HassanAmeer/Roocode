@@ -1,6 +1,6 @@
-import type { ProviderSettings, OrganizationAllowList } from "@roo-code/types"
+import type { ProviderSettings, OrganizationAllowList } from "@vibex-code/types"
 
-import { RouterModels } from "@roo-code/types"
+import { RouterModels } from "@vibex-code/types"
 
 // Mock i18next to return translation keys with interpolated values
 vi.mock("i18next", () => ({
@@ -49,7 +49,7 @@ describe("Model Validation Functions", () => {
 		"io-intelligence": {},
 		"vercel-ai-gateway": {},
 		huggingface: {},
-		roo: {},
+		vibex: {},
 		chutes: {},
 	}
 

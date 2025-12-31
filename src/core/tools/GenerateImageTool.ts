@@ -6,7 +6,7 @@ import {
 	IMAGE_GENERATION_MODEL_IDS,
 	IMAGE_GENERATION_MODELS,
 	getImageGenerationProvider,
-} from "@roo-code/types"
+} from "@vibex-code/types"
 import { Task } from "../task/Task"
 import { formatResponse } from "../prompts/responses"
 import { fileExistsAtPath } from "../../utils/fs"
@@ -66,7 +66,7 @@ export class GenerateImageTool extends BaseTool<"generate_image"> {
 
 		const accessAllowed = task.vibexIgnoreController?.validateAccess(relPath)
 		if (!accessAllowed) {
-			await task.say("rooignore_error", relPath)
+			await task.say("vibexignore_error", relPath)
 			pushToolResult(formatResponse.vibexIgnoreError(relPath, toolProtocol))
 			return
 		}
@@ -87,7 +87,7 @@ export class GenerateImageTool extends BaseTool<"generate_image"> {
 
 			const inputImageAccessAllowed = task.vibexIgnoreController?.validateAccess(inputImagePath)
 			if (!inputImageAccessAllowed) {
-				await task.say("rooignore_error", inputImagePath)
+				await task.say("vibexignore_error", inputImagePath)
 				pushToolResult(formatResponse.vibexIgnoreError(inputImagePath, toolProtocol))
 				return
 			}
@@ -198,10 +198,10 @@ export class GenerateImageTool extends BaseTool<"generate_image"> {
 			}
 
 			let result
-			if (modelProvider === "roo") {
+			if (modelProvider === "vibex") {
 				// Use Vibex Cloud provider (supports both chat completions and images API)
-				const rooHandler = new VibeXHandler({} as any)
-				result = await rooHandler.generateImage(prompt, selectedModel, inputImageData, apiMethod)
+				const vibexHandler = new VibeXHandler({} as any)
+				result = await vibexHandler.generateImage(prompt, selectedModel, inputImageData, apiMethod)
 			} else {
 				// Use OpenRouter provider (only supports chat completions API)
 				const openRouterHandler = new OpenRouterHandler({} as any)
@@ -249,7 +249,7 @@ export class GenerateImageTool extends BaseTool<"generate_image"> {
 			await fs.writeFile(absolutePath, imageBuffer)
 
 			if (finalPath) {
-				await task.fileContextTracker.trackFileContext(finalPath, "roo_edited")
+				await task.fileContextTracker.trackFileContext(finalPath, "vibex_edited")
 			}
 
 			task.didEditFile = true

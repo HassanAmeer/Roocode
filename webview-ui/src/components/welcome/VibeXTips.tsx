@@ -9,14 +9,14 @@ const tips = [
 	{
 		icon: <Users className="size-4 shrink-0 mt-0.5" />,
 		href: buildDocLink("basic-usage/using-modes", "tips"),
-		titleKey: "rooTips.customizableModes.title",
-		descriptionKey: "rooTips.customizableModes.description",
+		titleKey: "vibexTips.customizableModes.title",
+		descriptionKey: "vibexTips.customizableModes.description",
 	},
 	{
 		icon: <ReplaceAll className="size-4 shrink-0 mt-0.5" />,
 		href: buildDocLink("getting-started/connecting-api-provider", "tips"),
-		titleKey: "rooTips.modelAgnostic.title",
-		descriptionKey: "rooTips.modelAgnostic.description",
+		titleKey: "vibexTips.modelAgnostic.title",
+		descriptionKey: "vibexTips.modelAgnostic.description",
 	},
 ]
 

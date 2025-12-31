@@ -2,7 +2,7 @@ import { useState, useEffect, FormEvent } from "react"
 import { VSCodeTextArea, VSCodeCheckbox } from "@vscode/webview-ui-toolkit/react"
 import { MessageSquare } from "lucide-react"
 
-import { supportPrompt, SupportPromptType } from "@roo-code/types"
+import { supportPrompt, SupportPromptType } from "@vibex-code/types"
 
 import { vscode } from "@src/utils/vscode"
 import { useAppTranslation } from "@src/i18n/TranslationContext"

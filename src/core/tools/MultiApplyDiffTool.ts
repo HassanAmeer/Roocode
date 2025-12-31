@@ -1,8 +1,8 @@
 import path from "path"
 import fs from "fs/promises"
 
-import { TelemetryService } from "@roo-code/telemetry"
-import { DEFAULT_WRITE_DELAY_MS } from "@roo-code/types"
+import { TelemetryService } from "@vibex-code/telemetry"
+import { DEFAULT_WRITE_DELAY_MS } from "@vibex-code/types"
 
 import { ClineSayTool } from "../../shared/ExtensionMessage"
 import { getReadablePath } from "../../utils/path"
@@ -16,7 +16,7 @@ import { parseXmlForDiff } from "../../utils/xml"
 import { EXPERIMENT_IDS, experiments } from "../../shared/experiments"
 import { applyDiffTool as applyDiffToolClass } from "./ApplyDiffTool"
 import { computeDiffStats, sanitizeUnifiedDiff } from "../diff/stats"
-import { isNativeProtocol } from "@roo-code/types"
+import { isNativeProtocol } from "@vibex-code/types"
 import { resolveToolProtocol } from "../../utils/resolveToolProtocol"
 
 interface DiffOperation {
@@ -266,7 +266,7 @@ Original error: ${errorMessage}`
 			// Verify file access is allowed
 			const accessAllowed = cline.vibexIgnoreController?.validateAccess(relPath)
 			if (!accessAllowed) {
-				await cline.say("rooignore_error", relPath)
+				await cline.say("vibexignore_error", relPath)
 				updateOperationResult(relPath, {
 					status: "blocked",
 					error: formatResponse.vibexIgnoreError(relPath, undefined),
@@ -688,7 +688,7 @@ ${errorDetails ? `\nTechnical details:\n${errorDetails}\n` : ""}
 				}
 
 				// Track file edit operation
-				await cline.fileContextTracker.trackFileContext(relPath, "roo_edited" as RecordSource)
+				await cline.fileContextTracker.trackFileContext(relPath, "vibex_edited" as RecordSource)
 
 				// Used to determine if we should wait for busy terminal to update before sending api request
 				cline.didEditFile = true

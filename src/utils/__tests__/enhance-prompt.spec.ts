@@ -1,11 +1,11 @@
 // npx vitest run src/utils/__tests__/enhance-prompt.spec.ts
 
-// import type { ProviderSettings } from "@roo-code/types"
+// import type { ProviderSettings } from "@vibex-code/types"
 
 import { singleCompletionHandler } from "../single-completion-handler"
 import { buildApiHandler, SingleCompletionHandler } from "../../api"
 import { supportPrompt } from "../../shared/support-prompt"
-import { ProviderSettings } from "@roo-code/types"
+import { ProviderSettings } from "@vibex-code/types"
 
 // Mock the API handler
 vi.mock("../../api", () => ({

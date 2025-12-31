@@ -4,8 +4,8 @@ import * as vscode from "vscode"
 
 import delay from "delay"
 
-import { CommandExecutionStatus, DEFAULT_TERMINAL_OUTPUT_CHARACTER_LIMIT } from "@roo-code/types"
-import { TelemetryService } from "@roo-code/telemetry"
+import { CommandExecutionStatus, DEFAULT_TERMINAL_OUTPUT_CHARACTER_LIMIT } from "@vibex-code/types"
+import { TelemetryService } from "@vibex-code/telemetry"
 
 import { Task } from "../task/Task"
 
@@ -51,7 +51,7 @@ export class ExecuteCommandTool extends BaseTool<"execute_command"> {
 			const ignoredFileAttemptedToAccess = task.vibexIgnoreController?.validateCommand(command)
 
 			if (ignoredFileAttemptedToAccess) {
-				await task.say("rooignore_error", ignoredFileAttemptedToAccess)
+				await task.say("vibexignore_error", ignoredFileAttemptedToAccess)
 				pushToolResult(formatResponse.vibexIgnoreError(ignoredFileAttemptedToAccess, toolProtocol))
 				return
 			}

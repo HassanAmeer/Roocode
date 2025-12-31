@@ -8,7 +8,7 @@ import { formatResponse } from "../prompts/responses"
 import { ClineSayTool } from "../../shared/ExtensionMessage"
 import { RecordSource } from "../context-tracking/FileContextTrackerTypes"
 import { fileExistsAtPath } from "../../utils/fs"
-import { DEFAULT_WRITE_DELAY_MS } from "@roo-code/types"
+import { DEFAULT_WRITE_DELAY_MS } from "@vibex-code/types"
 import { EXPERIMENT_IDS, experiments } from "../../shared/experiments"
 import { sanitizeUnifiedDiff, computeDiffStats } from "../diff/stats"
 import { BaseTool, ToolCallbacks } from "./BaseTool"
@@ -87,7 +87,7 @@ export class ApplyPatchTool extends BaseTool<"apply_patch"> {
 				// Check access permissions
 				const accessAllowed = task.vibexIgnoreController?.validateAccess(relPath)
 				if (!accessAllowed) {
-					await task.say("rooignore_error", relPath)
+					await task.say("vibexignore_error", relPath)
 					pushToolResult(formatResponse.vibexIgnoreError(relPath, toolProtocol))
 					return
 				}
@@ -198,7 +198,7 @@ export class ApplyPatchTool extends BaseTool<"apply_patch"> {
 		}
 
 		// Track file edit operation
-		await task.fileContextTracker.trackFileContext(relPath, "roo_edited" as RecordSource)
+		await task.fileContextTracker.trackFileContext(relPath, "vibex_edited" as RecordSource)
 		task.didEditFile = true
 
 		const message = await task.diffViewProvider.pushToolWriteResult(task, task.cwd, true)
@@ -353,7 +353,7 @@ export class ApplyPatchTool extends BaseTool<"apply_patch"> {
 			// Validate destination path access permissions
 			const moveAccessAllowed = task.vibexIgnoreController?.validateAccess(change.movePath)
 			if (!moveAccessAllowed) {
-				await task.say("rooignore_error", change.movePath)
+				await task.say("vibexignore_error", change.movePath)
 				pushToolResult(formatResponse.vibexIgnoreError(change.movePath))
 				await task.diffViewProvider.reset()
 				return
@@ -406,7 +406,7 @@ export class ApplyPatchTool extends BaseTool<"apply_patch"> {
 				console.error(`Failed to delete original file after move: ${error}`)
 			}
 
-			await task.fileContextTracker.trackFileContext(change.movePath, "roo_edited" as RecordSource)
+			await task.fileContextTracker.trackFileContext(change.movePath, "vibex_edited" as RecordSource)
 		} else {
 			// Save changes to the same file
 			if (isPreventFocusDisruptionEnabled) {
@@ -415,7 +415,7 @@ export class ApplyPatchTool extends BaseTool<"apply_patch"> {
 				await task.diffViewProvider.saveChanges(diagnosticsEnabled, writeDelayMs)
 			}
 
-			await task.fileContextTracker.trackFileContext(relPath, "roo_edited" as RecordSource)
+			await task.fileContextTracker.trackFileContext(relPath, "vibex_edited" as RecordSource)
 		}
 
 		task.didEditFile = true

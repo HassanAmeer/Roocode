@@ -1,4 +1,4 @@
-import type { HistoryItem } from "@roo-code/types"
+import type { HistoryItem } from "@vibex-code/types"
 
 import { render, screen, fireEvent } from "@/utils/test-utils"
 import { vscode } from "@/utils/vscode"
@@ -215,7 +215,7 @@ describe("TaskActions", () => {
 			expect(screen.queryByText("Share Publicly")).not.toBeInTheDocument()
 		})
 
-		it("sends rooCloudSignIn message when connect to cloud is selected", () => {
+		it("sends vibexCloudSignIn message when connect to cloud is selected", () => {
 			render(<TaskActions item={mockItem} buttonsDisabled={false} />)
 
 			// Find share button by its test ID and click it
@@ -226,7 +226,7 @@ describe("TaskActions", () => {
 			fireEvent.click(connectOption)
 
 			expect(mockPostMessage).toHaveBeenCalledWith({
-				type: "rooCloudSignIn",
+				type: "vibexCloudSignIn",
 			})
 		})
 	})
@@ -297,9 +297,9 @@ describe("TaskActions", () => {
 			const connectButton = screen.getByText("Connect")
 			fireEvent.click(connectButton)
 
-			// Verify rooCloudSignIn message was sent
+			// Verify vibexCloudSignIn message was sent
 			expect(mockPostMessage).toHaveBeenCalledWith({
-				type: "rooCloudSignIn",
+				type: "vibexCloudSignIn",
 			})
 
 			// Simulate user becoming authenticated after clicking connect from share button

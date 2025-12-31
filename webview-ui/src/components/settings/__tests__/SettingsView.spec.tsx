@@ -1,4 +1,4 @@
-// pnpm --filter @roo-code/vscode-webview test src/components/settings/__tests__/SettingsView.spec.tsx
+// pnpm --filter @vibex-code/vscode-webview test src/components/settings/__tests__/SettingsView.spec.tsx
 
 import { render, screen, fireEvent } from "@/utils/test-utils"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"

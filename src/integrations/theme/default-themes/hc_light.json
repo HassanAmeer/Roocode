@@ -3,7 +3,7 @@
 	"name": "Light High Contrast",
 	"tokenColors": [
 		{
-			"scope": ["meta.embedded", "source.groovy.embedded", "variable.legacy.builtin.python"],
+			"scope": ["meta.embedded", "source.gvibexvy.embedded", "variable.legacy.builtin.python"],
 			"settings": {
 				"foreground": "#292929"
 			}
@@ -400,13 +400,13 @@
 				"storage.type.primitive.array.java",
 				"storage.type.primitive.java",
 				"storage.type.token.java",
-				"storage.type.groovy",
-				"storage.type.annotation.groovy",
-				"storage.type.parameters.groovy",
-				"storage.type.generic.groovy",
-				"storage.type.object.array.groovy",
-				"storage.type.primitive.array.groovy",
-				"storage.type.primitive.groovy"
+				"storage.type.gvibexvy",
+				"storage.type.annotation.gvibexvy",
+				"storage.type.parameters.gvibexvy",
+				"storage.type.generic.gvibexvy",
+				"storage.type.object.array.gvibexvy",
+				"storage.type.primitive.array.gvibexvy",
+				"storage.type.primitive.gvibexvy"
 			],
 			"settings": {
 				"foreground": "#185E73"

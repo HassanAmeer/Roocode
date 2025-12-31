@@ -8,7 +8,7 @@ import * as fs from "fs/promises"
 import * as yaml from "yaml"
 import * as vscode from "vscode"
 
-import type { ModeConfig } from "@roo-code/types"
+import type { ModeConfig } from "@vibex-code/types"
 
 import { fileExistsAtPath } from "../../../utils/fs"
 import { getWorkspacePath } from "../../../utils/path"
@@ -49,7 +49,7 @@ describe("CustomModesManager - Export/Import with Slug Changes", () => {
 	const mockStoragePath = `${path.sep}mock${path.sep}settings`
 	const mockSettingsPath = path.join(mockStoragePath, "settings", GlobalFileNames.customModes)
 	const mockWorkspacePath = path.resolve("/mock/workspace")
-	const mockRoomodes = path.join(mockWorkspacePath, ".roomodes")
+	const mockRoomodes = path.join(mockWorkspacePath, ".vibexmodes")
 
 	beforeEach(() => {
 		mockOnUpdate = vi.fn()
@@ -95,7 +95,7 @@ describe("CustomModesManager - Export/Import with Slug Changes", () => {
 
 	describe("Export Path Calculation", () => {
 		it("should exclude rules-{slug} folder from exported relative paths", async () => {
-			const roomodesContent = {
+			const vibexmodesContent = {
 				customModes: [
 					{
 						slug: "test-mode",
@@ -111,7 +111,7 @@ describe("CustomModesManager - Export/Import with Slug Changes", () => {
 			})
 			;(fs.readFile as Mock).mockImplementation(async (path: string) => {
 				if (path === mockRoomodes) {
-					return yaml.stringify(roomodesContent)
+					return yaml.stringify(vibexmodesContent)
 				}
 				if (path.includes("rules-test-mode") && path.includes("rule1.md")) {
 					return "Rule 1 content"
@@ -147,11 +147,11 @@ describe("CustomModesManager - Export/Import with Slug Changes", () => {
 			expect(paths).toContain("rule1.md")
 		})
 
-		it("should handle files at root level correctly", async () => {
-			const roomodesContent = {
+		it("should handle files at vibext level correctly", async () => {
+			const vibexmodesContent = {
 				customModes: [
 					{
-						slug: "root-mode",
+						slug: "vibext-mode",
 						name: "Root Mode",
 						roleDefinition: "Root Role",
 						groups: ["read"],
@@ -164,12 +164,12 @@ describe("CustomModesManager - Export/Import with Slug Changes", () => {
 			})
 			;(fs.readFile as Mock).mockImplementation(async (path: string) => {
 				if (path === mockRoomodes) {
-					return yaml.stringify(roomodesContent)
+					return yaml.stringify(vibexmodesContent)
 				}
-				if (path.includes("rules-root-mode") && path.includes("file1.md")) {
+				if (path.includes("rules-vibext-mode") && path.includes("file1.md")) {
 					return "File 1 content"
 				}
-				if (path.includes("rules-root-mode") && path.includes("file2.md")) {
+				if (path.includes("rules-vibext-mode") && path.includes("file2.md")) {
 					return "File 2 content"
 				}
 				throw new Error("File not found")
@@ -181,13 +181,13 @@ describe("CustomModesManager - Export/Import with Slug Changes", () => {
 				{ name: "subfolder", isFile: () => false }, // This will be ignored by current implementation
 			])
 
-			const result = await manager.exportModeWithRules("root-mode")
+			const result = await manager.exportModeWithRules("vibext-mode")
 
 			expect(result.success).toBe(true)
 			const exportData = yaml.parse(result.yaml!)
 			const rulesFiles = exportData.customModes[0].rulesFiles
 
-			// Verify files are exported without rules-root-mode prefix
+			// Verify files are exported without rules-vibext-mode prefix
 			expect(rulesFiles).toBeDefined()
 			expect(rulesFiles.length).toBe(2)
 
@@ -197,7 +197,7 @@ describe("CustomModesManager - Export/Import with Slug Changes", () => {
 
 			// Verify no path contains the rules folder name
 			rulesFiles.forEach((file: any) => {
-				expect(file.relativePath).not.toContain("rules-root-mode")
+				expect(file.relativePath).not.toContain("rules-vibext-mode")
 			})
 		})
 	})
@@ -249,15 +249,19 @@ describe("CustomModesManager - Export/Import with Slug Changes", () => {
 			expect(result.success).toBe(true)
 
 			// Verify files were written to the correct new slug folder
-			const rule1Path = Object.keys(writtenFiles).find((p) => p.includes("rule1.md") && !p.includes(".roomodes"))
-			const rule2Path = Object.keys(writtenFiles).find((p) => p.includes("rule2.md") && !p.includes(".roomodes"))
+			const rule1Path = Object.keys(writtenFiles).find(
+				(p) => p.includes("rule1.md") && !p.includes(".vibexmodes"),
+			)
+			const rule2Path = Object.keys(writtenFiles).find(
+				(p) => p.includes("rule2.md") && !p.includes(".vibexmodes"),
+			)
 
 			expect(rule1Path).toBeDefined()
 			expect(rule2Path).toBeDefined()
 
 			// Check that files are in rules-new-slug-name folder
-			expect(rule1Path).toContain(path.join(".roo", "rules-new-slug-name", "rule1.md"))
-			expect(rule2Path).toContain(path.join(".roo", "rules-new-slug-name", "subfolder", "rule2.md"))
+			expect(rule1Path).toContain(path.join(".vibex", "rules-new-slug-name", "rule1.md"))
+			expect(rule2Path).toContain(path.join(".vibex", "rules-new-slug-name", "subfolder", "rule2.md"))
 
 			// Verify directories were created with new slug
 			expect(createdDirs.some((dir) => dir.includes("rules-new-slug-name"))).toBe(true)
@@ -304,15 +308,19 @@ describe("CustomModesManager - Export/Import with Slug Changes", () => {
 			expect(result.success).toBe(true)
 
 			// Verify files were written to the NEW slug folder, not the old one
-			const rule1Path = Object.keys(writtenFiles).find((p) => p.includes("rule1.md") && !p.includes(".roomodes"))
-			const rule2Path = Object.keys(writtenFiles).find((p) => p.includes("rule2.md") && !p.includes(".roomodes"))
+			const rule1Path = Object.keys(writtenFiles).find(
+				(p) => p.includes("rule1.md") && !p.includes(".vibexmodes"),
+			)
+			const rule2Path = Object.keys(writtenFiles).find(
+				(p) => p.includes("rule2.md") && !p.includes(".vibexmodes"),
+			)
 
 			expect(rule1Path).toBeDefined()
 			expect(rule2Path).toBeDefined()
 
 			// Check that files are in rules-new-slug-name folder (not rules-old-slug)
-			expect(rule1Path).toContain(path.join(".roo", "rules-new-slug-name", "rule1.md"))
-			expect(rule2Path).toContain(path.join(".roo", "rules-new-slug-name", "subfolder", "rule2.md"))
+			expect(rule1Path).toContain(path.join(".vibex", "rules-new-slug-name", "rule1.md"))
+			expect(rule2Path).toContain(path.join(".vibex", "rules-new-slug-name", "subfolder", "rule2.md"))
 
 			// Ensure old slug folder was NOT created
 			expect(rule1Path).not.toContain("rules-old-slug")
@@ -368,9 +376,9 @@ describe("CustomModesManager - Export/Import with Slug Changes", () => {
 			const newFormatPath = Object.keys(writtenFiles).find((p) => p.includes("new-format.md"))
 			const nestedPath = Object.keys(writtenFiles).find((p) => p.includes(path.join("nested", "file.md")))
 
-			expect(oldFormatPath).toContain(path.join(".roo", "rules-mixed-mode", "old-format.md"))
-			expect(newFormatPath).toContain(path.join(".roo", "rules-mixed-mode", "new-format.md"))
-			expect(nestedPath).toContain(path.join(".roo", "rules-mixed-mode", "nested", "file.md"))
+			expect(oldFormatPath).toContain(path.join(".vibex", "rules-mixed-mode", "old-format.md"))
+			expect(newFormatPath).toContain(path.join(".vibex", "rules-mixed-mode", "new-format.md"))
+			expect(nestedPath).toContain(path.join(".vibex", "rules-mixed-mode", "nested", "file.md"))
 		})
 	})
 
@@ -424,10 +432,10 @@ describe("CustomModesManager - Export/Import with Slug Changes", () => {
 
 			// Step 5: Verify the rule file was placed in the new slug folder
 			const ruleFilePath = Object.keys(writtenFiles).find(
-				(p) => p.includes("rule.md") && !p.includes(".roomodes"),
+				(p) => p.includes("rule.md") && !p.includes(".vibexmodes"),
 			)
 			expect(ruleFilePath).toBeDefined()
-			expect(ruleFilePath).toContain(path.join(".roo", "rules-renamed-mode", "rule.md"))
+			expect(ruleFilePath).toContain(path.join(".vibex", "rules-renamed-mode", "rule.md"))
 			expect(ruleFilePath).not.toContain("rules-original-mode")
 
 			// Verify content was preserved

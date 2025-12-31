@@ -106,7 +106,7 @@ body:
       description: Exact model name (e.g., Claude 3.7 Sonnet). Use N/A if irrelevant.
 
   - type: textarea
-    id: roo-tasks
+    id: vibex-tasks
     attributes:
       label: Vibex Code Task Links (optional)
       description: If you have any publicly shared Vibex Code task links that demonstrate the issue, paste them here.

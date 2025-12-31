@@ -38,7 +38,7 @@ export const listFiles = vi.fn((dirPath: string, _recursive: boolean, limit: num
 
 	// Special case: VibeXt or home directories
 	// Prevents tests from trying to list all files in these directories
-	if (dirPath === "/" || dirPath === "/root" || dirPath === "/home/user") {
+	if (dirPath === "/" || dirPath === "/vibext" || dirPath === "/home/user") {
 		return Promise.resolve([[dirPath], false])
 	}
 

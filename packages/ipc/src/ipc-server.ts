@@ -4,7 +4,7 @@ import * as crypto from "node:crypto"
 
 import ipc from "node-ipc"
 
-import { type IpcServerEvents, IpcOrigin, IpcMessageType, type IpcMessage, ipcMessageSchema } from "@roo-code/types"
+import { type IpcServerEvents, IpcOrigin, IpcMessageType, type IpcMessage, ipcMessageSchema } from "@vibex-code/types"
 
 export class IpcServer extends EventEmitter<IpcServerEvents> {
 	private readonly _socketPath: string

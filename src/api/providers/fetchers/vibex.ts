@@ -1,4 +1,4 @@
-import { VibeXModelsResponseSchema, type ModelInfo } from "@roo-code/types"
+import { VibeXModelsResponseSchema, type ModelInfo } from "@vibex-code/types"
 
 import type { ModelRecord } from "../../../shared/api"
 import { parseApiPrice } from "../../../shared/cost"
@@ -14,7 +14,7 @@ import { resolveVersionedSettings, type VersionedSettings } from "./versionedSet
  * @returns A promise that resolves to a record of model IDs to model info
  * @throws Will throw an error if the request fails or the response is not as expected.
  */
-export async function getRooModels(baseUrl: string, apiKey?: string): Promise<ModelRecord> {
+export async function getVibexModels(baseUrl: string, apiKey?: string): Promise<ModelRecord> {
 	// Construct the models endpoint URL early so it's available in catch block for logging
 	// Strip trailing /v1 or /v1/ to avoid /v1/v1/models
 	const normalizedBase = baseUrl.replace(/\/?v1\/?$/, "")

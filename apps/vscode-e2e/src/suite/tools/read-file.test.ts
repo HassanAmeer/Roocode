@@ -4,7 +4,7 @@ import * as path from "path"
 import * as os from "os"
 import * as vscode from "vscode"
 
-import { VibexEventName, type ClineMessage } from "@roo-code/types"
+import { VibexEventName, type ClineMessage } from "@vibex-code/types"
 
 import { waitFor, sleep } from "../utils"
 import { setDefaultSuiteTimeout } from "../test-utils"
@@ -24,7 +24,7 @@ suite.skip("Vibex read_file Tool", function () {
 
 	// Create a temporary directory and test files
 	suiteSetup(async () => {
-		tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "roo-test-read-"))
+		tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "vibex-test-read-"))
 
 		// Create test files in VSCode workspace directory
 		const workspaceDir = vscode.workspace.workspaceFolders?.[0]?.uri.fsPath || tempDir
@@ -54,7 +54,7 @@ suite.skip("Vibex read_file Tool", function () {
 		// Create XML content file
 		await fs.writeFile(
 			testFiles.xmlContent,
-			"<root>\n  <child>Test content</child>\n  <data>Some data</data>\n</root>",
+			"<vibext>\n  <child>Test content</child>\n  <data>Some data</data>\n</vibext>",
 		)
 
 		// Create nested directory and file
@@ -606,7 +606,7 @@ suite.skip("Vibex read_file Tool", function () {
 					alwaysAllowReadOnly: true,
 					alwaysAllowReadOnlyOutsideWorkspace: true,
 				},
-				text: `Use the read_file tool to read the XML file "${fileName}". It contains XML elements including root, child, and data. Assume the file exists and you can read it directly. Tell me what elements you find.`,
+				text: `Use the read_file tool to read the XML file "${fileName}". It contains XML elements including vibext, child, and data. Assume the file exists and you can read it directly. Tell me what elements you find.`,
 			})
 
 			// Wait for task completion
@@ -620,7 +620,7 @@ suite.skip("Vibex read_file Tool", function () {
 				(m) =>
 					m.type === "say" &&
 					(m.say === "completion_result" || m.say === "text") &&
-					(m.text?.toLowerCase().includes("root") || m.text?.toLowerCase().includes("xml")),
+					(m.text?.toLowerCase().includes("vibext") || m.text?.toLowerCase().includes("xml")),
 			)
 			assert.ok(hasXMLContent, "AI should have mentioned the XML elements")
 

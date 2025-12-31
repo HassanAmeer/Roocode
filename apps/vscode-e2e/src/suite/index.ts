@@ -3,12 +3,12 @@ import Mocha from "mocha"
 import { glob } from "glob"
 import * as vscode from "vscode"
 
-import type { VibexAPI } from "@roo-code/types"
+import type { VibexAPI } from "@vibex-code/types"
 
 import { waitFor } from "./utils"
 
 export async function run() {
-	const extension = vscode.extensions.getExtension<VibexAPI>("RooVeterinaryInc.roo-cline")
+	const extension = vscode.extensions.getExtension<VibexAPI>("RooVeterinaryInc.vibex-cline")
 
 	if (!extension) {
 		throw new Error("Extension not found")
@@ -22,7 +22,7 @@ export async function run() {
 		openRouterModelId: "openai/gpt-4.1",
 	})
 
-	await vscode.commands.executeCommand("roo-cline.SidebarProvider.focus")
+	await vscode.commands.executeCommand("vibex-cline.SidebarProvider.focus")
 	await waitFor(() => api.isReady())
 
 	globalThis.api = api

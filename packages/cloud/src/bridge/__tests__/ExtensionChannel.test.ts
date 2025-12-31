@@ -9,7 +9,7 @@ import {
 	VibexEventName,
 	ExtensionBridgeEventName,
 	ExtensionSocketEvents,
-} from "@roo-code/types"
+} from "@vibex-code/types"
 
 import { ExtensionChannel } from "../ExtensionChannel.js"
 

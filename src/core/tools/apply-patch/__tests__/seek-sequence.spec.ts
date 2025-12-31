@@ -90,7 +90,7 @@ describe("seek-sequence", () => {
 		it("should return null when start is past possible match", () => {
 			const lines = toVec(["foo", "bar", "baz"])
 			const pattern = toVec(["foo", "bar"])
-			// Starting at 2, there's not enough room for a 2-line pattern
+			// Starting at 2, there's not enough vibexm for a 2-line pattern
 			expect(seekSequence(lines, pattern, 2, false)).toBeNull()
 		})
 	})

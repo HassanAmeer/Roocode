@@ -1,6 +1,6 @@
 export default String.raw`
 /* Variable declaration test - at least 4 lines long */
-:root {
+:vibext {
   --test-variable-definition-primary: #3498db;
   --test-variable-definition-secondary: #2ecc71;
   --test-variable-definition-accent: #e74c3c;

@@ -1,4 +1,4 @@
-import { VibexEventName, type VibexAPI } from "@roo-code/types"
+import { VibexEventName, type VibexAPI } from "@vibex-code/types"
 
 type WaitForOptions = {
 	timeout?: number

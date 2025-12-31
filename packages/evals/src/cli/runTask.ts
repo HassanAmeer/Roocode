@@ -14,8 +14,8 @@ import {
 	IpcMessageType,
 	EVALS_SETTINGS,
 	type ToolUsage,
-} from "@roo-code/types"
-import { IpcClient } from "@roo-code/ipc"
+} from "@vibex-code/types"
+import { IpcClient } from "@vibex-code/ipc"
 
 import {
 	type Run,
@@ -47,14 +47,14 @@ class SubprocessTimeoutError extends Error {
  * files for post-mortem analysis alongside the log files.
  */
 async function copyConversationHistory({
-	rooTaskId,
+	vibexTaskId,
 	logDir,
 	language,
 	exercise,
 	iteration,
 	logger,
 }: {
-	rooTaskId: string
+	vibexTaskId: string
 	logDir: string
 	language: string
 	exercise: string
@@ -62,8 +62,8 @@ async function copyConversationHistory({
 	logger: Logger
 }): Promise<void> {
 	// VS Code extension global storage path within the container
-	const extensionStoragePath = "/roo/.vscode/User/globalStorage/rooveterinaryinc.roo-cline"
-	const taskStoragePath = path.join(extensionStoragePath, "tasks", rooTaskId)
+	const extensionStoragePath = "/vibex/.vscode/User/globalStorage/vibexveterinaryinc.vibex-cline"
+	const taskStoragePath = path.join(extensionStoragePath, "tasks", vibexTaskId)
 
 	const filesToCopy = ["api_conversation_history.json", "ui_messages.json"]
 
@@ -164,7 +164,7 @@ export const processTaskInContainer = async ({
 		baseArgs.push(`-e ROO_CODE_CLOUD_TOKEN=${jobToken}`)
 	}
 
-	const command = `pnpm --filter @roo-code/evals cli --taskId ${taskId}`
+	const command = `pnpm --filter @vibex-code/evals cli --taskId ${taskId}`
 	logger.info(command)
 
 	for (let attempt = 0; attempt <= maxRetries; attempt++) {
@@ -230,7 +230,7 @@ export const runTask = async ({ run, task, publish, logger, jobToken }: RunTaskO
 	const logDir = containerized ? `/var/log/evals/runs/${run.id}` : `/tmp/evals/runs/${run.id}`
 
 	let codeCommand = containerized
-		? `xvfb-run --auto-servernum --server-num=1 code --wait --log trace --disable-workspace-trust --disable-gpu --disable-lcd-text --no-sandbox --user-data-dir /roo/.vscode --password-store="basic" -n ${workspacePath}`
+		? `xvfb-run --auto-servernum --server-num=1 code --wait --log trace --disable-workspace-trust --disable-gpu --disable-lcd-text --no-sandbox --user-data-dir /vibex/.vscode --password-store="basic" -n ${workspacePath}`
 		: `code --disable-workspace-trust -n ${workspacePath}`
 
 	if (jobToken) {
@@ -277,7 +277,7 @@ export const runTask = async ({ run, task, publish, logger, jobToken }: RunTaskO
 	let taskAbortedAt: number | undefined
 	let taskTimedOut: boolean = false
 	let taskMetricsId: number | undefined
-	let rooTaskId: string | undefined
+	let vibexTaskId: string | undefined
 	let isClientDisconnected = false
 	// Track accumulated tool usage across task instances (handles rehydration after abort)
 	const accumulatedToolUsage: ToolUsage = {}
@@ -297,7 +297,7 @@ export const runTask = async ({ run, task, publish, logger, jobToken }: RunTaskO
 	const loggableSays: ClineSay[] = [
 		"error",
 		"command_output",
-		"rooignore_error",
+		"vibexignore_error",
 		"diff_error",
 		"condense_context",
 		"condense_context_error",
@@ -377,7 +377,7 @@ export const runTask = async ({ run, task, publish, logger, jobToken }: RunTaskO
 
 			taskStartedAt = Date.now()
 			taskMetricsId = taskMetrics.id
-			rooTaskId = payload[0]
+			vibexTaskId = payload[0]
 
 			// Signal that taskMetricsId is now ready for other handlers
 			resolveTaskMetricsReady()
@@ -480,9 +480,9 @@ export const runTask = async ({ run, task, publish, logger, jobToken }: RunTaskO
 		taskTimedOut = true
 		logger.error("time limit reached")
 
-		if (rooTaskId && !isClientDisconnected) {
+		if (vibexTaskId && !isClientDisconnected) {
 			logger.info("cancelling task")
-			client.sendCommand({ commandName: TaskCommandName.CancelTask, data: rooTaskId })
+			client.sendCommand({ commandName: TaskCommandName.CancelTask, data: vibexTaskId })
 			await new Promise((resolve) => setTimeout(resolve, 5_000)) // Allow some time for the task to cancel.
 		}
 
@@ -499,9 +499,9 @@ export const runTask = async ({ run, task, publish, logger, jobToken }: RunTaskO
 	logger.info("setting task finished at")
 	await updateTask(task.id, { finishedAt: new Date() })
 
-	if (rooTaskId && !isClientDisconnected) {
+	if (vibexTaskId && !isClientDisconnected) {
 		logger.info("closing task")
-		client.sendCommand({ commandName: TaskCommandName.CloseTask, data: rooTaskId })
+		client.sendCommand({ commandName: TaskCommandName.CloseTask, data: vibexTaskId })
 		await new Promise((resolve) => setTimeout(resolve, 2_000)) // Allow some time for the window to close.
 	}
 
@@ -545,9 +545,9 @@ export const runTask = async ({ run, task, publish, logger, jobToken }: RunTaskO
 
 	// Copy conversation history files from VS Code extension storage to the log directory
 	// for post-mortem analysis. Only do this in containerized mode where we have a known path.
-	if (containerized && rooTaskId) {
+	if (containerized && vibexTaskId) {
 		await copyConversationHistory({
-			rooTaskId,
+			vibexTaskId,
 			logDir,
 			language,
 			exercise,

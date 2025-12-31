@@ -15,7 +15,7 @@
 
 ## Onze Belofte
 
-In het belang van het bevorderen van een open en gastvrije omgeving, beloven wij als bijdragers en beheerders om deelname aan ons project en onze community een ervaring zonder intimidatie te maken voor iedereen, ongeacht leeftijd, lichaamsgrootte, handicap, etniciteit, geslachtskenmerken, genderidentiteit en -expressie, ervaringsniveau, opleiding, sociaal-economische status, nationaliteit, uiterlijk, ras, religie of seksuele identiteit en oriëntatie.
+In het belang van het bevorderen van een open en gastvrije omgeving, beloven wij als bijdragers en beheerders om deelname aan ons project en onze community een ervaring zonder intimidatie te maken voor iedereen, ongeacht leeftijd, lichaamsgvibextte, handicap, etniciteit, geslachtskenmerken, genderidentiteit en -expressie, ervaringsniveau, opleiding, sociaal-economische status, nationaliteit, uiterlijk, ras, religie of seksuele identiteit en oriëntatie.
 
 ## Onze Standaarden
 
@@ -47,7 +47,7 @@ Deze Gedragscode is van toepassing binnen projectruimtes en in openbare ruimtes 
 
 ## Handhaving
 
-Voorvallen van beledigend, intimiderend of anderszins onacceptabel gedrag kunnen worden gemeld door contact op te nemen met het projectteam via support@roocode.com. Alle klachten zullen worden beoordeeld en onderzocht en zullen resulteren in een reactie die passend wordt geacht voor de omstandigheden. Het projectteam is verplicht vertrouwelijkheid te bewaren met betrekking tot de melder van het incident. Verdere details over specifiek handhavingsbeleid kunnen afzonderlijk worden gepubliceerd.
+Voorvallen van beledigend, intimiderend of anderszins onacceptabel gedrag kunnen worden gemeld door contact op te nemen met het projectteam via support@vibexcode.com. Alle klachten zullen worden beoordeeld en onderzocht en zullen resulteren in een reactie die passend wordt geacht voor de omstandigheden. Het projectteam is verplicht vertrouwelijkheid te bewaren met betrekking tot de melder van het incident. Verdere details over specifiek handhavingsbeleid kunnen afzonderlijk worden gepubliceerd.
 
 Projectbeheerders die de Gedragscode niet te goeder trouw volgen of handhaven, kunnen tijdelijke of permanente gevolgen ondervinden zoals bepaald door andere leden van het leiderschap van het project.
 

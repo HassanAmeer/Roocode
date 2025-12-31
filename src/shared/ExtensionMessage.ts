@@ -15,7 +15,7 @@ import type {
 	ShareVisibility,
 	QueuedMessage,
 	SerializedCustomToolDefinition,
-} from "@roo-code/types"
+} from "@vibex-code/types"
 
 import { GitCommit } from "../utils/git"
 
@@ -114,7 +114,7 @@ export interface ExtensionMessage {
 		| "condenseTaskContextStarted"
 		| "condenseTaskContextResponse"
 		| "singleRouterModelFetchResponse"
-		| "rooCreditBalance"
+		| "vibexCreditBalance"
 		| "indexingStatusUpdate"
 		| "indexCleared"
 		| "codebaseIndexConfig"

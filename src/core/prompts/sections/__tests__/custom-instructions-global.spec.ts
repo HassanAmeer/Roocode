@@ -1,14 +1,14 @@
 import * as path from "path"
 
 // Use vi.hoisted to ensure mocks are available during hoisting
-const { mockHomedir, mockStat, mockReadFile, mockReaddir, mockGetRooDirectoriesForCwd, mockGetGlobalRooDirectory } =
+const { mockHomedir, mockStat, mockReadFile, mockReaddir, mockGetVibexDirectoriesForCwd, mockGetGlobalVibexDirectory } =
 	vi.hoisted(() => ({
 		mockHomedir: vi.fn(),
 		mockStat: vi.fn(),
 		mockReadFile: vi.fn(),
 		mockReaddir: vi.fn(),
-		mockGetRooDirectoriesForCwd: vi.fn(),
-		mockGetGlobalRooDirectory: vi.fn(),
+		mockGetVibexDirectoriesForCwd: vi.fn(),
+		mockGetGlobalVibexDirectory: vi.fn(),
 	}))
 
 // Mock os module
@@ -28,10 +28,10 @@ vi.mock("fs/promises", () => ({
 	},
 }))
 
-// Mock the roo-config service
-vi.mock("../../../../services/roo-config", () => ({
-	getRooDirectoriesForCwd: mockGetRooDirectoriesForCwd,
-	getGlobalRooDirectory: mockGetGlobalRooDirectory,
+// Mock the vibex-config service
+vi.mock("../../../../services/vibex-config", () => ({
+	getVibexDirectoriesForCwd: mockGetVibexDirectoriesForCwd,
+	getGlobalVibexDirectory: mockGetGlobalVibexDirectory,
 }))
 
 import { loadRuleFiles, addCustomInstructions } from "../custom-instructions"
@@ -39,14 +39,14 @@ import { loadRuleFiles, addCustomInstructions } from "../custom-instructions"
 describe("custom-instructions global .vibex support", () => {
 	const mockCwd = "/mock/project"
 	const mockHomeDir = "/mock/home"
-	const globalRooDir = path.join(mockHomeDir, ".roo")
-	const projectRooDir = path.join(mockCwd, ".roo")
+	const globalVibexDir = path.join(mockHomeDir, ".vibex")
+	const projectVibexDir = path.join(mockCwd, ".vibex")
 
 	beforeEach(() => {
 		vi.clearAllMocks()
 		mockHomedir.mockReturnValue(mockHomeDir)
-		mockGetRooDirectoriesForCwd.mockReturnValue([globalRooDir, projectRooDir])
-		mockGetGlobalRooDirectory.mockReturnValue(globalRooDir)
+		mockGetVibexDirectoriesForCwd.mockReturnValue([globalVibexDir, projectVibexDir])
+		mockGetGlobalVibexDirectory.mockReturnValue(globalVibexDir)
 	})
 
 	afterEach(() => {
@@ -132,7 +132,7 @@ describe("custom-instructions global .vibex support", () => {
 			expect(globalIndex).toBeLessThan(projectIndex)
 		})
 
-		it("should fall back to legacy .roorules file when no .roo/rules directories exist", async () => {
+		it("should fall back to legacy .vibexrules file when no .vibex/rules directories exist", async () => {
 			// Mock directory existence - neither exist
 			mockStat
 				.mockRejectedValueOnce(new Error("ENOENT")) // global rules dir doesn't exist
@@ -143,7 +143,7 @@ describe("custom-instructions global .vibex support", () => {
 
 			const result = await loadRuleFiles(mockCwd)
 
-			expect(result).toContain("# Rules from .roorules:")
+			expect(result).toContain("# Rules from .vibexrules:")
 			expect(result).toContain("legacy rule content")
 		})
 
@@ -157,7 +157,7 @@ describe("custom-instructions global .vibex support", () => {
 			// The safeReadFile function catches ENOENT errors and returns empty string
 			// So we don't need to mock rejections, just empty responses
 			mockReadFile
-				.mockResolvedValueOnce("") // .roorules returns empty (simulating ENOENT caught by safeReadFile)
+				.mockResolvedValueOnce("") // .vibexrules returns empty (simulating ENOENT caught by safeReadFile)
 				.mockResolvedValueOnce("") // .clinerules returns empty (simulating ENOENT caught by safeReadFile)
 
 			const result = await loadRuleFiles(mockCwd)
@@ -193,7 +193,7 @@ describe("custom-instructions global .vibex support", () => {
 				.mockResolvedValueOnce("global mode rule content")
 				.mockResolvedValueOnce("project mode rule content")
 				.mockResolvedValueOnce("") // AGENTS.md file (empty)
-				.mockResolvedValueOnce("") // .roorules legacy file (empty)
+				.mockResolvedValueOnce("") // .vibexrules legacy file (empty)
 				.mockResolvedValueOnce("") // .clinerules legacy file (empty)
 
 			const result = await addCustomInstructions("", "", mockCwd, mode)
@@ -217,14 +217,14 @@ describe("custom-instructions global .vibex support", () => {
 
 			// Mock legacy mode file reading
 			mockReadFile
-				.mockResolvedValueOnce("legacy mode rule content") // .roorules-code
+				.mockResolvedValueOnce("legacy mode rule content") // .vibexrules-code
 				.mockResolvedValueOnce("") // AGENTS.md file (empty)
-				.mockResolvedValueOnce("") // generic .roorules (empty)
+				.mockResolvedValueOnce("") // generic .vibexrules (empty)
 				.mockResolvedValueOnce("") // generic .clinerules (empty)
 
 			const result = await addCustomInstructions("", "", mockCwd, mode)
 
-			expect(result).toContain("# Rules from .roorules-code:")
+			expect(result).toContain("# Rules from .vibexrules-code:")
 			expect(result).toContain("legacy mode rule content")
 		})
 	})

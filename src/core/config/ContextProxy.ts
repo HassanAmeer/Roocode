@@ -16,8 +16,8 @@ import {
 	globalSettingsSchema,
 	isSecretStateKey,
 	isProviderName,
-} from "@roo-code/types"
-import { TelemetryService } from "@roo-code/telemetry"
+} from "@vibex-code/types"
+import { TelemetryService } from "@vibex-code/telemetry"
 
 import { logger } from "../../utils/logging"
 
@@ -399,7 +399,7 @@ export class ContextProxy {
 		try {
 			const globalSettings = globalSettingsExportSchema.parse(this.getValues())
 
-			// Exports should only contain global settings, so this skips project custom modes (those exist in the .roomode folder)
+			// Exports should only contain global settings, so this skips project custom modes (those exist in the .vibexmode folder)
 			globalSettings.customModes = globalSettings.customModes?.filter((mode) => mode.source === "global")
 
 			return Object.fromEntries(Object.entries(globalSettings).filter(([_, value]) => value !== undefined))

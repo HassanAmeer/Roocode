@@ -24,7 +24,7 @@
 		"invalidImageData": "प्रतिक्रिया में अमान्य छवि डेटा",
 		"invalidImageFormat": "अमान्य छवि प्रारूप प्राप्त हुआ",
 		"unknownError": "एक अज्ञात त्रुटि हुई",
-		"roo": {
+		"vibex": {
 			"authRequired": "छवि निर्माण के लिए VibeX Code Cloud प्रमाणीकरण आवश्यक है। कृपया VibeX Code Cloud में साइन इन करें।"
 		}
 	}

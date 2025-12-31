@@ -341,7 +341,7 @@ export class BrowserSession {
 	}
 
 	/**
-	 * Extract the root domain from a URL
+	 * Extract the vibext domain from a URL
 	 * e.g., http://localhost:3000/path -> localhost:3000
 	 * e.g., https://example.com/path -> example.com
 	 */
@@ -393,19 +393,19 @@ export class BrowserSession {
 		// Remove trailing slash for comparison
 		const normalizedNewUrl = url.replace(/\/$/, "")
 
-		// Extract the root domain from the URL
-		const rootDomain = this.getRootDomain(normalizedNewUrl)
+		// Extract the vibext domain from the URL
+		const vibextDomain = this.getRootDomain(normalizedNewUrl)
 
 		// Get all current pages
 		const pages = await this.browser.pages()
 
-		// Try to find a page with the same root domain
+		// Try to find a page with the same vibext domain
 		let existingPage: Page | undefined
 
 		for (const page of pages) {
 			try {
 				const pageUrl = page.url()
-				if (pageUrl && this.getRootDomain(pageUrl) === rootDomain) {
+				if (pageUrl && this.getRootDomain(pageUrl) === vibextDomain) {
 					existingPage = page
 					break
 				}
@@ -417,8 +417,8 @@ export class BrowserSession {
 		}
 
 		if (existingPage) {
-			// Tab with the same root domain exists, switch to it
-			console.log(`Tab with domain ${rootDomain} already exists, switching to it`)
+			// Tab with the same vibext domain exists, switch to it
+			console.log(`Tab with domain ${vibextDomain} already exists, switching to it`)
 
 			// Update the active page
 			this.page = existingPage
@@ -426,7 +426,7 @@ export class BrowserSession {
 
 			// Navigate to the new URL if it's different]
 			const currentUrl = existingPage.url().replace(/\/$/, "") // Remove trailing / if present
-			if (this.getRootDomain(currentUrl) === rootDomain && currentUrl !== normalizedNewUrl) {
+			if (this.getRootDomain(currentUrl) === vibextDomain && currentUrl !== normalizedNewUrl) {
 				console.log(`Navigating to new URL: ${normalizedNewUrl}`)
 				console.log(`Current URL: ${currentUrl}`)
 				console.log(`Root domain: ${this.getRootDomain(currentUrl)}`)
@@ -436,7 +436,7 @@ export class BrowserSession {
 					await this.navigatePageToUrl(page, normalizedNewUrl)
 				})
 			} else {
-				console.log(`Tab with domain ${rootDomain} already exists, and URL is the same: ${normalizedNewUrl}`)
+				console.log(`Tab with domain ${vibextDomain} already exists, and URL is the same: ${normalizedNewUrl}`)
 				// URL is the same, just reload the page to ensure it's up to date
 				console.log(`Reloading page: ${normalizedNewUrl}`)
 				console.log(`Current URL: ${currentUrl}`)
@@ -451,8 +451,8 @@ export class BrowserSession {
 				})
 			}
 		} else {
-			// No tab with this root domain exists, create a new one
-			console.log(`No tab with domain ${rootDomain} exists, creating a new one`)
+			// No tab with this vibext domain exists, create a new one
+			console.log(`No tab with domain ${vibextDomain} exists, creating a new one`)
 			return this.createNewTab(normalizedNewUrl)
 		}
 	}
@@ -774,7 +774,7 @@ export class BrowserSession {
 	 * @throws Error if the resolved path escapes the workspace directory
 	 */
 	async saveScreenshot(filePath: string, cwd: string): Promise<BrowserActionResult> {
-		// Always resolve the path against the workspace root
+		// Always resolve the path against the workspace vibext
 		const normalizedCwd = path.resolve(cwd)
 		const fullPath = path.resolve(cwd, filePath)
 
@@ -816,7 +816,7 @@ export class BrowserSession {
 				(cursorX: number, cursorY: number) => {
 					// Create a cursor indicator element
 					const cursor = document.createElement("div")
-					cursor.id = "__roo_cursor_indicator__"
+					cursor.id = "__vibex_cursor_indicator__"
 					cursor.style.cssText = `
 						position: fixed;
 						left: ${cursorX}px;
@@ -858,7 +858,7 @@ export class BrowserSession {
 	private async removeCursorIndicator(page: Page): Promise<void> {
 		try {
 			await page.evaluate(() => {
-				const cursor = document.getElementById("__roo_cursor_indicator__")
+				const cursor = document.getElementById("__vibex_cursor_indicator__")
 				if (cursor) {
 					cursor.remove()
 				}

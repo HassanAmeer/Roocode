@@ -1,5 +1,5 @@
 {
-	"name": "@roo-code/types",
+	"name": "@vibex-code/types",
 	"version": "0.0.0",
 	"type": "module",
 	"main": "./dist/index.cjs",
@@ -27,8 +27,8 @@
 		"zod": "^3.25.61"
 	},
 	"devDependencies": {
-		"@roo-code/config-eslint": "workspace:^",
-		"@roo-code/config-typescript": "workspace:^",
+		"@vibex-code/config-eslint": "workspace:^",
+		"@vibex-code/config-typescript": "workspace:^",
 		"@types/node": "^24.1.0",
 		"@types/vscode": "^1.84.0",
 		"globals": "^16.3.0",

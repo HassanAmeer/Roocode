@@ -9,7 +9,7 @@
 		"tokens": "Tokens",
 		"cache": "Cache",
 		"apiCost": "API-kosten",
-		"size": "Grootte",
+		"size": "Gvibextte",
 		"contextWindow": "Contextlengte",
 		"closeAndStart": "Taak sluiten en een nieuwe starten",
 		"export": "Taakgeschiedenis exporteren",
@@ -90,7 +90,7 @@
 	"about": "VibeX Code is een heel AI-ontwikkelteam in je editor.",
 	"docs": "Bekijk onze <DocsLink>documentatie</DocsLink> voor meer informatie.",
 	"onboarding": "Je takenlijst in deze werkruimte is leeg.",
-	"rooTips": {
+	"vibexTips": {
 		"customizableModes": {
 			"title": "Aanpasbare modi",
 			"description": "Gespecialiseerde persona's die op schema blijven en presteren."
@@ -225,7 +225,7 @@
 	"response": "Antwoord",
 	"arguments": "Argumenten",
 	"text": {
-		"rooSaid": "VibeX Code zei"
+		"vibexSaid": "VibeX Code zei"
 	},
 	"feedback": {
 		"youSaid": "Jij zei"
@@ -300,7 +300,7 @@
 			"feature": "<bold>Beperkt tijd GRATIS stealth model</bold> - Code Supernova: Nu geüpgraded met een <bold>1M token contextvenster</bold>! Een veelzijdig agentisch codeermodel dat beeldinvoer ondersteunt, beschikbaar via VibeX Code Cloud.",
 			"note": "(Opmerking: prompts en aanvullingen worden gelogd door de modelmaker en gebruikt om het model te verbeteren)",
 			"connectButton": "Verbinden met VibeX Code Cloud",
-			"selectModel": "Selecteer <code>roo/code-supernova</code> van de VibeX Code Cloud provider in Instellingen om te beginnen.",
+			"selectModel": "Selecteer <code>vibex/code-supernova</code> van de VibeX Code Cloud provider in Instellingen om te beginnen.",
 			"goToSettingsButton": "Ga naar Instellingen"
 		},
 		"release": {
@@ -341,7 +341,7 @@
 	},
 	"browser": {
 		"session": "Browsersessie",
-		"rooWantsToUse": "VibeX Code wil de browser gebruiken",
+		"vibexWantsToUse": "VibeX Code wil de browser gebruiken",
 		"consoleLogs": "Console-logboeken",
 		"noNewLogs": "(Geen nieuwe logboeken)",
 		"screenshot": "Browserschermopname",
@@ -368,8 +368,8 @@
 			"scrollUp": "Scroll naar boven",
 			"hovered": "Zweefde ({{coordinate}})",
 			"hover": "Zweven ({{coordinate}})",
-			"resized": "Grootte gewijzigd naar: {{size}}",
-			"resize": "Grootte wijzigen naar {{size}}",
+			"resized": "Gvibextte gewijzigd naar: {{size}}",
+			"resize": "Gvibextte wijzigen naar {{size}}",
 			"screenshotSaved": "Schermopname opgeslagen",
 			"screenshot": "Schermopname opslaan naar {{path}}",
 			"closed": "Browser gesloten",
@@ -383,7 +383,7 @@
 			"copy_code": "Code kopiëren"
 		}
 	},
-	"systemPromptWarning": "WAARSCHUWING: Aangepaste systeemprompt actief. Dit kan de functionaliteit ernstig verstoren en onvoorspelbaar gedrag veroorzaken.",
+	"systemPromptWarning": "WAARSCHUWING: Aangepaste systeemprompt actief. Dit kan de functionaliteit ernstig verstoren en onvoorspelbaar gedrag vevibexrzaken.",
 	"profileViolationWarning": "Het huidige profiel is niet compatibel met de instellingen van uw organisatie",
 	"shellIntegration": {
 		"title": "Waarschuwing commando-uitvoering",
@@ -427,7 +427,7 @@
 	"versionIndicator": {
 		"ariaLabel": "Versie {{version}} - Klik om release notes te bekijken"
 	},
-	"rooCloudCTA": {
+	"vibexCloudCTA": {
 		"title": "VibeX Code Cloud evolueert!",
 		"description": "Voer externe agenten uit in de cloud, krijg overal toegang tot je taken, werk samen met anderen en nog veel meer.",
 		"joinWaitlist": "Meld je aan om de laatste updates te ontvangen."

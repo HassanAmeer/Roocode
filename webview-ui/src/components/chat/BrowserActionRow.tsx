@@ -1,8 +1,8 @@
 import { memo, useMemo, useEffect, useRef } from "react"
-import { ClineMessage } from "@roo-code/types"
-import { ClineSayBrowserAction } from "@roo-code/types"
+import { ClineMessage } from "@vibex-code/types"
+import { ClineSayBrowserAction } from "@vibex-code/types"
 import { vscode } from "@src/utils/vscode"
-import { getViewportCoordinate as getViewportCoordinateShared, prettyKey } from "@roo/browserUtils"
+import { getViewportCoordinate as getViewportCoordinateShared, prettyKey } from "@vibex/browserUtils"
 import {
 	MousePointer as MousePointerIcon,
 	Keyboard,

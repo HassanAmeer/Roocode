@@ -7,7 +7,7 @@ import {
 	VSCodeTextField,
 } from "@vscode/webview-ui-toolkit/react"
 
-import type { ProviderSettings } from "@roo-code/types"
+import type { ProviderSettings } from "@vibex-code/types"
 
 import { useExtensionState } from "@src/context/ExtensionStateContext"
 import { validateApiConfiguration } from "@src/utils/validate"
@@ -23,7 +23,7 @@ import { Trans } from "react-i18next"
 import { ArrowLeft, ArrowRight, BadgeInfo, Brain, TriangleAlert } from "lucide-react"
 import { buildDocLink } from "@/utils/docLinks"
 
-type ProviderOption = "roo" | "custom"
+type ProviderOption = "vibex" | "custom"
 type AuthOrigin = "landing" | "providerSelection"
 
 const WelcomeViewProvider = () => {
@@ -59,13 +59,13 @@ const WelcomeViewProvider = () => {
 				vscode.postMessage({ type: "clearCloudAuthSkipModel" })
 			} else {
 				// Auth completed from provider signup flow - save the config now
-				const rooConfig: ProviderSettings = {
-					apiProvider: "roo",
+				const vibexConfig: ProviderSettings = {
+					apiProvider: "vibex",
 				}
 				vscode.postMessage({
 					type: "upsertApiConfiguration",
 					text: currentApiConfigName,
-					apiConfiguration: rooConfig,
+					apiConfiguration: vibexConfig,
 				})
 				setAuthInProgress(false)
 				setShowManualEntry(false)
@@ -94,25 +94,25 @@ const WelcomeViewProvider = () => {
 		// Landing screen - always trigger auth with Vibex
 		if (selectedProvider === null) {
 			setAuthOrigin("landing")
-			vscode.postMessage({ type: "rooCloudSignIn", useProviderSignup: true })
+			vscode.postMessage({ type: "vibexCloudSignIn", useProviderSignup: true })
 			setAuthInProgress(true)
 		}
 		// Provider Selection screen
-		else if (selectedProvider === "roo") {
+		else if (selectedProvider === "vibex") {
 			if (cloudIsAuthenticated) {
 				// Already authenticated - save config and finish
-				const rooConfig: ProviderSettings = {
-					apiProvider: "roo",
+				const vibexConfig: ProviderSettings = {
+					apiProvider: "vibex",
 				}
 				vscode.postMessage({
 					type: "upsertApiConfiguration",
 					text: currentApiConfigName,
-					apiConfiguration: rooConfig,
+					apiConfiguration: vibexConfig,
 				})
 			} else {
 				// Need to authenticate
 				setAuthOrigin("providerSelection")
-				vscode.postMessage({ type: "rooCloudSignIn", useProviderSignup: true })
+				vscode.postMessage({ type: "vibexCloudSignIn", useProviderSignup: true })
 				setAuthInProgress(true)
 			}
 		} else {
@@ -131,7 +131,7 @@ const WelcomeViewProvider = () => {
 
 	const handleNoAccount = useCallback(() => {
 		// Navigate to Provider Selection, defaulting to Vibex option
-		setSelectedProvider("roo")
+		setSelectedProvider("vibex")
 	}, [])
 
 	const handleBackToLanding = useCallback(() => {
@@ -164,7 +164,7 @@ const WelcomeViewProvider = () => {
 		setTimeout(() => {
 			if (url.trim() && url.includes("://") && url.includes("/auth/clerk/callback")) {
 				setManualErrorMessage(false)
-				vscode.postMessage({ type: "rooCloudManualUrl", text: url.trim() })
+				vscode.postMessage({ type: "vibexCloudManualUrl", text: url.trim() })
 			}
 		}, 100)
 	}
@@ -173,14 +173,14 @@ const WelcomeViewProvider = () => {
 		const url = manualUrl.trim()
 		if (url && url.includes("://") && url.includes("/auth/clerk/callback")) {
 			setManualErrorMessage(false)
-			vscode.postMessage({ type: "rooCloudManualUrl", text: url })
+			vscode.postMessage({ type: "vibexCloudManualUrl", text: url })
 		} else {
 			setManualErrorMessage(true)
 		}
 	}, [manualUrl])
 
 	const handleOpenSignupUrl = () => {
-		vscode.postMessage({ type: "rooCloudSignIn", useProviderSignup: false })
+		vscode.postMessage({ type: "vibexCloudSignIn", useProviderSignup: false })
 	}
 
 	// Render the waiting for cloud state
@@ -239,7 +239,7 @@ const WelcomeViewProvider = () => {
 												ref={manualUrlInputRef as any}
 												value={manualUrl}
 												onKeyUp={handleManualUrlChange}
-												placeholder="vscode://Vibex.roo-cline/auth/clerk/callback?state=..."
+												placeholder="vscode://Vibex.vibex-cline/auth/clerk/callback?state=..."
 												className="flex-1"
 											/>
 											<Button
@@ -255,7 +255,7 @@ const WelcomeViewProvider = () => {
 												components={{
 													DocsLink: (
 														<a
-															href={buildDocLink("roo-code-cloud/login", "setup")}
+															href={buildDocLink("vibex-code-cloud/login", "setup")}
 															target="_blank"
 															rel="noopener noreferrer"
 															className="text-vscode-textLink-foreground hover:underline">
@@ -317,7 +317,7 @@ const WelcomeViewProvider = () => {
 		)
 	}
 
-	// Provider Selection screen - shown when selectedProvider is "roo" or "custom"
+	// Provider Selection screen - shown when selectedProvider is "vibex" or "custom"
 	return (
 		<Tab>
 			<TabContent className="flex flex-col gap-4 p-6 justify-center">
@@ -337,13 +337,13 @@ const WelcomeViewProvider = () => {
 							setSelectedProvider(target.value as ProviderOption)
 						}}>
 						{/* Vibex Cloud Provider Option */}
-						<VSCodeRadio value="roo" className="flex items-start gap-2">
+						<VSCodeRadio value="vibex" className="flex items-start gap-2">
 							<div className="flex-1 space-y-1 cursor-pointer">
 								<p className="text-lg font-semibold block -mt-1">
-									{t("welcome:providerSignup.rooCloudProvider")}
+									{t("welcome:providerSignup.vibexCloudProvider")}
 								</p>
 								<p className="text-base text-vscode-descriptionForeground mt-0">
-									{t("welcome:providerSignup.rooCloudDescription")}{" "}
+									{t("welcome:providerSignup.vibexCloudDescription")}{" "}
 									<VSCodeLink
 										href="https://vibex.com/provider/pricing?utm_source=extension&utm_medium=welcome-screen&utm_campaign=provider-signup&utm_content=learn-more"
 										className="cursor-pointer">

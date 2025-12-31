@@ -1,5 +1,5 @@
-import { ToolProtocol, TOOL_PROTOCOL } from "@roo-code/types"
-import { isNativeProtocol } from "@roo-code/types"
+import { ToolProtocol, TOOL_PROTOCOL } from "@vibex-code/types"
+import { isNativeProtocol } from "@vibex-code/types"
 
 import { experiments, EXPERIMENT_IDS } from "../../../shared/experiments"
 

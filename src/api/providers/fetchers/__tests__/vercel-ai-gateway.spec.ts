@@ -1,7 +1,7 @@
 // npx vitest run src/api/providers/fetchers/__tests__/vercel-ai-gateway.spec.ts
 
 import axios from "axios"
-import { VERCEL_AI_GATEWAY_VISION_ONLY_MODELS, VERCEL_AI_GATEWAY_VISION_AND_TOOLS_MODELS } from "@roo-code/types"
+import { VERCEL_AI_GATEWAY_VISION_ONLY_MODELS, VERCEL_AI_GATEWAY_VISION_AND_TOOLS_MODELS } from "@vibex-code/types"
 
 import { getVercelAiGatewayModels, parseVercelAiGatewayModel } from "../vercel-ai-gateway"
 
@@ -116,7 +116,7 @@ describe("Vercel AI Gateway Fetchers", () => {
 			const consoleErrorSpy = vitest.spyOn(console, "error").mockImplementation(() => {})
 			const invalidResponse = {
 				data: {
-					invalid_root: "response",
+					invalid_vibext: "response",
 					data: [
 						{
 							id: "anthropic/claude-sonnet-4",

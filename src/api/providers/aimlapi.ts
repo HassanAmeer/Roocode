@@ -1,4 +1,4 @@
-import { aimlApiModels, aimlApiDefaultModelId } from "@roo-code/types"
+import { aimlApiModels, aimlApiDefaultModelId } from "@vibex-code/types"
 import type { ApiHandlerOptions } from "../../shared/api"
 import { getModelParams } from "../transform/model-params"
 import { OpenAiHandler } from "./openai"

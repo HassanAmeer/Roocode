@@ -129,7 +129,7 @@ describe("QdrantVectorStore", () => {
 					host: "qdrant.ashbyfam.com",
 					https: true,
 					port: 443,
-					prefix: undefined, // No prefix for root path
+					prefix: undefined, // No prefix for vibext path
 					apiKey: undefined,
 					headers: {
 						"User-Agent": "Vibex",
@@ -144,7 +144,7 @@ describe("QdrantVectorStore", () => {
 					host: "example.com",
 					https: true,
 					port: 9000,
-					prefix: undefined, // No prefix for root path
+					prefix: undefined, // No prefix for vibext path
 					apiKey: undefined,
 					headers: {
 						"User-Agent": "Vibex",
@@ -180,7 +180,7 @@ describe("QdrantVectorStore", () => {
 					host: "example.com",
 					https: false,
 					port: 80,
-					prefix: undefined, // No prefix for root path
+					prefix: undefined, // No prefix for vibext path
 					apiKey: undefined,
 					headers: {
 						"User-Agent": "Vibex",
@@ -195,7 +195,7 @@ describe("QdrantVectorStore", () => {
 					host: "localhost",
 					https: false,
 					port: 8080,
-					prefix: undefined, // No prefix for root path
+					prefix: undefined, // No prefix for vibext path
 					apiKey: undefined,
 					headers: {
 						"User-Agent": "Vibex",
@@ -360,7 +360,7 @@ describe("QdrantVectorStore", () => {
 	})
 
 	describe("URL Prefix Handling", () => {
-		it("should pass the URL pathname as prefix to QdrantClient if not root", () => {
+		it("should pass the URL pathname as prefix to QdrantClient if not vibext", () => {
 			const vectorStoreWithPrefix = new QdrantVectorStore(
 				mockWorkspacePath,
 				"http://localhost:6333/some/path",
@@ -379,7 +379,7 @@ describe("QdrantVectorStore", () => {
 			expect((vectorStoreWithPrefix as any).qdrantUrl).toBe("http://localhost:6333/some/path")
 		})
 
-		it("should not pass prefix if the URL pathname is root ('/')", () => {
+		it("should not pass prefix if the URL pathname is vibext ('/')", () => {
 			const vectorStoreWithoutPrefix = new QdrantVectorStore(
 				mockWorkspacePath,
 				"http://localhost:6333/",

@@ -26,7 +26,7 @@ describe("ExtensionStateContext Vibex auth gate", () => {
 		)
 	}
 
-	it("does not post requestRooModels when auth flips and provider !== 'roo'", async () => {
+	it("does not post requestRooModels when auth flips and provider !== 'vibex'", async () => {
 		render(
 			<ExtensionStateContextProvider>
 				<div />
@@ -47,7 +47,7 @@ describe("ExtensionStateContext Vibex auth gate", () => {
 		})
 	})
 
-	it("posts requestRooModels when auth flips and provider === 'roo'", async () => {
+	it("posts requestRooModels when auth flips and provider === 'vibex'", async () => {
 		render(
 			<ExtensionStateContextProvider>
 				<div />
@@ -57,7 +57,7 @@ describe("ExtensionStateContext Vibex auth gate", () => {
 		// Ensure prev false (explicit)
 		postStateMessage({
 			cloudIsAuthenticated: false,
-			apiConfiguration: { apiProvider: "roo" },
+			apiConfiguration: { apiProvider: "vibex" },
 		})
 
 		vi.clearAllMocks()
@@ -65,7 +65,7 @@ describe("ExtensionStateContext Vibex auth gate", () => {
 		// Flip to true with provider vibex - should trigger
 		postStateMessage({
 			cloudIsAuthenticated: true,
-			apiConfiguration: { apiProvider: "roo" },
+			apiConfiguration: { apiProvider: "vibex" },
 		})
 
 		await waitFor(() => {

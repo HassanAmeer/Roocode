@@ -1,15 +1,8 @@
 {
-	"extends": "@roo-code/config-typescript/base.json",
+	"extends": "@vibex-code/config-typescript/base.json",
 	"compilerOptions": {
-		"types": [
-			"node"
-		]
+		"types": ["node"]
 	},
-	"exclude": [
-		"node_modules"
-	],
-	"include": [
-		"scripts/*.ts",
-		"scripts/*.js"
-	]
+	"exclude": ["node_modules"],
+	"include": ["scripts/*.ts", "scripts/*.js"]
 }

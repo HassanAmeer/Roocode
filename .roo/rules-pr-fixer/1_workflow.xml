@@ -25,7 +25,7 @@
       <description>Analyze the gathered information to identify the core problems.</description>
       <steps>
         <step>Summarize review comments and requested changes from gh pr view output.</step>
-        <step>Identify the root cause of failing tests by analyzing workflow logs with 'gh run view'.</step>
+        <step>Identify the vibext cause of failing tests by analyzing workflow logs with 'gh run view'.</step>
         <step>Determine if merge conflicts exist from mergeable status.</step>
       </steps>
     </phase>

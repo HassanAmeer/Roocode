@@ -90,7 +90,7 @@
 	"about": "VibeX Codeは、エディタに常駐するAI開発チームです。",
 	"docs": "詳細については、<DocsLink>ドキュメント</DocsLink>をご確認ください。",
 	"onboarding": "このワークスペースのタスクリストは空です。",
-	"rooTips": {
+	"vibexTips": {
 		"customizableModes": {
 			"title": "カスタマイズ可能なモード",
 			"description": "タスクに集中し、成果を出す専門のペルソナ。"
@@ -230,7 +230,7 @@
 	"response": "応答",
 	"arguments": "引数",
 	"text": {
-		"rooSaid": "Rooの発言"
+		"vibexSaid": "Rooの発言"
 	},
 	"feedback": {
 		"youSaid": "あなたの発言"
@@ -323,7 +323,7 @@
 			"feature": "<bold>期間限定無料ステルスモデル</bold> - Code Supernova：<bold>1Mトークンコンテキストウィンドウ</bold>にアップグレード！画像入力をサポートする多目的エージェントコーディングモデル、VibeX Code Cloud 経由で利用可能。",
 			"note": "(注意：プロンプトと補完はモデル作成者によってログに記録され、モデルの改善に使用されます)",
 			"connectButton": "VibeX Code Cloud に接続",
-			"selectModel": "設定で VibeX Code Cloud プロバイダーから <code>roo/code-supernova</code> を選択して開始してください。",
+			"selectModel": "設定で VibeX Code Cloud プロバイダーから <code>vibex/code-supernova</code> を選択して開始してください。",
 			"goToSettingsButton": "設定に移動"
 		},
 		"release": {
@@ -341,7 +341,7 @@
 	},
 	"browser": {
 		"session": "ブラウザセッション",
-		"rooWantsToUse": "Rooはブラウザを使用したい",
+		"vibexWantsToUse": "Rooはブラウザを使用したい",
 		"consoleLogs": "コンソールログ",
 		"noNewLogs": "(新しいログはありません)",
 		"screenshot": "ブラウザのスクリーンショット",
@@ -427,7 +427,7 @@
 	"versionIndicator": {
 		"ariaLabel": "バージョン {{version}} - クリックしてリリースノートを表示"
 	},
-	"rooCloudCTA": {
+	"vibexCloudCTA": {
 		"title": "VibeX Code Cloud が進化中！",
 		"description": "クラウドでリモートエージェントを実行し、どこからでもタスクにアクセスし、他の人と協力し、その他多くの機能を利用できます。",
 		"joinWaitlist": "最新のアップデートを受け取るためにサインアップしてください。"

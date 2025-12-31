@@ -4,7 +4,7 @@ import { generateNormalizedAbsolutePath, generateRelativeFilePath } from "../get
 
 describe("get-relative-path", () => {
 	describe("generateNormalizedAbsolutePath", () => {
-		it("should use provided workspace root", () => {
+		it("should use provided workspace vibext", () => {
 			const filePath = "src/file.ts"
 			const workspaceRoot = path.join(path.sep, "custom", "workspace")
 			const result = generateNormalizedAbsolutePath(filePath, workspaceRoot)
@@ -30,7 +30,7 @@ describe("get-relative-path", () => {
 	})
 
 	describe("generateRelativeFilePath", () => {
-		it("should use provided workspace root", () => {
+		it("should use provided workspace vibext", () => {
 			const workspaceRoot = path.join(path.sep, "custom", "workspace")
 			const absolutePath = path.join(workspaceRoot, "src", "file.ts")
 			const result = generateRelativeFilePath(absolutePath, workspaceRoot)

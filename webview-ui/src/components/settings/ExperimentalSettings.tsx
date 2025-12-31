@@ -1,9 +1,9 @@
 import { HTMLAttributes } from "react"
 import { FlaskConical } from "lucide-react"
 
-import type { Experiments, ImageGenerationProvider } from "@roo-code/types"
+import type { Experiments, ImageGenerationProvider } from "@vibex-code/types"
 
-import { EXPERIMENT_IDS, experimentConfigsMap } from "@roo-code/types"
+import { EXPERIMENT_IDS, experimentConfigsMap } from "@vibex-code/types"
 
 import { useAppTranslation } from "@src/i18n/TranslationContext"
 import { cn } from "@src/lib/utils"
